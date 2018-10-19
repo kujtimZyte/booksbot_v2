@@ -51,12 +51,21 @@ class NewsSpider(scrapy.Spider):
                     if propertyName == u'articleBody':
                         paragraphs = []
                         for paragraphDiv in property.css('div.zn-body__paragraph'):
-                            # TODO: Find out how to extract links
+                            paragraphList = []
                             for paragraph in paragraphDiv.xpath(".//text()"):
-                                print(paragraph)
                                 strippedParagraph = paragraph.extract().strip()
                                 if len(strippedParagraph) > 0 and strippedParagraph not in self.removeableParagraphs:
-                                    paragraphs.append(strippedParagraph)
+                                    paragraphList.append({
+                                        'text': strippedParagraph
+                                    })
+                            for link in paragraphDiv.css('a'):
+                                text = link.xpath('text()').extract_first().strip()
+                                href = link.xpath('@href').extract_first().strip()
+                                for paragraphText in paragraphList:
+                                    if paragraphText['text'] == text:
+                                        paragraphText['link'] = href
+                            if len(paragraphList) > 0:
+                                paragraphs.append(paragraphList)
                         item[propertyName] = paragraphs
             imgs = []
             for img in article.css('img::attr(src)').extract():
