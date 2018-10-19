@@ -31,14 +31,12 @@ class NewsSpider(scrapy.Spider):
             )
 
     def parse(self, response):
-        '''
         for article in response.xpath("//article"):
             for url in article.xpath("//a/@href").extract():
                 yield scrapy.Request(response.urljoin(url), callback=self.parse)
         for li in response.css("li.ob-dynamic-rec-container"):
             for url in li.xpath("//a/@href").extract():
                 yield scrapy.Request(response.urljoin(url), callback=self.parse)
-        '''
         items = []
         for article in response.css("article"):
             item = {}
