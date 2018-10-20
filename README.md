@@ -53,9 +53,6 @@ This repository contains [CircleCI](https://circleci.com) builds that automatica
 | ----------------- | ---------------------------------------------------------------------------------------------:|
 | SCRAPY_API_KEY    | Your API key for [Scrapy Cloud](https://scrapinghub.com/scrapy-cloud)                         |
 | SCRAPY_PROJECT_ID | Your Project ID for [Scrapy Cloud](https://scrapinghub.com/scrapy-cloud)                      |
-| SPLASH_URL        | The URL pointing to your [Splash Instance](https://scrapinghub.com/splash)                    |
-| NEWS_HTTP_USER    | The username to use for authenticating your [Splash Instance](https://scrapinghub.com/splash) |
-| NEWS_HTTP_PASS    | The password to use for authenticating your [Splash Instance](https://scrapinghub.com/splash) |
 
 ## Contributing :mailbox_with_mail:
 Contributions are welcomed, have a look at the [CONTRIBUTING.md](CONTRIBUTING.md) document for more information.

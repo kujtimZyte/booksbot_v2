@@ -62,8 +62,6 @@ class NewsSpider(scrapy.Spider):
     start_urls = [
         'http://www.cnn.com'
     ]
-    http_user = '' if 'NEWS_HTTP_USER' not in os.environ else os.environ['NEWS_HTTP_USER']
-    http_pass = '' if 'NEWS_HTTP_PASS' not in os.environ else os.environ['NEWS_HTTP_PASS']
 
     def start_requests(self):
         for url in self.start_urls:
