@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """The main scraper for news sites"""
+import custom_settings
 import scrapy
 from scrapy_splash import SplashRequest
 
@@ -61,6 +62,8 @@ class NewsSpider(scrapy.Spider):
     start_urls = [
         'http://www.cnn.com'
     ]
+    http_user = custom_settings.NEWS_HTTP_AUTH_USER
+    http_pass = ''
 
     def start_requests(self):
         for url in self.start_urls:
