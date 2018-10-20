@@ -25,3 +25,26 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
+  deploy:
+    docker:
+      - image: circleci/python:2.7.15
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+        name: deploy spider
+        command: |
+          printf "$SCRAPY_API_KEY\n" | shub login
+          shub deploy "$SCRAPY_PROJECT_ID"
+workflows:
+  version: 2
+  pr:
+    jobs:
+      - build
+  merge:
+    jobs:
+      - deploy
+        filters:
+          branches:
+            only:
+              - master
