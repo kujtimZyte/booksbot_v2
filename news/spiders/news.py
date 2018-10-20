@@ -2,6 +2,7 @@
 """The main scraper for news sites"""
 import scrapy
 from scrapy_splash import SplashRequest
+from .custom_settings import NEWS_HTTP_AUTH_USER
 
 
 def is_bad_img(img):
@@ -61,6 +62,8 @@ class NewsSpider(scrapy.Spider):
     start_urls = [
         'http://www.cnn.com'
     ]
+    http_user = NEWS_HTTP_AUTH_USER
+    http_pass = ''
 
     def start_requests(self):
         for url in self.start_urls:
