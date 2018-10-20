@@ -1,25 +1,65 @@
 # -*- coding: utf-8 -*-
+"""The main scraper for news sites"""
 import scrapy
 from scrapy_splash import SplashRequest
 
 
-class NewsSpider(scrapy.Spider):
-    name = "news"
-    allowed_domains = ["cnn.com"]
-    start_urls = [
-        'http://www.cnn.com'
+def is_bad_img(img):
+    """
+    Checks whether an image is worthy of inclusion
+    """
+    bad_imgs = [
+        'outbrain',
+        'data:image',
+        'cnnnext'
     ]
-    removeableParagraphs = [
+    for bad_img in bad_imgs:
+        if bad_img in img:
+            return True
+    return False
+
+
+def extract_paragraphs(itemprop_element):
+    """
+    Extract the paragraphs from an article element
+    """
+    removeable_paragraphs = [
         u'Paid Content',
         u'More from CNN',
         u'Read More',
         u'Recommended by',
         u'READ MORE:'
     ]
-    badImgs = [
-        'outbrain',
-        'data:image',
-        'cnnnext'
+    paragraphs = []
+    for paragraph_div in itemprop_element.css(
+            'div.zn-body__paragraph'):
+        paragraph_list = []
+        for paragraph in paragraph_div.xpath(".//text()"):
+            stripped_paragraph = paragraph.extract().strip()
+            if stripped_paragraph and \
+                stripped_paragraph not in removeable_paragraphs:
+                paragraph_list.append({
+                    'text': stripped_paragraph
+                })
+        for link in paragraph_div.css('a'):
+            text = link.xpath(
+                'text()').extract_first().strip()
+            href = link.xpath(
+                '@href').extract_first().strip()
+            for paragraph_text in paragraph_list:
+                if paragraph_text['text'] == text:
+                    paragraph_text['link'] = href
+        if paragraph_list:
+            paragraphs.append(paragraph_list)
+    return paragraphs
+
+
+class NewsSpider(scrapy.Spider):
+    """Responsible for parsing news sites"""
+    name = "news"
+    allowed_domains = ["cnn.com"]
+    start_urls = [
+        'http://www.cnn.com'
     ]
 
     def start_requests(self):
@@ -30,57 +70,30 @@ class NewsSpider(scrapy.Spider):
         for article in response.xpath("//article"):
             for url in article.xpath("//a/@href").extract():
                 yield scrapy.Request(response.urljoin(url), callback=self.parse)
-        for li in response.css("li.ob-dynamic-rec-container"):
-            for url in li.xpath("//a/@href").extract():
+        for li_element in response.css("li.ob-dynamic-rec-container"):
+            for url in li_element.xpath("//a/@href").extract():
                 yield scrapy.Request(response.urljoin(url), callback=self.parse)
         items = []
         for article in response.css("article"):
             item = {}
-            for property in article.xpath('.//*[@itemprop]'):
-                propertyContent = property.xpath("@content").extract_first()
-                propertyName = property.xpath("@itemprop").extract_first()
-                if propertyContent is not None:
-                    item[propertyName] = propertyContent
+            for itemprop in article.xpath('.//*[@itemprop]'):
+                property_content = itemprop.xpath("@content").extract_first()
+                property_name = itemprop.xpath("@itemprop").extract_first()
+                if property_content is not None:
+                    item[property_name] = property_content
                 else:
-                    if propertyName == u'articleBody':
-                        paragraphs = []
-                        for paragraphDiv in property.css(
-                                'div.zn-body__paragraph'):
-                            paragraphList = []
-                            for paragraph in paragraphDiv.xpath(".//text()"):
-                                strippedParagraph = paragraph.extract().strip()
-                                if len(
-                                        strippedParagraph) > 0 and strippedParagraph not in self.removeableParagraphs:
-                                    paragraphList.append({
-                                        'text': strippedParagraph
-                                    })
-                            for link in paragraphDiv.css('a'):
-                                text = link.xpath(
-                                    'text()').extract_first().strip()
-                                href = link.xpath(
-                                    '@href').extract_first().strip()
-                                for paragraphText in paragraphList:
-                                    if paragraphText['text'] == text:
-                                        paragraphText['link'] = href
-                            if len(paragraphList) > 0:
-                                paragraphs.append(paragraphList)
-                        item[propertyName] = paragraphs
+                    if property_name == u'articleBody':
+                        item[property_name] = extract_paragraphs(itemprop)
             imgs = []
             for img in article.css('img::attr(src)').extract():
-                fullImg = response.urljoin(img)
-                if not self.isBadImg(fullImg) and fullImg not in imgs:
-                    imgs.append(fullImg)
+                full_img = response.urljoin(img)
+                if not is_bad_img(full_img) and full_img not in imgs:
+                    imgs.append(full_img)
             if item:
                 item['imgs'] = imgs
                 items.append(item)
-        if len(items) > 0:
+        if items:
             yield {
                 'items': items,
                 'html': response.text
             }
-
-    def isBadImg(self, img):
-        for badImg in self.badImgs:
-            if badImg in img:
-                return True
-        return False
