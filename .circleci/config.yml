@@ -32,10 +32,10 @@ jobs:
     steps:
       - checkout
       - run:
-        name: deploy spider
-        command: |
-          printf "$SCRAPY_API_KEY\n" | shub login
-          shub deploy "$SCRAPY_PROJECT_ID"
+          name: deploy spider
+          command: |
+            printf "$SCRAPY_API_KEY\n" | shub login
+            shub deploy "$SCRAPY_PROJECT_ID"
 workflows:
   version: 2
   build-deploy:
