@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+"""These variables control the scrapy crawlers settings"""
 
 BOT_NAME = 'news'
 
