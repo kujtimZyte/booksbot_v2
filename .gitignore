@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# VirtualENV
+scraperenv
+
+# Mac
+.DS_Store
