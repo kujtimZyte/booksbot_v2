@@ -97,6 +97,5 @@ class NewsSpider(scrapy.Spider):
                 items.append(item)
         if items:
             yield {
-                'items': items,
-                'html': response.text
+                'items': items
             }
