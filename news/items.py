@@ -5,6 +5,5 @@ import scrapy
 
 
 class NewsItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
+    """The class that defines the news items fields"""
     pass
