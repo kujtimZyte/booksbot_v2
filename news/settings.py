@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """These variables control the scrapy crawlers settings"""
-import os
 
 
 BOT_NAME = 'news'
