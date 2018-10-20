@@ -48,6 +48,7 @@ scrapy crawl news
 
 ### Cloud
 This repository contains [CircleCI](https://circleci.com) builds that automatically deploy on master. You can configure this with the following environment variables:
+
 | Name              | Value                                                                                         |
 | ----------------- | ---------------------------------------------------------------------------------------------:|
 | SCRAPY_API_KEY    | Your API key for [Scrapy Cloud](https://scrapinghub.com/scrapy-cloud)                         |
