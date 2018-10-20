@@ -39,22 +39,26 @@ class NewsSpider(scrapy.Spider):
             for property in article.xpath('.//*[@itemprop]'):
                 propertyContent = property.xpath("@content").extract_first()
                 propertyName = property.xpath("@itemprop").extract_first()
-                if propertyContent != None:
+                if propertyContent is not None:
                     item[propertyName] = propertyContent
                 else:
                     if propertyName == u'articleBody':
                         paragraphs = []
-                        for paragraphDiv in property.css('div.zn-body__paragraph'):
+                        for paragraphDiv in property.css(
+                                'div.zn-body__paragraph'):
                             paragraphList = []
                             for paragraph in paragraphDiv.xpath(".//text()"):
                                 strippedParagraph = paragraph.extract().strip()
-                                if len(strippedParagraph) > 0 and strippedParagraph not in self.removeableParagraphs:
+                                if len(
+                                        strippedParagraph) > 0 and strippedParagraph not in self.removeableParagraphs:
                                     paragraphList.append({
                                         'text': strippedParagraph
                                     })
                             for link in paragraphDiv.css('a'):
-                                text = link.xpath('text()').extract_first().strip()
-                                href = link.xpath('@href').extract_first().strip()
+                                text = link.xpath(
+                                    'text()').extract_first().strip()
+                                href = link.xpath(
+                                    '@href').extract_first().strip()
                                 for paragraphText in paragraphList:
                                     if paragraphText['text'] == text:
                                         paragraphText['link'] = href
@@ -71,7 +75,7 @@ class NewsSpider(scrapy.Spider):
                 items.append(item)
         if len(items) > 0:
             yield {
-                'items' : items,
+                'items': items,
                 'html': response.text
             }
 
