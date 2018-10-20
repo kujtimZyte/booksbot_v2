@@ -38,13 +38,12 @@ jobs:
           shub deploy "$SCRAPY_PROJECT_ID"
 workflows:
   version: 2
-  pr:
+  build-deploy:
     jobs:
       - build
-  merge:
-    jobs:
-      - deploy
-        filters:
-          branches:
-            only:
-              - master
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
