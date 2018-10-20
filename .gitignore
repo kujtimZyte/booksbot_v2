@@ -90,3 +90,6 @@ ENV/
 
 # VirtualENV
 scraperenv
+
+# Mac
+.DS_Store

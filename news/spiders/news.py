@@ -7,8 +7,7 @@ class NewsSpider(scrapy.Spider):
     name = "news"
     allowed_domains = ["cnn.com"]
     start_urls = [
-        #'http://www.cnn.com'
-        'https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd'
+        'http://www.cnn.com'
     ]
     removeableParagraphs = [
         u'Paid Content',
@@ -75,8 +74,8 @@ class NewsSpider(scrapy.Spider):
                 items.append(item)
         if len(items) > 0:
             yield {
-                'items' : items
-                #'html': response.text
+                'items' : items,
+                'html': response.text
             }
 
     def isBadImg(self, img):
