@@ -24,10 +24,7 @@ class NewsSpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.start_urls:
-            yield SplashRequest(url, self.parse,
-                endpoint='render.html',
-                args={'wait': 0.5},
-            )
+            yield SplashRequest(url, self.parse, endpoint='render.html', args={'wait': 0.5})
 
     def parse(self, response):
         for article in response.xpath("//article"):
