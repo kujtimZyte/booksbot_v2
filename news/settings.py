@@ -18,7 +18,8 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
 }
 
-SPLASH_URL = 'http://localhost:8050/' if 'SPLASH_URL' not in os.environ else os.environ['SPLASH_URL']
+SPLASH_URL = 'http://localhost:8050/' if 'SPLASH_URL' not in os.environ \
+    else os.environ['SPLASH_URL']
 
 SPIDER_MIDDLEWARES = {
     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,

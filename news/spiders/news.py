@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """The main scraper for news sites"""
+import os
 import scrapy
 from scrapy_splash import SplashRequest
-import os
 
 
 def is_bad_img(img):
