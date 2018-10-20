@@ -12,30 +12,14 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "requirements.txt" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
       - run:
           name: install dependencies
           command: |
-            pip install virtualenv
-            sudo virtualenv venv
-            . venv/bin/activate
             pip install -r requirements.txt
-
-      - save_cache:
-          paths:
-            - ./venv
-          key: v1-dependencies-{{ checksum "requirements.txt" }}
         
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
             python -m unittest discover -v
 
       - store_artifacts:
