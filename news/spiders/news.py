@@ -72,7 +72,7 @@ def write_gcp_credentials():
     Writes the appropriate GCP credentials to a file
     """
     gcs_env_key = 'GOOGLE_APPLICATION_CREDENTIALS'
-    if gcs_env_key not in os.environ:
+    if gcs_env_key in os.environ:
         return
     current_script_directory = os.path.dirname(os.path.realpath(__file__))
     credentials_filepath = os.path.join(current_script_directory, 'gcp-credentials.json')
