@@ -23,6 +23,7 @@ The support table looks like so:
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
 * [scrapy-splash](https://github.com/scrapy-plugins/scrapy-splash)
+* [google-cloud-storage](https://cloud.google.com/storage/docs/reference/libraries)
 
 ## Installation :inbox_tray:
 The chief requirements of any installation are based off scrapy and splash, see below for local and cloud based options.
