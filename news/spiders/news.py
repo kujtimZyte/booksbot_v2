@@ -6,7 +6,15 @@ import hashlib
 import scrapy
 from scrapy_splash import SplashRequest
 from google.cloud import storage
-from .custom_settings import NEWS_HTTP_AUTH_USER, GCS_BUCKET_NAME
+from .custom_settings import \
+NEWS_HTTP_AUTH_USER, \
+GCS_BUCKET_NAME, \
+GCP_PROJECT, \
+GCP_PRIVATE_KEY_ID, \
+GCP_PRIVATE_KEY, \
+GCP_CLIENT_EMAIL, \
+GCP_CLIENT_ID, \
+GCP_CLIENT_X509_CERT_URL
 
 
 def is_bad_img(img):
@@ -57,6 +65,34 @@ def extract_paragraphs(itemprop_element):
         if paragraph_list:
             paragraphs.append(paragraph_list)
     return paragraphs
+
+
+def write_gcp_credentials():
+    """
+    Writes the appropriate GCP credentials to a file
+    """
+    gcs_env_key = 'GOOGLE_APPLICATION_CREDENTIALS'
+    if gcs_env_key not in os.environ:
+        return
+    current_script_directory = os.path.dirname(os.path.realpath(__file__))
+    credentials_filepath = os.path.join(current_script_directory, 'gcp-credentials.json')
+    if os.path.exists(credentials_filepath):
+        return
+    credentials = {
+        "type": "service_account",
+        "project_id": GCP_PROJECT,
+        "private_key_id": GCP_PRIVATE_KEY_ID,
+        "private_key": GCP_PRIVATE_KEY,
+        "client_email": GCP_CLIENT_EMAIL,
+        "client_id": GCP_CLIENT_ID,
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": GCP_CLIENT_X509_CERT_URL
+    }
+    json_credentials = json.dumps(credentials)
+    open(credentials_filepath, 'w').write(json_credentials)
+    os.environ[gcs_env_key] = credentials_filepath
 
 
 class NewsSpider(scrapy.Spider):
@@ -110,13 +146,7 @@ class NewsSpider(scrapy.Spider):
 
     def setup_gcs(self):
         """Sets up the GCS storage client"""
-        gcs_env_key = 'GOOGLE_APPLICATION_CREDENTIALS'
-        if gcs_env_key not in os.environ:
-            current_script_directory = os.path.dirname(os.path.realpath(__file__))
-            news_directory = os.path.join(current_script_directory, os.pardir)
-            root_directory = os.path.join(news_directory, os.pardir)
-            gcp_credentials_json = os.path.join(root_directory, 'gcp-credentials.json')
-            os.environ[gcs_env_key] = gcp_credentials_json
+        write_gcp_credentials()
         if not self.storage:
             self.storage = storage.Client()
         if not self.bucket:
