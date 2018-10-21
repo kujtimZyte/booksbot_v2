@@ -38,7 +38,7 @@ jobs:
       - run:
           name: deploy spider
           command: |
-            echo "NEWS_HTTP_AUTH_USER = '$NEWS_HTTP_USER'" > news/spiders/custom_settings.py
+            ./deploy_files.sh
             printf "$SCRAPY_API_KEY\n" | shub login
             shub deploy "$SCRAPY_PROJECT_ID"
 workflows:
