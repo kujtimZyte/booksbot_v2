@@ -49,10 +49,20 @@ scrapy crawl news
 ### Cloud
 This repository contains [CircleCI](https://circleci.com) builds that automatically deploy on master. You can configure this with the following environment variables:
 
-| Name              | Value                                                                                         |
-| ----------------- | ---------------------------------------------------------------------------------------------:|
-| SCRAPY_API_KEY    | Your API key for [Scrapy Cloud](https://scrapinghub.com/scrapy-cloud)                         |
-| SCRAPY_PROJECT_ID | Your Project ID for [Scrapy Cloud](https://scrapinghub.com/scrapy-cloud)                      |
+| Name                     | Value                                                                                         |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+| SCRAPY_API_KEY           | Your API key for [Scrapy Cloud](https://scrapinghub.com/scrapy-cloud)                         |
+| SCRAPY_PROJECT_ID        | Your Project ID for [Scrapy Cloud](https://scrapinghub.com/scrapy-cloud)                      |
+| NEWS_HTTP_AUTH_USER      | The username for [Splash Cloud](https://scrapinghub.com/splash)                               |
+| GCS_BUCKET_NAME          | The Google Cloud Storage Bucket to post to                                                    |
+| GCP_PROJECT              | The Google Cloud Project to post the items to                                                 |
+| GCP_PRIVATE_KEY_ID       | The private key ID for the google cloud service account                                       |
+| GCP_PRIVATE_KEY          | The private key for the google cloud service account                                          |
+| GCP_CLIENT_EMAIL         | The client email for the google cloud service account                                         |
+| GCP_CLIENT_ID            | The client ID for the google cloud service account                                            |
+| GCP_CLIENT_X509_CERT_URL | The X509 Certificate URL for the google cloud service account                                 |
+
+Once these are filled in, you can run the `deploy_files.sh` script to create the necessary settings before deployment.
 
 ## Contributing :mailbox_with_mail:
 Contributions are welcomed, have a look at the [CONTRIBUTING.md](CONTRIBUTING.md) document for more information.
