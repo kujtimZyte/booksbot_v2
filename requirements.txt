@@ -2,3 +2,4 @@ scrapy
 scrapy-splash
 pylint==1.9.3
 shub==2.8.1
+google-cloud-storage==1.13.0
