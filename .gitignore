@@ -93,3 +93,6 @@ scraperenv
 
 # Mac
 .DS_Store
+
+# Deployments
+gcp-credentials.json
