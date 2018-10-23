@@ -55,8 +55,10 @@ def extract_paragraphs(itemprop_element):
                     'text': stripped_paragraph
                 })
         for link in paragraph_div.css('a'):
-            text = link.xpath(
-                'text()').extract_first().strip()
+            text_path = link.xpath('text()').extract_first()
+            if text_path is None:
+                continue
+            text = text_path.strip()
             href = link.xpath(
                 '@href').extract_first().strip()
             for paragraph_text in paragraph_list:
@@ -140,7 +142,8 @@ class NewsSpider(scrapy.Spider):
         if items:
             self.write_items_to_gcs(items)
             yield {
-                'items': items
+                'items': items,
+                'url': response.url
             }
 
 
