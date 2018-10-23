@@ -18,6 +18,7 @@ GCP_CLIENT_ID, \
 GCP_CLIENT_X509_CERT_URL
 from .cnn import cnn_parse
 from .reuters import reuters_parse
+from .guardian import guardian_parse
 
 
 def write_gcp_credentials():
@@ -53,11 +54,13 @@ class NewsSpider(scrapy.Spider):
     name = "news"
     allowed_domains = [
         "cnn.com",
-        "reuters.com"
+        "reuters.com",
+        "theguardian.com"
     ]
     start_urls = [
         'http://www.cnn.com',
-        'https://www.reuters.com/'
+        'https://www.reuters.com/',
+        'https://www.theguardian.com/international?INTCMP=CE_INT'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -65,7 +68,8 @@ class NewsSpider(scrapy.Spider):
     bucket = None
     parsers = {
         "cnn.com": cnn_parse,
-        "reuters.com": reuters_parse
+        "reuters.com": reuters_parse,
+        "theguardian.com": guardian_parse
     }
 
 

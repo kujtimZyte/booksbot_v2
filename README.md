@@ -16,10 +16,11 @@ The layer design is as follows:
 
 The support table looks like so:
 
-| News Site                           | Last Updated      | Status |
-| ----------------------------------- |:-----------------:| ------:|
-| [CNN](https://www.cnn.com/)         | 20th October 2018 | Stable |
-| [Reuters](https://www.reuters.com/) | 22nd October 2018 | Stable |
+| News Site                                                           | Last Updated      | Status |
+| ------------------------------------------------------------------- |:-----------------:| ------:|
+| [CNN](https://www.cnn.com/)                                         | 20th October 2018 | Stable |
+| [Reuters](https://www.reuters.com/)                                 | 22nd October 2018 | Stable |
+| [Guardian](https://www.theguardian.com/international?INTCMP=CE_INT) | 23rd October 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
@@ -46,6 +47,10 @@ pip install -r requirements.txt
 5. Run the crawler:
 ```bash
 scrapy crawl news
+```
+6. Run the tests:
+```bash
+python -m unittest discover -v
 ```
 
 ### Cloud
