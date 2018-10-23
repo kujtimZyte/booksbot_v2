@@ -16,9 +16,10 @@ The layer design is as follows:
 
 The support table looks like so:
 
-| News Site                   | Last Updated      | Status |
-| --------------------------- |:-----------------:| ------:|
-| [CNN](https://www.cnn.com/) | 20th October 2018 | Stable |
+| News Site                           | Last Updated      | Status |
+| ----------------------------------- |:-----------------:| ------:|
+| [CNN](https://www.cnn.com/)         | 20th October 2018 | Stable |
+| [Reuters](https://www.reuters.com/) | 22nd October 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)

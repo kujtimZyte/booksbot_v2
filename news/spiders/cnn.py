@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import scrapy
+"""Parser for the CNN website"""
+from .common import extract_article_urls
 
 
 def is_bad_img(img):
@@ -54,10 +55,10 @@ def extract_paragraphs(itemprop_element):
     return paragraphs
 
 def cnn_parse(response):
-    urls = []
-    for article in response.xpath("//article"):
-        for url in article.xpath("//a/@href").extract():
-            urls.append(response.urljoin(url))
+    """
+    Parses the CNN website from a scrapy response
+    """
+    urls = extract_article_urls(response)
     for li_element in response.css("li.ob-dynamic-rec-container"):
         for url in li_element.xpath("//a/@href").extract():
             urls.append(response.urljoin(url))

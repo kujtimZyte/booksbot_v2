@@ -3,8 +3,8 @@
 import os
 import json
 import hashlib
-import scrapy
 import urlparse
+import scrapy
 from scrapy_splash import SplashRequest
 from google.cloud import storage
 from .custom_settings import \
@@ -17,6 +17,7 @@ GCP_CLIENT_EMAIL, \
 GCP_CLIENT_ID, \
 GCP_CLIENT_X509_CERT_URL
 from .cnn import cnn_parse
+from .reuters import reuters_parse
 
 
 def write_gcp_credentials():
@@ -63,12 +64,15 @@ class NewsSpider(scrapy.Spider):
     storage = None
     bucket = None
     parsers = {
-        "cnn.com": cnn_parse
+        "cnn.com": cnn_parse,
+        "reuters.com": reuters_parse
     }
+
 
     def start_requests(self):
         for url in self.start_urls:
             yield SplashRequest(url, self.parse, endpoint='render.html', args={'wait': 0.5})
+
 
     def parse(self, response):
         host_name = urlparse.urlsplit(response.url).hostname

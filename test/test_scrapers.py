@@ -28,13 +28,26 @@ class TestNewsSpider(unittest.TestCase):
             'https://edition.cnn.com/2013/06/27/us/aretha-franklin-fast-facts/index.html',
             'cnn-aretha-franklin-fast-facts.json')
 
+    def test_reuters_homepage(self):
+        self.check_fake_html_scrape(
+            'reuters.com.html',
+            'https://www.reuters.com/',
+            'reuters.com.json')
+
+    def test_reuters_how_the_man_behind_khashoggi_murder_ran_the_killing_via_skype(self):
+        self.check_fake_html_scrape(
+            'reuters-how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype.html',
+            'https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA',
+            'reuters-how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
-        new_requests, items = self.fake_html(html_filename, url)
+        output_json = self.fake_html(html_filename, url)
         json_filepath = os.path.join(self.htmlDirectory, json_filename)
         with open(json_filepath) as json_filehandle:
             expected_output = json.load(json_filehandle)
-            self.assertEqual(new_requests, expected_output['requests'])
-            self.assertEqual(items, expected_output['items'])
+            produced_output = json.loads(output_json)
+            self.assertEqual(produced_output['requests'], expected_output['requests'])
+            self.assertEqual(produced_output['items'], expected_output['items'])
 
     def fake_html(self, htmlFilename , url):
         htmlFilePath = os.path.join(self.htmlDirectory, htmlFilename)
@@ -55,8 +68,7 @@ class TestNewsSpider(unittest.TestCase):
                     new_requests.append(request_url)
             else:
                 items.append(scrapedItem)
-        #print(json.dumps({'requests' : new_requests, 'items' : items}))
-        return new_requests, items
+        return json.dumps({'requests': new_requests, 'items': items})
     
     def is_url_allowed(self, url):
         for allowedDomain in self.scraper.allowed_domains:
