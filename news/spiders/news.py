@@ -3,6 +3,7 @@
 import os
 import json
 import hashlib
+import urlparse
 import scrapy
 from scrapy_splash import SplashRequest
 from google.cloud import storage
@@ -15,58 +16,8 @@ GCP_PRIVATE_KEY, \
 GCP_CLIENT_EMAIL, \
 GCP_CLIENT_ID, \
 GCP_CLIENT_X509_CERT_URL
-
-
-def is_bad_img(img):
-    """
-    Checks whether an image is worthy of inclusion
-    """
-    bad_imgs = [
-        'outbrain',
-        'data:image',
-        'cnnnext'
-    ]
-    for bad_img in bad_imgs:
-        if bad_img in img:
-            return True
-    return False
-
-
-def extract_paragraphs(itemprop_element):
-    """
-    Extract the paragraphs from an article element
-    """
-    removeable_paragraphs = [
-        u'Paid Content',
-        u'More from CNN',
-        u'Read More',
-        u'Recommended by',
-        u'READ MORE:'
-    ]
-    paragraphs = []
-    for paragraph_div in itemprop_element.css(
-            'div.zn-body__paragraph'):
-        paragraph_list = []
-        for paragraph in paragraph_div.xpath(".//text()"):
-            stripped_paragraph = paragraph.extract().strip()
-            if stripped_paragraph and \
-                stripped_paragraph not in removeable_paragraphs:
-                paragraph_list.append({
-                    'text': stripped_paragraph
-                })
-        for link in paragraph_div.css('a'):
-            text_path = link.xpath('text()').extract_first()
-            if text_path is None:
-                continue
-            text = text_path.strip()
-            href = link.xpath(
-                '@href').extract_first().strip()
-            for paragraph_text in paragraph_list:
-                if paragraph_text['text'] == text:
-                    paragraph_text['link'] = href
-        if paragraph_list:
-            paragraphs.append(paragraph_list)
-    return paragraphs
+from .cnn import cnn_parse
+from .reuters import reuters_parse
 
 
 def write_gcp_credentials():
@@ -100,51 +51,42 @@ def write_gcp_credentials():
 class NewsSpider(scrapy.Spider):
     """Responsible for parsing news sites"""
     name = "news"
-    allowed_domains = ["cnn.com"]
+    allowed_domains = [
+        "cnn.com",
+        "reuters.com"
+    ]
     start_urls = [
-        'http://www.cnn.com'
+        'http://www.cnn.com',
+        'https://www.reuters.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
     storage = None
     bucket = None
+    parsers = {
+        "cnn.com": cnn_parse,
+        "reuters.com": reuters_parse
+    }
+
 
     def start_requests(self):
         for url in self.start_urls:
             yield SplashRequest(url, self.parse, endpoint='render.html', args={'wait': 0.5})
 
+
     def parse(self, response):
-        for article in response.xpath("//article"):
-            for url in article.xpath("//a/@href").extract():
-                yield scrapy.Request(response.urljoin(url), callback=self.parse)
-        for li_element in response.css("li.ob-dynamic-rec-container"):
-            for url in li_element.xpath("//a/@href").extract():
-                yield scrapy.Request(response.urljoin(url), callback=self.parse)
-        items = []
-        for article in response.css("article"):
-            item = {}
-            for itemprop in article.xpath('.//*[@itemprop]'):
-                property_content = itemprop.xpath("@content").extract_first()
-                property_name = itemprop.xpath("@itemprop").extract_first()
-                if property_content is not None:
-                    item[property_name] = property_content
-                else:
-                    if property_name == u'articleBody':
-                        item[property_name] = extract_paragraphs(itemprop)
-            imgs = []
-            for img in article.css('img::attr(src)').extract():
-                full_img = response.urljoin(img)
-                if not is_bad_img(full_img) and full_img not in imgs:
-                    imgs.append(full_img)
-            if item:
-                item['imgs'] = imgs
-                items.append(item)
-        if items:
-            self.write_items_to_gcs(items)
-            yield {
-                'items': items,
-                'url': response.url
-            }
+        host_name = urlparse.urlsplit(response.url).hostname
+        for domain in self.parsers:
+            if host_name.endswith(domain):
+                urls, items = self.parsers[domain](response)
+                for url in urls:
+                    yield scrapy.Request(response.urljoin(url), callback=self.parse)
+                if items:
+                    self.write_items_to_gcs(items)
+                    yield {
+                        'items': items,
+                        'url': response.url
+                    }
 
 
     def setup_gcs(self):
