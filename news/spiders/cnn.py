@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Parser for the CNN website"""
-from .common import extract_article_urls
+from .common import extract_article_urls, extract_text_with_links
 
 
 def is_bad_img(img):
@@ -32,24 +32,7 @@ def extract_paragraphs(itemprop_element):
     paragraphs = []
     for paragraph_div in itemprop_element.css(
             'div.zn-body__paragraph'):
-        paragraph_list = []
-        for paragraph in paragraph_div.xpath(".//text()"):
-            stripped_paragraph = paragraph.extract().strip()
-            if stripped_paragraph and \
-                stripped_paragraph not in removeable_paragraphs:
-                paragraph_list.append({
-                    'text': stripped_paragraph
-                })
-        for link in paragraph_div.css('a'):
-            text_path = link.xpath('text()').extract_first()
-            if text_path is None:
-                continue
-            text = text_path.strip()
-            href = link.xpath(
-                '@href').extract_first().strip()
-            for paragraph_text in paragraph_list:
-                if paragraph_text['text'] == text:
-                    paragraph_text['link'] = href
+        paragraph_list = extract_text_with_links(paragraph_div, removeable_paragraphs)
         if paragraph_list:
             paragraphs.append(paragraph_list)
     return paragraphs

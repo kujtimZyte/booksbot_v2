@@ -46,6 +46,12 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.theguardian.com/international?INTCMP=CE_INT',
             'guardian.com.json')
 
+    def test_guardian_jamal_khashoggi_trump_cover_up_sanctions_visas(self):
+        self.check_fake_html_scrape(
+            'guardian-jamal-khashoggi-trump-cover-up-sanctions-visas.html',
+            'https://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas',
+            'guardian-jamal-khashoggi-trump-cover-up-sanctions-visas.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #print(output_json)
