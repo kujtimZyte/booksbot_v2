@@ -69,7 +69,7 @@ This repository contains [CircleCI](https://circleci.com) builds that automatica
 | GCP_CLIENT_ID            | The client ID for the google cloud service account                                            |
 | GCP_CLIENT_X509_CERT_URL | The X509 Certificate URL for the google cloud service account                                 |
 
-Once these are filled in, you can run the `deploy_files.sh` script to create the necessary settings before deployment.
+Once these are filled in, you can run the `deploy_files.sh` script to create the necessary settings before deployment. If you wish to automatically run the job on [Scraping Hub](https://scrapinghub.com) you can also run `restart_job.py`.
 
 ## Contributing :mailbox_with_mail:
 Contributions are welcomed, have a look at the [CONTRIBUTING.md](CONTRIBUTING.md) document for more information.
