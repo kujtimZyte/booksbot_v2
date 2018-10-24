@@ -1,36 +1,27 @@
 # -*- coding: utf-8 -*-
 import requests
 import os
+import scrapinghub
+import time
 
 
-# Get our settings
 project_id = os.environ['SCRAPY_PROJECT_ID']
 api_key = os.environ['SCRAPY_API_KEY']
-main_url = 'https://app.scrapinghub.com/api/jobs/'
-spider = 'news'
+spider_name = 'news'
 
-# List the current jobs
-print('Listing the current jobs...')
-jobs_url = main_url + 'list.json'
-list_result = requests.get(jobs_url, auth=(api_key, ''), params={
-    'project': project_id,
-    'spider': spider,
-    'state': 'running',
-    'count': '1'
-}).json()
-
-# Stop the jobs
-for job_id in list_result['jobs']:
-    print('Stopping job {}'.format(job_id))
-    stop_url = main_url + 'stop.json'
-    stop_result = requests.post(stop_url, auth=(api_key, ''), data={
-        'project': project_id,
-        'job': job_id
-    })
-
-# Run a new job
-run_url = main_url + 'run.json'
-requests.post(run_url, auth=(api_key, ''), data={
-    'project': project_id,
-    'spider': spider
-})
+print('Connecting to scrapinghub')
+client = scrapinghub.ScrapinghubClient(api_key)
+print('Connecting to project')
+project = client.get_project(project_id)
+print('Cancelling running jobs')
+for job in project.jobs.iter(state='running'):
+    job.cancel()
+while project.jobs.count(state='running') > 0:
+    print('Waiting for job to cancel...')
+    time.sleep(1)
+print('Running new job')
+project.jobs.run(spider=spider_name)
+while project.jobs.count(state='running') == 0:
+    print('Waiting for job to run...')
+    time.sleep(1)
+print('Successfully running new job')
