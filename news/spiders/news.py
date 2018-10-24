@@ -86,11 +86,11 @@ class NewsSpider(scrapy.Spider):
                 for url in urls:
                     yield scrapy.Request(response.urljoin(url), callback=self.parse)
                 if items:
-                    self.write_items_to_gcs(items)
-                    yield {
-                        'items': items,
-                        'url': response.url
-                    }
+                    if self.write_items_to_gcs(items):
+                        yield {
+                            'items': items,
+                            'url': response.url
+                        }
 
 
     def setup_gcs(self):
@@ -105,12 +105,13 @@ class NewsSpider(scrapy.Spider):
     def write_items_to_gcs(self, items):
         """Writes items to GCS"""
         if not GCS_BUCKET_NAME:
-            return
+            return True
         self.setup_gcs()
         item_json = json.dumps(items)
         sha256_hash = hashlib.sha224(item_json).hexdigest()
         blob_name = sha256_hash + '.json'
         blob = self.bucket.blob(blob_name)
         if blob.exists():
-            return
+            return False
         blob.upload_from_string(item_json)
+        return True
