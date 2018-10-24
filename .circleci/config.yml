@@ -41,6 +41,7 @@ jobs:
             ./deploy_files.sh
             printf "$SCRAPY_API_KEY\n" | shub login
             shub deploy "$SCRAPY_PROJECT_ID"
+            python restart_job.py
 workflows:
   version: 2
   build-deploy:
