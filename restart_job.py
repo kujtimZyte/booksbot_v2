@@ -15,7 +15,7 @@ print('Connecting to project')
 project = client.get_project(project_id)
 print('Cancelling running jobs')
 for job in project.jobs.iter(state='running'):
-    job.cancel()
+    client.get_job(job['key']).cancel()
 while project.jobs.count(state='running') > 0:
     print('Waiting for job to cancel...')
     time.sleep(1)
