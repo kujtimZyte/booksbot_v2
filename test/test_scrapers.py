@@ -15,13 +15,12 @@ class TestNewsSpider(unittest.TestCase):
             'cnn.com.html',
             'https://www.cnn.com',
             'cnn.com.json')
-    
+
     def test_cnn_canada_legal_pot_ticket(self):
         self.check_fake_html_scrape(
             'cnn-canada-legal-pot-ticket-trnd.html',
             'https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd',
             'cnn-canada-legal-pot-ticket-trnd.json')
-
     def test_cnn_aretha_franklin_fast_facts(self):
         self.check_fake_html_scrape(
             'cnn-aretha-franklin-fast-facts.html',
@@ -52,9 +51,21 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas',
             'guardian-jamal-khashoggi-trump-cover-up-sanctions-visas.json')
 
+    def test_bbc_homepage(self):
+        self.check_fake_html_scrape(
+            'bbc.com.html',
+            'http://www.bbc.com',
+            'bbc.com.json')
+
+    def test_bbc_45973436(self):
+        self.check_fake_html_scrape(
+            'bbc-45973436.html',
+            'https://www.bbc.com/news/world-us-canada-45973436',
+            'bbc-45973436.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
-        #print(output_json)
+        #open('output.json', 'w').write(output_json)
         json_filepath = os.path.join(self.htmlDirectory, json_filename)
         with open(json_filepath) as json_filehandle:
             expected_output = json.load(json_filehandle)
@@ -81,7 +92,7 @@ class TestNewsSpider(unittest.TestCase):
                     new_requests.append(request_url)
             else:
                 items.append(scrapedItem)
-        return json.dumps({'requests': new_requests, 'items': items})
+        return json.dumps({'requests': new_requests, 'items': items}, sort_keys=True, indent=4, separators=(',', ': '))
     
     def is_url_allowed(self, url):
         for allowedDomain in self.scraper.allowed_domains:

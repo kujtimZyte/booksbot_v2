@@ -2,12 +2,11 @@
 """Common utilities for scraping"""
 
 
-def extract_article_urls(response):
-    """Extracts URLs from article tags"""
+def extract_urls(response):
+    """Extracts URLs from a tags"""
     urls = []
-    for article in response.xpath("//article"):
-        for url in article.xpath("//a/@href").extract():
-            urls.append(response.urljoin(url))
+    for url in response.xpath("//a/@href").extract():
+        urls.append(response.urljoin(url))
     return urls
 
 
@@ -47,3 +46,12 @@ def extract_text_with_links(element, removeable_paragraphs):
             if paragraph_text['text'] == text:
                 paragraph_text['link'] = href
     return paragraph_list
+
+
+def extract_imgs(response, element):
+    """Extracts img sources from an element"""
+    imgs = []
+    for img in element.css('img::attr(src)').extract():
+        full_img = response.urljoin(img)
+        imgs.append(full_img)
+    return imgs

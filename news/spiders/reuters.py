@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Parser for the Reuters website"""
-from .common import extract_article_urls, extract_metadata
+from .common import extract_metadata, extract_imgs
 
 
 def extract_reuters_metadata(response):
@@ -27,7 +27,6 @@ def extract_reuters_metadata(response):
 
 def reuters_parse(response):
     """Parses the response from a Reuters website"""
-    urls = extract_article_urls(response)
     items = []
     for div_element in response.css("div.ArticlePage_container"):
         paragraph_list = []
@@ -35,11 +34,8 @@ def reuters_parse(response):
             paragraph_list.append({
                 'text':  p_element.xpath(".//text()").extract_first().strip()
             })
-        imgs = []
-        for img in div_element.css('img::attr(src)').extract():
-            full_img = response.urljoin(img)
-            imgs.append(full_img)
+        imgs = extract_imgs(response, div_element)
         item = {'articleBody': paragraph_list, 'imgs' : imgs}
         item.update(extract_reuters_metadata(response))
         items.append(item)
-    return urls, items
+    return items

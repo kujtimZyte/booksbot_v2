@@ -11,6 +11,7 @@ ROBOTSTXT_OBEY = True
 HTTPCACHE_ENABLED = True
 
 DOWNLOADER_MIDDLEWARES = {
+    'scrapy.spidermiddlewares.offsite.OffsiteMiddleware': 100,
     'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware': 300,
     'scrapy_splash.SplashCookiesMiddleware': 723,
     'scrapy_splash.SplashMiddleware': 725,
