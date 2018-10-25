@@ -1,84 +1,82 @@
 {
-    "items":[
+    "items": [
         {
-            "url":"https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd",
-            "items":[
+            "items": [
                 {
-                    "articleBody":[
+                    "alternativeHeadline": "Weed was legal in Canada for a whole hour before someone got a ticket for driving and toking",
+                    "articleBody": [
                         [
                             {
-                                "text":"The Winnipeg Police posted a photo later that day of a (redacted) traffic ticket one of its officers had to write for \"consuming cannabis in a motor vehicle.\""
+                                "text": "The Winnipeg Police posted a photo later that day of a (redacted) traffic ticket one of its officers had to write for \"consuming cannabis in a motor vehicle.\""
                             }
                         ],
                         [
                             {
-                                "text":"\"So... this happened early this morning,\" the police department wrote. \"Just like alcohol, consuming cannabis is legal - and like alcohol, consuming it in your vehicle is **not**.\""
+                                "text": "\"So... this happened early this morning,\" the police department wrote. \"Just like alcohol, consuming cannabis is legal - and like alcohol, consuming it in your vehicle is **not**.\""
                             }
                         ],
                         [
                             {
-                                "text":"Winnipeg Police Service traffic division Insp. Gord Spado"
+                                "text": "Winnipeg Police Service traffic division Insp. Gord Spado"
                             },
                             {
-                                "text":"told CBC news",
-                                "link":"https://www.cbc.ca/news/canada/manitoba/cannabis-consumption-car-ticket-1.4867328"
+                                "link": "https://www.cbc.ca/news/canada/manitoba/cannabis-consumption-car-ticket-1.4867328",
+                                "text": "told CBC news"
                             },
                             {
-                                "text":"the ticket was issued by an officer at approximately 1 a.m., a whole hour after pot buying became legal. He told CBC the weed involved in this particular traffic stop was probably illegally purchased. (CNN has reached out to the department for details.)"
+                                "text": "the ticket was issued by an officer at approximately 1 a.m., a whole hour after pot buying became legal. He told CBC the weed involved in this particular traffic stop was probably illegally purchased. (CNN has reached out to the department for details.)"
                             }
                         ],
                         [
                             {
-                                "text":"While many Canadians are stoked to toke in a legal fashion now, the Winnipeg Police reminded people in a subsequent tweet that"
+                                "text": "While many Canadians are stoked to toke in a legal fashion now, the Winnipeg Police reminded people in a subsequent tweet that"
                             },
                             {
-                                "text":"there are still laws and regulations that go along with the new provisions",
-                                "link":"https://lgcamb.ca/cannabis/"
+                                "link": "https://lgcamb.ca/cannabis/",
+                                "text": "there are still laws and regulations that go along with the new provisions"
                             },
                             {
-                                "text":"."
+                                "text": "."
                             }
                         ],
                         [
                             {
-                                "text":"\"Bottom line is that you cannot consume cannabis in your vehicle,\""
+                                "text": "\"Bottom line is that you cannot consume cannabis in your vehicle,\""
                             },
                             {
-                                "text":"it tweeted",
-                                "link":"https://twitter.com/wpgpolice/status/1052665350486192128"
+                                "link": "https://twitter.com/wpgpolice/status/1052665350486192128",
+                                "text": "it tweeted"
                             },
                             {
-                                "text":"."
+                                "text": "."
                             }
                         ],
                         [
                             {
-                                "text":"Here's what you need to know about recreational pot in Canada",
-                                "link":"https://www.cnn.com/2018/10/17/health/canada-legalizes-recreational-marijuana/index.html"
+                                "link": "https://www.cnn.com/2018/10/17/health/canada-legalizes-recreational-marijuana/index.html",
+                                "text": "Here's what you need to know about recreational pot in Canada"
                             }
                         ]
                     ],
-                    "thumbnailUrl":"https://cdn.cnn.com/cnnnext/dam/assets/181018092408-canada-pot-ticket-super-tease.jpg",
-                    "imgs":[
-
-                    ],
-                    "description":"This is why we can't have nice things, random traffic offender. ",
-                    "author":"AJ Willingham, CNN",
-                    "url":"https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd/index.html",
-                    "image":"https://cdn.cnn.com/cnnnext/dam/assets/181018092408-canada-pot-ticket-super-tease.jpg",
-                    "datePublished":"2018-10-18T13:41:12Z",
-                    "headline":"Weed was legal in Canada for a whole hour before someone messed it up  - CNN",
-                    "alternativeHeadline":"Weed was legal in Canada for a whole hour before someone got a ticket for driving and toking",
-                    "keywords":"health, Weed was legal in Canada for a whole hour before someone messed it up  - CNN",
-                    "isPartOf":"health",
-                    "articleSection":"health",
-                    "dateCreated":"2018-10-18T13:41:12Z",
-                    "dateModified":"2018-10-18T16:17:50Z"
+                    "articleSection": "health",
+                    "author": "AJ Willingham, CNN",
+                    "dateCreated": "2018-10-18T13:41:12Z",
+                    "dateModified": "2018-10-18T16:17:50Z",
+                    "datePublished": "2018-10-18T13:41:12Z",
+                    "description": "This is why we can't have nice things, random traffic offender. ",
+                    "headline": "Weed was legal in Canada for a whole hour before someone messed it up  - CNN",
+                    "image": "https://cdn.cnn.com/cnnnext/dam/assets/181018092408-canada-pot-ticket-super-tease.jpg",
+                    "imgs": [],
+                    "isPartOf": "health",
+                    "keywords": "health, Weed was legal in Canada for a whole hour before someone messed it up  - CNN",
+                    "thumbnailUrl": "https://cdn.cnn.com/cnnnext/dam/assets/181018092408-canada-pot-ticket-super-tease.jpg",
+                    "url": "https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd/index.html"
                 }
-            ]
+            ],
+            "url": "https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd"
         }
     ],
-    "requests":[
+    "requests": [
         "https://www.cnn.com/privacy",
         "https://www.cnn.com/terms",
         "https://www.cnn.com/",
@@ -181,12 +179,6 @@
         "http://www.cnn.com/2018/10/17/politics/muellers-quiet-period-has-not-been-very-quiet/?iid=ob_article_organicsidebar_expansion&obOrigUrl=true",
         "http://www.cnn.com/videos/politics/2018/10/17/virginia-10th-race-comstock-wexton-dean-ebof-dnt-vpx.cnn?iid=ob_article_organicsidebar_expansion&obOrigUrl=true",
         "http://www.cnn.com/2018/10/18/us/wisconsin-missing-girl-jayme-closs/?iid=ob_article_organicsidebar_expansion&obOrigUrl=true",
-        "https://www.comparecards.com/guide/best-credit-cards-of-2018?esourceid=6347586&utm_source=cnn&utm_medium=native&grp=best-2018&pla=cnn.com&bdst=flat&acqs=prospecting&utm_campaign=article&tar=cnnarticletop&pos=header&utm_content=noheadline&adt=none",
-        "https://www.comparecards.com/guide/pay-0-interest-until-2020?esourceid=6347656&utm_source=cnn&utm_medium=native&grp=pay-0-until-2020&pla=cnn.com&bdst=flat&acqs=prospecting&utm_campaign=article&tar=cnnarticletop&pos=1&utm_content=transfer+your+debt+and+pay+no+interest+until+2020&adt=none",
-        "https://www.comparecards.com/guide/top-credit-cards-for-those-with-excellent-credit?esourceid=6347646&utm_source=cnn&utm_medium=native&grp=excellent-credit&pla=cnn.com&bdst=flat&acqs=prospecting&utm_campaign=article&tar=cnnarticletop&pos=2&utm_content=gettingapprovedmeansexcred&adt=none",
-        "https://www.comparecards.com/guide/amazing-cash-back-credit-cards?esourceid=6347546&utm_source=cnn&utm_medium=native&grp=amazing-cash-back&pla=cnn.com&bdst=flat&acqs=prospecting&utm_campaign=article&tar=cnnarticletop&pos=3&utm_content=7+cards+that+generate+serious+amounts+of+cash+back&adt=none",
-        "https://www.comparecards.com/guide/pay-0-interest-until-2020?esourceid=6347656&utm_source=cnn&utm_medium=native&grp=pay-0-until-2020&pla=cnn.com&bdst=flat&acqs=prospecting&utm_campaign=article&tar=cnnarticletop&pos=4&utm_content=5+cards+charging+0+interest+until+2020&adt=none",
-        "https://www.comparecards.com/guide/maximize-credit-card-rewards-with-excellent-credit?esourceid=6347636&utm_source=cnn&utm_medium=native&grp=excellent-credit-max&pla=cnn.com&bdst=flat&acqs=prospecting&utm_campaign=article&tar=cnnarticletop&pos=5&utm_content=maximize+the+value+of+your+excellent+credit+with+these+cards&adt=none",
         "https://www.cnn.com/weather",
         "https://www.cnn.com/accessibility",
         "https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd",

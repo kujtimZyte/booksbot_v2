@@ -19,6 +19,8 @@ GCP_CLIENT_X509_CERT_URL
 from .cnn import cnn_parse
 from .reuters import reuters_parse
 from .guardian import guardian_parse
+from .bbc import bbc_parse
+from .common import extract_urls
 
 
 def write_gcp_credentials():
@@ -55,12 +57,14 @@ class NewsSpider(scrapy.Spider):
     allowed_domains = [
         "cnn.com",
         "reuters.com",
-        "theguardian.com"
+        "theguardian.com",
+        "bbc.com"
     ]
     start_urls = [
         'http://www.cnn.com',
         'https://www.reuters.com/',
-        'https://www.theguardian.com/international?INTCMP=CE_INT'
+        'https://www.theguardian.com/international?INTCMP=CE_INT',
+        'http://www.bbc.com'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -69,7 +73,8 @@ class NewsSpider(scrapy.Spider):
     parsers = {
         "cnn.com": cnn_parse,
         "reuters.com": reuters_parse,
-        "theguardian.com": guardian_parse
+        "theguardian.com": guardian_parse,
+        "bbc.com": bbc_parse
     }
 
 
@@ -79,12 +84,15 @@ class NewsSpider(scrapy.Spider):
 
 
     def parse(self, response):
+        #open('output.html', 'w').write(response.text.encode('utf-8'))
         host_name = urlparse.urlsplit(response.url).hostname
+        urls = extract_urls(response)
+        for url in urls:
+            if self.is_url_allowed(url):
+                yield scrapy.Request(response.urljoin(url), callback=self.parse)
         for domain in self.parsers:
             if host_name.endswith(domain):
-                urls, items = self.parsers[domain](response)
-                for url in urls:
-                    yield scrapy.Request(response.urljoin(url), callback=self.parse)
+                items = self.parsers[domain](response)
                 if items:
                     if self.write_items_to_gcs(items):
                         yield {
@@ -115,3 +123,13 @@ class NewsSpider(scrapy.Spider):
             return False
         blob.upload_from_string(item_json)
         return True
+
+    def is_url_allowed(self, url):
+        """Checks whether the URL is in a defined hostname"""
+        host_name = urlparse.urlsplit(url).hostname
+        if host_name is None:
+            return False
+        for allowed_domain in self.allowed_domains:
+            if host_name.endswith(allowed_domain):
+                return True
+        return False

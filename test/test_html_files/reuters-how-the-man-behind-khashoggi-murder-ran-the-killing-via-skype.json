@@ -1,278 +1,310 @@
 {
-    "items":[
+    "items": [
         {
-            "url":"https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA",
-            "items":[
+            "items": [
                 {
-                    "analyticsAttributes.articleDate":"2018-10-22T19:02:58+0000",
-                    "twitter:creator":"@Reuters",
-                    "og:type":"article",
-                    "Author":"Reuters Editorial",
-                    "analyticsAttributes.edition":"U.S.",
-                    "image":"https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
-                    "og:locale":"en_US",
-                    "datePublished":"2018-10-22T19:02:58+0000",
-                    "alternativeHeadline":"How the man behind Khashoggi murder ran the killing via Skype",
-                    "keywords":"US,SAUDI,KHASHOGGI,ADVISER,INSIGHT,Insights,Western Europe,Diplomacy / Foreign Policy,Media and Publishing (TRBC),Crime,Government / Politics,Special Reports,Saudi Arabia,General News,Major News,Europe,Middle East,Enterprise Reporting,United Kingdom,Media / Publishing (Legacy),International / National Security,Conflicts / War / Peace,Emerging Market Countries,Civil Unrest,Murder / Suspected Murder,Turkey,United States",
-                    "articleSection":"World",
-                    "og:article:tag":"US,SAUDI,KHASHOGGI,ADVISER,INSIGHT,Insights,Western Europe,Diplomacy / Foreign Policy,Media and Publishing (TRBC),Crime,Government / Politics,Special Reports,Saudi Arabia,General News,Major News,Europe,Middle East,Enterprise Reporting,United Kingdom,Media / Publishing (Legacy),International / National Security,Conflicts / War / Peace,Emerging Market Countries,Civil Unrest,Murder / Suspected Murder,Turkey,United States",
-                    "thumbnailUrl":"https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
-                    "og:article:modified_time":"2018-10-22T19:02:58+0000",
-                    "analyticsAttributes.canonicalUrl":"https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA",
-                    "og:article:section":"World",
-                    "headline":"How the man behind Khashoggi murder ran the killing via Skype",
-                    "description":"He ran social media for Saudi Arabia's crown prince. He masterminded the arrest of hundreds of his country's elite. He detained a Lebanese prime minister. And, according to two intelligence sources, he ran journalist Jamal Khashoggi's brutal killing at the Saudi consulate in Istanbul by giving orders over Skype.",
-                    "sailthru.date":"2018-10-22T19:02:58+0000",
-                    "sailthru.title":"How the man behind Khashoggi murder ran the killing via Skype",
-                    "analyticsAttributes.channel":"Article - News",
-                    "theme-color":"#ffffff",
-                    "og:title":"How the man behind Khashoggi murder ran the killing via Skype",
-                    "msapplication-square150x150logo":"https://s1.reutersmedia.net/resources_v2/images/mstile-150x150.png",
-                    "analyticsAttributes.contentChannel":"World - World",
-                    "msapplication-config":"none",
-                    "analyticsAttributes.inlineType":"Slideshow",
-                    "msapplication-wide310x150logo":"https://s1.reutersmedia.net/resources_v2/images/mstile-310x150.png",
-                    "dateCreated":"2018-10-22T19:02:58+0000",
-                    "isPartOf":"World",
-                    "analyticsAttributes.keywordSlug":"US-SAUDI-KHASHOGGI-ADVISER-INSIGHT",
-                    "DCSext.DartZone":"us.reuters/world/article",
-                    "viewport":"width=device-width, initial-scale=1, user-scalable=no",
-                    "og:site_name":"U.S.",
-                    "twitter:description":"He ran social media for Saudi Arabia's crown prince. He masterminded the arrest of hundreds of his country's elite. He detained a Lebanese prime minister. And, according to two intelligence ...",
-                    "null":"on",
-                    "analyticsAttributes.contentType":"Article",
-                    "REVISION_DATE":"Mon Oct 22 19:02:58 UTC 2018",
-                    "articleBody":[
+                    "null": "on",
+                    "Author": "Reuters Editorial",
+                    "DCSext.ChannelList": "worldNews;everythingNews;media-industry;specialReports;middle-east-news;middle-east;middle-east-full-coverage;middle-east-insights;US-The-Wire;USWire_EL",
+                    "DCSext.ContentChannel": "worldNews",
+                    "DCSext.DartZone": "us.reuters/world/article",
+                    "REVISION_DATE": "Mon Oct 22 19:02:58 UTC 2018",
+                    "alternativeHeadline": "How the man behind Khashoggi murder ran the killing via Skype",
+                    "analyticsAttributes.articleDate": "2018-10-22T19:02:58+0000",
+                    "analyticsAttributes.author": "Reuters Editorial",
+                    "analyticsAttributes.canonicalUrl": "https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA",
+                    "analyticsAttributes.channel": "Article - News",
+                    "analyticsAttributes.contentChannel": "World - World",
+                    "analyticsAttributes.contentTitle": "How the man behind Khashoggi murder ran the killing via Skype",
+                    "analyticsAttributes.contentType": "Article",
+                    "analyticsAttributes.edition": "U.S.",
+                    "analyticsAttributes.inlineType": "Slideshow",
+                    "analyticsAttributes.keywordSlug": "US-SAUDI-KHASHOGGI-ADVISER-INSIGHT",
+                    "analyticsAttributes.keywords": "US,SAUDI,KHASHOGGI,ADVISER,INSIGHT,Insights,Western Europe,Diplomacy / Foreign Policy,Media and Publishing (TRBC),Crime,Government / Politics,Special Reports,Saudi Arabia,General News,Major News,Europe,Middle East,Enterprise Reporting,United Kingdom,Media / Publishing (Legacy),International / National Security,Conflicts / War / Peace,Emerging Market Countries,Civil Unrest,Murder / Suspected Murder,Turkey,United States",
+                    "analyticsAttributes.title": "How the man behind Khashoggi murder ran the killing via Skype",
+                    "analyticsAttributes.topicChannel": "World",
+                    "analyticsAttributes.topicSubChannel": "World",
+                    "article:publisher": "https://www.facebook.com/Reuters",
+                    "articleBody": [
                         {
-                            "text":"14 Min Read"
+                            "text": "14 Min Read"
                         },
                         {
-                            "text":"(Reuters) - He ran social media for Saudi Arabia\u2019s crown prince. He masterminded the arrest of hundreds of his country\u2019s elite. He detained a Lebanese prime minister. And, according to two intelligence sources, he ran journalist Jamal Khashoggi\u2019s brutal killing at the Saudi consulate in Istanbul by giving orders over Skype."
+                            "text": "(Reuters) - He ran social media for Saudi Arabia\u2019s crown prince. He masterminded the arrest of hundreds of his country\u2019s elite. He detained a Lebanese prime minister. And, according to two intelligence sources, he ran journalist Jamal Khashoggi\u2019s brutal killing at the Saudi consulate in Istanbul by giving orders over Skype."
                         },
                         {
-                            "text":"Saud al-Qahtani, a top aide for Saudi Crown Prince Mohammed bin Salman, is one of the fall guys as Riyadh tries to stem international outrage at Khashoggi\u2019s death. On Saturday, Saudi state media said King Salman had sacked Qahtani and four other officials over the killing carried out by a 15-man hit team."
+                            "text": "Saud al-Qahtani, a top aide for Saudi Crown Prince Mohammed bin Salman, is one of the fall guys as Riyadh tries to stem international outrage at Khashoggi\u2019s death. On Saturday, Saudi state media said King Salman had sacked Qahtani and four other officials over the killing carried out by a 15-man hit team."
                         },
                         {
-                            "text":"But Qahtani\u2019s influence in the crown prince\u2019s entourage has been so vast over the past three years - his own rise tracking that of his boss - that it will be hard for Saudi officials to paint Qahtani as the mastermind of the murder without also raising questions about the involvement of Prince Mohammed, according to several sources with links to the royal court."
+                            "text": "But Qahtani\u2019s influence in the crown prince\u2019s entourage has been so vast over the past three years - his own rise tracking that of his boss - that it will be hard for Saudi officials to paint Qahtani as the mastermind of the murder without also raising questions about the involvement of Prince Mohammed, according to several sources with links to the royal court."
                         },
                         {
-                            "text":"\u201cThis episode won\u2019t topple MbS, but it has hit his image which will take a long time to be repaired if it ever does. The king is protecting him,\u201d one of the sources with ties to the royal court said."
+                            "text": "\u201cThis episode won\u2019t topple MbS, but it has hit his image which will take a long time to be repaired if it ever does. The king is protecting him,\u201d one of the sources with ties to the royal court said."
                         },
                         {
-                            "text":"Qahtani himself once said he would never do anything without his boss\u2019 approval."
+                            "text": "Qahtani himself once said he would never do anything without his boss\u2019 approval."
                         },
                         {
-                            "text":"\u201cDo you think I make decisions without guidance? I am an employee and a faithful executor of the orders of my lord the king and my lord the faithful crown prince,\u201d Qahtani tweeted last summer."
+                            "text": "\u201cDo you think I make decisions without guidance? I am an employee and a faithful executor of the orders of my lord the king and my lord the faithful crown prince,\u201d Qahtani tweeted last summer."
                         },
                         {
-                            "text":"Qahtani did not respond to questions from Reuters. His biography on Twitter changed in recent days from royal adviser to chairman of the Saudi Federation for Cybersecurity, Programming and Drones, a role he had held before."
+                            "text": "Qahtani did not respond to questions from Reuters. His biography on Twitter changed in recent days from royal adviser to chairman of the Saudi Federation for Cybersecurity, Programming and Drones, a role he had held before."
                         },
                         {
-                            "text":"Prince Mohammed had no knowledge of the operation that led to Khashoggi\u2019s death and \u201ccertainly did not order a kidnapping or murder of anybody\u201d, a Saudi official said on Saturday. Officials in Riyadh could not be reached for further comment."
+                            "text": "Prince Mohammed had no knowledge of the operation that led to Khashoggi\u2019s death and \u201ccertainly did not order a kidnapping or murder of anybody\u201d, a Saudi official said on Saturday. Officials in Riyadh could not be reached for further comment."
                         },
                         {
-                            "text":"As the crisis has grown over the past three weeks, Saudi Arabia has changed its tune on Khashoggi\u2019s fate, first denying his death, then saying he died during a brawl at the consulate, and now attributing the death to a chokehold."
+                            "text": "As the crisis has grown over the past three weeks, Saudi Arabia has changed its tune on Khashoggi\u2019s fate, first denying his death, then saying he died during a brawl at the consulate, and now attributing the death to a chokehold."
                         },
                         {
-                            "text":"A senior Saudi official told Reuters that the killers had tried to cover up what happened, contending that the truth was only now emerging. The Turks reject that version of the story, saying they have audio recordings of what happened."
+                            "text": "A senior Saudi official told Reuters that the killers had tried to cover up what happened, contending that the truth was only now emerging. The Turks reject that version of the story, saying they have audio recordings of what happened."
                         },
                         {
-                            "text":"The kingdom has survived other crises in the past year, including the fallout of the crown prince\u2019s short-lived kidnapping of Lebanese prime minister Saad al-Hariri in 2017. Hariri, too, was verbally humiliated and beaten, according to eight Saudi, Arab and Western diplomatic sources. The man leading that interrogation: Saud al-Qahtani."
+                            "text": "The kingdom has survived other crises in the past year, including the fallout of the crown prince\u2019s short-lived kidnapping of Lebanese prime minister Saad al-Hariri in 2017. Hariri, too, was verbally humiliated and beaten, according to eight Saudi, Arab and Western diplomatic sources. The man leading that interrogation: Saud al-Qahtani."
                         },
                         {
-                            "text":"France intervened to free Hariri, but Western capitals did not take Riyadh to task for detaining a head of government - and Prince Mohammed emerged emboldened, according to these Saudi sources."
+                            "text": "France intervened to free Hariri, but Western capitals did not take Riyadh to task for detaining a head of government - and Prince Mohammed emerged emboldened, according to these Saudi sources."
                         },
                         {
-                            "text":"This time is different, with some Western capitals increasingly critical of the murder and the Saudi explanation."
+                            "text": "This time is different, with some Western capitals increasingly critical of the murder and the Saudi explanation."
                         },
                         {
-                            "text":"Germany has announced it will stop arms sales, while Britain, France and Germany issued a joint statement asking for an \u201curgent \u2026 clarification of exactly what happened Oct 2.\u201d"
+                            "text": "Germany has announced it will stop arms sales, while Britain, France and Germany issued a joint statement asking for an \u201curgent \u2026 clarification of exactly what happened Oct 2.\u201d"
                         },
                         {
-                            "text":"President Donald Trump has swung between saying he is unhappy with the Saudi investigation but also that he does not want to jeopardize U.S. arms sales to the country."
+                            "text": "President Donald Trump has swung between saying he is unhappy with the Saudi investigation but also that he does not want to jeopardize U.S. arms sales to the country."
                         },
                         {
-                            "text":"To stem the fallout of the Khashoggi killing, the crown prince, commonly known by his initials MbS, allowed Qahtani to take the fall, according to one source close to the Saudi royal court."
+                            "text": "To stem the fallout of the Khashoggi killing, the crown prince, commonly known by his initials MbS, allowed Qahtani to take the fall, according to one source close to the Saudi royal court."
                         },
                         {
-                            "text":"A second senior Saudi official said Qahtani had been detained following his sacking by royal decree, but he continued to tweet afterwards. The sources with links to the royal court said he was not believed to be under arrest."
+                            "text": "A second senior Saudi official said Qahtani had been detained following his sacking by royal decree, but he continued to tweet afterwards. The sources with links to the royal court said he was not believed to be under arrest."
                         },
                         {
-                            "text":"In the Khashoggi killing, Qahtani was present as he has been in other key moments of MbS\u2019s administration. This time, though, his presence was virtual."
+                            "text": "In the Khashoggi killing, Qahtani was present as he has been in other key moments of MbS\u2019s administration. This time, though, his presence was virtual."
                         },
                         {
-                            "text":"Khashoggi, a U.S.-based Saudi journalist often critical of Saudi Arabia and its leadership, walked into the Istanbul consulate at around 1 pm on Oct 2, to pick up some documents that would allow him to marry."
+                            "text": "Khashoggi, a U.S.-based Saudi journalist often critical of Saudi Arabia and its leadership, walked into the Istanbul consulate at around 1 pm on Oct 2, to pick up some documents that would allow him to marry."
                         },
                         {
-                            "text":"Turkish security sources say he was immediately seized inside the consulate by 15 Saudi intelligence operatives who had flown in on two jets just hours before."
+                            "text": "Turkish security sources say he was immediately seized inside the consulate by 15 Saudi intelligence operatives who had flown in on two jets just hours before."
                         },
                         {
-                            "text":"According to one high-ranking Arab source with access to intelligence and links to members of Saudi Arabia\u2019s royal court, Qahtani was beamed into a room of the Saudi consulate via Skype."
+                            "text": "According to one high-ranking Arab source with access to intelligence and links to members of Saudi Arabia\u2019s royal court, Qahtani was beamed into a room of the Saudi consulate via Skype."
                         },
                         {
-                            "text":"He began to hurl insults at Khashoggi over the phone. According to the Arab and Turkish sources, Khashoggi answered Qahtani\u2019s insults with his own. But he was no match for the squad, which included top security and intelligence operatives, some with direct links to the royal court."
+                            "text": "He began to hurl insults at Khashoggi over the phone. According to the Arab and Turkish sources, Khashoggi answered Qahtani\u2019s insults with his own. But he was no match for the squad, which included top security and intelligence operatives, some with direct links to the royal court."
                         },
                         {
-                            "text":"A Turkish intelligence source relayed that at one point Qahtani told his men to dispose of Khashoggi. \u201cBring me the head of the dog\u201d, the Turkish intelligence source says Qahtani instructed."
+                            "text": "A Turkish intelligence source relayed that at one point Qahtani told his men to dispose of Khashoggi. \u201cBring me the head of the dog\u201d, the Turkish intelligence source says Qahtani instructed."
                         },
                         {
-                            "text":"It is not clear if Qahtani watched the entire proceedings, which the high-ranking Arab source described as a \u201cbungled and botched operation\u201d."
+                            "text": "It is not clear if Qahtani watched the entire proceedings, which the high-ranking Arab source described as a \u201cbungled and botched operation\u201d."
                         },
                         {
-                            "text":"The Arab source and the Turkish intelligence source said the audio of the Skype call is now in the possession of Turkish President Tayyip Erdogan. The sources say he is refusing to release it to the Americans."
+                            "text": "The Arab source and the Turkish intelligence source said the audio of the Skype call is now in the possession of Turkish President Tayyip Erdogan. The sources say he is refusing to release it to the Americans."
                         },
                         {
-                            "text":"Erdogan said on Sunday he would release information about the Turkish investigation during a weekly speech on Tuesday. Three Turkish officials reached by Reuters declined to comment ahead of that speech."
+                            "text": "Erdogan said on Sunday he would release information about the Turkish investigation during a weekly speech on Tuesday. Three Turkish officials reached by Reuters declined to comment ahead of that speech."
                         },
                         {
-                            "text":"The senior Saudi official who laid out the official version of events \u2013 that Khashoggi had got into a fight \u2013 said he had not heard about Qahtani appearing via Skype, but that the Saudi investigation was ongoing."
+                            "text": "The senior Saudi official who laid out the official version of events \u2013 that Khashoggi had got into a fight \u2013 said he had not heard about Qahtani appearing via Skype, but that the Saudi investigation was ongoing."
                         },
                         {
-                            "text":"Qahtani, 40, has earned a reputation at home as both a violent enforcer of princely whims and as a strident nationalist. In blogs and on social media, some liberal Saudi journalists and activists dubbed him the Saudi Steve Bannon for his aggressive manipulation of the news media and behind-the-scenes strategizing."
+                            "text": "Qahtani, 40, has earned a reputation at home as both a violent enforcer of princely whims and as a strident nationalist. In blogs and on social media, some liberal Saudi journalists and activists dubbed him the Saudi Steve Bannon for his aggressive manipulation of the news media and behind-the-scenes strategizing."
                         },
                         {
-                            "text":"Qahtani wrote odes on Twitter to the royal family under the pen name Dari, which means predator in Arabic. Some of his opponents on social media call him Dalim, a figure in Arabic folklore who rose from being a lowly servant to much greater heights."
+                            "text": "Qahtani wrote odes on Twitter to the royal family under the pen name Dari, which means predator in Arabic. Some of his opponents on social media call him Dalim, a figure in Arabic folklore who rose from being a lowly servant to much greater heights."
                         },
                         {
-                            "text":"According to his biography on his Twitter account, Qahtani studied law and made the rank of captain in the Saudi air force. After launching a blog, he caught the eye of Khaled al-Tuwaijri, the former head of the royal court, who hired him in the early 2000s to run an electronic media army tasked with protecting Saudi Arabia\u2019s image , according to a source with ties to the royal court."
+                            "text": "According to his biography on his Twitter account, Qahtani studied law and made the rank of captain in the Saudi air force. After launching a blog, he caught the eye of Khaled al-Tuwaijri, the former head of the royal court, who hired him in the early 2000s to run an electronic media army tasked with protecting Saudi Arabia\u2019s image , according to a source with ties to the royal court."
                         },
                         {
-                            "text":"Tuwaijri is under house arrest and could not be reached for comment."
+                            "text": "Tuwaijri is under house arrest and could not be reached for comment."
                         },
                         {
-                            "text":"Qahtani rose to further prominence after latching onto Prince Mohammed, who was part of his father Salman\u2019s court as Riyadh governor, then crown prince and finally king in 2015"
+                            "text": "Qahtani rose to further prominence after latching onto Prince Mohammed, who was part of his father Salman\u2019s court as Riyadh governor, then crown prince and finally king in 2015"
                         },
                         {
-                            "text":"Tasked with countering alleged Qatari influence on social media, Qahtani used Twitter to attack criticism of the kingdom in general and Prince Mohammed in particular. He also ran a WhatsApp group with local newspaper editors and prominent journalists, dictating the royal court\u2019s line."
+                            "text": "Tasked with countering alleged Qatari influence on social media, Qahtani used Twitter to attack criticism of the kingdom in general and Prince Mohammed in particular. He also ran a WhatsApp group with local newspaper editors and prominent journalists, dictating the royal court\u2019s line."
                         },
                         {
-                            "text":"When Riyadh led an economic boycott against Qatar in June 2017, Qahtani ramped up his attacks on the small Gulf state. Online, he urged Saudis to tweet the names of anyone showing sympathy with Qatar under the Arabic hashtag \u201cThe Black List\u201d."
+                            "text": "When Riyadh led an economic boycott against Qatar in June 2017, Qahtani ramped up his attacks on the small Gulf state. Online, he urged Saudis to tweet the names of anyone showing sympathy with Qatar under the Arabic hashtag \u201cThe Black List\u201d."
                         },
                         {
-                            "text":"The high-ranking Arab official and Saudi sources with ties to the royal court said Qahtani was MbS\u2019s \u201cbad cop\u201d late last year when 200 people, including Saudi princes, ministers and business tycoons, were detained and put under house arrest at the Ritz Carlton in an anti-corruption sweep. Qahtani oversaw some of the interrogations, the Arab official said."
+                            "text": "The high-ranking Arab official and Saudi sources with ties to the royal court said Qahtani was MbS\u2019s \u201cbad cop\u201d late last year when 200 people, including Saudi princes, ministers and business tycoons, were detained and put under house arrest at the Ritz Carlton in an anti-corruption sweep. Qahtani oversaw some of the interrogations, the Arab official said."
                         },
                         {
-                            "text":"The extent of Qahtani\u2019s power is perhaps best illustrated by the kidnapping of Lebanese Prime Minister Saad al-Hariri last year, several of the Saudi and Arab diplomatic sources said."
+                            "text": "The extent of Qahtani\u2019s power is perhaps best illustrated by the kidnapping of Lebanese Prime Minister Saad al-Hariri last year, several of the Saudi and Arab diplomatic sources said."
                         },
                         {
-                            "text":"The Saudis were incensed at the inability of Hariri, a Sunni Muslim and a Saudi client, to stand up to their regional rival Iran and Hezbollah, the Shi\u2019ite paramilitary movement that acts as Tehran\u2019s spearhead in the region. Hariri belonged to the same multi-party coalition government as Hezbollah."
+                            "text": "The Saudis were incensed at the inability of Hariri, a Sunni Muslim and a Saudi client, to stand up to their regional rival Iran and Hezbollah, the Shi\u2019ite paramilitary movement that acts as Tehran\u2019s spearhead in the region. Hariri belonged to the same multi-party coalition government as Hezbollah."
                         },
                         {
-                            "text":"The Saudis were particularly dismayed that Hariri had failed to deliver a message to a top adviser to Iranian Supreme Leader Ayatollah Ali Khamenei, to stop interfering in Lebanon and Yemen. Hariri claimed he had delivered the Saudi message, but an informer, planted by Qahtani in Hariri\u2019s circle, gave the Saudis the minutes of the meeting which showed that he had not done so."
+                            "text": "The Saudis were particularly dismayed that Hariri had failed to deliver a message to a top adviser to Iranian Supreme Leader Ayatollah Ali Khamenei, to stop interfering in Lebanon and Yemen. Hariri claimed he had delivered the Saudi message, but an informer, planted by Qahtani in Hariri\u2019s circle, gave the Saudis the minutes of the meeting which showed that he had not done so."
                         },
                         {
-                            "text":"The Saudis lured Hariri to Riyadh for a meeting with MbS. Upon his arrival on Nov. 3, 2017, there was no line-up of Saudi princes or officials, as would typically greet a prime minister on an official visit. Hariri later received a call that the meeting with the crown prince would take place the next day at a royal compound."
+                            "text": "The Saudis lured Hariri to Riyadh for a meeting with MbS. Upon his arrival on Nov. 3, 2017, there was no line-up of Saudi princes or officials, as would typically greet a prime minister on an official visit. Hariri later received a call that the meeting with the crown prince would take place the next day at a royal compound."
                         },
                         {
-                            "text":"When Hariri arrived, he was ushered into a room where Qahtani was waiting for him with a security team, according to three Arab sources familiar with the incident. The security team beat Hariri; Qahtani cursed at him and then forced him to resign as prime minister in a statement that was broadcast by a Saudi-owned TV channel."
+                            "text": "When Hariri arrived, he was ushered into a room where Qahtani was waiting for him with a security team, according to three Arab sources familiar with the incident. The security team beat Hariri; Qahtani cursed at him and then forced him to resign as prime minister in a statement that was broadcast by a Saudi-owned TV channel."
                         },
                         {
-                            "text":"\u201cHe (Qahtani) told him you have no choice but to resign and read this statement,\u201d said one of the sources. \u201cQahtani oversaw the interrogation and ill-treatment of Hariri.\u201d"
+                            "text": "\u201cHe (Qahtani) told him you have no choice but to resign and read this statement,\u201d said one of the sources. \u201cQahtani oversaw the interrogation and ill-treatment of Hariri.\u201d"
                         },
                         {
-                            "text":"Another source said it was the intervention of French President Emmanuel Macron that secured his release following an international outcry."
+                            "text": "Another source said it was the intervention of French President Emmanuel Macron that secured his release following an international outcry."
                         },
                         {
-                            "text":"Macron claimed credit in May for ending the crisis, saying an unscheduled stopover in Riyadh to convince MbS, followed by an invitation to Hariri to come to France, had been the catalyst to resolving it. Lebanese officials confirmed to Reuters that Macron\u2019s quick intervention secured Hariri\u2019s return."
+                            "text": "Macron claimed credit in May for ending the crisis, saying an unscheduled stopover in Riyadh to convince MbS, followed by an invitation to Hariri to come to France, had been the catalyst to resolving it. Lebanese officials confirmed to Reuters that Macron\u2019s quick intervention secured Hariri\u2019s return."
                         },
                         {
-                            "text":"Saudi officials could not be reached for comment about the sequence of events or Qahtani\u2019s involvement. French officials declined to comment when asked about Qahtani\u2019s role."
+                            "text": "Saudi officials could not be reached for comment about the sequence of events or Qahtani\u2019s involvement. French officials declined to comment when asked about Qahtani\u2019s role."
                         },
                         {
-                            "text":"At least three friends of Khashoggi told Reuters that in the months after the journalist moved to Washington a year ago he received multiple phone calls from MbS\u2019s right-hand man urging him to return to Saudi Arabia. Khashoggi had balked, they said, fearing reprisals for his Washington Post columns and outspoken views."
+                            "text": "At least three friends of Khashoggi told Reuters that in the months after the journalist moved to Washington a year ago he received multiple phone calls from MbS\u2019s right-hand man urging him to return to Saudi Arabia. Khashoggi had balked, they said, fearing reprisals for his Washington Post columns and outspoken views."
                         },
                         {
-                            "text":"Qahtani had tried to reassure the former newspaper editor that he was still well respected and had offered the journalist a job as a consultant at the royal court, the friends said."
+                            "text": "Qahtani had tried to reassure the former newspaper editor that he was still well respected and had offered the journalist a job as a consultant at the royal court, the friends said."
                         },
                         {
-                            "text":"Khashoggi said that while he found Qahtani gentle and polite during those conversations, he did not trust him, one close friend told Reuters. \u201cJamal told me afterwards, \u2018he thinks that I will go back so that he can throw me in jail?\u201d"
+                            "text": "Khashoggi said that while he found Qahtani gentle and polite during those conversations, he did not trust him, one close friend told Reuters. \u201cJamal told me afterwards, \u2018he thinks that I will go back so that he can throw me in jail?\u201d"
                         },
                         {
-                            "text":"The second senior Saudi official confirmed that Qahtani had spoken to Khashoggi about returning home. The ambush in Istanbul seems to have been another way to get him home."
+                            "text": "The second senior Saudi official confirmed that Qahtani had spoken to Khashoggi about returning home. The ambush in Istanbul seems to have been another way to get him home."
                         },
                         {
-                            "text":"How much did the crown prince know about his trusted aide\u2019s plan to abduct Khashoggi?"
+                            "text": "How much did the crown prince know about his trusted aide\u2019s plan to abduct Khashoggi?"
                         },
                         {
-                            "text":"Most of the 15 hit-man team identified by Turkish and Saudi authorities worked for the kingdom\u2019s security and intelligence services, military, government ministries, royal court security and air force. One of them, General Maher Mutreb, a senior intelligence officer, who is part of the security team of Prince Mohammed, appeared in photographs with him on official visits earlier this year to the United States and Europe."
+                            "text": "Most of the 15 hit-man team identified by Turkish and Saudi authorities worked for the kingdom\u2019s security and intelligence services, military, government ministries, royal court security and air force. One of them, General Maher Mutreb, a senior intelligence officer, who is part of the security team of Prince Mohammed, appeared in photographs with him on official visits earlier this year to the United States and Europe."
                         },
                         {
-                            "text":"The high-ranking Arab official and the Turkish intelligence source said it was Mutreb\u2019s phone that was used to dial in Qahtani while Khashoggi was being interrogated."
+                            "text": "The high-ranking Arab official and the Turkish intelligence source said it was Mutreb\u2019s phone that was used to dial in Qahtani while Khashoggi was being interrogated."
                         },
                         {
-                            "text":"Reuters tried to contact members of 15-man team but their phones were either switched off, on voicemail or no longer in service."
+                            "text": "Reuters tried to contact members of 15-man team but their phones were either switched off, on voicemail or no longer in service."
                         },
                         {
-                            "text":"The Saudi official said Deputy Intelligence Chief General Ahmed al-Asiri put together the 15-man squad from the intelligence and security forces. Asiri was one of the five officials dismissed on Saturday."
+                            "text": "The Saudi official said Deputy Intelligence Chief General Ahmed al-Asiri put together the 15-man squad from the intelligence and security forces. Asiri was one of the five officials dismissed on Saturday."
                         },
                         {
-                            "text":"Another key figure was Dr. Salah al-Tubaigy, a forensic expert specialized in autopsies attached to the Saudi Ministry of Interior. His presence \u2013 equipped with a bone-saw Turkish sources say was used to dismember the journalist \u2013 is hard to explain in an operation Saudi officials now say was aimed at persuading Khashoggi to return home."
+                            "text": "Another key figure was Dr. Salah al-Tubaigy, a forensic expert specialized in autopsies attached to the Saudi Ministry of Interior. His presence \u2013 equipped with a bone-saw Turkish sources say was used to dismember the journalist \u2013 is hard to explain in an operation Saudi officials now say was aimed at persuading Khashoggi to return home."
                         },
                         {
-                            "text":"It is hard to imagine that the crown prince could have not known about such a delicate operation, the Saudi sources with ties to the royal court say."
+                            "text": "It is hard to imagine that the crown prince could have not known about such a delicate operation, the Saudi sources with ties to the royal court say."
                         },
                         {
-                            "text":"The Saudi official who spoke on Saturday said an existing standing order provided authorization to \u201cnegotiate\u201d with dissidents to return home without requiring approval, but that the team involved with Khashoggi exceeded that authorization."
+                            "text": "The Saudi official who spoke on Saturday said an existing standing order provided authorization to \u201cnegotiate\u201d with dissidents to return home without requiring approval, but that the team involved with Khashoggi exceeded that authorization."
                         },
                         {
-                            "text":"Another Saudi official close to the investigation said that Qahtani decided on his own to organize Khashoggi\u2019s kidnapping and that he asked Asiri to get a team together, but that their plans had gone wrong."
+                            "text": "Another Saudi official close to the investigation said that Qahtani decided on his own to organize Khashoggi\u2019s kidnapping and that he asked Asiri to get a team together, but that their plans had gone wrong."
                         },
                         {
-                            "text":"Qahtani\u2019s final act may be to serve his boss by assuming the responsibility for the crisis that has hit Saudi Arabia since Khashoggi\u2019s murder. The Saudi king has sacked Qahtani and ordered a restructuring of the general intelligence agency."
+                            "text": "Qahtani\u2019s final act may be to serve his boss by assuming the responsibility for the crisis that has hit Saudi Arabia since Khashoggi\u2019s murder. The Saudi king has sacked Qahtani and ordered a restructuring of the general intelligence agency."
                         },
                         {
-                            "text":"To head it, he named MbS."
+                            "text": "To head it, he named MbS."
                         },
                         {
-                            "text":"Editing by Alessandra Galloni and Simon Robinson"
+                            "text": "Editing by Alessandra Galloni and Simon Robinson"
                         },
                         {
-                            "text":"Sponsored"
+                            "text": "Sponsored"
                         },
                         {
-                            "text":"Sponsored"
+                            "text": "Sponsored"
                         }
                     ],
-                    "sailthru.author":"Reuters Editorial",
-                    "twitter:image":"https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
-                    "analyticsAttributes.author":"Reuters Editorial",
-                    "twitter:site":"@Reuters",
-                    "article:publisher":"https://www.facebook.com/Reuters",
-                    "news_keywords":"US;SAUDI;KHASHOGGI;ADVISER;INSIGHT;Insights;Western Europe;Diplomacy / Foreign Policy;Media and Publishing (TRBC);Crime;Government / Politics;Special Reports;Saudi Arabia;General News;Major News;Europe;Middle East;Enterprise Reporting;United Kingdom;Media / Publishing (Legacy);International / National Security;Conflicts / War / Peace;Emerging Market Countries;Civil Unrest;Murder / Suspected Murder;Turkey;United States",
-                    "og:url":"https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA",
-                    "analyticsAttributes.title":"How the man behind Khashoggi murder ran the killing via Skype",
-                    "author":"Reuters Editorial",
-                    "DCSext.ContentChannel":"worldNews",
-                    "msapplication-TileColor":"#ff8000",
-                    "DCSext.ChannelList":"worldNews;everythingNews;media-industry;specialReports;middle-east-news;middle-east;middle-east-full-coverage;middle-east-insights;US-The-Wire;USWire_EL",
-                    "analyticsAttributes.topicSubChannel":"World",
-                    "analyticsAttributes.keywords":"US,SAUDI,KHASHOGGI,ADVISER,INSIGHT,Insights,Western Europe,Diplomacy / Foreign Policy,Media and Publishing (TRBC),Crime,Government / Politics,Special Reports,Saudi Arabia,General News,Major News,Europe,Middle East,Enterprise Reporting,United Kingdom,Media / Publishing (Legacy),International / National Security,Conflicts / War / Peace,Emerging Market Countries,Civil Unrest,Murder / Suspected Murder,Turkey,United States",
-                    "twitter:title":"How the man behind Khashoggi murder ran the killing via Skype",
-                    "og:article:published_time":"2018-10-22T19:02:58+0000",
-                    "dateModified":"2018-10-22T19:02:58+0000",
-                    "analyticsAttributes.contentTitle":"How the man behind Khashoggi murder ran the killing via Skype",
-                    "analyticsAttributes.topicChannel":"World",
-                    "msapplication-square70x70logo":"https://s1.reutersmedia.net/resources_v2/images/mstile-70x70.png",
-                    "robots":"index, follow",
-                    "msapplication-square310x310logo":"https://s1.reutersmedia.net/resources_v2/images/mstile-310x310.png",
-                    "msapplication-TileImage":"https://s2.reutersmedia.net/resources_v2/images/mstile-144x144.png",
-                    "imgs":[
+                    "articleSection": "World",
+                    "author": "Reuters Editorial",
+                    "dateCreated": "2018-10-22T19:02:58+0000",
+                    "dateModified": "2018-10-22T19:02:58+0000",
+                    "datePublished": "2018-10-22T19:02:58+0000",
+                    "description": "He ran social media for Saudi Arabia's crown prince. He masterminded the arrest of hundreds of his country's elite. He detained a Lebanese prime minister. And, according to two intelligence sources, he ran journalist Jamal Khashoggi's brutal killing at the Saudi consulate in Istanbul by giving orders over Skype.",
+                    "headline": "How the man behind Khashoggi murder ran the killing via Skype",
+                    "image": "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
+                    "imgs": [
                         "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&r=LYNXNPEE9L1NX&w=1280",
                         "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&r=LYNXNPEE9L1NX&w=20",
                         "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510716&r=LYNXNPEE9L1NW&w=20",
                         "https://s3.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317494946&r=LYNXNPEE9L1JO&w=20"
                     ],
-                    "og:image":"https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
-                    "twitter:card":"summary_large_image",
-                    "url":"https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA",
-                    "og:description":"He ran social media for Saudi Arabia's crown prince. He masterminded the ar...",
-                    "twitter:image:src":"https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
-                    "og:article:author":"Reuters Editorial"
+                    "isPartOf": "World",
+                    "keywords": "US,SAUDI,KHASHOGGI,ADVISER,INSIGHT,Insights,Western Europe,Diplomacy / Foreign Policy,Media and Publishing (TRBC),Crime,Government / Politics,Special Reports,Saudi Arabia,General News,Major News,Europe,Middle East,Enterprise Reporting,United Kingdom,Media / Publishing (Legacy),International / National Security,Conflicts / War / Peace,Emerging Market Countries,Civil Unrest,Murder / Suspected Murder,Turkey,United States",
+                    "msapplication-TileColor": "#ff8000",
+                    "msapplication-TileImage": "https://s2.reutersmedia.net/resources_v2/images/mstile-144x144.png",
+                    "msapplication-config": "none",
+                    "msapplication-square150x150logo": "https://s1.reutersmedia.net/resources_v2/images/mstile-150x150.png",
+                    "msapplication-square310x310logo": "https://s1.reutersmedia.net/resources_v2/images/mstile-310x310.png",
+                    "msapplication-square70x70logo": "https://s1.reutersmedia.net/resources_v2/images/mstile-70x70.png",
+                    "msapplication-wide310x150logo": "https://s1.reutersmedia.net/resources_v2/images/mstile-310x150.png",
+                    "news_keywords": "US;SAUDI;KHASHOGGI;ADVISER;INSIGHT;Insights;Western Europe;Diplomacy / Foreign Policy;Media and Publishing (TRBC);Crime;Government / Politics;Special Reports;Saudi Arabia;General News;Major News;Europe;Middle East;Enterprise Reporting;United Kingdom;Media / Publishing (Legacy);International / National Security;Conflicts / War / Peace;Emerging Market Countries;Civil Unrest;Murder / Suspected Murder;Turkey;United States",
+                    "og:article:author": "Reuters Editorial",
+                    "og:article:modified_time": "2018-10-22T19:02:58+0000",
+                    "og:article:published_time": "2018-10-22T19:02:58+0000",
+                    "og:article:section": "World",
+                    "og:article:tag": "US,SAUDI,KHASHOGGI,ADVISER,INSIGHT,Insights,Western Europe,Diplomacy / Foreign Policy,Media and Publishing (TRBC),Crime,Government / Politics,Special Reports,Saudi Arabia,General News,Major News,Europe,Middle East,Enterprise Reporting,United Kingdom,Media / Publishing (Legacy),International / National Security,Conflicts / War / Peace,Emerging Market Countries,Civil Unrest,Murder / Suspected Murder,Turkey,United States",
+                    "og:description": "He ran social media for Saudi Arabia's crown prince. He masterminded the ar...",
+                    "og:image": "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
+                    "og:locale": "en_US",
+                    "og:site_name": "U.S.",
+                    "og:title": "How the man behind Khashoggi murder ran the killing via Skype",
+                    "og:type": "article",
+                    "og:url": "https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA",
+                    "robots": "index, follow",
+                    "sailthru.author": "Reuters Editorial",
+                    "sailthru.date": "2018-10-22T19:02:58+0000",
+                    "sailthru.title": "How the man behind Khashoggi murder ran the killing via Skype",
+                    "theme-color": "#ffffff",
+                    "thumbnailUrl": "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
+                    "twitter:card": "summary_large_image",
+                    "twitter:creator": "@Reuters",
+                    "twitter:description": "He ran social media for Saudi Arabia's crown prince. He masterminded the arrest of hundreds of his country's elite. He detained a Lebanese prime minister. And, according to two intelligence ...",
+                    "twitter:image": "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
+                    "twitter:image:src": "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
+                    "twitter:site": "@Reuters",
+                    "twitter:title": "How the man behind Khashoggi murder ran the killing via Skype",
+                    "url": "https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA",
+                    "viewport": "width=device-width, initial-scale=1, user-scalable=no"
                 }
-            ]
+            ],
+            "url": "https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA"
         }
     ],
-    "requests":[
-
+    "requests": [
+        "https://financial.thomsonreuters.com/",
+        "https://www.thomsonreuters.com/en/products-services/government-solutions.html",
+        "https://www.thomsonreuters.com/en/products-services/legal.html",
+        "https://agency.reuters.com/en.html",
+        "https://risk.thomsonreuters.com/en.html",
+        "https://www.thomsonreuters.com/en/products-services/tax-accounting.html",
+        "https://blogs.thomsonreuters.com/answerson/",
+        "https://innovation.thomsonreuters.com/en.html",
+        "https://www.thomsonreuters.com/en/global-gateway.html",
+        "https://www.thomsonreuters.com/en/login.html",
+        "https://www.reuters.com/",
+        "https://www.reuters.com/news/world",
+        "https://www.reuters.com/finance",
+        "https://www.reuters.com/finance/markets",
+        "https://www.reuters.com/politics",
+        "https://www.reuters.com/subjects/myanmar-reporters",
+        "https://www.reuters.com/energy-environment",
+        "https://www.reuters.com/brexit",
+        "https://www.reuters.com/north-korea",
+        "https://www.reuters.com/subjects/charged",
+        "https://www.reuters.com/future-of-money",
+        "https://www.reuters.com/breakingviews",
+        "https://www.reuters.com/news/archive/worldNews",
+        "http://thomsonreuters.com/en/about-us/trust-principles.html",
+        "https://www.reuters.com/tools/mobile",
+        "https://newslink.reuters.com/join/subscribe",
+        "https://sales.reuters.com/en/%20",
+        "https://www.reuters.com/advertising-guidelines",
+        "https://www.reuters.com/terms-of-use",
+        "https://www.thomsonreuters.com/en/privacy-statement.html",
+        "https://www.reuters.com/tools/rss",
+        "https://www.reuters.com/info/disclaimer",
+        "https://thomsonreuters.com/copyright/%20"
     ]
 }

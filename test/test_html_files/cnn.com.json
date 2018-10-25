@@ -1,8 +1,6 @@
 {
-    "items":[
-
-    ],
-    "requests":[
+    "items": [],
+    "requests": [
         "https://www.cnn.com/privacy",
         "https://www.cnn.com/terms",
         "https://www.cnn.com/specials/live-video-2?adkey=bn",
@@ -113,7 +111,6 @@
         "https://www.cnn.com/2018/10/18/us/wisconsin-missing-girl-jayme-closs/index.html",
         "https://www.cnn.com/2018/10/18/entertainment/kim-kardashian-kanye-west-break-up-elle-magazine/index.html",
         "https://www.cnn.com/2018/10/17/tech/lindsey-graham-iranian-comments/index.html",
-        "https://bleacherreport.com/articles/2801541-mlb-must-fix-broken-replay-system-after-non-home-run-call-wrecks-astros?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial",
         "https://www.cnn.com/videos/us/2018/10/18/arizona-mine-rescue-orig-mg.cnn",
         "https://www.cnn.com/2018/10/18/politics/utah-ricin-letters-william-clyde-allen/index.html",
         "https://www.cnn.com/2018/10/16/entertainment/the-conners-roseanne/index.html",
@@ -121,10 +118,8 @@
         "https://www.cnn.com/2018/10/18/us/red-tide-florida-hurricane-michael-trnd/index.html",
         "https://www.cnn.com/2018/10/17/entertainment/delilah-son-suicide/index.html",
         "https://www.cnn.com/videos/business/2018/10/17/orange-is-the-new-black-final-season-mh-orig.cnn",
-        "https://www.comparecards.com/guide/pay-0-interest-until-2020?esourceid=6348406&utm_source=cnn&utm_medium=native&grp=pay-0-until-2020&pla=cnn.com&bdst=flat&acqs=prospecting&utm_campaign=newsandbuzz&tar=cnnnewsandbuzz&pos=1&utm_content=5+cards+charging+0+interest+until+2020&adt=none",
         "https://www.cnn.com/2018/10/18/tech/apple-october-event/index.html",
         "https://www.cnn.com/videos/health/2018/10/18/pumpkin-spice-truth-newday-vpx.cnn",
-        "https://bleacherreport.com/articles/2801491-yasiel-puig-clayton-kershaw-brilliant-as-dodgers-beat-brewers-in-nlcs-game-5?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial",
         "https://www.cnn.com/travel/article/best-haunted-house-attractions-us/index.html",
         "https://www.cnn.com/2018/10/18/entertainment/halloween-review/index.html",
         "https://www.cnn.com/2018/10/18/health/internet-memes-obesity-intl/index.html",
@@ -138,12 +133,6 @@
         "https://www.cnn.com/2018/10/18/success/adinas-jewels-startup/index.html",
         "https://www.cnn.com/2018/10/05/tech/havenly/index.html",
         "https://www.cnn.com/2018/10/02/tech/dandelion-air-google/index.html",
-        "http://bleacherreport.com/?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial",
-        "https://bleacherreport.com/articles/2801500-nikes-lebron-line-finding-its-footing-again-with-creativity-and-collaboration?utm_source=cnn.com&utm_campaign=editorial&utm_medium=referral",
-        "https://bleacherreport.com/articles/2801661-can-floyd-mayweather-vs-khabib-nurmagomedov-possibly-be-real?utm_source=cnn.com&utm_campaign=editorial&utm_medium=referral",
-        "https://bleacherreport.com/articles/2801435-adam-kramer-on-college-football-michigans-secret-weapon-on-its-coaching-staff?utm_source=cnn.com&utm_campaign=editorial&utm_medium=referral",
-        "https://bleacherreport.com/articles/2801116-nfl-backups-who-deserve-more-playing-time?utm_source=cnn.com&utm_campaign=editorial&utm_medium=referral",
-        "https://bleacherreport.com/articles/2801406-marcus-mariota-was-once-the-next-big-thing-what-went-wrong?utm_source=cnn.com&utm_campaign=editorial&utm_medium=referral",
         "http://www.cnn.com/opinions",
         "https://www.cnn.com/2018/10/18/opinions/betsy-devos-failure-on-dept-of-education-anniversary-huelsman/index.html",
         "https://www.cnn.com/2018/10/17/opinions/the-conners-cast-roseanne-barr-clay-cane/index.html",
