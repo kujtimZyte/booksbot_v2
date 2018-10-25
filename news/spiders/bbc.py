@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Parser for the BBC website"""
-from .common import extract_metadata, extract_text_with_links, extract_imgs
+from .common import extract_text_with_links, extract_item
 
 
 def bbc_parse(response):
@@ -10,8 +10,7 @@ def bbc_parse(response):
         paragraph_list = []
         for p_element in div_element.css("p"):
             paragraph_list.extend(extract_text_with_links(p_element, []))
-        imgs = extract_imgs(response, div_element)
-        item = {'articleBody': paragraph_list, 'imgs' : imgs}
-        item.update(extract_metadata(response))
-        items.append(item)
+        item = extract_item(response, paragraph_list, div_element)
+        if item:
+            items.append(item)
     return items

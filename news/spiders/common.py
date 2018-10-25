@@ -55,3 +55,13 @@ def extract_imgs(response, element):
         full_img = response.urljoin(img)
         imgs.append(full_img)
     return imgs
+
+
+def extract_item(response, paragraph_list, main_element):
+    """Extracts items from a paragraph list, the main element and the response"""
+    if not paragraph_list:
+        return None
+    item = extract_metadata(response)
+    item['articleBody'] = paragraph_list
+    item['imgs'] = extract_imgs(response, main_element)
+    return item

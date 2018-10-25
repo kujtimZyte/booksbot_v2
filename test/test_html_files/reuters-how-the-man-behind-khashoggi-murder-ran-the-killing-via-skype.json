@@ -9,7 +9,6 @@
                     "DCSext.ContentChannel": "worldNews",
                     "DCSext.DartZone": "us.reuters/world/article",
                     "REVISION_DATE": "Mon Oct 22 19:02:58 UTC 2018",
-                    "alternativeHeadline": "How the man behind Khashoggi murder ran the killing via Skype",
                     "analyticsAttributes.articleDate": "2018-10-22T19:02:58+0000",
                     "analyticsAttributes.author": "Reuters Editorial",
                     "analyticsAttributes.canonicalUrl": "https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA",
@@ -216,21 +215,13 @@
                             "text": "Sponsored"
                         }
                     ],
-                    "articleSection": "World",
-                    "author": "Reuters Editorial",
-                    "dateCreated": "2018-10-22T19:02:58+0000",
-                    "dateModified": "2018-10-22T19:02:58+0000",
-                    "datePublished": "2018-10-22T19:02:58+0000",
                     "description": "He ran social media for Saudi Arabia's crown prince. He masterminded the arrest of hundreds of his country's elite. He detained a Lebanese prime minister. And, according to two intelligence sources, he ran journalist Jamal Khashoggi's brutal killing at the Saudi consulate in Istanbul by giving orders over Skype.",
-                    "headline": "How the man behind Khashoggi murder ran the killing via Skype",
-                    "image": "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
                     "imgs": [
                         "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&r=LYNXNPEE9L1NX&w=1280",
                         "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&r=LYNXNPEE9L1NX&w=20",
                         "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510716&r=LYNXNPEE9L1NW&w=20",
                         "https://s3.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317494946&r=LYNXNPEE9L1JO&w=20"
                     ],
-                    "isPartOf": "World",
                     "keywords": "US,SAUDI,KHASHOGGI,ADVISER,INSIGHT,Insights,Western Europe,Diplomacy / Foreign Policy,Media and Publishing (TRBC),Crime,Government / Politics,Special Reports,Saudi Arabia,General News,Major News,Europe,Middle East,Enterprise Reporting,United Kingdom,Media / Publishing (Legacy),International / National Security,Conflicts / War / Peace,Emerging Market Countries,Civil Unrest,Murder / Suspected Murder,Turkey,United States",
                     "msapplication-TileColor": "#ff8000",
                     "msapplication-TileImage": "https://s2.reutersmedia.net/resources_v2/images/mstile-144x144.png",
@@ -257,7 +248,6 @@
                     "sailthru.date": "2018-10-22T19:02:58+0000",
                     "sailthru.title": "How the man behind Khashoggi murder ran the killing via Skype",
                     "theme-color": "#ffffff",
-                    "thumbnailUrl": "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
                     "twitter:card": "summary_large_image",
                     "twitter:creator": "@Reuters",
                     "twitter:description": "He ran social media for Saudi Arabia's crown prince. He masterminded the arrest of hundreds of his country's elite. He detained a Lebanese prime minister. And, according to two intelligence ...",
@@ -265,7 +255,6 @@
                     "twitter:image:src": "https://s4.reutersmedia.net/resources/r/?m=02&d=20181022&t=2&i=1317510721&w=1200&r=LYNXNPEE9L1NX",
                     "twitter:site": "@Reuters",
                     "twitter:title": "How the man behind Khashoggi murder ran the killing via Skype",
-                    "url": "https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA",
                     "viewport": "width=device-width, initial-scale=1, user-scalable=no"
                 }
             ],
