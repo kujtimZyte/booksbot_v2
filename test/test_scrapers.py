@@ -21,6 +21,7 @@ class TestNewsSpider(unittest.TestCase):
             'cnn-canada-legal-pot-ticket-trnd.html',
             'https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd',
             'cnn-canada-legal-pot-ticket-trnd.json')
+
     def test_cnn_aretha_franklin_fast_facts(self):
         self.check_fake_html_scrape(
             'cnn-aretha-franklin-fast-facts.html',
@@ -68,6 +69,18 @@ class TestNewsSpider(unittest.TestCase):
             'guardian-next-generation-2018-20-of-the-best-talents-at-premier-league-clubs.html',
             'https://www.theguardian.com/football/ng-interactive/2018/oct/10/next-generation-2018-20-of-the-best-talents-at-premier-league-clubs',
             'guardian-next-generation-2018-20-of-the-best-talents-at-premier-league-clubs.json')
+
+    def test_cbc_homepage(self):
+        self.check_fake_html_scrape(
+            'cbc.ca.html',
+            'https://www.cbc.ca/',
+            'cbc.ca.json')
+
+    def test_cbc_trump_pipe_bomb(self):
+        self.check_fake_html_scrape(
+            'cbc-trump-pipe-bomb.html',
+            'https://www.cbc.ca/news/opinion/trump-pipe-bomb-1.4878980',
+            'cbc-trump-pipe-bomb.json')
 
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)

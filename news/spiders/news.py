@@ -21,6 +21,7 @@ from .reuters import reuters_parse
 from .guardian import guardian_parse
 from .bbc import bbc_parse
 from .common import extract_urls
+from .cbc import cbc_parse
 
 
 def write_gcp_credentials():
@@ -76,13 +77,15 @@ class NewsSpider(scrapy.Spider):
         "cnn.com",
         "reuters.com",
         "theguardian.com",
-        "bbc.com"
+        "bbc.com",
+        "cbc.ca"
     ]
     start_urls = [
         'http://www.cnn.com',
         'https://www.reuters.com/',
         'https://www.theguardian.com/international?INTCMP=CE_INT',
-        'http://www.bbc.com'
+        'http://www.bbc.com',
+        'https://www.cbc.ca/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -92,7 +95,8 @@ class NewsSpider(scrapy.Spider):
         "cnn.com": cnn_parse,
         "reuters.com": reuters_parse,
         "theguardian.com": guardian_parse,
-        "bbc.com": bbc_parse
+        "bbc.com": bbc_parse,
+        "cbc.ca": cbc_parse
     }
 
 
