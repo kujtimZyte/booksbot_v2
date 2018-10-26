@@ -51,6 +51,20 @@ def write_gcp_credentials():
     os.environ[gcs_env_key] = credentials_filepath
 
 
+def check_valid_item(response_url, item):
+    if isinstance(item, dict):
+        for key in item:
+            check_valid_item(response_url, key)
+            sub_item = item[key]
+            check_valid_item(response_url, sub_item)
+    elif isinstance(item, list):
+        for list_item in item:
+            check_valid_item(response_url, list_item)
+    else:
+        if not isinstance(item, basestring):
+            raise ValueError('Found a non string object when parsing: {}'.format(response_url))
+
+
 class NewsSpider(scrapy.Spider):
     """Responsible for parsing news sites"""
     name = "news"
@@ -94,6 +108,7 @@ class NewsSpider(scrapy.Spider):
             if host_name.endswith(domain):
                 items = self.parsers[domain](response)
                 if items:
+                    check_valid_item(response.url, items)
                     if self.write_items_to_gcs(items):
                         yield {
                             'items': items,

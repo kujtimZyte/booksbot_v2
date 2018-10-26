@@ -20,7 +20,8 @@ def extract_metadata(response):
         meta_key = name
         if not meta_key:
             meta_key = meta_property
-        metadata[meta_key] = content
+        if isinstance(meta_key, basestring) and isinstance(content, basestring):
+            metadata[meta_key] = content
     return metadata
 
 
