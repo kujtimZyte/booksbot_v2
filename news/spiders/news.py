@@ -52,6 +52,10 @@ def write_gcp_credentials():
 
 
 def check_valid_item(response_url, item):
+    """
+    Checks whether an item to post to the scraping hub is valid
+    E.g. it must be either, dictionaries, lists or strings
+    """
     if isinstance(item, dict):
         for key in item:
             check_valid_item(response_url, key)
