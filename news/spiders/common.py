@@ -66,3 +66,16 @@ def extract_item(response, paragraph_list, main_element):
     item['articleBody'] = paragraph_list
     item['imgs'] = extract_imgs(response, main_element)
     return item
+
+
+def extract_item_from_element_css(response, css_selector):
+    """Extracts items from a single css selector"""
+    items = []
+    for div_element in response.css(css_selector):
+        paragraph_list = []
+        for p_element in div_element.css("p"):
+            paragraph_list.extend(extract_text_with_links(p_element, []))
+        item = extract_item(response, paragraph_list, div_element)
+        if item:
+            items.append(item)
+    return items
