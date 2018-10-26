@@ -22,6 +22,7 @@ The support table looks like so:
 | [Reuters](https://www.reuters.com/)                                 | 22nd October 2018 | Stable |
 | [Guardian](https://www.theguardian.com/international?INTCMP=CE_INT) | 23rd October 2018 | Stable |
 | [BBC](http://www.bbc.com)                                           | 24th October 2018 | Stable |
+| [CBC](https://www.cbc.ca/)                                          | 26th October 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)

@@ -21,6 +21,7 @@ from .reuters import reuters_parse
 from .guardian import guardian_parse
 from .bbc import bbc_parse
 from .common import extract_urls
+from .cbc import cbc_parse
 
 
 def write_gcp_credentials():
@@ -51,6 +52,24 @@ def write_gcp_credentials():
     os.environ[gcs_env_key] = credentials_filepath
 
 
+def check_valid_item(response_url, item):
+    """
+    Checks whether an item to post to the scraping hub is valid
+    E.g. it must be either, dictionaries, lists or strings
+    """
+    if isinstance(item, dict):
+        for key in item:
+            check_valid_item(response_url, key)
+            sub_item = item[key]
+            check_valid_item(response_url, sub_item)
+    elif isinstance(item, list):
+        for list_item in item:
+            check_valid_item(response_url, list_item)
+    else:
+        if not isinstance(item, basestring):
+            raise ValueError('Found a non string object when parsing: {}'.format(response_url))
+
+
 class NewsSpider(scrapy.Spider):
     """Responsible for parsing news sites"""
     name = "news"
@@ -58,13 +77,15 @@ class NewsSpider(scrapy.Spider):
         "cnn.com",
         "reuters.com",
         "theguardian.com",
-        "bbc.com"
+        "bbc.com",
+        "cbc.ca"
     ]
     start_urls = [
         'http://www.cnn.com',
         'https://www.reuters.com/',
         'https://www.theguardian.com/international?INTCMP=CE_INT',
-        'http://www.bbc.com'
+        'http://www.bbc.com',
+        'https://www.cbc.ca/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -74,7 +95,8 @@ class NewsSpider(scrapy.Spider):
         "cnn.com": cnn_parse,
         "reuters.com": reuters_parse,
         "theguardian.com": guardian_parse,
-        "bbc.com": bbc_parse
+        "bbc.com": bbc_parse,
+        "cbc.ca": cbc_parse
     }
 
 
@@ -94,6 +116,7 @@ class NewsSpider(scrapy.Spider):
             if host_name.endswith(domain):
                 items = self.parsers[domain](response)
                 if items:
+                    check_valid_item(response.url, items)
                     if self.write_items_to_gcs(items):
                         yield {
                             'items': items,

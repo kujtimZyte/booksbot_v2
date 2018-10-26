@@ -3,7 +3,6 @@
         {
             "items": [
                 {
-                    "null": "on",
                     "Author": "Reuters Editorial",
                     "DCSext.ChannelList": "worldNews;everythingNews;media-industry;specialReports;middle-east-news;middle-east;middle-east-full-coverage;middle-east-insights;US-The-Wire;USWire_EL",
                     "DCSext.ContentChannel": "worldNews",
