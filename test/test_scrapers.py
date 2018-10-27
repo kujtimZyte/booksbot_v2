@@ -82,6 +82,42 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.cbc.ca/news/opinion/trump-pipe-bomb-1.4878980',
             'cbc-trump-pipe-bomb.json')
 
+    def test_independent_homepage(self):
+        self.check_fake_html_scrape(
+            'independent.co.uk.html',
+            'https://www.independent.co.uk/us',
+            'independent.co.uk.json')
+
+    def test_independent_bomb_arrest_live_cesar_sayoc_florida_update_nyc_bomber_cnn_trump_latest(self):
+        self.check_fake_html_scrape(
+            'independent-bomb-arrest-live-cesar-sayoc-florida-update-nyc-bomber-cnn-trump-latest.html',
+            'https://www.independent.co.uk/news/world/americas/bomb-arrest-live-cesar-sayoc-florida-update-nyc-bomber-cnn-trump-latest-a8603651.html',
+            'independent-bomb-arrest-live-cesar-sayoc-florida-update-nyc-bomber-cnn-trump-latest.json')
+
+    def test_the_verge_homepage(self):
+        self.check_fake_html_scrape(
+            'theverge.com.html',
+            'https://www.theverge.com/',
+            'theverge.com.json')
+
+    def test_the_verge_channel_zero_dream_door_syfy_horror_show(self):
+        self.check_fake_html_scrape(
+            'theverge-channel-zero-dream-door-syfy-horror-show.html',
+            'https://www.theverge.com/2018/10/26/18022758/channel-zero-dream-door-syfy-horror-show',
+            'theverge-channel-zero-dream-door-syfy-horror-show.json')
+
+    def test_nytimes_homepage(self):
+        self.check_fake_html_scrape(
+            'nytimes.com.html',
+            'https://www.nytimes.com/',
+            'nytimes.com.json')
+
+    def test_nytimes_cnn_cory_booker_pipe_bombs_sent(self):
+        self.check_fake_html_scrape(
+            'nytimes-cnn-cory-booker-pipe-bombs-sent.html',
+            'https://www.nytimes.com/2018/10/26/nyregion/cnn-cory-booker-pipe-bombs-sent.html?action=click&module=Top%20Stories&pgtype=Homepage',
+            'nytimes-cnn-cory-booker-pipe-bombs-sent.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)

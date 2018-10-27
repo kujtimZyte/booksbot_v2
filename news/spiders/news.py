@@ -22,6 +22,9 @@ from .guardian import guardian_parse
 from .bbc import bbc_parse
 from .common import extract_urls
 from .cbc import cbc_parse
+from .independent import independent_parse
+from .theverge import the_verge_parse
+from .nytimes import nytimes_parse
 
 
 def write_gcp_credentials():
@@ -70,6 +73,17 @@ def check_valid_item(response_url, item):
             raise ValueError('Found a non string object when parsing: {}'.format(response_url))
 
 
+def get_user_agent():
+    """Gets the user agent to spoof (some news require a valid one)"""
+    user_agent_parts = [
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0)',
+        'AppleWebKit/537.36 (KHTML, like Gecko)',
+        'Chrome/69.0.3497.100',
+        'Safari/537.36'
+    ]
+    return ' '.join(user_agent_parts)
+
+
 class NewsSpider(scrapy.Spider):
     """Responsible for parsing news sites"""
     name = "news"
@@ -78,14 +92,20 @@ class NewsSpider(scrapy.Spider):
         "reuters.com",
         "theguardian.com",
         "bbc.com",
-        "cbc.ca"
+        "cbc.ca",
+        "independent.co.uk",
+        "theverge.com",
+        "nytimes.com"
     ]
     start_urls = [
         'http://www.cnn.com',
         'https://www.reuters.com/',
         'https://www.theguardian.com/international?INTCMP=CE_INT',
         'http://www.bbc.com',
-        'https://www.cbc.ca/'
+        'https://www.cbc.ca/',
+        'https://www.independent.co.uk/us',
+        'https://www.theverge.com/',
+        'https://www.nytimes.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -96,13 +116,21 @@ class NewsSpider(scrapy.Spider):
         "reuters.com": reuters_parse,
         "theguardian.com": guardian_parse,
         "bbc.com": bbc_parse,
-        "cbc.ca": cbc_parse
+        "cbc.ca": cbc_parse,
+        "independent.co.uk": independent_parse,
+        "theverge.com": the_verge_parse,
+        "nytimes.com": nytimes_parse
     }
 
 
     def start_requests(self):
         for url in self.start_urls:
-            yield SplashRequest(url, self.parse, endpoint='render.html', args={'wait': 0.5})
+            yield SplashRequest(url, self.parse, endpoint='render.html', args={
+                'wait': 0.5,
+                'headers': {
+                    'User-Agent': get_user_agent()
+                }
+            })
 
 
     def parse(self, response):
