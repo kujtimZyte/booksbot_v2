@@ -106,6 +106,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.theverge.com/2018/10/26/18022758/channel-zero-dream-door-syfy-horror-show',
             'theverge-channel-zero-dream-door-syfy-horror-show.json')
 
+    def test_nytimes_homepage(self):
+        self.check_fake_html_scrape(
+            'nytimes.com.html',
+            'https://www.nytimes.com/',
+            'nytimes.com.json')
+
+    def test_nytimes_cnn_cory_booker_pipe_bombs_sent(self):
+        self.check_fake_html_scrape(
+            'nytimes-cnn-cory-booker-pipe-bombs-sent.html',
+            'https://www.nytimes.com/2018/10/26/nyregion/cnn-cory-booker-pipe-bombs-sent.html?action=click&module=Top%20Stories&pgtype=Homepage',
+            'nytimes-cnn-cory-booker-pipe-bombs-sent.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)

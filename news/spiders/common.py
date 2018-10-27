@@ -1,5 +1,29 @@
 # -*- coding: utf-8 -*-
 """Common utilities for scraping"""
+import re
+
+
+def extract_string_from_javascript(response_text, start_index):
+    """Extracts a string from a javascript string in text"""
+    string_length = 0
+    while True:
+        if response_text[start_index + string_length] == '"':
+            if response_text[start_index + string_length - 1] != '\\':
+                break
+        string_length += 1
+    final_string = response_text[start_index:start_index + string_length]
+    return final_string.encode('utf-8').decode('unicode-escape')
+
+
+def extract_javascript_strings(response_text, start_pattern):
+    """Extracts many javascript strings based on a pattern"""
+    text_strings = []
+    for found_pattern in re.finditer(start_pattern, response_text):
+        start_index = found_pattern.start()
+        begin_looking_index = start_index + len(start_pattern)
+        text = extract_string_from_javascript(response_text, begin_looking_index)
+        text_strings.append(text)
+    return text_strings
 
 
 def extract_urls(response):
@@ -7,6 +31,9 @@ def extract_urls(response):
     urls = []
     for url in response.xpath("//a/@href").extract():
         urls.append(response.urljoin(url))
+    text_strings = extract_javascript_strings(response.text, '{"__typename":"LinkFormat","url":"')
+    for text_string in text_strings:
+        urls.append(response.urljoin(text_string))
     return urls
 
 
