@@ -94,6 +94,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.independent.co.uk/news/world/americas/bomb-arrest-live-cesar-sayoc-florida-update-nyc-bomber-cnn-trump-latest-a8603651.html',
             'independent-bomb-arrest-live-cesar-sayoc-florida-update-nyc-bomber-cnn-trump-latest.json')
 
+    def test_the_verge_homepage(self):
+        self.check_fake_html_scrape(
+            'theverge.com.html',
+            'https://www.theverge.com/',
+            'theverge.com.json')
+
+    def test_the_verge_channel_zero_dream_door_syfy_horror_show(self):
+        self.check_fake_html_scrape(
+            'theverge-channel-zero-dream-door-syfy-horror-show.html',
+            'https://www.theverge.com/2018/10/26/18022758/channel-zero-dream-door-syfy-horror-show',
+            'theverge-channel-zero-dream-door-syfy-horror-show.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)

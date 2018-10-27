@@ -23,6 +23,7 @@ from .bbc import bbc_parse
 from .common import extract_urls
 from .cbc import cbc_parse
 from .independent import independent_parse
+from .theverge import the_verge_parse
 
 
 def write_gcp_credentials():
@@ -91,7 +92,8 @@ class NewsSpider(scrapy.Spider):
         "theguardian.com",
         "bbc.com",
         "cbc.ca",
-        "independent.co.uk"
+        "independent.co.uk",
+        "theverge.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -99,8 +101,10 @@ class NewsSpider(scrapy.Spider):
         'https://www.theguardian.com/international?INTCMP=CE_INT',
         'http://www.bbc.com',
         'https://www.cbc.ca/',
-        'https://www.independent.co.uk/us'
+        'https://www.independent.co.uk/us',
+        'https://www.theverge.com/'
     ]
+    #start_urls = [ 'https://www.theverge.com/2018/10/26/18022758/channel-zero-dream-door-syfy-horror-show' ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
     storage = None
@@ -111,7 +115,8 @@ class NewsSpider(scrapy.Spider):
         "theguardian.com": guardian_parse,
         "bbc.com": bbc_parse,
         "cbc.ca": cbc_parse,
-        "independent.co.uk": independent_parse
+        "independent.co.uk": independent_parse,
+        "theverge.com": the_verge_parse
     }
 
 

@@ -24,6 +24,7 @@ The support table looks like so:
 | [BBC](http://www.bbc.com)                                           | 24th October 2018 | Stable |
 | [CBC](https://www.cbc.ca/)                                          | 26th October 2018 | Stable |
 | [The Independent](https://www.independent.co.uk)                    | 27th October 2018 | Stable |
+| [The Verge](https://www.theverge.com/)                              | 27th October 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
