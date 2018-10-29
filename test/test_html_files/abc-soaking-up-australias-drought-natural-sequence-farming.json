@@ -1,0 +1,755 @@
+{
+    "items": [
+        {
+            "items": [
+                {
+                    "ABC.ContentType": "CMArticle",
+                    "ABC.editorialGenre": "News & Current Affairs",
+                    "ABC.productionUnit": "CAFF - Australian Story",
+                    "ABC.site": "ABC News",
+                    "ABC.tags": "drought;rural;sustainable-and-alternative-farming;beef-cattle;livestock",
+                    "ABC_WCMS_sitesearch_include": "true",
+                    "ContentId": "10312844",
+                    "DC.Publisher.CorporateName": "Australian Broadcasting Corporation",
+                    "DC.coverage.postcode": "2621",
+                    "DC.creator.CorporateName": "Australian Broadcasting Corporation",
+                    "DC.date": "2018-10-29T06:03:08+1100",
+                    "DC.format": "text/html",
+                    "DC.identifier": "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844",
+                    "DC.language": "en-AU",
+                    "DC.rights": "https://www.abc.net.au/conditions.htm#UseOfContent",
+                    "DC.rightsHolder": "ABC",
+                    "DC.subject": "Disasters and Accidents:Drought;Rural;Rural:Sustainable and Alternative Farming;Rural:Livestock:Beef Cattle;Rural:Livestock",
+                    "DC.title": "'We can fix all this': Could this be the solution to Australia's drought crisis?",
+                    "DC.type": "Current",
+                    "DCSext.LocalRegion": "illawarra",
+                    "DCTERMS.issued": "2018-10-29T06:03:08+1100",
+                    "DCTERMS.modified": "2018-10-29T10:15:41+1100",
+                    "DCTERMS.spatial": "east=149.4382;north=-35.2587",
+                    "ICBM": "-35.2587,149.4382",
+                    "apple-mobile-web-app-title": "ABC News",
+                    "article:author": "https://www.abc.net.au/news/winsome-denyer/7991864",
+                    "article:modified_time": "2018-10-29T10:15:41+1100",
+                    "article:published_time": "2018-10-29T06:03:08+1100",
+                    "article:publisher": "https://www.facebook.com/abcnews.au",
+                    "article:tag": "Livestock",
+                    "articleBody": [
+                        {
+                            "text": "When Tony Coote was buried in August on his beloved property, Mulloon Creek Natural Farms, his mischievous sense of humour was evident: he was lowered into his grave in a handmade wicker basket made of willow."
+                        },
+                        {
+                            "text": "It was, some say, a parting gesture to those who had complained about him planting willow trees to repair degraded landscapes."
+                        },
+                        {
+                            "text": "Like the rest of New South Wales, Mulloon Creek is in drought. The egg and beef operation, 45 minutes outside Canberra, is experiencing its driest seven months on record, with less than 150mm of rainfall."
+                        },
+                        {
+                            "text": "But, unlike other farms in the region, there's water flowing through the creek \u2014 crystal clear water, good enough to drink."
+                        },
+                        {
+                            "text": "This is no miracle \u2014  it's the result of Mr Coote's dedication over a decade to the ethos of Peter Andrews, lauded for his ability to rehabilitate dry, degraded and salt-ravaged landscapes."
+                        },
+                        {
+                            "text": "Australian Story's 2005 episode on Mr Andrews and Tarwyn Park, the Hunter Valley property where he pioneered his controversial land regenerating system known as Natural Sequence Farming, was one of the program's most popular ever."
+                        },
+                        {
+                            "link": "/news/2015-05-11/hopes-tarwyn-park-natural-sequence-farming-methods-to-continue/6459040",
+                            "text": "Ten years later, Tarwyn Park was acquired by Korean mining interests"
+                        },
+                        {
+                            "text": ", but that didn't stop Mr Andrews's groundbreaking work."
+                        },
+                        {
+                            "text": "He travels the country advising landholders, and Mr Coote ensured ongoing scientific research and lobbying for Natural Sequence Farming through his legacy, The Mulloon Institute."
+                        },
+                        {
+                            "text": "And Mr Andrews's son, Stuart, runs the Tarwyn Park Training Program at the institute."
+                        },
+                        {
+                            "text": "\"The elixir of life; can't get water that tastes like that out of a city anywhere,\" says Mr Andrews, 78, as he negotiates the rocky edge of Mulloon Creek to reach down and cup some water in his hand."
+                        },
+                        {
+                            "text": "In the midst of the state's worst drought in decades, with no reprieve forecast, it truly is a sight to behold."
+                        },
+                        {
+                            "text": "Media player: \"Space\" to play, \"M\" to mute, \"left\" and \"right\" to seek."
+                        },
+                        {
+                            "text": "When Mr Coote, the then-executive chairman of Angus and Coote Jewellers, watched Mr Andrews's Australian Story, he was riveted."
+                        },
+                        {
+                            "text": "Mr Coote could see the genius behind his method of reading the landscape and tapping into the land's natural system of self-rehydration."
+                        },
+                        {
+                            "text": "He reached out to Mr Andrews and asked him to take a look at the Mulloon Creek property he'd bought in the late 1960s."
+                        },
+                        {
+                            "text": "\"Our land is severely dehydrated. We know our bodies cannot work unless they're hydrated, we know plants and animals can't work unless they are hydrated. But our land is dehydrated,\" Mr Coote"
+                        },
+                        {
+                            "link": "/news/2015-05-05/the-battle-for-tarwyn-park/6441486",
+                            "text": "told Australian Story in 2015"
+                        },
+                        {
+                            "text": "."
+                        },
+                        {
+                            "text": "We can fix all this, that's the good news. And we can do it\u00a0quickly."
+                        },
+                        {
+                            "text": "At Mulloon Creek, the two men set to work building Mr Andrews's signature \"leaky weirs\" in the creek, one of many crucial steps in a complex plan to restore the landscape's original processes."
+                        },
+                        {
+                            "text": "Using rocks, fallen trees and other natural debris, a weir is constructed across the creek, not to stop the water from flowing through, but to slow the water down."
+                        },
+                        {
+                            "text": "It then has a chance to seep into the landscape on either side, rather than gushing down the creek system and straight out to sea, taking important nutrients with it."
+                        },
+                        {
+                            "text": "This is why Mulloon Creek is still running, even though there has been little rain. That water, which was stored in the landscape, is now seeping back into the creek."
+                        },
+                        {
+                            "text": "\"All we've done is reproduced what was a natural process in Australia's landscapes,\" Mr Andrews says."
+                        },
+                        {
+                            "text": "\"We've been able to get water into the floodplains which sustains the landscape in a drought.\""
+                        },
+                        {
+                            "text": "The change to the landscape on Mr Coote's farm is striking."
+                        },
+                        {
+                            "text": "\"It was so degraded that we put six truckloads of blackberry canes in the creek to trigger the fertility. Now it's growing its own fertility. It's got to the stage now where fish would love to live there, every bird wants to go there and the frogs are all singing. They're happy,\" Mr Andrews says."
+                        },
+                        {
+                            "text": "Farmers across the eastern seaboard are suffering through a drought that some consider the worst in living memory."
+                        },
+                        {
+                            "text": "And, after a long winter, the Mulloon Creek Natural Farms' paddocks don't look very green. But when you look closely, you can see life just below the blanket of brown; shoots of green grass poke up to the surface, thanks to the moisture in the soil."
+                        },
+                        {
+                            "text": "\"The soil is alive,\" says The Mulloon Institute's Peter Hazell."
+                        },
+                        {
+                            "text": "\"It's alive with fungus and bacteria, earthworms, and they're all processing that organic matter and that litter. All you need to do is have a look under that brown stubble on the surface, and you can see plenty of resilience that will help this farm burst into life again in the spring.\""
+                        },
+                        {
+                            "text": "The Mulloon Institute's research coordinator, Luke Peel, is enthusiastic as he measures the water infiltration rate in the soil. \"That is quite amazing!\""
+                        },
+                        {
+                            "text": "Bubbles flow up the cylindrical surface infiltrometer, indicating that the rate water can be absorbed into that soil is 10,000mm per hour."
+                        },
+                        {
+                            "text": "\"It's a staggering amount,\" he says. \"1,000mm per hour of rainfall is equivalent to a torrential downpour.\""
+                        },
+                        {
+                            "text": "Scientific benchmarking has proven the success of the work Mr Coote and Mr Andrews undertook in 2006, now known as the Pilot Project, with a 63 per cent increase in production on the hydrated land."
+                        },
+                        {
+                            "text": "Two years ago, The Mulloon Institute was recognised by the United Nations as"
+                        },
+                        {
+                            "link": "/news/rural/2016-09-16/un-recognises-mulloon-creek-natural-farms-as-sustainable/7852798",
+                            "text": "one of only five case studies globally to demonstrate landscape-scale sustainable agriculture"
+                        },
+                        {
+                            "text": "."
+                        },
+                        {
+                            "text": "Despite the success, there are still frustrations over government regulations for farmers wanting to implement Mr Andrews's methods."
+                        },
+                        {
+                            "text": "\"We're working in the innovation space here, and so some of what we do is outside of government policy,\" Mr Hazell says."
+                        },
+                        {
+                            "text": "\"So we also \u2026 are working with government, to try and update that policy.\""
+                        },
+                        {
+                            "text": "But after years of lobbying for national recognition, there's renewed optimism at Mulloon."
+                        },
+                        {
+                            "text": "Prime Minister Scott Morrison visited the property on Thursday, on the eve of his National Drought Summit."
+                        },
+                        {
+                            "text": "Inspecting the flowing creek, he lauded Mr Andrews as a \"real leader and visionary\" and said he was inspired by Mr Coote's \"passion for the environment\"."
+                        },
+                        {
+                            "text": "Deputy Prime Minister Michael McCormack declared the success of Mulloon as a \"model for everyone\"."
+                        },
+                        {
+                            "text": "\"This needs to be replicated right around our nation. A nation that looks after its soil, looks after itself,\" he said."
+                        },
+                        {
+                            "text": "Mr Andrews and his supporters hope these high-profile accolades will translate into a smoother road for more farmers to adopt natural sequencing farming methods."
+                        },
+                        {
+                            "text": "Mr Coote died in August after several years of receiving treatment for cancer. He was 79. He bequeathed his two properties to the Institute, with the profits from the egg and beef operations supporting the ongoing research, advocacy and training around these practices."
+                        },
+                        {
+                            "text": "But that's not his only legacy. An even more ambitious project involves 20 of his neighbours."
+                        },
+                        {
+                            "text": "The Mulloon Community Landscape Rehydration Project, conceived in 2013, encompasses 20 landholders across 23,000 hectares and more than 50 kilometres of Mulloon Creek."
+                        },
+                        {
+                            "text": "\"Tony always had a really big vision,\" says Mr Hazell, who now coordinates the catchment-wide project."
+                        },
+                        {
+                            "text": "\"He thought the information should be shared to farmers all around the country.\""
+                        },
+                        {
+                            "text": "And as more in the community see the scientifically-backed results, Mr Hazell feels the tide of scepticism that once confronted Natural Sequence Farming is finally turning."
+                        },
+                        {
+                            "text": "\"Peter's work has a lot of champions out there, who are making great gains and undertaking fantastic work in the farming landscape in Australia, and I really do feel that we're at the dawn of a new revolution in agriculture.\""
+                        },
+                        {
+                            "text": "Watch Australian Story's Hope Springs on Monday at 8pm (AEDT) on ABCTV and ABCiview."
+                        },
+                        {
+                            "text": "Producers: Winsome Denyer,"
+                        },
+                        {
+                            "link": "/news/kirstin--murray/7819412",
+                            "text": "Kirstin Murray"
+                        },
+                        {
+                            "text": "Photography: Winsome Denyer, supplied, The Mulloon Institute"
+                        },
+                        {
+                            "text": "Topics:"
+                        },
+                        {
+                            "link": "/news/topic/drought",
+                            "text": "drought"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/rural",
+                            "text": "rural"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/sustainable-and-alternative-farming",
+                            "text": "sustainable-and-alternative-farming"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/beef-cattle",
+                            "text": "beef-cattle"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/livestock",
+                            "text": "livestock"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/bungendore-2621",
+                            "text": "bungendore-2621"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/sale-3850",
+                            "text": "sale-3850"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/ensay-3895",
+                            "text": "ensay-3895"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/orbost-3888",
+                            "text": "orbost-3888"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/australia",
+                            "text": "australia"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/vic",
+                            "text": "vic"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/nsw",
+                            "text": "nsw"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/bedourie-4829",
+                            "text": "bedourie-4829"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/windorah-4481",
+                            "text": "windorah-4481"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/st-george-4487",
+                            "text": "st-george-4487"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/hughenden-4821",
+                            "text": "hughenden-4821"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/winton-4735",
+                            "text": "winton-4735"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/boulia-4829",
+                            "text": "boulia-4829"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/mount-isa-4825",
+                            "text": "mount-isa-4825"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/barcaldine-4725",
+                            "text": "barcaldine-4725"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/quilpie-4480",
+                            "text": "quilpie-4480"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/longreach-4730",
+                            "text": "longreach-4730"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/blackall-4472",
+                            "text": "blackall-4472"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/cunnamulla-4490",
+                            "text": "cunnamulla-4490"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/charleville-4470",
+                            "text": "charleville-4470"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/goulburn-2580",
+                            "text": "goulburn-2580"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/wollongong-2500",
+                            "text": "wollongong-2500"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/moree-2400",
+                            "text": "moree-2400"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/gunnedah-2380",
+                            "text": "gunnedah-2380"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/griffith-2680",
+                            "text": "griffith-2680"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/walgett-2832",
+                            "text": "walgett-2832"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/bourke-2840",
+                            "text": "bourke-2840"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/canberra-2600",
+                            "text": "canberra-2600"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/bega-2550",
+                            "text": "bega-2550"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/wagga-wagga-2650",
+                            "text": "wagga-wagga-2650"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/muswellbrook-2333",
+                            "text": "muswellbrook-2333"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/orange-2800",
+                            "text": "orange-2800"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/tamworth-2340",
+                            "text": "tamworth-2340"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/dubbo-2830",
+                            "text": "dubbo-2830"
+                        },
+                        {
+                            "text": ","
+                        },
+                        {
+                            "link": "/news/topic/broken-hill-2880",
+                            "text": "broken-hill-2880"
+                        },
+                        {
+                            "text": "First posted"
+                        },
+                        {
+                            "text": "about 5 hours ago"
+                        },
+                        {
+                            "text": "Sun 28 Oct 2018, 7:03pm"
+                        },
+                        {
+                            "text": "More"
+                        },
+                        {
+                            "text": "stories from New South Wales"
+                        }
+                    ],
+                    "description": "Is natural sequence farming the secret to restoring our water-starved continent? For more than a decade, two farmers have shown that parched landscapes can be revived. And finally Canberra's listening.",
+                    "fb:pages": "72924719987",
+                    "geo.position": "-35.2587;149.4382",
+                    "imgs": [
+                        "https://www.abc.net.au/news/image/10370730-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10382672-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10382672-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10382672-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10334576-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10334576-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10334576-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10382926-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10330088-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10330088-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10330088-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10330090-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10330090-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10330090-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10330094-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10330094-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10330094-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10330098-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10330098-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10330098-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10330084-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10330084-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10330084-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10370752-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10382684-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10382684-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10382684-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10378486-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10379248-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10379248-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10379248-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10386230-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10386230-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10386230-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10432864-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10432864-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10432864-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10382648-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10382648-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10382648-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10386452-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10386452-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10386452-16x9-2150x1210.jpg",
+                        "https://www.abc.net.au/news/image/10386518-3x2-700x467.jpg",
+                        "https://www.abc.net.au/news/image/10386518-3x2-940x627.jpg",
+                        "https://www.abc.net.au/news/image/10386518-16x9-2150x1210.jpg"
+                    ],
+                    "og:description": "Is natural sequence farming the secret to restoring our water-starved continent? For more than a decade, two farmers have shown that parched landscapes can be revived. And finally Canberra's listening.",
+                    "og:image": "https://www.abc.net.au/news/image/10370752-16x9-700x394.jpg",
+                    "og:image:height": "394",
+                    "og:image:type": "image/jpeg",
+                    "og:image:width": "700",
+                    "og:site_name": "ABC News",
+                    "og:title": "'We can fix all this': Could this be the solution to Australia's drought crisis?",
+                    "og:type": "Article",
+                    "og:updated_time": "2018-10-29T10:15:41+1100",
+                    "og:url": "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844",
+                    "title": "'We can fix all this': Could this be the solution to Australia's drought crisis?",
+                    "twitter:card": "summary",
+                    "twitter:image": "https://www.abc.net.au/news/image/10370752-16x9-700x394.jpg",
+                    "twitter:site": "@ABCNews"
+                }
+            ],
+            "url": "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844"
+        }
+    ],
+    "requests": [
+        "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844#main_content",
+        "https://www.abc.net.au/",
+        "https://www.abc.net.au/news/",
+        "https://www.abc.net.au/iview/",
+        "https://www.abc.net.au/tv/",
+        "https://www.abc.net.au/radio/",
+        "https://www.abc.net.au/children/",
+        "https://shop.abc.net.au/",
+        "https://www.abc.net.au/more/",
+        "https://mobile.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844?pfm=sm",
+        "https://mylogin.abc.net.au/index.html?screen=login&next=https%3A%2F%2Fwww.abc.net.au%2Fnews%2F2018-10-29%2Fsoaking-up-australias-drought-natural-sequence-farming%2F10312844&cid=News",
+        "https://search.abc.net.au/s/search.html?collection=abcall_meta&form=simple",
+        "https://www2b.abc.net.au/EAF/View/MailToQuery.aspx?https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844",
+        "https://www.abc.net.au/news/australia/",
+        "https://www.abc.net.au/news/weather/",
+        "https://www.abc.net.au/news/justin/",
+        "https://www.abc.net.au/news/politics/",
+        "https://www.abc.net.au/news/world/",
+        "https://www.abc.net.au/news/business/",
+        "https://www.abc.net.au/news/sport/",
+        "https://www.abc.net.au/news/science/",
+        "https://www.abc.net.au/news/health/",
+        "https://www.abc.net.au/news/arts-culture/",
+        "https://www.abc.net.au/news/analysis-and-opinion/",
+        "https://www.abc.net.au/news/factcheck/",
+        "https://www.abc.net.au/news/more/",
+        "https://www.abc.net.au/austory/",
+        "https://www.abc.net.au/news/winsome-denyer/7991864",
+        "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844",
+        "https://www.abc.net.au/news/2018-10-29/before-and-after-pics-mulloon-creek/10370748",
+        "https://www.abc.net.au/news/2015-05-11/hopes-tarwyn-park-natural-sequence-farming-methods-to-continue/6459040",
+        "https://www.abc.net.au/news/2018-10-29/peter-andrews-natural-sequence-farming/10440642",
+        "https://www.abc.net.au/news/2015-05-05/the-battle-for-tarwyn-park/6441486",
+        "https://www.abc.net.au/news/2018-10-29/tony-coote-and-peter-andrews/10382994",
+        "https://www.abc.net.au/news/2018-10-29/before-and-after-mulloon-institute/10370802",
+        "https://www.abc.net.au/news/2018-10-29/aust-story-luke-peel-researching-at-the-mulloon-institute/10382542",
+        "https://www.abc.net.au/news/rural/2016-09-16/un-recognises-mulloon-creek-natural-farms-as-sustainable/7852798",
+        "https://www.abc.net.au/news/kirstin--murray/7819412",
+        "https://www.abc.net.au/news/topic/drought",
+        "https://www.abc.net.au/news/topic/rural",
+        "https://www.abc.net.au/news/topic/sustainable-and-alternative-farming",
+        "https://www.abc.net.au/news/topic/beef-cattle",
+        "https://www.abc.net.au/news/topic/livestock",
+        "https://www.abc.net.au/news/topic/bungendore-2621",
+        "https://www.abc.net.au/news/topic/sale-3850",
+        "https://www.abc.net.au/news/topic/ensay-3895",
+        "https://www.abc.net.au/news/topic/orbost-3888",
+        "https://www.abc.net.au/news/topic/australia",
+        "https://www.abc.net.au/news/topic/vic",
+        "https://www.abc.net.au/news/topic/nsw",
+        "https://www.abc.net.au/news/topic/bedourie-4829",
+        "https://www.abc.net.au/news/topic/windorah-4481",
+        "https://www.abc.net.au/news/topic/st-george-4487",
+        "https://www.abc.net.au/news/topic/hughenden-4821",
+        "https://www.abc.net.au/news/topic/winton-4735",
+        "https://www.abc.net.au/news/topic/boulia-4829",
+        "https://www.abc.net.au/news/topic/mount-isa-4825",
+        "https://www.abc.net.au/news/topic/barcaldine-4725",
+        "https://www.abc.net.au/news/topic/quilpie-4480",
+        "https://www.abc.net.au/news/topic/longreach-4730",
+        "https://www.abc.net.au/news/topic/blackall-4472",
+        "https://www.abc.net.au/news/topic/cunnamulla-4490",
+        "https://www.abc.net.au/news/topic/charleville-4470",
+        "https://www.abc.net.au/news/topic/goulburn-2580",
+        "https://www.abc.net.au/news/topic/wollongong-2500",
+        "https://www.abc.net.au/news/topic/moree-2400",
+        "https://www.abc.net.au/news/topic/gunnedah-2380",
+        "https://www.abc.net.au/news/topic/griffith-2680",
+        "https://www.abc.net.au/news/topic/walgett-2832",
+        "https://www.abc.net.au/news/topic/bourke-2840",
+        "https://www.abc.net.au/news/topic/canberra-2600",
+        "https://www.abc.net.au/news/topic/bega-2550",
+        "https://www.abc.net.au/news/topic/wagga-wagga-2650",
+        "https://www.abc.net.au/news/topic/muswellbrook-2333",
+        "https://www.abc.net.au/news/topic/orange-2800",
+        "https://www.abc.net.au/news/topic/tamworth-2340",
+        "https://www.abc.net.au/news/topic/dubbo-2830",
+        "https://www.abc.net.au/news/topic/broken-hill-2880",
+        "https://www.abc.net.au/news/nsw/",
+        "https://www.abc.net.au/news/drought/",
+        "https://www.abc.net.au/news/2018-10-16/where-has-drought-aid-been-allocated/10378278",
+        "https://www.abc.net.au/news/2018-09-02/drought-aid-volunteers-help-aussie-farmers/10189132",
+        "https://www.abc.net.au/news/rural/2018-08-30/farmers-call-for-drought-policy-reform/10183792",
+        "https://www.abc.net.au/news/rural/2018-08-01/drought-dos-and-donts-of-donations/10057862",
+        "https://www.abc.net.au/news/rural/2018-07-29/the-big-dry-see-us-hear-us-help-us/10030010",
+        "https://www.abc.net.au/news/2018-08-01/what-you-need-to-know-about-droughts/10051956",
+        "https://www.abc.net.au/news/specials/curious-canberra/",
+        "https://www.abc.net.au/news/rural/",
+        "https://www.abc.net.au/news/rural/2018-10-28/almond-tree-pollination-helps-bees-recover-from-drought/10434366",
+        "https://www.abc.net.au/news/2018-10-28/wool-industry-photography-gives-insight/10435016",
+        "https://www.abc.net.au/news/2018-10-28/woomera-prohibited-area-in-sa-government-mining-survey-sights/10432722",
+        "https://www.abc.net.au/news/rural/2018-10-28/surrogate-cows-produce-hundreds-of-calves-from-one-wagyu/10430050",
+        "https://www.abc.net.au/news/2018-10-29/women-recount-attempted-abductions-trudie-adams-disappearance/10428978",
+        "https://www.abc.net.au/news/2018-10-29/dying-pilot-tries-to-clear-his-name-after-fatal-plane-crash/10396812",
+        "https://www.abc.net.au/news/2018-10-29/warners-walk-off-leads-to-obvious-accusations-of-hypocrisy/10439234",
+        "https://www.abc.net.au/news/about/backstory/news-coverage/2018-10-29/news-breakfast-celebrates-10-years-on-air/10430516",
+        "https://www.abc.net.au/news/2018-10-29/leicester-city-football-club-owner-among-dead-helicopter-crash/10440058",
+        "https://www.abc.net.au/news/2018-10-29/windsor-inc-the-rebranding-of-the-royal-family/10427514",
+        "https://www.abc.net.au/news/2018-10-29/universal-human-rights-un-declaration-and-history/10418226",
+        "https://www.abc.net.au/news/2018-10-29/house-price-falls-chart-of-the-day/10418478",
+        "https://www.abc.net.au/news/2018-10-28/pittsburgh-synagogue-shooting-suspect-charged-with-murder/10439392",
+        "https://www.abc.net.au/news/2018-10-29/brazil-election-jair-bolsonaro-wins-presidential-race/10440704",
+        "https://www.abc.net.au/news/2018-10-29/colin-sylvia-former-afl-player-killed-in-car-crash/10440308",
+        "https://www.abc.net.au/news/2018-10-29/thai-cave-rescue-boys-visit-old-trafford-watch-manchester-united/10440226",
+        "https://www.abc.net.au/news/2018-10-29/lewis-hamilton-among-greatest-formula-one-champions/10395542",
+        "https://www.abc.net.au/news/2018-10-29/first-baby-born-with-syphilis-in-south-australia-in-18-years/10405846",
+        "https://www.abc.net.au/news/2018-10-29/australia-suffers-clean-sweep-t20-series-loss-to-pakistan/10440304",
+        "https://www.abc.net.au/news/2018-10-29/one-hill-town-billycart-races-revive-the-community-of-derby/10437236",
+        "https://www.abc.net.au/news/2018-10-29/father-son-drown-airlie-beach-lagoon-north-qld/10440276",
+        "https://www.abc.net.au/news/2018-10-29/victoria-mental-health-crisis-and-its-tragic-consequences/10433286",
+        "https://www.abc.net.au/news/2018-10-29/tasmania-strongest-population-growth-oct-commsec/10439190",
+        "https://www.abc.net.au/news/2018-10-28/betting-the-farm-on-trump/10422882",
+        "https://www.abc.net.au/news/feeds/",
+        "https://www.abc.net.au/news/contact/tip-off/",
+        "https://www.abc.net.au/news/alerts/subscribe/",
+        "https://www.abc.net.au/news/about/backstory/",
+        "https://about.abc.net.au/how-the-abc-is-run/what-guides-us/abc-editorial-standards/",
+        "https://www.abc.net.au/life/why-parenting-is-both-the-toughest-and-most-rewarding-gig/10370780",
+        "https://www.abc.net.au/news/2018-10-29/verrender-could-lower-emissions-cut-your-power-bills/10439508",
+        "https://www.abc.net.au/news/2018-10-28/what-we-know-about-the-pittsburgh-synagogue-shooting-suspect/10438872",
+        "https://www.abc.net.au/news/2018-10-28/investors-on-edge-looking-for-any-reason-to-cut-and-run/10427464",
+        "https://www.abc.net.au/news/2018-10-29/should-every-street-and-suburb-name-in-canberra-be-reviewed/10440952",
+        "https://www.abc.net.au/news/2018-10-29/man-arrested-after-petrol-station-seige-in-canberra/10440446",
+        "https://www.abc.net.au/news/2018-10-29/call-for-compulsory-council-elections-in-tasmania/10440236",
+        "https://www.abc.net.au/news/2018-10-29/drug-lab-detections-down-as-dark-web-challenges-police/10423920",
+        "https://www.abc.net.au/news/2018-10-29/daniel-ricciardo-calamitous-mexico-gp-lewis-hamilton-wins-title/10440374",
+        "https://www.abc.net.au/news/2018-10-28/daylight-saving-ends-in-europe-possibly-for-the-last-time/10438774",
+        "https://www.abc.net.au/news/2018-10-28/tensions-high-ahead-of-tony-abbott-indigenous-envoy-visit/10436810",
+        "https://www.abc.net.au/news/2018-10-28/pittsburgh-synagogue-fatal-shooting-suspect-arrested/10438138",
+        "https://www.abc.net.au/news/2018-10-28/rare-peregrine-falcons-use-perth-apartment-as-breeding-ground/10433550",
+        "https://www.abc.net.au/news/2018-10-28/rome-residents-protest-against-decline-of-italian-capital/10438758",
+        "https://www.abc.net.au/news/2018-10-28/helicopter-crashes-outside-leicester-city-football-stadium/10438590",
+        "https://www.abc.net.au/news/2018-10-28/women-in-politics-why-wa-has-lost-gender-equality-momentum/10433444",
+        "https://www.abc.net.au/news/2018-10-28/youtube-youtubers-newtubers-online-jobs-film-careers/10428098",
+        "https://www.abc.net.au/news/2018-10-27/fears-of-fatal-risk-in-wa-push-as-the-road-trip-state/10433482",
+        "https://www.abc.net.au/news/2018-10-27/banks-face-another-rough-reporting-season-years-underperforming/10432542",
+        "https://www.abc.net.au/news/2018-10-27/wentworth-by-election-trouncing-scott-morrison/10432928",
+        "https://www.abc.net.au/news/2018-10-27/halloween-costumes-blasey-ford-canada-all-saints-eve-all-hallows/10428120",
+        "https://www.abc.net.au/news/entertainment/",
+        "https://www.abc.net.au/news/topics/",
+        "https://www.abc.net.au/news/archive/",
+        "https://www.abc.net.au/news/corrections/",
+        "https://www.abc.net.au/sydney/weather/",
+        "https://www.abc.net.au/melbourne/weather/",
+        "https://www.abc.net.au/adelaide/weather/",
+        "https://www.abc.net.au/brisbane/weather/",
+        "https://www.abc.net.au/perth/weather/",
+        "https://www.abc.net.au/hobart/weather/",
+        "https://www.abc.net.au/darwin/weather/",
+        "https://www.abc.net.au/canberra/weather/",
+        "https://www.abc.net.au/sydney/news/",
+        "https://www.abc.net.au/melbourne/news/",
+        "https://www.abc.net.au/adelaide/news/",
+        "https://www.abc.net.au/brisbane/news/",
+        "https://www.abc.net.au/perth/news/",
+        "https://www.abc.net.au/hobart/news/",
+        "https://www.abc.net.au/darwin/news/",
+        "https://www.abc.net.au/canberra/news/",
+        "https://www.abc.net.au/news/video/",
+        "https://www.abc.net.au/news/audio/",
+        "https://www.abc.net.au/news/photos/",
+        "https://www.abc.net.au/news/alerts/",
+        "https://www.abc.net.au/news/upload/",
+        "https://www.abc.net.au/news/contact/",
+        "https://about.abc.net.au/terms-of-use/",
+        "https://about.abc.net.au/abc-privacy-policy/",
+        "https://about.abc.net.au/accessibility-statement/",
+        "https://about.abc.net.au/talk-to-the-abc/",
+        "https://about.abc.net.au/terms-of-use/#UseOfContent"
+    ]
+}

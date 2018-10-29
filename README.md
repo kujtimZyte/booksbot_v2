@@ -26,6 +26,7 @@ The support table looks like so:
 | [The Independent](https://www.independent.co.uk)                    | 27th October 2018 | Stable |
 | [The Verge](https://www.theverge.com/)                              | 27th October 2018 | Stable |
 | [The New York Times](https://www.nytimes.com/)                      | 27th October 2018 | Stable |
+| [Australian Broadcasting Corporation](https://www.abc.net.au/news/) | 28th October 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
@@ -162,9 +163,6 @@ Once this system is running it will post JSON files to the GCS bucket defined. T
 }
 ```
 The seemingly random metadata tags come from the `meta` tags keys and values.
-
-## Contributing :mailbox_with_mail:
-Contributions are welcomed, have a look at the [CONTRIBUTING.md](CONTRIBUTING.md) document for more information.
 
 ## License :memo:
 The project is available under the [MIT](https://opensource.org/licenses/MIT) license.
