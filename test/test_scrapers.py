@@ -130,6 +130,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844',
             'abc-soaking-up-australias-drought-natural-sequence-farming.json')
 
+    def test_stuff_homepage(self):
+        self.check_fake_html_scrape(
+            'stuff.co.nz.html',
+            'https://www.stuff.co.nz/',
+            'stuff.co.nz.json')
+
+    def test_stuff_lion_air_jet_requested_return_to_airport_before_crash(self):
+        self.check_fake_html_scrape(
+            'stuff-lion-air-jet-requested-return-to-airport-before-crash.html',
+            'https://www.stuff.co.nz/world/asia/108204710/lion-air-jet-requested-return-to-airport-before-crash',
+            'stuff-lion-air-jet-requested-return-to-airport-before-crash.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
