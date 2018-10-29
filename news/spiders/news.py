@@ -26,6 +26,7 @@ from .independent import independent_parse
 from .theverge import the_verge_parse
 from .nytimes import nytimes_parse
 from .abc import abc_parse
+from .stuff import stuff_parse
 
 
 def write_gcp_credentials():
@@ -97,7 +98,8 @@ class NewsSpider(scrapy.Spider):
         "independent.co.uk",
         "theverge.com",
         "nytimes.com",
-        "abc.net.au"
+        "abc.net.au",
+        "stuff.co.nz"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -108,7 +110,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.independent.co.uk/us',
         'https://www.theverge.com/',
         'https://www.nytimes.com/',
-        'https://www.abc.net.au/news/'
+        'https://www.abc.net.au/news/',
+        'https://www.stuff.co.nz/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -123,7 +126,8 @@ class NewsSpider(scrapy.Spider):
         "independent.co.uk": independent_parse,
         "theverge.com": the_verge_parse,
         "nytimes.com": nytimes_parse,
-        "abc.net.au": abc_parse
+        "abc.net.au": abc_parse,
+        "stuff.co.nz": stuff_parse
     }
 
 
