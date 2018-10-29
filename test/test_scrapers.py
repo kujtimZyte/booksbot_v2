@@ -118,6 +118,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.nytimes.com/2018/10/26/nyregion/cnn-cory-booker-pipe-bombs-sent.html?action=click&module=Top%20Stories&pgtype=Homepage',
             'nytimes-cnn-cory-booker-pipe-bombs-sent.json')
 
+    def test_abc_homepage(self):
+        self.check_fake_html_scrape(
+            'abc.net.au.html',
+            'https://www.abc.net.au/news/',
+            'abc.net.au.json')
+
+    def test_abc_soaking_up_australias_drought_natural_sequence_farming(self):
+        self.check_fake_html_scrape(
+            'abc-soaking-up-australias-drought-natural-sequence-farming.html',
+            'https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844',
+            'abc-soaking-up-australias-drought-natural-sequence-farming.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
