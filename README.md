@@ -28,6 +28,7 @@ The support table looks like so:
 | [The New York Times](https://www.nytimes.com/)                      | 27th October 2018 | Stable |
 | [Australian Broadcasting Corporation](https://www.abc.net.au/news/) | 28th October 2018 | Stable |
 | [stuff](https://www.stuff.co.nz/)                                   | 29th October 2018 | Stable |
+| [The Hill](https://thehill.com)                                     | 30th October 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
