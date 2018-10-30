@@ -142,6 +142,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.stuff.co.nz/world/asia/108204710/lion-air-jet-requested-return-to-airport-before-crash',
             'stuff-lion-air-jet-requested-return-to-airport-before-crash.json')
 
+    def test_thehill_homepage(self):
+        self.check_fake_html_scrape(
+            'thehill.com.html',
+            'https://thehill.com',
+            'thehill.com.json')
+
+    def test_thehill_trump_says_he_will_sign_executive_order_banning_birthright(self):
+        self.check_fake_html_scrape(
+            'thehill-trump-says-he-will-sign-executive-order-banning-birthright.html',
+            'https://thehill.com/homenews/administration/413770-trump-says-he-will-sign-executive-order-banning-birthright',
+            'thehill-trump-says-he-will-sign-executive-order-banning-birthright.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
