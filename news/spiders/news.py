@@ -143,21 +143,22 @@ class NewsSpider(scrapy.Spider):
 
     def parse(self, response):
         #open('output.html', 'w').write(response.text.encode('utf-8'))
-        host_name = urlparse.urlsplit(response.url).hostname
-        urls = extract_urls(response)
-        for url in urls:
-            if self.is_url_allowed(url):
-                yield scrapy.Request(response.urljoin(url), callback=self.parse)
-        for domain in self.parsers:
-            if host_name.endswith(domain):
-                items = self.parsers[domain](response)
-                if items:
-                    check_valid_item(response.url, items)
-                    if self.write_items_to_gcs(items):
-                        yield {
-                            'items': items,
-                            'url': response.url
-                        }
+        if isinstance(response, (scrapy.http.HtmlResponse, scrapy.http.TextResponse)):
+            host_name = urlparse.urlsplit(response.url).hostname
+            urls = extract_urls(response)
+            for url in urls:
+                if self.is_url_allowed(url):
+                    yield scrapy.Request(response.urljoin(url), callback=self.parse)
+            for domain in self.parsers:
+                if host_name.endswith(domain):
+                    items = self.parsers[domain](response)
+                    if items:
+                        check_valid_item(response.url, items)
+                        if self.write_items_to_gcs(items):
+                            yield {
+                                'items': items,
+                                'url': response.url
+                            }
 
 
     def setup_gcs(self):
