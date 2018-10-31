@@ -154,6 +154,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://thehill.com/homenews/administration/413770-trump-says-he-will-sign-executive-order-banning-birthright',
             'thehill-trump-says-he-will-sign-executive-order-banning-birthright.json')
 
+    def test_washingtonpost_homepage(self):
+        self.check_fake_html_scrape(
+            'washingtonpost.com.html',
+            'https://www.washingtonpost.com/',
+            'washingtonpost.com.json')
+
+    def test_washingtonpost_congressional_leaders_decline_to_join_trump_in_visit_to_pittsburgh_after_massacre(self):
+        self.check_fake_html_scrape(
+            'washingtonpost-congressional-leaders-decline-to-join-trump-in-visit-to-pittsburgh-after-massacre.html',
+            'https://www.washingtonpost.com/politics/congressional-leaders-decline-to-join-trump-in-visit-to-pittsburgh-after-massacre/2018/10/30/34709010-dc4e-11e8-aa33-53bad9a881e8_story.html?utm_term=.d38742ee056c',
+            'washingtonpost-congressional-leaders-decline-to-join-trump-in-visit-to-pittsburgh-after-massacre.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
