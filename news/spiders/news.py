@@ -29,6 +29,7 @@ from .abc import abc_parse
 from .stuff import stuff_parse
 from .thehill import thehill_parse
 from .washingtonpost import washingtonpost_parse
+from .globalnews import globalnews_parse
 
 
 def write_gcp_credentials():
@@ -103,7 +104,8 @@ class NewsSpider(scrapy.Spider):
         "abc.net.au",
         "stuff.co.nz",
         "thehill.com",
-        "washingtonpost.com"
+        "washingtonpost.com",
+        "globalnews.ca"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -117,7 +119,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.abc.net.au/news/',
         'https://www.stuff.co.nz/',
         'https://thehill.com/',
-        'https://www.washingtonpost.com/'
+        'https://www.washingtonpost.com/',
+        'https://globalnews.ca/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -135,7 +138,8 @@ class NewsSpider(scrapy.Spider):
         "abc.net.au": abc_parse,
         "stuff.co.nz": stuff_parse,
         "thehill.com": thehill_parse,
-        "washingtonpost.com": washingtonpost_parse
+        "washingtonpost.com": washingtonpost_parse,
+        "globalnews.ca": globalnews_parse
     }
 
 

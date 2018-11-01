@@ -166,6 +166,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.washingtonpost.com/politics/congressional-leaders-decline-to-join-trump-in-visit-to-pittsburgh-after-massacre/2018/10/30/34709010-dc4e-11e8-aa33-53bad9a881e8_story.html?utm_term=.d38742ee056c',
             'washingtonpost-congressional-leaders-decline-to-join-trump-in-visit-to-pittsburgh-after-massacre.json')
 
+    def test_globalnews_homepage(self):
+        self.check_fake_html_scrape(
+            'globalnews.ca.html',
+            'https://globalnews.ca/',
+            'globalnews.ca.json')
+
+    def test_globalnews_cleaning_up_albertas_oilpatch_could_cost_260_billion_regulatory_documents_warn(self):
+        self.check_fake_html_scrape(
+            'globalnews-cleaning-up-albertas-oilpatch-could-cost-260-billion-regulatory-documents-warn.html',
+            'https://globalnews.ca/news/4617664/cleaning-up-albertas-oilpatch-could-cost-260-billion-regulatory-documents-warn/',
+            'globalnews-cleaning-up-albertas-oilpatch-could-cost-260-billion-regulatory-documents-warn.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
