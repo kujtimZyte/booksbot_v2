@@ -250,6 +250,13 @@ class NewsSpider(scrapy.Spider):
 
 
     def requests_for_urls(self, urls):
+        """Generates request objects from urls"""
+        splash_args = {
+            'wait': 0.5,
+            'headers': {
+                'User-Agent': get_user_agent()
+            }
+        }
         requests = []
         for url in urls:
             host_name = urlparse.urlsplit(url).hostname
@@ -258,12 +265,12 @@ class NewsSpider(scrapy.Spider):
             for domain in self.parsers:
                 if host_name.endswith(domain):
                     if self.parsers[domain]["splash"]:
-                        requests.append(SplashRequest(url, self.parse, endpoint='render.html', args={
-                            'wait': 0.5,
-                            'headers': {
-                                'User-Agent': get_user_agent()
-                            }
-                        }))
+                        requests.append(
+                            SplashRequest(
+                                url,
+                                self.parse,
+                                endpoint='render.html',
+                                args=splash_args))
                     else:
                         requests.append(scrapy.Request(url, callback=self.parse))
         return requests
