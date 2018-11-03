@@ -5,58 +5,46 @@
                 {
                     "alternativeHeadline": "Weed was legal in Canada for a whole hour before someone got a ticket for driving and toking",
                     "articleBody": [
-                        [
-                            {
-                                "text": "The Winnipeg Police posted a photo later that day of a (redacted) traffic ticket one of its officers had to write for \"consuming cannabis in a motor vehicle.\""
-                            }
-                        ],
-                        [
-                            {
-                                "text": "\"So... this happened early this morning,\" the police department wrote. \"Just like alcohol, consuming cannabis is legal - and like alcohol, consuming it in your vehicle is **not**.\""
-                            }
-                        ],
-                        [
-                            {
-                                "text": "Winnipeg Police Service traffic division Insp. Gord Spado"
-                            },
-                            {
-                                "link": "https://www.cbc.ca/news/canada/manitoba/cannabis-consumption-car-ticket-1.4867328",
-                                "text": "told CBC news"
-                            },
-                            {
-                                "text": "the ticket was issued by an officer at approximately 1 a.m., a whole hour after pot buying became legal. He told CBC the weed involved in this particular traffic stop was probably illegally purchased. (CNN has reached out to the department for details.)"
-                            }
-                        ],
-                        [
-                            {
-                                "text": "While many Canadians are stoked to toke in a legal fashion now, the Winnipeg Police reminded people in a subsequent tweet that"
-                            },
-                            {
-                                "link": "https://lgcamb.ca/cannabis/",
-                                "text": "there are still laws and regulations that go along with the new provisions"
-                            },
-                            {
-                                "text": "."
-                            }
-                        ],
-                        [
-                            {
-                                "text": "\"Bottom line is that you cannot consume cannabis in your vehicle,\""
-                            },
-                            {
-                                "link": "https://twitter.com/wpgpolice/status/1052665350486192128",
-                                "text": "it tweeted"
-                            },
-                            {
-                                "text": "."
-                            }
-                        ],
-                        [
-                            {
-                                "link": "https://www.cnn.com/2018/10/17/health/canada-legalizes-recreational-marijuana/index.html",
-                                "text": "Here's what you need to know about recreational pot in Canada"
-                            }
-                        ]
+                        {
+                            "text": "The Winnipeg Police posted a photo later that day of a (redacted) traffic ticket one of its officers had to write for \"consuming cannabis in a motor vehicle.\""
+                        },
+                        {
+                            "text": "\"So... this happened early this morning,\" the police department wrote. \"Just like alcohol, consuming cannabis is legal - and like alcohol, consuming it in your vehicle is **not**.\""
+                        },
+                        {
+                            "text": "Winnipeg Police Service traffic division Insp. Gord Spado"
+                        },
+                        {
+                            "link": "https://www.cbc.ca/news/canada/manitoba/cannabis-consumption-car-ticket-1.4867328",
+                            "text": "told CBC news"
+                        },
+                        {
+                            "text": "the ticket was issued by an officer at approximately 1 a.m., a whole hour after pot buying became legal. He told CBC the weed involved in this particular traffic stop was probably illegally purchased. (CNN has reached out to the department for details.)"
+                        },
+                        {
+                            "text": "While many Canadians are stoked to toke in a legal fashion now, the Winnipeg Police reminded people in a subsequent tweet that"
+                        },
+                        {
+                            "link": "https://lgcamb.ca/cannabis/",
+                            "text": "there are still laws and regulations that go along with the new provisions"
+                        },
+                        {
+                            "text": "."
+                        },
+                        {
+                            "text": "\"Bottom line is that you cannot consume cannabis in your vehicle,\""
+                        },
+                        {
+                            "link": "https://twitter.com/wpgpolice/status/1052665350486192128",
+                            "text": "it tweeted"
+                        },
+                        {
+                            "text": "."
+                        },
+                        {
+                            "link": "https://www.cnn.com/2018/10/17/health/canada-legalizes-recreational-marijuana/index.html",
+                            "text": "Here's what you need to know about recreational pot in Canada"
+                        }
                     ],
                     "articleSection": "health",
                     "author": "AJ Willingham, CNN",

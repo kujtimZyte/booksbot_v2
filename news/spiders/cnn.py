@@ -34,8 +34,9 @@ def extract_paragraphs(itemprop_element):
             'div.zn-body__paragraph'):
         paragraph_list = extract_text_with_links(paragraph_div, removeable_paragraphs)
         if paragraph_list:
-            paragraphs.append(paragraph_list)
+            paragraphs.extend(paragraph_list)
     return paragraphs
+
 
 def cnn_parse(response):
     """
@@ -51,7 +52,9 @@ def cnn_parse(response):
                 item[property_name] = property_content
             else:
                 if property_name == u'articleBody':
-                    item[property_name] = extract_paragraphs(itemprop)
+                    if property_name not in item:
+                        item[property_name] = []
+                    item[property_name].extend(extract_paragraphs(itemprop))
         imgs = []
         for img in article.css('img::attr(src)').extract():
             full_img = response.urljoin(img)

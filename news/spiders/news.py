@@ -7,6 +7,8 @@ import urlparse
 import scrapy
 from scrapy_splash import SplashRequest
 from google.cloud import storage
+from langdetect import detect
+from langdetect import DetectorFactory
 from .custom_settings import \
 NEWS_HTTP_AUTH_USER, \
 GCS_BUCKET_NAME, \
@@ -32,6 +34,9 @@ from .washingtonpost import washingtonpost_parse
 from .globalnews import globalnews_parse
 from .businessinsider import businessinsider_parse
 from .nzherald import nzherald_parse
+
+
+DetectorFactory.seed = 0
 
 
 def write_gcp_credentials():
@@ -90,6 +95,18 @@ def get_user_agent():
     ]
     return ' '.join(user_agent_parts)
 
+
+def is_item_english(items):
+    """Detects whether an item is in English"""
+    for item in items:
+        for paragraph in item['articleBody']:
+            text = paragraph['text']
+            words = text.split()
+            # Short sentences can be confused easily
+            if len(words) > 10:
+                if detect(text) != 'en':
+                    return False
+    return True
 
 class NewsSpider(scrapy.Spider):
     """Responsible for parsing news sites"""
@@ -233,6 +250,8 @@ class NewsSpider(scrapy.Spider):
 
     def write_items_to_gcs(self, items):
         """Writes items to GCS"""
+        if not is_item_english(items):
+            return False
         if not GCS_BUCKET_NAME:
             return True
         self.setup_gcs()
