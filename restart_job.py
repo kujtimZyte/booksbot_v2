@@ -20,7 +20,7 @@ while project.jobs.count(state='running') > 0:
     print('Waiting for job to cancel...')
     time.sleep(1)
 print('Deleting all cancelled jobs...')
-for job in project.jobs.iter(state='cancelled'):
+for job in project.jobs.iter(state='finished'):
     client.get_job(job['key']).delete()
 print('Deleted all cancelled jobs')
 print('Running new job')

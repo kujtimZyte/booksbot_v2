@@ -32,6 +32,7 @@ The support table looks like so:
 | [The Washington Post](https://www.washingtonpost.com)               | 31st October 2018 | Stable |
 | [Global News](https://globalnews.ca/)                               | 1st November 2018 | Stable |
 | [Business Insider](https://www.businessinsider.com)                 | 3rd November 2018 | Stable |
+| [The New Zealand Herald](https://www.nzherald.co.nz/)               | 3rd November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)

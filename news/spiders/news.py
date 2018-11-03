@@ -31,6 +31,7 @@ from .thehill import thehill_parse
 from .washingtonpost import washingtonpost_parse
 from .globalnews import globalnews_parse
 from .businessinsider import businessinsider_parse
+from .nzherald import nzherald_parse
 
 
 def write_gcp_credentials():
@@ -107,7 +108,8 @@ class NewsSpider(scrapy.Spider):
         "thehill.com",
         "washingtonpost.com",
         "globalnews.ca",
-        "businessinsider.com"
+        "businessinsider.com",
+        "nzherald.co.nz"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -123,7 +125,8 @@ class NewsSpider(scrapy.Spider):
         'https://thehill.com/',
         'https://www.washingtonpost.com/',
         'https://globalnews.ca/',
-        'https://www.businessinsider.com/'
+        'https://www.businessinsider.com/',
+        'https://www.nzherald.co.nz/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -185,6 +188,10 @@ class NewsSpider(scrapy.Spider):
         "businessinsider.com": {
             "parser": businessinsider_parse,
             "splash": False
+        },
+        "nzherald.co.nz": {
+            "parser": nzherald_parse,
+            "splash": True
         }
     }
 
