@@ -30,6 +30,7 @@ from .stuff import stuff_parse
 from .thehill import thehill_parse
 from .washingtonpost import washingtonpost_parse
 from .globalnews import globalnews_parse
+from .businessinsider import businessinsider_parse
 
 
 def write_gcp_credentials():
@@ -105,7 +106,8 @@ class NewsSpider(scrapy.Spider):
         "stuff.co.nz",
         "thehill.com",
         "washingtonpost.com",
-        "globalnews.ca"
+        "globalnews.ca",
+        "businessinsider.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -120,37 +122,77 @@ class NewsSpider(scrapy.Spider):
         'https://www.stuff.co.nz/',
         'https://thehill.com/',
         'https://www.washingtonpost.com/',
-        'https://globalnews.ca/'
+        'https://globalnews.ca/',
+        'https://www.businessinsider.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
     storage = None
     bucket = None
     parsers = {
-        "cnn.com": cnn_parse,
-        "reuters.com": reuters_parse,
-        "theguardian.com": guardian_parse,
-        "bbc.com": bbc_parse,
-        "cbc.ca": cbc_parse,
-        "independent.co.uk": independent_parse,
-        "theverge.com": the_verge_parse,
-        "nytimes.com": nytimes_parse,
-        "abc.net.au": abc_parse,
-        "stuff.co.nz": stuff_parse,
-        "thehill.com": thehill_parse,
-        "washingtonpost.com": washingtonpost_parse,
-        "globalnews.ca": globalnews_parse
+        "cnn.com": {
+            "parser": cnn_parse,
+            "splash": True
+        },
+        "reuters.com": {
+            "parser": reuters_parse,
+            "splash": True
+        },
+        "theguardian.com": {
+            "parser": guardian_parse,
+            "splash": True
+        },
+        "bbc.com": {
+            "parser": bbc_parse,
+            "splash": True
+        },
+        "cbc.ca": {
+            "parser": cbc_parse,
+            "splash": True
+        },
+        "independent.co.uk": {
+            "parser": independent_parse,
+            "splash": True
+        },
+        "theverge.com": {
+            "parser": the_verge_parse,
+            "splash": True
+        },
+        "nytimes.com": {
+            "parser": nytimes_parse,
+            "splash": True
+        },
+        "abc.net.au": {
+            "parser": abc_parse,
+            "splash": True
+        },
+        "stuff.co.nz": {
+            "parser": stuff_parse,
+            "splash": True
+        },
+        "thehill.com": {
+            "parser": thehill_parse,
+            "splash": True
+        },
+        "washingtonpost.com": {
+            "parser": washingtonpost_parse,
+            "splash": True
+        },
+        "globalnews.ca": {
+            "parser": globalnews_parse,
+            "splash": True
+        },
+        "businessinsider.com": {
+            "parser": businessinsider_parse,
+            "splash": False
+        }
     }
 
 
     def start_requests(self):
-        for url in self.start_urls:
-            yield SplashRequest(url, self.parse, endpoint='render.html', args={
-                'wait': 0.5,
-                'headers': {
-                    'User-Agent': get_user_agent()
-                }
-            })
+        requests = self.requests_for_urls(self.start_urls)
+        for request in requests:
+            yield request
 
 
     def parse(self, response):
@@ -158,12 +200,12 @@ class NewsSpider(scrapy.Spider):
         if isinstance(response, (scrapy.http.HtmlResponse, scrapy.http.TextResponse)):
             host_name = urlparse.urlsplit(response.url).hostname
             urls = extract_urls(response)
-            for url in urls:
-                if self.is_url_allowed(url):
-                    yield scrapy.Request(response.urljoin(url), callback=self.parse)
+            requests = self.requests_for_urls(urls)
+            for request in requests:
+                yield request
             for domain in self.parsers:
                 if host_name.endswith(domain):
-                    items = self.parsers[domain](response)
+                    items = self.parsers[domain]["parser"](response)
                     if items:
                         check_valid_item(response.url, items)
                         if self.write_items_to_gcs(items):
@@ -205,3 +247,30 @@ class NewsSpider(scrapy.Spider):
             if host_name.endswith(allowed_domain):
                 return True
         return False
+
+
+    def requests_for_urls(self, urls):
+        """Generates request objects from urls"""
+        splash_args = {
+            'wait': 0.5,
+            'headers': {
+                'User-Agent': get_user_agent()
+            }
+        }
+        requests = []
+        for url in urls:
+            host_name = urlparse.urlsplit(url).hostname
+            if host_name is None:
+                continue
+            for domain in self.parsers:
+                if host_name.endswith(domain):
+                    if self.parsers[domain]["splash"]:
+                        requests.append(
+                            SplashRequest(
+                                url,
+                                self.parse,
+                                endpoint='render.html',
+                                args=splash_args))
+                    else:
+                        requests.append(scrapy.Request(url, callback=self.parse))
+        return requests
