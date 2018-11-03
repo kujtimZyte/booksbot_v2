@@ -19,6 +19,10 @@ for job in project.jobs.iter(state='running'):
 while project.jobs.count(state='running') > 0:
     print('Waiting for job to cancel...')
     time.sleep(1)
+print('Deleting all cancelled jobs...')
+for job in project.jobs.iter(state='cancelled'):
+    client.get_job(job['key']).delete()
+print('Deleted all cancelled jobs')
 print('Running new job')
 project.jobs.run(spider=spider_name)
 while project.jobs.count(state='running') == 0:
