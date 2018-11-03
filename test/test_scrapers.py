@@ -178,6 +178,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://globalnews.ca/news/4617664/cleaning-up-albertas-oilpatch-could-cost-260-billion-regulatory-documents-warn/',
             'globalnews-cleaning-up-albertas-oilpatch-could-cost-260-billion-regulatory-documents-warn.json')
 
+    def test_businessinsider_homepage(self):
+        self.check_fake_html_scrape(
+            'businessinsider.com.html',
+            'https://www.businessinsider.com',
+            'businessinsider.com.json')
+
+    def test_businessinsider_central_american_migrants_have_a_message_for_trump(self):
+        self.check_fake_html_scrape(
+            'business-insider-central-american-migrants-have-a-message-for-trump.html',
+            'https://www.businessinsider.com/central-american-migrants-have-a-message-for-trump-2018-11',
+            'business-insider-central-american-migrants-have-a-message-for-trump.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
