@@ -7,6 +7,8 @@ import urlparse
 import scrapy
 from scrapy_splash import SplashRequest
 from google.cloud import storage
+from langdetect import detect
+from langdetect import DetectorFactory
 from .custom_settings import \
 NEWS_HTTP_AUTH_USER, \
 GCS_BUCKET_NAME, \
@@ -31,6 +33,10 @@ from .thehill import thehill_parse
 from .washingtonpost import washingtonpost_parse
 from .globalnews import globalnews_parse
 from .businessinsider import businessinsider_parse
+from .nzherald import nzherald_parse
+
+
+DetectorFactory.seed = 0
 
 
 def write_gcp_credentials():
@@ -90,6 +96,18 @@ def get_user_agent():
     return ' '.join(user_agent_parts)
 
 
+def is_item_english(items):
+    """Detects whether an item is in English"""
+    for item in items:
+        for paragraph in item['articleBody']:
+            text = paragraph['text']
+            words = text.split()
+            # Short sentences can be confused easily
+            if len(words) > 10:
+                if detect(text) != 'en':
+                    return False
+    return True
+
 class NewsSpider(scrapy.Spider):
     """Responsible for parsing news sites"""
     name = "news"
@@ -107,7 +125,8 @@ class NewsSpider(scrapy.Spider):
         "thehill.com",
         "washingtonpost.com",
         "globalnews.ca",
-        "businessinsider.com"
+        "businessinsider.com",
+        "nzherald.co.nz"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -123,7 +142,8 @@ class NewsSpider(scrapy.Spider):
         'https://thehill.com/',
         'https://www.washingtonpost.com/',
         'https://globalnews.ca/',
-        'https://www.businessinsider.com/'
+        'https://www.businessinsider.com/',
+        'https://www.nzherald.co.nz/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -185,6 +205,10 @@ class NewsSpider(scrapy.Spider):
         "businessinsider.com": {
             "parser": businessinsider_parse,
             "splash": False
+        },
+        "nzherald.co.nz": {
+            "parser": nzherald_parse,
+            "splash": True
         }
     }
 
@@ -226,6 +250,8 @@ class NewsSpider(scrapy.Spider):
 
     def write_items_to_gcs(self, items):
         """Writes items to GCS"""
+        if not is_item_english(items):
+            return False
         if not GCS_BUCKET_NAME:
             return True
         self.setup_gcs()
