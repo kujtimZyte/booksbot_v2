@@ -33,6 +33,7 @@ The support table looks like so:
 | [Global News](https://globalnews.ca/)                               | 1st November 2018 | Stable |
 | [Business Insider](https://www.businessinsider.com)                 | 3rd November 2018 | Stable |
 | [The New Zealand Herald](https://www.nzherald.co.nz/)               | 3rd November 2018 | Stable |
+| [The Huffington Post](https://www.huffingtonpost.com)               | 4th November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)

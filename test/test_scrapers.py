@@ -202,6 +202,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=12154083',
             'nzherald-12154083.json')
 
+    def test_huffingtonpost_homepage(self):
+        self.check_fake_html_scrape(
+            'huffingtonpost.com.html',
+            'https://www.huffingtonpost.com/',
+            'huffingtonpost.com.json')
+
+    def test_huffingtonpost_sonny_perdue_cotton_pickin_important_ron_desantis_andrew_gillum(self):
+        self.check_fake_html_scrape(
+            'huffingtonpost-sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum.html',
+            'https://www.huffingtonpost.com/entry/sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum_us_5bde4f84e4b09d43e31f83e3',
+            'huffingtonpost-sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
