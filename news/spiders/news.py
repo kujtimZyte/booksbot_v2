@@ -34,6 +34,7 @@ from .washingtonpost import washingtonpost_parse
 from .globalnews import globalnews_parse
 from .businessinsider import businessinsider_parse
 from .nzherald import nzherald_parse
+from .huffingtonpost import huffingtonpost_parse
 
 
 DetectorFactory.seed = 0
@@ -126,7 +127,8 @@ class NewsSpider(scrapy.Spider):
         "washingtonpost.com",
         "globalnews.ca",
         "businessinsider.com",
-        "nzherald.co.nz"
+        "nzherald.co.nz",
+        "huffingtonpost.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -143,7 +145,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.washingtonpost.com/',
         'https://globalnews.ca/',
         'https://www.businessinsider.com/',
-        'https://www.nzherald.co.nz/'
+        'https://www.nzherald.co.nz/',
+        'https://www.huffingtonpost.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -208,6 +211,10 @@ class NewsSpider(scrapy.Spider):
         },
         "nzherald.co.nz": {
             "parser": nzherald_parse,
+            "splash": True
+        },
+        "huffingtonpost.com": {
+            "parser": huffingtonpost_parse,
             "splash": True
         }
     }
