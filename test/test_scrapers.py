@@ -214,6 +214,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.huffingtonpost.com/entry/sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum_us_5bde4f84e4b09d43e31f83e3',
             'huffingtonpost-sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum.json')
 
+    def test_smh_homepage(self):
+        self.check_fake_html_scrape(
+            'smh.com.au.html',
+            'https://www.smh.com.au',
+            'smh.com.au.json')
+
+    def test_smh_ghost_bus_the_scomo_express_hits_the_runway_rather_than_the_road(self):
+        self.check_fake_html_scrape(
+            'smh-ghost-bus-the-scomo-express-hits-the-runway-rather-than-the-road.html',
+            'https://www.smh.com.au/politics/federal/ghost-bus-the-scomo-express-hits-the-runway-rather-than-the-road-20181105-p50e2g.html',
+            'smh-ghost-bus-the-scomo-express-hits-the-runway-rather-than-the-road.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
