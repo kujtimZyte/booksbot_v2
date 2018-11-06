@@ -226,6 +226,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.smh.com.au/politics/federal/ghost-bus-the-scomo-express-hits-the-runway-rather-than-the-road-20181105-p50e2g.html',
             'smh-ghost-bus-the-scomo-express-hits-the-runway-rather-than-the-road.json')
 
+    def test_cnbc_homepage(self):
+        self.check_fake_html_scrape(
+            'cnbc.com.html',
+            'https://www.cnbc.com/',
+            'cnbc.com.json')
+
+    def test_cnbc_heres_what_every_major_wall_street_firm_expects_from_the_election_and_how_to_play_it(self):
+        self.check_fake_html_scrape(
+            'cnbc-heres-what-every-major-wall-street-firm-expects-from-the-election-and-how-to-play-it.html',
+            'https://www.cnbc.com/2018/11/06/heres-what-every-major-wall-street-firm-expects-from-the-election-and-how-to-play-it.html',
+            'cnbc-heres-what-every-major-wall-street-firm-expects-from-the-election-and-how-to-play-it.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)

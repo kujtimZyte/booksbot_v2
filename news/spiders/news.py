@@ -36,6 +36,7 @@ from .businessinsider import businessinsider_parse
 from .nzherald import nzherald_parse
 from .huffingtonpost import huffingtonpost_parse
 from .smh import smh_parse
+from .cnbc import cnbc_parse
 
 
 DetectorFactory.seed = 0
@@ -130,7 +131,8 @@ class NewsSpider(scrapy.Spider):
         "businessinsider.com",
         "nzherald.co.nz",
         "huffingtonpost.com",
-        "smh.com.au"
+        "smh.com.au",
+        "cnbc.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -149,7 +151,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.businessinsider.com/',
         'https://www.nzherald.co.nz/',
         'https://www.huffingtonpost.com/',
-        'https://www.smh.com.au/'
+        'https://www.smh.com.au/',
+        'https://www.cnbc.com'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -223,6 +226,10 @@ class NewsSpider(scrapy.Spider):
         "smh.com.au": {
             "parser": smh_parse,
             "splash": True
+        },
+        "cnbc.com": {
+            "parser": cnbc_parse,
+            "splash": False
         }
     }
 

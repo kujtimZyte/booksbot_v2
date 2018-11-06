@@ -35,6 +35,7 @@ The support table looks like so:
 | [The New Zealand Herald](https://www.nzherald.co.nz/)               | 3rd November 2018 | Stable |
 | [The Huffington Post](https://www.huffingtonpost.com)               | 4th November 2018 | Stable |
 | [The Sydney Morning Herald](https://www.smh.com.au)                 | 5th November 2018 | Stable |
+| [CNBC](https://www.cnbc.com)                                        | 6th November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
