@@ -37,6 +37,7 @@ from .nzherald import nzherald_parse
 from .huffingtonpost import huffingtonpost_parse
 from .smh import smh_parse
 from .cnbc import cnbc_parse
+from .vice import vice_parse
 
 
 DetectorFactory.seed = 0
@@ -132,7 +133,8 @@ class NewsSpider(scrapy.Spider):
         "nzherald.co.nz",
         "huffingtonpost.com",
         "smh.com.au",
-        "cnbc.com"
+        "cnbc.com",
+        "vice.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -152,7 +154,9 @@ class NewsSpider(scrapy.Spider):
         'https://www.nzherald.co.nz/',
         'https://www.huffingtonpost.com/',
         'https://www.smh.com.au/',
-        'https://www.cnbc.com'
+        'https://www.cnbc.com',
+        'https://www.vice.com/en_us',
+        'https://motherboard.vice.com/en_us'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -229,6 +233,10 @@ class NewsSpider(scrapy.Spider):
         },
         "cnbc.com": {
             "parser": cnbc_parse,
+            "splash": False
+        },
+        "vice.com": {
+            "parser": vice_parse,
             "splash": False
         }
     }

@@ -36,6 +36,8 @@ The support table looks like so:
 | [The Huffington Post](https://www.huffingtonpost.com)               | 4th November 2018 | Stable |
 | [The Sydney Morning Herald](https://www.smh.com.au)                 | 5th November 2018 | Stable |
 | [CNBC](https://www.cnbc.com)                                        | 6th November 2018 | Stable |
+| [Vice](https://www.vice.com/en_us)                                  | 7th November 2018 | Stable |
+| [Motherboard](https://motherboard.vice.com/en_us)                   | 7th November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
