@@ -238,6 +238,30 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.cnbc.com/2018/11/06/heres-what-every-major-wall-street-firm-expects-from-the-election-and-how-to-play-it.html',
             'cnbc-heres-what-every-major-wall-street-firm-expects-from-the-election-and-how-to-play-it.json')
 
+    def test_vice_homepage(self):
+        self.check_fake_html_scrape(
+            'vice.com.html',
+            'https://www.vice.com/en_us',
+            'vice.com.json')
+
+    def test_vice_inside_an_underground_womens_mud_wrestling_ring_in_chicago(self):
+        self.check_fake_html_scrape(
+            'vice-inside-an-underground-womens-mud-wrestling-ring-in-chicago.html',
+            'https://www.vice.com/en_us/article/9k49vz/inside-an-underground-womens-mud-wrestling-ring-in-chicago',
+            'vice-inside-an-underground-womens-mud-wrestling-ring-in-chicago.json')
+
+    def test_motherboard_homepage(self):
+        self.check_fake_html_scrape(
+            'motherboard.vice.com.html',
+            'https://motherboard.vice.com/en_us',
+            'motherboard.vice.com.json')
+
+    def test_motherboard_my_gamer_brain_is_addicted_to_the_peloton_exercise_bike(self):
+        self.check_fake_html_scrape(
+            'motherboard-my-gamer-brain-is-addicted-to-the-peloton-exercise-bike.html',
+            'https://motherboard.vice.com/en_us/article/vba4dx/my-gamer-brain-is-addicted-to-the-peloton-exercise-bike',
+            'motherboard-my-gamer-brain-is-addicted-to-the-peloton-exercise-bike.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
