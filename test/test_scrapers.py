@@ -262,6 +262,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://motherboard.vice.com/en_us/article/vba4dx/my-gamer-brain-is-addicted-to-the-peloton-exercise-bike',
             'motherboard-my-gamer-brain-is-addicted-to-the-peloton-exercise-bike.json')
 
+    def test_nbcnews_homepage(self):
+        self.check_fake_html_scrape(
+            'nbcnews.com.html',
+            'https://www.nbcnews.com/',
+            'nbcnews.com.json')
+
+    def test_nbcnews_shooting_reported_borderline_bar_grill_thousand_oaks_california(self):
+        self.check_fake_html_scrape(
+            'nbcnews-shooting-reported-borderline-bar-grill-thousand-oaks-california.html',
+            'https://www.nbcnews.com/news/us-news/shooting-reported-borderline-bar-grill-thousand-oaks-california-n933831',
+            'nbcnews-shooting-reported-borderline-bar-grill-thousand-oaks-california.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)

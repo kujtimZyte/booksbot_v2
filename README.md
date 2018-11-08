@@ -38,6 +38,7 @@ The support table looks like so:
 | [CNBC](https://www.cnbc.com)                                        | 6th November 2018 | Stable |
 | [Vice](https://www.vice.com/en_us)                                  | 7th November 2018 | Stable |
 | [Motherboard](https://motherboard.vice.com/en_us)                   | 7th November 2018 | Stable |
+| [NBC News](https://www.nbcnews.com/)                                | 8th November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
