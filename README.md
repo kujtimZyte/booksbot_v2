@@ -39,6 +39,7 @@ The support table looks like so:
 | [Vice](https://www.vice.com/en_us)                                  | 7th November 2018 | Stable |
 | [Motherboard](https://motherboard.vice.com/en_us)                   | 7th November 2018 | Stable |
 | [NBC News](https://www.nbcnews.com/)                                | 8th November 2018 | Stable |
+| [Associated Press News](https://www.apnews.com)                     | 9th November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)

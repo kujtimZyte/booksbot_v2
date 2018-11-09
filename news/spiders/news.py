@@ -39,6 +39,7 @@ from .smh import smh_parse
 from .cnbc import cnbc_parse
 from .vice import vice_parse
 from .nbc import nbc_parse
+from .apnews import apnews_parse
 
 
 DetectorFactory.seed = 0
@@ -136,7 +137,8 @@ class NewsSpider(scrapy.Spider):
         "smh.com.au",
         "cnbc.com",
         "vice.com",
-        "nbcnews.com"
+        "nbcnews.com",
+        "apnews.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -159,7 +161,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.cnbc.com',
         'https://www.vice.com/en_us',
         'https://motherboard.vice.com/en_us',
-        'https://www.nbcnews.com/'
+        'https://www.nbcnews.com/',
+        'https://www.apnews.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -244,6 +247,10 @@ class NewsSpider(scrapy.Spider):
         },
         "nbcnews.com": {
             "parser": nbc_parse,
+            "splash": True
+        },
+        "apnews.com": {
+            "parser": apnews_parse,
             "splash": True
         }
     }
