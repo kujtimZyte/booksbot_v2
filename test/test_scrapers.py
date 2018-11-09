@@ -274,6 +274,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.nbcnews.com/news/us-news/shooting-reported-borderline-bar-grill-thousand-oaks-california-n933831',
             'nbcnews-shooting-reported-borderline-bar-grill-thousand-oaks-california.json')
 
+    def test_apnews_homepage(self):
+        self.check_fake_html_scrape(
+            'apnews.com.html',
+            'https://www.apnews.com',
+            'apnews.com.json')
+
+    def test_apnews_5133931a9d734dfcb38d44feec1ec9b6(self):
+        self.check_fake_html_scrape(
+            'apnews-5133931a9d734dfcb38d44feec1ec9b6.html',
+            'https://www.apnews.com/5133931a9d734dfcb38d44feec1ec9b6',
+            'apnews-5133931a9d734dfcb38d44feec1ec9b6.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
