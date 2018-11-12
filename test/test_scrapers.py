@@ -286,6 +286,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.apnews.com/5133931a9d734dfcb38d44feec1ec9b6',
             'apnews-5133931a9d734dfcb38d44feec1ec9b6.json')
 
+    def test_thestar_homepage(self):
+        self.check_fake_html_scrape(
+            'thestar.com.html',
+            'https://www.thestar.com/?redirect=true',
+            'thestar.com.json')
+
+    def test_thestar_five_more_insurance_firms_sued_for_withholding_hst_from_accident_victims(self):
+        self.check_fake_html_scrape(
+            'thestar-five-more-insurance-firms-sued-for-withholding-hst-from-accident-victims.html',
+            'https://www.thestar.com/news/investigations/2018/11/11/five-more-insurance-firms-sued-for-withholding-hst-from-accident-victims.html',
+            'thestar-five-more-insurance-firms-sued-for-withholding-hst-from-accident-victims.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)

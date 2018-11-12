@@ -40,6 +40,7 @@ from .cnbc import cnbc_parse
 from .vice import vice_parse
 from .nbc import nbc_parse
 from .apnews import apnews_parse
+from .thestar import thestar_parse
 
 
 DetectorFactory.seed = 0
@@ -138,7 +139,8 @@ class NewsSpider(scrapy.Spider):
         "cnbc.com",
         "vice.com",
         "nbcnews.com",
-        "apnews.com"
+        "apnews.com",
+        "thestar.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -162,7 +164,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.vice.com/en_us',
         'https://motherboard.vice.com/en_us',
         'https://www.nbcnews.com/',
-        'https://www.apnews.com/'
+        'https://www.apnews.com/',
+        'https://www.thestar.com'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -251,6 +254,10 @@ class NewsSpider(scrapy.Spider):
         },
         "apnews.com": {
             "parser": apnews_parse,
+            "splash": True
+        },
+        "thestar.com": {
+            "parser": thestar_parse,
             "splash": True
         }
     }

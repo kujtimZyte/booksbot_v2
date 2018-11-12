@@ -16,35 +16,37 @@ The layer design is as follows:
 
 The support table looks like so:
 
-| News Site                                                           | Last Updated      | Status |
-| ------------------------------------------------------------------- |:-----------------:| ------:|
-| [CNN](https://www.cnn.com/)                                         | 20th October 2018 | Stable |
-| [Reuters](https://www.reuters.com/)                                 | 22nd October 2018 | Stable |
-| [Guardian](https://www.theguardian.com/international?INTCMP=CE_INT) | 23rd October 2018 | Stable |
-| [BBC](http://www.bbc.com)                                           | 24th October 2018 | Stable |
-| [CBC](https://www.cbc.ca/)                                          | 26th October 2018 | Stable |
-| [The Independent](https://www.independent.co.uk)                    | 27th October 2018 | Stable |
-| [The Verge](https://www.theverge.com/)                              | 27th October 2018 | Stable |
-| [The New York Times](https://www.nytimes.com/)                      | 27th October 2018 | Stable |
-| [Australian Broadcasting Corporation](https://www.abc.net.au/news/) | 28th October 2018 | Stable |
-| [stuff](https://www.stuff.co.nz/)                                   | 29th October 2018 | Stable |
-| [The Hill](https://thehill.com)                                     | 30th October 2018 | Stable |
-| [The Washington Post](https://www.washingtonpost.com)               | 31st October 2018 | Stable |
-| [Global News](https://globalnews.ca/)                               | 1st November 2018 | Stable |
-| [Business Insider](https://www.businessinsider.com)                 | 3rd November 2018 | Stable |
-| [The New Zealand Herald](https://www.nzherald.co.nz/)               | 3rd November 2018 | Stable |
-| [The Huffington Post](https://www.huffingtonpost.com)               | 4th November 2018 | Stable |
-| [The Sydney Morning Herald](https://www.smh.com.au)                 | 5th November 2018 | Stable |
-| [CNBC](https://www.cnbc.com)                                        | 6th November 2018 | Stable |
-| [Vice](https://www.vice.com/en_us)                                  | 7th November 2018 | Stable |
-| [Motherboard](https://motherboard.vice.com/en_us)                   | 7th November 2018 | Stable |
-| [NBC News](https://www.nbcnews.com/)                                | 8th November 2018 | Stable |
-| [Associated Press News](https://www.apnews.com)                     | 9th November 2018 | Stable |
+| News Site                                                           | Last Updated       | Status |
+| ------------------------------------------------------------------- |:------------------:| ------:|
+| [CNN](https://www.cnn.com/)                                         | 20th October 2018  | Stable |
+| [Reuters](https://www.reuters.com/)                                 | 22nd October 2018  | Stable |
+| [Guardian](https://www.theguardian.com/international?INTCMP=CE_INT) | 23rd October 2018  | Stable |
+| [BBC](http://www.bbc.com)                                           | 24th October 2018  | Stable |
+| [CBC](https://www.cbc.ca/)                                          | 26th October 2018  | Stable |
+| [The Independent](https://www.independent.co.uk)                    | 27th October 2018  | Stable |
+| [The Verge](https://www.theverge.com/)                              | 27th October 2018  | Stable |
+| [The New York Times](https://www.nytimes.com/)                      | 27th October 2018  | Stable |
+| [Australian Broadcasting Corporation](https://www.abc.net.au/news/) | 28th October 2018  | Stable |
+| [stuff](https://www.stuff.co.nz/)                                   | 29th October 2018  | Stable |
+| [The Hill](https://thehill.com)                                     | 30th October 2018  | Stable |
+| [The Washington Post](https://www.washingtonpost.com)               | 31st October 2018  | Stable |
+| [Global News](https://globalnews.ca/)                               | 1st November 2018  | Stable |
+| [Business Insider](https://www.businessinsider.com)                 | 3rd November 2018  | Stable |
+| [The New Zealand Herald](https://www.nzherald.co.nz/)               | 3rd November 2018  | Stable |
+| [The Huffington Post](https://www.huffingtonpost.com)               | 4th November 2018  | Stable |
+| [The Sydney Morning Herald](https://www.smh.com.au)                 | 5th November 2018  | Stable |
+| [CNBC](https://www.cnbc.com)                                        | 6th November 2018  | Stable |
+| [Vice](https://www.vice.com/en_us)                                  | 7th November 2018  | Stable |
+| [Motherboard](https://motherboard.vice.com/en_us)                   | 7th November 2018  | Stable |
+| [NBC News](https://www.nbcnews.com/)                                | 8th November 2018  | Stable |
+| [Associated Press News](https://www.apnews.com)                     | 9th November 2018  | Stable |
+| [The Star](https://www.thestar.com/?redirect=true)                  | 12th November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
 * [scrapy-splash](https://github.com/scrapy-plugins/scrapy-splash)
 * [google-cloud-storage](https://cloud.google.com/storage/docs/reference/libraries)
+* [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
 
 ## Installation :inbox_tray:
 The chief requirements of any installation are based off scrapy and splash, see below for local and cloud based options.
