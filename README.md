@@ -1,4 +1,4 @@
-# scraper
+<img alt="scraper" src="scraper.png" width="100%" max-width="888">
 
 [![CircleCI](https://circleci.com/gh/dust10141/scraper/tree/master.svg?style=svg)](https://circleci.com/gh/dust10141/scraper/tree/master)
 
@@ -181,3 +181,7 @@ The seemingly random metadata tags come from the `meta` tags keys and values.
 
 ## License :memo:
 The project is available under the [MIT](https://opensource.org/licenses/MIT) license.
+
+## Acknowledgements
+
+- Icon in README banner is [scraper](https://thenounproject.com/search/?q=scraper&i=474203) by Philipp Lehmann from the Noun Project.
