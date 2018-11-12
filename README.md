@@ -182,6 +182,6 @@ The seemingly random metadata tags come from the `meta` tags keys and values.
 ## License :memo:
 The project is available under the [MIT](https://opensource.org/licenses/MIT) license.
 
-# Acknowledgements
+## Acknowledgements
 
 - Icon in README banner is [scraper](https://thenounproject.com/search/?q=scraper&i=474203) by Philipp Lehmann from the Noun Project.
