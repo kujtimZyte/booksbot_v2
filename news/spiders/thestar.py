@@ -2,7 +2,6 @@
 """Parser for the Star website"""
 import json
 from bs4 import BeautifulSoup
-from .common import extract_javascript_strings, extract_metadata
 
 
 def thestar_parse(response):
@@ -27,9 +26,9 @@ def thestar_parse(response):
                 if 'text' not in body:
                     continue
                 soup = BeautifulSoup(body['text'], 'html.parser')
-                for p in soup.find_all('p'):
+                for paragraph in soup.find_all('p'):
                     item['articleBody'].append({
-                        'text': p.get_text()
+                        'text': paragraph.get_text()
                     })
             items.append(item)
             break
