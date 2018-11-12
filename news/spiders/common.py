@@ -31,9 +31,14 @@ def extract_urls(response):
     urls = []
     for url in response.xpath("//a/@href").extract():
         urls.append(response.urljoin(url))
-    text_strings = extract_javascript_strings(response.text, '{"__typename":"LinkFormat","url":"')
-    for text_string in text_strings:
-        urls.append(response.urljoin(text_string))
+    javascript_identifiers = [
+        '{"__typename":"LinkFormat","url":"', # New York Times
+        '"type":"Story","url":"' # The Star
+    ]
+    for javascript_identifier in javascript_identifiers:
+        text_strings = extract_javascript_strings(response.text, javascript_identifier)
+        for text_string in text_strings:
+            urls.append(response.urljoin(text_string))
     return urls
 
 
