@@ -1,0 +1,211 @@
+{
+    "items": [
+        {
+            "items": [
+                {
+                    "advertising": "ask",
+                    "application-name": "Ars Technica",
+                    "articleBody": [
+                        {
+                            "text": "Google lost control of several million of its IP addresses for more than an hour on Monday in an event that intermittently made its search and other services unavailable to many users and also caused problems for Spotify and other Google cloud customers. While Google said it had no reason to believe the mishap was a malicious hijacking attempt, the leak appeared suspicious to many, in part because it misdirected traffic to China Telecom, the Chinese government-owned provider that was recently caught"
+                        },
+                        {
+                            "link": "https://arstechnica.com/information-technology/2018/11/strange-snafu-misroutes-domestic-us-internet-traffic-through-china-telecom/",
+                            "text": "improperly routing traffic belonging to a raft of Western carriers though mainland China"
+                        },
+                        {
+                            "text": "."
+                        },
+                        {
+                            "text": "The redirections,"
+                        },
+                        {
+                            "link": "https://twitter.com/bgpmon/status/1062130855072546816",
+                            "text": "BGPmon said on Twitter"
+                        },
+                        {
+                            "text": "came in five distinct waves over a 74-minute period. The redirected IP ranges transmitted some of Google's most sensitive communications, including the company's"
+                        },
+                        {
+                            "link": "https://bgp.he.net/net/185.25.28.0/23#_whois",
+                            "text": "corporate WAN infrastructure"
+                        },
+                        {
+                            "text": "and the"
+                        },
+                        {
+                            "link": "https://bgp.he.net/net/192.104.160.0/23#_whois",
+                            "text": "Google VPN"
+                        },
+                        {
+                            "text": "."
+                        },
+                        {
+                            "link": "https://stat.ripe.net/104.196.64.0%2F19#routing_upstream-visibility.resource=104.196.64.0/19&tabId=routing&routing_bgplay.ignoreReannouncements=false&routing_bgplay.resource=104.196.64.0/19&routing_bgplay.starttime=1542053570&routing_bgplay.endtime=1542062570&routing_bgplay.rrcs=0,1,2,5,6,7,10,11,13,14,15,16,18,20&routing_bgplay.instant=null&routing_bgplay.type=bgp",
+                            "text": "This graphic"
+                        },
+                        {
+                            "text": "from regional Internet registry RIPE NCC shows how the domino effect played out over a two-hour span. The image below shows an abbreviated version of those events."
+                        },
+                        {
+                            "text": "BGPmon said MainOne made a second announcement on Monday that caused traffic sent to Cloudflare-owned IP addresses to"
+                        },
+                        {
+                            "link": "https://twitter.com/bgpmon/status/1062145172773818368",
+                            "text": "follow an almost identical roundabout path"
+                        },
+                        {
+                            "text": ". As was the case with the Google IP addresses, China Telecom improperly accepted the Cloudflare route and announced it to its peers. Transtelecom accepted the route and other large service providers soon followed, causing the route to propagate worldwide. This"
+                        },
+                        {
+                            "link": "https://stat.ripe.net/172.69.12.0%2F22#tabId=routing&routing_bgplay.ignoreReannouncements=false&routing_bgplay.resource=172.69.12.0/22&routing_bgplay.starttime=1542053570&routing_bgplay.endtime=1542062570&routing_bgplay.rrcs=0,1,2,5,6,7,10,11,13,14,15,16,18,20&routing_bgplay.instant=null&routing_bgplay.type=bgp",
+                            "text": "BGPlay graphic"
+                        },
+                        {
+                            "text": "shows it playing out. Below is a snapshot:"
+                        },
+                        {
+                            "text": "The misdirection of the Cloudflare-owned IP addresses added to the suspicions of foul play, even as company CEO Matthew Prince told Ars that Monday\u2019s routing event \u201cwas almost certainly an error,\u201d rather than a deliberate move intended to hijack potentially sensitive Internet traffic. In an email, Prince explained:"
+                        },
+                        {
+                            "text": "Some circumstantial background to back that up: there was a large network meeting in Nigeria a couple weeks ago (NgNOG). Those meetings always spur more peering\u2014interconnecting networks that previously weren\u2019t directly connected. While setting up a new interconnection, the Nigerian ISP almost certainly inadvertently leaked the routing information to China Telecom who then leaked it out to the rest of the world. If there was something nefarious afoot there would have been a lot more direct, and potentially less disruptive/detectable, ways to reroute traffic. This was a big, ugly screw up. Intentional route leaks we\u2019ve seen to do things like steal cryptocurrency are typically far more targeted."
+                        },
+                        {
+                            "text": "The impact on us was minimal. Cloudflare\u2019s systems automatically noticed the leak and changed our routing to mitigate the effects."
+                        },
+                        {
+                            "text": "Why Google and Cloudflare? Because we\u2019re both present in Nigeria\u2019s Internet Exchange and, I believe, peered with this ISP. Most other large providers aren\u2019t yet in Nigeria. We only turned up our presence there a few weeks ago. I believe Google has been there for a while. Martin Levy, from our team and cc:ed here, was at NgNOG and can add more color and correct anything I\u2019ve gotten wrong."
+                        },
+                        {
+                            "text": "Long term, the solution is for us to make BGP more robust. We\u2019ve started this with our efforts around RPKI:"
+                        },
+                        {
+                            "text": "https://blog.cloudflare.com/rpki/"
+                        },
+                        {
+                            "text": "If we, as a community, can drive more routes to be cryptographically signed and verified we can then begin to reject routes that are improperly announced. The merely trust-based BGP routing infrastructure remains one of the last remaining core bugs of the Internet and today we saw it rear its ugly head. High time we fix it."
+                        },
+                        {
+                            "text": "In a statement, Google representatives wrote: \u201cWe\u2019re aware that a portion of internet traffic was affected by incorrect routing of IP addresses, and access to some Google services was impacted. The root cause of the issue was external to Google and there was no compromise of Google services.\u201d"
+                        },
+                        {
+                            "text": "A Google representative told Ars that company officials also believe the routing event was an inadvertent prefix leak caused by by MainOne mistakenly advertising a range of IP addresses it didn\u2019t own. The Google representative said officials suspect the leak was accidental and not a malicious hijack. The representative also said all affected traffic was encrypted, a measure that limited the harm that could result from malicious hijackings."
+                        },
+                        {
+                            "text": "Unlike the previously reported 30-month event that routed Internet traffic on a roundabout path through China, traffic in Monday\u2019s incident involving Google never arrived at its intended destination. Instead, as the following traceroute shows, the traffic terminated at an edge router inside China Telecom."
+                        },
+                        {
+                            "text": "The dropped traffic further supported the narrative that the routing event was a mistake. BGP hijackings are more effective when they go undetected by end users instead of causing an obvious outage. Still, there was no doubt that even if the mishap was inadvertent, it amounted to a major disruption. A"
+                        },
+                        {
+                            "link": "https://blog.thousandeyes.com/internet-vulnerability-takes-down-google/",
+                            "text": "blog post"
+                        },
+                        {
+                            "text": "published by network intelligence firm ThousandEyes observed:"
+                        },
+                        {
+                            "text": "This incident at a minimum caused a massive denial of service to G Suite and Google Search. However, this also put valuable Google traffic in the hands of ISPs in countries with a long history of Internet surveillance. Overall ThousandEyes detected over 180 prefixes affected by this route leak, which covers a vast scope of Google services. Our analysis indicates that the origin of this leak was the BGP peering relationship between MainOne, the Nigerian provider, and China Telecom. MainOne has a peering relationship with Google via IXPN in Lagos and has direct routes to Google, which leaked into China Telecom. While we don\u2019t know if this was a misconfiguration or a malicious act, these leaked routes propagated from China Telecom, via TransTelecom to NTT and other transit ISPs. We also noticed that this leak was primarily propagated by business-grade transit providers and did not impact consumer ISP networks as much."
+                        },
+                        {
+                            "text": "IXPN refers to the"
+                        },
+                        {
+                            "link": "http://ixp.net.ng/",
+                            "text": "Internet Exchange Point of Nigeria"
+                        },
+                        {
+                            "text": ", where regional ISPs with peering agreements meet to exchange traffic free of charge. The existence of peering agreements between Google and MainOne and Cloudflare and MainOne further supports the assurances the routing mishap wasn\u2019t intentional."
+                        },
+                        {
+                            "text": "Readers are reminded that the border gateway protocol that routes Internet traffic from autonomous system to autonomous system around the globe is as fragile as it is intricate. While its foundation of trust was never designed to withstand the hostile actors that so often populate today\u2019s Internet, the intricacies of BGP are enough to make major blunders a fact of life. While it\u2019s too early to declare this routing mishap an accident, indications at this point aren\u2019t supporting the suspicions this was a deliberate hijacking."
+                        },
+                        {
+                            "text": "Either way, the event and its ability to go undetected until end users began to report dropped traffic underscores the continued inability of major providers to address the performance and security limitations of BGP."
+                        },
+                        {
+                            "text": "\"Through a small Nigerian ISP, Google's prefixes were leaked to worldwide Tier 1 carriers, bringing traffic to a halt,\" Kris Slevens, a technical account engineer specializing in network security at Continuous Networks, told Ars. \"This still shows that China Telecom hasn't reined in their infrastructure for any type of filtering, and how inherently fragile BGP is being based on trust. Also with a paper coming out last week about [China Telecom's] past with traffic rerouting, this isn't new. And more important, peering exchanges need stricter prefix limits or filtering. That is highly overlooked.\""
+                        }
+                    ],
+                    "description": "Google says it doesn't believe leak was malicious despite suspicious appearances.",
+                    "fb:admins": "108943",
+                    "fb:pages": "19374573752",
+                    "format-detection": "telephone=no",
+                    "imgs": [
+                        "https://cdn.arstechnica.net/wp-content/uploads/2018/11/google-800x598.jpg",
+                        "https://cdn.arstechnica.net/wp-content/uploads/2018/11/mainone-640x447.png",
+                        "https://cdn.arstechnica.net/wp-content/uploads/2018/11/cloudflare-ips-640x395.jpg",
+                        "https://cdn.arstechnica.net/wp-content/uploads/2018/11/google-traceroute-640x334.jpg"
+                    ],
+                    "msapplication-starturl": "http://arstechnica.com/",
+                    "msapplication-task": "name=Subscribe;action-uri=http://arstechnica.com/subscriptions/;icon-uri=https://cdn.arstechnica.net/ie-jump-menu/jump-subscribe.ico",
+                    "msapplication-tooltip": "Ars Technica: Serving the technologist for 1.2 decades",
+                    "og:description": "Google says it doesn't believe leak was malicious despite suspicious appearances.",
+                    "og:image": "https://cdn.arstechnica.net/wp-content/uploads/2018/11/google-760x380.jpg",
+                    "og:site_name": "Ars Technica",
+                    "og:title": "Google goes down after major BGP mishap routes traffic through China",
+                    "og:type": "article",
+                    "og:url": "https://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/",
+                    "parsely-metadata": "{\"type\":\"report\",\"title\":\"Google goes down after major BGP mishap routes traffic through China\",\"post_id\":1410563,\"lower_deck\":\"Google says it doesn't believe leak was malicious despite suspicious appearances.\",\"image_url\":\"https:\\/\\/cdn.arstechnica.net\\/wp-content\\/uploads\\/2018\\/11\\/google-150x150.jpg\",\"listing_image_url\":\"https:\\/\\/cdn.arstechnica.net\\/wp-content\\/uploads\\/2018\\/11\\/google-360x200.jpg\"}",
+                    "parsely-page": "{\"title\":\"Google goes down after major BGP mishap routes traffic through China\",\"link\":\"https:\\/\\/arstechnica.com\\/information-technology\\/2018\\/11\\/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china\\/\",\"type\":\"post\",\"author\":\"Dan Goodin\",\"post_id\":1410563,\"pub_date\":\"2018-11-13T07:25:04Z\",\"section\":\"Biz & IT\",\"tags\":[\"bgp\",\"border-gateway-protocol\",\"china-telecom\",\"cloudflare\",\"google-2\",\"type: report\"],\"image_url\":\"https:\\/\\/cdn.arstechnica.net\\/wp-content\\/uploads\\/2018\\/11\\/google-150x150.jpg\"}",
+                    "theme-color": "#000000",
+                    "twitter:card": "summary_large_image",
+                    "twitter:creator": "@dangoodin001",
+                    "twitter:description": "Google says it doesn't believe leak was malicious despite suspicious appearances.",
+                    "twitter:domain": "arstechnica.com",
+                    "twitter:image:height": "380",
+                    "twitter:image:src": "https://cdn.arstechnica.net/wp-content/uploads/2018/11/google-760x380.jpg",
+                    "twitter:image:width": "760",
+                    "twitter:site": "@arstechnica",
+                    "twitter:title": "Google goes down after major BGP mishap routes traffic through China",
+                    "twitter:url": "https://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/",
+                    "viewport": "width=device-width,initial-scale=1"
+                }
+            ],
+            "url": "https://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/"
+        }
+    ],
+    "requests": [
+        "https://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/#main",
+        "https://arstechnica.com",
+        "https://arstechnica.com/information-technology/",
+        "https://arstechnica.com/gadgets/",
+        "https://arstechnica.com/science/",
+        "https://arstechnica.com/tech-policy/",
+        "https://arstechnica.com/cars/",
+        "https://arstechnica.com/gaming/",
+        "https://arstechnica.com/civis/",
+        "https://arstechnica.com/store/product/subscriptions/",
+        "https://arstechnica.com/search/",
+        "https://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/#site-menu",
+        "http://video.arstechnica.com/",
+        "https://arstechnica.com/features/",
+        "https://arstechnica.com/reviews/",
+        "https://arstechnica.com/tag/ars-approved/",
+        "https://arstechnica.com/rss-feeds/",
+        "https://arstechnica.com/?view=mobile",
+        "https://arstechnica.com/about-us/",
+        "https://arstechnica.com/staff-directory/",
+        "https://arstechnica.com/contact-us/",
+        "https://arstechnica.com/advertise-with-us/",
+        "https://arstechnica.com/reprints/",
+        "http://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/?view=grid",
+        "http://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/?view=archive",
+        "http://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/?theme=light",
+        "http://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/?theme=dark",
+        "https://arstechnica.com/civis/ucp.php?mode=login&return_to=%2Finformation-technology%2F2018%2F11%2Fmajor-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china%2F",
+        "https://arstechnica.com/civis/ucp.php?mode=sendpassword",
+        "https://arstechnica.com/civis/ucp.php?mode=register",
+        "https://arstechnica.com/author/dan-goodin/",
+        "https://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/bfishadow",
+        "https://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/?comments=1",
+        "https://arstechnica.com/information-technology/2018/11/strange-snafu-misroutes-domestic-us-internet-traffic-through-china-telecom/",
+        "https://arstechnica.com/author/dan-goodin",
+        "https://arstechnica.com/civis/ucp.php?mode=login&return_to/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/",
+        "https://arstechnica.com/tech-policy/2018/11/amazon-chooses-new-york-city-neighborhood-dc-suburb-for-hq2/",
+        "https://arstechnica.com/gadgets/2018/11/the-ars-holiday-gift-guide-2018-tech-and-gear-for-travel-that-wed-buy/",
+        "http://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/?view=mobile",
+        "https://arstechnica.com/amendment-to-conde-nast-user-agreement-privacy-policy/",
+        "https://arstechnica.com/affiliate-link-policy/"
+    ]
+}

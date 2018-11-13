@@ -43,6 +43,7 @@ from .apnews import apnews_parse
 from .thestar import thestar_parse
 from .newsweek import newsweek_parse
 from .bloomberg import bloomberg_parse
+from .arstechnica import arstechnica_parse
 
 
 DetectorFactory.seed = 0
@@ -144,7 +145,8 @@ class NewsSpider(scrapy.Spider):
         "apnews.com",
         "thestar.com",
         "newsweek.com",
-        "bloomberg.com"
+        "bloomberg.com",
+        "arstechnica.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -171,7 +173,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.apnews.com/',
         'https://www.thestar.com',
         'https://www.newsweek.com/',
-        'https://www.bloomberg.com/'
+        'https://www.bloomberg.com/',
+        'https://arstechnica.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -275,6 +278,10 @@ class NewsSpider(scrapy.Spider):
             "parser": bloomberg_parse,
             "splash": True,
             "cookie": "__pat=-18000000; _px2=eyJ1IjoiZmM5ZDA1NzAtZTZkZC0xMWU4LTkxMDgtYzVkZDRlYTMwZDFkIiwidiI6IjEwMWFhZjYwLWQ1N2UtMTFlOC05ZGRkLTE1MTBiYWUyY2ViYSIsInQiOjE1NDIwNzA0Nzg5OTQsImgiOiI1ZGY3NmUwOWFjZWFhYzM2M2U2OGZhNWQ2MGE4ZmI0NWVhYTM0MTZjNTRjZjc2MzMxZjRmNTU3NzgxMTY0ZTNlIn0=; _litra_ses.2a03=*;"
+        },
+        "arstechnica.com": {
+            "parser": arstechnica_parse,
+            "splash": True
         }
     }
     # pylint: enable=line-too-long
