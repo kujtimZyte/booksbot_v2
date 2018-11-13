@@ -310,6 +310,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931',
             'newsweek-trump-florida-election-favor-scott-desantis-despite-uncounted-ballots.json')
 
+    def test_bloomberg_homepage(self):
+        self.check_fake_html_scrape(
+            'bloomberg.com.html',
+            'https://www.bloomberg.com/',
+            'bloomberg.com.json')
+
+    def test_bloomberg_apple_has_a_plan_b_as_iphone_demand_peaks_many_suppliers_dont(self):
+        self.check_fake_html_scrape(
+            'bloomberg-apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-dont.html',
+            'https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?srnd=premium',
+            'bloomberg-apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-dont.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)

@@ -1,0 +1,346 @@
+{
+    "items": [
+        {
+            "items": [
+                {
+                    "al:android:app_name": "Bloomberg",
+                    "al:android:package": "com.bloomberg.android.plus",
+                    "al:android:url": "bloomberg://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?utm_medium=applink&utm_source=facebook",
+                    "apple-itunes-app": "app-id=281941097, affiliate-data=ct=smartbanner_mobileweb&pt=8949&utm_source=smart_banner",
+                    "apple-mobile-web-app-capable": "no",
+                    "apple-mobile-web-app-status-bar-style": "black",
+                    "articleBody": [
+                        {
+                            "text": "In a world where iPhone demand is on the wane,"
+                        },
+                        {
+                            "link": "/quote/AAPL:US",
+                            "text": "Apple Inc."
+                        },
+                        {
+                            "text": "has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage."
+                        },
+                        {
+                            "text": "But there\u2019s no back-up for many of the companies that supply components for the iPhone."
+                        },
+                        {
+                            "text": "The latest evidence that what\u2019s bad for Apple can be terrible for suppliers came on two continents within hours of each other."
+                        },
+                        {
+                            "link": "/quote/6740:JP",
+                            "text": "Japan Display Inc."
+                        },
+                        {
+                            "text": ", which gets more than half its revenue from the iPhone maker, cut forecasts. Then"
+                        },
+                        {
+                            "link": "/quote/LITE:US",
+                            "text": "Lumentum Holdings Inc."
+                        },
+                        {
+                            "text": ", a top maker of iPhone facial-recognition sensors, lowered its second-quarter outlook."
+                        },
+                        {
+                            "text": "\u201cSuppliers are more dependent on volume than Apple,\u201d said Woo Jin Ho, an analyst at Bloomberg Intelligence. \u201cThis raises an incremental risk for the rest of the supply chain.\u201d Apple didn\u2019t respond to a request for comment."
+                        },
+                        {
+                            "text": "Apple shares fell 5 percent on Monday, but Lumentum slumped more than 30 percent and rival"
+                        },
+                        {
+                            "link": "/quote/IIVI:US",
+                            "text": "II-VI Inc."
+                        },
+                        {
+                            "text": "dropped 13 percent."
+                        },
+                        {
+                            "link": "/quote/6740:JP",
+                            "text": "Japan Display"
+                        },
+                        {
+                            "text": "dropped 9.5 percent, while"
+                        },
+                        {
+                            "link": "/quote/2317:TT",
+                            "text": "Hon Hai Precision Industry Co."
+                        },
+                        {
+                            "text": ", the main iPhone assembler, slipped to"
+                        },
+                        {
+                            "link": "/quote/2317:TT",
+                            "text": "the lowest level"
+                        },
+                        {
+                            "text": "in five years."
+                        },
+                        {
+                            "text": "In Europe,"
+                        },
+                        {
+                            "link": "/quote/DLG:GY",
+                            "text": "Dialog Semiconductor Plc"
+                        },
+                        {
+                            "text": ", which gets most of its sales from Apple, fell as much as 3.6 percent in early Frankfurt trading. Austria\u2019s"
+                        },
+                        {
+                            "link": "/quote/AMS:SW",
+                            "text": "ams AG"
+                        },
+                        {
+                            "text": ", another supplier, slid as much as 3.2 percent after plunging 22 percent on Monday."
+                        },
+                        {
+                            "text": "Faced with a maturing smartphone market, Apple\u2019s strategy has been to entice customers to pay more for phones with new features such as facial recognition and more vibrant screens."
+                        },
+                        {
+                            "text": "The 3-D sensing components from companies like Lumentum are found in iPhones that often cost more than $1,000. Fewer people can afford to pay that much for a new device. But when a sale does happen, suppliers get a one-time payment for their component, while Apple can generate hundreds of extra dollars per gadget. In its most-recent quarter, Apple reported almost no increase in the number of iPhones sold, but revenue from that business jumped 29 percent from a year earlier."
+                        },
+                        {
+                            "text": "If demand for newer, pricier iPhones wanes, Apple can cut component orders, or delay shipments, leaving suppliers with more inventory. That makes them more likely to cut prices when Apple comes back to the negotiating table."
+                        },
+                        {
+                            "text": "Lumentum\u2019s weaker sales forecast was the result of a"
+                        },
+                        {
+                            "link": "/news/terminal/PI3LI9SYF01S",
+                            "text": "shipment reduction"
+                        },
+                        {
+                            "text": "from its largest customer just a few days ago, Chief Executive Officer Alan Lowe said at a conference in San Francisco on Monday. Lumentum didn\u2019t identify the customer and a spokesman for the company declined to comment, but Apple is its biggest customer, according to"
+                        },
+                        {
+                            "link": "/quote/LITE:US",
+                            "text": "data"
+                        },
+                        {
+                            "text": "compiled by Bloomberg."
+                        },
+                        {
+                            "text": "Apple is increasingly touting its base of 1.3 billion installed devices, rather than how many iPhones it sells each quarter. And the company has been making changes to keep these existing customers happy while selling more services to them."
+                        },
+                        {
+                            "link": "https://www.bloomberg.com/view/articles/2018-11-13/an-apple-supplier-s-guidance-cut-underpins-tech-sell-off",
+                            "text": "The Three-Minute Chat That Wiped Billions Off Stocks: Tim Culpan"
+                        },
+                        {
+                            "text": "\u201cApple is no longer a traditional hardware business,\u201d said Gene Munster, a veteran Apple analyst at Loup Ventures. \u201cThe Apple investment paradigm is moving away from a focus on device sales toward a more predictable services-driven business.\u201d"
+                        },
+                        {
+                            "text": "This year, Apple has taken steps to lengthen the amount of time iPhones can be used. That will likely discourage people from upgrading to newer devices -- another ominous sign for suppliers."
+                        },
+                        {
+                            "text": "Early in the year, the company confirmed it had been intentionally throttling the speeds of some older phones to avoid battery-related problems. After an outcry, the company offered cheap battery upgrades, extending the life of many handsets."
+                        },
+                        {
+                            "text": "More recently, Apple launched a new version of its operating system, iOS 12, that supports an unprecedented 28 of the company\u2019s devices, including models that went on sale in 2013. Previous iOS upgrades supported gadgets dating back several years, but this is the first time Apple has prioritized enhancing the speed of older iPhones. The refreshed software can open the camera on older iPhones 70 percent faster and the keyboard 50 percent faster, compared with iOS 11, last years\u2019 update."
+                        },
+                        {
+                            "text": "\u201cLonger-lasting products could lead to higher customer satisfaction, potentially enable Apple to charge higher prices for its devices, and would help fulfill the company\u2019s environmental objectives,\u201d Toni Sacconaghi, an analyst at Sanford C. Bernstein & Co., wrote Monday in a note to investors."
+                        },
+                        {
+                            "text": "That could extend iPhone replacement cycles by six months to 3.2 years and push unit sales down by 6 percent a year for three years, he estimated."
+                        },
+                        {
+                            "text": "With longer-lasting iPhones, users may be more likely to subscribe to new services, making the devices more lucrative to Apple than just the upfront cost. But these services are not additional revenue sources for component suppliers."
+                        },
+                        {
+                            "text": "While suppliers have fewer options, they are reacting to a slower smartphone market. Like most device makers, Apple prefers at least two suppliers for each component. The $3.2 billion"
+                        },
+                        {
+                            "link": "https://www.bloomberg.com/news/articles/2018-11-09/ii-vi-to-buy-finisar-in-laser-optic-deal-valued-at-3-2-billion",
+                            "text": "combination"
+                        },
+                        {
+                            "text": "of optical component makers II-VI and Finisar Corp., announced last week, will create a larger company that\u2019s better able to negotiate on prices."
+                        },
+                        {
+                            "text": "\u2014 With assistance by Ian King, Debby Wu, and Stefan Nicola"
+                        }
+                    ],
+                    "checksum": "a82ba70cc4685988fa0270474030e495",
+                    "description": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
+                    "fb:status": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
+                    "imgs": [
+                        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/100x-1.jpg",
+                        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iduk_7lgg420/v2/490x-1.png"
+                    ],
+                    "iso-8601-publish-date": "2018-11-13T02:32:24.840Z",
+                    "keywords": "APPLE INC,iPhone,PLAN B,Smartphone,LUMENTUM HOLDINGS INC,JAPAN DISPLAY INC,II-VI INC,Japan,Europe,DIALOG SEMICONDUCTOR PLC,technology",
+                    "og:description": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
+                    "og:image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/1200x800.jpg",
+                    "og:site_name": "Bloomberg.com",
+                    "og:title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't",
+                    "og:type": "article",
+                    "og:url": "https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t",
+                    "parsely-author": "Mark Gurman",
+                    "parsely-image-url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/1200x800.jpg",
+                    "parsely-link": "https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t",
+                    "parsely-post-id": "PI3TX36JTSE801",
+                    "parsely-pub-date": "2018-11-13T02:32:24.840Z",
+                    "parsely-section": "technology",
+                    "parsely-tags": "APPLE INC,iPhone,PLAN B,Smartphone,LUMENTUM HOLDINGS INC,JAPAN DISPLAY INC,II-VI INC,Japan,Europe,DIALOG SEMICONDUCTOR PLC,Secondary Brand: technology,Region: Global,Page: article",
+                    "parsely-title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't",
+                    "parsely-type": "post",
+                    "referrer": "always",
+                    "sailthru.author": "Jeran Wittenstein,Mark Gurman",
+                    "sailthru.date": "2018-11-13T02:32:24.840Z",
+                    "sailthru.description": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
+                    "sailthru.tags": "APPLE INC,iPhone,PLAN B,Smartphone,LUMENTUM HOLDINGS INC,JAPAN DISPLAY INC,II-VI INC,Japan,Europe,DIALOG SEMICONDUCTOR PLC,technology",
+                    "sailthru.title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't",
+                    "twitter:card": "summary_large_image",
+                    "twitter:description": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
+                    "twitter:image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/1200x800.jpg",
+                    "twitter:site": "@technology",
+                    "twitter:title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't",
+                    "validatedAt": "2018-11-13T11:25:52.797Z",
+                    "viewport": "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
+                }
+            ],
+            "url": "https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?srnd=premium"
+        }
+    ],
+    "requests": [
+        "https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?_pxhc=1542108442079",
+        "http://www.bloomberg.com/company/?utm_source=bloomberg-menu&utm_medium=bcom",
+        "http://www.bloomberg.com/professional/contact-menu/?utm_source=bloomberg-menu&utm_medium=bcom&bbgsum=DG-WS-PROF-DEMO-bbgmenu",
+        "https://www.bloomberg.com/",
+        "https://login.bloomberg.com/signup?in_source=login_direct",
+        "https://www.bloomberg.com/subscriptions?in_source=fs-nav",
+        "https://www.bloomberg.com/markets",
+        "https://www.bloomberg.com/technology",
+        "https://www.bloomberg.com/politics",
+        "https://www.bloomberg.com/pursuits",
+        "https://www.bloomberg.com/opinion",
+        "https://www.bloomberg.com/businessweek",
+        "https://www.bloomberg.com/live",
+        "https://www.bloomberg.com/audio",
+        "https://login.bloomberg.com/newsletters?source=site_nav",
+        "https://www.bloomberg.com/markets/watchlist",
+        "https://www.bloomberg.com/subscriptions?in_source=menu",
+        "https://www.bloomberg.com/new-economy-forum",
+        "https://www.bloomberg.com/wealth/",
+        "https://www.bloomberg.com/crypto",
+        "https://www.bloomberg.com/checkout",
+        "https://www.bloomberg.com/hyperdrive",
+        "https://www.bloomberg.com/well-spent",
+        "https://www.bloomberg.com/prognosis",
+        "https://www.bloomberg.com/climate-Changed",
+        "https://www.bloomberg.com/business-of-equality",
+        "https://www.bloomberg.com/billionaires/",
+        "https://www.bloomberg.com/graphics",
+        "https://www.bloomberg.com/sponsor/partnerships/",
+        "https://www.bloomberg.com/features/peer-to-peer/",
+        "https://www.bloomberg.com/news/sponsors/features/hyundai/art-technology/?adv=16713&prx_t=OpUDAyrUgAXSkPA",
+        "https://www.bloomberg.com/series/inspire-go",
+        "https://www.bloomberg.com/features/2016-how-to-invest-10k",
+        "https://www.bloomberg.com/features/companies-to-watch-2018",
+        "https://www.bloomberg.com/features/apple-iphone-guts/",
+        "https://www.bloomberg.com/markets/economics",
+        "https://www.bloomberg.com/deals",
+        "https://www.bloomberg.com/markets/fixed-income",
+        "https://www.bloomberg.com/markets/etfs",
+        "https://www.bloomberg.com/markets/benchmark",
+        "https://www.bloomberg.com/markets/markets-magazine",
+        "https://www.bloomberg.com/series/daybreak-americas",
+        "https://www.bloomberg.com/series/bloomberg-surveillance",
+        "https://www.bloomberg.com/series/bloomberg-markets",
+        "https://www.bloomberg.com/series/whatd-you-miss",
+        "https://www.bloomberg.com/markets/stocks",
+        "https://www.bloomberg.com/markets/currencies",
+        "https://www.bloomberg.com/markets/commodities",
+        "https://www.bloomberg.com/markets/rates-bonds",
+        "https://www.bloomberg.com/markets/sectors",
+        "https://www.bloomberg.com/economics",
+        "https://www.bloomberg.com/podcasts/decrypted1",
+        "https://www.bloomberg.com/podcasts/odd-lots",
+        "https://www.bloomberg.com/podcasts/surveillance",
+        "https://www.bloomberg.com/podcasts/benchmark",
+        "https://www.bloomberg.com/podcasts/taking_stock",
+        "https://www.bloomberg.com/topics/cybersecurity",
+        "https://www.bloomberg.com/topics/startups",
+        "https://www.bloomberg.com/topics/artificial-intelligence",
+        "https://www.bloomberg.com/topics/mobile-phones",
+        "https://www.bloomberg.com/topics/big-data",
+        "https://www.bloomberg.com/topics/cloud-computing",
+        "https://www.bloomberg.com/topics/silicon-valley",
+        "https://www.bloomberg.com/topics/global-tech",
+        "https://www.bloomberg.com/features/elon-musk-goals/",
+        "https://www.bloomberg.com/graphics/2018-tesla-tracker/",
+        "https://www.bloomberg.com/news/special-reports/gadgets-with-gurman",
+        "https://www.bloomberg.com/news/special-reports/digital-defense",
+        "https://www.bloomberg.com/series/bloomberg-technology",
+        "https://www.bloomberg.com/series/studio-1",
+        "https://www.bloomberg.com/podcasts/decrypted",
+        "https://www.bloomberg.com/graphics/2018-women-congress-tracker/",
+        "https://www.bloomberg.com/features/trump-daily/?_escaped_fragment_=",
+        "https://www.bloomberg.com/brexit",
+        "https://www.bloomberg.com/news/features/2018-03-16/how-long-will-world-leaders-last",
+        "https://www.bloomberg.com/graphics/pessimists-guide-to-2018/",
+        "https://www.bloomberg.com/podcasts/law",
+        "https://www.bloomberg.com/pursuits/travel",
+        "https://www.bloomberg.com/pursuits/cars-bikes",
+        "https://www.bloomberg.com/pursuits/real-estate",
+        "https://www.bloomberg.com/pursuits/food-drinks",
+        "https://www.bloomberg.com/pursuits/art-design",
+        "https://www.bloomberg.com/pursuits/style-grooming",
+        "https://www.bloomberg.com/graphics/property-prices/london/",
+        "https://www.bloomberg.com/graphics/property-prices/nyc/",
+        "https://www.bloomberg.com/news/special-reports/how-to-buy-art",
+        "https://www.bloomberg.com/features/2018-bonus-guide/",
+        "https://www.bloomberg.com/made",
+        "https://www.bloomberg.com/view/editorials",
+        "https://www.bloomberg.com/podcasts/masters_in_business",
+        "https://www.bloomberg.com/sooner-than-you-think",
+        "https://www.bloomberg.com/news/special-reports/the-year-ahead-2018",
+        "https://www.bloomberg.com/features/2017-bloomberg-50/",
+        "https://www.bloomberg.com/hello-world",
+        "https://www.bloomberg.com/live/us",
+        "https://www.bloomberg.com/live/europe",
+        "https://www.bloomberg.com/live/asia",
+        "https://www.bloomberg.com/live/australia",
+        "https://www.bloomberg.com/live/schedule-shows",
+        "https://www.bloomberg.com/series/bloomberg-quicktake",
+        "https://www.bloomberg.com/features/2016-hello-world/",
+        "https://www.bloomberg.com/series/the-spark",
+        "https://www.bloomberg.com/tictoc",
+        "https://www.bloomberg.com/podcasts/odd_lots",
+        "https://www.bloomberg.com/podcasts/business_of_sports",
+        "https://www.bloomberg.com/podcasts/advantage",
+        "https://www.bloomberg.com/news/articles/2018-11-13/google-may-have-to-get-used-to-third-place-in-the-cloud",
+        "https://www.bloomberg.com/news/articles/2018-11-13/the-blind-spots-in-facebook-s-ad-machine",
+        "https://www.bloomberg.com/news/articles/2018-11-13/facebook-stands-ground-after-singapore-criticism-over-1mdb-post",
+        "https://www.bloomberg.com/news/articles/2018-11-13/bayer-earnings-beat-estimates-amid-growing-pains-of-monsanto-era",
+        "https://www.bloomberg.com/news/articles/2018-11-13/competition-to-amazongo-is-coming-from-an-unlikely-source",
+        "https://www.bloomberg.com/news/articles/2018-11-13/ripple-is-destined-to-overtake-swift-banking-network-ceo-says",
+        "https://www.bloomberg.com/news/articles/2018-11-13/tata-is-said-to-vet-jet-airways-books-for-potential-acquisition",
+        "https://www.bloomberg.com/news/articles/2018-11-12/mtn-rwanda-considers-share-sale-as-carrier-seeks-network-upgrade",
+        "https://www.bloomberg.com/authors/APXySqfZPFI/jeran-wittenstein",
+        "https://www.bloomberg.com/authors/AS7Hj1mBMGM/mark-gurman",
+        "https://www.bloomberg.com/quote/AAPL:US",
+        "https://www.bloomberg.com/quote/6740:JP",
+        "https://www.bloomberg.com/quote/LITE:US",
+        "https://www.bloomberg.com/quote/IIVI:US",
+        "https://www.bloomberg.com/quote/2317:TT",
+        "https://www.bloomberg.com/quote/DLG:GY",
+        "https://www.bloomberg.com/quote/AMS:SW",
+        "https://www.bloomberg.com/news/terminal/PI3LI9SYF01S",
+        "https://www.bloomberg.com/view/articles/2018-11-13/an-apple-supplier-s-guidance-cut-underpins-tech-sell-off",
+        "https://www.bloomberg.com/news/articles/2018-11-09/ii-vi-to-buy-finisar-in-laser-optic-deal-valued-at-3-2-billion",
+        "https://www.bloomberg.com/tips/",
+        "https://www.bloomberg.com/news/articles/2018-11-12/how-one-family-built-8-billion-startup-far-from-silicon-valley",
+        "https://www.bloomberg.com/news/articles/2018-11-11/asia-stocks-to-start-week-with-drop-pound-slips-markets-wrap",
+        "https://www.bloomberg.com/news/articles/2018-11-12/asia-stocks-set-to-follow-u-s-lower-dollar-jumps-markets-wrap",
+        "https://www.bloomberg.com/news/articles/2018-11-12/frozen-out-of-china-american-farmers-refuse-to-sell-their-soy",
+        "https://www.bloomberg.com/news/articles/2018-11-11/wall-street-s-45-trillion-china-dream-inches-toward-reality",
+        "http://www.bloomberg.com/tos",
+        "http://www.bloomberg.com/trademarks",
+        "http://www.bloomberg.com/privacy",
+        "http://www.bloomberg.com/careers/?utm_source=dotcom&utm_medium=footer",
+        "http://www.bloomberg.com/privacy#advertisements",
+        "http://www.bloomberg.com/feedback",
+        "http://www.bloomberg.com/help",
+        "https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?_pxhcb=1542108442080"
+    ]
+}
