@@ -298,6 +298,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.thestar.com/news/investigations/2018/11/11/five-more-insurance-firms-sued-for-withholding-hst-from-accident-victims.html',
             'thestar-five-more-insurance-firms-sued-for-withholding-hst-from-accident-victims.json')
 
+    def test_newsweek_homepage(self):
+        self.check_fake_html_scrape(
+            'newsweek.com.html',
+            'https://www.newsweek.com/',
+            'newsweek.com.json')
+
+    def test_newsweek_trump_florida_election_favor_scott_desantis_despite_uncounted_ballots(self):
+        self.check_fake_html_scrape(
+            'newsweek-trump-florida-election-favor-scott-desantis-despite-uncounted-ballots.html',
+            'https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931',
+            'newsweek-trump-florida-election-favor-scott-desantis-despite-uncounted-ballots.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)

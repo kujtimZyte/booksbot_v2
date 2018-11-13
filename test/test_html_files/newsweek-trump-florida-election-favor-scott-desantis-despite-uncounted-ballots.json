@@ -1,0 +1,129 @@
+{
+    "items": [
+        {
+            "items": [
+                {
+                    "article:author": "https://www.facebook.com/manhattanjan/",
+                    "article:modified_time": "2018-11-12T11:08:17-05:00",
+                    "article:published_time": "2018-11-12T10:22:51-05:00",
+                    "article:publisher": "https://www.facebook.com/Newsweek",
+                    "article:section": "U.S.",
+                    "articleBody": [
+                        {
+                            "text": "President Donald Trump said on Monday that former Florida Governor Rick Scott and Republican Representative Ron DeSantis should be named winners of the state\u2019s midterm election, despite the fact that some votes still haven't been counted. Trump took to Twitter, claiming there was fraudulent voter activity in Florida\u2019s election."
+                        },
+                        {
+                            "text": "\u201cThe\u00a0Florida Election should be called in favor of Rick Scott and Ron DeSantis in that large numbers of new ballots showed up out of nowhere, and many ballots are missing or forged. An honest vote count is no longer possible\u2014ballots massively infected. Must go with Election Night!\u201d Trump wrote."
+                        },
+                        {
+                            "text": "Trump didn\u2019t offer any evidence to back up claims of ballots being infected."
+                        },
+                        {
+                            "text": "DeSantis narrowly beat Democrat candidate Andrew Gillum in Florida\u2019s gubernatorial race with fewer than 34,000 votes on election night. Meanwhile, Scott pulled ahead of Democrat Bill Nelson in the race for Senate with just 50.1 percent of the vote compared to Nelson\u2019s 49.9 percent, according to"
+                        },
+                        {
+                            "text": "The New York Times."
+                        },
+                        {
+                            "text": "Initially, Gillum conceded to DeSantis, but he withdrew his concession after a recount was ordered on Saturday."
+                        },
+                        {
+                            "text": "A set of uncounted ballots was collected by the elections board of Miami-Dade County over the weekend. A spokesperson for the county\u2019s supervisor of elections confirmed to CNN 266 uncounted ballots\u00a0were discovered in the Opa-locka mail facility. The shipment was supposed to arrive by mail to the election facility by 7 p.m. on the day of the election, but they were never received."
+                        },
+                        {
+                            "text": "Under Florida law, ballots that don\u2019t arrive at the proper department facility at the designated time are not considered in the vote."
+                        },
+                        {
+                            "text": "Votes for three of Florida\u2019s elections are expected to be recounted, including the race for governor, senator and commissioner of agriculture."
+                        },
+                        {
+                            "text": "Gillium appeared at New Mount Olive Baptist Church in Fort Lauderdale and requested for all the votes to be counted. \u201cI am not here to ask for votes,\u201d he said on Sunday night. \u201cI am simply here to say that for the votes that have been cast the ought to be counted.\u201d"
+                        }
+                    ],
+                    "description": "\"An honest vote count is no longer possible,\" said the president, pushing for the Republican candidates to be declared the winners before the recounts are complete.",
+                    "fb:app_id": "245537789135954",
+                    "fb:pages": "18343191100",
+                    "imgs": [],
+                    "msapplication-TileColor": "#ff0000",
+                    "msapplication-TileImage": "https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/favicons/mstile-144x144.png",
+                    "msapplication-config": "https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/favicons/browserconfig.xml",
+                    "news_keywords": "trump, florida, election, favor, scott, desantis, despite, uncounted, ballots",
+                    "og:description": "\"An honest vote count is no longer possible,\" said the president, pushing for the Republican candidates to be declared the winners before the recounts are complete.",
+                    "og:image": "https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2018/11/12/trump-says-florida-election-should-be-called-favor-rick-scott-and-ron-desantis.png",
+                    "og:site_name": "Newsweek",
+                    "og:title": "Trump says Florida election \"should be called in favor of Rick Scott and Ron DeSantis\" despite uncounted ballots",
+                    "og:type": "article",
+                    "og:url": "https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931",
+                    "twitter:card": "summary_large_image",
+                    "twitter:description": "\"An honest vote count is no longer possible,\" said the president, pushing for the Republican candidates to be declared the winners before the recounts are complete. ",
+                    "twitter:image": "https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2018/11/12/trump-says-florida-election-should-be-called-favor-rick-scott-and-ron-desantis.png",
+                    "twitter:site": "@newsweek",
+                    "twitter:title": "Trump says Florida election \"should be called in favor of Rick Scott and Ron DeSantis\" despite uncounted ballots",
+                    "twitter:url": "https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931",
+                    "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+                }
+            ],
+            "url": "https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931"
+        }
+    ],
+    "requests": [
+        "https://subscription.newsweek.com/auth",
+        "https://subscription.newsweek.com/subscribe?utm_source=NWwebsite&utm_medium=top-nav&utm_campaign=subscribe-button#12weeks",
+        "https://www.newsweek.com/",
+        "https://www.newsweek.com/us",
+        "https://www.newsweek.com/world",
+        "https://www.newsweek.com/business",
+        "https://www.newsweek.com/tech-science",
+        "https://www.newsweek.com/culture",
+        "https://www.newsweek.com/sports",
+        "https://www.newsweek.com/health",
+        "https://www.newsweek.com/opinion",
+        "http://www.newsweek.com/ndelible",
+        "https://www.newsweek.com/authors/janice-williams",
+        "https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931#discussion",
+        "https://www.newsweek.com/topic/2018-midterms",
+        "https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931",
+        "https://www.newsweek.com/topic/slideshows",
+        "https://www.newsweek.com/which-fattest-states-america-obese-overweight-1212339",
+        "https://www.newsweek.com/californias-camp-and-woolsey-fires-pictures-devastation-paradise-and-malibu-1211924",
+        "https://www.newsweek.com/best-spanish-language-movies-all-time-according-critics-1211804",
+        "https://www.newsweek.com/best-tech-gifts-1210049",
+        "https://www.newsweek.com/newsletter",
+        "https://www.newsweek.com/andrew-gillum-trump-florida-democracy-election-1210066",
+        "https://www.newsweek.com/andrew-gillum-good-evil-florida-desantis-1204876",
+        "https://www.newsweek.com/what-floridas-big-corruption-scandal-trump-tweets-about-election-fraud-1208407",
+        "https://www.newsweek.com/who-richard-ojeda-democrat-who-voted-trump-run-president-2020-1211286",
+        "https://www.newsweek.com/steve-bannon-midterms-john-oliver-comedy-election-1211276",
+        "https://www.newsweek.com/michael-avenatti-celebrated-defeat-pro-russia-gop-congressman-score-one-1210972",
+        "https://www.newsweek.com/steve-king-weekly-standard-lying-audio-immigrants-dirt-iowa-tape-release-1210969",
+        "https://www.newsweek.com/donald-trump-california-firefighters-fema-amazing-after-bashing-fire-1212347",
+        "https://www.newsweek.com/wisconsin-high-school-investigates-alleged-student-nazi-salute-prom-picture-1211932",
+        "https://www.newsweek.com/us-rabbis-lead-pilgrimage-border-protest-trumps-treatment-migrants-1212027",
+        "https://www.newsweek.com/fox-news-contributor-run-out-establishment-because-where-she-works-1212029",
+        "https://www.newsweek.com/worst-movies-all-time-these-films-all-got-rotten-tomatoes-921978",
+        "https://www.newsweek.com/100-best-films-all-time-according-critics-991657",
+        "https://www.newsweek.com/courtney-smith-zach-smith-ex-wife-responds-cheating-accusations-made-against-1212529",
+        "https://www.newsweek.com/kim-kardashian-kanye-west-hire-private-firefighters-save-multiple-homes-1212528",
+        "https://www.newsweek.com/migrant-caravan-moving-closer-will-they-get-states-or-deported-1212526",
+        "https://www.newsweek.com/warriors-offer-100-monthly-passes-without-court-view-1212517",
+        "https://www.newsweek.com/giants-vs-49ers-sunday-night-football-info-odds-predictions-live-stream-start-1212500",
+        "https://www.newsweek.com/stan-lee-cameos-movies-avengers-4-captain-marvel-1212487",
+        "https://www.newsweek.com/mst3k-mystery-science-theater-3000-return-season-2-movies-12-netflix-jonah-1210149",
+        "https://www.newsweek.com/every-act-life-touching-documentary-tony-winning-playwright-terrence-mcnally-1209765",
+        "https://www.newsweek.com/stuck-between-nato-and-russia-serbia-wants-forge-its-own-military-path-1210762",
+        "https://www.newsweek.com/california-wildfire-smoke-where-get-air-masks-cities-start-handing-out-1211826",
+        "https://www.newsweek.com/who-was-douglas-rain-voice-hal-2001-space-odyssey-dies-ages-90-1211833",
+        "https://www.newsweek.com/about-newsweek",
+        "https://www.newsweek.com/corrections",
+        "https://www.newsweek.com/contact",
+        "https://www.newsweek.com/advertise",
+        "https://www.newsweek.com/copyright",
+        "https://www.newsweek.com/terms-service",
+        "https://www.newsweek.com/privacy-policy",
+        "https://www.newsweek.com/cookie-policy",
+        "https://www.newsweek.com/terms-sale",
+        "https://www.newsweek.com/archive",
+        "https://www.newsweek.com/announcements",
+        "https://www.newsweek.com"
+    ]
+}
