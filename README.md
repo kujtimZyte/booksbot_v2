@@ -41,6 +41,7 @@ The support table looks like so:
 | [NBC News](https://www.nbcnews.com/)                                | 8th November 2018  | Stable |
 | [Associated Press News](https://www.apnews.com)                     | 9th November 2018  | Stable |
 | [The Star](https://www.thestar.com/?redirect=true)                  | 12th November 2018 | Stable |
+| [Newsweek](https://www.newsweek.com/)                               | 12th November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
