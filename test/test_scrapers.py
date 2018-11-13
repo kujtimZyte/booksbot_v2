@@ -322,6 +322,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?srnd=premium',
             'bloomberg-apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-dont.json')
 
+    def test_arstechnica_homepage(self):
+        self.check_fake_html_scrape(
+            'arstechnica.com.html',
+            'https://arstechnica.com',
+            'arstechnica.com.json')
+
+    def test_arstechnica_major_bg_mishap_takes_down_google_as_traffic_improperly_travels_to_china(self):
+        self.check_fake_html_scrape(
+            'arstechnica-major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china.html',
+            'https://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/',
+            'arstechnica-major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
