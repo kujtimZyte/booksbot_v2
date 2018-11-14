@@ -44,6 +44,7 @@ from .thestar import thestar_parse
 from .newsweek import newsweek_parse
 from .bloomberg import bloomberg_parse
 from .arstechnica import arstechnica_parse
+from .cbsnews import cbsnews_parse
 
 
 DetectorFactory.seed = 0
@@ -146,7 +147,8 @@ class NewsSpider(scrapy.Spider):
         "thestar.com",
         "newsweek.com",
         "bloomberg.com",
-        "arstechnica.com"
+        "arstechnica.com",
+        "cbsnews.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -174,7 +176,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.thestar.com',
         'https://www.newsweek.com/',
         'https://www.bloomberg.com/',
-        'https://arstechnica.com/'
+        'https://arstechnica.com/',
+        'https://www.cbsnews.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -282,6 +285,10 @@ class NewsSpider(scrapy.Spider):
         "arstechnica.com": {
             "parser": arstechnica_parse,
             "splash": True
+        },
+        "cbsnews.com": {
+            "parser": cbsnews_parse,
+            "splash": False
         }
     }
     # pylint: enable=line-too-long
