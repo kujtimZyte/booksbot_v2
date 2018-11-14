@@ -334,6 +334,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://arstechnica.com/information-technology/2018/11/major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china/',
             'arstechnica-major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china.json')
 
+    def test_cbsnews_homepage(self):
+        self.check_fake_html_scrape(
+            'cbsnews.com.html',
+            'https://www.cbsnews.com/',
+            'cbsnews.com.json')
+
+    def test_cbsnews_us_military_might_struggle_to_win_or_perhaps_lose_war_with_china_or_russia_report_says(self):
+        self.check_fake_html_scrape(
+            'cbsnews-u-s-military-might-struggle-to-win-or-perhaps-lose-war-with-china-or-russia-report-says.html',
+            'https://www.cbsnews.com/news/u-s-military-might-struggle-to-win-or-perhaps-lose-war-with-china-or-russia-report-says/',
+            'cbsnews-u-s-military-might-struggle-to-win-or-perhaps-lose-war-with-china-or-russia-report-says.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
