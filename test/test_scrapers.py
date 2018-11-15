@@ -346,6 +346,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.cbsnews.com/news/u-s-military-might-struggle-to-win-or-perhaps-lose-war-with-china-or-russia-report-says/',
             'cbsnews-u-s-military-might-struggle-to-win-or-perhaps-lose-war-with-china-or-russia-report-says.json')
 
+    def test_ctvnews_homepage(self):
+        self.check_fake_html_scrape(
+            'ctvnews.ca.html',
+            'https://www.ctvnews.ca/',
+            'ctvnews.ca.json')
+
+    def test_ctvnews_brexit_deal_in_peril_after_u_k_cabinet_ministers_quit(self):
+        self.check_fake_html_scrape(
+            'ctvnews-brexit-deal-in-peril-after-u-k-cabinet-ministers-quit.html',
+            'https://www.ctvnews.ca/world/brexit-deal-in-peril-after-u-k-cabinet-ministers-quit-1.4178066',
+            'ctvnews-brexit-deal-in-peril-after-u-k-cabinet-ministers-quit.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
