@@ -358,6 +358,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.ctvnews.ca/world/brexit-deal-in-peril-after-u-k-cabinet-ministers-quit-1.4178066',
             'ctvnews-brexit-deal-in-peril-after-u-k-cabinet-ministers-quit.json')
 
+    def test_radionz_homepage(self):
+        self.check_fake_html_scrape(
+            'radionz.co.nz.html',
+            'https://www.radionz.co.nz/',
+            'radionz.co.nz.json')
+
+    def test_radionz_royal_commission_inquiry_a_lost_opportunity_for_some(self):
+        self.check_fake_html_scrape(
+            'radionz-royal-commission-inquiry-a-lost-opportunity-for-some.html',
+            'https://www.radionz.co.nz/national/programmes/checkpoint/audio/2018671592/royal-commission-inquiry-a-lost-opportunity-for-some',
+            'radionz-royal-commission-inquiry-a-lost-opportunity-for-some.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
