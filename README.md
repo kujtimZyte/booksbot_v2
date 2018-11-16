@@ -46,6 +46,7 @@ The support table looks like so:
 | [Ars Technica](https://arstechnica.com)                             | 13th November 2018 | Stable |
 | [CBS News](https://www.cbsnews.com/)                                | 14th November 2018 | Stable |
 | [CTV News](https://www.ctvnews.ca/)                                 | 15th November 2018 | Stable |
+| [Radio NZ](https://www.radionz.co.nz/)                              | 16th November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
