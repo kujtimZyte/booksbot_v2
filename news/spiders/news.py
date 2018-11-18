@@ -47,6 +47,7 @@ from .arstechnica import arstechnica_parse
 from .cbsnews import cbsnews_parse
 from .ctvnews import ctvnews_parse
 from .radionz import radionz_parse
+from .fox import fox_parse
 
 
 DetectorFactory.seed = 0
@@ -152,7 +153,8 @@ class NewsSpider(scrapy.Spider):
         "arstechnica.com",
         "cbsnews.com",
         "ctvnews.ca",
-        "radionz.co.nz"
+        "radionz.co.nz",
+        "foxnews.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -183,7 +185,8 @@ class NewsSpider(scrapy.Spider):
         'https://arstechnica.com/',
         'https://www.cbsnews.com/',
         'https://www.ctvnews.ca/',
-        'https://www.radionz.co.nz/'
+        'https://www.radionz.co.nz/',
+        'https://www.foxnews.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -302,6 +305,10 @@ class NewsSpider(scrapy.Spider):
         },
         "radionz.co.nz": {
             "parser": radionz_parse,
+            "splash": True
+        },
+        "foxnews.com": {
+            "parser": fox_parse,
             "splash": True
         }
     }
