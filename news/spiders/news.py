@@ -48,6 +48,7 @@ from .cbsnews import cbsnews_parse
 from .ctvnews import ctvnews_parse
 from .radionz import radionz_parse
 from .fox import fox_parse
+from .thedailybeast import dailybeast_parse
 
 
 DetectorFactory.seed = 0
@@ -154,7 +155,8 @@ class NewsSpider(scrapy.Spider):
         "cbsnews.com",
         "ctvnews.ca",
         "radionz.co.nz",
-        "foxnews.com"
+        "foxnews.com",
+        "thedailybeast.com"
     ]
     start_urls = [
         'http://www.cnn.com',
@@ -186,7 +188,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.cbsnews.com/',
         'https://www.ctvnews.ca/',
         'https://www.radionz.co.nz/',
-        'https://www.foxnews.com/'
+        'https://www.foxnews.com/',
+        'https://www.thedailybeast.com'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -309,6 +312,10 @@ class NewsSpider(scrapy.Spider):
         },
         "foxnews.com": {
             "parser": fox_parse,
+            "splash": True
+        },
+        "thedailybeast.com": {
+            "parser": dailybeast_parse,
             "splash": True
         }
     }
