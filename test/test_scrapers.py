@@ -370,6 +370,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.radionz.co.nz/national/programmes/checkpoint/audio/2018671592/royal-commission-inquiry-a-lost-opportunity-for-some',
             'radionz-royal-commission-inquiry-a-lost-opportunity-for-some.json')
 
+    def test_fox_homepage(self):
+        self.check_fake_html_scrape(
+            'foxnews.com.html',
+            'https://www.foxnews.com/',
+            'foxnews.com.json')
+
+    def test_fox_trump_in_exclusive_interview_reveals_obamas_private_guidance_on_greatest_threat_to_the_us(self):
+        self.check_fake_html_scrape(
+            'foxnews-trump-in-exclusive-interview-reveals-obamas-private-guidance-on-greatest-threat-to-the-u-s.html',
+            'https://www.foxnews.com/politics/trump-in-exclusive-interview-reveals-obamas-private-guidance-on-greatest-threat-to-the-u-s',
+            'foxnews-trump-in-exclusive-interview-reveals-obamas-private-guidance-on-greatest-threat-to-the-u-s.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
