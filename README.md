@@ -48,6 +48,7 @@ The support table looks like so:
 | [CTV News](https://www.ctvnews.ca/)                                 | 15th November 2018 | Stable |
 | [Radio NZ](https://www.radionz.co.nz/)                              | 16th November 2018 | Stable |
 | [Fox News](https://www.foxnews.com/)                                | 18th November 2018 | Stable |
+| [The Daily Beast](https://www.thedailybeast.com/)                   | 18th November 2018 | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)

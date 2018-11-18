@@ -382,6 +382,18 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.foxnews.com/politics/trump-in-exclusive-interview-reveals-obamas-private-guidance-on-greatest-threat-to-the-u-s',
             'foxnews-trump-in-exclusive-interview-reveals-obamas-private-guidance-on-greatest-threat-to-the-u-s.json')
 
+    def test_thedailybeast_homepage(self):
+        self.check_fake_html_scrape(
+            'thedailybeast.com.html',
+            'https://www.thedailybeast.com/',
+            'thedailybeast.com.json')
+
+    def test_thedailybeast_california_fire_death_toll_climbs_in_paradise_where_residents_were_burned_alive_in_cars(self):
+        self.check_fake_html_scrape(
+            'thedailybeast-california-fire-death-toll-climbs-in-paradise-where-residents-were-burned-alive-in-cars.html',
+            'https://www.thedailybeast.com/california-fire-death-toll-climbs-in-paradise-where-residents-were-burned-alive-in-cars?ref=home',
+            'thedailybeast-california-fire-death-toll-climbs-in-paradise-where-residents-were-burned-alive-in-cars.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         #open('output.json', 'w').write(output_json)
