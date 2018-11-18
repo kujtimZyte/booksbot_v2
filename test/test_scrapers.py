@@ -376,7 +376,7 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.foxnews.com/',
             'foxnews.com.json')
 
-    def test_foxnews_trump_in_exclusive_interview_reveals_obamas_private_guidance_on_greatest_threat_to_the_us(self):
+    def test_fox_trump_in_exclusive_interview_reveals_obamas_private_guidance_on_greatest_threat_to_the_us(self):
         self.check_fake_html_scrape(
             'foxnews-trump-in-exclusive-interview-reveals-obamas-private-guidance-on-greatest-threat-to-the-u-s.html',
             'https://www.foxnews.com/politics/trump-in-exclusive-interview-reveals-obamas-private-guidance-on-greatest-threat-to-the-u-s',

@@ -117,7 +117,7 @@ def is_item_english(items):
             text = paragraph['text']
             words = text.split()
             # Short sentences can be confused easily
-            if len(words) > 10:
+            if len(words) > 20:
                 if detect(text) != 'en':
                     return False
     return True
