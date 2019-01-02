@@ -3,6 +3,7 @@
 import os
 import json
 import hashlib
+import random
 import urlparse
 import scrapy
 from scrapy_splash import SplashRequest
@@ -323,6 +324,7 @@ class NewsSpider(scrapy.Spider):
 
 
     def start_requests(self):
+        random.shuffle(self.start_urls)
         requests = self.requests_for_urls(self.start_urls)
         for request in requests:
             yield request
