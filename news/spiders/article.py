@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Structure for creating an article representation"""
 import datetime
+import json
 from dateutil import parser
 import requests
 from .common import markdown_to_plaintext

@@ -13,3 +13,4 @@ python-dateutil==2.7.5
 html2text==2018.1.9
 markdown==3.0.1
 js2py==0.60
+mock==2.0.0

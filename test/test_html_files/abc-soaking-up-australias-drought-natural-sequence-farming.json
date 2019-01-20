@@ -8,287 +8,194 @@
                 "images": {
                     "images": [
                         {
-                            "last_modified": 1540753477.0,
-                            "mime_type": "image/jpeg",
-                            "size": 78902,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10370730-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753453.0,
-                            "mime_type": "image/jpeg",
-                            "size": 78086,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382672-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753453.0,
-                            "mime_type": "image/jpeg",
-                            "size": 120711,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382672-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753453.0,
-                            "mime_type": "image/jpeg",
-                            "size": 319379,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382672-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753450.0,
-                            "mime_type": "image/jpeg",
-                            "size": 80732,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10334576-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753450.0,
-                            "mime_type": "image/jpeg",
-                            "size": 129324,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10334576-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753450.0,
-                            "mime_type": "image/jpeg",
-                            "size": 394590,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10334576-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753485.0,
-                            "mime_type": "image/jpeg",
-                            "size": 77403,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382926-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753472.0,
-                            "mime_type": "image/jpeg",
-                            "size": 132955,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330088-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753472.0,
-                            "mime_type": "image/jpeg",
-                            "size": 231633,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330088-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753472.0,
-                            "mime_type": "image/jpeg",
-                            "size": 851399,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330088-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753490.0,
-                            "mime_type": "image/jpeg",
-                            "size": 123957,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330090-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753490.0,
-                            "mime_type": "image/jpeg",
-                            "size": 211139,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330090-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753490.0,
-                            "mime_type": "image/jpeg",
-                            "size": 755664,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330090-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753492.0,
-                            "mime_type": "image/jpeg",
-                            "size": 123890,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330094-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753492.0,
-                            "mime_type": "image/jpeg",
-                            "size": 214636,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330094-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753492.0,
-                            "mime_type": "image/jpeg",
-                            "size": 782736,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330094-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753466.0,
-                            "mime_type": "image/jpeg",
-                            "size": 124364,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330098-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753466.0,
-                            "mime_type": "image/jpeg",
-                            "size": 215858,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330098-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753466.0,
-                            "mime_type": "image/jpeg",
-                            "size": 772353,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330098-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753480.0,
-                            "mime_type": "image/jpeg",
-                            "size": 106709,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330084-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753480.0,
-                            "mime_type": "image/jpeg",
-                            "size": 182441,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330084-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753480.0,
-                            "mime_type": "image/jpeg",
-                            "size": 613639,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10330084-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753487.0,
-                            "mime_type": "image/jpeg",
-                            "size": 161967,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10370752-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753457.0,
-                            "mime_type": "image/jpeg",
-                            "size": 100101,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382684-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753457.0,
-                            "mime_type": "image/jpeg",
-                            "size": 151436,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382684-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753457.0,
-                            "mime_type": "image/jpeg",
-                            "size": 396830,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382684-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753501.0,
-                            "mime_type": "image/jpeg",
-                            "size": 119910,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10378486-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753494.0,
-                            "mime_type": "image/jpeg",
-                            "size": 115397,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10379248-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753494.0,
-                            "mime_type": "image/jpeg",
-                            "size": 191325,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10379248-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753494.0,
-                            "mime_type": "image/jpeg",
-                            "size": 614879,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10379248-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753447.0,
-                            "mime_type": "image/jpeg",
-                            "size": 116553,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10386230-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753447.0,
-                            "mime_type": "image/jpeg",
-                            "size": 198814,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10386230-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753447.0,
-                            "mime_type": "image/jpeg",
-                            "size": 568365,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10386230-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753462.0,
-                            "mime_type": "image/jpeg",
-                            "size": 71618,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10432864-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753462.0,
-                            "mime_type": "image/jpeg",
-                            "size": 108955,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10432864-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753462.0,
-                            "mime_type": "image/jpeg",
-                            "size": 306044,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10432864-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753459.0,
-                            "mime_type": "image/jpeg",
-                            "size": 35799,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382648-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753459.0,
-                            "mime_type": "image/jpeg",
-                            "size": 52578,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382648-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753459.0,
-                            "mime_type": "image/jpeg",
-                            "size": 145511,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10382648-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753468.0,
-                            "mime_type": "image/jpeg",
-                            "size": 79060,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10386452-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753468.0,
-                            "mime_type": "image/jpeg",
-                            "size": 128834,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10386452-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753468.0,
-                            "mime_type": "image/jpeg",
-                            "size": 395511,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10386452-16x9-2150x1210.jpg"
                         },
                         {
-                            "last_modified": 1540753454.0,
-                            "mime_type": "image/jpeg",
-                            "size": 52623,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10386518-3x2-700x467.jpg"
                         },
                         {
-                            "last_modified": 1540753454.0,
-                            "mime_type": "image/jpeg",
-                            "size": 79484,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10386518-3x2-940x627.jpg"
                         },
                         {
-                            "last_modified": 1540753454.0,
-                            "mime_type": "image/jpeg",
-                            "size": 203312,
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "url": "https://www.abc.net.au/news/image/10386518-16x9-2150x1210.jpg"
                         }
                     ],
                     "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
                         "height": 394,
-                        "last_modified": 1540753487.0,
                         "mime_type": "image/jpeg",
-                        "size": 71935,
                         "url": "https://www.abc.net.au/news/image/10370752-16x9-700x394.jpg",
                         "width": 700
                     }
@@ -337,7 +244,7 @@
                             "codec": "AVC",
                             "etag": "\"6209cb-5788a25f37d1b\"",
                             "height": 288,
-                            "mime_type": "video/mp4",
+                            "mime_type": "image/jpeg",
                             "size": 6425035,
                             "url": "https://abcmedia.akamaized.net/news/austory/video/201810/ASTb_HopeSprings_1910_512k.mp4",
                             "width": 512
@@ -345,20 +252,20 @@
                         {
                             "bitrate": 1023,
                             "codec": "AVC",
-                            "etag": "\"cd9631-5788a26449b2a\"",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "height": 576,
-                            "mime_type": "video/mp4",
-                            "size": 13473329,
+                            "mime_type": "image/jpeg",
+                            "size": 6425035,
                             "url": "https://abcmedia.akamaized.net/news/austory/video/201810/ASTb_HopeSprings_1910_1000k.mp4",
                             "width": 1024
                         },
                         {
                             "bitrate": 183,
                             "codec": "AVC",
-                            "etag": "\"2a8aaa-5788a26564a95\"",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
                             "height": 180,
-                            "mime_type": "video/mp4",
-                            "size": 2788010,
+                            "mime_type": "image/jpeg",
+                            "size": 6425035,
                             "url": "https://abcmedia.akamaized.net/news/austory/video/201810/ASTb_HopeSprings_1910_256k.mp4",
                             "width": 320
                         }
