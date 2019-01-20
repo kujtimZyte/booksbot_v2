@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Common utilities for scraping"""
 import re
+from bs4 import BeautifulSoup
+from markdown import markdown
 
 
 def extract_string_from_javascript(response_text, start_index):
@@ -111,3 +113,15 @@ def extract_item_from_element_css(response, css_selector):
         if item:
             items.append(item)
     return items
+
+def markdown_to_plaintext(markdown_text):
+    """Converts markdown to plaintext"""
+    # https://gist.github.com/lorey/eb15a7f3338f959a78cc3661fbc255fe
+    html = markdown(markdown_text)
+    # remove code snippets
+    html = re.sub(r'<pre>(.*?)</pre>', ' ', html)
+    html = re.sub(r'<code>(.*?)</code >', ' ', html)
+    # extract text
+    soup = BeautifulSoup(html, "html.parser")
+    text = ''.join(soup.findAll(text=True))
+    return text

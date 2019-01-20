@@ -18,43 +18,19 @@ The support table looks like so:
 
 | News Site                                                           | Last Updated       | Status |
 | ------------------------------------------------------------------- |:------------------:| ------:|
-| [CNN](https://www.cnn.com/)                                         | 20th October 2018  | Stable |
-| [Reuters](https://www.reuters.com/)                                 | 22nd October 2018  | Stable |
-| [Guardian](https://www.theguardian.com/international?INTCMP=CE_INT) | 23rd October 2018  | Stable |
-| [BBC](http://www.bbc.com)                                           | 24th October 2018  | Stable |
-| [CBC](https://www.cbc.ca/)                                          | 26th October 2018  | Stable |
-| [The Independent](https://www.independent.co.uk)                    | 27th October 2018  | Stable |
-| [The Verge](https://www.theverge.com/)                              | 27th October 2018  | Stable |
-| [The New York Times](https://www.nytimes.com/)                      | 27th October 2018  | Stable |
-| [Australian Broadcasting Corporation](https://www.abc.net.au/news/) | 28th October 2018  | Stable |
-| [stuff](https://www.stuff.co.nz/)                                   | 29th October 2018  | Stable |
-| [The Hill](https://thehill.com)                                     | 30th October 2018  | Stable |
-| [The Washington Post](https://www.washingtonpost.com)               | 31st October 2018  | Stable |
-| [Global News](https://globalnews.ca/)                               | 1st November 2018  | Stable |
-| [Business Insider](https://www.businessinsider.com)                 | 3rd November 2018  | Stable |
-| [The New Zealand Herald](https://www.nzherald.co.nz/)               | 3rd November 2018  | Stable |
-| [The Huffington Post](https://www.huffingtonpost.com)               | 4th November 2018  | Stable |
-| [The Sydney Morning Herald](https://www.smh.com.au)                 | 5th November 2018  | Stable |
-| [CNBC](https://www.cnbc.com)                                        | 6th November 2018  | Stable |
-| [Vice](https://www.vice.com/en_us)                                  | 7th November 2018  | Stable |
-| [Motherboard](https://motherboard.vice.com/en_us)                   | 7th November 2018  | Stable |
-| [NBC News](https://www.nbcnews.com/)                                | 8th November 2018  | Stable |
-| [Associated Press News](https://www.apnews.com)                     | 9th November 2018  | Stable |
-| [The Star](https://www.thestar.com/?redirect=true)                  | 12th November 2018 | Stable |
-| [Newsweek](https://www.newsweek.com/)                               | 12th November 2018 | Stable |
-| [Bloomberg](https://www.bloomberg.com/)                             | 13th November 2018 | Stable |
-| [Ars Technica](https://arstechnica.com)                             | 13th November 2018 | Stable |
-| [CBS News](https://www.cbsnews.com/)                                | 14th November 2018 | Stable |
-| [CTV News](https://www.ctvnews.ca/)                                 | 15th November 2018 | Stable |
-| [Radio NZ](https://www.radionz.co.nz/)                              | 16th November 2018 | Stable |
-| [Fox News](https://www.foxnews.com/)                                | 18th November 2018 | Stable |
-| [The Daily Beast](https://www.thedailybeast.com/)                   | 18th November 2018 | Stable |
+| [Australian Broadcasting Corporation](https://www.abc.net.au/news/) | 19th January 2019  | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
 * [scrapy-splash](https://github.com/scrapy-plugins/scrapy-splash)
 * [google-cloud-storage](https://cloud.google.com/storage/docs/reference/libraries)
 * [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
+* [python-dateutil](http://labix.org/python-dateutil)
+* [html2text](http://www.aaronsw.com/2002/html2text/)
+* [markdown](https://python-markdown.github.io/)
+* [requests](http://docs.python-requests.org/en/master/)
+* [js2py](https://github.com/PiotrDabkowski/Js2Py)
+* [mock](https://docs.python.org/3/library/unittest.mock.html)
 
 ## Installation :inbox_tray:
 The chief requirements of any installation are based off scrapy and splash, see below for local and cloud based options.
@@ -104,91 +80,94 @@ Once these are filled in, you can run the `deploy_files.sh` script to create the
 Once this system is running it will post JSON files to the GCS bucket defined. The standard format will look like so:
 ```json
 {
-    "items":[
+    "items": [
         {
-            "url":"https://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas",
-            "items":[
-                {
-                    "articleBody":[
+            "article": {
+                "author": {
+                    "url": "https://www.abc.net.au/news/winsome-denyer/7991864"
+                },
+                "images": {
+                    "images": [
                         {
-                            "text":"Donald Trump has said that the Saudi operation to kill"
-                        },
-                        {
-                            "text":"Jamal Khashoggi",
-                            "link":"https://www.theguardian.com/world/jamal-khashoggi"
-                        },
-                        {
-                            "text":"in Riyadh\u2019s consulate in Istanbul led to \u201cone of the worst cover-ups\u201d in history, as the US said it would sanction officials who were implicated in the writer\u2019s death."
-                        },
-                        {
-                            "text":"Twenty-one Saudis will have their US visas revoked or be made ineligible for US visas over the journalist\u2019s killing, a state department spokeswoman, Heather Nauert, said on Tuesday."
+                            "last_modified": 1540753477.0,
+                            "mime_type": "image/jpeg",
+                            "size": 78902,
+                            "url": "https://www.abc.net.au/news/image/10370730-3x2-940x627.jpg"
                         }
                     ],
-                    "twitter:app:url:ipad":"gnmguardian://world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas?contenttype=Article&source=twitter",
-                    "og:image:height":"720",
-                    "application-name":"The Guardian",
-                    "twitter:app:name:googleplay":"The Guardian",
-                    "twitter:image":"https://i.guim.co.uk/img/media/6e532981cf34af9609e41032d5c5d9102c6ff0d6/0_233_3500_2101/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=990d00212b56936bfe2a680740695c6e",
-                    "HandheldFriendly":"True",
-                    "fb:app_id":"180444840287",
-                    "twitter:app:url:googleplay":"guardian://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas",
-                    "twitter:site":"@guardian",
-                    "article:publisher":"https://www.facebook.com/theguardian",
-                    "twitter:dnt":"on",
-                    "al:ios:url":"gnmguardian://world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas?contenttype=Article&source=applinks",
-                    "og:url":"http://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas",
-                    "twitter:app:url:iphone":"gnmguardian://world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas?contenttype=Article&source=twitter",
-                    "og:image":"https://i.guim.co.uk/img/media/6e532981cf34af9609e41032d5c5d9102c6ff0d6/0_233_3500_2101/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=990d00212b56936bfe2a680740695c6e",
-                    "msapplication-TileColor":"#e7edef",
-                    "al:ios:app_store_id":"409128287",
-                    "author":"Bethan McKernan",
-                    "description":"US curbs 21 Saudi officials\u2019 visas and mulls more sanctions, with Pompeo adding: \u2018These penalties will not be the last word\u2019",
-                    "og:type":"article",
-                    "apple-itunes-app":"app-id=409128287, app-argument=https://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas, affiliate-data=ct=newsmartappbanner&pt=304191",
-                    "theme-color":"#e7edef",
-                    "article:modified_time":"2018-10-23T22:43:42.000Z",
-                    "og:title":"Jamal Khashoggi: Trump says Saudi cover-up was 'one of worst' in history",
-                    "twitter:app:id:ipad":"409128287",
-                    "article:tag":"Jamal Khashoggi,US foreign policy,Saudi Arabia,World news,US news,Middle East and North Africa,Mike Pompeo,Donald Trump,Turkey,Recep Tayyip Erdo\u011fan",
-                    "thumbnail":"https://i.guim.co.uk/img/media/6e532981cf34af9609e41032d5c5d9102c6ff0d6/0_233_3500_2101/master/3500.jpg?width=620&quality=85&auto=format&fit=max&s=904b3aef5c9263fc950eb0ee29c7743f",
-                    "fb:pages":"516977308337360",
-                    "article:section":"World news",
-                    "news_keywords":"Jamal Khashoggi,US foreign policy,Saudi Arabia,World news,US news,Middle East and North Africa,Mike Pompeo,Donald Trump,Turkey,Recep Tayyip Erdo\u011fan",
-                    "twitter:app:name:iphone":"The Guardian",
-                    "article:author":"https://www.theguardian.com/profile/bethan-mckernan",
-                    "twitter:app:name:ipad":"The Guardian",
-                    "msapplication-TileImage":"https://assets.guim.co.uk/images/favicons/77beb32f01ee0157ec193e09e4e18c4e/windows_tile_144_b.png",
-                    "al:ios:app_name":"The Guardian",
-                    "imgs":[
-                        "https://i.guim.co.uk/img/media/efd4b0da768248d47fc1c3da23dfc922bc61db26/100_66_1135_681/master/1135.png?width=300&quality=85&auto=format&fit=max&s=d6dc6e97579cb5e178c28c02012a9c31",
-                        "https://i.guim.co.uk/img/media/1cb1179ad6b0ff0d187a4c94e7f7484a91b81839/22_176_4072_2443/master/4072.jpg?width=300&quality=85&auto=format&fit=max&s=53cb811e25f6635912958aeec4923f58"
-                    ],
-                    "twitter:app:id:googleplay":"com.guardian",
-                    "og:image:width":"1200",
-                    "article:published_time":"2018-10-23T22:04:24.000Z",
-                    "twitter:app:id:iphone":"409128287",
-                    "viewport":"width=device-width,minimum-scale=1,initial-scale=1",
-                    "og:site_name":"the Guardian",
-                    "twitter:card":"summary_large_image",
-                    "apple-mobile-web-app-title":"Guardian",
-                    "og:description":"US curbs 21 Saudi officials\u2019 visas and mulls more sanctions, with Pompeo adding: \u2018These penalties will not be the last word\u2019",
-                    "null":"2018-10-23T18:43:42-0400",
-                    "keywords":"Jamal Khashoggi,US foreign policy,Saudi Arabia,World news,US news,Middle East and North Africa,Mike Pompeo,Donald Trump,Turkey,Recep Tayyip Erdo\u011fan",
-                    "format-detection":"telephone=no"
+                    "thumbnail": {
+                        "height": 394,
+                        "last_modified": 1540753487.0,
+                        "mime_type": "image/jpeg",
+                        "size": 71935,
+                        "url": "https://www.abc.net.au/news/image/10370752-16x9-700x394.jpg",
+                        "width": 700
+                    }
+                },
+                "info": {
+                    "description": "Is natural sequence farming the secret to restoring our water-starved continent? For more than a decade, two farmers have shown that parched landscapes can be revived. And finally Canberra's listening.",
+                    "genre": "News & Current Affairs",
+                    "title": "'We can fix all this': Could this be the solution to Australia's drought crisis?",
+                    "url": "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844"
+                },
+                "location": {
+                    "latitude": -35.2587,
+                    "longitude": 149.4382
+                },
+                "publisher": {
+                    "facebook": {
+                        "page_id": "72924719987",
+                        "url": "https://www.facebook.com/abcnews.au"
+                    },
+                    "organisation": "Australian Broadcasting Corporation",
+                    "twitter": {
+                        "card": "summary",
+                        "handle": "@ABCNews",
+                        "image": "https://www.abc.net.au/news/image/10370752-16x9-700x394.jpg"
+                    }
+                },
+                "tags": [
+                    "drought",
+                    "rural",
+                    "sustainable-and-alternative-farming",
+                    "beef-cattle",
+                    "livestock"
+                ],
+                "text": {
+                    "markdown": "# Soaking up Australia's drought\n\nIs Natural Sequence Farming the secret to restoring our water-starved\ncontinent? For more than a decade, two farmers have shown that parched\nlandscapes can be revived. And finally Canberra's listening.\n\n[Australian Story](/austory/)",
+                    "text": "Soaking up Australia's drought\nIs Natural Sequence Farming the secret to restoring our water-starved\ncontinent? For more than a decade, two farmers have shown that parched\nlandscapes can be revived. And finally Canberra's listening."
+                },
+                "time": {
+                    "modified_time": 1540768541.0,
+                    "published_time": 1540753388.0
+                },
+                "videos": {
+                    "videos": [
+                        {
+                            "bitrate": 469,
+                            "codec": "AVC",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "height": 288,
+                            "mime_type": "video/mp4",
+                            "size": 6425035,
+                            "url": "https://abcmedia.akamaized.net/news/austory/video/201810/ASTb_HopeSprings_1910_512k.mp4",
+                            "width": 512
+                        }
+                    ]
                 }
-            ]
+            },
+            "url": "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844"
         }
     ],
-    "requests":[
-        "https://www.theguardian.com/football/live/2018/oct/23/manchester-united-v-juventus-champions-league-live",
-        "https://www.theguardian.com/film/2018/oct/23/bohemian-rhapsody-review-freddie-mercury-biopic-bites-the-dust"
+    "requests": [
+        "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844#main_content"
     ]
 }
 ```
 The seemingly random metadata tags come from the `meta` tags keys and values.
 
 ## License :memo:
-The project is available under the [MIT](https://opensource.org/licenses/MIT) license.
+The project is available under the [GPL 3.0](https://opensource.org/licenses/GPL-3.0) license.
 
 ## Acknowledgements
 

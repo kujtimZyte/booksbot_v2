@@ -1,583 +1,277 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "ABC.ContentType": "CMArticle",
-                    "ABC.editorialGenre": "News & Current Affairs",
-                    "ABC.productionUnit": "CAFF - Australian Story",
-                    "ABC.site": "ABC News",
-                    "ABC.tags": "drought;rural;sustainable-and-alternative-farming;beef-cattle;livestock",
-                    "ABC_WCMS_sitesearch_include": "true",
-                    "ContentId": "10312844",
-                    "DC.Publisher.CorporateName": "Australian Broadcasting Corporation",
-                    "DC.coverage.postcode": "2621",
-                    "DC.creator.CorporateName": "Australian Broadcasting Corporation",
-                    "DC.date": "2018-10-29T06:03:08+1100",
-                    "DC.format": "text/html",
-                    "DC.identifier": "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844",
-                    "DC.language": "en-AU",
-                    "DC.rights": "https://www.abc.net.au/conditions.htm#UseOfContent",
-                    "DC.rightsHolder": "ABC",
-                    "DC.subject": "Disasters and Accidents:Drought;Rural;Rural:Sustainable and Alternative Farming;Rural:Livestock:Beef Cattle;Rural:Livestock",
-                    "DC.title": "'We can fix all this': Could this be the solution to Australia's drought crisis?",
-                    "DC.type": "Current",
-                    "DCSext.LocalRegion": "illawarra",
-                    "DCTERMS.issued": "2018-10-29T06:03:08+1100",
-                    "DCTERMS.modified": "2018-10-29T10:15:41+1100",
-                    "DCTERMS.spatial": "east=149.4382;north=-35.2587",
-                    "ICBM": "-35.2587,149.4382",
-                    "apple-mobile-web-app-title": "ABC News",
-                    "article:author": "https://www.abc.net.au/news/winsome-denyer/7991864",
-                    "article:modified_time": "2018-10-29T10:15:41+1100",
-                    "article:published_time": "2018-10-29T06:03:08+1100",
-                    "article:publisher": "https://www.facebook.com/abcnews.au",
-                    "article:tag": "Livestock",
-                    "articleBody": [
+            "article": {
+                "author": {
+                    "url": "https://www.abc.net.au/news/winsome-denyer/7991864"
+                },
+                "images": {
+                    "images": [
                         {
-                            "text": "When Tony Coote was buried in August on his beloved property, Mulloon Creek Natural Farms, his mischievous sense of humour was evident: he was lowered into his grave in a handmade wicker basket made of willow."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10370730-3x2-940x627.jpg"
                         },
                         {
-                            "text": "It was, some say, a parting gesture to those who had complained about him planting willow trees to repair degraded landscapes."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382672-3x2-700x467.jpg"
                         },
                         {
-                            "text": "Like the rest of New South Wales, Mulloon Creek is in drought. The egg and beef operation, 45 minutes outside Canberra, is experiencing its driest seven months on record, with less than 150mm of rainfall."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382672-3x2-940x627.jpg"
                         },
                         {
-                            "text": "But, unlike other farms in the region, there's water flowing through the creek \u2014 crystal clear water, good enough to drink."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382672-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "This is no miracle \u2014  it's the result of Mr Coote's dedication over a decade to the ethos of Peter Andrews, lauded for his ability to rehabilitate dry, degraded and salt-ravaged landscapes."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10334576-3x2-700x467.jpg"
                         },
                         {
-                            "text": "Australian Story's 2005 episode on Mr Andrews and Tarwyn Park, the Hunter Valley property where he pioneered his controversial land regenerating system known as Natural Sequence Farming, was one of the program's most popular ever."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10334576-3x2-940x627.jpg"
                         },
                         {
-                            "link": "/news/2015-05-11/hopes-tarwyn-park-natural-sequence-farming-methods-to-continue/6459040",
-                            "text": "Ten years later, Tarwyn Park was acquired by Korean mining interests"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10334576-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": ", but that didn't stop Mr Andrews's groundbreaking work."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382926-3x2-940x627.jpg"
                         },
                         {
-                            "text": "He travels the country advising landholders, and Mr Coote ensured ongoing scientific research and lobbying for Natural Sequence Farming through his legacy, The Mulloon Institute."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330088-3x2-700x467.jpg"
                         },
                         {
-                            "text": "And Mr Andrews's son, Stuart, runs the Tarwyn Park Training Program at the institute."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330088-3x2-940x627.jpg"
                         },
                         {
-                            "text": "\"The elixir of life; can't get water that tastes like that out of a city anywhere,\" says Mr Andrews, 78, as he negotiates the rocky edge of Mulloon Creek to reach down and cup some water in his hand."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330088-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "In the midst of the state's worst drought in decades, with no reprieve forecast, it truly is a sight to behold."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330090-3x2-700x467.jpg"
                         },
                         {
-                            "text": "Media player: \"Space\" to play, \"M\" to mute, \"left\" and \"right\" to seek."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330090-3x2-940x627.jpg"
                         },
                         {
-                            "text": "When Mr Coote, the then-executive chairman of Angus and Coote Jewellers, watched Mr Andrews's Australian Story, he was riveted."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330090-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "Mr Coote could see the genius behind his method of reading the landscape and tapping into the land's natural system of self-rehydration."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330094-3x2-700x467.jpg"
                         },
                         {
-                            "text": "He reached out to Mr Andrews and asked him to take a look at the Mulloon Creek property he'd bought in the late 1960s."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330094-3x2-940x627.jpg"
                         },
                         {
-                            "text": "\"Our land is severely dehydrated. We know our bodies cannot work unless they're hydrated, we know plants and animals can't work unless they are hydrated. But our land is dehydrated,\" Mr Coote"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330094-16x9-2150x1210.jpg"
                         },
                         {
-                            "link": "/news/2015-05-05/the-battle-for-tarwyn-park/6441486",
-                            "text": "told Australian Story in 2015"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330098-3x2-700x467.jpg"
                         },
                         {
-                            "text": "."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330098-3x2-940x627.jpg"
                         },
                         {
-                            "text": "We can fix all this, that's the good news. And we can do it\u00a0quickly."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330098-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "At Mulloon Creek, the two men set to work building Mr Andrews's signature \"leaky weirs\" in the creek, one of many crucial steps in a complex plan to restore the landscape's original processes."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330084-3x2-700x467.jpg"
                         },
                         {
-                            "text": "Using rocks, fallen trees and other natural debris, a weir is constructed across the creek, not to stop the water from flowing through, but to slow the water down."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330084-3x2-940x627.jpg"
                         },
                         {
-                            "text": "It then has a chance to seep into the landscape on either side, rather than gushing down the creek system and straight out to sea, taking important nutrients with it."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10330084-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "This is why Mulloon Creek is still running, even though there has been little rain. That water, which was stored in the landscape, is now seeping back into the creek."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10370752-3x2-940x627.jpg"
                         },
                         {
-                            "text": "\"All we've done is reproduced what was a natural process in Australia's landscapes,\" Mr Andrews says."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382684-3x2-700x467.jpg"
                         },
                         {
-                            "text": "\"We've been able to get water into the floodplains which sustains the landscape in a drought.\""
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382684-3x2-940x627.jpg"
                         },
                         {
-                            "text": "The change to the landscape on Mr Coote's farm is striking."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382684-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "\"It was so degraded that we put six truckloads of blackberry canes in the creek to trigger the fertility. Now it's growing its own fertility. It's got to the stage now where fish would love to live there, every bird wants to go there and the frogs are all singing. They're happy,\" Mr Andrews says."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10378486-3x2-940x627.jpg"
                         },
                         {
-                            "text": "Farmers across the eastern seaboard are suffering through a drought that some consider the worst in living memory."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10379248-3x2-700x467.jpg"
                         },
                         {
-                            "text": "And, after a long winter, the Mulloon Creek Natural Farms' paddocks don't look very green. But when you look closely, you can see life just below the blanket of brown; shoots of green grass poke up to the surface, thanks to the moisture in the soil."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10379248-3x2-940x627.jpg"
                         },
                         {
-                            "text": "\"The soil is alive,\" says The Mulloon Institute's Peter Hazell."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10379248-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "\"It's alive with fungus and bacteria, earthworms, and they're all processing that organic matter and that litter. All you need to do is have a look under that brown stubble on the surface, and you can see plenty of resilience that will help this farm burst into life again in the spring.\""
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10386230-3x2-700x467.jpg"
                         },
                         {
-                            "text": "The Mulloon Institute's research coordinator, Luke Peel, is enthusiastic as he measures the water infiltration rate in the soil. \"That is quite amazing!\""
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10386230-3x2-940x627.jpg"
                         },
                         {
-                            "text": "Bubbles flow up the cylindrical surface infiltrometer, indicating that the rate water can be absorbed into that soil is 10,000mm per hour."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10386230-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "\"It's a staggering amount,\" he says. \"1,000mm per hour of rainfall is equivalent to a torrential downpour.\""
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10432864-3x2-700x467.jpg"
                         },
                         {
-                            "text": "Scientific benchmarking has proven the success of the work Mr Coote and Mr Andrews undertook in 2006, now known as the Pilot Project, with a 63 per cent increase in production on the hydrated land."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10432864-3x2-940x627.jpg"
                         },
                         {
-                            "text": "Two years ago, The Mulloon Institute was recognised by the United Nations as"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10432864-16x9-2150x1210.jpg"
                         },
                         {
-                            "link": "/news/rural/2016-09-16/un-recognises-mulloon-creek-natural-farms-as-sustainable/7852798",
-                            "text": "one of only five case studies globally to demonstrate landscape-scale sustainable agriculture"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382648-3x2-700x467.jpg"
                         },
                         {
-                            "text": "."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382648-3x2-940x627.jpg"
                         },
                         {
-                            "text": "Despite the success, there are still frustrations over government regulations for farmers wanting to implement Mr Andrews's methods."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10382648-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "\"We're working in the innovation space here, and so some of what we do is outside of government policy,\" Mr Hazell says."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10386452-3x2-700x467.jpg"
                         },
                         {
-                            "text": "\"So we also \u2026 are working with government, to try and update that policy.\""
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10386452-3x2-940x627.jpg"
                         },
                         {
-                            "text": "But after years of lobbying for national recognition, there's renewed optimism at Mulloon."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10386452-16x9-2150x1210.jpg"
                         },
                         {
-                            "text": "Prime Minister Scott Morrison visited the property on Thursday, on the eve of his National Drought Summit."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10386518-3x2-700x467.jpg"
                         },
                         {
-                            "text": "Inspecting the flowing creek, he lauded Mr Andrews as a \"real leader and visionary\" and said he was inspired by Mr Coote's \"passion for the environment\"."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10386518-3x2-940x627.jpg"
                         },
                         {
-                            "text": "Deputy Prime Minister Michael McCormack declared the success of Mulloon as a \"model for everyone\"."
-                        },
-                        {
-                            "text": "\"This needs to be replicated right around our nation. A nation that looks after its soil, looks after itself,\" he said."
-                        },
-                        {
-                            "text": "Mr Andrews and his supporters hope these high-profile accolades will translate into a smoother road for more farmers to adopt natural sequencing farming methods."
-                        },
-                        {
-                            "text": "Mr Coote died in August after several years of receiving treatment for cancer. He was 79. He bequeathed his two properties to the Institute, with the profits from the egg and beef operations supporting the ongoing research, advocacy and training around these practices."
-                        },
-                        {
-                            "text": "But that's not his only legacy. An even more ambitious project involves 20 of his neighbours."
-                        },
-                        {
-                            "text": "The Mulloon Community Landscape Rehydration Project, conceived in 2013, encompasses 20 landholders across 23,000 hectares and more than 50 kilometres of Mulloon Creek."
-                        },
-                        {
-                            "text": "\"Tony always had a really big vision,\" says Mr Hazell, who now coordinates the catchment-wide project."
-                        },
-                        {
-                            "text": "\"He thought the information should be shared to farmers all around the country.\""
-                        },
-                        {
-                            "text": "And as more in the community see the scientifically-backed results, Mr Hazell feels the tide of scepticism that once confronted Natural Sequence Farming is finally turning."
-                        },
-                        {
-                            "text": "\"Peter's work has a lot of champions out there, who are making great gains and undertaking fantastic work in the farming landscape in Australia, and I really do feel that we're at the dawn of a new revolution in agriculture.\""
-                        },
-                        {
-                            "text": "Watch Australian Story's Hope Springs on Monday at 8pm (AEDT) on ABCTV and ABCiview."
-                        },
-                        {
-                            "text": "Producers: Winsome Denyer,"
-                        },
-                        {
-                            "link": "/news/kirstin--murray/7819412",
-                            "text": "Kirstin Murray"
-                        },
-                        {
-                            "text": "Photography: Winsome Denyer, supplied, The Mulloon Institute"
-                        },
-                        {
-                            "text": "Topics:"
-                        },
-                        {
-                            "link": "/news/topic/drought",
-                            "text": "drought"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/rural",
-                            "text": "rural"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/sustainable-and-alternative-farming",
-                            "text": "sustainable-and-alternative-farming"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/beef-cattle",
-                            "text": "beef-cattle"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/livestock",
-                            "text": "livestock"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/bungendore-2621",
-                            "text": "bungendore-2621"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/sale-3850",
-                            "text": "sale-3850"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/ensay-3895",
-                            "text": "ensay-3895"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/orbost-3888",
-                            "text": "orbost-3888"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/australia",
-                            "text": "australia"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/vic",
-                            "text": "vic"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/nsw",
-                            "text": "nsw"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/bedourie-4829",
-                            "text": "bedourie-4829"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/windorah-4481",
-                            "text": "windorah-4481"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/st-george-4487",
-                            "text": "st-george-4487"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/hughenden-4821",
-                            "text": "hughenden-4821"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/winton-4735",
-                            "text": "winton-4735"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/boulia-4829",
-                            "text": "boulia-4829"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/mount-isa-4825",
-                            "text": "mount-isa-4825"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/barcaldine-4725",
-                            "text": "barcaldine-4725"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/quilpie-4480",
-                            "text": "quilpie-4480"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/longreach-4730",
-                            "text": "longreach-4730"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/blackall-4472",
-                            "text": "blackall-4472"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/cunnamulla-4490",
-                            "text": "cunnamulla-4490"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/charleville-4470",
-                            "text": "charleville-4470"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/goulburn-2580",
-                            "text": "goulburn-2580"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/wollongong-2500",
-                            "text": "wollongong-2500"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/moree-2400",
-                            "text": "moree-2400"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/gunnedah-2380",
-                            "text": "gunnedah-2380"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/griffith-2680",
-                            "text": "griffith-2680"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/walgett-2832",
-                            "text": "walgett-2832"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/bourke-2840",
-                            "text": "bourke-2840"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/canberra-2600",
-                            "text": "canberra-2600"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/bega-2550",
-                            "text": "bega-2550"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/wagga-wagga-2650",
-                            "text": "wagga-wagga-2650"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/muswellbrook-2333",
-                            "text": "muswellbrook-2333"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/orange-2800",
-                            "text": "orange-2800"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/tamworth-2340",
-                            "text": "tamworth-2340"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/dubbo-2830",
-                            "text": "dubbo-2830"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "/news/topic/broken-hill-2880",
-                            "text": "broken-hill-2880"
-                        },
-                        {
-                            "text": "First posted"
-                        },
-                        {
-                            "text": "about 5 hours ago"
-                        },
-                        {
-                            "text": "Sun 28 Oct 2018, 7:03pm"
-                        },
-                        {
-                            "text": "More"
-                        },
-                        {
-                            "text": "stories from New South Wales"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10386518-16x9-2150x1210.jpg"
                         }
                     ],
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 394,
+                        "mime_type": "image/jpeg",
+                        "url": "https://www.abc.net.au/news/image/10370752-16x9-700x394.jpg",
+                        "width": 700
+                    }
+                },
+                "info": {
                     "description": "Is natural sequence farming the secret to restoring our water-starved continent? For more than a decade, two farmers have shown that parched landscapes can be revived. And finally Canberra's listening.",
-                    "fb:pages": "72924719987",
-                    "geo.position": "-35.2587;149.4382",
-                    "imgs": [
-                        "https://www.abc.net.au/news/image/10370730-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10382672-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10382672-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10382672-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10334576-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10334576-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10334576-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10382926-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10330088-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10330088-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10330088-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10330090-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10330090-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10330090-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10330094-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10330094-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10330094-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10330098-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10330098-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10330098-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10330084-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10330084-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10330084-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10370752-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10382684-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10382684-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10382684-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10378486-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10379248-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10379248-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10379248-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10386230-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10386230-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10386230-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10432864-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10432864-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10432864-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10382648-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10382648-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10382648-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10386452-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10386452-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10386452-16x9-2150x1210.jpg",
-                        "https://www.abc.net.au/news/image/10386518-3x2-700x467.jpg",
-                        "https://www.abc.net.au/news/image/10386518-3x2-940x627.jpg",
-                        "https://www.abc.net.au/news/image/10386518-16x9-2150x1210.jpg"
-                    ],
-                    "og:description": "Is natural sequence farming the secret to restoring our water-starved continent? For more than a decade, two farmers have shown that parched landscapes can be revived. And finally Canberra's listening.",
-                    "og:image": "https://www.abc.net.au/news/image/10370752-16x9-700x394.jpg",
-                    "og:image:height": "394",
-                    "og:image:type": "image/jpeg",
-                    "og:image:width": "700",
-                    "og:site_name": "ABC News",
-                    "og:title": "'We can fix all this': Could this be the solution to Australia's drought crisis?",
-                    "og:type": "Article",
-                    "og:updated_time": "2018-10-29T10:15:41+1100",
-                    "og:url": "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844",
+                    "genre": "News & Current Affairs",
                     "title": "'We can fix all this': Could this be the solution to Australia's drought crisis?",
-                    "twitter:card": "summary",
-                    "twitter:image": "https://www.abc.net.au/news/image/10370752-16x9-700x394.jpg",
-                    "twitter:site": "@ABCNews"
+                    "url": "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844"
+                },
+                "location": {
+                    "latitude": -35.2587,
+                    "longitude": 149.4382
+                },
+                "publisher": {
+                    "facebook": {
+                        "page_id": "72924719987",
+                        "url": "https://www.facebook.com/abcnews.au"
+                    },
+                    "organisation": "Australian Broadcasting Corporation",
+                    "twitter": {
+                        "card": "summary",
+                        "handle": "@ABCNews",
+                        "image": "https://www.abc.net.au/news/image/10370752-16x9-700x394.jpg"
+                    }
+                },
+                "tags": [
+                    "drought",
+                    "rural",
+                    "sustainable-and-alternative-farming",
+                    "beef-cattle",
+                    "livestock"
+                ],
+                "text": {
+                    "markdown": "# Soaking up Australia's drought\n\nIs Natural Sequence Farming the secret to restoring our water-starved\ncontinent? For more than a decade, two farmers have shown that parched\nlandscapes can be revived. And finally Canberra's listening.\n\n[Australian Story](/austory/)\n\nBy [Winsome Denyer](/news/winsome-denyer/7991864)\n\nUpdated about an hour agoSun 28 Oct 2018, 11:15pm\n\n[ ![Before and After: Mulloon Creek in 1977 and\n2015.](/news/image/10370730-3x2-940x627.jpg) ](/news/2018-10-29/before-and-\nafter-pics-mulloon-creek/10370748)[**Photo:** Before and After: Mulloon Creek\nin 1977 and 2015.  (Supplied: The Mulloon Institute) ](/news/2018-10-29\n/before-and-after-pics-mulloon-creek/10370748)\n\nWhen Tony Coote was buried in August on his beloved property, Mulloon Creek\nNatural Farms, his mischievous sense of humour was evident: he was lowered\ninto his grave in a handmade wicker basket made of willow.\n\nIt was, some say, a parting gesture to those who had complained about him\nplanting willow trees to repair degraded landscapes.\n\nLike the rest of New South Wales, Mulloon Creek is in drought. The egg and\nbeef operation, 45 minutes outside Canberra, is experiencing its driest seven\nmonths on record, with less than 150mm of rainfall.\n\nBut, unlike other farms in the region, there's water flowing through the creek\n\u2014 crystal clear water, good enough to drink.\n\nThis is no miracle \u2014 it's the result of Mr Coote's dedication over a decade to\nthe ethos of Peter Andrews, lauded for his ability to rehabilitate dry,\ndegraded and salt-ravaged landscapes.\n\n![](https://www.abc.net.au/news/image/10382672-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10382672-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10382672-16x9-2150x1210.jpg)\n\n![](https://www.abc.net.au/news/image/10334576-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10334576-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10334576-16x9-2150x1210.jpg)\n\nAustralian Story's 2005 episode on Mr Andrews and Tarwyn Park, the Hunter\nValley property where he pioneered his controversial land regenerating system\nknown as Natural Sequence Farming, was one of the program's most popular ever.\n\n[Ten years later, Tarwyn Park was acquired by Korean mining\ninterests](/news/2015-05-11/hopes-tarwyn-park-natural-sequence-farming-\nmethods-to-continue/6459040), but that didn't stop Mr Andrews's groundbreaking\nwork.\n\nHe travels the country advising landholders, and Mr Coote ensured ongoing\nscientific research and lobbying for Natural Sequence Farming through his\nlegacy, The Mulloon Institute.\n\nAnd Mr Andrews's son, Stuart, runs the Tarwyn Park Training Program at the\ninstitute.\n\n\"The elixir of life; can't get water that tastes like that out of a city\nanywhere,\" says Mr Andrews, 78, as he negotiates the rocky edge of Mulloon\nCreek to reach down and cup some water in his hand.\n\nIn the midst of the state's worst drought in decades, with no reprieve\nforecast, it truly is a sight to behold.\n\n[**Video:** Peter Andrews (right), pictured with his son Stuart, pioneered\nNatural Sequence Farming.  (ABC News) ](/news/2018-10-29/peter-andrews-\nnatural-sequence-farming/10440642)\n\n## 'Leaky weirs' to slow water\n\nWhen Mr Coote, the then-executive chairman of Angus and Coote Jewellers,\nwatched Mr Andrews's Australian Story, he was riveted.\n\nMr Coote could see the genius behind his method of reading the landscape and\ntapping into the land's natural system of self-rehydration.\n\nHe reached out to Mr Andrews and asked him to take a look at the Mulloon Creek\nproperty he'd bought in the late 1960s.\n\n\"Our land is severely dehydrated. We know our bodies cannot work unless\nthey're hydrated, we know plants and animals can't work unless they are\nhydrated. But our land is dehydrated,\" Mr Coote [told Australian Story in\n2015](/news/2015-05-05/the-battle-for-tarwyn-park/6441486).\n\n> We can fix all this, that's the good news. And we can do it\u00a0quickly.\n\n[ ![Tony Coote and Peter Andrews ,pictured here in\n2006.](/news/image/10382926-3x2-940x627.jpg) ](/news/2018-10-29/tony-coote-\nand-peter-andrews/10382994)[**Photo:** Tony Coote and Peter Andrews (pictured\nhere in 2006) developed a friendship through their shared love of the land.\n(Supplied: The Mulloon Institute) ](/news/2018-10-29/tony-coote-and-peter-\nandrews/10382994)\n\nAt Mulloon Creek, the two men set to work building Mr Andrews's signature\n\"leaky weirs\" in the creek, one of many crucial steps in a complex plan to\nrestore the landscape's original processes.\n\nUsing rocks, fallen trees and other natural debris, a weir is constructed\nacross the creek, not to stop the water from flowing through, but to slow the\nwater down.\n\nIt then has a chance to seep into the landscape on either side, rather than\ngushing down the creek system and straight out to sea, taking important\nnutrients with it.\n\nThis is why Mulloon Creek is still running, even though there has been little\nrain. That water, which was stored in the landscape, is now seeping back into\nthe creek.\n\n\"All we've done is reproduced what was a natural process in Australia's\nlandscapes,\" Mr Andrews says.\n\n\"We've been able to get water into the floodplains which sustains the\nlandscape in a drought.\"\n\nThe change to the landscape on Mr Coote's farm is striking.\n\n\"It was so degraded that we put six truckloads of blackberry canes in the\ncreek to trigger the fertility. Now it's growing its own fertility. It's got\nto the stage now where fish would love to live there, every bird wants to go\nthere and the frogs are all singing. They're happy,\" Mr Andrews says.\n\n![](https://www.abc.net.au/news/image/10330088-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10330088-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10330088-16x9-2150x1210.jpg)\n\n![](https://www.abc.net.au/news/image/10330090-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10330090-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10330090-16x9-2150x1210.jpg)\n\n![](https://www.abc.net.au/news/image/10330094-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10330094-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10330094-16x9-2150x1210.jpg)\n\n![](https://www.abc.net.au/news/image/10330098-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10330098-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10330098-16x9-2150x1210.jpg)\n\n![](https://www.abc.net.au/news/image/10330084-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10330084-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10330084-16x9-2150x1210.jpg)\n\n[ ![A before and after composite of an almost empty creek and a full creek\nincluding reeds.](/news/image/10370752-3x2-940x627.jpg) ](/news/2018-10-29\n/before-and-after-mulloon-institute/10370802)[**Photo:** 2006 vs 2013:\nEvidence of landscape rejuvenation at the Mulloon Creek Natural Farms at\nBungendore.  (Supplied: The Mulloon Institute) ](/news/2018-10-29/before-and-\nafter-mulloon-institute/10370802)\n\n## Thriving during drought\n\n![](https://www.abc.net.au/news/image/10382684-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10382684-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10382684-16x9-2150x1210.jpg)\n\nFarmers across the eastern seaboard are suffering through a drought that some\nconsider the worst in living memory.\n\nAnd, after a long winter, the Mulloon Creek Natural Farms' paddocks don't look\nvery green. But when you look closely, you can see life just below the blanket\nof brown; shoots of green grass poke up to the surface, thanks to the moisture\nin the soil.\n\n\"The soil is alive,\" says The Mulloon Institute's Peter Hazell.\n\n\"It's alive with fungus and bacteria, earthworms, and they're all processing\nthat organic matter and that litter. All you need to do is have a look under\nthat brown stubble on the surface, and you can see plenty of resilience that\nwill help this farm burst into life again in the spring.\"\n\nThe Mulloon Institute's research coordinator, Luke Peel, is enthusiastic as he\nmeasures the water infiltration rate in the soil. \"That is quite amazing!\"\n\nBubbles flow up the cylindrical surface infiltrometer, indicating that the\nrate water can be absorbed into that soil is 10,000mm per hour.\n\n\"It's a staggering amount,\" he says. \"1,000mm per hour of rainfall is\nequivalent to a torrential downpour.\"\n\n[ ![Luke Peel measures the water infiltration rate in the\nsoil.](/news/image/10378486-3x2-940x627.jpg) ](/news/2018-10-29/aust-story-\nluke-peel-researching-at-the-mulloon-institute/10382542)[**Photo:** Luke Peel\nmeasures the water infiltration rate in the soil.](/news/2018-10-29/aust-\nstory-luke-peel-researching-at-the-mulloon-institute/10382542)\n\n## A turning point for Mulloon\n\nScientific benchmarking has proven the success of the work Mr Coote and Mr\nAndrews undertook in 2006, now known as the Pilot Project, with a 63 per cent\nincrease in production on the hydrated land.\n\nTwo years ago, The Mulloon Institute was recognised by the United Nations as\n[one of only five case studies globally to demonstrate landscape-scale\nsustainable agriculture](/news/rural/2016-09-16/un-recognises-mulloon-creek-\nnatural-farms-as-sustainable/7852798).\n\n![](https://www.abc.net.au/news/image/10379248-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10379248-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10379248-16x9-2150x1210.jpg)\n\n![](https://www.abc.net.au/news/image/10386230-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10386230-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10386230-16x9-2150x1210.jpg)\n\nDespite the success, there are still frustrations over government regulations\nfor farmers wanting to implement Mr Andrews's methods.\n\n\"We're working in the innovation space here, and so some of what we do is\noutside of government policy,\" Mr Hazell says.\n\n\"So we also \u2026 are working with government, to try and update that policy.\"\n\nBut after years of lobbying for national recognition, there's renewed optimism\nat Mulloon.\n\nPrime Minister Scott Morrison visited the property on Thursday, on the eve of\nhis National Drought Summit.\n\nInspecting the flowing creek, he lauded Mr Andrews as a \"real leader and\nvisionary\" and said he was inspired by Mr Coote's \"passion for the\nenvironment\".\n\nDeputy Prime Minister Michael McCormack declared the success of Mulloon as a\n\"model for everyone\".\n\n\"This needs to be replicated right around our nation. A nation that looks\nafter its soil, looks after itself,\" he said.\n\nMr Andrews and his supporters hope these high-profile accolades will translate\ninto a smoother road for more farmers to adopt natural sequencing farming\nmethods.\n\n![](https://www.abc.net.au/news/image/10432864-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10432864-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10432864-16x9-2150x1210.jpg)\n\n## A legacy written in the landscape\n\nMr Coote died in August after several years of receiving treatment for cancer.\nHe was 79. He bequeathed his two properties to the Institute, with the profits\nfrom the egg and beef operations supporting the ongoing research, advocacy and\ntraining around these practices.\n\nBut that's not his only legacy. An even more ambitious project involves 20 of\nhis neighbours.\n\nThe Mulloon Community Landscape Rehydration Project, conceived in 2013,\nencompasses 20 landholders across 23,000 hectares and more than 50 kilometres\nof Mulloon Creek.\n\n\"Tony always had a really big vision,\" says Mr Hazell, who now coordinates the\ncatchment-wide project.\n\n\"He thought the information should be shared to farmers all around the\ncountry.\"\n\nAnd as more in the community see the scientifically-backed results, Mr Hazell\nfeels the tide of scepticism that once confronted Natural Sequence Farming is\nfinally turning.\n\n\"Peter's work has a lot of champions out there, who are making great gains and\nundertaking fantastic work in the farming landscape in Australia, and I really\ndo feel that we're at the dawn of a new revolution in agriculture.\"\n\n![](https://www.abc.net.au/news/image/10382648-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10382648-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10382648-16x9-2150x1210.jpg)\n\n![](https://www.abc.net.au/news/image/10386452-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10386452-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10386452-16x9-2150x1210.jpg)\n\n![](https://www.abc.net.au/news/image/10386518-3x2-700x467.jpg)![](https://www.abc.net.au/news/image/10386518-3x2-940x627.jpg)![](https://www.abc.net.au/news/image/10386518-16x9-2150x1210.jpg)\n\n ** _Watch Australian Story's Hope Springs on Monday at 8pm (AEDT) on ABCTV\nand ABCiview._**\n\n### Credits\n\nProducers: Winsome Denyer, [Kirstin Murray](/news/kirstin--murray/7819412)\n\nPhotography: Winsome Denyer, supplied, The Mulloon Institute\n\nFirst posted about 5 hours agoSun 28 Oct 2018, 7:03pm\n\n",
+                    "text": "Soaking up Australia's drought\nIs Natural Sequence Farming the secret to restoring our water-starved\ncontinent? For more than a decade, two farmers have shown that parched\nlandscapes can be revived. And finally Canberra's listening.\nAustralian Story\nBy Winsome Denyer\nUpdated about an hour agoSun 28 Oct 2018, 11:15pm\n  Photo: Before and After: Mulloon Creek\nin 1977 and 2015.  (Supplied: The Mulloon Institute) \nWhen Tony Coote was buried in August on his beloved property, Mulloon Creek\nNatural Farms, his mischievous sense of humour was evident: he was lowered\ninto his grave in a handmade wicker basket made of willow.\nIt was, some say, a parting gesture to those who had complained about him\nplanting willow trees to repair degraded landscapes.\nLike the rest of New South Wales, Mulloon Creek is in drought. The egg and\nbeef operation, 45 minutes outside Canberra, is experiencing its driest seven\nmonths on record, with less than 150mm of rainfall.\nBut, unlike other farms in the region, there's water flowing through the creek\n\u2014 crystal clear water, good enough to drink.\nThis is no miracle \u2014 it's the result of Mr Coote's dedication over a decade to\nthe ethos of Peter Andrews, lauded for his ability to rehabilitate dry,\ndegraded and salt-ravaged landscapes.\n\n\nAustralian Story's 2005 episode on Mr Andrews and Tarwyn Park, the Hunter\nValley property where he pioneered his controversial land regenerating system\nknown as Natural Sequence Farming, was one of the program's most popular ever.\nTen years later, Tarwyn Park was acquired by Korean mining\ninterests, but that didn't stop Mr Andrews's groundbreaking\nwork.\nHe travels the country advising landholders, and Mr Coote ensured ongoing\nscientific research and lobbying for Natural Sequence Farming through his\nlegacy, The Mulloon Institute.\nAnd Mr Andrews's son, Stuart, runs the Tarwyn Park Training Program at the\ninstitute.\n\"The elixir of life; can't get water that tastes like that out of a city\nanywhere,\" says Mr Andrews, 78, as he negotiates the rocky edge of Mulloon\nCreek to reach down and cup some water in his hand.\nIn the midst of the state's worst drought in decades, with no reprieve\nforecast, it truly is a sight to behold.\nVideo: Peter Andrews (right), pictured with his son Stuart, pioneered\nNatural Sequence Farming.  (ABC News) \n'Leaky weirs' to slow water\nWhen Mr Coote, the then-executive chairman of Angus and Coote Jewellers,\nwatched Mr Andrews's Australian Story, he was riveted.\nMr Coote could see the genius behind his method of reading the landscape and\ntapping into the land's natural system of self-rehydration.\nHe reached out to Mr Andrews and asked him to take a look at the Mulloon Creek\nproperty he'd bought in the late 1960s.\n\"Our land is severely dehydrated. We know our bodies cannot work unless\nthey're hydrated, we know plants and animals can't work unless they are\nhydrated. But our land is dehydrated,\" Mr Coote told Australian Story in\n2015.\n\nWe can fix all this, that's the good news. And we can do it\u00a0quickly.\n\n  Photo: Tony Coote and Peter Andrews (pictured\nhere in 2006) developed a friendship through their shared love of the land.\n(Supplied: The Mulloon Institute) \nAt Mulloon Creek, the two men set to work building Mr Andrews's signature\n\"leaky weirs\" in the creek, one of many crucial steps in a complex plan to\nrestore the landscape's original processes.\nUsing rocks, fallen trees and other natural debris, a weir is constructed\nacross the creek, not to stop the water from flowing through, but to slow the\nwater down.\nIt then has a chance to seep into the landscape on either side, rather than\ngushing down the creek system and straight out to sea, taking important\nnutrients with it.\nThis is why Mulloon Creek is still running, even though there has been little\nrain. That water, which was stored in the landscape, is now seeping back into\nthe creek.\n\"All we've done is reproduced what was a natural process in Australia's\nlandscapes,\" Mr Andrews says.\n\"We've been able to get water into the floodplains which sustains the\nlandscape in a drought.\"\nThe change to the landscape on Mr Coote's farm is striking.\n\"It was so degraded that we put six truckloads of blackberry canes in the\ncreek to trigger the fertility. Now it's growing its own fertility. It's got\nto the stage now where fish would love to live there, every bird wants to go\nthere and the frogs are all singing. They're happy,\" Mr Andrews says.\n\n\n\n\n\n  Photo: 2006 vs 2013:\nEvidence of landscape rejuvenation at the Mulloon Creek Natural Farms at\nBungendore.  (Supplied: The Mulloon Institute) \nThriving during drought\n\nFarmers across the eastern seaboard are suffering through a drought that some\nconsider the worst in living memory.\nAnd, after a long winter, the Mulloon Creek Natural Farms' paddocks don't look\nvery green. But when you look closely, you can see life just below the blanket\nof brown; shoots of green grass poke up to the surface, thanks to the moisture\nin the soil.\n\"The soil is alive,\" says The Mulloon Institute's Peter Hazell.\n\"It's alive with fungus and bacteria, earthworms, and they're all processing\nthat organic matter and that litter. All you need to do is have a look under\nthat brown stubble on the surface, and you can see plenty of resilience that\nwill help this farm burst into life again in the spring.\"\nThe Mulloon Institute's research coordinator, Luke Peel, is enthusiastic as he\nmeasures the water infiltration rate in the soil. \"That is quite amazing!\"\nBubbles flow up the cylindrical surface infiltrometer, indicating that the\nrate water can be absorbed into that soil is 10,000mm per hour.\n\"It's a staggering amount,\" he says. \"1,000mm per hour of rainfall is\nequivalent to a torrential downpour.\"\n  Photo: Luke Peel\nmeasures the water infiltration rate in the soil.\nA turning point for Mulloon\nScientific benchmarking has proven the success of the work Mr Coote and Mr\nAndrews undertook in 2006, now known as the Pilot Project, with a 63 per cent\nincrease in production on the hydrated land.\nTwo years ago, The Mulloon Institute was recognised by the United Nations as\none of only five case studies globally to demonstrate landscape-scale\nsustainable agriculture.\n\n\nDespite the success, there are still frustrations over government regulations\nfor farmers wanting to implement Mr Andrews's methods.\n\"We're working in the innovation space here, and so some of what we do is\noutside of government policy,\" Mr Hazell says.\n\"So we also \u2026 are working with government, to try and update that policy.\"\nBut after years of lobbying for national recognition, there's renewed optimism\nat Mulloon.\nPrime Minister Scott Morrison visited the property on Thursday, on the eve of\nhis National Drought Summit.\nInspecting the flowing creek, he lauded Mr Andrews as a \"real leader and\nvisionary\" and said he was inspired by Mr Coote's \"passion for the\nenvironment\".\nDeputy Prime Minister Michael McCormack declared the success of Mulloon as a\n\"model for everyone\".\n\"This needs to be replicated right around our nation. A nation that looks\nafter its soil, looks after itself,\" he said.\nMr Andrews and his supporters hope these high-profile accolades will translate\ninto a smoother road for more farmers to adopt natural sequencing farming\nmethods.\n\nA legacy written in the landscape\nMr Coote died in August after several years of receiving treatment for cancer.\nHe was 79. He bequeathed his two properties to the Institute, with the profits\nfrom the egg and beef operations supporting the ongoing research, advocacy and\ntraining around these practices.\nBut that's not his only legacy. An even more ambitious project involves 20 of\nhis neighbours.\nThe Mulloon Community Landscape Rehydration Project, conceived in 2013,\nencompasses 20 landholders across 23,000 hectares and more than 50 kilometres\nof Mulloon Creek.\n\"Tony always had a really big vision,\" says Mr Hazell, who now coordinates the\ncatchment-wide project.\n\"He thought the information should be shared to farmers all around the\ncountry.\"\nAnd as more in the community see the scientifically-backed results, Mr Hazell\nfeels the tide of scepticism that once confronted Natural Sequence Farming is\nfinally turning.\n\"Peter's work has a lot of champions out there, who are making great gains and\nundertaking fantastic work in the farming landscape in Australia, and I really\ndo feel that we're at the dawn of a new revolution in agriculture.\"\n\n\n\n Watch Australian Story's Hope Springs on Monday at 8pm (AEDT) on ABCTV\nand ABCiview.\nCredits\nProducers: Winsome Denyer, Kirstin Murray\nPhotography: Winsome Denyer, supplied, The Mulloon Institute\nFirst posted about 5 hours agoSun 28 Oct 2018, 7:03pm"
+                },
+                "time": {
+                    "modified_time": 1540768541.0,
+                    "published_time": 1540753388.0
+                },
+                "videos": {
+                    "videos": [
+                        {
+                            "bitrate": 469,
+                            "codec": "AVC",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "height": 288,
+                            "mime_type": "image/jpeg",
+                            "size": 6425035,
+                            "url": "https://abcmedia.akamaized.net/news/austory/video/201810/ASTb_HopeSprings_1910_512k.mp4",
+                            "width": 512
+                        },
+                        {
+                            "bitrate": 1023,
+                            "codec": "AVC",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "height": 576,
+                            "mime_type": "image/jpeg",
+                            "size": 6425035,
+                            "url": "https://abcmedia.akamaized.net/news/austory/video/201810/ASTb_HopeSprings_1910_1000k.mp4",
+                            "width": 1024
+                        },
+                        {
+                            "bitrate": 183,
+                            "codec": "AVC",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "height": 180,
+                            "mime_type": "image/jpeg",
+                            "size": 6425035,
+                            "url": "https://abcmedia.akamaized.net/news/austory/video/201810/ASTb_HopeSprings_1910_256k.mp4",
+                            "width": 320
+                        }
+                    ]
                 }
-            ],
+            },
             "url": "https://www.abc.net.au/news/2018-10-29/soaking-up-australias-drought-natural-sequence-farming/10312844"
         }
     ],
