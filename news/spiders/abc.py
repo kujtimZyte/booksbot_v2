@@ -1,118 +1,10 @@
 # -*- coding: utf-8 -*-
 """Parser for the ABC website"""
-import datetime
-from .common import extract_item_from_element_css, extract_metadata
-from .article import Article, Image, Video
 from bs4 import BeautifulSoup
-from dateutil import parser
 import html2text
 import js2py
-
-
-remove_items = [
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'featured-scroller'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'id': 'footer-stories'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'promo'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'newsmail-signup'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'localised-top-stories'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'promo-list'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'graphic'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'sidebar'
-        }
-    },
-    {
-        'tag': 'p',
-        'meta': {
-            'class': 'topics'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'statepromo'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'share-icons'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'jwplayer-video'
-        }
-    },
-    {
-        'tag': 'a',
-        'meta': {
-            'class': 'abcLink'
-        }
-    },
-    {
-        'tag': 'a',
-        'meta': {
-            'class': 'controller'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'class': 'brand'
-        }
-    },
-    {
-        'tag': 'div',
-        'meta': {
-            'id': 'highContrastTest'
-        }
-    },
-    {
-        'tag': 'img',
-        'meta': {
-            'id': 'imgCounter'
-        }
-    }
-]
+from .common import extract_metadata
+from .article import Article, Image, Video
 
 
 def abc_url_parse(url):
@@ -123,39 +15,153 @@ def abc_url_parse(url):
     return url_split[-1]
 
 
+def remove_tags(soup):
+    """Removes the useless tags from the HTML"""
+    remove_items = [
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'featured-scroller'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'id': 'footer-stories'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'promo'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'newsmail-signup'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'localised-top-stories'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'promo-list'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'graphic'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'sidebar'
+            }
+        },
+        {
+            'tag': 'p',
+            'meta': {
+                'class': 'topics'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'statepromo'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'share-icons'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'jwplayer-video'
+            }
+        },
+        {
+            'tag': 'a',
+            'meta': {
+                'class': 'abcLink'
+            }
+        },
+        {
+            'tag': 'a',
+            'meta': {
+                'class': 'controller'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'brand'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'id': 'highContrastTest'
+            }
+        },
+        {
+            'tag': 'img',
+            'meta': {
+                'id': 'imgCounter'
+            }
+        }
+    ]
+    for remove_item in remove_items:
+        for tag in soup.findAll(remove_item['tag'], remove_item['meta']):
+            tag.decompose()
+
+
+def fill_article_from_meta_tags(article, response):
+    """Fills an article object with information from meta tags"""
+    meta_tags = extract_metadata(response)
+    for tag in meta_tags['ABC.tags'].split(';'):
+        article.add_tag(tag)
+    article.time.set_published_time(meta_tags['article:published_time'])
+    article.time.set_modified_time(meta_tags['article:modified_time'])
+    article.info.set_genre(meta_tags['ABC.editorialGenre'])
+    article.info.set_url(response.url)
+    article.info.set_title(meta_tags['DC.title'])
+    article.info.set_description(meta_tags['description'])
+    article.images.thumbnail.url = meta_tags['og:image']
+    article.images.thumbnail.width = meta_tags['og:image:width']
+    article.images.thumbnail.height = meta_tags['og:image:height']
+    article.images.thumbnail.mime_type = meta_tags['og:image:type']
+    positions = meta_tags['geo.position'].split(';')
+    article.location.set_latitude(positions[0])
+    article.location.set_longitude(positions[1])
+    article.publisher.facebook.set_url(meta_tags['article:publisher'])
+    article.publisher.facebook.set_page_id(meta_tags['fb:pages'])
+    article.publisher.twitter.set_card(meta_tags['twitter:card'])
+    article.publisher.twitter.set_image(meta_tags['twitter:image'])
+    article.publisher.twitter.set_handle(meta_tags['twitter:site'])
+    article.publisher.set_organisation(meta_tags['DC.Publisher.CorporateName'])
+    article.author.set_url(meta_tags['article:author'])
+
+
 def abc_parse(response):
     """Parses the response from a ABC website"""
     link_id = abc_url_parse(response.url)
     if link_id is None:
         return None, link_id
     article = Article()
-    meta_tags = extract_metadata(response)
-    article.tags = meta_tags['ABC.tags'].split(';')
-    article.time.published_time = parser.parse(meta_tags['article:published_time'])
-    article.time.modified_time = parser.parse(meta_tags['article:modified_time'])
-    article.time.retrieved_time = parser.parse(meta_tags['article:modified_time'])
-    article.info.genre = meta_tags['ABC.editorialGenre']
-    article.info.url = response.url
-    article.info.title = meta_tags['DC.title']
-    article.info.description = meta_tags['description']
-    article.images.thumbnail.url = meta_tags['og:image']
-    article.images.thumbnail.width = meta_tags['og:image:width']
-    article.images.thumbnail.height = meta_tags['og:image:height']
-    article.images.thumbnail.mime_type = meta_tags['og:image:type']
-    positions = meta_tags['geo.position'].split(';')
-    article.location.latitude = positions[0]
-    article.location.longitude = positions[1]
-    article.publisher.facebook.url = meta_tags['article:publisher']
-    article.publisher.facebook.page_id = meta_tags['fb:pages']
-    article.publisher.twitter.card = meta_tags['twitter:card']
-    article.publisher.twitter.image = meta_tags['twitter:image']
-    article.publisher.twitter.handle = meta_tags['twitter:site']
-    article.publisher.organisation = meta_tags['DC.Publisher.CorporateName']
-    article.author.url = meta_tags['article:author']
+    fill_article_from_meta_tags(article, response)
     soup = BeautifulSoup(response.text, 'html.parser')
-    for remove_item in remove_items:
-        for tag in soup.findAll(remove_item['tag'], remove_item['meta']):
-            tag.decompose()
+    remove_tags(soup)
     main_content_div = soup.find('div', {'id': 'main_content'})
     for img_tag in soup.findAll('img'):
         image = Image()
@@ -164,14 +170,13 @@ def abc_parse(response):
             image.width = int(img_tag['width'])
         if 'height' in img_tag:
             image.height = int(img_tag['height'])
-        article.images.images.append(image)
+        article.images.append_image(image)
     for script_tag in soup.findAll('script'):
-        script_text = script_tag.text
-        if not script_text:
+        if not script_tag.text:
             continue
         try:
             context = js2py.EvalJs()
-            context.execute(script_text)
+            context.execute(script_tag.text)
             if not hasattr(context, 'inlineVideoData'):
                 continue
             for inline_video in context.inlineVideoData:
@@ -184,8 +189,8 @@ def abc_parse(response):
                     video.width = inline_video_instance['width']
                     video.height = inline_video_instance['height']
                     video.size = inline_video_instance['filesize']
-                    article.videos.videos.append(video)
+                    article.videos.append_video(video)
         except js2py.PyJsException:
             continue
-    article.text.markdown = html2text.html2text(unicode(main_content_div))
+    article.text.set_markdown(html2text.html2text(unicode(main_content_div)))
     return article.json(), link_id

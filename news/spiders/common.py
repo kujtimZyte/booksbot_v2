@@ -115,6 +115,7 @@ def extract_item_from_element_css(response, css_selector):
     return items
 
 def markdown_to_plaintext(markdown_text):
+    """Converts markdown to plaintext"""
     # https://gist.github.com/lorey/eb15a7f3338f959a78cc3661fbc255fe
     html = markdown(markdown_text)
     # remove code snippets

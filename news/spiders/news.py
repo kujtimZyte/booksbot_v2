@@ -4,16 +4,14 @@ import os
 import json
 import hashlib
 import random
-import re
 import time
 import urlparse
 import scrapy
-from bs4 import BeautifulSoup
 from scrapy_splash import SplashRequest
 from google.cloud import storage
 from langdetect import detect
 from langdetect import DetectorFactory
-from markdown import markdown
+from .common import extract_urls
 from .custom_settings import \
 NEWS_HTTP_AUTH_USER, \
 GCS_BUCKET_NAME, \
@@ -23,37 +21,7 @@ GCP_PRIVATE_KEY, \
 GCP_CLIENT_EMAIL, \
 GCP_CLIENT_ID, \
 GCP_CLIENT_X509_CERT_URL
-from .cnn import cnn_parse
-from .reuters import reuters_parse
-from .guardian import guardian_parse
-from .bbc import bbc_parse
-from .common import extract_urls
-from .cbc import cbc_parse
-from .independent import independent_parse
-from .theverge import the_verge_parse
-from .nytimes import nytimes_parse
 from .abc import abc_parse, abc_url_parse
-from .stuff import stuff_parse
-from .thehill import thehill_parse
-from .washingtonpost import washingtonpost_parse
-from .globalnews import globalnews_parse
-from .businessinsider import businessinsider_parse
-from .nzherald import nzherald_parse
-from .huffingtonpost import huffingtonpost_parse
-from .smh import smh_parse
-from .cnbc import cnbc_parse
-from .vice import vice_parse
-from .nbc import nbc_parse
-from .apnews import apnews_parse
-from .thestar import thestar_parse
-from .newsweek import newsweek_parse
-from .bloomberg import bloomberg_parse
-from .arstechnica import arstechnica_parse
-from .cbsnews import cbsnews_parse
-from .ctvnews import ctvnews_parse
-from .radionz import radionz_parse
-from .fox import fox_parse
-from .thedailybeast import dailybeast_parse
 
 
 DetectorFactory.seed = 0
@@ -101,7 +69,9 @@ def check_valid_item(response_url, item):
         for list_item in item:
             check_valid_item(response_url, list_item)
     else:
-        if not isinstance(item, basestring) and not isinstance(item, int) and not isinstance(item, float):
+        if not isinstance(item, basestring) \
+            and not isinstance(item, int) \
+            and not isinstance(item, float):
             raise ValueError('Found a non string object when parsing: {}'.format(response_url))
 
 

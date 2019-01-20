@@ -7,22 +7,36 @@ from .common import markdown_to_plaintext
 
 
 def timecode_from_datetime(datetime_obj):
-    utc_naive  = datetime_obj.replace(tzinfo=None) - datetime_obj.utcoffset()
+    """Computes the unix timecode from a datetime object"""
+    utc_naive = datetime_obj.replace(tzinfo=None) - datetime_obj.utcoffset()
     return (utc_naive - datetime.datetime(1970, 1, 1)).total_seconds()
 
 
 def url_head_headers(url):
-    r = requests.head(url, timeout=5)
-    return r.headers
+    """Fetches the headers for a URL HEAD request"""
+    response = requests.head(url, timeout=5)
+    return response.headers
 
 
 
-class ArticleTime:
+class ArticleTime(object):
+    """Holds the information about the article time"""
     published_time = None
     modified_time = None
 
 
+    def set_published_time(self, published_time):
+        """Sets the published time and parses the date"""
+        self.published_time = parser.parse(published_time)
+
+
+    def set_modified_time(self, modified_time):
+        """Sets the modified time and parses the date"""
+        self.modified_time = parser.parse(modified_time)
+
+
     def json(self):
+        """Converts the class to a dictionary object compatible with JSON"""
         time_json = {}
         if self.published_time:
             time_json['published_time'] = timecode_from_datetime(self.published_time)
@@ -31,14 +45,36 @@ class ArticleTime:
         return time_json
 
 
-class Info:
+class Info(object):
+    """Holds the general information about the article"""
     genre = None
     url = None
     title = None
     description = None
 
 
+    def set_genre(self, genre):
+        """Sets the genre"""
+        self.genre = genre
+
+
+    def set_url(self, url):
+        """Sets the url"""
+        self.url = url
+
+
+    def set_title(self, title):
+        """Sets the title"""
+        self.title = title
+
+
+    def set_description(self, description):
+        """Sets the description"""
+        self.description = description
+
+
     def json(self):
+        """Converts the class to a dictionary object compatible with JSON"""
         info_json = {}
         if self.genre:
             info_json['genre'] = self.genre
@@ -51,65 +87,106 @@ class Info:
         return info_json
 
 
-class Image:
+class RichMedia(object):
+    """Holds the information about the media"""
     url = None
-    width = None
-    height = None
     mime_type = None
     last_modified = None
     size = None
+    etag = None
 
 
-    def _fill(self):
+    def fill(self):
+        """Fills the rich media information"""
         if not self.url:
             return
+        if self.last_modified != None and \
+           self.size != None and \
+           self.mime_type != None and \
+           self.etag != None:
+            return
         headers = url_head_headers(self.url)
-        if 'Last-Modified' in headers:
+        if 'Last-Modified' in headers and self.last_modified != None:
             self.last_modified = timecode_from_datetime(parser.parse(headers['Last-Modified']))
-        if 'Content-Length' in headers:
+        if 'Content-Length' in headers and self.size != None:
             self.size = int(headers['Content-Length'])
-        if 'Content-Type' in headers:
+        if 'Content-Type' in headers and self.mime_type != None:
             self.mime_type = headers['Content-Type']
+        if 'ETag' in headers and not self.etag:
+            self.etag = headers['ETag']
 
 
     def json(self):
-        self._fill()
-        image_json = {}
+        """Converts the class to a dictionary object compatible with JSON"""
+        self.fill()
+        rich_media_info = {}
         if self.url:
-            image_json['url'] = self.url
+            rich_media_info['url'] = self.url
+        if self.mime_type:
+            rich_media_info['mime_type'] = self.mime_type
+        if self.last_modified:
+            rich_media_info['last_modified'] = self.last_modified
+        if self.size:
+            rich_media_info['size'] = self.size
+        if self.etag:
+            rich_media_info['etag'] = self.etag
+        return rich_media_info
+
+
+class Image(RichMedia):
+    """Holds the information about the image"""
+    width = None
+    height = None
+
+    def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
+        image_json = super(Image, self).json()
         if self.width:
             image_json['width'] = int(self.width)
         if self.height:
             image_json['height'] = int(self.height)
-        if self.mime_type:
-            image_json['mime_type'] = self.mime_type
-        if self.last_modified:
-            image_json['last_modified'] = self.last_modified
-        if self.size:
-            image_json['size'] = self.size
         return image_json
 
 
-class Images:
+class Images(object):
+    """An object for holding images"""
     thumbnail = Image()
     images = []
 
 
+    def append_image(self, image):
+        """Appends an image"""
+        self.images.append(image)
+
+
     def json(self):
-        images_json  = {}
+        """Returns the object as a dictionary for JSON consumption"""
+        images_json = {}
         if self.thumbnail:
-            images_json['thumbnail'] =  self.thumbnail.json()
+            images_json['thumbnail'] = self.thumbnail.json()
         if self.images:
             images_json['images'] = [x.json() for x in self.images]
         return images_json
 
 
-class Location:
+class Location(object):
+    """An object for holding location images"""
     latitude = None
     longitude = None
 
 
+    def set_latitude(self, latitude):
+        """Sets the latitude"""
+        self.latitude = latitude
+
+
+    def set_longitude(self, longitude):
+        """Sets the longitude"""
+        self.longitude = longitude
+
+
     def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
         location_info = {}
         if self.latitude:
             location_info['latitude'] = float(self.latitude)
@@ -118,23 +195,42 @@ class Location:
         return location_info
 
 
-class Author:
+class Author(object):
+    """An object for holding the author"""
     url = None
 
 
+    def set_url(self, url):
+        """Sets the authors URL"""
+        self.url = url
+
+
     def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
         author_info = {}
         if self.url:
             author_info['url'] = self.url
         return author_info
 
 
-class Facebook:
+class Facebook(object):
+    """An object for holding the facebook information"""
     url = None
     page_id = None
 
 
+    def set_url(self, url):
+        """Sets the Facebook URL"""
+        self.url = url
+
+
+    def set_page_id(self, page_id):
+        """Sets the page_id"""
+        self.page_id = page_id
+
+
     def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
         facebook_info = {}
         if self.url:
             facebook_info['url'] = self.url
@@ -143,30 +239,54 @@ class Facebook:
         return facebook_info
 
 
-class Twitter:
+class Twitter(object):
+    """An object for holding the twitter information"""
     card = None
     image = None
     handle = None
 
 
+    def set_card(self, card):
+        """Sets the card"""
+        self.card = card
+
+
+    def set_image(self, image):
+        """Sets the image"""
+        self.image = image
+
+
+    def set_handle(self, handle):
+        """Sets the handle"""
+        self.handle = handle
+
+
     def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
         twitter_info = {}
         if self.card:
             twitter_info['card'] = self.card
         if self.image:
-            twitter_info['image']  = self.image
+            twitter_info['image'] = self.image
         if self.handle:
             twitter_info['handle'] = self.handle
         return twitter_info
 
 
-class Publisher:
+class Publisher(object):
+    """An object for holding the publishers information"""
     facebook = Facebook()
     twitter = Twitter()
     organisation = None
 
 
+    def set_organisation(self, organisation):
+        """Sets the organisation"""
+        self.organisation = organisation
+
+
     def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
         publisher_info = {}
         if self.facebook:
             publisher_info['facebook'] = self.facebook.json()
@@ -177,11 +297,18 @@ class Publisher:
         return publisher_info
 
 
-class Text:
+class Text(object):
+    """An object for holding the text"""
     markdown = None
 
 
+    def set_markdown(self, markdown):
+        """Sets the markdown"""
+        self.markdown = markdown
+
+
     def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
         text_info = {}
         if self.markdown:
             text_info['markdown'] = self.markdown
@@ -189,39 +316,18 @@ class Text:
         return text_info
 
 
-class Video:
-    url = None
-    mime_type = None
+class Video(RichMedia):
+    """An object for holding the video"""
     codec = None
     bitrate = None
     width = None
     height = None
-    size = None
-    last_modified = None
-    etag = None
-
-
-    def _fill(self):
-        if not self.url:
-            return
-        headers = url_head_headers(self.url)
-        if 'Last-Modified' in headers:
-            self.last_modified = timecode_from_datetime(parser.parse(headers['Last-Modified']))
-        if 'Content-Length' in headers:
-            self.size = int(headers['Content-Length'])
-        if 'Content-Type' in headers:
-            self.mime_type = headers['Content-Type']
-        if 'ETag' in headers:
-            self.etag = headers['ETag']
 
 
     def json(self):
-        self._fill()
-        video_info = {}
-        if self.url:
-            video_info['url'] = self.url
-        if self.mime_type:
-            video_info['mime_type'] = self.mime_type
+        """Returns the object as a dictionary for JSON consumption"""
+        self.fill()
+        video_info = super(Video, self).json()
         if self.codec:
             video_info['codec'] = self.codec
         if self.bitrate:
@@ -230,25 +336,29 @@ class Video:
             video_info['width'] = int(self.width)
         if self.height:
             video_info['height'] = int(self.height)
-        if self.size:
-            video_info['size'] = int(self.size)
-        if self.etag:
-            video_info['etag'] = self.etag
         return video_info
 
 
-class Videos:
+class Videos(object):
+    """An object for holding videos"""
     videos = []
 
 
+    def append_video(self, video):
+        """Appends a video"""
+        self.videos.append(video)
+
+
     def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
         videos_info = {}
         if self.videos:
             videos_info['videos'] = [x.json() for x in self.videos]
         return videos_info
 
 
-class Article:
+class Article(object):
+    """An object for holding an article"""
     tags = []
     time = ArticleTime()
     info = Info()
@@ -260,7 +370,13 @@ class Article:
     videos = Videos()
 
 
+    def add_tag(self, tag):
+        """Adds a tag"""
+        self.tags.append(tag)
+
+
     def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
         article_json = {
             'time': self.time.json(),
             'tags': self.tags,
