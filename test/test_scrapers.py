@@ -56,9 +56,17 @@ class TestNewsSpider(unittest.TestCase):
             'abc-cctv-footage-shows-police-officer-assaulting-man.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_abc_greg_inglis_remorseful_for_very_poor_decision(self, mock_head):
+        self.check_fake_html_scrape(
+            'abc-greg-inglis-remorseful-for-very-poor-decision.html',
+            'https://www.abc.net.au/news/2019-01-14/greg-inglis-remorseful-for-very-poor-decision/10714166',
+            'abc-greg-inglis-remorseful-for-very-poor-decision.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
-        #open('output.json', 'w').write(output_json)
+        open('output.json', 'w').write(output_json)
         json_filepath = os.path.join(self.htmlDirectory, json_filename)
         with open(json_filepath) as json_filehandle:
             expected_output = json.load(json_filehandle)

@@ -143,6 +143,16 @@ def remove_tags(soup):
             'meta': {
                 'class': 'attached-content'
             }
+        },
+        {
+            'tag': 'a',
+            'meta': {
+                'class': 'button'
+            }
+        },
+        {
+            'tag': 'noscript',
+            'meta': {}
         }
     ]
     for remove_item in remove_items:
@@ -150,13 +160,36 @@ def remove_tags(soup):
             tag.decompose()
 
 
+def find_facebook_url(meta_tags, soup):
+    """Finds the facebook URL from an article"""
+    if 'article:publisher' in meta_tags:
+        return meta_tags['article:publisher']
+    for a_tag in soup.findAll('a'):
+        for img_tag in a_tag.findAll('img'):
+            if not img_tag.has_attr('title'):
+                continue
+            if img_tag['title'] == 'ABC News on Facebook':
+                return a_tag['href']
+    return None
+
+
 def fill_article_from_meta_tags(article, response, soup):
     """Fills an article object with information from meta tags"""
     meta_tags = extract_metadata(response)
+    article.publisher.facebook.set_url(find_facebook_url(meta_tags, soup))
+    remove_tags(soup)
     for tag in meta_tags['ABC.tags'].split(';'):
         article.add_tag(tag)
-    article.time.set_published_time(meta_tags['article:published_time'])
-    article.time.set_modified_time(meta_tags['article:modified_time'])
+    if 'article:published_time' in meta_tags:
+        article.time.set_published_time(meta_tags['article:published_time'])
+    elif 'DCTERMS.issued' in meta_tags:
+        article.time.set_published_time(meta_tags['DCTERMS.issued'])
+    else:
+        raise ValueError('Could not find a published date: {}'.format(response.url))
+    if 'article:modified_time' in meta_tags:
+        article.time.set_modified_time(meta_tags['article:modified_time'])
+    elif 'DCTERMS.modified' in meta_tags:
+        article.time.set_modified_time(meta_tags['DCTERMS.modified'])
     article.info.set_genre(meta_tags['ABC.editorialGenre'])
     article.info.set_url(response.url)
     article.info.set_title(meta_tags['DC.title'])
@@ -168,7 +201,6 @@ def fill_article_from_meta_tags(article, response, soup):
     positions = meta_tags['geo.position'].split(';')
     article.location.set_latitude(positions[0])
     article.location.set_longitude(positions[1])
-    article.publisher.facebook.set_url(meta_tags['article:publisher'])
     article.publisher.facebook.set_page_id(meta_tags['fb:pages'])
     article.publisher.twitter.set_card(meta_tags['twitter:card'])
     article.publisher.twitter.set_image(meta_tags['twitter:image'])
@@ -199,9 +231,12 @@ def abc_parse(response):
         return None, link_id
     article = Article()
     soup = BeautifulSoup(response.text, 'html.parser')
-    remove_tags(soup)
     fill_article_from_meta_tags(article, response, soup)
     main_content_div = soup.find('div', {'id': 'main_content'})
+    if not main_content_div:
+        main_content_div = soup.find('div', {'class': 'page'})
+    if not main_content_div:
+        raise ValueError('Could not find the main content div: {}'.format(response.url))
     for img_tag in soup.findAll('img'):
         image = Image()
         image.url = response.urljoin(img_tag['src'])
