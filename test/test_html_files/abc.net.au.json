@@ -117,7 +117,6 @@
         "https://www.abc.net.au/news/newschannel/",
         "https://www.abc.net.au/news/alerts/subscribe/",
         "https://www.abc.net.au/news/about/backstory/",
-        "https://about.abc.net.au/how-the-abc-is-run/what-guides-us/abc-editorial-standards/",
         "https://www.abc.net.au/news/2018-10-25/my-phone-is-spying-on-me-so-i-decided-to-spy-on-my-phone/10306586",
         "https://www.abc.net.au/news/2018-10-24/invictus-wheelchair-rugby-contest-sees-player-score-awesome-try/10425418",
         "https://www.abc.net.au/news/2018-10-16/what-its-like-to-live-in-australias-fastest-growing-suburb/10343110",
@@ -222,11 +221,6 @@
         "https://www.abc.net.au/news/feeds/",
         "https://www.abc.net.au/news/alerts/",
         "https://www.abc.net.au/news/upload/",
-        "https://www.abc.net.au/news/contact/",
-        "https://about.abc.net.au/terms-of-use/",
-        "https://about.abc.net.au/abc-privacy-policy/",
-        "https://about.abc.net.au/accessibility-statement/",
-        "https://about.abc.net.au/talk-to-the-abc/",
-        "https://about.abc.net.au/terms-of-use/#UseOfContent"
+        "https://www.abc.net.au/news/contact/"
     ]
 }
