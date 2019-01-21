@@ -137,6 +137,12 @@ def remove_tags(soup):
             'meta': {
                 'class': 'bylinepromo'
             }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'attached-content'
+            }
         }
     ]
     for remove_item in remove_items:
