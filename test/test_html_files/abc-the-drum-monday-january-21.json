@@ -1,0 +1,172 @@
+{
+    "items": [
+        {
+            "article": {
+                "authors": [],
+                "images": {
+                    "images": [
+                        {
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://www.abc.net.au/news/image/10733658-16x9-512x288.jpg"
+                        }
+                    ],
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 394,
+                        "mime_type": "image/jpeg",
+                        "url": "https://www.abc.net.au/news/image/10733658-16x9-700x394.jpg",
+                        "width": 700
+                    }
+                },
+                "info": {
+                    "description": "Host: Adam Spencer Panel: Emma Dawson, Adrian Piccoli and Kirsten Banks The panel discusses Kelly O\u2019Dwyer\u2019s resignation, parliamentary diversity stunted since 1988 and Instagram spreading political misinformation.",
+                    "genre": "News & Current Affairs",
+                    "title": "The Drum Monday January 21",
+                    "url": "https://www.abc.net.au/news/2019-01-21/the-drum-monday-january-21/10733656"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "page_id": "72924719987",
+                        "url": "http://www.facebook.com/abcnews.au"
+                    },
+                    "organisation": "Australian Broadcasting Corporation",
+                    "twitter": {
+                        "card": "summary",
+                        "handle": "@ABCNews",
+                        "image": "https://www.abc.net.au/news/image/10733658-16x9-700x394.jpg"
+                    }
+                },
+                "tags": [],
+                "text": {
+                    "markdown": "# The Drum Monday January 21\n\nPosted  January 21, 2019 19:16:26\n\nHost: Adam Spencer  \nPanel: Emma Dawson, Adrian Piccoli and Kirsten Banks  \nThe panel discusses Kelly O\u2019Dwyer\u2019s resignation, parliamentary diversity\nstunted since 1988 and Instagram spreading political misinformation.\n\nSource: [The Drum](/news/analysis-and-opinion/) | Duration: 28min\n\n",
+                    "text": "The Drum Monday January 21\nPosted  January 21, 2019 19:16:26\nHost: Adam Spencer\nPanel: Emma Dawson, Adrian Piccoli and Kirsten Banks\nThe panel discusses Kelly O\u2019Dwyer\u2019s resignation, parliamentary diversity\nstunted since 1988 and Instagram spreading political misinformation.\nSource: The Drum | Duration: 28min"
+                },
+                "time": {
+                    "modified_time": 1548058586.0,
+                    "published_time": 1548058586.0
+                },
+                "videos": {
+                    "videos": [
+                        {
+                            "bitrate": 170,
+                            "codec": "AVC",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "height": 180,
+                            "mime_type": "image/jpeg",
+                            "size": 6425035,
+                            "url": "https://abcmedia.akamaized.net/news/thedrum/video/201901/DRMs_Program_2101_256k.mp4",
+                            "width": 320
+                        },
+                        {
+                            "bitrate": 928,
+                            "codec": "AVC",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "height": 576,
+                            "mime_type": "image/jpeg",
+                            "size": 6425035,
+                            "url": "https://abcmedia.akamaized.net/news/thedrum/video/201901/DRMs_Program_2101_1000k.mp4",
+                            "width": 1024
+                        },
+                        {
+                            "bitrate": 400,
+                            "codec": "AVC",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "height": 288,
+                            "mime_type": "image/jpeg",
+                            "size": 6425035,
+                            "url": "https://abcmedia.akamaized.net/news/thedrum/video/201901/DRMs_Program_2101_512k.mp4",
+                            "width": 512
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.abc.net.au/news/2019-01-21/the-drum-monday-january-21/10733656"
+        }
+    ],
+    "requests": [
+        "https://www.abc.net.au/",
+        "https://www.abc.net.au/news/",
+        "https://iview.abc.net.au",
+        "https://www.abc.net.au/tv/",
+        "https://radio.abc.net.au/",
+        "https://www.abc.net.au/children/",
+        "https://shop.abc.net.au/",
+        "https://www.abc.net.au/more/",
+        "https://search.abc.net.au/",
+        "https://www.abc.net.au/news/australia/",
+        "https://www.abc.net.au/news/weather/",
+        "https://www.abc.net.au/news/justin/",
+        "https://www.abc.net.au/news/politics/",
+        "https://www.abc.net.au/news/world/",
+        "https://www.abc.net.au/news/business/",
+        "https://www.abc.net.au/news/sport/",
+        "https://www.abc.net.au/news/science/",
+        "https://www.abc.net.au/news/health/",
+        "https://www.abc.net.au/news/arts-culture/",
+        "https://www.abc.net.au/news/analysis-and-opinion/",
+        "https://www.abc.net.au/news/factcheck/",
+        "https://www.abc.net.au/news/more/",
+        "https://www.abc.net.au/news/2019-01-21/the-drum-monday-january-21/10733656",
+        "https://www2b.abc.net.au/EAF/View/MailToQuery.aspx?https://www.abc.net.au/news/2019-01-21/the-drum-monday-january-21/10733656",
+        "https://www.abc.net.au/news/2019-01-21/doctor-claims-she-was-assaulted-by-police/10731622",
+        "https://www.abc.net.au/news/2019-01-21/mildura-police-officer-vikram-gopinath-jailed-for-sexting/10732434",
+        "https://www.abc.net.au/news/2019-01-22/australia-v-uzbekistan-asian-cup-round-of-16-live-blog/10731574",
+        "https://www.abc.net.au/news/2019-01-21/native-american-surrounded-maga-trump-supporters-what-happened/10730988",
+        "https://www.abc.net.au/news/2019-01-21/aiia-maasarwe-accused-killer-codey-herrmann-reappears-in-court/10731084",
+        "https://www.abc.net.au/news/2019-01-21/labrador-and-dolphin-spotted-playing-together-in-adelaide-river/10733222",
+        "https://www.abc.net.au/news/2019-01-21/kelly-odwyer-miscarriages-stigma-silence/10732464",
+        "https://www.abc.net.au/news/2019-01-22/imf-update-points-to-continuing-global-slowdown/10733814",
+        "https://www.abc.net.au/news/2019-01-21/marie-kondo-tidying-up-clutter-bad-for-you/10732968",
+        "https://www.abc.net.au/news/2019-01-21/serena-williams-beats-simona-halep-at-australian-open/10733710",
+        "https://www.abc.net.au/news/2019-01-21/live-exports-sheep-footage-government-investigation/10733676",
+        "https://www.abc.net.au/news/2019-01-21/australian-oliver-bridgeman-stranded-in-syria-cancelled-passport/10733260",
+        "https://www.abc.net.au/news/2019-01-21/animal-rights-group-aussie-farms-online-map-farmers-backlash/10731560",
+        "https://www.abc.net.au/news/2019-01-21/kelly-odwyers-decision-turns-the-spotlight-onto-julie-bishop/10731398",
+        "https://www.abc.net.au/news/2019-01-21/tasmanian-bushfires-emergency-warning-issued-for-miena/10731168",
+        "https://www.abc.net.au/news/2019-01-21/wheelchair-user-forced-to-sit-on-stage-at-perth-fringe-festival/10732254",
+        "https://www.abc.net.au/news/2019-01-21/rare-super-blood-wolf-moon-wows-stargazers/10732518",
+        "https://www.abc.net.au/news/2019-01-21/oporto-rat-infestation-video-forces-sydney-store-to-shut/10733304",
+        "https://www.abc.net.au/news/2019-01-21/body-of-man-who-fell-into-brisbane-river-found/10731086",
+        "https://www.abc.net.au/news/2019-01-21/australias-rich-keep-getting-richer/10731700",
+        "https://www.abc.net.au/news/2019-01-21/palmerston-shopping-centre-riot-youth-crime-nt-reaction/10731082",
+        "https://www.abc.net.au/news/rural/2019-01-21/waterhole-springs-back-to-life-as-buffalo-fenced-out/10731350",
+        "https://www.abc.net.au/news/feeds/",
+        "https://www.abc.net.au/news/contact/tip-off/",
+        "https://www.abc.net.au/news/alerts/subscribe/",
+        "https://www.abc.net.au/news/about/backstory/",
+        "https://www.abc.net.au/news/2019-01-21/papua-new-guinea-cancer-patients-miss-out-on-radiation-therapy/10729160",
+        "https://www.abc.net.au/news/natalie-whiting/5439586",
+        "https://www.abc.net.au/news/2019-01-21/what-is-mine-is-yours-until-taxes-do-us-part/10726020",
+        "https://www.abc.net.au/news/nassim-khadem/10344356",
+        "https://www.abc.net.au/life/can-you-have-a-dog-when-living-in-apartment/10682698",
+        "https://www.abc.net.au/news/2019-01-21/the-second-anniversary-of-trumps-inauguration/10730938",
+        "https://www.abc.net.au/news/entertainment/",
+        "https://www.abc.net.au/news/topics/",
+        "https://www.abc.net.au/news/archive/",
+        "https://www.abc.net.au/news/corrections/",
+        "https://www.abc.net.au/sydney/weather/",
+        "https://www.abc.net.au/melbourne/weather/",
+        "https://www.abc.net.au/adelaide/weather/",
+        "https://www.abc.net.au/brisbane/weather/",
+        "https://www.abc.net.au/perth/weather/",
+        "https://www.abc.net.au/hobart/weather/",
+        "https://www.abc.net.au/darwin/weather/",
+        "https://www.abc.net.au/canberra/weather/",
+        "https://www.abc.net.au/sydney/news/",
+        "https://www.abc.net.au/melbourne/news/",
+        "https://www.abc.net.au/adelaide/news/",
+        "https://www.abc.net.au/brisbane/news/",
+        "https://www.abc.net.au/perth/news/",
+        "https://www.abc.net.au/hobart/news/",
+        "https://www.abc.net.au/darwin/news/",
+        "https://www.abc.net.au/canberra/news/",
+        "https://www.abc.net.au/news/video/",
+        "https://www.abc.net.au/news/audio/",
+        "https://www.abc.net.au/news/photos/",
+        "https://www.abc.net.au/news/alerts/",
+        "https://www.abc.net.au/news/upload/",
+        "https://www.abc.net.au/news/contact/",
+        "https://abc.net.au/news/2019-01-21/the-drum-monday-january-21/10733656?pfm=sm"
+    ]
+}
