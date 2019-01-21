@@ -128,7 +128,6 @@ class NewsSpider(scrapy.Spider):
 
 
     def parse(self, response):
-        #open('output.html', 'w').write(response.text.encode('utf-8'))
         if isinstance(response, (scrapy.http.HtmlResponse, scrapy.http.TextResponse)):
             host_name = urlparse.urlsplit(response.url).hostname
             urls = extract_urls(response)

@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import html2text
 import js2py
 from .common import extract_metadata
-from .article import Article, Image, Video
+from .article import Article, Image, Video, Author
 
 
 def abc_url_parse(url):
@@ -119,6 +119,24 @@ def remove_tags(soup):
             'meta': {
                 'id': 'imgCounter'
             }
+        },
+        {
+            'tag': 'a',
+            'meta': {
+                'class': 'home'
+            }
+        },
+        {
+            'tag': 'a',
+            'meta': {
+                'class': 'search'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'bylinepromo'
+            }
         }
     ]
     for remove_item in remove_items:
@@ -126,7 +144,7 @@ def remove_tags(soup):
             tag.decompose()
 
 
-def fill_article_from_meta_tags(article, response):
+def fill_article_from_meta_tags(article, response, soup):
     """Fills an article object with information from meta tags"""
     meta_tags = extract_metadata(response)
     for tag in meta_tags['ABC.tags'].split(';'):
@@ -150,7 +168,22 @@ def fill_article_from_meta_tags(article, response):
     article.publisher.twitter.set_image(meta_tags['twitter:image'])
     article.publisher.twitter.set_handle(meta_tags['twitter:site'])
     article.publisher.set_organisation(meta_tags['DC.Publisher.CorporateName'])
-    article.author.set_url(meta_tags['article:author'])
+    if 'article:author' in meta_tags:
+        author = Author()
+        author.set_url(meta_tags['article:author'])
+        for a_tag in soup.findAll('a'):
+            if response.urljoin(a_tag['href']) == author.url:
+                author.name = a_tag.text
+                break
+        article.authors.append(author)
+    else:
+        for div_tag in soup.findAll('div', {'class': 'byline'}):
+            byline_text = div_tag.text.replace('By ', '')
+            for name in byline_text.split(' and '):
+                author = Author()
+                author.name = name.strip()
+                article.authors.append(author)
+            break
 
 
 def abc_parse(response):
@@ -159,9 +192,9 @@ def abc_parse(response):
     if link_id is None:
         return None, link_id
     article = Article()
-    fill_article_from_meta_tags(article, response)
     soup = BeautifulSoup(response.text, 'html.parser')
     remove_tags(soup)
+    fill_article_from_meta_tags(article, response, soup)
     main_content_div = soup.find('div', {'id': 'main_content'})
     for img_tag in soup.findAll('img'):
         image = Image()

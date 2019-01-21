@@ -48,6 +48,14 @@ class TestNewsSpider(unittest.TestCase):
             'abc-soaking-up-australias-drought-natural-sequence-farming.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_abc_cctv_footage_shows_police_officer_assaulting_man(self, mock_head):
+        self.check_fake_html_scrape(
+            'abc-cctv-footage-shows-police-officer-assaulting-man.html',
+            'https://www.abc.net.au/news/2019-01-21/cctv-footage-shows-police-officer-assaulting-man/10729284',
+            'abc-cctv-footage-shows-police-officer-assaulting-man.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
