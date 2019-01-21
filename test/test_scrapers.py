@@ -96,6 +96,14 @@ class TestNewsSpider(unittest.TestCase):
             'abc-fast-food-and-your-brain.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_abc_nancy_pelosi_arrives_at_capitol_building_after_meeting_withh_don(self, mock_head):
+        self.check_fake_html_scrape(
+            'abc-nancy-pelosi-arrives-at-capitol-building-after-meeting-with-don.html',
+            'https://www.abc.net.au/news/2019-01-19/nancy-pelosi-arrives-at-capitol-building-after-meeting-with-don/10728922',
+            'abc-nancy-pelosi-arrives-at-capitol-building-after-meeting-with-don.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

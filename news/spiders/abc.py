@@ -314,7 +314,8 @@ def fill_article_from_meta_tags(article, response, soup):
     article.info.set_genre(find_genre(meta_tags))
     article.info.set_url(response.url)
     article.info.set_title(find_title(meta_tags, response))
-    article.info.set_description(meta_tags['description'])
+    if 'description' in meta_tags:
+        article.info.set_description(meta_tags['description'])
     article.images.thumbnail.url = meta_tags['og:image']
     article.images.thumbnail.width = meta_tags['og:image:width']
     article.images.thumbnail.height = meta_tags['og:image:height']
@@ -338,7 +339,7 @@ def fill_article_from_meta_tags(article, response, soup):
         article.authors.append(author)
     else:
         for div_tag in soup.findAll('div', {'class': 'byline'}):
-            byline_text = div_tag.text.replace('By ', '')
+            byline_text = div_tag.text.replace('By ', '').replace('AP: ', '')
             for name in byline_text.split(' and '):
                 author = Author()
                 author.name = name.strip()
