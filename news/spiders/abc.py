@@ -238,6 +238,39 @@ def find_modified_time(meta_tags):
     return None
 
 
+def find_title(meta_tags, response):
+    """Finds the title of the ABC article"""
+    if 'DC.title' in meta_tags:
+        return meta_tags['DC.title']
+    elif 'DCTERMS.title' in meta_tags:
+        return meta_tags['DCTERMS.title']
+    else:
+        raise ValueError('Could not find a title: {}'.format(response.url))
+
+
+def find_location(meta_tags, article):
+    """Finds the location of an ABC article"""
+    if 'geo.position' in meta_tags:
+        positions = meta_tags['geo.position'].split(';')
+        article.location.set_latitude(positions[0])
+        article.location.set_longitude(positions[1])
+
+
+def find_facebook_page(meta_tags):
+    """Finds the facebook page"""
+    if 'fb:pages' in meta_tags:
+        return meta_tags['fb:pages']
+    return None
+
+
+def find_twitter(meta_tags, article):
+    """Finds the twitter information"""
+    article.publisher.twitter.set_card(meta_tags['twitter:card'])
+    if 'twitter:image' in meta_tags:
+        article.publisher.twitter.set_image(meta_tags['twitter:image'])
+    article.publisher.twitter.set_handle(meta_tags['twitter:site'])
+
+
 def fill_article_from_meta_tags(article, response, soup):
     """Fills an article object with information from meta tags"""
     meta_tags = extract_metadata(response)
@@ -249,27 +282,15 @@ def fill_article_from_meta_tags(article, response, soup):
     article.time.set_modified_time(find_modified_time(meta_tags))
     article.info.set_genre(meta_tags['ABC.editorialGenre'])
     article.info.set_url(response.url)
-    if 'DC.title' in meta_tags:
-        article.info.set_title(meta_tags['DC.title'])
-    elif 'DCTERMS.title' in meta_tags:
-        article.info.set_title(meta_tags['DCTERMS.title'])
-    else:
-        raise ValueError('Could not find a title: {}'.format(response.url))
+    article.info.set_title(find_title(meta_tags, response))
     article.info.set_description(meta_tags['description'])
     article.images.thumbnail.url = meta_tags['og:image']
     article.images.thumbnail.width = meta_tags['og:image:width']
     article.images.thumbnail.height = meta_tags['og:image:height']
     article.images.thumbnail.mime_type = meta_tags['og:image:type']
-    if 'geo.position' in meta_tags:
-        positions = meta_tags['geo.position'].split(';')
-        article.location.set_latitude(positions[0])
-        article.location.set_longitude(positions[1])
-    if 'fb:pages' in meta_tags:
-        article.publisher.facebook.set_page_id(meta_tags['fb:pages'])
-    article.publisher.twitter.set_card(meta_tags['twitter:card'])
-    if 'twitter:image' in meta_tags:
-        article.publisher.twitter.set_image(meta_tags['twitter:image'])
-    article.publisher.twitter.set_handle(meta_tags['twitter:site'])
+    find_location(meta_tags, article)
+    article.publisher.facebook.set_page_id(find_facebook_page(meta_tags))
+    find_twitter(meta_tags, article)
     if 'DC.Publisher.CorporateName' in meta_tags:
         article.publisher.set_organisation(meta_tags['DC.Publisher.CorporateName'])
     elif 'DCTERMS.publisher' in meta_tags:
@@ -297,6 +318,18 @@ def fill_article_from_meta_tags(article, response, soup):
             article.authors[0].twitter_url = a_tag['href']
 
 
+def find_main_content_tag(soup, response):
+    """Finds the main content tag in an ABC article"""
+    main_content_div = soup.find('div', {'id': 'main_content'})
+    if not main_content_div:
+        main_content_div = soup.find('div', {'class': 'page'})
+    if not main_content_div:
+        main_content_div = soup.find('div', {'class': 'article-text'})
+    if not main_content_div:
+        raise ValueError('Could not find the main content div: {}'.format(response.url))
+    return main_content_div
+
+
 def abc_parse(response):
     """Parses the response from a ABC website"""
     link_id = abc_url_parse(response.url)
@@ -305,13 +338,7 @@ def abc_parse(response):
     article = Article()
     soup = BeautifulSoup(response.text, 'html.parser')
     fill_article_from_meta_tags(article, response, soup)
-    main_content_div = soup.find('div', {'id': 'main_content'})
-    if not main_content_div:
-        main_content_div = soup.find('div', {'class': 'page'})
-    if not main_content_div:
-        main_content_div = soup.find('div', {'class': 'article-text'})
-    if not main_content_div:
-        raise ValueError('Could not find the main content div: {}'.format(response.url))
+    main_content_div = find_main_content_tag(soup, response)
     for img_tag in soup.findAll('img'):
         image = Image()
         image.url = response.urljoin(img_tag['src'])
@@ -351,14 +378,23 @@ def abc_parse(response):
 
 def abc_url_filter(url):
     """Filters URLs in the ABC domain"""
-    if 'contact/feedback' in url or \
-       'news/feed/' in url or \
-       'conditions.h' in url or \
-       url.endswith('.pdf') or \
-       'about.' in url or \
-       'contact/tip-off' in url or \
-       'rural/rss' in url or \
-       'alerts/email' in url or \
-       url.endswith('.xml'):
-        return False
+    url_filters = [
+        'contact/feedback',
+        'news/feed/',
+        'conditions.h',
+        'about.',
+        'contact/tip-off',
+        'rural/rss',
+        'alerts/email'
+    ]
+    url_endings = [
+        '.pdf',
+        '.xml'
+    ]
+    for url_filter in url_filters:
+        if url_filter in url:
+            return False
+    for url_ending in url_endings:
+        if url.endswith(url_ending):
+            return False
     return True
