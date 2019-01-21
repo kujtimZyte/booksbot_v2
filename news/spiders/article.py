@@ -18,11 +18,15 @@ def url_head_headers(url):
     return response.headers
 
 
-
 class ArticleTime(object):
     """Holds the information about the article time"""
     published_time = None
     modified_time = None
+
+
+    def __init__(self):
+        self.published_time = None
+        self.modified_time = None
 
 
     def set_published_time(self, published_time):
@@ -51,6 +55,13 @@ class Info(object):
     url = None
     title = None
     description = None
+
+
+    def __init__(self):
+        self.genre = None
+        self.url = None
+        self.title = None
+        self.description = None
 
 
     def set_genre(self, genre):
@@ -96,6 +107,14 @@ class RichMedia(object):
     etag = None
 
 
+    def __init__(self):
+        self.url = None
+        self.mime_type = None
+        self.last_modified = None
+        self.size = None
+        self.etag = None
+
+
     def fill(self):
         """Fills the rich media information"""
         if not self.url:
@@ -138,6 +157,13 @@ class Image(RichMedia):
     width = None
     height = None
 
+
+    def __init__(self):
+        RichMedia.__init__(self)
+        self.width = None
+        self.height = None
+
+
     def json(self):
         """Returns the object as a dictionary for JSON consumption"""
         image_json = super(Image, self).json()
@@ -152,6 +178,11 @@ class Images(object):
     """An object for holding images"""
     thumbnail = Image()
     images = []
+
+
+    def __init__(self):
+        self.thumbnail = Image()
+        self.images = []
 
 
     def append_image(self, image):
@@ -173,6 +204,11 @@ class Location(object):
     """An object for holding location images"""
     latitude = None
     longitude = None
+
+
+    def __init__(self):
+        self.latitude = None
+        self.longitude = None
 
 
     def set_latitude(self, latitude):
@@ -198,6 +234,12 @@ class Location(object):
 class Author(object):
     """An object for holding the author"""
     url = None
+    name = None
+
+
+    def __init__(self):
+        self.url = None
+        self.name = None
 
 
     def set_url(self, url):
@@ -210,6 +252,8 @@ class Author(object):
         author_info = {}
         if self.url:
             author_info['url'] = self.url
+        if self.name:
+            author_info['name'] = self.name
         return author_info
 
 
@@ -217,6 +261,11 @@ class Facebook(object):
     """An object for holding the facebook information"""
     url = None
     page_id = None
+
+
+    def __init__(self):
+        self.url = None
+        self.page_id = None
 
 
     def set_url(self, url):
@@ -244,6 +293,12 @@ class Twitter(object):
     card = None
     image = None
     handle = None
+
+
+    def __init__(self):
+        self.card = None
+        self.image = None
+        self.handle = None
 
 
     def set_card(self, card):
@@ -280,6 +335,12 @@ class Publisher(object):
     organisation = None
 
 
+    def __init__(self):
+        self.facebook = Facebook()
+        self.twitter = Twitter()
+        self.organisation = None
+
+
     def set_organisation(self, organisation):
         """Sets the organisation"""
         self.organisation = organisation
@@ -300,6 +361,10 @@ class Publisher(object):
 class Text(object):
     """An object for holding the text"""
     markdown = None
+
+
+    def __init__(self):
+        self.markdown = None
 
 
     def set_markdown(self, markdown):
@@ -324,6 +389,14 @@ class Video(RichMedia):
     height = None
 
 
+    def __init__(self):
+        RichMedia.__init__(self)
+        self.codec = None
+        self.bitrate = None
+        self.width = None
+        self.height = None
+
+
     def json(self):
         """Returns the object as a dictionary for JSON consumption"""
         self.fill()
@@ -344,6 +417,10 @@ class Videos(object):
     videos = []
 
 
+    def __init__(self):
+        self.videos = []
+
+
     def append_video(self, video):
         """Appends a video"""
         self.videos.append(video)
@@ -357,6 +434,7 @@ class Videos(object):
         return videos_info
 
 
+# pylint: disable=too-many-instance-attributes
 class Article(object):
     """An object for holding an article"""
     tags = []
@@ -364,10 +442,22 @@ class Article(object):
     info = Info()
     images = Images()
     location = Location()
-    author = Author()
+    authors = []
     publisher = Publisher()
     text = Text()
     videos = Videos()
+
+
+    def __init__(self):
+        self.tags = []
+        self.time = ArticleTime()
+        self.info = Info()
+        self.images = Images()
+        self.location = Location()
+        self.authors = []
+        self.publisher = Publisher()
+        self.text = Text()
+        self.videos = Videos()
 
 
     def add_tag(self, tag):
@@ -383,9 +473,10 @@ class Article(object):
             'info': self.info.json(),
             'images': self.images.json(),
             'location': self.location.json(),
-            'author': self.author.json(),
+            'authors': [x.json() for x in self.authors],
             'publisher': self.publisher.json(),
             'text': self.text.json(),
             'videos': self.videos.json()
         }
         return article_json
+# pylint: enable=too-many-instance-attributes
