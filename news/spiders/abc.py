@@ -241,4 +241,6 @@ def abc_url_filter(url):
         return False
     if 'contact/tipoff' in url:
         return False
+    if 'news/feed/' in url:
+        return False
     return True
