@@ -194,6 +194,8 @@ class NewsSpider(scrapy.Spider):
         }
         requests = []
         for url in urls:
+            if 'mobile.' in url:
+                url = url.replace('mobile.', '')
             host_name = urlparse.urlsplit(url).hostname
             if host_name is None:
                 continue
