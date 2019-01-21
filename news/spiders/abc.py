@@ -239,4 +239,6 @@ def abc_url_filter(url):
     """Filters URLs in the ABC domain"""
     if 'contact/feedback' in url:
         return False
+    if 'contact/tipoff' in url:
+        return False
     return True
