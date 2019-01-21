@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import html2text
 import js2py
 from .common import extract_metadata, strip_query_from_url
-from .article import Article, Image, Video, Author
+from .article import Article, Image, Video, Author, Audio
 
 
 def abc_url_parse(url):
@@ -191,6 +191,30 @@ def remove_tags(soup):
             'meta': {
                 'class': 'view-sidebar'
             }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'rn-nav'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'id': 'comments'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'ct-social-share'
+            }
+        },
+        {
+            'tag': 'a',
+            'meta': {
+                'class': 'ico'
+            }
         }
     ]
     for remove_item in remove_items:
@@ -271,6 +295,13 @@ def find_twitter(meta_tags, article):
     article.publisher.twitter.set_handle(meta_tags['twitter:site'])
 
 
+def find_genre(meta_tags):
+    """Finds the genre of an ABC article"""
+    if 'ABC.editorialGenre' in meta_tags:
+        return meta_tags['ABC.editorialGenre']
+    return None
+
+
 def fill_article_from_meta_tags(article, response, soup):
     """Fills an article object with information from meta tags"""
     meta_tags = extract_metadata(response)
@@ -280,7 +311,7 @@ def fill_article_from_meta_tags(article, response, soup):
         article.add_tag(tag)
     article.time.set_published_time(find_published_time(meta_tags, response))
     article.time.set_modified_time(find_modified_time(meta_tags))
-    article.info.set_genre(meta_tags['ABC.editorialGenre'])
+    article.info.set_genre(find_genre(meta_tags))
     article.info.set_url(response.url)
     article.info.set_title(find_title(meta_tags, response))
     article.info.set_description(meta_tags['description'])
@@ -322,6 +353,11 @@ def find_main_content_tag(soup, response):
     """Finds the main content tag in an ABC article"""
     main_content_div = soup.find('div', {'id': 'main_content'})
     if not main_content_div:
+        main_content_div = soup.find('div', {'class': 'article'})
+        if main_content_div:
+            if 'media-wrapper-dl' in main_content_div['class']:
+                main_content_div = None
+    if not main_content_div:
         main_content_div = soup.find('div', {'class': 'page'})
     if not main_content_div:
         main_content_div = soup.find('div', {'class': 'article-text'})
@@ -330,15 +366,16 @@ def find_main_content_tag(soup, response):
     return main_content_div
 
 
-def abc_parse(response):
-    """Parses the response from a ABC website"""
-    link_id = abc_url_parse(response.url)
-    if link_id is None:
-        return None, link_id
-    article = Article()
-    soup = BeautifulSoup(response.text, 'html.parser')
-    fill_article_from_meta_tags(article, response, soup)
-    main_content_div = find_main_content_tag(soup, response)
+def find_audio(soup, article):
+    """Finds the audio within an ABC article"""
+    for a_tag in soup.findAll('a', {'class': 'ico-download'}):
+        audio = Audio()
+        audio.url = a_tag['href']
+        article.audio.append(audio)
+
+
+def find_images(soup, article, response):
+    """Finds the images with an ABC article"""
     for img_tag in soup.findAll('img'):
         image = Image()
         image.url = response.urljoin(img_tag['src'])
@@ -351,6 +388,19 @@ def abc_parse(response):
         if img_tag.has_attr('title'):
             image.title = img_tag['title']
         article.images.append_image(image)
+
+
+def abc_parse(response):
+    """Parses the response from a ABC website"""
+    link_id = abc_url_parse(response.url)
+    if link_id is None:
+        return None, link_id
+    article = Article()
+    soup = BeautifulSoup(response.text, 'html.parser')
+    find_audio(soup, article)
+    fill_article_from_meta_tags(article, response, soup)
+    main_content_div = find_main_content_tag(soup, response)
+    find_images(soup, article, response)
     for script_tag in soup.findAll('script'):
         if not script_tag.text:
             continue
@@ -373,6 +423,8 @@ def abc_parse(response):
         except js2py.PyJsException:
             continue
     article.text.set_markdown(html2text.html2text(unicode(main_content_div)))
+    if not article.text.text.strip():
+        raise ValueError('Could not find a text: {}'.format(response.url))
     return article.json(), link_id
 
 

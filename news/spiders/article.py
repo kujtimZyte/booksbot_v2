@@ -373,15 +373,18 @@ class Publisher(object):
 class Text(object):
     """An object for holding the text"""
     markdown = None
+    text = None
 
 
     def __init__(self):
         self.markdown = None
+        self.text = None
 
 
     def set_markdown(self, markdown):
         """Sets the markdown"""
         self.markdown = markdown
+        self.text = markdown_to_plaintext(self.markdown)
 
 
     def json(self):
@@ -389,7 +392,8 @@ class Text(object):
         text_info = {}
         if self.markdown:
             text_info['markdown'] = self.markdown
-            text_info['text'] = markdown_to_plaintext(self.markdown)
+        if self.text:
+            text_info['text'] = self.text
         return text_info
 
 
@@ -446,6 +450,15 @@ class Videos(object):
         return videos_info
 
 
+class Audio(RichMedia):
+    """An object for holding audio"""
+    def json(self):
+        """Returns the object as a dictionary for JSON consumption"""
+        self.fill()
+        audio_info = super(Audio, self).json()
+        return audio_info
+
+
 # pylint: disable=too-many-instance-attributes
 class Article(object):
     """An object for holding an article"""
@@ -458,6 +471,7 @@ class Article(object):
     publisher = Publisher()
     text = Text()
     videos = Videos()
+    audio = []
 
 
     def __init__(self):
@@ -470,6 +484,7 @@ class Article(object):
         self.publisher = Publisher()
         self.text = Text()
         self.videos = Videos()
+        self.audio = []
 
 
     def add_tag(self, tag):
@@ -488,7 +503,8 @@ class Article(object):
             'authors': [x.json() for x in self.authors],
             'publisher': self.publisher.json(),
             'text': self.text.json(),
-            'videos': self.videos.json()
+            'videos': self.videos.json(),
+            'audio': [x.json() for x in self.audio]
         }
         return article_json
 # pylint: enable=too-many-instance-attributes
