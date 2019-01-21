@@ -6,8 +6,12 @@
                 "images": {
                     "images": [
                         {
+                            "alt": "Greg Inglis remorseful for 'very poor decision' after court appearance",
                             "etag": "\"6209cb-5788a25f37d1b\"",
-                            "url": "https://www.abc.net.au/news/image/10714168-16x9-512x288.jpg"
+                            "height": 288,
+                            "title": "Greg Inglis remorseful for 'very poor decision' after receiving good behaviour bond",
+                            "url": "https://www.abc.net.au/news/image/10714168-16x9-512x288.jpg",
+                            "width": 512
                         }
                     ],
                     "thumbnail": {
@@ -140,7 +144,6 @@
         "https://www.abc.net.au/news/2019-01-21/what-is-mine-is-yours-until-taxes-do-us-part/10726020",
         "https://www.abc.net.au/news/rural/2019-01-21/waterhole-springs-back-to-life-as-buffalo-fenced-out/10731350",
         "https://www.abc.net.au/news/feeds/",
-        "https://www.abc.net.au/news/contact/tip-off/",
         "https://www.abc.net.au/news/alerts/subscribe/",
         "https://www.abc.net.au/news/about/backstory/",
         "https://www.abc.net.au/news/2019-01-21/papua-new-guinea-cancer-patients-miss-out-on-radiation-therapy/10729160",

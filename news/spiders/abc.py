@@ -11,9 +11,12 @@ def abc_url_parse(url):
     """Parses the URL from an ABC website"""
     url = strip_query_from_url(url)
     url_split = url.split('/')
-    if len(url_split) != 7:
+    if len(url_split) < 7:
         return None
-    return url_split[-1]
+    last_path = url_split[-1]
+    if not last_path.isdigit():
+        return None
+    return last_path
 
 
 def remove_tags(soup):
@@ -154,6 +157,40 @@ def remove_tags(soup):
         {
             'tag': 'noscript',
             'meta': {}
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'comp-share'
+            }
+        },
+        {
+            'tag': 'li',
+            'meta': {
+                'class': 'menu-item'
+            }
+        },
+        {
+            'tag': 'button',
+            'meta': {}
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'comp-embedded-float-right'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'view-features-list'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'view-sidebar'
+            }
         }
     ]
     for remove_item in remove_items:
@@ -212,7 +249,12 @@ def fill_article_from_meta_tags(article, response, soup):
     article.time.set_modified_time(find_modified_time(meta_tags))
     article.info.set_genre(meta_tags['ABC.editorialGenre'])
     article.info.set_url(response.url)
-    article.info.set_title(meta_tags['DC.title'])
+    if 'DC.title' in meta_tags:
+        article.info.set_title(meta_tags['DC.title'])
+    elif 'DCTERMS.title' in meta_tags:
+        article.info.set_title(meta_tags['DCTERMS.title'])
+    else:
+        raise ValueError('Could not find a title: {}'.format(response.url))
     article.info.set_description(meta_tags['description'])
     article.images.thumbnail.url = meta_tags['og:image']
     article.images.thumbnail.width = meta_tags['og:image:width']
@@ -222,12 +264,18 @@ def fill_article_from_meta_tags(article, response, soup):
         positions = meta_tags['geo.position'].split(';')
         article.location.set_latitude(positions[0])
         article.location.set_longitude(positions[1])
-    article.publisher.facebook.set_page_id(meta_tags['fb:pages'])
+    if 'fb:pages' in meta_tags:
+        article.publisher.facebook.set_page_id(meta_tags['fb:pages'])
     article.publisher.twitter.set_card(meta_tags['twitter:card'])
     if 'twitter:image' in meta_tags:
         article.publisher.twitter.set_image(meta_tags['twitter:image'])
     article.publisher.twitter.set_handle(meta_tags['twitter:site'])
-    article.publisher.set_organisation(meta_tags['DC.Publisher.CorporateName'])
+    if 'DC.Publisher.CorporateName' in meta_tags:
+        article.publisher.set_organisation(meta_tags['DC.Publisher.CorporateName'])
+    elif 'DCTERMS.publisher' in meta_tags:
+        article.publisher.set_organisation(meta_tags['DCTERMS.publisher'])
+    else:
+        raise ValueError('Could not find an organisation: {}'.format(response.url))
     if 'article:author' in meta_tags:
         author = Author()
         author.set_url(meta_tags['article:author'])
@@ -261,14 +309,20 @@ def abc_parse(response):
     if not main_content_div:
         main_content_div = soup.find('div', {'class': 'page'})
     if not main_content_div:
+        main_content_div = soup.find('div', {'class': 'article-text'})
+    if not main_content_div:
         raise ValueError('Could not find the main content div: {}'.format(response.url))
     for img_tag in soup.findAll('img'):
         image = Image()
         image.url = response.urljoin(img_tag['src'])
-        if 'width' in img_tag:
+        if img_tag.has_attr('width'):
             image.width = int(img_tag['width'])
-        if 'height' in img_tag:
+        if img_tag.has_attr('height'):
             image.height = int(img_tag['height'])
+        if img_tag.has_attr('alt'):
+            image.alt = img_tag['alt']
+        if img_tag.has_attr('title'):
+            image.title = img_tag['title']
         article.images.append_image(image)
     for script_tag in soup.findAll('script'):
         if not script_tag.text:
@@ -301,6 +355,10 @@ def abc_url_filter(url):
        'news/feed/' in url or \
        'conditions.h' in url or \
        url.endswith('.pdf') or \
-       'about.' in url:
+       'about.' in url or \
+       'contact/tip-off' in url or \
+       'rural/rss' in url or \
+       'alerts/email' in url or \
+       url.endswith('.xml'):
         return False
     return True
