@@ -444,7 +444,8 @@ def abc_url_filter(url):
         'about.',
         'contact/tip-off',
         'rural/rss',
-        'alerts/email'
+        'alerts/email',
+        '/tok-pisin'
     ]
     url_endings = [
         '.pdf',
