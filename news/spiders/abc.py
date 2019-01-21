@@ -302,6 +302,13 @@ def find_genre(meta_tags):
     return None
 
 
+def find_description(meta_tags):
+    """Finds the description of an ABC article"""
+    if 'description' in meta_tags:
+        return meta_tags['description']
+    return None
+
+
 def fill_article_from_meta_tags(article, response, soup):
     """Fills an article object with information from meta tags"""
     meta_tags = extract_metadata(response)
@@ -314,8 +321,7 @@ def fill_article_from_meta_tags(article, response, soup):
     article.info.set_genre(find_genre(meta_tags))
     article.info.set_url(response.url)
     article.info.set_title(find_title(meta_tags, response))
-    if 'description' in meta_tags:
-        article.info.set_description(meta_tags['description'])
+    article.info.set_description(find_description(meta_tags))
     article.images.thumbnail.url = meta_tags['og:image']
     article.images.thumbnail.width = meta_tags['og:image:width']
     article.images.thumbnail.height = meta_tags['og:image:height']
