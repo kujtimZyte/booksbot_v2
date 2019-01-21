@@ -64,6 +64,14 @@ class TestNewsSpider(unittest.TestCase):
             'abc-greg-inglis-remorseful-for-very-poor-decision.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_abc_the_drum_monday_january_21(self, mock_head):
+        self.check_fake_html_scrape(
+            'abc-the-drum-monday-january-21.html',
+            'https://www.abc.net.au/news/2019-01-21/the-drum-monday-january-21/10733656',
+            'abc-the-drum-monday-january-21.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
