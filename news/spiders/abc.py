@@ -230,6 +230,7 @@ def abc_parse(response):
 
 
 def abc_url_filter(url):
+    """Filters URLs in the ABC domain"""
     if 'contact/feedback' in url:
         return False
     return True
