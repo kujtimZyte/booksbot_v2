@@ -392,9 +392,9 @@
         "https://www.abc.net.au/news/2018-10-29/tasmania-strongest-population-growth-oct-commsec/10439190",
         "https://www.abc.net.au/news/2018-10-28/betting-the-farm-on-trump/10422882",
         "https://www.abc.net.au/news/feeds/",
+        "https://www.abc.net.au/news/contact/tip-off/",
         "https://www.abc.net.au/news/alerts/subscribe/",
         "https://www.abc.net.au/news/about/backstory/",
-        "https://about.abc.net.au/how-the-abc-is-run/what-guides-us/abc-editorial-standards/",
         "https://www.abc.net.au/life/why-parenting-is-both-the-toughest-and-most-rewarding-gig/10370780",
         "https://www.abc.net.au/news/2018-10-29/verrender-could-lower-emissions-cut-your-power-bills/10439508",
         "https://www.abc.net.au/news/2018-10-28/what-we-know-about-the-pittsburgh-synagogue-shooting-suspect/10438872",
@@ -441,11 +441,6 @@
         "https://www.abc.net.au/news/photos/",
         "https://www.abc.net.au/news/alerts/",
         "https://www.abc.net.au/news/upload/",
-        "https://www.abc.net.au/news/contact/",
-        "https://about.abc.net.au/terms-of-use/",
-        "https://about.abc.net.au/abc-privacy-policy/",
-        "https://about.abc.net.au/accessibility-statement/",
-        "https://about.abc.net.au/talk-to-the-abc/",
-        "https://about.abc.net.au/terms-of-use/#UseOfContent"
+        "https://www.abc.net.au/news/contact/"
     ]
 }
