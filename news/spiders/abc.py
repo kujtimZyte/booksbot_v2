@@ -192,6 +192,15 @@ def find_published_time(meta_tags, response):
     raise ValueError('Could not find a published date: {}'.format(response.url))
 
 
+def find_modified_time(meta_tags):
+    """Finds the modified time within an ABC article"""
+    if 'article:modified_time' in meta_tags:
+        return meta_tags['article:modified_time']
+    elif 'DCTERMS.modified' in meta_tags:
+        return meta_tags['DCTERMS.modified']
+    return None
+
+
 def fill_article_from_meta_tags(article, response, soup):
     """Fills an article object with information from meta tags"""
     meta_tags = extract_metadata(response)
@@ -200,10 +209,7 @@ def fill_article_from_meta_tags(article, response, soup):
     for tag in find_tags(meta_tags):
         article.add_tag(tag)
     article.time.set_published_time(find_published_time(meta_tags, response))
-    if 'article:modified_time' in meta_tags:
-        article.time.set_modified_time(meta_tags['article:modified_time'])
-    elif 'DCTERMS.modified' in meta_tags:
-        article.time.set_modified_time(meta_tags['DCTERMS.modified'])
+    article.time.set_modified_time(find_modified_time(meta_tags))
     article.info.set_genre(meta_tags['ABC.editorialGenre'])
     article.info.set_url(response.url)
     article.info.set_title(meta_tags['DC.title'])
@@ -218,7 +224,8 @@ def fill_article_from_meta_tags(article, response, soup):
         article.location.set_longitude(positions[1])
     article.publisher.facebook.set_page_id(meta_tags['fb:pages'])
     article.publisher.twitter.set_card(meta_tags['twitter:card'])
-    article.publisher.twitter.set_image(meta_tags['twitter:image'])
+    if 'twitter:image' in meta_tags:
+        article.publisher.twitter.set_image(meta_tags['twitter:image'])
     article.publisher.twitter.set_handle(meta_tags['twitter:site'])
     article.publisher.set_organisation(meta_tags['DC.Publisher.CorporateName'])
     if 'article:author' in meta_tags:
@@ -237,6 +244,9 @@ def fill_article_from_meta_tags(article, response, soup):
                 author.name = name.strip()
                 article.authors.append(author)
             break
+    if len(article.authors) == 1:
+        for a_tag in soup.findAll('a', {'class': 'twitter-timeline'}):
+            article.authors[0].twitter_url = a_tag['href']
 
 
 def abc_parse(response):
