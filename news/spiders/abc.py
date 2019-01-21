@@ -227,3 +227,9 @@ def abc_parse(response):
             continue
     article.text.set_markdown(html2text.html2text(unicode(main_content_div)))
     return article.json(), link_id
+
+
+def abc_url_filter(url):
+    if 'contact/feedback' in url:
+        return False
+    return True

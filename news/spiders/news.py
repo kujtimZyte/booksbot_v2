@@ -21,7 +21,7 @@ GCP_PRIVATE_KEY, \
 GCP_CLIENT_EMAIL, \
 GCP_CLIENT_ID, \
 GCP_CLIENT_X509_CERT_URL
-from .abc import abc_parse, abc_url_parse
+from .abc import abc_parse, abc_url_parse, abc_url_filter
 
 
 DetectorFactory.seed = 0
@@ -114,7 +114,8 @@ class NewsSpider(scrapy.Spider):
         "abc.net.au": {
             "parser": abc_parse,
             "splash": True,
-            "url_parse": abc_url_parse
+            "url_parse": abc_url_parse,
+            "url_filter": abc_url_filter
         }
     }
     # pylint: enable=line-too-long
@@ -201,6 +202,8 @@ class NewsSpider(scrapy.Spider):
                 continue
             for domain in self.parsers:
                 if host_name.endswith(domain):
+                    if not self.parsers[domain]["url_filter"](url):
+                        break
                     if self.parsers[domain]["splash"]:
                         new_splash_args = splash_args
                         if "cookie" in self.parsers[domain]:
