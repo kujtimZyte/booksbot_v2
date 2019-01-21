@@ -282,4 +282,6 @@ def abc_url_filter(url):
         return False
     if url.endswith('.pdf'):
         return False
+    if 'about.' in url:
+        return False
     return True
