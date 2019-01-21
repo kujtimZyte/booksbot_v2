@@ -137,6 +137,12 @@ def remove_tags(soup):
             'meta': {
                 'class': 'bylinepromo'
             }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'attached-content'
+            }
         }
     ]
     for remove_item in remove_items:
@@ -227,3 +233,10 @@ def abc_parse(response):
             continue
     article.text.set_markdown(html2text.html2text(unicode(main_content_div)))
     return article.json(), link_id
+
+
+def abc_url_filter(url):
+    """Filters URLs in the ABC domain"""
+    if 'contact/feedback' in url:
+        return False
+    return True
