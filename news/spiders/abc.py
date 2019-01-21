@@ -239,8 +239,12 @@ def abc_url_filter(url):
     """Filters URLs in the ABC domain"""
     if 'contact/feedback' in url:
         return False
-    if 'contact/tipoff' in url:
+    if 'contact/tip-off' in url:
         return False
     if 'news/feed/' in url:
+        return False
+    if 'conditions.h' in url:
+        return False
+    if url.endswith('.pdf'):
         return False
     return True
