@@ -3,12 +3,13 @@
 from bs4 import BeautifulSoup
 import html2text
 import js2py
-from .common import extract_metadata
+from .common import extract_metadata, strip_query_from_url
 from .article import Article, Image, Video, Author
 
 
 def abc_url_parse(url):
     """Parses the URL from an ABC website"""
+    url = strip_query_from_url(url)
     url_split = url.split('/')
     if len(url_split) != 7:
         return None
@@ -272,16 +273,10 @@ def abc_parse(response):
 
 def abc_url_filter(url):
     """Filters URLs in the ABC domain"""
-    if 'contact/feedback' in url:
-        return False
-    if 'contact/tip-off' in url:
-        return False
-    if 'news/feed/' in url:
-        return False
-    if 'conditions.h' in url:
-        return False
-    if url.endswith('.pdf'):
-        return False
-    if 'about.' in url:
+    if 'contact/feedback' in url or \
+       'news/feed/' in url or \
+       'conditions.h' in url or \
+       url.endswith('.pdf') or \
+       'about.' in url:
         return False
     return True

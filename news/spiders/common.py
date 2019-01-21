@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Common utilities for scraping"""
 import re
+from urllib import urlencode
+from urlparse import urlparse, urlunparse, parse_qs
 from bs4 import BeautifulSoup
 from markdown import markdown
 
@@ -125,3 +127,11 @@ def markdown_to_plaintext(markdown_text):
     soup = BeautifulSoup(html, "html.parser")
     text = ''.join(soup.findAll(text=True))
     return text
+
+def strip_query_from_url(url):
+    """Strips a query string from a URL"""
+    parsed_url = urlparse(url)
+    query = parse_qs(parsed_url.query)
+    query.pop('q2', None)
+    parsed_url = parsed_url._replace(query=urlencode(query, True))
+    return urlunparse(parsed_url)
