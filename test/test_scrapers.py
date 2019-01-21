@@ -58,7 +58,7 @@ class TestNewsSpider(unittest.TestCase):
 
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
-        open('output.json', 'w').write(output_json)
+        #open('output.json', 'w').write(output_json)
         json_filepath = os.path.join(self.htmlDirectory, json_filename)
         with open(json_filepath) as json_filehandle:
             expected_output = json.load(json_filehandle)
