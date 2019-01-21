@@ -160,23 +160,23 @@ def remove_tags(soup):
             tag.decompose()
 
 
+def find_facebook_url(meta_tags, soup):
+    """Finds the facebook URL from an article"""
+    if 'article:publisher' in meta_tags:
+        return meta_tags['article:publisher']
+    for a_tag in soup.findAll('a'):
+        for img_tag in a_tag.findAll('img'):
+            if not img_tag.has_attr('title'):
+                continue
+            if img_tag['title'] == 'ABC News on Facebook':
+                return a_tag['href']
+    return None
+
+
 def fill_article_from_meta_tags(article, response, soup):
     """Fills an article object with information from meta tags"""
     meta_tags = extract_metadata(response)
-    if 'article:publisher' in meta_tags:
-        article.publisher.facebook.set_url(meta_tags['article:publisher'])
-    else:
-        for a_tag in soup.findAll('a'):
-            found = False
-            for img_tag in a_tag.findAll('img'):
-                if not img_tag.has_attr('title'):
-                    continue
-                if img_tag['title'] == 'ABC News on Facebook':
-                    found = True
-                    break
-            if found:
-                article.publisher.facebook.set_url(a_tag['href'])
-                break
+    article.publisher.facebook.set_url(find_facebook_url(meta_tags, soup))
     remove_tags(soup)
     for tag in meta_tags['ABC.tags'].split(';'):
         article.add_tag(tag)
