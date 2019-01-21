@@ -174,20 +174,32 @@ def find_facebook_url(meta_tags, soup):
     return None
 
 
+def find_tags(meta_tags):
+    """Finds the tags within an ABC article"""
+    tags = []
+    if 'ABC.tags' in meta_tags:
+        for tag in meta_tags['ABC.tags'].split(';'):
+            tags.append(tag)
+    return tags
+
+
+def find_published_time(meta_tags, response):
+    """Finds the published time within an ABC article"""
+    if 'article:published_time' in meta_tags:
+        return meta_tags['article:published_time']
+    elif 'DCTERMS.issued' in meta_tags:
+        return meta_tags['DCTERMS.issued']
+    raise ValueError('Could not find a published date: {}'.format(response.url))
+
+
 def fill_article_from_meta_tags(article, response, soup):
     """Fills an article object with information from meta tags"""
     meta_tags = extract_metadata(response)
     article.publisher.facebook.set_url(find_facebook_url(meta_tags, soup))
     remove_tags(soup)
-    if 'ABC.tags' in meta_tags:
-        for tag in meta_tags['ABC.tags'].split(';'):
-            article.add_tag(tag)
-    if 'article:published_time' in meta_tags:
-        article.time.set_published_time(meta_tags['article:published_time'])
-    elif 'DCTERMS.issued' in meta_tags:
-        article.time.set_published_time(meta_tags['DCTERMS.issued'])
-    else:
-        raise ValueError('Could not find a published date: {}'.format(response.url))
+    for tag in find_tags(meta_tags):
+        article.add_tag(tag)
+    article.time.set_published_time(find_published_time(meta_tags, response))
     if 'article:modified_time' in meta_tags:
         article.time.set_modified_time(meta_tags['article:modified_time'])
     elif 'DCTERMS.modified' in meta_tags:
