@@ -156,12 +156,16 @@ class Image(RichMedia):
     """Holds the information about the image"""
     width = None
     height = None
+    alt = None
+    title = None
 
 
     def __init__(self):
         RichMedia.__init__(self)
         self.width = None
         self.height = None
+        self.alt = None
+        self.title = None
 
 
     def json(self):
@@ -171,6 +175,10 @@ class Image(RichMedia):
             image_json['width'] = int(self.width)
         if self.height:
             image_json['height'] = int(self.height)
+        if self.alt:
+            image_json['alt'] = self.alt
+        if self.title:
+            image_json['title'] = self.title
         return image_json
 
 

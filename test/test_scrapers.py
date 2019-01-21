@@ -80,6 +80,14 @@ class TestNewsSpider(unittest.TestCase):
             'abc-why-the-results-in-wentworth-narrowed.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_abc_hockeyroo_kathryn_slattery_from_olympic_hockey_to_harvest(self, mock_head):
+        self.check_fake_html_scrape(
+            'abc-hockeyroo-kathryn-slattery-from-olympic-hockey-to-harvest.html',
+            'https://www.abc.net.au/news/rural/2019-01-10/hockeyroo-kathryn-slattery-from-olympic-hockey-to-harvest/10700428',
+            'abc-hockeyroo-kathryn-slattery-from-olympic-hockey-to-harvest.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

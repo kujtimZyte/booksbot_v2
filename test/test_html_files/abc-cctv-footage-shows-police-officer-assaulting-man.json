@@ -13,12 +13,20 @@
                 "images": {
                     "images": [
                         {
+                            "alt": "Phil Dickson leans on a gate.",
                             "etag": "\"6209cb-5788a25f37d1b\"",
-                            "url": "https://www.abc.net.au/news/image/10729358-3x2-700x467.jpg"
+                            "height": 467,
+                            "title": "Phil Dickson",
+                            "url": "https://www.abc.net.au/news/image/10729358-3x2-700x467.jpg",
+                            "width": 700
                         },
                         {
+                            "alt": "A police officer holds Phil Dickson.",
                             "etag": "\"6209cb-5788a25f37d1b\"",
-                            "url": "https://www.abc.net.au/news/image/10729436-3x2-700x467.jpg"
+                            "height": 467,
+                            "title": "Police officer assaults Phil Dickson",
+                            "url": "https://www.abc.net.au/news/image/10729436-3x2-700x467.jpg",
+                            "width": 700
                         }
                     ],
                     "thumbnail": {
@@ -156,7 +164,6 @@
         "https://www.abc.net.au/news/2019-01-20/nadal-enters-equal-prize-money-debate/10730642",
         "https://www.abc.net.au/news/2019-01-21/to-learn-your-country-start-by-learning-its-aboriginal-names/10719890",
         "https://www.abc.net.au/news/feeds/",
-        "https://www.abc.net.au/news/contact/tip-off/",
         "https://www.abc.net.au/news/alerts/subscribe/",
         "https://www.abc.net.au/news/about/backstory/",
         "https://www.abc.net.au/life/a-guide-to-icu-for-visitors/10428864",
