@@ -164,7 +164,7 @@ class NewsSpider(scrapy.Spider):
         self.setup_gcs()
         article_json = json.dumps(article)
         sha256_hash = hashlib.sha224(article_json).hexdigest()
-        folder = time.strftime('%Y%m%d', time.localtime(int(article.time.published_time)))
+        folder = time.strftime('%Y%m%d', time.localtime(article['time']['published_time']))
         blob_name = os.path.join(folder, host_name, link_id, sha256_hash + '.json')
         blob = self.bucket.blob(blob_name)
         if blob.exists():
