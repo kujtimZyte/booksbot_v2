@@ -51,7 +51,8 @@ def article_from_contents_value(contents_value, meta_tags):
     article.publisher.twitter.card = meta_tags['twitter:card']
     article.publisher.twitter.handle = meta_tags['twitter:site']
     article.publisher.twitter.image = meta_tags['twitter:image']
-    article.publisher.twitter.image_alt = meta_tags['twitter:image:alt']
+    if 'twitter:image:alt' in meta_tags:
+        article.publisher.twitter.image_alt = meta_tags['twitter:image:alt']
     article.publisher.twitter.title = meta_tags['twitter:title']
     article.publisher.twitter.description = meta_tags['twitter:description']
     article.publisher.facebook.app_id = meta_tags['fb:app_id']
