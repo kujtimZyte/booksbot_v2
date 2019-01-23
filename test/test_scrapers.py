@@ -33,7 +33,8 @@ class TestNewsSpider(unittest.TestCase):
         self.htmlDirectory = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_html_files')
 
 
-    def test_abc_homepage(self):
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_abc_homepage(self, mock_head):
         self.check_fake_html_scrape(
             'abc.net.au.html',
             'https://www.abc.net.au/news/',
@@ -110,6 +111,22 @@ class TestNewsSpider(unittest.TestCase):
             'abc-abu-barak-bashir-must-never-be-able-to-incite-terrorism-again.html',
             'https://www.abc.net.au/radio/programs/am/abu-barak-bashir-must-never-be-able-to-incite-terrorism-again:fm/10738760',
             'abc-abu-barak-bashir-must-never-be-able-to-incite-terrorism-again.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_apnews_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'apnews.com.html',
+            'https://www.apnews.com',
+            'apnews.com.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_apnews_5133931a9d734dfcb38d44feec1ec9b6(self, mock_head):
+        self.check_fake_html_scrape(
+            'apnews-5133931a9d734dfcb38d44feec1ec9b6.html',
+            'https://www.apnews.com/5133931a9d734dfcb38d44feec1ec9b6',
+            'apnews-5133931a9d734dfcb38d44feec1ec9b6.json')
 
 
     def check_fake_html_scrape(self, html_filename, url, json_filename):

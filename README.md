@@ -19,6 +19,7 @@ The support table looks like so:
 | News Site                                                           | Last Updated       | Status |
 | ------------------------------------------------------------------- |:------------------:| ------:|
 | [Australian Broadcasting Corporation](https://www.abc.net.au/news/) | 19th January 2019  | Stable |
+| [Associated Press News](https://www.apnews.com)                     | 22nd January 2019  | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)

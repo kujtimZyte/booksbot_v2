@@ -22,6 +22,7 @@ GCP_CLIENT_EMAIL, \
 GCP_CLIENT_ID, \
 GCP_CLIENT_X509_CERT_URL
 from .abc import abc_parse, abc_url_parse, abc_url_filter
+from .apnews import apnews_parse, apnews_url_parse, apnews_url_filter
 
 
 DetectorFactory.seed = 0
@@ -100,25 +101,31 @@ class NewsSpider(scrapy.Spider):
     """Responsible for parsing news sites"""
     name = "news"
     allowed_domains = [
-        "abc.net.au"
+        "abc.net.au",
+        "apnews.com"
     ]
     start_urls = [
-        'https://www.abc.net.au/news/'
+        'https://www.abc.net.au/news/',
+        'https://www.apnews.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
     storage = None
     bucket = None
-    # pylint: disable=line-too-long
     parsers = {
         "abc.net.au": {
             "parser": abc_parse,
             "splash": True,
             "url_parse": abc_url_parse,
             "url_filter": abc_url_filter
+        },
+        "apnews.com": {
+            "parser": apnews_parse,
+            "splash": False,
+            "url_parse": apnews_url_parse,
+            "url_filter": apnews_url_filter
         }
     }
-    # pylint: enable=line-too-long
 
 
     def start_requests(self):
