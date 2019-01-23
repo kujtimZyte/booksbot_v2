@@ -1,158 +1,182 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "apple-mobile-web-app-capable": "yes",
-                    "apple-mobile-web-app-status-bar-style": "black",
-                    "article:modified_time": "2018-11-09T11:50:39Z",
-                    "article:published_time": "2018-11-09T11:50:21Z",
-                    "article:section": "AP Top News",
-                    "article:tag": "U.S. News",
-                    "articleBody": [
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "KRYSTA FAURIA"
+                    },
+                    {
+                        "name": "JONATHAN J. COOPER"
+                    }
+                ],
+                "images": {
+                    "images": [
                         {
-                            "text": "THOUSAND OAKS, Calif. (AP) \u2014 The mourners gathered to hold hands, to sing and to wonder how one of the safest cities in America could become a killing zone."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "People gather to pray for the victims of the mass shooting during a candlelight vigil in Thousand Oaks , Calif., Thursday, Nov. 8, 2018. A gunman opened fire Wednesday evening inside a country music bar, killing multiple people. (AP Photo/Ringo H.W. Chiu)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:a0339ea19c1b471a878b36c2037728df/3000.jpeg"
                         },
                         {
-                            "text": "Hundreds of people gathered Thursday evening to remember the dozen people shot and killed by a Marine veteran at the packed Borderline Bar & Grill the night before."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "People gather outside the Rivalry Roasters coffee shop for a vigil for Sean Adler Thursday, Nov. 8, 2018, in Simi Valley, Calif. Adler was killed in Wednesday night's shooting at the Borderline Bar and Grill in Thousand Oaks, Calif. (AP Photo/Jae C. Hong)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:50531e6345694ee1a7b6daf995a351e1/3000.jpeg"
                         },
                         {
-                            "text": "It was a scene of horror enacted in many places around the country in recent months, but never before in Thousand Oaks."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "A picture of Noel Sparks is seen during a candlelight vigil in Thousand Oaks, Calif., Thursday, Nov. 8, 2018. A gunman opened fire Wednesday evening inside a country music bar, killing multiple people. (AP Photo/Ringo H.W. Chiu)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:306d65fa163047d88ff80ddd149bd2f8/3000.jpeg"
                         },
                         {
-                            "text": "Terrified patrons who had gathered for the weekly line dancing and college night hurled barstools through windows to escape or threw their bodies protectively on top of friends as shots erupted. Twelve people were killed including Ventura County sheriff\u2019s Sgt. Ron Helus, a 29-year veteran nearing retirement who responded to reports of shots fired and was gunned down as he entered the bar."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "Sheriff's deputies speak to potential witnesses as they stand near the scene of a mass shooting Thursday, Nov. 8, 2018, in Thousand Oaks, Calif., where a gunman opened fire Wednesday night inside a country dance bar crowded with hundreds of people on \"college night,\" killing at least 12 people, including a sherif's deputy who rushed to the scene. Ventura County sheriff's spokesman says the gunman is dead inside the bar. (AP Photo/Mark J. Terrill)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:560794e05f204f31a0142635a234b35b/3000.jpeg"
                         },
                         {
-                            "text": "He and other first responders \u201cran toward danger,\u201d Sheriff Geoff Dean said at the vigil."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "People place flowers near the scene of a mass shooting Thursday, Nov. 8, 2018, in Thousand Oaks, Calif., after a gunman opened fire Wednesday evening inside a country music bar, killing multiple people including a responding sheriff's sergeant. (AP Photo/Ringo H.W. Chiu)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:aa136f28401c4434b66734ba4abbdae0/2508.jpeg"
                         },
                         {
-                            "text": "\u201cWhen I told her (his wife) that we had lost her hero, I said to her: \u2018Because of Ron, many lives were saved,\u2019\u201d Dean said. \u201cAnd she looked at me through her tears and she said: \u2018He would have wanted it that way.\u2019\u201d"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "Standing at the microphones, from left to right, Paul Delacourt, assistant director for the FBI Los Angeles, and U.S. Rep. Julia Brownley look on as Ventura County Sheriff's Capt. Garo Kuredjian speaks to the media, Thursday, Nov. 8, 2018, in Thousand Oaks, Calif. Multiple people were fatally shot late Wednesday by the gunman who opened fire at the Borderline Bar and Grill, which was holding a weekly country music dance night for college students. (AP Photo/Richard Vogel)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:0ca7e9298f0640e38a0558fae198c447/3000.jpeg"
                         },
                         {
-                            "text": "The dead also included a man who had survived last year\u2019s massacre in Las Vegas, Telemachus Orfanos, 27."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "This 2017 photo from the California Department of Motor Vehicles shows Ian David Long. Authorities said the Marine combat veteran opened fire Wednesday evening, Nov. 7, 2018, at a country music bar in Southern California, killing multiple people before apparently taking his own life. (California Department of Motor Vehicles via AP)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:b9f580c7caba41a79eb48001fe9e9fc1/3000.jpeg"
                         },
                         {
-                            "text": "Video and sound captured gun shots as terrified patrons tried to escape a Southern California bar Wednesday. A Marine combat veteran killed 12 people at the Borderline Bar and Grill. (Nov 8)"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "Mourners embrace outside of the Thousand Oaks Teen Center on Thursday, Nov. 8, 2018, where relatives and friends gathered in the aftermath of the Wednesday night mass shooting, in Thousand Oaks, Calif. Multiple people were shot and killed late Wednesday by a gunman who opened fire at the Borderline Bar & Grill, which was holding a weekly country music dance night for college students. (AP Photo/Marcio Jose Sanchez)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:0de6214a84394d838caaa5e6f1d54299/3000.jpeg"
                         },
                         {
-                            "text": "\u201cI don\u2019t want prayers. I don\u2019t want thoughts,\u201d his mother, Susan Schmidt-Orfanos, said earlier. \u201cI want those bastards in Congress \u2014 they need to pass gun control so no one else has a child that doesn\u2019t come home.\u201d"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "Grieving people are led into the Thousand Oaks Teen Center where families have gathered after a deadly shooting at a bar,  Thursday, Nov. 8, 2018, in Thousand Oaks, Calif. Multiple people were shot and killed late Wednesday by a gunman who opened fire at the Borderline Bar & Grill, which was holding a weekly country music dance night for college students. (AP Photo/Richard Vogel)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:f7e39124c57e49e582cd5a4591168794/3000.jpeg"
                         },
                         {
-                            "text": "Dani Merrill also attended the 2017 Las Vegas country music festival where a gunman in a high-rise hotel opened fire and killed 58 people. She was appalled that such bloodshed had come to her community."
+                            "alt": "Ron Helus",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "Firefighters salute from an overpass as a motorcade with the body of Ventura County Sheriff's Sgt. Ron Helus goes by Thursday, Nov. 8, 2018, in Newbury Park, Calif. Helus was fatally shot while responding to a mass shooting at a country music bar in Southern California.  (AP Photo/Marcio Jose Sanchez)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:92369a669e3f470ba56e16ddca969e08/3000.jpeg"
                         },
                         {
-                            "text": "\u201cI\u2019m super upset that it happened in our home and I feel awful for the families that have to go through this,\u201d Merrill said at the vigil. She escaped from the Borderline bar when the shooting began, hurting her knee as she ran onto a loading dock."
+                            "alt": "Cellphone video shows nightclub as shooting occurs",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "Video and sound captured gun shots as terrified patrons tried to escape a Southern California bar Wednesday. A Marine combat veteran killed 12 people at the Borderline Bar and Grill. (Nov 8)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:e7715f107260496c875355da5a7ba2bd/400.jpeg"
                         },
                         {
-                            "text": "The city of about 130,000 people about 40 miles (64 kilometers) from Los Angeles, just across the county line, is annually listed as one of the safest cities in America."
+                            "alt": "Help offered to families after Calif. bar shooting",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "Ventura County has set up a Family Assistance and Unification Center where shooting victims and their families can seek help after the mass shooting at Borderline Bar and Grill, Wednesday night. (Nov. 8)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:21d0bd19cc354aa7b416031c7ee2dc52/400.jpeg"
                         },
                         {
-                            "text": "\u201cHope has sustained communities, very much like Thousand Oaks, through the exact same triages of mass shootings,\u201d said Andy Fox, the city\u2019s outgoing mayor. \u201cTonight Thousand Oaks takes its place with those cities, who in order to move forward will rely on hope. we are Thousand Oaks strong.\u201d"
+                            "alt": "Friends, neighbors, politicians react to SoCal shooting",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "A neighbor described the gunman in a deadly Southern California shooting as \"an introvert.\" Jennifer Avalos is praying a missing friend is okay, and California Governor-elect Gavin Newsom expressed a \"heavy heart\" over another mass shooting. (Nov 8)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:f2a862d038084a0ca9644929bfdb3e5d/400.jpeg"
                         },
                         {
-                            "text": "The motive for the attack was under investigation."
+                            "alt": "Friends aiding families of SoCal shooting victims",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "Friends and members of the community of Thousand Oaks, California offered comfort Thursday to the families of victims in the deadly shooting at a local bar. A gunman killed 12 people at the bar late Wednesday. (Nov. 8)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:505665dd97b1478ea058c88a09c43489/400.jpeg"
                         },
                         {
-                            "text": "The killer, Ian David Long, 28, was a former machine gunner and Afghanistan war veteran who was interviewed by police at his home last spring after an episode of agitated behavior that authorities were told might be post-traumatic stress disorder."
-                        },
-                        {
-                            "text": "Dressed all in black with his hood pulled up, Long opened fire with a handgun with an illegal, extra-capacity magazine. He shot a security guard outside the bar and then went in and took aim at employees and customers, authorities said. He also used a smoke bomb, according to a law enforcement official who was not authorized to discuss the investigation publicly and spoke on condition of anonymity. He apparently killed himself as scores of police converged on the nightspot."
-                        },
-                        {
-                            "text": "Many of the estimated 150 patrons at the Borderline dived under tables, ran for exits, broke through windows or hid in the attic and bathrooms, authorities and witnesses said."
-                        },
-                        {
-                            "text": "Matt Wennerstrom said he instinctively pulled people behind a pool table, and he and friends shielded women with their bodies after hearing the shots. When the gunman paused to reload, Wennerstrom said, he and others shattered windows with barstools and helped about 30 people escape. He heard another volley of shots once he was safely outside."
-                        },
-                        {
-                            "text": "\u201cAll I wanted to do was get as many people out of there as possible,\u201d he told KABC-TV. \u201cI know where I\u2019m going if I die, so I was not worried.\u201d"
-                        },
-                        {
-                            "text": "A video posted on Instagram after the shooting by one of the patrons shows an empty dance floor with the sound of windows shattering in the background. As a silhouetted figure comes through a doorway, the camera turns erratically and 10 gunshots ring out."
-                        },
-                        {
-                            "text": "\u201cI looked him in his eyes while he killed my friends,\u201d Dallas Knapp wrote on his post. \u201cI hope he rots in hell for eternity.\u201d"
-                        },
-                        {
-                            "text": "Earlier, people stood in line for hours to give blood, although some found it hard to get to the donation site because of a wildfire that erupted not far away and closed down a major freeway."
-                        },
-                        {
-                            "text": "All morning, people looking for missing friends and relatives arrived at a community center where authorities and counselors were informing the next-of-kin of those who died."
-                        },
-                        {
-                            "text": "Jason Coffman received the news that his son Cody, 22, who was about to join the Army, was dead. Coffman broke down as he told reporters how his last words to his son as he went out that night were not to drink and drive and that he loved him."
-                        },
-                        {
-                            "text": "\u201cOh, Cody, I love you, son,\u201d Coffman sobbed."
-                        },
-                        {
-                            "text": "It was the nation\u2019s deadliest such attack since 17 students and teachers were killed at a Parkland, Florida, high school nine months ago. It also came less than two weeks after a gunman massacred 11 people at a synagogue in Pittsburgh."
-                        },
-                        {
-                            "text": "Democratic Gov.-elect Gavin Newsom, in his first public appearance since winning office on Tuesday, lamented the violence that has returned to California."
-                        },
-                        {
-                            "text": "\u201cIt\u2019s a gun culture,\u201d he said. \u201cYou can\u2019t go to a bar or nightclub? You can\u2019t go to church or synagogue? It\u2019s insane is the only way to describe it. The normalization, that\u2019s the only way I can describe it. It\u2019s become normalized.\u201d"
-                        },
-                        {
-                            "text": "President Donald Trump praised police for their \u201cgreat bravery\u201d in the attack and ordered flags flown at half-staff in honor of the victims."
-                        },
-                        {
-                            "text": "Authorities searched Long\u2019s home in Newbury Park, about 5 miles (8 kilometers) from the Borderline bar, for clues to what set him off."
-                        },
-                        {
-                            "text": "\u201cMaybe there was a motive for this particular night, but we have no information leading to that at all,\u201d the sheriff said."
-                        },
-                        {
-                            "text": "Long was in the Marines from 2008 to 2013, rose to the rank of corporal and served in Afghanistan in 2010-11 before he was honorably discharged, the military said. Court records show he married in 2009 and was divorced in 2013."
-                        },
-                        {
-                            "text": "Authorities said he had no criminal record, but in April officers were called to his home, where deputies found him angry and acting irrationally. The sheriff said officers were told he might have PTSD because of his military service. A mental health specialist met with him and didn\u2019t feel he needed to be hospitalized."
-                        },
-                        {
-                            "text": "Tom Hanson, 70, who lives next door to Long and his mother, said he called the police about six months ago when he heard \u201cheavy-duty banging\u201d and shouting coming from the Longs\u2019 home."
-                        },
-                        {
-                            "text": "\u201cSomebody has missed something here,\u201d his wife, Julie Hanson, said. \u201cThis woman has to know that this child needed help.\u201d"
-                        },
-                        {
-                            "text": "___"
-                        },
-                        {
-                            "text": "AP journalists Christopher Weber in Thousand Oaks, Andrew Dalton, Amanda Lee Myers, John Antczak and Brian Melley in Los Angeles, Michelle A. Monroe in Phoenix and Michael Balsamo in Washington contributed to this report."
-                        },
-                        {
-                            "text": "___"
-                        },
-                        {
-                            "text": "This story has been corrected to say that Telemachus Orfanos was 27 years old, not 22."
+                            "alt": "FBI seeks California shooter's frame of mind",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "An FBI official says investigators seeking the motive for the mass shooting at a Southern California bar hope evidence will allow them to paint a picture of the gunman's frame of mind. (Nov. 8)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:66cd9faa19a9469288da665c35d28fae/400.jpeg"
                         }
                     ],
-                    "description": "THOUSAND OAKS, Calif. (AP) \u2014 The mourners gathered to hold hands, to sing and to wonder how one of the safest cities in America could become a killing zone. Hundreds of people gathered Thursday evening to remember the dozen people shot and killed by a Marine veteran at the packed Borderline Bar &amp; Grill the night before. It was a scene of horror enacted in many places around the country in recent months, but never before in Thousand Oaks.  ",
-                    "fb:app_id": "870613919693099",
-                    "google-site-verification": "XvG-YKlyyPmG2x0J9-rdS-zI8LhL4d75ZQoccETD2qA",
-                    "imgs": [],
-                    "keywords": "breaking news,U.S. news,news,news online,world news,weather,business,sports,politics,law,\ntechnology,entertainment,education,travel,health",
-                    "msapplication-config": "browserconfig.xml",
-                    "og:description": "THOUSAND OAKS, Calif. (AP) \u2014 The mourners gathered to hold hands, to sing and to wonder how one of the safest cities in America could become a killing zone. Hundreds of people gathered Thursday evening to remember the dozen people shot and killed by a Marine veteran at the packed Borderline Bar &amp; Grill the night before. It was a scene of horror enacted in many places around the country in recent months, but never before in Thousand Oaks.  ",
-                    "og:image": "https://storage.googleapis.com/afs-prod/media/media:a0339ea19c1b471a878b36c2037728df/3000.jpeg",
-                    "og:image:height": "3000",
-                    "og:image:width": "4189.641844885339",
-                    "og:site_name": "AP NEWS",
-                    "og:title": "Southern California city mourns in wake of bar massacre",
-                    "og:type": "article",
-                    "og:url": "https://apnews.com/5133931a9d734dfcb38d44feec1ec9b6",
-                    "theme-color": "#dedede",
-                    "twitter:card": "summary_large_image ",
-                    "twitter:description": "THOUSAND OAKS, Calif. (AP) \u2014 The mourners gathered to hold hands, to sing and to wonder how one of the safest cities in America could become a killing zone. Hundreds of people gathered Thursday evening to remember the dozen people shot and killed by a Marine veteran at the packed Borderline Bar &amp; Grill the night before. It was a scene of horror enacted in many places around the country in recent months, but never before in Thousand Oaks.  ",
-                    "twitter:image": "https://storage.googleapis.com/afs-prod/media/media:a0339ea19c1b471a878b36c2037728df/3000.jpeg",
-                    "twitter:image:alt": "https://storage.googleapis.com/afs-prod/media/media:a0339ea19c1b471a878b36c2037728df/400.jpeg",
-                    "twitter:site": "@ap",
-                    "twitter:title": "Southern California city mourns in wake of bar massacre",
-                    "twitter:url": "https://apnews.com/5133931a9d734dfcb38d44feec1ec9b6",
-                    "viewport": "width=device-width, initial-scale=1"
+                    "thumbnail": {}
+                },
+                "info": {
+                    "description": "Southern California city mourns in wake of bar massacre",
+                    "title": "US--California Bar Shooting",
+                    "url": "https://apnews.com/5133931a9d734dfcb38d44feec1ec9b6"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "app_id": "870613919693099"
+                    },
+                    "twitter": {
+                        "card": "summary_large_image ",
+                        "description": "THOUSAND OAKS, Calif. (AP) \u2014 The mourners gathered to hold hands, to sing and to wonder how one of the safest cities in America could become a killing zone. Hundreds of people gathered Thursday evening to remember the dozen people shot and killed by a Marine veteran at the packed Borderline Bar &amp; Grill the night before. It was a scene of horror enacted in many places around the country in recent months, but never before in Thousand Oaks.  ",
+                        "handle": "@ap",
+                        "image": "https://storage.googleapis.com/afs-prod/media/media:a0339ea19c1b471a878b36c2037728df/3000.jpeg",
+                        "image_alt": "https://storage.googleapis.com/afs-prod/media/media:a0339ea19c1b471a878b36c2037728df/400.jpeg",
+                        "title": "Southern California city mourns in wake of bar massacre"
+                    }
+                },
+                "tags": [
+                    "AP Top News",
+                    "Las Vegas mass shooting",
+                    "North America",
+                    "Massacres",
+                    "California",
+                    "U.S. News"
+                ],
+                "text": {
+                    "markdown": "THOUSAND OAKS, Calif. (AP) -- The mourners gathered to hold hands, to sing and\nto wonder how one of the safest cities in America could become a killing zone.\n\nHundreds of people gathered Thursday evening to remember the dozen people shot\nand killed by a Marine veteran at the packed Borderline Bar & Grill the night\nbefore.\n\nIt was a scene of horror enacted in many places around the country in recent\nmonths, but never before in Thousand Oaks.\n\nTerrified patrons who had gathered for the weekly line dancing and college\nnight hurled barstools through windows to escape or threw their bodies\nprotectively on top of friends as shots erupted. Twelve people were killed\nincluding Ventura County sheriff's Sgt. Ron Helus, a 29-year veteran nearing\nretirement who responded to reports of shots fired and was gunned down as he\nentered the bar.\n\nHe and other first responders \"ran toward danger,\" Sheriff Geoff Dean said at\nthe vigil.\n\n\"When I told her (his wife) that we had lost her hero, I said to her: 'Because\nof Ron, many lives were saved,'\" Dean said. \"And she looked at me through her\ntears and she said: 'He would have wanted it that way.'\"\n\nThe dead also included a man who had survived last year's massacre in Las\nVegas, Telemachus Orfanos, 27.\n\n\"I don't want prayers. I don't want thoughts,\" his mother, Susan Schmidt-\nOrfanos, said earlier. \"I want those bastards in Congress -- they need to pass\ngun control so no one else has a child that doesn't come home.\"\n\nDani Merrill also attended the 2017 Las Vegas country music festival where a\ngunman in a high-rise hotel opened fire and killed 58 people. She was appalled\nthat such bloodshed had come to her community.\n\n\"I'm super upset that it happened in our home and I feel awful for the\nfamilies that have to go through this,\" Merrill said at the vigil. She escaped\nfrom the Borderline bar when the shooting began, hurting her knee as she ran\nonto a loading dock.\n\nThe city of about 130,000 people about 40 miles (64 kilometers) from Los\nAngeles, just across the county line, is annually listed as one of the safest\ncities in America.\n\n\"Hope has sustained communities, very much like Thousand Oaks, through the\nexact same triages of mass shootings,\" said Andy Fox, the city's outgoing\nmayor. \"Tonight Thousand Oaks takes its place with those cities, who in order\nto move forward will rely on hope. we are Thousand Oaks strong.\"\n\nThe motive for the attack was under investigation.\n\nThe killer, Ian David Long, 28, was a former machine gunner and Afghanistan\nwar veteran who was interviewed by police at his home last spring after an\nepisode of agitated behavior that authorities were told might be post-\ntraumatic stress disorder.\n\nDressed all in black with his hood pulled up, Long opened fire with a handgun\nwith an illegal, extra-capacity magazine. He shot a security guard outside the\nbar and then went in and took aim at employees and customers, authorities\nsaid. He also used a smoke bomb, according to a law enforcement official who\nwas not authorized to discuss the investigation publicly and spoke on\ncondition of anonymity. He apparently killed himself as scores of police\nconverged on the nightspot.\n\nMany of the estimated 150 patrons at the Borderline dived under tables, ran\nfor exits, broke through windows or hid in the attic and bathrooms,\nauthorities and witnesses said.\n\nMatt Wennerstrom said he instinctively pulled people behind a pool table, and\nhe and friends shielded women with their bodies after hearing the shots. When\nthe gunman paused to reload, Wennerstrom said, he and others shattered windows\nwith barstools and helped about 30 people escape. He heard another volley of\nshots once he was safely outside.\n\n\"All I wanted to do was get as many people out of there as possible,\" he told\nKABC-TV. \"I know where I'm going if I die, so I was not worried.\"\n\nA video posted on Instagram after the shooting by one of the patrons shows an\nempty dance floor with the sound of windows shattering in the background. As a\nsilhouetted figure comes through a doorway, the camera turns erratically and\n10 gunshots ring out.\n\n\"I looked him in his eyes while he killed my friends,\" Dallas Knapp wrote on\nhis post. \"I hope he rots in hell for eternity.\"\n\nEarlier, people stood in line for hours to give blood, although some found it\nhard to get to the donation site because of a wildfire that erupted not far\naway and closed down a major freeway.\n\nAll morning, people looking for missing friends and relatives arrived at a\ncommunity center where authorities and counselors were informing the next-of-\nkin of those who died.\n\nJason Coffman received the news that his son Cody, 22, who was about to join\nthe Army, was dead. Coffman broke down as he told reporters how his last words\nto his son as he went out that night were not to drink and drive and that he\nloved him.\n\n\"Oh, Cody, I love you, son,\" Coffman sobbed.\n\nIt was the nation's deadliest such attack since 17 students and teachers were\nkilled at a Parkland, Florida, high school nine months ago. It also came less\nthan two weeks after a gunman massacred 11 people at a synagogue in\nPittsburgh.\n\nDemocratic Gov.-elect Gavin Newsom, in his first public appearance since\nwinning office on Tuesday, lamented the violence that has returned to\nCalifornia.\n\n\"It's a gun culture,\" he said. \"You can't go to a bar or nightclub? You can't\ngo to church or synagogue? It's insane is the only way to describe it. The\nnormalization, that's the only way I can describe it. It's become normalized.\"\n\nPresident Donald Trump praised police for their \"great bravery\" in the attack\nand ordered flags flown at half-staff in honor of the victims.\n\nAuthorities searched Long's home in Newbury Park, about 5 miles (8 kilometers)\nfrom the Borderline bar, for clues to what set him off.\n\n\"Maybe there was a motive for this particular night, but we have no\ninformation leading to that at all,\" the sheriff said.\n\nLong was in the Marines from 2008 to 2013, rose to the rank of corporal and\nserved in Afghanistan in 2010-11 before he was honorably discharged, the\nmilitary said. Court records show he married in 2009 and was divorced in 2013.\n\nAuthorities said he had no criminal record, but in April officers were called\nto his home, where deputies found him angry and acting irrationally. The\nsheriff said officers were told he might have PTSD because of his military\nservice. A mental health specialist met with him and didn't feel he needed to\nbe hospitalized.\n\nTom Hanson, 70, who lives next door to Long and his mother, said he called the\npolice about six months ago when he heard \"heavy-duty banging\" and shouting\ncoming from the Longs' home.\n\n\"Somebody has missed something here,\" his wife, Julie Hanson, said. \"This\nwoman has to know that this child needed help.\"\n\n___\n\nAP journalists Christopher Weber in Thousand Oaks, Andrew Dalton, Amanda Lee\nMyers, John Antczak and Brian Melley in Los Angeles, Michelle A. Monroe in\nPhoenix and Michael Balsamo in Washington contributed to this report.\n\n___\n\nThis story has been corrected to say that Telemachus Orfanos was 27 years old,\nnot 22.\n\n",
+                    "text": "THOUSAND OAKS, Calif. (AP) -- The mourners gathered to hold hands, to sing and\nto wonder how one of the safest cities in America could become a killing zone.\nHundreds of people gathered Thursday evening to remember the dozen people shot\nand killed by a Marine veteran at the packed Borderline Bar & Grill the night\nbefore.\nIt was a scene of horror enacted in many places around the country in recent\nmonths, but never before in Thousand Oaks.\nTerrified patrons who had gathered for the weekly line dancing and college\nnight hurled barstools through windows to escape or threw their bodies\nprotectively on top of friends as shots erupted. Twelve people were killed\nincluding Ventura County sheriff's Sgt. Ron Helus, a 29-year veteran nearing\nretirement who responded to reports of shots fired and was gunned down as he\nentered the bar.\nHe and other first responders \"ran toward danger,\" Sheriff Geoff Dean said at\nthe vigil.\n\"When I told her (his wife) that we had lost her hero, I said to her: 'Because\nof Ron, many lives were saved,'\" Dean said. \"And she looked at me through her\ntears and she said: 'He would have wanted it that way.'\"\nThe dead also included a man who had survived last year's massacre in Las\nVegas, Telemachus Orfanos, 27.\n\"I don't want prayers. I don't want thoughts,\" his mother, Susan Schmidt-\nOrfanos, said earlier. \"I want those bastards in Congress -- they need to pass\ngun control so no one else has a child that doesn't come home.\"\nDani Merrill also attended the 2017 Las Vegas country music festival where a\ngunman in a high-rise hotel opened fire and killed 58 people. She was appalled\nthat such bloodshed had come to her community.\n\"I'm super upset that it happened in our home and I feel awful for the\nfamilies that have to go through this,\" Merrill said at the vigil. She escaped\nfrom the Borderline bar when the shooting began, hurting her knee as she ran\nonto a loading dock.\nThe city of about 130,000 people about 40 miles (64 kilometers) from Los\nAngeles, just across the county line, is annually listed as one of the safest\ncities in America.\n\"Hope has sustained communities, very much like Thousand Oaks, through the\nexact same triages of mass shootings,\" said Andy Fox, the city's outgoing\nmayor. \"Tonight Thousand Oaks takes its place with those cities, who in order\nto move forward will rely on hope. we are Thousand Oaks strong.\"\nThe motive for the attack was under investigation.\nThe killer, Ian David Long, 28, was a former machine gunner and Afghanistan\nwar veteran who was interviewed by police at his home last spring after an\nepisode of agitated behavior that authorities were told might be post-\ntraumatic stress disorder.\nDressed all in black with his hood pulled up, Long opened fire with a handgun\nwith an illegal, extra-capacity magazine. He shot a security guard outside the\nbar and then went in and took aim at employees and customers, authorities\nsaid. He also used a smoke bomb, according to a law enforcement official who\nwas not authorized to discuss the investigation publicly and spoke on\ncondition of anonymity. He apparently killed himself as scores of police\nconverged on the nightspot.\nMany of the estimated 150 patrons at the Borderline dived under tables, ran\nfor exits, broke through windows or hid in the attic and bathrooms,\nauthorities and witnesses said.\nMatt Wennerstrom said he instinctively pulled people behind a pool table, and\nhe and friends shielded women with their bodies after hearing the shots. When\nthe gunman paused to reload, Wennerstrom said, he and others shattered windows\nwith barstools and helped about 30 people escape. He heard another volley of\nshots once he was safely outside.\n\"All I wanted to do was get as many people out of there as possible,\" he told\nKABC-TV. \"I know where I'm going if I die, so I was not worried.\"\nA video posted on Instagram after the shooting by one of the patrons shows an\nempty dance floor with the sound of windows shattering in the background. As a\nsilhouetted figure comes through a doorway, the camera turns erratically and\n10 gunshots ring out.\n\"I looked him in his eyes while he killed my friends,\" Dallas Knapp wrote on\nhis post. \"I hope he rots in hell for eternity.\"\nEarlier, people stood in line for hours to give blood, although some found it\nhard to get to the donation site because of a wildfire that erupted not far\naway and closed down a major freeway.\nAll morning, people looking for missing friends and relatives arrived at a\ncommunity center where authorities and counselors were informing the next-of-\nkin of those who died.\nJason Coffman received the news that his son Cody, 22, who was about to join\nthe Army, was dead. Coffman broke down as he told reporters how his last words\nto his son as he went out that night were not to drink and drive and that he\nloved him.\n\"Oh, Cody, I love you, son,\" Coffman sobbed.\nIt was the nation's deadliest such attack since 17 students and teachers were\nkilled at a Parkland, Florida, high school nine months ago. It also came less\nthan two weeks after a gunman massacred 11 people at a synagogue in\nPittsburgh.\nDemocratic Gov.-elect Gavin Newsom, in his first public appearance since\nwinning office on Tuesday, lamented the violence that has returned to\nCalifornia.\n\"It's a gun culture,\" he said. \"You can't go to a bar or nightclub? You can't\ngo to church or synagogue? It's insane is the only way to describe it. The\nnormalization, that's the only way I can describe it. It's become normalized.\"\nPresident Donald Trump praised police for their \"great bravery\" in the attack\nand ordered flags flown at half-staff in honor of the victims.\nAuthorities searched Long's home in Newbury Park, about 5 miles (8 kilometers)\nfrom the Borderline bar, for clues to what set him off.\n\"Maybe there was a motive for this particular night, but we have no\ninformation leading to that at all,\" the sheriff said.\nLong was in the Marines from 2008 to 2013, rose to the rank of corporal and\nserved in Afghanistan in 2010-11 before he was honorably discharged, the\nmilitary said. Court records show he married in 2009 and was divorced in 2013.\nAuthorities said he had no criminal record, but in April officers were called\nto his home, where deputies found him angry and acting irrationally. The\nsheriff said officers were told he might have PTSD because of his military\nservice. A mental health specialist met with him and didn't feel he needed to\nbe hospitalized.\nTom Hanson, 70, who lives next door to Long and his mother, said he called the\npolice about six months ago when he heard \"heavy-duty banging\" and shouting\ncoming from the Longs' home.\n\"Somebody has missed something here,\" his wife, Julie Hanson, said. \"This\nwoman has to know that this child needed help.\"\n\nAP journalists Christopher Weber in Thousand Oaks, Andrew Dalton, Amanda Lee\nMyers, John Antczak and Brian Melley in Los Angeles, Michelle A. Monroe in\nPhoenix and Michael Balsamo in Washington contributed to this report.\n\nThis story has been corrected to say that Telemachus Orfanos was 27 years old,\nnot 22."
+                },
+                "time": {
+                    "modified_time": 1541764239.0,
+                    "published_time": 1541764221.0
+                },
+                "videos": {
+                    "videos": [
+                        {
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "url": "https://www.youtube.com/watch?v=YQaq4dFiGOY"
+                        },
+                        {
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "url": "https://www.youtube.com/watch?v=TQ4b85nGEfI"
+                        },
+                        {
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "url": "https://www.youtube.com/watch?v=nhcCxvh2rkY"
+                        },
+                        {
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "url": "https://www.youtube.com/watch?v=i0YRyJ1K1Aw"
+                        },
+                        {
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "url": "https://www.youtube.com/watch?v=osvkq8UY-kY"
+                        }
+                    ]
                 }
-            ],
+            },
             "url": "https://www.apnews.com/5133931a9d734dfcb38d44feec1ec9b6"
         }
     ],

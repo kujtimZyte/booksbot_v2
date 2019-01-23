@@ -116,6 +116,7 @@ def extract_item_from_element_css(response, css_selector):
             items.append(item)
     return items
 
+
 def markdown_to_plaintext(markdown_text):
     """Converts markdown to plaintext"""
     # https://gist.github.com/lorey/eb15a7f3338f959a78cc3661fbc255fe
@@ -127,6 +128,7 @@ def markdown_to_plaintext(markdown_text):
     soup = BeautifulSoup(html, "html.parser")
     text = ''.join(soup.findAll(text=True))
     return text
+
 
 def strip_query_from_url(url):
     """Strips a query string from a URL"""

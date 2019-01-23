@@ -8,7 +8,9 @@ from .common import markdown_to_plaintext
 
 def timecode_from_datetime(datetime_obj):
     """Computes the unix timecode from a datetime object"""
-    utc_naive = datetime_obj.replace(tzinfo=None) - datetime_obj.utcoffset()
+    utc_naive = datetime_obj
+    if datetime_obj.utcoffset() is not None:
+        utc_naive = datetime_obj.replace(tzinfo=None) - datetime_obj.utcoffset()
     return (utc_naive - datetime.datetime(1970, 1, 1)).total_seconds()
 
 
@@ -172,9 +174,9 @@ class Image(RichMedia):
         """Returns the object as a dictionary for JSON consumption"""
         image_json = super(Image, self).json()
         if self.width:
-            image_json['width'] = int(self.width)
+            image_json['width'] = int(float(self.width))
         if self.height:
-            image_json['height'] = int(self.height)
+            image_json['height'] = int(float(self.height))
         if self.alt:
             image_json['alt'] = self.alt
         if self.title:
@@ -273,11 +275,13 @@ class Facebook(object):
     """An object for holding the facebook information"""
     url = None
     page_id = None
+    app_id = None
 
 
     def __init__(self):
         self.url = None
         self.page_id = None
+        self.app_id = None
 
 
     def set_url(self, url):
@@ -297,6 +301,8 @@ class Facebook(object):
             facebook_info['url'] = self.url
         if self.page_id:
             facebook_info['page_id'] = self.page_id
+        if self.app_id:
+            facebook_info['app_id'] = self.app_id
         return facebook_info
 
 
@@ -305,12 +311,18 @@ class Twitter(object):
     card = None
     image = None
     handle = None
+    image_alt = None
+    title = None
+    description = None
 
 
     def __init__(self):
         self.card = None
         self.image = None
         self.handle = None
+        self.image_alt = None
+        self.title = None
+        self.description = None
 
 
     def set_card(self, card):
@@ -337,6 +349,12 @@ class Twitter(object):
             twitter_info['image'] = self.image
         if self.handle:
             twitter_info['handle'] = self.handle
+        if self.image_alt:
+            twitter_info['image_alt'] = self.image_alt
+        if self.title:
+            twitter_info['title'] = self.title
+        if self.description:
+            twitter_info['description'] = self.description
         return twitter_info
 
 
