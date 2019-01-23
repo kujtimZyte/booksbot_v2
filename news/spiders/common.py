@@ -4,6 +4,7 @@ import re
 from urllib import urlencode
 from urlparse import urlparse, urlunparse, parse_qs
 from bs4 import BeautifulSoup
+import js2py
 from markdown import markdown
 
 
@@ -137,3 +138,31 @@ def strip_query_from_url(url):
     query.pop('q2', None)
     parsed_url = parsed_url._replace(query=urlencode(query, True))
     return urlunparse(parsed_url)
+
+
+def remove_common_tags(remove_items, soup):
+    """Remove common tags"""
+    remove_items.append({
+        'tag': 'noscript',
+        'meta': {}
+    })
+    remove_items.append({
+        'tag': 'button',
+        'meta': {}
+    })
+    for remove_item in remove_items:
+        for tag in soup.findAll(remove_item['tag'], remove_item['meta']):
+            tag.decompose()
+
+
+def execute_script(script_tag):
+    """Executes a script"""
+    if not script_tag.text:
+        return None
+    try:
+        context = js2py.EvalJs()
+        context.execute(script_tag.text)
+        return context
+    except js2py.PyJsException:
+        pass
+    return None

@@ -2,8 +2,7 @@
 """Parser for the ABC website"""
 from bs4 import BeautifulSoup
 import html2text
-import js2py
-from .common import extract_metadata, strip_query_from_url
+from .common import extract_metadata, strip_query_from_url, remove_common_tags, execute_script
 from .article import Article, Image, Video, Author, Audio
 
 
@@ -21,7 +20,7 @@ def abc_url_parse(url):
 
 def remove_tags(soup):
     """Removes the useless tags from the HTML"""
-    remove_items = [
+    remove_common_tags([
         {
             'tag': 'div',
             'meta': {
@@ -155,10 +154,6 @@ def remove_tags(soup):
             }
         },
         {
-            'tag': 'noscript',
-            'meta': {}
-        },
-        {
             'tag': 'div',
             'meta': {
                 'class': 'comp-share'
@@ -169,10 +164,6 @@ def remove_tags(soup):
             'meta': {
                 'class': 'menu-item'
             }
-        },
-        {
-            'tag': 'button',
-            'meta': {}
         },
         {
             'tag': 'div',
@@ -234,10 +225,7 @@ def remove_tags(soup):
                 'class': 'accordion-icon'
             }
         }
-    ]
-    for remove_item in remove_items:
-        for tag in soup.findAll(remove_item['tag'], remove_item['meta']):
-            tag.decompose()
+    ], soup)
 
 
 def find_facebook_url(meta_tags, soup):
@@ -436,26 +424,20 @@ def abc_parse(response):
     main_content_div = find_main_content_tag(soup, response)
     find_images(soup, article, response)
     for script_tag in soup.findAll('script'):
-        if not script_tag.text:
+        context = execute_script(script_tag)
+        if not hasattr(context, 'inlineVideoData'):
             continue
-        try:
-            context = js2py.EvalJs()
-            context.execute(script_tag.text)
-            if not hasattr(context, 'inlineVideoData'):
-                continue
-            for inline_video in context.inlineVideoData:
-                for inline_video_instance in inline_video:
-                    video = Video()
-                    video.url = response.urljoin(inline_video_instance['url'])
-                    video.mime_type = inline_video_instance['contentType']
-                    video.codec = inline_video_instance['codec']
-                    video.bitrate = inline_video_instance['bitrate']
-                    video.width = inline_video_instance['width']
-                    video.height = inline_video_instance['height']
-                    video.size = inline_video_instance['filesize']
-                    article.videos.append_video(video)
-        except js2py.PyJsException:
-            continue
+        for inline_video in context.inlineVideoData:
+            for inline_video_instance in inline_video:
+                video = Video()
+                video.url = response.urljoin(inline_video_instance['url'])
+                video.mime_type = inline_video_instance['contentType']
+                video.codec = inline_video_instance['codec']
+                video.bitrate = inline_video_instance['bitrate']
+                video.width = inline_video_instance['width']
+                video.height = inline_video_instance['height']
+                video.size = inline_video_instance['filesize']
+                article.videos.append_video(video)
     article.text.set_markdown(html2text.html2text(unicode(main_content_div)))
     if not article.text.text.strip():
         raise ValueError('Could not find a text: {}'.format(response.url))
