@@ -115,7 +115,7 @@ class NewsSpider(scrapy.Spider):
     parsers = {
         "abc.net.au": {
             "parser": abc_parse,
-            "splash": True,
+            "splash": False,
             "url_parse": abc_url_parse,
             "url_filter": abc_url_filter
         },

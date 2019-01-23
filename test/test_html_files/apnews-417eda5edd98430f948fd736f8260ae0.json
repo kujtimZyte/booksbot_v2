@@ -1,0 +1,58 @@
+{
+    "items": [
+        {
+            "article": {
+                "audio": [],
+                "authors": [
+                    {}
+                ],
+                "images": {
+                    "thumbnail": {}
+                },
+                "info": {
+                    "description": "1 woman killed, 1 wounded in church parking lot shooting",
+                    "title": "TX--Church Lot Shooting",
+                    "url": "https://apnews.com/417eda5edd98430f948fd736f8260ae0"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "app_id": "870613919693099"
+                    },
+                    "twitter": {
+                        "card": "summary_large_image ",
+                        "description": "CYPRESS, Texas (AP) \u2014 One woman has been killed and another has been wounded critically in a shooting in a Houston-area church parking lot. The shooting happened about 7 p.m. Thursday outside Christ the Redeemer Catholic Church in Cypress, a Houston suburb. In a social media posting, the Harris County Sheriff's Office says a man approached a vehicle in which the women sat and fired repeatedly into it. A sheriff's spokesman said the dead woman is believed to be the suspect's 66-year-old estranged wife, the wounded woman is his daughter and the shooting was the outgrowth of a domestic dispute. The spokesman, Capt. Marcus Kinnard Bing, says deputies are still searching for the 62-year-old suspect, who is described as a 5-foot-4 black man, weighing about 144 pounds and driving a white 2008 Chevrolet Suburban with a damaged right front quarter panel.  ",
+                        "handle": "@ap",
+                        "image": "https://apnews.com/images/ShareLogo.png",
+                        "title": "1 woman killed, 1 wounded in church parking lot shooting"
+                    }
+                },
+                "tags": [
+                    "Houston",
+                    "Shootings",
+                    "Texas"
+                ],
+                "text": {
+                    "markdown": "CYPRESS, Texas (AP) -- One woman has been killed and another has been wounded\ncritically in a shooting in a Houston-area church parking lot.\n\nThe shooting happened about 7 p.m. Thursday outside Christ the Redeemer\nCatholic Church in Cypress, a Houston suburb. In a social media posting, the\nHarris County Sheriff's Office says a man approached a vehicle in which the\nwomen sat and fired repeatedly into it. A sheriff's spokesman said the dead\nwoman is believed to be the suspect's 66-year-old estranged wife, the wounded\nwoman is his daughter and the shooting was the outgrowth of a domestic\ndispute.\n\nThe spokesman, Capt. Marcus Kinnard Bing, says deputies are still searching\nfor the 62-year-old suspect, who is described as a 5-foot-4 black man,\nweighing about 144 pounds and driving a white 2008 Chevrolet Suburban with a\ndamaged right front quarter panel.\n\n",
+                    "text": "CYPRESS, Texas (AP) -- One woman has been killed and another has been wounded\ncritically in a shooting in a Houston-area church parking lot.\nThe shooting happened about 7 p.m. Thursday outside Christ the Redeemer\nCatholic Church in Cypress, a Houston suburb. In a social media posting, the\nHarris County Sheriff's Office says a man approached a vehicle in which the\nwomen sat and fired repeatedly into it. A sheriff's spokesman said the dead\nwoman is believed to be the suspect's 66-year-old estranged wife, the wounded\nwoman is his daughter and the shooting was the outgrowth of a domestic\ndispute.\nThe spokesman, Capt. Marcus Kinnard Bing, says deputies are still searching\nfor the 62-year-old suspect, who is described as a 5-foot-4 black man,\nweighing about 144 pounds and driving a white 2008 Chevrolet Suburban with a\ndamaged right front quarter panel."
+                },
+                "time": {
+                    "modified_time": 1547782824.0,
+                    "published_time": 1547782810.0
+                },
+                "videos": {}
+            },
+            "url": "https://www.apnews.com/417eda5edd98430f948fd736f8260ae0"
+        }
+    ],
+    "requests": [
+        "https://www.apnews.com/",
+        "https://www.apnews.com/apf-videos",
+        "https://www.apnews.com/Houston",
+        "https://www.apnews.com/Shootings",
+        "https://www.apnews.com/Texas",
+        "https://www.apnews.com/apf-topnews",
+        "https://www.apnews.com/termsofservice",
+        "https://www.apnews.com/privacystatement"
+    ]
+}
