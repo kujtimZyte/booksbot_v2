@@ -104,6 +104,14 @@ class TestNewsSpider(unittest.TestCase):
             'abc-nancy-pelosi-arrives-at-capitol-building-after-meeting-with-don.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_abc_abu_barak_bashir_must_never_be_able_to_incite_terrorism_again(self, mock_head):
+        self.check_fake_html_scrape(
+            'abc-abu-barak-bashir-must-never-be-able-to-incite-terrorism-again.html',
+            'https://www.abc.net.au/radio/programs/am/abu-barak-bashir-must-never-be-able-to-incite-terrorism-again:fm/10738760',
+            'abc-abu-barak-bashir-must-never-be-able-to-incite-terrorism-again.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

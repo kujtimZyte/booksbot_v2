@@ -96,3 +96,5 @@ scraperenv
 
 # Deployments
 gcp-credentials.json
+output.json
+output.html
