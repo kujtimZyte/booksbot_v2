@@ -215,6 +215,24 @@ def remove_tags(soup):
             'meta': {
                 'class': 'ico'
             }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'view-brand-logo'
+            }
+        },
+        {
+            'tag': 'div',
+            'meta': {
+                'class': 'print-hide'
+            }
+        },
+        {
+            'tag': 'span',
+            'meta': {
+                'class': 'accordion-icon'
+            }
         }
     ]
     for remove_item in remove_items:
@@ -292,7 +310,8 @@ def find_twitter(meta_tags, article):
     article.publisher.twitter.set_card(meta_tags['twitter:card'])
     if 'twitter:image' in meta_tags:
         article.publisher.twitter.set_image(meta_tags['twitter:image'])
-    article.publisher.twitter.set_handle(meta_tags['twitter:site'])
+    if 'twitter:site' in meta_tags:
+        article.publisher.twitter.set_handle(meta_tags['twitter:site'])
 
 
 def find_genre(meta_tags):
@@ -369,6 +388,8 @@ def find_main_content_tag(soup, response):
     if not main_content_div:
         main_content_div = soup.find('div', {'class': 'article-text'})
     if not main_content_div:
+        main_content_div = soup.find('div', {'class': 'container'})
+    if not main_content_div:
         raise ValueError('Could not find the main content div: {}'.format(response.url))
     return main_content_div
 
@@ -379,6 +400,12 @@ def find_audio(soup, article):
         audio = Audio()
         audio.url = a_tag['href']
         article.audio.append(audio)
+    for span_tag in soup.findAll('span', {'class': 'download'}):
+        for a_tag in span_tag.findAll('a'):
+            if a_tag['href'].endswith('.mp3'):
+                audio = Audio()
+                audio.url = a_tag['href']
+                article.audio.append(audio)
 
 
 def find_images(soup, article, response):
