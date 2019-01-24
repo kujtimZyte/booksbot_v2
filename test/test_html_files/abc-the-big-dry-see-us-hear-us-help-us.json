@@ -1,0 +1,341 @@
+{
+    "items": [
+        {
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "url": "https://www.abc.net.au/news/micaela-hambrett/9735304"
+                    }
+                ],
+                "images": {
+                    "images": [
+                        {
+                            "alt": "Bev Hicks at farm gate",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Sheep farmer Bev Hicks",
+                            "url": "https://www.abc.net.au/cm/lb/10031182/data/bev-hicks-data.jpg"
+                        },
+                        {
+                            "alt": "John Sylvester portrait",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Cattle farmer John Sylvester",
+                            "url": "https://www.abc.net.au/cm/lb/10030978/data/john-sylvester-data.jpg"
+                        },
+                        {
+                            "alt": "Feeding cattle",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "John Sylvester feeding cattle",
+                            "url": "https://www.abc.net.au/cm/lb/10031006/data/john-sylvester-feeding-cattle-data.jpg"
+                        },
+                        {
+                            "alt": "Liverpool Plains rural property from the air",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Liverpool Plains property",
+                            "url": "https://www.abc.net.au/cm/lb/10035118/data/liverpool-plains-property-data.jpg"
+                        },
+                        {
+                            "alt": "Aerial of dry land on Liverpool Plains",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Liverpool Plains aerial",
+                            "url": "https://www.abc.net.au/cm/lb/10034544/data/liverpool-plains-aerial-data.jpg"
+                        },
+                        {
+                            "alt": "Ray Hull examines his bees.",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Beekeeper Ray Hull",
+                            "url": "https://www.abc.net.au/cm/lb/10030862/data/beekeeper-ray-hull-data.jpg"
+                        },
+                        {
+                            "alt": "Pooncarie sheep farmer Phil Wakefield",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Pooncarie sheep farmer Phil Wakefield",
+                            "url": "https://www.abc.net.au/cm/lb/10031200/data/pooncarie-sheep-farmer-phil-wakefield-data.jpg"
+                        },
+                        {
+                            "alt": "Dead sheep in foreground of brown paddock",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Sheep farm at Pooncarie",
+                            "url": "https://www.abc.net.au/cm/lb/10031216/data/sheep-farm-at-pooncarie-data.jpg"
+                        },
+                        {
+                            "alt": "The Dry Darling Anabranch",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "The Darling Anabranch",
+                            "url": "https://www.abc.net.au/cm/lb/10033436/data/the-darling-anabranch-data.jpg"
+                        },
+                        {
+                            "alt": "Dried up lake in Menindee Lakes system",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Dry Menindee lakes",
+                            "url": "https://www.abc.net.au/cm/lb/10033510/data/dried-up-menindee-lake-data.jpg"
+                        },
+                        {
+                            "alt": "Coonabarabran farmer Marie Knight feeding cattle",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Coonabarabran farmer Marie Knight",
+                            "url": "https://www.abc.net.au/cm/lb/10034942/data/marie-knight-data.jpg"
+                        },
+                        {
+                            "alt": "Thin cattle near Coonabarabran",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Skinny cattle",
+                            "url": "https://www.abc.net.au/cm/lb/10034848/data/skinny-cattle-data.jpg"
+                        },
+                        {
+                            "alt": "Southern Highlands stockfeed suppliers Deb Murtagh and Ken Walters",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Southern Highlands stockfeed suppliers",
+                            "url": "https://www.abc.net.au/cm/lb/10034714/data/southern-highlands-stockfeed-suppliers-data.jpg"
+                        },
+                        {
+                            "alt": "Dairy farmer Greg Schofield",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Dairy farmer Greg Schofield",
+                            "url": "https://www.abc.net.au/cm/lb/10034764/data/dairy-farmer-greg-schofield-data.jpg"
+                        },
+                        {
+                            "alt": "Skull on drought-stricken cattle station",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Queensland drought",
+                            "url": "https://www.abc.net.au/cm/lb/10035534/data/lorne-station-at-blackall-queensland-data.jpg"
+                        },
+                        {
+                            "alt": "Girl feeding cattle cotton seed",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Feeding cattle",
+                            "url": "https://www.abc.net.au/cm/lb/10035334/data/western-queensland-family-data.jpg"
+                        },
+                        {
+                            "alt": "Boy playing in a mound of cottonseed",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Playing in cottonseed",
+                            "url": "https://www.abc.net.au/cm/lb/10035354/data/playing-in-cottonseed-data.jpg"
+                        },
+                        {
+                            "alt": "Genevieve Hawkins and her children sitting in a ute.",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "title": "Genevieve Hawkins and family",
+                            "url": "https://www.abc.net.au/cm/lb/10035322/data/genevieve-hawkins-and-family-data.jpg"
+                        }
+                    ],
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 394,
+                        "mime_type": "image/jpeg",
+                        "url": "https://www.abc.net.au/cm/rimage/10048786-16x9-large.jpg?v=2",
+                        "width": 700
+                    }
+                },
+                "info": {
+                    "description": "Ninety-eight per cent of NSW and 57 per cent of Queensland is in drought or is drought-affected. Farmers and communities are facing ruin and say it's time their plight was recognised.",
+                    "genre": "News & Current Affairs",
+                    "title": "The big dry: 'See us, hear us, help us'",
+                    "url": "https://www.abc.net.au/news/rural/2018-07-29/the-big-dry-see-us-hear-us-help-us/10030010"
+                },
+                "location": {
+                    "latitude": -31.4666,
+                    "longitude": 151.1252
+                },
+                "publisher": {
+                    "facebook": {
+                        "url": "https://www.facebook.com/ABCRural"
+                    },
+                    "organisation": "Australian Broadcasting Corporation",
+                    "twitter": {
+                        "card": "summary",
+                        "handle": "@ABCRural",
+                        "image": "https://www.abc.net.au/cm/rimage/10048786-16x9-large.jpg?v=2"
+                    }
+                },
+                "tags": [
+                    "Disasters and Accidents",
+                    "Drought",
+                    "Rural",
+                    "Beekeeping",
+                    "Livestock",
+                    "Health",
+                    "Mental Health",
+                    "Agricultural Prices",
+                    "Agribusiness",
+                    "Agricultural Crops",
+                    "Rainfall",
+                    "Weather",
+                    "Charities and Community Organisations",
+                    "Community and Society",
+                    "Dairy Production",
+                    "Beef Cattle",
+                    "Livestock Welfare",
+                    "Sheep Production"
+                ],
+                "text": {
+                    "markdown": "Farmers across New South Wales and Queensland are calling it the worst drought\nin living memory. Many are facing ruin and say it is time for their city\ncousins to acknowledge the disaster.\n\n![Bev Hicks at farm gate](https://www.abc.net.au/cm/lb/10031182/data/bev-\nhicks-data.jpg)\n\nUpper Hunter cattle and sheep farmer Bev Hicks has never seen it so dry.\n\n(ABC Upper Hunter: Cecilia Connell)\n\nCattle and sheep farmer Bev Hicks breaks down in tears as she points out her\ndying trees.\n\n\"My trees, they're 100 years old and I'm losing them,\" she says. \"Things like\nthat really do devastate you.\"\n\nMs Hicks is based near Denman in the Upper Hunter region of NSW where many\nlandholders are running out of water. And they are not alone.\n\nNinety-eight per cent of NSW and around two-thirds of Queensland is in drought\nor drought-affected, with pastures turned to rubble and the cost of freight\nand feed skyrocketing.\n\n\"I'm sick of this damn drought,\" she says.\n\n\"People in the city need to look at what's going on and understand that if\nyou've got constant drought, the price of food will go up and you'll lose your\ncountry towns.\"\n\n![John Sylvester portrait](https://www.abc.net.au/cm/lb/10030978/data/john-\nsylvester-data.jpg)\n\nNundle cattle farmer John Sylvester says conditions have never been tougher.\n\n(ABC New England: Matthew Bedford)\n\n![Feeding cattle](https://www.abc.net.au/cm/lb/10031006/data/john-sylvester-\nfeeding-cattle-data.jpg)\n\nJohn Sylvester is buying hay to feed his drought-stricken cattle.\n\n(ABC New England: Matthew Bedford)\n\nIn the neighbouring New England region, farmers say the dry conditions are the\nworst they can remember.\n\n\"It's certainly the worst drought I've ever seen,\" says cattle farmer John\nSylvester.\n\n\"But you've got to keep persevering, or you don't come out the other end.\"\n\nAn hour up the road at Currabubula, publican Kathy Smith sees firsthand the\nemotional toll the drought is taking.\n\n\"One farmer said to me the other day they're feeding their lambs, but the feed\ncosts more than they can get for the lambs if they sell them,\" Ms Smith says.\n\n\"His words were: 'Do you shoot them or do you shoot yourself?'\"\n\n**Lifeline: 13 11 14**\n\nMs Smith says farmers' pride keeps them quiet, but their plight needs to be\nrecognised.\n\n\"Farmers don't ask for handouts,\" she says. \"But it's time we all looked in\nour backyard and supported our lifeblood.\"\n\n![Liverpool Plains rural property from the\nair](https://www.abc.net.au/cm/lb/10035118/data/liverpool-plains-property-\ndata.jpg)\n\nA property surrounded by dirt in the Liverpool Plains.\n\n(ABC New England: Matthew Bedford)\n\n![Aerial of dry land on Liverpool\nPlains](https://www.abc.net.au/cm/lb/10034544/data/liverpool-plains-aerial-\ndata.jpg)\n\nVast swathes of land across New South Wales have turned to dust and rubble.\n\n(ABC New England: Matthew Bedford)\n\nTamworth stock and station agent Simon Bourke says the drought is\nunprecedented.\n\n\"Australia should be concerned because everyone is tightening their belts,\" he\nsays.\n\n\"We're selling livestock we don't want to sell \u2026 down the track there's really\nnot going to be too many cattle or sheep left.\"\n\nAnd it is not just traditional farmers who are suffering. Tamworth beekeeper\nRay Hull has run out of nectar.\n\n\"We can buy sugar syrup to feed our bees, but the trees are 100 years old and\nonce they're gone you never get them back,\" Mr Hull says.\n\n\"People might say 'it's just a bee'. Well, it's just my income and it's just\nmy living.\"\n\n![Ray Hull examines his bees.](https://www.abc.net.au/cm/lb/10030862/data\n/beekeeper-ray-hull-data.jpg)\n\nTamworth beekeeper Ray Hull hasn't had honey since Christmas.\n\n(ABC New England: Matthew Bedford)\n\nIn the lower Darling region near Pooncarie, sheep farmer Phil Wakefield\nscratches his head when asked where he will get his next lot of feed.\n\n\"We've purchased about $100,000 worth of hay but I don't know if I can buy any\nmore because it's too dear and it could be another $40,000 for freight on top\nof that,\" he says.\n\n![Pooncarie sheep farmer Phil\nWakefield](https://www.abc.net.au/cm/lb/10031200/data/pooncarie-sheep-farmer-\nphil-wakefield-data.jpg)\n\nPooncarie sheep farmer Phil Wakefield has had to watch as lambs have been\ntrampled.\n\n(ABC Mildura-Swan Hill: Jennifer Douglas)\n\n![Dead sheep in foreground of brown\npaddock](https://www.abc.net.au/cm/lb/10031216/data/sheep-farm-at-pooncarie-\ndata.jpg)\n\nA sheep farm in drought-affected Pooncarie.\n\n(ABC Mildura-Swan Hill: Jennifer Douglas)\n\nMr Wakefield has had to significantly de-stock, while watching ewes abandon\nlambs.\n\n\"The poor little fellas have been trampled,\" he says. \"But there's not much we\ncan do about it.\"\n\nHe says money for bores would be handy, as the wait for rain and for the\nDarling River to fill drags on.\n\n![The Dry Darling Anabranch](https://www.abc.net.au/cm/lb/10033436/data/the-\ndarling-anabranch-data.jpg)\n\nPart of the dry Darling Anabranch in far western New South Wales.\n\n(ABC Mildura-Swan Hill: Jennifer Douglas)\n\n![Dried up lake in Menindee Lakes\nsystem](https://www.abc.net.au/cm/lb/10033510/data/dried-up-menindee-lake-\ndata.jpg)\n\nA dry lake in the Menindee Lakes system in far western New South Wales.\n\n(ABC Mildura-Swan Hill: Jennifer Douglas)\n\nIn the Central West, Western Plains and North West Slopes regions, farmers say\nit is the worst drought in a century.\n\nIn 2013, sheep and cattle farmers Tony and Marie Knight suffered huge losses\nin the Wambelong bushfire near Coonabarabran. Their last decent drop of rain\nwas more than a year ago.\n\n![Coonabarabran farmer Marie Knight feeding\ncattle](https://www.abc.net.au/cm/lb/10034942/data/marie-knight-data.jpg)\n\nMarie Knight's property near Coonabarabran has been hit by bushfire as well as\ndrought.\n\n(ABC Western Plains: Jessie Davies)\n\n\"It's gone on for so long, it's like back-to-back droughts \u2026 everybody is a\nbit shocked, horrified, because we never thought it could get as bad as this,\"\nMr Knight says.\n\n\"In a good year we can produce enough food to feed hundreds of people, but in\na bad year we have trouble feeding ourselves.\"\n\n![Thin cattle near Coonabarabran](https://www.abc.net.au/cm/lb/10034848/data\n/skinny-cattle-data.jpg)\n\nThin cattle search for food near Coonabarabran in north-western New South\nWales.\n\n(ABC Regional: Luke Wong)\n\nOn Sydney's doorstep, the Southern Highlands region is deceptively green. But\nstockfeed supplier and sheep and chicken farmer Ken Walters says conditions\nare dire.\n\n\"We've had droughts over the years, numerous times, in the '60s, '80s, the\nmillennial drought, but a lack of rain combined with record temperatures has\njust decimated everything,\" he says.\n\n\"I haven't seen as many big dead trees, like big, well-established trees,\nthey're just dying because there's just no moisture in the soil at all and\nthat's a bad sign because that's dry, deep.\"\n\n![Southern Highlands stockfeed suppliers Deb Murtagh and Ken\nWalters](https://www.abc.net.au/cm/lb/10034714/data/southern-highlands-\nstockfeed-suppliers-data.jpg)\n\nSouthern Highlands stockfeed suppliers Deb Murtagh and Ken Walters say there's\nnot enough hay to go around to those who need it.\n\n(ABC Illawarra: Justin Huntsdale)\n\nMr Walters' partner Deb Murtagh says they have had to ration hay to customers.\n\n\"No-one's talking about drought because everyone in Sydney has still got water\nfrom the big dams and they can still wash their cars and their driveways,\" Ms\nMurtagh says.\n\n\"But we've got farmers out here who are going broke because they can't afford\nfeed.\"\n\n![Dairy farmer Greg Schofield](https://www.abc.net.au/cm/lb/10034764/data\n/dairy-farmer-greg-schofield-data.jpg)\n\nDairy farmer Greg Schofield is struggling with the cost of feed due to the\ndrought.\n\n(ABC Illawarra: Justin Huntsdale)\n\nGreg Schofield is a fourth-generation dairy farmer at Avoca in the Southern\nHighlands, and says consumers don't ask questions when they can buy\ndollar-a-litre milk.\n\n\"It's hard to look too much into the future with the price we're getting for\nour milk compared to the price I have to pay for input products like hay, and\nthere's not a great deal of hay left in NSW,\" he says.\n\n\"Mentally, it's quite stressful, that's why we have a thing called beer.\"\n\n![Skull on drought-stricken cattle\nstation](https://www.abc.net.au/cm/lb/10035534/data/lorne-station-at-blackall-\nqueensland-data.jpg)\n\nDrought-stricken Lorne Station at Blackall in Central Western Queensland.\n\n(ABC Western Queensland: Melanie Groves)\n\nIn Western Queensland, farmers are comparing this big dry to the famously\nsevere drought of the 1880s.\n\nGenevieve Hawkins runs a cattle station near Aramac in Western Queensland\nwhere 2017 was the driest year in 38 years of records.\n\n\"It's patchy \u2014 some people have had rain, some people have had close to\nnothing and we are in the close-to-nothing patch,\" she says.\n\n![Girl feeding cattle cotton seed](https://www.abc.net.au/cm/lb/10035334/data\n/western-queensland-family-data.jpg)\n\nLucy Hawkins, 7, feeding cattle cottonseed at her drought-stricken Western\nQueensland property.\n\n(ABC Western Queensland: Ollie Wykeham)\n\n![Boy playing in a mound of\ncottonseed](https://www.abc.net.au/cm/lb/10035354/data/playing-in-cottonseed-\ndata.jpg)\n\nFive-year-old Fletcher Hawkins plays in cottonseed on his family's cattle\nstation.\n\n(ABC Western Queensland: Ollie Wykeham)\n\n![Genevieve Hawkins and her children sitting in a\nute.](https://www.abc.net.au/cm/lb/10035322/data/genevieve-hawkins-and-family-\ndata.jpg)\n\nGenevieve Hawkins runs a cattle station with her husband Bryson, and children\nLucy, 7, Fletcher, 5, and Clancy, 2, near Aramac in Western Queensland.\n\n(ABC Western Queensland: Ollie Wykeham)\n\nMs Hawkins has had to sell a lot of her cattle, while feeding what's left with\ncotton seed.\n\n\"It's just relentless, you don't sleep because you can't stop thinking about\nit,\" she says.\n\n\"I'd really like people in the city to remember us, see us, hear us, know that\nwe're still here.\n\n\"It's important to look after your own.\"\n\n **Lifeline: 13 11 14**\n\n[ Sheep line up for feed in the shape of Australia at Cassilis property\nDalkeith Olde ](/news/2018-07-29/dalkeith-olde/10033966)\n\n( ABC News )\n\n## How you can help\n\n  * [Rural Aid/Buy a Bale](https://www.ruralaid.org.au/)\n  * [Drought Angels](http://droughtangels.org.au/)\n  * [Aussie Helpers](https://aussiehelpers.org.au/)\n  * [Lions Need for Feed](http://www.needforfeed.org/)\n  * [Salvation Army](https://salvos.org.au/drought)\n\n **Contributors:** Samantha Turnbull, Kerri Kapernick, Gavin Coote, Justin\nHuntsdale, Jessie Davies, Cecilia Connell, Col Kerr, Jennifer Ingall, Matthew\nBedford, Melanie Groves, Ollie Wykeham, Jennifer Douglas, Cherie von Horchner,\nLuke Wong, Aimee Volkofsky, Josh Becker, Micaela Hambrett.\n\n",
+                    "text": "Farmers across New South Wales and Queensland are calling it the worst drought\nin living memory. Many are facing ruin and say it is time for their city\ncousins to acknowledge the disaster.\n\nUpper Hunter cattle and sheep farmer Bev Hicks has never seen it so dry.\n(ABC Upper Hunter: Cecilia Connell)\nCattle and sheep farmer Bev Hicks breaks down in tears as she points out her\ndying trees.\n\"My trees, they're 100 years old and I'm losing them,\" she says. \"Things like\nthat really do devastate you.\"\nMs Hicks is based near Denman in the Upper Hunter region of NSW where many\nlandholders are running out of water. And they are not alone.\nNinety-eight per cent of NSW and around two-thirds of Queensland is in drought\nor drought-affected, with pastures turned to rubble and the cost of freight\nand feed skyrocketing.\n\"I'm sick of this damn drought,\" she says.\n\"People in the city need to look at what's going on and understand that if\nyou've got constant drought, the price of food will go up and you'll lose your\ncountry towns.\"\n\nNundle cattle farmer John Sylvester says conditions have never been tougher.\n(ABC New England: Matthew Bedford)\n\nJohn Sylvester is buying hay to feed his drought-stricken cattle.\n(ABC New England: Matthew Bedford)\nIn the neighbouring New England region, farmers say the dry conditions are the\nworst they can remember.\n\"It's certainly the worst drought I've ever seen,\" says cattle farmer John\nSylvester.\n\"But you've got to keep persevering, or you don't come out the other end.\"\nAn hour up the road at Currabubula, publican Kathy Smith sees firsthand the\nemotional toll the drought is taking.\n\"One farmer said to me the other day they're feeding their lambs, but the feed\ncosts more than they can get for the lambs if they sell them,\" Ms Smith says.\n\"His words were: 'Do you shoot them or do you shoot yourself?'\"\nLifeline: 13 11 14\nMs Smith says farmers' pride keeps them quiet, but their plight needs to be\nrecognised.\n\"Farmers don't ask for handouts,\" she says. \"But it's time we all looked in\nour backyard and supported our lifeblood.\"\n\nA property surrounded by dirt in the Liverpool Plains.\n(ABC New England: Matthew Bedford)\n\nVast swathes of land across New South Wales have turned to dust and rubble.\n(ABC New England: Matthew Bedford)\nTamworth stock and station agent Simon Bourke says the drought is\nunprecedented.\n\"Australia should be concerned because everyone is tightening their belts,\" he\nsays.\n\"We're selling livestock we don't want to sell \u2026 down the track there's really\nnot going to be too many cattle or sheep left.\"\nAnd it is not just traditional farmers who are suffering. Tamworth beekeeper\nRay Hull has run out of nectar.\n\"We can buy sugar syrup to feed our bees, but the trees are 100 years old and\nonce they're gone you never get them back,\" Mr Hull says.\n\"People might say 'it's just a bee'. Well, it's just my income and it's just\nmy living.\"\n\nTamworth beekeeper Ray Hull hasn't had honey since Christmas.\n(ABC New England: Matthew Bedford)\nIn the lower Darling region near Pooncarie, sheep farmer Phil Wakefield\nscratches his head when asked where he will get his next lot of feed.\n\"We've purchased about $100,000 worth of hay but I don't know if I can buy any\nmore because it's too dear and it could be another $40,000 for freight on top\nof that,\" he says.\n\nPooncarie sheep farmer Phil Wakefield has had to watch as lambs have been\ntrampled.\n(ABC Mildura-Swan Hill: Jennifer Douglas)\n\nA sheep farm in drought-affected Pooncarie.\n(ABC Mildura-Swan Hill: Jennifer Douglas)\nMr Wakefield has had to significantly de-stock, while watching ewes abandon\nlambs.\n\"The poor little fellas have been trampled,\" he says. \"But there's not much we\ncan do about it.\"\nHe says money for bores would be handy, as the wait for rain and for the\nDarling River to fill drags on.\n\nPart of the dry Darling Anabranch in far western New South Wales.\n(ABC Mildura-Swan Hill: Jennifer Douglas)\n\nA dry lake in the Menindee Lakes system in far western New South Wales.\n(ABC Mildura-Swan Hill: Jennifer Douglas)\nIn the Central West, Western Plains and North West Slopes regions, farmers say\nit is the worst drought in a century.\nIn 2013, sheep and cattle farmers Tony and Marie Knight suffered huge losses\nin the Wambelong bushfire near Coonabarabran. Their last decent drop of rain\nwas more than a year ago.\n\nMarie Knight's property near Coonabarabran has been hit by bushfire as well as\ndrought.\n(ABC Western Plains: Jessie Davies)\n\"It's gone on for so long, it's like back-to-back droughts \u2026 everybody is a\nbit shocked, horrified, because we never thought it could get as bad as this,\"\nMr Knight says.\n\"In a good year we can produce enough food to feed hundreds of people, but in\na bad year we have trouble feeding ourselves.\"\n\nThin cattle search for food near Coonabarabran in north-western New South\nWales.\n(ABC Regional: Luke Wong)\nOn Sydney's doorstep, the Southern Highlands region is deceptively green. But\nstockfeed supplier and sheep and chicken farmer Ken Walters says conditions\nare dire.\n\"We've had droughts over the years, numerous times, in the '60s, '80s, the\nmillennial drought, but a lack of rain combined with record temperatures has\njust decimated everything,\" he says.\n\"I haven't seen as many big dead trees, like big, well-established trees,\nthey're just dying because there's just no moisture in the soil at all and\nthat's a bad sign because that's dry, deep.\"\n\nSouthern Highlands stockfeed suppliers Deb Murtagh and Ken Walters say there's\nnot enough hay to go around to those who need it.\n(ABC Illawarra: Justin Huntsdale)\nMr Walters' partner Deb Murtagh says they have had to ration hay to customers.\n\"No-one's talking about drought because everyone in Sydney has still got water\nfrom the big dams and they can still wash their cars and their driveways,\" Ms\nMurtagh says.\n\"But we've got farmers out here who are going broke because they can't afford\nfeed.\"\n\nDairy farmer Greg Schofield is struggling with the cost of feed due to the\ndrought.\n(ABC Illawarra: Justin Huntsdale)\nGreg Schofield is a fourth-generation dairy farmer at Avoca in the Southern\nHighlands, and says consumers don't ask questions when they can buy\ndollar-a-litre milk.\n\"It's hard to look too much into the future with the price we're getting for\nour milk compared to the price I have to pay for input products like hay, and\nthere's not a great deal of hay left in NSW,\" he says.\n\"Mentally, it's quite stressful, that's why we have a thing called beer.\"\n\nDrought-stricken Lorne Station at Blackall in Central Western Queensland.\n(ABC Western Queensland: Melanie Groves)\nIn Western Queensland, farmers are comparing this big dry to the famously\nsevere drought of the 1880s.\nGenevieve Hawkins runs a cattle station near Aramac in Western Queensland\nwhere 2017 was the driest year in 38 years of records.\n\"It's patchy \u2014 some people have had rain, some people have had close to\nnothing and we are in the close-to-nothing patch,\" she says.\n\nLucy Hawkins, 7, feeding cattle cottonseed at her drought-stricken Western\nQueensland property.\n(ABC Western Queensland: Ollie Wykeham)\n\nFive-year-old Fletcher Hawkins plays in cottonseed on his family's cattle\nstation.\n(ABC Western Queensland: Ollie Wykeham)\n\nGenevieve Hawkins runs a cattle station with her husband Bryson, and children\nLucy, 7, Fletcher, 5, and Clancy, 2, near Aramac in Western Queensland.\n(ABC Western Queensland: Ollie Wykeham)\nMs Hawkins has had to sell a lot of her cattle, while feeding what's left with\ncotton seed.\n\"It's just relentless, you don't sleep because you can't stop thinking about\nit,\" she says.\n\"I'd really like people in the city to remember us, see us, hear us, know that\nwe're still here.\n\"It's important to look after your own.\"\nLifeline: 13 11 14\n Sheep line up for feed in the shape of Australia at Cassilis property\nDalkeith Olde \n( ABC News )\nHow you can help\n\nRural Aid/Buy a Bale\nDrought Angels\nAussie Helpers\nLions Need for Feed\nSalvation Army\n\nContributors: Samantha Turnbull, Kerri Kapernick, Gavin Coote, Justin\nHuntsdale, Jessie Davies, Cecilia Connell, Col Kerr, Jennifer Ingall, Matthew\nBedford, Melanie Groves, Ollie Wykeham, Jennifer Douglas, Cherie von Horchner,\nLuke Wong, Aimee Volkofsky, Josh Becker, Micaela Hambrett."
+                },
+                "time": {
+                    "modified_time": 1532929956.0,
+                    "published_time": 1532819222.0
+                },
+                "videos": {}
+            },
+            "url": "https://www.abc.net.au/news/rural/2018-07-29/the-big-dry-see-us-hear-us-help-us/10030010"
+        }
+    ],
+    "requests": [
+        "https://www.abc.net.au/news/rural/2018-07-29/the-big-dry-see-us-hear-us-help-us/10030010#main-content",
+        "https://www.abc.net.au/",
+        "https://www.abc.net.au/news/",
+        "https://iview.abc.net.au",
+        "https://www.abc.net.au/tv/",
+        "https://radio.abc.net.au/",
+        "https://www.abc.net.au/children/",
+        "https://shop.abc.net.au/",
+        "https://www.abc.net.au/more/",
+        "https://search.abc.net.au/",
+        "https://www.abc.net.au/news/australia/",
+        "https://www.abc.net.au/news/weather/",
+        "https://www.abc.net.au/news/justin/",
+        "https://www.abc.net.au/news/politics/",
+        "https://www.abc.net.au/news/world/",
+        "https://www.abc.net.au/news/business/",
+        "https://www.abc.net.au/news/sport/",
+        "https://www.abc.net.au/news/science/",
+        "https://www.abc.net.au/news/health/",
+        "https://www.abc.net.au/news/arts-culture/",
+        "https://www.abc.net.au/news/analysis-and-opinion/",
+        "https://www.abc.net.au/news/factcheck/",
+        "https://www.abc.net.au/news/more/",
+        "https://www.abc.net.au/news/rural/",
+        "https://www.abc.net.au/news/rural/horticulture/",
+        "https://www.abc.net.au/news/rural/livestock/",
+        "https://www.abc.net.au/news/rural/fibre/",
+        "https://www.abc.net.au/news/rural/grains/",
+        "https://www.abc.net.au/news/rural/mining/",
+        "https://www.abc.net.au/news/rural/markets/",
+        "https://www.abc.net.au/news/rural/weather/",
+        "https://www.abc.net.au/news/rural/programs/",
+        "https://www.abc.net.au/news/2018-07-29/dalkeith-olde/10033966",
+        "https://www.abc.net.au/news/topic/disasters-and-accidents",
+        "https://www.abc.net.au/news/topic/drought",
+        "https://www.abc.net.au/news/topic/rural",
+        "https://www.abc.net.au/news/topic/beekeeping",
+        "https://www.abc.net.au/news/topic/health",
+        "https://www.abc.net.au/news/topic/mental-health",
+        "https://www.abc.net.au/news/topic/agricultural-prices",
+        "https://www.abc.net.au/news/topic/agricultural-crops",
+        "https://www.abc.net.au/news/topic/rainfall",
+        "https://www.abc.net.au/news/topic/charities-and-community-organisations",
+        "https://www.abc.net.au/news/topic/weather",
+        "https://www.abc.net.au/news/topic/dairy-production",
+        "https://www.abc.net.au/news/topic/beef-cattle",
+        "https://www.abc.net.au/news/topic/livestock-welfare",
+        "https://www.abc.net.au/news/topic/sheep-production",
+        "https://www.abc.net.au/news/topic/nundle-2340",
+        "https://www.abc.net.au/news/topic/currabubula-2342",
+        "https://www.abc.net.au/news/topic/tamworth-2340",
+        "https://www.abc.net.au/news/topic/denman-2328",
+        "https://www.abc.net.au/news/topic/coonabarabran-2357",
+        "https://www.abc.net.au/news/topic/pooncarie-2648",
+        "https://www.abc.net.au/news/topic/menindee-2879",
+        "https://www.abc.net.au/news/topic/avoca-2577",
+        "https://www.abc.net.au/news/topic/aramac-4726",
+        "https://www.abc.net.au/news/topic/merriwa-2329",
+        "https://www.abc.net.au/news/topic/cassilis-2329",
+        "https://www.abc.net.au/news/topic/broken-hill-2880",
+        "https://www.abc.net.au/news/topic/orange-2800",
+        "https://www.abc.net.au/news/topic/bega-2550",
+        "https://www.abc.net.au/news/topic/port-macquarie-2444",
+        "https://www.abc.net.au/news/topic/coffs-harbour-2450",
+        "https://www.abc.net.au/news/topic/wollongong-2500",
+        "https://www.abc.net.au/news/topic/armidale-2350",
+        "https://www.abc.net.au/news/topic/wagga-wagga-2650",
+        "https://www.abc.net.au/news/topic/dubbo-2830",
+        "https://www.abc.net.au/news/topic/sydney-2000",
+        "https://www.abc.net.au/news/topic/mount-isa-4825",
+        "https://www.abc.net.au/news/topic/toowoomba-4350",
+        "https://www.abc.net.au/news/drought/",
+        "https://www.abc.net.au/news/2019-01-10/bom-2018-climate-statement-third-hottest-year-on-record/10703282",
+        "https://www.abc.net.au/news/2018-09-25/small-fraction-of-farmers-accessing-farm-household-allowance/10299910",
+        "https://www.abc.net.au/news/2018-10-16/where-has-drought-aid-been-allocated/10378278",
+        "https://www.abc.net.au/news/rural/2018-08-01/drought-dos-and-donts-of-donations/10057862",
+        "https://www.abc.net.au/news/2018-08-01/what-you-need-to-know-about-droughts/10051956",
+        "https://www.abc.net.au/news/rural/2018-07-29/the-big-dry-see-us-hear-us-help-us/10030010",
+        "https://www.abc.net.au/news/rural/newsletters/",
+        "https://www.abc.net.au/news/rural/podcasts/",
+        "https://www.abc.net.au/news/2019-01-22/aussie-farms-map-sparks-outrage-from-farmers-and-ag-minister/10736006",
+        "https://www.abc.net.au/news/rural/2019-01-23/illegal-nt-tobacco-crop-grows-back-after-bulldozed-by-ato/10733212",
+        "https://www.abc.net.au/news/2019-01-23/government-accused-of-doing-little-to-improve-fuel-security/10732978",
+        "https://www.abc.net.au/news/rural/2019-01-22/aussie-wine-exports-grow-by-10-per-cent/10737050",
+        "https://www.abc.net.au/news/2019-01-24/venezuela-breaking-diplomatic-ties-with-united-states/10744854",
+        "https://www.abc.net.au/news/2019-01-24/trump-says-venezuelas-opposition-leader-is-interim-president/10745048",
+        "https://www.abc.net.au/news/2019-01-24/nab-raises-mortgage-interest-rates-for-owner-occupiers-investors/10746426",
+        "https://www.abc.net.au/news/2019-01-24/sa-heating-up-with-records-expected-to-be-broken/10745220",
+        "https://www.abc.net.au/news/2019-01-24/australia-v-sri-lanka-first-test-in-brisbane-day-one-live-blog/10744300",
+        "https://www.abc.net.au/news/2019-01-24/new-wechat-app-maps-deadbeat-debtors-in-china/10739016",
+        "https://www.abc.net.au/news/2019-01-24/ken-griffin-buys-most-expensive-property-america/10745216",
+        "https://www.abc.net.au/news/2019-01-24/australian-dollar-heading-to-60-us-cents-economist/10745380",
+        "https://www.abc.net.au/news/2019-01-24/mark-and-tom-delaney-australian-family-living-in-slums-in-india/10681848",
+        "https://www.abc.net.au/news/2019-01-24/adelaide-pedo-hunter-given-good-behaviour-bond-with-conviction/10745372",
+        "https://www.abc.net.au/news/2019-01-24/serial-predator-raped-women-her-met-on-dating-sites/10745834",
+        "https://www.abc.net.au/news/2019-01-24/masa-vukotic-killer-sean-price-possible-sentence-reduction/10745360",
+        "https://www.abc.net.au/news/science/2019-01-24/timber-can-be-more-sustainable-than-other-building-materials/10736496",
+        "https://www.abc.net.au/news/2019-01-24/us-coast-guard-members-go-unpaid-these-women-are-stepping-in/10745560",
+        "https://www.abc.net.au/news/2019-01-24/christians-unpacking-baggage-colonialism-australia-day/10739750",
+        "https://www.abc.net.au/news/2019-01-23/mass-brumby-death-discovered-in-remote-central-australia/10739178",
+        "https://www.abc.net.au/news/2019-01-23/serena-williams-out-of-australian-open/10739536",
+        "https://www.abc.net.au/news/2019-01-23/scott-morrison-warren-mundine-gilmore-patricia-karvelas-analysis/10742432",
+        "https://www.abc.net.au/news/2019-01-24/michael-cohen-trump-threats-postpones-congressional-testimony/10744856",
+        "https://www.abc.net.au/news/2019-01-23/niagara-falls-blanketed-in-ice-and-snow/10743992",
+        "https://www.abc.net.au/news/2019-01-23/alexandria-ocasio-cortez-for-president/10739786",
+        "https://www.abc.net.au/news/2019-01-24/captain-cook-1970-bicentenary/10743830",
+        "https://www.abc.net.au/news/2019-01-23/wa-disability-support-worker-has-car-impounded-in-licence-bungle/10739782",
+        "https://www.abc.net.au/news/2019-01-24/donald-trump-could-learn-from-adf-on-transgender-military-ban/10743186",
+        "https://www.abc.net.au/news/2019-01-23/joko-widodo-in-dilemma-after-touting-abu-bakar-bashir-release/10737900",
+        "https://www.abc.net.au/news/2019-01-23/should-test-teams-be-picked-solely-on-sheffield-shield-averges/10736064",
+        "https://www.abc.net.au/news/2019-01-23/millennial-burn-out/10737016",
+        "https://www.abc.net.au/news/2019-01-23/i-got-threats-and-insults-from-trolls-just-for-doing-my-job/10737438",
+        "https://www.abc.net.au/news/2019-01-22/socceroos-selection-headaches-mathew-leckie/10734298",
+        "https://www.abc.net.au/news/2019-01-22/kelly-odwyer-liberal-women-in-parliament-scott-morrison/10732626",
+        "https://www.abc.net.au/news/rural/about/",
+        "https://www.abc.net.au/news/rural/contact/",
+        "https://www.abc.net.au/news/archive/",
+        "https://www.abc.net.au/news/rural/older-content/",
+        "https://www.abc.net.au/news/rural/programs/national-rural-news/",
+        "https://www.abc.net.au/tv/programs/landline",
+        "https://www.abc.net.au/tv/programs/back-roads/",
+        "https://www.abc.net.au/radionational/programs/countrybreakfast/",
+        "https://www.abc.net.au/radionational/programs/abigcountry/",
+        "https://www.abc.net.au/news/rural/programs/countrywide/",
+        "https://www.abc.net.au/news/rural/programs/nsw-country-hour/",
+        "https://www.abc.net.au/radio/programs/nt-country-hour/",
+        "https://www.abc.net.au/radio/programs/qld-country-hour/",
+        "https://www.abc.net.au/news/rural/programs/sa-country-hour/",
+        "https://www.abc.net.au/radio/programs/tas-country-hour/",
+        "https://www.abc.net.au/radio/programs/wa-country-hour/",
+        "https://www.abc.net.au/news/rural/programs/vic-country-hour/",
+        "https://www.abc.net.au/news/rural/programs/ruralreport/",
+        "https://www.abc.net.au/news/rural/industry/bananas/",
+        "https://www.abc.net.au/news/rural/industry/beefcattle/",
+        "https://www.abc.net.au/news/rural/industry/beekeeping/",
+        "https://www.abc.net.au/news/rural/industry/cotton/",
+        "https://www.abc.net.au/news/rural/industry/dairyproduction/",
+        "https://www.abc.net.au/news/rural/industry/equineproduction/",
+        "https://www.abc.net.au/news/rural/industry/fishing-aquaculture/",
+        "https://www.abc.net.au/news/rural/industry/flowers/",
+        "https://www.abc.net.au/news/rural/industry/forestry/",
+        "https://www.abc.net.au/news/rural/industry/fruit/",
+        "https://www.abc.net.au/news/rural/industry/goatproduction/",
+        "https://www.abc.net.au/news/rural/industry/herbs/",
+        "https://www.abc.net.au/news/rural/industry/oilseeds/",
+        "https://www.abc.net.au/news/rural/industry/pigproduction/",
+        "https://www.abc.net.au/news/rural/industry/poultryegg/",
+        "https://www.abc.net.au/news/rural/industry/rice/",
+        "https://www.abc.net.au/news/rural/industry/sheepproduction/",
+        "https://www.abc.net.au/news/rural/industry/sugar/",
+        "https://www.abc.net.au/news/rural/industry/tea-coffee/",
+        "https://www.abc.net.au/news/rural/industry/vegetables/",
+        "https://www.abc.net.au/news/rural/industry/viticulture/",
+        "https://www.abc.net.au/news/rural/industry/wheat/",
+        "https://www.abc.net.au/news/rural/industry/wool/"
+    ]
+}
