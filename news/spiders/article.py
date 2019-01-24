@@ -246,12 +246,14 @@ class Author(object):
     url = None
     name = None
     twitter_url = None
+    email = None
 
 
     def __init__(self):
         self.url = None
         self.name = None
         self.twitter_url = None
+        self.email = None
 
 
     def set_url(self, url):
@@ -268,6 +270,8 @@ class Author(object):
             author_info['name'] = self.name
         if self.twitter_url:
             author_info['twitter_url'] = self.twitter_url
+        if self.email:
+            author_info['email'] = self.email
         return author_info
 
 
