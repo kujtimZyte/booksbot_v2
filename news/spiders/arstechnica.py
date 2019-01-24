@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Parser for the Ars Technica website"""
+import hashlib
 import json
 from urlparse import urlparse
 from bs4 import BeautifulSoup
@@ -15,7 +16,7 @@ def arstechnica_url_parse(url):
     if len(url_split) != 8:
         return None
     last_path = url_split[-2]
-    return last_path
+    return hashlib.sha224(last_path).hexdigest()
 
 
 def retrieve_encoded_json(encoded_json):
