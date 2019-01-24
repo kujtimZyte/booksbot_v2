@@ -316,7 +316,7 @@ def find_description(meta_tags):
     return None
 
 
-def find_organisation(meta_tags, article):
+def find_organisation(meta_tags, article, response):
     """Finds the organisation of an ABC article"""
     if 'DC.Publisher.CorporateName' in meta_tags:
         article.publisher.set_organisation(meta_tags['DC.Publisher.CorporateName'])
@@ -346,7 +346,7 @@ def fill_article_from_meta_tags(article, response, soup):
     find_location(meta_tags, article)
     article.publisher.facebook.set_page_id(find_facebook_page(meta_tags))
     find_twitter(meta_tags, article)
-    find_organisation(meta_tags, article)
+    find_organisation(meta_tags, article, response)
     if 'article:author' in meta_tags:
         author = Author()
         author.set_url(meta_tags['article:author'])
