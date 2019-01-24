@@ -127,6 +127,6 @@ def arstechnica_parse(response):
     return article.json(), link_id
 
 
-def arstechnica_url_filter(url):
+def arstechnica_url_filter(_url):
     """Filters URLs in the Ars Technica domain"""
     return True
