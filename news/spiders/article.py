@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """Structure for creating an article representation"""
 import datetime
+import re
+from bs4 import BeautifulSoup
 from dateutil import parser
+from markdown import markdown
 import requests
-from .common import markdown_to_plaintext
 
 
 def timecode_from_datetime(datetime_obj):
@@ -18,6 +20,19 @@ def url_head_headers(url):
     """Fetches the headers for a URL HEAD request"""
     response = requests.head(url, timeout=5)
     return response.headers
+
+
+def markdown_to_plaintext(markdown_text):
+    """Converts markdown to plaintext"""
+    # https://gist.github.com/lorey/eb15a7f3338f959a78cc3661fbc255fe
+    html = markdown(markdown_text)
+    # remove code snippets
+    html = re.sub(r'<pre>(.*?)</pre>', ' ', html)
+    html = re.sub(r'<code>(.*?)</code >', ' ', html)
+    # extract text
+    soup = BeautifulSoup(html, "html.parser")
+    text = ''.join(soup.findAll(text=True))
+    return text
 
 
 class ArticleTime(object):
@@ -246,12 +261,14 @@ class Author(object):
     url = None
     name = None
     twitter_url = None
+    email = None
 
 
     def __init__(self):
         self.url = None
         self.name = None
         self.twitter_url = None
+        self.email = None
 
 
     def set_url(self, url):
@@ -268,6 +285,8 @@ class Author(object):
             author_info['name'] = self.name
         if self.twitter_url:
             author_info['twitter_url'] = self.twitter_url
+        if self.email:
+            author_info['email'] = self.email
         return author_info
 
 
@@ -390,26 +409,26 @@ class Publisher(object):
 
 class Text(object):
     """An object for holding the text"""
-    markdown = None
+    markdown_text = None
     text = None
 
 
     def __init__(self):
-        self.markdown = None
+        self.markdown_text = None
         self.text = None
 
 
-    def set_markdown(self, markdown):
+    def set_markdown_text(self, markdown_text):
         """Sets the markdown"""
-        self.markdown = markdown
-        self.text = markdown_to_plaintext(self.markdown)
+        self.markdown_text = markdown_text
+        self.text = markdown_to_plaintext(self.markdown_text)
 
 
     def json(self):
         """Returns the object as a dictionary for JSON consumption"""
         text_info = {}
-        if self.markdown:
-            text_info['markdown'] = self.markdown
+        if self.markdown_text:
+            text_info['markdown'] = self.markdown_text
         if self.text:
             text_info['text'] = self.text
         return text_info

@@ -23,6 +23,7 @@ GCP_CLIENT_ID, \
 GCP_CLIENT_X509_CERT_URL
 from .abc import abc_parse, abc_url_parse, abc_url_filter
 from .apnews import apnews_parse, apnews_url_parse, apnews_url_filter
+from .arstechnica import arstechnica_parse, arstechnica_url_parse, arstechnica_url_filter
 
 
 DetectorFactory.seed = 0
@@ -102,11 +103,13 @@ class NewsSpider(scrapy.Spider):
     name = "news"
     allowed_domains = [
         "abc.net.au",
-        "apnews.com"
+        "apnews.com",
+        "arstechnica.com"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
-        'https://www.apnews.com/'
+        'https://www.apnews.com/',
+        'https://arstechnica.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -124,6 +127,12 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": apnews_url_parse,
             "url_filter": apnews_url_filter
+        },
+        "arstechnica.com": {
+            "parser": arstechnica_parse,
+            "splash": False,
+            "url_parse": arstechnica_url_parse,
+            "url_filter": arstechnica_url_filter
         }
     }
 

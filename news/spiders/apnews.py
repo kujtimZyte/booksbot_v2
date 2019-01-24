@@ -56,7 +56,7 @@ def article_from_contents_value(contents_value, meta_tags):
     article.publisher.twitter.title = meta_tags['twitter:title']
     article.publisher.twitter.description = meta_tags['twitter:description']
     article.publisher.facebook.app_id = meta_tags['fb:app_id']
-    article.text.set_markdown(html2text.html2text(contents_value['storyHTML']))
+    article.text.set_markdown_text(html2text.html2text(contents_value['storyHTML']))
     return article
 
 
