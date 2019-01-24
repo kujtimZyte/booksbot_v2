@@ -346,6 +346,8 @@ def fill_article_from_meta_tags(article, response, soup):
         author = Author()
         author.set_url(meta_tags['article:author'])
         for a_tag in soup.findAll('a'):
+            if not a_tag.has_attr('href'):
+                continue
             if response.urljoin(a_tag['href']) == author.url:
                 author.name = a_tag.text
                 break

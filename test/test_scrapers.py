@@ -137,6 +137,14 @@ class TestNewsSpider(unittest.TestCase):
             'apnews-417eda5edd98430f948fd736f8260ae0.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_abc_the_big_dry_see_us_hear_us_help_us(self, mock_head):
+        self.check_fake_html_scrape(
+            'abc-the-big-dry-see-us-hear-us-help-us.html',
+            'https://www.abc.net.au/news/rural/2018-07-29/the-big-dry-see-us-hear-us-help-us/10030010',
+            'abc-the-big-dry-see-us-hear-us-help-us.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
