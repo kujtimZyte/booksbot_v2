@@ -3,9 +3,8 @@
 import re
 from urllib import urlencode
 from urlparse import urlparse, urlunparse, parse_qs
-from bs4 import BeautifulSoup
 import js2py
-from markdown import markdown
+from .article import Image
 
 
 def extract_string_from_javascript(response_text, start_index):
@@ -118,19 +117,6 @@ def extract_item_from_element_css(response, css_selector):
     return items
 
 
-def markdown_to_plaintext(markdown_text):
-    """Converts markdown to plaintext"""
-    # https://gist.github.com/lorey/eb15a7f3338f959a78cc3661fbc255fe
-    html = markdown(markdown_text)
-    # remove code snippets
-    html = re.sub(r'<pre>(.*?)</pre>', ' ', html)
-    html = re.sub(r'<code>(.*?)</code >', ' ', html)
-    # extract text
-    soup = BeautifulSoup(html, "html.parser")
-    text = ''.join(soup.findAll(text=True))
-    return text
-
-
 def strip_query_from_url(url):
     """Strips a query string from a URL"""
     parsed_url = urlparse(url)
@@ -166,3 +152,19 @@ def execute_script(script_tag):
     except js2py.PyJsException:
         pass
     return None
+
+
+def find_images(soup, article, response):
+    """Finds the images with an article"""
+    for img_tag in soup.findAll('img'):
+        image = Image()
+        image.url = response.urljoin(img_tag['src'])
+        if img_tag.has_attr('width'):
+            image.width = int(img_tag['width'])
+        if img_tag.has_attr('height'):
+            image.height = int(img_tag['height'])
+        if img_tag.has_attr('alt'):
+            image.alt = img_tag['alt']
+        if img_tag.has_attr('title'):
+            image.title = img_tag['title']
+        article.images.append_image(image)

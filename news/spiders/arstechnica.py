@@ -5,8 +5,8 @@ import json
 from urlparse import urlparse
 from bs4 import BeautifulSoup
 import html2text
-from .article import Article, Author, Image
-from .common import strip_query_from_url, extract_metadata, remove_common_tags
+from .article import Article, Author
+from .common import strip_query_from_url, extract_metadata, remove_common_tags, find_images
 
 
 def arstechnica_url_parse(url):
@@ -59,42 +59,12 @@ def parse_metadata(meta_tags, article, soup):
 def remove_tags(soup):
     """Removes the useless tags from the HTML"""
     remove_common_tags([
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'sponsored-tile'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'id': 'article-footer-wrap'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'author-bio'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'share-links'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'id': 'social-footer'
-            }
-        },
-        {
-            'tag': 'aside',
-            'meta': {
-                'id': 'social-left'
-            }
-        }
+        {'tag': 'div', 'meta': {'class': 'sponsored-tile'}},
+        {'tag': 'div', 'meta': {'id': 'article-footer-wrap'}},
+        {'tag': 'div', 'meta': {'class': 'author-bio'}},
+        {'tag': 'div', 'meta': {'class': 'share-links'}},
+        {'tag': 'div', 'meta': {'id': 'social-footer'}},
+        {'tag': 'aside', 'meta': {'id': 'social-left'}}
     ], soup)
 
 
@@ -111,19 +81,8 @@ def arstechnica_parse(response):
     main_content_div = soup.find('article')
     if not main_content_div:
         raise ValueError('Could not find the main content div: {}'.format(response.url))
-    for img_tag in main_content_div.findAll('img'):
-        image = Image()
-        image.url = response.urljoin(img_tag['src'])
-        if img_tag.has_attr('width'):
-            image.width = int(img_tag['width'])
-        if img_tag.has_attr('height'):
-            image.height = int(img_tag['height'])
-        if img_tag.has_attr('alt'):
-            image.alt = img_tag['alt']
-        if img_tag.has_attr('title'):
-            image.title = img_tag['title']
-        article.images.append_image(image)
-    article.text.set_markdown(html2text.html2text(unicode(main_content_div)))
+    find_images(main_content_div, article, response)
+    article.text.set_markdown_text(html2text.html2text(unicode(main_content_div)))
     return article.json(), link_id
 
 

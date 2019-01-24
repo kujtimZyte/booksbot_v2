@@ -2,8 +2,13 @@
 """Parser for the ABC website"""
 from bs4 import BeautifulSoup
 import html2text
-from .common import extract_metadata, strip_query_from_url, remove_common_tags, execute_script
-from .article import Article, Image, Video, Author, Audio
+from .common import \
+extract_metadata, \
+strip_query_from_url, \
+remove_common_tags, \
+execute_script, \
+find_images
+from .article import Article, Video, Author, Audio
 
 
 def abc_url_parse(url):
@@ -21,210 +26,40 @@ def abc_url_parse(url):
 def remove_tags(soup):
     """Removes the useless tags from the HTML"""
     remove_common_tags([
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'featured-scroller'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'id': 'footer-stories'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'promo'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'newsmail-signup'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'localised-top-stories'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'promo-list'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'graphic'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'sidebar'
-            }
-        },
-        {
-            'tag': 'p',
-            'meta': {
-                'class': 'topics'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'statepromo'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'share-icons'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'jwplayer-video'
-            }
-        },
-        {
-            'tag': 'a',
-            'meta': {
-                'class': 'abcLink'
-            }
-        },
-        {
-            'tag': 'a',
-            'meta': {
-                'class': 'controller'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'brand'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'id': 'highContrastTest'
-            }
-        },
-        {
-            'tag': 'img',
-            'meta': {
-                'id': 'imgCounter'
-            }
-        },
-        {
-            'tag': 'a',
-            'meta': {
-                'class': 'home'
-            }
-        },
-        {
-            'tag': 'a',
-            'meta': {
-                'class': 'search'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'bylinepromo'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'attached-content'
-            }
-        },
-        {
-            'tag': 'a',
-            'meta': {
-                'class': 'button'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'comp-share'
-            }
-        },
-        {
-            'tag': 'li',
-            'meta': {
-                'class': 'menu-item'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'comp-embedded-float-right'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'view-features-list'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'view-sidebar'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'rn-nav'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'id': 'comments'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'ct-social-share'
-            }
-        },
-        {
-            'tag': 'a',
-            'meta': {
-                'class': 'ico'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'view-brand-logo'
-            }
-        },
-        {
-            'tag': 'div',
-            'meta': {
-                'class': 'print-hide'
-            }
-        },
-        {
-            'tag': 'span',
-            'meta': {
-                'class': 'accordion-icon'
-            }
-        }
+        {'tag': 'div', 'meta': {'class': 'featured-scroller'}},
+        {'tag': 'div', 'meta': {'id': 'footer-stories'}},
+        {'tag': 'div', 'meta': {'class': 'promo'}},
+        {'tag': 'div', 'meta': {'class': 'newsmail-signup'}},
+        {'tag': 'div', 'meta': {'class': 'localised-top-stories'}},
+        {'tag': 'div', 'meta': {'class': 'promo-list'}},
+        {'tag': 'div', 'meta': {'class': 'graphic'}},
+        {'tag': 'div', 'meta': {'class': 'sidebar'}},
+        {'tag': 'p', 'meta': {'class': 'topics'}},
+        {'tag': 'div', 'meta': {'class': 'statepromo'}},
+        {'tag': 'div', 'meta': {'class': 'share-icons'}},
+        {'tag': 'div', 'meta': {'class': 'jwplayer-video'}},
+        {'tag': 'a', 'meta': {'class': 'abcLink'}},
+        {'tag': 'a', 'meta': {'class': 'controller'}},
+        {'tag': 'div', 'meta': {'class': 'brand'}},
+        {'tag': 'div', 'meta': {'id': 'highContrastTest'}},
+        {'tag': 'img', 'meta': {'id': 'imgCounter'}},
+        {'tag': 'a', 'meta': {'class': 'home'}},
+        {'tag': 'a', 'meta': {'class': 'search'}},
+        {'tag': 'div', 'meta': {'class': 'bylinepromo'}},
+        {'tag': 'div', 'meta': {'class': 'attached-content'}},
+        {'tag': 'a', 'meta': {'class': 'button'}},
+        {'tag': 'div', 'meta': {'class': 'comp-share'}},
+        {'tag': 'li', 'meta': {'class': 'menu-item'}},
+        {'tag': 'div', 'meta': {'class': 'comp-embedded-float-right'}},
+        {'tag': 'div', 'meta': {'class': 'view-features-list'}},
+        {'tag': 'div', 'meta': {'class': 'view-sidebar'}},
+        {'tag': 'div', 'meta': {'class': 'rn-nav'}},
+        {'tag': 'div', 'meta': {'id': 'comments'}},
+        {'tag': 'div', 'meta': {'class': 'ct-social-share'}},
+        {'tag': 'a', 'meta': {'class': 'ico'}},
+        {'tag': 'div', 'meta': {'class': 'view-brand-logo'}},
+        {'tag': 'div', 'meta': {'class': 'print-hide'}},
+        {'tag': 'span', 'meta': {'class': 'accordion-icon'}}
     ], soup)
 
 
@@ -403,22 +238,6 @@ def find_audio(soup, article):
                 article.audio.append(audio)
 
 
-def find_images(soup, article, response):
-    """Finds the images with an ABC article"""
-    for img_tag in soup.findAll('img'):
-        image = Image()
-        image.url = response.urljoin(img_tag['src'])
-        if img_tag.has_attr('width'):
-            image.width = int(img_tag['width'])
-        if img_tag.has_attr('height'):
-            image.height = int(img_tag['height'])
-        if img_tag.has_attr('alt'):
-            image.alt = img_tag['alt']
-        if img_tag.has_attr('title'):
-            image.title = img_tag['title']
-        article.images.append_image(image)
-
-
 def abc_parse(response):
     """Parses the response from a ABC website"""
     link_id = abc_url_parse(response.url)
@@ -445,7 +264,7 @@ def abc_parse(response):
                 video.height = inline_video_instance['height']
                 video.size = inline_video_instance['filesize']
                 article.videos.append_video(video)
-    article.text.set_markdown(html2text.html2text(unicode(main_content_div)))
+    article.text.set_markdown_text(html2text.html2text(unicode(main_content_div)))
     if not article.text.text.strip():
         raise ValueError('Could not find a text: {}'.format(response.url))
     return article.json(), link_id
