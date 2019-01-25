@@ -18,8 +18,11 @@ def timecode_from_datetime(datetime_obj):
 
 def url_head_headers(url):
     """Fetches the headers for a URL HEAD request"""
-    response = requests.head(url, timeout=5)
-    return response.headers
+    try:
+        response = requests.head(url, timeout=5)
+        return response.headers
+    except requests.ReadTimeout:
+        return {}
 
 
 def markdown_to_plaintext(markdown_text):
