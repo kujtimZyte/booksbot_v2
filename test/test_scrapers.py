@@ -161,6 +161,22 @@ class TestNewsSpider(unittest.TestCase):
             'arstechnica-major-bgp-mishap-takes-down-google-as-traffic-improperly-travels-to-china.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_bbc_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'bbc.com.html',
+            'http://www.bbc.com',
+            'bbc.com.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_bbc_45973436(self, mock_head):
+        self.check_fake_html_scrape(
+            'bbc-45973436.html',
+            'https://www.bbc.com/news/world-us-canada-45973436',
+            'bbc-45973436.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

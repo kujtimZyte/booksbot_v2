@@ -274,7 +274,9 @@
                 },
                 "publisher": {
                     "facebook": {
-                        "page_id": "72924719987",
+                        "page_id": [
+                            "72924719987"
+                        ],
                         "url": "https://www.facebook.com/abcnews.au"
                     },
                     "organisation": "Australian Broadcasting Corporation",

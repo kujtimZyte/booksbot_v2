@@ -1,178 +1,120 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "CPS_AUDIENCE": "US",
-                    "CPS_CHANGEQUEUEID": "129713186",
-                    "apple-mobile-web-app-title": "BBC News",
-                    "application-name": "BBC News",
-                    "article:author": "https://www.facebook.com/bbcnews",
-                    "article:section": "US & Canada",
-                    "articleBody": [
+            "article": {
+                "audio": [],
+                "authors": [],
+                "images": {
+                    "images": [
                         {
-                            "text": "President Donald Trump has called on people to be more civil in politics, after a series of suspected explosives were sent to high-profile US figures."
+                            "alt": "Police gather outside the Time Warner building in New York City",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "height": 549,
+                            "url": "https://ichef.bbci.co.uk/news/660/cpsprodpb/71E9/production/_104016192_gettyimages-1052931236.jpg",
+                            "width": 976
                         },
                         {
-                            "text": "He was speaking after parcels were sent to CNN and top Democrats, including Barack Obama and Hillary Clinton."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://ichef.bbci.co.uk/images/ic/720x405/p06ps159.jpg"
                         },
                         {
-                            "text": "None of the packages exploded. The FBI has launched a hunt for their sender."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://ichef.bbci.co.uk/images/ic/720x405/p06prtw3.jpg"
                         },
                         {
-                            "text": "The president's critics called his latest remarks hypocritical, as he often uses vicious language against his opponents and the press."
-                        },
-                        {
-                            "text": "Speaking at a Wednesday night rally in Wisconsin, the president vowed to catch the perpetrator and called on the media to \"stop endless hostility\"."
-                        },
-                        {
-                            "text": "\"Those engaged in political arena must stop treating political opponents as being morally defective,\" he said."
-                        },
-                        {
-                            "text": "\"No one should carelessly compare political opponents to historic villains, which is done often,\" he added."
-                        },
-                        {
-                            "text": "However, the president made no specific reference to the intended recipients of the packages."
-                        },
-                        {
-                            "text": "Earlier CNN worldwide president Jeff Zucker criticised President Trump and the White House press secretary for not understanding that \"words matter\"."
-                        },
-                        {
-                            "text": "\"There is a total and complete lack of understanding at the White House about the seriousness of their continued attacks on the media,\" he said."
-                        },
-                        {
-                            "text": "Who were the packages sent to?"
-                        },
-                        {
-                            "text": "Suspected bombs were sent to locations in New York, the Washington DC area and Florida, authorities said on Wednesday."
-                        },
-                        {
-                            "text": "Explosive devices were sent to the following individuals, according to the latest FBI statement:"
-                        },
-                        {
-                            "text": "CNN's New York office was evacuated on Wednesday morning after the package, addressed to Mr Brennan, was found in its mailroom."
-                        },
-                        {
-                            "text": "An additional suspicious package addressed to Democratic Representative Maxine Waters is also being investigated by local law enforcement and the FBI."
-                        },
-                        {
-                            "text": "On Wednesday evening, the Los Angeles Police Department said it was also investigating another suspicious package, at a mail facility in the city. Associated Press said it was also addressed to Maxine Waters."
-                        },
-                        {
-                            "text": "All the apparent targets are regularly criticised by conservatives -"
-                        },
-                        {
-                            "link": "https://www.bbc.com/news/world-us-canada-45001525",
-                            "text": "especially by President Trump"
-                        },
-                        {
-                            "text": "."
-                        },
-                        {
-                            "text": "Some Democrats have accused the president of inciting violence with his past rhetoric, while some of his supporters have said they believe the packages are part of a Democratic plot to win votes in the mid-term elections."
-                        },
-                        {
-                            "text": "There is no evidence for this and the police have not released any information about any suspects."
-                        },
-                        {
-                            "text": "The attempted attacks come just under two weeks before the mid-terms, with US politics highly polarised."
-                        },
-                        {
-                            "text": "Earlier, New York City Mayor Bill de Blasio called attempted attacks on CNN and top Democrats, including Barack Obama and Hillary Clinton, \"an act of terror\"."
-                        },
-                        {
-                            "text": "Mr de Blasio told reporters it was an effort to terrorize and \"to undermine our free press and leaders of this country through acts of violence\"."
-                        },
-                        {
-                            "text": "On Wednesday, White House spokeswoman Sarah Sanders condemned the \"attempted violent attacks\" against the public figures. She then specified in a follow-up tweet that the White House also condemned threats made to CNN."
-                        },
-                        {
-                            "text": "The president has repeatedly called journalists, and CNN in particular, \"fake news\" and the \"enemy of the people\". Last week"
-                        },
-                        {
-                            "link": "https://www.bbc.com/news/world-us-canada-45913921",
-                            "text": "he praised a Republican congressman"
-                        },
-                        {
-                            "text": "who had assaulted a reporter with a \"body slam\"."
-                        },
-                        {
-                            "text": "In a joint statement, top Democrats Nancy Pelosi and Chuck Schumer also said the president's latest words \"ring hollow until he reverses his statements that condone acts of violence\"."
-                        },
-                        {
-                            "text": "New York Mayor Mr de Blasio added during a news conference: \"To all public officials, to all partisan affiliations - don't encourage violence, don't encourage hatred, don't encourage attacks on media you can disagree but you have to show respect.\""
-                        },
-                        {
-                            "text": "The FBI says its ongoing investigation is \"of the highest priority\"."
-                        },
-                        {
-                            "text": "The devices are suspected to be pipe bombs. None of them exploded."
-                        },
-                        {
-                            "text": "The ones addressed to Mr Obama and Mrs Clinton were intercepted by security services before they were delivered."
-                        },
-                        {
-                            "text": "They were all sent in manila envelopes with bubble wrap, addressed with computer-printed labels. Each listed Debbie Wasserman Schultz, former chairwoman of the Democratic National Committee, as the sender, although her name was misspelt."
-                        },
-                        {
-                            "text": "In a statement, the Florida congresswoman said she was \"deeply disturbed\" by the way her name was used."
-                        },
-                        {
-                            "text": "The package addressed to Mr Brennan was sent to CNN as he was scheduled to appear on the network on Wednesday, US media report."
-                        },
-                        {
-                            "text": "New York Police Commissioner James O'Neill also said law enforcement is analysing an \"envelope containing white powder\" that was found in the packaging of that device sent to CNN."
-                        },
-                        {
-                            "text": "Speaking at a campaign event in Florida, Mrs Clinton thanked the Secret Service and said she and her family \"are fine\"."
-                        },
-                        {
-                            "text": "\"It is a troubling time,\" she said. \"It is a time of deep divisions and we have to do everything we can to bring our country together. We also have to elect candidates who will try to do the same.\""
-                        },
-                        {
-                            "text": "A spokeswoman for Mr Obama declined to comment on the incident, and referred reporters to the Secret Service statement."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://ichef.bbci.co.uk/images/ic/720x405/p06prlcx.jpg"
                         }
                     ],
+                    "thumbnail": {
+                        "alt": "BBC News. US President Donald Trump at a rally in Mosinee, Wisconsin, 24 October 2018",
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 405,
+                        "url": "https://ichef.bbci.co.uk/news/720/cpsprodpb/71E9/production/_104016192_gettyimages-1052931236.jpg",
+                        "width": 720
+                    }
+                },
+                "info": {
                     "description": "The US president was speaking after a series of suspect packages were sent to high-profile figures.",
-                    "fb:admins": "100004154058350",
-                    "fb:app_id": "1609039196070050",
-                    "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
-                    "google-site-verification": "auTeTTwSt_KBY_4iDoR00Lwb7-qzx1IgzJy6ztaWgEI",
-                    "imgs": [
-                        "https://ichef.bbci.co.uk/news/660/cpsprodpb/71E9/production/_104016192_gettyimages-1052931236.jpg",
-                        "data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAAALAAAAAAQAAkAAAIKhI+py+0Po5yUFQA7",
-                        "https://ichef.bbci.co.uk/images/ic/720x405/p06ps159.jpg",
-                        "https://ichef.bbci.co.uk/images/ic/720x405/p06prtw3.jpg",
-                        "data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAAALAAAAAAQAAkAAAIKhI+py+0Po5yUFQA7",
-                        "data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAAALAAAAAAQAAkAAAIKhI+py+0Po5yUFQA7",
-                        "https://ichef.bbci.co.uk/images/ic/720x405/p06prlcx.jpg"
-                    ],
-                    "mobile-web-app-capable": "yes",
-                    "msapplication-TileColor": "#bb1919",
-                    "msapplication-TileImage": "BBC News",
-                    "og:description": "The US president was speaking after a series of suspect packages were sent to high-profile figures.",
-                    "og:image": "https://ichef.bbci.co.uk/news/1024/branded_news/71E9/production/_104016192_gettyimages-1052931236.jpg",
-                    "og:image:alt": "BBC News. US President Donald Trump at a rally in Mosinee, Wisconsin, 24 October 2018",
-                    "og:locale": "en_GB",
-                    "og:site_name": "BBC News",
-                    "og:title": "Trump calls for more civility in politics",
-                    "og:type": "article",
-                    "og:url": "https://www.bbc.com/news/world-us-canada-45973436",
-                    "robots": "NOODP,NOYDIR",
-                    "theme-color": "#bb1919",
-                    "twitter:card": "summary_large_image",
-                    "twitter:creator": "@BBCWorld",
-                    "twitter:description": "The US president was speaking after a series of suspect packages were sent to high-profile figures.",
-                    "twitter:domain": "www.bbc.com",
-                    "twitter:image:alt": "US President Donald Trump at a rally in Mosinee, Wisconsin, 24 October 2018",
-                    "twitter:image:src": "https://ichef.bbci.co.uk/news/1024/branded_news/71E9/production/_104016192_gettyimages-1052931236.jpg",
-                    "twitter:site": "@BBCWorld",
-                    "twitter:title": "Trump calls for more civility in politics",
-                    "viewport": "width=device-width, initial-scale=1, user-scalable=1",
-                    "x-audience": "US",
-                    "x-country": "us"
-                }
-            ],
+                    "genre": "US & Canada",
+                    "title": "Trump calls for more civility in politics",
+                    "url": "https://www.bbc.com/news/world-us-canada-45973436"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "page_id": [
+                            "1143803202301544",
+                            "317278538359186",
+                            "1392506827668140",
+                            "742734325867560",
+                            "185246968166196",
+                            "156060587793370",
+                            "137920769558355",
+                            "193435954068976",
+                            "21263239760",
+                            "156400551056385",
+                            "929399697073756",
+                            "154344434967",
+                            "228735667216",
+                            "80758950658",
+                            "260212261199",
+                            "294662213128",
+                            "1086451581439054",
+                            "283348121682053",
+                            "295830058648",
+                            "239931389545417",
+                            "304314573046",
+                            "310719525611571",
+                            "647687225371774",
+                            "1159932557403143",
+                            "286567251709437",
+                            "1731770190373618",
+                            "125309456546",
+                            "163571453661989",
+                            "285361880228",
+                            "512423982152360",
+                            "238003846549831",
+                            "176663550714",
+                            "260967092113",
+                            "118450564909230",
+                            "100978706649892",
+                            "15286229625",
+                            "122103087870579",
+                            "120655094632228",
+                            "102814153147070",
+                            "124715648647",
+                            "153132638110668",
+                            "150467675018739"
+                        ]
+                    },
+                    "organisation": "BBC News",
+                    "twitter": {
+                        "card": "summary_large_image",
+                        "description": "The US president was speaking after a series of suspect packages were sent to high-profile figures.",
+                        "domain": "www.bbc.com",
+                        "handle": "@BBCWorld",
+                        "image": "https://ichef.bbci.co.uk/news/1024/branded_news/71E9/production/_104016192_gettyimages-1052931236.jpg",
+                        "image_alt": "US President Donald Trump at a rally in Mosinee, Wisconsin, 24 October 2018",
+                        "title": "Trump calls for more civility in politics"
+                    }
+                },
+                "tags": [
+                    "Barack Obama",
+                    "Donald Trump",
+                    "United States",
+                    "Hillary Clinton"
+                ],
+                "text": {
+                    "markdown": "# Donald Trump calls for more civility in politics following suspect packages\n\n  * 21 minutes ago\n\n![Police gather outside the Time Warner building in New York\nCity](https://ichef.bbci.co.uk/news/660/cpsprodpb/71E9/production/_104016192_gettyimages-1052931236.jpg)\nGetty Images Bomb squad trucks seen outside the Time Warner building in New\nYork City\n\nPresident Donald Trump has called on people to be more civil in politics,\nafter a series of suspected explosives were sent to high-profile US figures.\n\nHe was speaking after parcels were sent to CNN and top Democrats, including\nBarack Obama and Hillary Clinton.\n\nNone of the packages exploded. The FBI has launched a hunt for their sender.\n\nThe president's critics called his latest remarks hypocritical, as he often\nuses vicious language against his opponents and the press.\n\nSpeaking at a Wednesday night rally in Wisconsin, the president vowed to catch\nthe perpetrator and called on the media to \"stop endless hostility\".\n\n\"Those engaged in political arena must stop treating political opponents as\nbeing morally defective,\" he said.\n\n\"No one should carelessly compare political opponents to historic villains,\nwhich is done often,\" he added.\n\nHowever, the president made no specific reference to the intended recipients\nof the packages.\n\nEarlier CNN worldwide president Jeff Zucker criticised President Trump and the\nWhite House press secretary for not understanding that \"words matter\".\n\n\"There is a total and complete lack of understanding at the White House about\nthe seriousness of their continued attacks on the media,\" he said.\n\n**Who were the packages sent to?**\n\nSuspected bombs were sent to locations in New York, the Washington DC area and\nFlorida, authorities said on Wednesday.\n\nExplosive devices were sent to the following individuals, according to the\nlatest FBI statement:\n\n  * Former Secretary of State Hillary Clinton\n  * Former President Barack Obama\n  * Former CIA Director John Brennan, care of CNN\n  * Former Attorney General Eric Holder\n  * Liberal philanthropist and financier George Soros (on Monday) \n\nCNN's New York office was evacuated on Wednesday morning after the package,\naddressed to Mr Brennan, was found in its mailroom.\n\n![The Time Warner building in New York City was evacuated on Wednesday\nmorning](data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAAALAAAAAAQAAkAAAIKhI+py+0Po5yUFQA7)\nCBS The Time Warner building in New York City was evacuated on Wednesday\nmorning\n\nAn additional suspicious package addressed to Democratic Representative Maxine\nWaters is also being investigated by local law enforcement and the FBI.\n\nOn Wednesday evening, the Los Angeles Police Department said it was also\ninvestigating another suspicious package, at a mail facility in the city.\nAssociated Press said it was also addressed to Maxine Waters.\n\n## Why is this so political?\n\nAll the apparent targets are regularly criticised by conservatives -\n[especially by President Trump](https://www.bbc.com/news/world-us-\ncanada-45001525).\n\nSome Democrats have accused the president of inciting violence with his past\nrhetoric, while some of his supporters have said they believe the packages are\npart of a Democratic plot to win votes in the mid-term elections.\n\nThere is no evidence for this and the police have not released any information\nabout any suspects.\n\nThe attempted attacks come just under two weeks before the mid-terms, with US\npolitics highly polarised.\n\n## What has the reaction been?\n\nEarlier, New York City Mayor Bill de Blasio called attempted attacks on CNN\nand top Democrats, including Barack Obama and Hillary Clinton, \"an act of\nterror\".\n\nMr de Blasio told reporters it was an effort to terrorize and \"to undermine\nour free press and leaders of this country through acts of violence\".\n\n![](https://ichef.bbci.co.uk/images/ic/720x405/p06ps159.jpg)\n\n## Donald Trump: Threats of any kind have no place in the United States of\nAmerica\"\n\nDonald Trump speaking earlier on Wednesday\n\nOn Wednesday, White House spokeswoman Sarah Sanders condemned the \"attempted\nviolent attacks\" against the public figures. She then specified in a follow-up\ntweet that the White House also condemned threats made to CNN.\n\n  * [Trump Jr letter: 'You get what you deserve'](/news/world-us-canada-43050806)\n  * [Trump ends ex-CIA head's security access](/news/world-us-canada-45203277)\n  * [Explosive device found in Soros post box](/news/world-us-canada-45949737)\n\nThe president has repeatedly called journalists, and CNN in particular, \"fake\nnews\" and the \"enemy of the people\". Last week [he praised a Republican\ncongressman](https://www.bbc.com/news/world-us-canada-45913921) who had\nassaulted a reporter with a \"body slam\".\n\n![](https://ichef.bbci.co.uk/images/ic/720x405/p06prtw3.jpg)\n\n## Cuomo: \"What is not good is overheated rhetoric and extremism that pushes\npeople to violence.\"\n\nNew York Governor Andrew Cuomo: \"What is not good is overheated rhetoric and\nextremism that pushes people to violence.\"\n\nIn a joint statement, top Democrats Nancy Pelosi and Chuck Schumer also said\nthe president's latest words \"ring hollow until he reverses his statements\nthat condone acts of violence\".\n\nNew York Mayor Mr de Blasio added during a news conference: \"To all public\nofficials, to all partisan affiliations - don't encourage violence, don't\nencourage hatred, don't encourage attacks on media you can disagree but you\nhave to show respect.\"\n\nThe FBI says its ongoing investigation is \"of the highest priority\".\n\n## What was in the packages?\n\nThe devices are suspected to be pipe bombs. None of them exploded.\n\nThe ones addressed to Mr Obama and Mrs Clinton were intercepted by security\nservices before they were delivered.\n\nThey were all sent in manila envelopes with bubble wrap, addressed with\ncomputer-printed labels. Each listed Debbie Wasserman Schultz, former\nchairwoman of the Democratic National Committee, as the sender, although her\nname was misspelt.\n\nIn a statement, the Florida congresswoman said she was \"deeply disturbed\" by\nthe way her name was used.\n\n![One of the manila envelopes with a label with Debbie Wasserman Schultz's\nname\non](data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAAALAAAAAAQAAkAAAIKhI+py+0Po5yUFQA7)\nFBI Ms Wasserman Schultz's name was spelt wrong on the packages\n\nThe package addressed to Mr Brennan was sent to CNN as he was scheduled to\nappear on the network on Wednesday, US media report.\n\nNew York Police Commissioner James O'Neill also said law enforcement is\nanalysing an \"envelope containing white powder\" that was found in the\npackaging of that device sent to CNN.\n\n![Additional police were seen outside the Washington DC home of Mr\nObama](data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAAALAAAAAAQAAkAAAIKhI+py+0Po5yUFQA7)\nGetty Images Additional police were seen outside the Washington DC home of Mr\nObama\n\n## What have the apparent targets said?\n\nSpeaking at a campaign event in Florida, Mrs Clinton thanked the Secret\nService and said she and her family \"are fine\".\n\n\"It is a troubling time,\" she said. \"It is a time of deep divisions and we\nhave to do everything we can to bring our country together. We also have to\nelect candidates who will try to do the same.\"\n\nA spokeswoman for Mr Obama declined to comment on the incident, and referred\nreporters to the Secret Service statement.\n\n![](https://ichef.bbci.co.uk/images/ic/720x405/p06prlcx.jpg)\n\n## Pence: 'Those responsible will be brought to justice'\n\nPence: 'Those responsible will be brought to justice'\n\n",
+                    "text": "Donald Trump calls for more civility in politics following suspect packages\n\n21 minutes ago\n\n\nGetty Images Bomb squad trucks seen outside the Time Warner building in New\nYork City\nPresident Donald Trump has called on people to be more civil in politics,\nafter a series of suspected explosives were sent to high-profile US figures.\nHe was speaking after parcels were sent to CNN and top Democrats, including\nBarack Obama and Hillary Clinton.\nNone of the packages exploded. The FBI has launched a hunt for their sender.\nThe president's critics called his latest remarks hypocritical, as he often\nuses vicious language against his opponents and the press.\nSpeaking at a Wednesday night rally in Wisconsin, the president vowed to catch\nthe perpetrator and called on the media to \"stop endless hostility\".\n\"Those engaged in political arena must stop treating political opponents as\nbeing morally defective,\" he said.\n\"No one should carelessly compare political opponents to historic villains,\nwhich is done often,\" he added.\nHowever, the president made no specific reference to the intended recipients\nof the packages.\nEarlier CNN worldwide president Jeff Zucker criticised President Trump and the\nWhite House press secretary for not understanding that \"words matter\".\n\"There is a total and complete lack of understanding at the White House about\nthe seriousness of their continued attacks on the media,\" he said.\nWho were the packages sent to?\nSuspected bombs were sent to locations in New York, the Washington DC area and\nFlorida, authorities said on Wednesday.\nExplosive devices were sent to the following individuals, according to the\nlatest FBI statement:\n\nFormer Secretary of State Hillary Clinton\nFormer President Barack Obama\nFormer CIA Director John Brennan, care of CNN\nFormer Attorney General Eric Holder\nLiberal philanthropist and financier George Soros (on Monday) \n\nCNN's New York office was evacuated on Wednesday morning after the package,\naddressed to Mr Brennan, was found in its mailroom.\n\nCBS The Time Warner building in New York City was evacuated on Wednesday\nmorning\nAn additional suspicious package addressed to Democratic Representative Maxine\nWaters is also being investigated by local law enforcement and the FBI.\nOn Wednesday evening, the Los Angeles Police Department said it was also\ninvestigating another suspicious package, at a mail facility in the city.\nAssociated Press said it was also addressed to Maxine Waters.\nWhy is this so political?\nAll the apparent targets are regularly criticised by conservatives -\nespecially by President Trump.\nSome Democrats have accused the president of inciting violence with his past\nrhetoric, while some of his supporters have said they believe the packages are\npart of a Democratic plot to win votes in the mid-term elections.\nThere is no evidence for this and the police have not released any information\nabout any suspects.\nThe attempted attacks come just under two weeks before the mid-terms, with US\npolitics highly polarised.\nWhat has the reaction been?\nEarlier, New York City Mayor Bill de Blasio called attempted attacks on CNN\nand top Democrats, including Barack Obama and Hillary Clinton, \"an act of\nterror\".\nMr de Blasio told reporters it was an effort to terrorize and \"to undermine\nour free press and leaders of this country through acts of violence\".\n\nDonald Trump: Threats of any kind have no place in the United States of\nAmerica\"\nDonald Trump speaking earlier on Wednesday\nOn Wednesday, White House spokeswoman Sarah Sanders condemned the \"attempted\nviolent attacks\" against the public figures. She then specified in a follow-up\ntweet that the White House also condemned threats made to CNN.\n\nTrump Jr letter: 'You get what you deserve'\nTrump ends ex-CIA head's security access\nExplosive device found in Soros post box\n\nThe president has repeatedly called journalists, and CNN in particular, \"fake\nnews\" and the \"enemy of the people\". Last week he praised a Republican\ncongressman who had\nassaulted a reporter with a \"body slam\".\n\nCuomo: \"What is not good is overheated rhetoric and extremism that pushes\npeople to violence.\"\nNew York Governor Andrew Cuomo: \"What is not good is overheated rhetoric and\nextremism that pushes people to violence.\"\nIn a joint statement, top Democrats Nancy Pelosi and Chuck Schumer also said\nthe president's latest words \"ring hollow until he reverses his statements\nthat condone acts of violence\".\nNew York Mayor Mr de Blasio added during a news conference: \"To all public\nofficials, to all partisan affiliations - don't encourage violence, don't\nencourage hatred, don't encourage attacks on media you can disagree but you\nhave to show respect.\"\nThe FBI says its ongoing investigation is \"of the highest priority\".\nWhat was in the packages?\nThe devices are suspected to be pipe bombs. None of them exploded.\nThe ones addressed to Mr Obama and Mrs Clinton were intercepted by security\nservices before they were delivered.\nThey were all sent in manila envelopes with bubble wrap, addressed with\ncomputer-printed labels. Each listed Debbie Wasserman Schultz, former\nchairwoman of the Democratic National Committee, as the sender, although her\nname was misspelt.\nIn a statement, the Florida congresswoman said she was \"deeply disturbed\" by\nthe way her name was used.\n\nFBI Ms Wasserman Schultz's name was spelt wrong on the packages\nThe package addressed to Mr Brennan was sent to CNN as he was scheduled to\nappear on the network on Wednesday, US media report.\nNew York Police Commissioner James O'Neill also said law enforcement is\nanalysing an \"envelope containing white powder\" that was found in the\npackaging of that device sent to CNN.\n\nGetty Images Additional police were seen outside the Washington DC home of Mr\nObama\nWhat have the apparent targets said?\nSpeaking at a campaign event in Florida, Mrs Clinton thanked the Secret\nService and said she and her family \"are fine\".\n\"It is a troubling time,\" she said. \"It is a time of deep divisions and we\nhave to do everything we can to bring our country together. We also have to\nelect candidates who will try to do the same.\"\nA spokeswoman for Mr Obama declined to comment on the incident, and referred\nreporters to the Secret Service statement.\n\nPence: 'Those responsible will be brought to justice'\nPence: 'Those responsible will be brought to justice'"
+                },
+                "time": {
+                    "modified_time": 1540429145.0,
+                    "published_time": 1540429145.0
+                },
+                "videos": {}
+            },
             "url": "https://www.bbc.com/news/world-us-canada-45973436"
         }
     ],

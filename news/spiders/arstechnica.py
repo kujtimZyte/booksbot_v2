@@ -47,7 +47,7 @@ def parse_metadata(meta_tags, article, soup):
     for tag in parsley_page['tags']:
         article.tags.append(tag)
     article.images.thumbnail.url = parsley_page['image_url']
-    article.publisher.facebook.page_id = meta_tags['fb:pages']
+    article.publisher.facebook.page_ids = meta_tags['fb:pages'].split(',')
     article.publisher.twitter.card = meta_tags['twitter:card']
     article.publisher.twitter.title = meta_tags['twitter:title']
     article.publisher.twitter.description = meta_tags['twitter:description']
