@@ -1,0 +1,77 @@
+{
+    "items": [
+        {
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "RAPHAEL SATTER"
+                    }
+                ],
+                "images": {
+                    "images": [
+                        {
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "mime_type": "image/jpeg",
+                            "title": "FILE - In this Aug. 25, 2016, file photo, the logo of the Israeli NSO Group company is displayed on a building where they had offices until few months ago in Herzliya, Israel. Human rights group Amnesty International says that a member of its staff was targeted by Israeli-made spyware from the NSO Group. An Amnesty official says the hacking attempt is emblematic of the increased digital risk faced by activists worldwide. (AP Photo/Daniella Cheslow, file)",
+                            "url": "https://storage.googleapis.com/afs-prod/media/media:f6f5d2cc9a974091b5899df3dd7d4bc7/2048.jpeg"
+                        }
+                    ],
+                    "thumbnail": {}
+                },
+                "info": {
+                    "description": "Human rights group: Employee targeted with Israeli spyware",
+                    "title": "EU--Amnesty-Israeli-Spyware",
+                    "url": "https://apnews.com/5337456cc8c348c4a96bd590dc9f7fdf"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "app_id": "870613919693099"
+                    },
+                    "twitter": {
+                        "card": "summary_large_image ",
+                        "description": "LONDON (AP) \u2014 An Amnesty International employee has been targeted with Israeli-made surveillance software, the human rights group said Wednesday, adding to a growing number of examples of Israeli technology being used to spy on human rights workers and opposition figures in the Middle East and beyond. In a 20-page report, Amnesty outlined how it thinks a hacker tried to break into an unidentified staff member's smartphone in early June by baiting the employee with a WhatsApp message about a protest in front of the Saudi Embassy in Washington.  ",
+                        "handle": "@ap",
+                        "image": "https://storage.googleapis.com/afs-prod/media/media:f6f5d2cc9a974091b5899df3dd7d4bc7/2048.jpeg",
+                        "image_alt": "https://storage.googleapis.com/afs-prod/media/media:f6f5d2cc9a974091b5899df3dd7d4bc7/400.jpeg",
+                        "title": "Human rights group: Employee targeted with Israeli spyware"
+                    }
+                },
+                "tags": [
+                    "Israel",
+                    "Amnesty International",
+                    "Technology",
+                    "Middle East",
+                    "Spyware",
+                    "Europe",
+                    "Software"
+                ],
+                "text": {
+                    "markdown": "LONDON (AP) -- An Amnesty International employee has been targeted with\nIsraeli-made surveillance software, the human rights group said Wednesday,\nadding to a growing number of examples of Israeli technology being used to spy\non human rights workers and opposition figures in the Middle East and beyond.\n\nIn a 20-page report, Amnesty outlined how it thinks a hacker tried to break\ninto an unidentified staff member's smartphone in early June by baiting the\nemployee with a WhatsApp message about a protest in front of the Saudi Embassy\nin Washington.\n\nThe London-based human rights organization said it traced the malicious link\nin the message to a network of sites tied to the NSO Group, an Israeli\nsurveillance company implicated in a series of digital break-in attempts,\nincluding a campaign to compromise proponents of a soda tax in Mexico and an\neffort to hack into the phone of an Arab dissident that prompted an update to\nApple's operating system.\n\nJoshua Franco, Amnesty's head of technology and human rights, said the latest\nhacking attempt was emblematic of the increased digital risk faced by\nactivists worldwide.\n\n\"This is the new normal for human rights defenders,\" Franco said.\n\nNSO said in a written statement that its product was \"intended to be used\nexclusively for the investigation and prevention of crime and terrorism\" and\nthat allegations of wrongdoing would be investigated. In response to a series\nof written questions, the company said past allegations of customer misuse\nhad, in an undisclosed number of cases, led to the termination of contracts.\n\nAmnesty's findings were corroborated by internet watchdog Citizen Lab, which\nhas been tracking NSO spyware for two years and is based at the University of\nToronto's Munk School of Global Affairs.\n\nIn its own report being released Wednesday, Citizen Lab said it so far had\ncounted some 175 targets of NSO spyware worldwide, including 150 people in\nPanama identified as part of a massive domestic espionage scandal swirling\naround the country's former president.\n\nThe Amnesty International report said the organization identified a second\nhuman rights activist, in Saudi Arabia, who was targeted in a similar way to\nits staffer. Citizen Lab said it found traces of similar hacking attempts tied\nto Qatar or Saudi, hinting at the use of the Israeli spyware elsewhere in the\nGulf.\n\nAny possible use of Israeli technology to police dissent in the Arab world\ncould raise uncomfortable questions both for Israel, which still sees itself\nas a bastion of democracy in the region, and for countries with no formal\ndiplomatic ties to the Jewish state.\n\nFor Amnesty's Franco, it was a sign of an out-of-control trade in high-tech\nsurveillance tools.\n\n\"This is a huge market that's completely opaque and under-regulated,\" he said.\n\n___\n\nOnline:\n\nAmnesty's report: https://www.amnesty.org/en/latest/research/2018/08/amnesty-\ninternational-among-targets-of-nso-powered-campaign\n\nCitizen Lab's report: https://citizenlab.ca/2018/07/nso-spyware-targeting-\namnesty-international\n\n___\n\nRaphael Satter can be reached at: http://raphaelsatter.com\n\n",
+                    "text": "LONDON (AP) -- An Amnesty International employee has been targeted with\nIsraeli-made surveillance software, the human rights group said Wednesday,\nadding to a growing number of examples of Israeli technology being used to spy\non human rights workers and opposition figures in the Middle East and beyond.\nIn a 20-page report, Amnesty outlined how it thinks a hacker tried to break\ninto an unidentified staff member's smartphone in early June by baiting the\nemployee with a WhatsApp message about a protest in front of the Saudi Embassy\nin Washington.\nThe London-based human rights organization said it traced the malicious link\nin the message to a network of sites tied to the NSO Group, an Israeli\nsurveillance company implicated in a series of digital break-in attempts,\nincluding a campaign to compromise proponents of a soda tax in Mexico and an\neffort to hack into the phone of an Arab dissident that prompted an update to\nApple's operating system.\nJoshua Franco, Amnesty's head of technology and human rights, said the latest\nhacking attempt was emblematic of the increased digital risk faced by\nactivists worldwide.\n\"This is the new normal for human rights defenders,\" Franco said.\nNSO said in a written statement that its product was \"intended to be used\nexclusively for the investigation and prevention of crime and terrorism\" and\nthat allegations of wrongdoing would be investigated. In response to a series\nof written questions, the company said past allegations of customer misuse\nhad, in an undisclosed number of cases, led to the termination of contracts.\nAmnesty's findings were corroborated by internet watchdog Citizen Lab, which\nhas been tracking NSO spyware for two years and is based at the University of\nToronto's Munk School of Global Affairs.\nIn its own report being released Wednesday, Citizen Lab said it so far had\ncounted some 175 targets of NSO spyware worldwide, including 150 people in\nPanama identified as part of a massive domestic espionage scandal swirling\naround the country's former president.\nThe Amnesty International report said the organization identified a second\nhuman rights activist, in Saudi Arabia, who was targeted in a similar way to\nits staffer. Citizen Lab said it found traces of similar hacking attempts tied\nto Qatar or Saudi, hinting at the use of the Israeli spyware elsewhere in the\nGulf.\nAny possible use of Israeli technology to police dissent in the Arab world\ncould raise uncomfortable questions both for Israel, which still sees itself\nas a bastion of democracy in the region, and for countries with no formal\ndiplomatic ties to the Jewish state.\nFor Amnesty's Franco, it was a sign of an out-of-control trade in high-tech\nsurveillance tools.\n\"This is a huge market that's completely opaque and under-regulated,\" he said.\n\nOnline:\nAmnesty's report: https://www.amnesty.org/en/latest/research/2018/08/amnesty-\ninternational-among-targets-of-nso-powered-campaign\nCitizen Lab's report: https://citizenlab.ca/2018/07/nso-spyware-targeting-\namnesty-international\n\nRaphael Satter can be reached at: http://raphaelsatter.com"
+                },
+                "time": {
+                    "modified_time": 1533086262.0,
+                    "published_time": 1533086233.0
+                },
+                "videos": {}
+            },
+            "url": "https://www.apnews.com/5337456cc8c348c4a96bd590dc9f7fdf"
+        }
+    ],
+    "requests": [
+        "https://www.apnews.com/",
+        "https://www.apnews.com/apf-videos",
+        "https://www.apnews.com/Israel",
+        "https://www.apnews.com/AmnestyInternational",
+        "https://www.apnews.com/apf-technology",
+        "https://www.apnews.com/apf-mideast",
+        "https://www.apnews.com/Spyware",
+        "https://www.apnews.com/apf-europe",
+        "https://www.apnews.com/Software",
+        "https://www.apnews.com/apf-topnews",
+        "https://www.apnews.com/termsofservice",
+        "https://www.apnews.com/privacystatement"
+    ]
+}

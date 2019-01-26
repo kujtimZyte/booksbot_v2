@@ -39,11 +39,12 @@ def article_from_contents_value(contents_value, meta_tags):
         image.alt = media['altText']
         image.title = media['flattenedCaption']
         article.images.images.append(image)
-        if media['type'] == 'YouTube':
-            video = Video()
-            video.url = 'https://www.youtube.com/watch?v=' + media['externalId']
-            video.mime_type = media['videoMimeType']
-            article.videos.videos.append(video)
+        if 'type' in media:
+            if media['type'] == 'YouTube':
+                video = Video()
+                video.url = 'https://www.youtube.com/watch?v=' + media['externalId']
+                video.mime_type = media['videoMimeType']
+                article.videos.videos.append(video)
     for name in contents_value['bylines'].replace('By ', '').split(' and '):
         author = Author()
         author.name = name

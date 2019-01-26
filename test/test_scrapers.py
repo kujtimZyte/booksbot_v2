@@ -177,6 +177,14 @@ class TestNewsSpider(unittest.TestCase):
             'bbc-45973436.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_apnews_5337456cc8c348c4a96bd590dc9f7fdf(self, mock_head):
+        self.check_fake_html_scrape(
+            'apnews-5337456cc8c348c4a96bd590dc9f7fdf.html',
+            'https://www.apnews.com/5337456cc8c348c4a96bd590dc9f7fdf',
+            'apnews-5337456cc8c348c4a96bd590dc9f7fdf.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
