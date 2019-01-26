@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """Parser for the BBC website"""
-from ast import literal_eval
-import hashlib
 import json
 from bs4 import BeautifulSoup
 import html2text
