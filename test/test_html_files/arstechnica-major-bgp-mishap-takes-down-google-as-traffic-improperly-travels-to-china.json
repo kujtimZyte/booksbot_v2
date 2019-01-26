@@ -54,7 +54,9 @@
                 "location": {},
                 "publisher": {
                     "facebook": {
-                        "page_id": "19374573752"
+                        "page_id": [
+                            "19374573752"
+                        ]
                     },
                     "organisation": "Ars Technica",
                     "twitter": {

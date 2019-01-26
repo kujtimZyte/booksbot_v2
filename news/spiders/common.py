@@ -128,14 +128,9 @@ def strip_query_from_url(url):
 
 def remove_common_tags(remove_items, soup):
     """Remove common tags"""
-    remove_items.append({
-        'tag': 'noscript',
-        'meta': {}
-    })
-    remove_items.append({
-        'tag': 'button',
-        'meta': {}
-    })
+    remove_items.append({'tag': 'noscript', 'meta': {}})
+    remove_items.append({'tag': 'button', 'meta': {}})
+    remove_items.append({'tag': 'div', 'meta': {'class': 'ob-widget-section'}})
     for remove_item in remove_items:
         for tag in soup.findAll(remove_item['tag'], remove_item['meta']):
             tag.decompose()
@@ -157,6 +152,8 @@ def execute_script(script_tag):
 def find_images(soup, article, response):
     """Finds the images with an article"""
     for img_tag in soup.findAll('img'):
+        if img_tag['src'].startswith('data:'):
+            continue
         image = Image()
         image.url = response.urljoin(img_tag['src'])
         if img_tag.has_attr('width'):

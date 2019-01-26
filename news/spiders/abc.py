@@ -179,7 +179,9 @@ def fill_article_from_meta_tags(article, response, soup):
     article.images.thumbnail.height = meta_tags['og:image:height']
     article.images.thumbnail.mime_type = meta_tags['og:image:type']
     find_location(meta_tags, article)
-    article.publisher.facebook.set_page_id(find_facebook_page(meta_tags))
+    page_id = find_facebook_page(meta_tags)
+    if page_id:
+        article.publisher.facebook.page_ids.append(page_id)
     find_twitter(meta_tags, article)
     find_organisation(meta_tags, article, response)
     if 'article:author' in meta_tags:

@@ -295,14 +295,9 @@ class Author(object):
 
 class Facebook(object):
     """An object for holding the facebook information"""
-    url = None
-    page_id = None
-    app_id = None
-
-
     def __init__(self):
         self.url = None
-        self.page_id = None
+        self.page_ids = []
         self.app_id = None
 
 
@@ -311,18 +306,13 @@ class Facebook(object):
         self.url = url
 
 
-    def set_page_id(self, page_id):
-        """Sets the page_id"""
-        self.page_id = page_id
-
-
     def json(self):
         """Returns the object as a dictionary for JSON consumption"""
         facebook_info = {}
         if self.url:
             facebook_info['url'] = self.url
-        if self.page_id:
-            facebook_info['page_id'] = self.page_id
+        if self.page_ids:
+            facebook_info['page_id'] = self.page_ids
         if self.app_id:
             facebook_info['app_id'] = self.app_id
         return facebook_info
@@ -336,6 +326,7 @@ class Twitter(object):
     image_alt = None
     title = None
     description = None
+    domain = None
 
 
     def __init__(self):
@@ -345,6 +336,7 @@ class Twitter(object):
         self.image_alt = None
         self.title = None
         self.description = None
+        self.domain = None
 
 
     def set_card(self, card):
@@ -377,6 +369,8 @@ class Twitter(object):
             twitter_info['title'] = self.title
         if self.description:
             twitter_info['description'] = self.description
+        if self.domain:
+            twitter_info['domain'] = self.domain
         return twitter_info
 
 
