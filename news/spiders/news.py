@@ -160,7 +160,7 @@ class NewsSpider(scrapy.Spider):
 
     def start_requests(self):
         random.shuffle(self.start_urls)
-        requests = self.requests_for_urls(self.start_urls)
+        requests = self.requests_for_urls([self.start_urls[0]])
         for request in requests:
             yield request
 
