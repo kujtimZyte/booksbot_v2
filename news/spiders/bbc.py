@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """Parser for the BBC website"""
-import json
 from bs4 import BeautifulSoup
-import html2text
 from .article import Article
-from .common import strip_query_from_url, extract_metadata, remove_common_tags, find_images
+from .common import strip_query_from_url, extract_metadata, remove_common_tags, find_main_content, \
+find_script_json
 
 
 def bbc_url_parse(url):
@@ -43,16 +42,7 @@ def bbc_parse(response):
     soup = BeautifulSoup(response.text, 'html.parser')
     for li_tag in soup.findAll('li', {'class': 'tags-list__tags'}):
         article.tags.append(str(li_tag.text))
-    for script_tag in soup.findAll('script', {'type': 'application/ld+json'}):
-        script_json = json.loads(script_tag.text.replace('\\/', '/'))
-        article.time.set_modified_time(script_json['dateModified'])
-        article.publisher.organisation = script_json['publisher']['name']
-        article.info.url = script_json['url']
-        article.images.thumbnail.url = script_json['image']['url']
-        article.images.thumbnail.width = script_json['image']['width']
-        article.images.thumbnail.height = script_json['image']['height']
-        article.time.set_published_time(script_json['datePublished'])
-        article.info.title = script_json['headline']
+    find_script_json(soup, article)
     meta_tags = extract_metadata(response)
     article.info.description = meta_tags['og:description']
     article.info.genre = meta_tags['article:section']
@@ -67,11 +57,7 @@ def bbc_parse(response):
     article.publisher.twitter.image_alt = meta_tags['twitter:image:alt']
     article.publisher.twitter.domain = meta_tags['twitter:domain']
     remove_tags(soup)
-    main_content_div = soup.find('div', {'class': 'story-body'})
-    if not main_content_div:
-        raise ValueError('Could not find the main content div: {}'.format(response.url))
-    find_images(soup, article, response)
-    article.text.set_markdown_text(html2text.html2text(unicode(main_content_div)))
+    find_main_content([{'tag': 'div', 'meta': {'class': 'story-body'}}], article, response, soup)
     return article.json(), link_id
 
 

@@ -121,6 +121,7 @@ class NewsSpider(scrapy.Spider):
     http_pass = ''
     storage = None
     bucket = None
+    # pylint: disable=line-too-long
     parsers = {
         "abc.net.au": {
             "parser": abc_parse,
@@ -154,6 +155,7 @@ class NewsSpider(scrapy.Spider):
             "url_filter": bloomberg_url_filter
         }
     }
+    # pylint: enable=line-too-long
 
 
     def start_requests(self):

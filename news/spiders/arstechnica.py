@@ -4,9 +4,11 @@ import hashlib
 import json
 from urlparse import urlparse
 from bs4 import BeautifulSoup
-import html2text
 from .article import Article, Author
-from .common import strip_query_from_url, extract_metadata, remove_common_tags, find_images
+from .common import strip_query_from_url, \
+extract_metadata, \
+remove_common_tags, \
+find_main_content
 
 
 def arstechnica_url_parse(url):
@@ -78,11 +80,7 @@ def arstechnica_parse(response):
     soup = BeautifulSoup(response.text, 'html.parser')
     parse_metadata(meta_tags, article, soup)
     remove_tags(soup)
-    main_content_div = soup.find('article')
-    if not main_content_div:
-        raise ValueError('Could not find the main content div: {}'.format(response.url))
-    find_images(main_content_div, article, response)
-    article.text.set_markdown_text(html2text.html2text(unicode(main_content_div)))
+    find_main_content([{'tag': 'article', 'meta': {}}], article, response, soup)
     return article.json(), link_id
 
 
