@@ -25,6 +25,7 @@ from .abc import abc_parse, abc_url_parse, abc_url_filter
 from .apnews import apnews_parse, apnews_url_parse, apnews_url_filter
 from .arstechnica import arstechnica_parse, arstechnica_url_parse, arstechnica_url_filter
 from .bbc import bbc_parse, bbc_url_parse, bbc_url_filter
+from .bloomberg import bloomberg_parse, bloomberg_url_parse, bloomberg_url_filter
 
 
 DetectorFactory.seed = 0
@@ -106,13 +107,15 @@ class NewsSpider(scrapy.Spider):
         "abc.net.au",
         "apnews.com",
         "arstechnica.com",
-        "bbc.com"
+        "bbc.com",
+        "bloomberg.com"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
         'https://www.apnews.com/',
         'https://arstechnica.com/',
-        'http://www.bbc.com'
+        'http://www.bbc.com',
+        'https://www.bloomberg.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -142,6 +145,13 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": bbc_url_parse,
             "url_filter": bbc_url_filter
+        },
+        "bloomberg.com": {
+            "parser": bloomberg_parse,
+            "splash": False,
+            "cookie": "__pat=-18000000; _px2=eyJ1IjoiZmM5ZDA1NzAtZTZkZC0xMWU4LTkxMDgtYzVkZDRlYTMwZDFkIiwidiI6IjEwMWFhZjYwLWQ1N2UtMTFlOC05ZGRkLTE1MTBiYWUyY2ViYSIsInQiOjE1NDIwNzA0Nzg5OTQsImgiOiI1ZGY3NmUwOWFjZWFhYzM2M2U2OGZhNWQ2MGE4ZmI0NWVhYTM0MTZjNTRjZjc2MzMxZjRmNTU3NzgxMTY0ZTNlIn0=; _litra_ses.2a03=*;",
+            "url_parse": bloomberg_url_parse,
+            "url_filter": bloomberg_url_filter
         }
     }
 
@@ -240,5 +250,8 @@ class NewsSpider(scrapy.Spider):
                                 endpoint='render.html',
                                 args=splash_args))
                     else:
-                        requests.append(scrapy.Request(url, callback=self.parse))
+                        headers = {}
+                        if 'cookie' in self.parsers[domain]:
+                            headers['cookie'] = self.parsers[domain]['cookie']
+                        requests.append(scrapy.Request(url, callback=self.parse, headers=headers))
         return requests

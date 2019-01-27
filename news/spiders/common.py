@@ -4,7 +4,7 @@ import re
 from urllib import urlencode
 from urlparse import urlparse, urlunparse, parse_qs
 import js2py
-from .article import Image
+from .article import Image, Audio
 
 
 def extract_string_from_javascript(response_text, start_index):
@@ -157,11 +157,21 @@ def find_images(soup, article, response):
         image = Image()
         image.url = response.urljoin(img_tag['src'])
         if img_tag.has_attr('width'):
-            image.width = int(img_tag['width'])
+            image.width = img_tag['width']
         if img_tag.has_attr('height'):
-            image.height = int(img_tag['height'])
+            image.height = img_tag['height']
         if img_tag.has_attr('alt'):
             image.alt = img_tag['alt']
         if img_tag.has_attr('title'):
             image.title = img_tag['title']
         article.images.append_image(image)
+
+
+def find_audio(soup, article):
+    """Finds the audio within an article"""
+    for audio_tag in soup.findAll('audio'):
+        for source_tag in audio_tag.findAll('source'):
+            audio = Audio()
+            audio.url = source_tag['src']
+            audio.mime_type = source_tag['type']
+            article.audio.append(audio)

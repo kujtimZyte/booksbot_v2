@@ -22,6 +22,7 @@ The support table looks like so:
 | [Associated Press News](https://www.apnews.com)                     | 22nd January 2019  | Stable |
 | [Ars Technica](https://arstechnica.com)                             | 23rd January 2019  | Stable |
 | [BBC](http://www.bbc.com)                                           | 25th January 2019  | Stable |
+| [Bloomberg](https://www.bloomberg.com/)                             | 27th January 2019  | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)

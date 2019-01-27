@@ -185,6 +185,21 @@ class TestNewsSpider(unittest.TestCase):
             'apnews-5337456cc8c348c4a96bd590dc9f7fdf.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_bloomberg_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'bloomberg.com.html',
+            'https://www.bloomberg.com/',
+            'bloomberg.com.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_bloomberg_apple_has_a_plan_b_as_iphone_demand_peaks_many_suppliers_dont(self, mock_head):
+        self.check_fake_html_scrape(
+            'bloomberg-apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-dont.html',
+            'https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?srnd=premium',
+            'bloomberg-apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-dont.json')
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

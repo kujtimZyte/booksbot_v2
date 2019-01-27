@@ -72,7 +72,6 @@ def bbc_parse(response):
         raise ValueError('Could not find the main content div: {}'.format(response.url))
     find_images(soup, article, response)
     article.text.set_markdown_text(html2text.html2text(unicode(main_content_div)))
-    #print article.text.markdown_text
     return article.json(), link_id
 
 
