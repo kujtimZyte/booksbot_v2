@@ -1,203 +1,85 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "al:android:app_name": "Bloomberg",
-                    "al:android:package": "com.bloomberg.android.plus",
-                    "al:android:url": "bloomberg://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?utm_medium=applink&utm_source=facebook",
-                    "apple-itunes-app": "app-id=281941097, affiliate-data=ct=smartbanner_mobileweb&pt=8949&utm_source=smart_banner",
-                    "apple-mobile-web-app-capable": "no",
-                    "apple-mobile-web-app-status-bar-style": "black",
-                    "articleBody": [
+            "article": {
+                "audio": [
+                    {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "mime_type": "image/jpeg",
+                        "url": "https://assets.bwbx.io/s3/readings/PI4K636JTSEN1542100289288.mp3"
+                    }
+                ],
+                "authors": [
+                    {
+                        "name": "Jeran Wittenstein"
+                    },
+                    {
+                        "name": "Mark Gurman"
+                    }
+                ],
+                "images": {
+                    "images": [
                         {
-                            "text": "In a world where iPhone demand is on the wane,"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/100x-1.jpg",
+                            "width": 100
                         },
                         {
-                            "link": "/quote/AAPL:US",
-                            "text": "Apple Inc."
-                        },
-                        {
-                            "text": "has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage."
-                        },
-                        {
-                            "text": "But there\u2019s no back-up for many of the companies that supply components for the iPhone."
-                        },
-                        {
-                            "text": "The latest evidence that what\u2019s bad for Apple can be terrible for suppliers came on two continents within hours of each other."
-                        },
-                        {
-                            "link": "/quote/6740:JP",
-                            "text": "Japan Display Inc."
-                        },
-                        {
-                            "text": ", which gets more than half its revenue from the iPhone maker, cut forecasts. Then"
-                        },
-                        {
-                            "link": "/quote/LITE:US",
-                            "text": "Lumentum Holdings Inc."
-                        },
-                        {
-                            "text": ", a top maker of iPhone facial-recognition sensors, lowered its second-quarter outlook."
-                        },
-                        {
-                            "text": "\u201cSuppliers are more dependent on volume than Apple,\u201d said Woo Jin Ho, an analyst at Bloomberg Intelligence. \u201cThis raises an incremental risk for the rest of the supply chain.\u201d Apple didn\u2019t respond to a request for comment."
-                        },
-                        {
-                            "text": "Apple shares fell 5 percent on Monday, but Lumentum slumped more than 30 percent and rival"
-                        },
-                        {
-                            "link": "/quote/IIVI:US",
-                            "text": "II-VI Inc."
-                        },
-                        {
-                            "text": "dropped 13 percent."
-                        },
-                        {
-                            "link": "/quote/6740:JP",
-                            "text": "Japan Display"
-                        },
-                        {
-                            "text": "dropped 9.5 percent, while"
-                        },
-                        {
-                            "link": "/quote/2317:TT",
-                            "text": "Hon Hai Precision Industry Co."
-                        },
-                        {
-                            "text": ", the main iPhone assembler, slipped to"
-                        },
-                        {
-                            "link": "/quote/2317:TT",
-                            "text": "the lowest level"
-                        },
-                        {
-                            "text": "in five years."
-                        },
-                        {
-                            "text": "In Europe,"
-                        },
-                        {
-                            "link": "/quote/DLG:GY",
-                            "text": "Dialog Semiconductor Plc"
-                        },
-                        {
-                            "text": ", which gets most of its sales from Apple, fell as much as 3.6 percent in early Frankfurt trading. Austria\u2019s"
-                        },
-                        {
-                            "link": "/quote/AMS:SW",
-                            "text": "ams AG"
-                        },
-                        {
-                            "text": ", another supplier, slid as much as 3.2 percent after plunging 22 percent on Monday."
-                        },
-                        {
-                            "text": "Faced with a maturing smartphone market, Apple\u2019s strategy has been to entice customers to pay more for phones with new features such as facial recognition and more vibrant screens."
-                        },
-                        {
-                            "text": "The 3-D sensing components from companies like Lumentum are found in iPhones that often cost more than $1,000. Fewer people can afford to pay that much for a new device. But when a sale does happen, suppliers get a one-time payment for their component, while Apple can generate hundreds of extra dollars per gadget. In its most-recent quarter, Apple reported almost no increase in the number of iPhones sold, but revenue from that business jumped 29 percent from a year earlier."
-                        },
-                        {
-                            "text": "If demand for newer, pricier iPhones wanes, Apple can cut component orders, or delay shipments, leaving suppliers with more inventory. That makes them more likely to cut prices when Apple comes back to the negotiating table."
-                        },
-                        {
-                            "text": "Lumentum\u2019s weaker sales forecast was the result of a"
-                        },
-                        {
-                            "link": "/news/terminal/PI3LI9SYF01S",
-                            "text": "shipment reduction"
-                        },
-                        {
-                            "text": "from its largest customer just a few days ago, Chief Executive Officer Alan Lowe said at a conference in San Francisco on Monday. Lumentum didn\u2019t identify the customer and a spokesman for the company declined to comment, but Apple is its biggest customer, according to"
-                        },
-                        {
-                            "link": "/quote/LITE:US",
-                            "text": "data"
-                        },
-                        {
-                            "text": "compiled by Bloomberg."
-                        },
-                        {
-                            "text": "Apple is increasingly touting its base of 1.3 billion installed devices, rather than how many iPhones it sells each quarter. And the company has been making changes to keep these existing customers happy while selling more services to them."
-                        },
-                        {
-                            "link": "https://www.bloomberg.com/view/articles/2018-11-13/an-apple-supplier-s-guidance-cut-underpins-tech-sell-off",
-                            "text": "The Three-Minute Chat That Wiped Billions Off Stocks: Tim Culpan"
-                        },
-                        {
-                            "text": "\u201cApple is no longer a traditional hardware business,\u201d said Gene Munster, a veteran Apple analyst at Loup Ventures. \u201cThe Apple investment paradigm is moving away from a focus on device sales toward a more predictable services-driven business.\u201d"
-                        },
-                        {
-                            "text": "This year, Apple has taken steps to lengthen the amount of time iPhones can be used. That will likely discourage people from upgrading to newer devices -- another ominous sign for suppliers."
-                        },
-                        {
-                            "text": "Early in the year, the company confirmed it had been intentionally throttling the speeds of some older phones to avoid battery-related problems. After an outcry, the company offered cheap battery upgrades, extending the life of many handsets."
-                        },
-                        {
-                            "text": "More recently, Apple launched a new version of its operating system, iOS 12, that supports an unprecedented 28 of the company\u2019s devices, including models that went on sale in 2013. Previous iOS upgrades supported gadgets dating back several years, but this is the first time Apple has prioritized enhancing the speed of older iPhones. The refreshed software can open the camera on older iPhones 70 percent faster and the keyboard 50 percent faster, compared with iOS 11, last years\u2019 update."
-                        },
-                        {
-                            "text": "\u201cLonger-lasting products could lead to higher customer satisfaction, potentially enable Apple to charge higher prices for its devices, and would help fulfill the company\u2019s environmental objectives,\u201d Toni Sacconaghi, an analyst at Sanford C. Bernstein & Co., wrote Monday in a note to investors."
-                        },
-                        {
-                            "text": "That could extend iPhone replacement cycles by six months to 3.2 years and push unit sales down by 6 percent a year for three years, he estimated."
-                        },
-                        {
-                            "text": "With longer-lasting iPhones, users may be more likely to subscribe to new services, making the devices more lucrative to Apple than just the upfront cost. But these services are not additional revenue sources for component suppliers."
-                        },
-                        {
-                            "text": "While suppliers have fewer options, they are reacting to a slower smartphone market. Like most device makers, Apple prefers at least two suppliers for each component. The $3.2 billion"
-                        },
-                        {
-                            "link": "https://www.bloomberg.com/news/articles/2018-11-09/ii-vi-to-buy-finisar-in-laser-optic-deal-valued-at-3-2-billion",
-                            "text": "combination"
-                        },
-                        {
-                            "text": "of optical component makers II-VI and Finisar Corp., announced last week, will create a larger company that\u2019s better able to negotiate on prices."
-                        },
-                        {
-                            "text": "\u2014 With assistance by Ian King, Debby Wu, and Stefan Nicola"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iduk_7lgg420/v2/490x-1.png"
                         }
                     ],
-                    "checksum": "a82ba70cc4685988fa0270474030e495",
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 1333,
+                        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/-1x-1.jpg",
+                        "width": 1999
+                    }
+                },
+                "info": {
                     "description": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
-                    "fb:status": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
-                    "imgs": [
-                        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/100x-1.jpg",
-                        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iduk_7lgg420/v2/490x-1.png"
-                    ],
-                    "iso-8601-publish-date": "2018-11-13T02:32:24.840Z",
-                    "keywords": "APPLE INC,iPhone,PLAN B,Smartphone,LUMENTUM HOLDINGS INC,JAPAN DISPLAY INC,II-VI INC,Japan,Europe,DIALOG SEMICONDUCTOR PLC,technology",
-                    "og:description": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
-                    "og:image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/1200x800.jpg",
-                    "og:site_name": "Bloomberg.com",
-                    "og:title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't",
-                    "og:type": "article",
-                    "og:url": "https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t",
-                    "parsely-author": "Mark Gurman",
-                    "parsely-image-url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/1200x800.jpg",
-                    "parsely-link": "https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t",
-                    "parsely-post-id": "PI3TX36JTSE801",
-                    "parsely-pub-date": "2018-11-13T02:32:24.840Z",
-                    "parsely-section": "technology",
-                    "parsely-tags": "APPLE INC,iPhone,PLAN B,Smartphone,LUMENTUM HOLDINGS INC,JAPAN DISPLAY INC,II-VI INC,Japan,Europe,DIALOG SEMICONDUCTOR PLC,Secondary Brand: technology,Region: Global,Page: article",
-                    "parsely-title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't",
-                    "parsely-type": "post",
-                    "referrer": "always",
-                    "sailthru.author": "Jeran Wittenstein,Mark Gurman",
-                    "sailthru.date": "2018-11-13T02:32:24.840Z",
-                    "sailthru.description": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
-                    "sailthru.tags": "APPLE INC,iPhone,PLAN B,Smartphone,LUMENTUM HOLDINGS INC,JAPAN DISPLAY INC,II-VI INC,Japan,Europe,DIALOG SEMICONDUCTOR PLC,technology",
-                    "sailthru.title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't",
-                    "twitter:card": "summary_large_image",
-                    "twitter:description": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
-                    "twitter:image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/1200x800.jpg",
-                    "twitter:site": "@technology",
-                    "twitter:title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't",
-                    "validatedAt": "2018-11-13T11:25:52.797Z",
-                    "viewport": "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
-                }
-            ],
+                    "title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't",
+                    "url": "https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "status": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage."
+                    },
+                    "organisation": "Bloomberg",
+                    "twitter": {
+                        "card": "summary_large_image",
+                        "description": "In a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades and the smartphone market saturates, Apple can fall back on charging higher prices for each handset and raking in more money from services such as streaming music, digital videos and data storage.",
+                        "handle": "@technology",
+                        "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/1200x800.jpg",
+                        "title": "Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't"
+                    }
+                },
+                "tags": [
+                    "APPLE INC",
+                    "iPhone",
+                    "PLAN B",
+                    "Smartphone",
+                    "LUMENTUM HOLDINGS INC",
+                    "JAPAN DISPLAY INC",
+                    "II-VI INC",
+                    "Japan",
+                    "Europe",
+                    "DIALOG SEMICONDUCTOR PLC",
+                    "Secondary Brand: technology",
+                    "Region: Global",
+                    "Page: article"
+                ],
+                "text": {
+                    "markdown": "Photographer: David Paul Morris/Bloomberg\n\ntechnology\n\n# Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't\n\nBy\n\n[Jeran Wittenstein](https://www.bloomberg.com/authors/APXySqfZPFI/jeran-\nwittenstein)\n\nand\n\n[Mark Gurman](https://www.bloomberg.com/authors/AS7Hj1mBMGM/mark-gurman)\n\nNovember 13, 2018, 2:32 AM GMT Updated on  November 13, 2018, 9:10 AM GMT\n\n# Apple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't\n\nBy\n\n[Jeran Wittenstein](https://www.bloomberg.com/authors/APXySqfZPFI/jeran-\nwittenstein)\n\nand\n\n[Mark Gurman](https://www.bloomberg.com/authors/AS7Hj1mBMGM/mark-gurman)\n\n,\n\nNovember 13, 2018, 2:32 AM GMT\n\n![](https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLYFjlnc.fk/v0/100x-1.jpg)\n\nPhotographer: David Paul Morris/Bloomberg\n\nPhotographer: David Paul Morris/Bloomberg\n\nIn a world where iPhone demand is on the wane, [Apple Inc.](/quote/AAPL:US\n\"Apple supply chain\") has a Plan B. As customers wait longer between upgrades\nand the smartphone market saturates, Apple can fall back on charging higher\nprices for each handset and raking in more money from services such as\nstreaming music, digital videos and data storage.\n\nBut there\u2019s no back-up for many of the companies that supply components for\nthe iPhone.\n\nThe latest evidence that what\u2019s bad for Apple can be terrible for suppliers\ncame on two continents within hours of each other. [Japan Display\nInc.](/quote/6740:JP \"Company Overview\"), which gets more than half its\nrevenue from the iPhone maker, cut forecasts. Then [Lumentum Holdings\nInc.](/quote/LITE:US \"Company Overview\"), a top maker of iPhone facial-\nrecognition sensors, lowered its second-quarter outlook.\n\n\u201cSuppliers are more dependent on volume than Apple,\u201d said Woo Jin Ho, an\nanalyst at Bloomberg Intelligence. \u201cThis raises an incremental risk for the\nrest of the supply chain.\u201d Apple didn\u2019t respond to a request for comment.\n\nApple shares fell 5 percent on Monday, but Lumentum slumped more than 30\npercent and rival [II-VI Inc.](/quote/IIVI:US \"Company Overview\") dropped 13\npercent. [Japan Display](/quote/6740:JP \"Company Overview\") dropped 9.5\npercent, while [Hon Hai Precision Industry Co.](/quote/2317:TT \"Company\nOverview\"), the main iPhone assembler, slipped to [the lowest\nlevel](/quote/2317:TT \"Lowest Since\") in five years.\n\nIn Europe, [Dialog Semiconductor Plc](/quote/DLG:GY \"Company Overview\"), which\ngets most of its sales from Apple, fell as much as 3.6 percent in early\nFrankfurt trading. Austria\u2019s [ams AG](/quote/AMS:SW \"Company Overview\"),\nanother supplier, slid as much as 3.2 percent after plunging 22 percent on\nMonday.\n\n![](https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iduk_7lgg420/v2/490x-1.png)\n\nFaced with a maturing smartphone market, Apple\u2019s strategy has been to entice\ncustomers to pay more for phones with new features such as facial recognition\nand more vibrant screens.\n\nThe 3-D sensing components from companies like Lumentum are found in iPhones\nthat often cost more than $1,000. Fewer people can afford to pay that much for\na new device. But when a sale does happen, suppliers get a one-time payment\nfor their component, while Apple can generate hundreds of extra dollars per\ngadget. In its most-recent quarter, Apple reported almost no increase in the\nnumber of iPhones sold, but revenue from that business jumped 29 percent from\na year earlier.\n\nIf demand for newer, pricier iPhones wanes, Apple can cut component orders, or\ndelay shipments, leaving suppliers with more inventory. That makes them more\nlikely to cut prices when Apple comes back to the negotiating table.\n\nLumentum\u2019s weaker sales forecast was the result of a [shipment\nreduction](/news/terminal/PI3LI9SYF01S \"Lumentum: Major Customer Asked to Cut\n3D Shipments Just Days Ago\") from its largest customer just a few days ago,\nChief Executive Officer Alan Lowe said at a conference in San Francisco on\nMonday. Lumentum didn\u2019t identify the customer and a spokesman for the company\ndeclined to comment, but Apple is its biggest customer, according to\n[data](/quote/LITE:US \"Supply Data\") compiled by Bloomberg.\n\nApple is increasingly touting its base of 1.3 billion installed devices,\nrather than how many iPhones it sells each quarter. And the company has been\nmaking changes to keep these existing customers happy while selling more\nservices to them.\n\n[The Three-Minute Chat That Wiped Billions Off Stocks: Tim\nCulpan](https://www.bloomberg.com/view/articles/2018-11-13/an-apple-supplier-s\n-guidance-cut-underpins-tech-sell-off \"Click for full story\")\n\n\u201cApple is no longer a traditional hardware business,\u201d said Gene Munster, a\nveteran Apple analyst at Loup Ventures. \u201cThe Apple investment paradigm is\nmoving away from a focus on device sales toward a more predictable services-\ndriven business.\u201d\n\nThis year, Apple has taken steps to lengthen the amount of time iPhones can be\nused. That will likely discourage people from upgrading to newer devices --\nanother ominous sign for suppliers.\n\nEarly in the year, the company confirmed it had been intentionally throttling\nthe speeds of some older phones to avoid battery-related problems. After an\noutcry, the company offered cheap battery upgrades, extending the life of many\nhandsets.\n\nMore recently, Apple launched a new version of its operating system, iOS 12,\nthat supports an unprecedented 28 of the company\u2019s devices, including models\nthat went on sale in 2013. Previous iOS upgrades supported gadgets dating back\nseveral years, but this is the first time Apple has prioritized enhancing the\nspeed of older iPhones. The refreshed software can open the camera on older\niPhones 70 percent faster and the keyboard 50 percent faster, compared with\niOS 11, last years\u2019 update.\n\n\u201cLonger-lasting products could lead to higher customer satisfaction,\npotentially enable Apple to charge higher prices for its devices, and would\nhelp fulfill the company\u2019s environmental objectives,\u201d Toni Sacconaghi, an\nanalyst at Sanford C. Bernstein & Co., wrote Monday in a note to investors.\n\nThat could extend iPhone replacement cycles by six months to 3.2 years and\npush unit sales down by 6 percent a year for three years, he estimated.\n\nWith longer-lasting iPhones, users may be more likely to subscribe to new\nservices, making the devices more lucrative to Apple than just the upfront\ncost. But these services are not additional revenue sources for component\nsuppliers.\n\nWhile suppliers have fewer options, they are reacting to a slower smartphone\nmarket. Like most device makers, Apple prefers at least two suppliers for each\ncomponent. The $3.2 billion\n[combination](https://www.bloomberg.com/news/articles/2018-11-09/ii-vi-to-buy-\nfinisar-in-laser-optic-deal-valued-at-3-2-billion \"II-VI to Buy Apple Supplier\nFinisar in $3.2 Billion Deal \\(2\\)\") of optical component makers II-VI and\nFinisar Corp., announced last week, will create a larger company that\u2019s better\nable to negotiate on prices.\n\n _\u2014 With assistance by Ian King, Debby Wu, and Stefan Nicola_\n\n(Updates with European shares in the sixth paragraph.)\n\nPublished on November 13, 2018, 2:32 AM GMT  \nUpdated on  November 13, 2018, 9:10 AM GMT\n\n",
+                    "text": "Photographer: David Paul Morris/Bloomberg\ntechnology\nApple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't\nBy\nJeran Wittenstein\nand\nMark Gurman\nNovember 13, 2018, 2:32 AM GMT Updated on  November 13, 2018, 9:10 AM GMT\nApple Has a Plan B as iPhone Demand Peaks; Many Suppliers Don't\nBy\nJeran Wittenstein\nand\nMark Gurman\n,\nNovember 13, 2018, 2:32 AM GMT\n\nPhotographer: David Paul Morris/Bloomberg\nPhotographer: David Paul Morris/Bloomberg\nIn a world where iPhone demand is on the wane, Apple Inc. has a Plan B. As customers wait longer between upgrades\nand the smartphone market saturates, Apple can fall back on charging higher\nprices for each handset and raking in more money from services such as\nstreaming music, digital videos and data storage.\nBut there\u2019s no back-up for many of the companies that supply components for\nthe iPhone.\nThe latest evidence that what\u2019s bad for Apple can be terrible for suppliers\ncame on two continents within hours of each other. Japan Display\nInc., which gets more than half its\nrevenue from the iPhone maker, cut forecasts. Then Lumentum Holdings\nInc., a top maker of iPhone facial-\nrecognition sensors, lowered its second-quarter outlook.\n\u201cSuppliers are more dependent on volume than Apple,\u201d said Woo Jin Ho, an\nanalyst at Bloomberg Intelligence. \u201cThis raises an incremental risk for the\nrest of the supply chain.\u201d Apple didn\u2019t respond to a request for comment.\nApple shares fell 5 percent on Monday, but Lumentum slumped more than 30\npercent and rival II-VI Inc. dropped 13\npercent. Japan Display dropped 9.5\npercent, while Hon Hai Precision Industry Co., the main iPhone assembler, slipped to the lowest\nlevel in five years.\nIn Europe, Dialog Semiconductor Plc, which\ngets most of its sales from Apple, fell as much as 3.6 percent in early\nFrankfurt trading. Austria\u2019s ams AG,\nanother supplier, slid as much as 3.2 percent after plunging 22 percent on\nMonday.\n\nFaced with a maturing smartphone market, Apple\u2019s strategy has been to entice\ncustomers to pay more for phones with new features such as facial recognition\nand more vibrant screens.\nThe 3-D sensing components from companies like Lumentum are found in iPhones\nthat often cost more than $1,000. Fewer people can afford to pay that much for\na new device. But when a sale does happen, suppliers get a one-time payment\nfor their component, while Apple can generate hundreds of extra dollars per\ngadget. In its most-recent quarter, Apple reported almost no increase in the\nnumber of iPhones sold, but revenue from that business jumped 29 percent from\na year earlier.\nIf demand for newer, pricier iPhones wanes, Apple can cut component orders, or\ndelay shipments, leaving suppliers with more inventory. That makes them more\nlikely to cut prices when Apple comes back to the negotiating table.\nLumentum\u2019s weaker sales forecast was the result of a shipment\nreduction from its largest customer just a few days ago,\nChief Executive Officer Alan Lowe said at a conference in San Francisco on\nMonday. Lumentum didn\u2019t identify the customer and a spokesman for the company\ndeclined to comment, but Apple is its biggest customer, according to\ndata compiled by Bloomberg.\nApple is increasingly touting its base of 1.3 billion installed devices,\nrather than how many iPhones it sells each quarter. And the company has been\nmaking changes to keep these existing customers happy while selling more\nservices to them.\nThe Three-Minute Chat That Wiped Billions Off Stocks: Tim\nCulpan\n\u201cApple is no longer a traditional hardware business,\u201d said Gene Munster, a\nveteran Apple analyst at Loup Ventures. \u201cThe Apple investment paradigm is\nmoving away from a focus on device sales toward a more predictable services-\ndriven business.\u201d\nThis year, Apple has taken steps to lengthen the amount of time iPhones can be\nused. That will likely discourage people from upgrading to newer devices --\nanother ominous sign for suppliers.\nEarly in the year, the company confirmed it had been intentionally throttling\nthe speeds of some older phones to avoid battery-related problems. After an\noutcry, the company offered cheap battery upgrades, extending the life of many\nhandsets.\nMore recently, Apple launched a new version of its operating system, iOS 12,\nthat supports an unprecedented 28 of the company\u2019s devices, including models\nthat went on sale in 2013. Previous iOS upgrades supported gadgets dating back\nseveral years, but this is the first time Apple has prioritized enhancing the\nspeed of older iPhones. The refreshed software can open the camera on older\niPhones 70 percent faster and the keyboard 50 percent faster, compared with\niOS 11, last years\u2019 update.\n\u201cLonger-lasting products could lead to higher customer satisfaction,\npotentially enable Apple to charge higher prices for its devices, and would\nhelp fulfill the company\u2019s environmental objectives,\u201d Toni Sacconaghi, an\nanalyst at Sanford C. Bernstein & Co., wrote Monday in a note to investors.\nThat could extend iPhone replacement cycles by six months to 3.2 years and\npush unit sales down by 6 percent a year for three years, he estimated.\nWith longer-lasting iPhones, users may be more likely to subscribe to new\nservices, making the devices more lucrative to Apple than just the upfront\ncost. But these services are not additional revenue sources for component\nsuppliers.\nWhile suppliers have fewer options, they are reacting to a slower smartphone\nmarket. Like most device makers, Apple prefers at least two suppliers for each\ncomponent. The $3.2 billion\ncombination of optical component makers II-VI and\nFinisar Corp., announced last week, will create a larger company that\u2019s better\nable to negotiate on prices.\n\u2014 With assistance by Ian King, Debby Wu, and Stefan Nicola\n(Updates with European shares in the sixth paragraph.)\nPublished on November 13, 2018, 2:32 AM GMT\nUpdated on  November 13, 2018, 9:10 AM GMT"
+                },
+                "time": {
+                    "modified_time": 1542100251.822,
+                    "published_time": 1542076344.84
+                },
+                "videos": {}
+            },
             "url": "https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?srnd=premium"
         }
     ],

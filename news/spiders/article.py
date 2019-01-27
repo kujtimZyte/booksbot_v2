@@ -38,6 +38,13 @@ def markdown_to_plaintext(markdown_text):
     return text
 
 
+def fix_pixel_property(pixel_property):
+    """Converts the pixel property to an int"""
+    if isinstance(pixel_property, int):
+        return pixel_property
+    return int(float(pixel_property.replace('px', '')))
+
+
 class ArticleTime(object):
     """Holds the information about the article time"""
     published_time = None
@@ -192,9 +199,9 @@ class Image(RichMedia):
         """Returns the object as a dictionary for JSON consumption"""
         image_json = super(Image, self).json()
         if self.width:
-            image_json['width'] = int(float(self.width))
+            image_json['width'] = fix_pixel_property(self.width)
         if self.height:
-            image_json['height'] = int(float(self.height))
+            image_json['height'] = fix_pixel_property(self.height)
         if self.alt:
             image_json['alt'] = self.alt
         if self.title:
@@ -299,6 +306,7 @@ class Facebook(object):
         self.url = None
         self.page_ids = []
         self.app_id = None
+        self.status = None
 
 
     def set_url(self, url):
@@ -315,6 +323,8 @@ class Facebook(object):
             facebook_info['page_id'] = self.page_ids
         if self.app_id:
             facebook_info['app_id'] = self.app_id
+        if self.status:
+            facebook_info['status'] = self.status
         return facebook_info
 
 
@@ -456,9 +466,9 @@ class Video(RichMedia):
         if self.bitrate:
             video_info['bitrate'] = int(self.bitrate)
         if self.width:
-            video_info['width'] = int(self.width)
+            video_info['width'] = fix_pixel_property(self.width)
         if self.height:
-            video_info['height'] = int(self.height)
+            video_info['height'] = fix_pixel_property(self.height)
         return video_info
 
 

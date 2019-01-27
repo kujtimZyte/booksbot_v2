@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 """Common utilities for scraping"""
+import json
 import re
 from urllib import urlencode
 from urlparse import urlparse, urlunparse, parse_qs
+import html2text
 import js2py
-from .article import Image
+from .article import Image, Audio, Author
 
 
 def extract_string_from_javascript(response_text, start_index):
@@ -157,11 +159,59 @@ def find_images(soup, article, response):
         image = Image()
         image.url = response.urljoin(img_tag['src'])
         if img_tag.has_attr('width'):
-            image.width = int(img_tag['width'])
+            image.width = img_tag['width']
         if img_tag.has_attr('height'):
-            image.height = int(img_tag['height'])
+            image.height = img_tag['height']
         if img_tag.has_attr('alt'):
             image.alt = img_tag['alt']
         if img_tag.has_attr('title'):
             image.title = img_tag['title']
         article.images.append_image(image)
+
+
+def find_audio(soup, article):
+    """Finds the audio within an article"""
+    for audio_tag in soup.findAll('audio'):
+        for source_tag in audio_tag.findAll('source'):
+            audio = Audio()
+            audio.url = source_tag['src']
+            audio.mime_type = source_tag['type']
+            article.audio.append(audio)
+
+
+def find_main_content(main_content_divs, article, response, soup):
+    """Finds the main content and fills in the article"""
+    main_content_div = None
+    for div in main_content_divs:
+        main_content_div = soup.find(div['tag'], div['meta'])
+        if main_content_div:
+            break
+    if not main_content_div:
+        raise ValueError('Could not find the main content div: {}'.format(response.url))
+    find_images(main_content_div, article, response)
+    article.text.set_markdown_text(html2text.html2text(unicode(main_content_div)))
+
+
+def find_script_json(soup, article):
+    """Finds the script JSON"""
+    for script_tag in soup.findAll('script', {'type': 'application/ld+json'}):
+        script_json = json.loads(script_tag.text.replace('\\/', '/'))
+        for author in script_json['author']:
+            if isinstance(author, unicode):
+                continue
+            article_author = Author()
+            article_author.name = author['name']
+            article.authors.append(article_author)
+        article.time.set_modified_time(script_json['dateModified'])
+        article.publisher.organisation = script_json['publisher']['name']
+        if 'url' in script_json:
+            article.info.url = script_json['url']
+        else:
+            article.info.url = script_json['mainEntityOfPage']
+        article.images.thumbnail.url = script_json['image']['url']
+        article.images.thumbnail.width = script_json['image']['width']
+        article.images.thumbnail.height = script_json['image']['height']
+        article.time.set_published_time(script_json['datePublished'])
+        article.info.title = script_json['headline']
+        if 'description' in script_json:
+            article.info.description = script_json['description']
