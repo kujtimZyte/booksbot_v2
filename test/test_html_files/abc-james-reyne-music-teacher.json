@@ -1,0 +1,75 @@
+{
+    "items": [
+        {
+            "article": {
+                "audio": [
+                    {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "url": "https://abcmedia.akamaized.net/radio/local_sydney/audio/201901/aaw-2019-01-22-james-reyne-music-teacher.mp3"
+                    }
+                ],
+                "authors": [],
+                "images": {
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 394,
+                        "mime_type": "image/jpeg",
+                        "url": "https://www.abc.net.au/cm/rimage/10736176-1x1-large.jpg?v=2",
+                        "width": 700
+                    }
+                },
+                "info": {
+                    "description": "The iconic front man of Australian Crawl talks through the far reaching music of his life.",
+                    "title": "James Reyne gets musically reckless with Chris Bath for the Evenings Music Teacher",
+                    "url": "https://www.abc.net.au/radio/sydney/programs/evenings/james-reyne-music-teacher/10735986"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {},
+                    "organisation": "Australian Broadcasting Corporation",
+                    "twitter": {
+                        "card": "summary",
+                        "image": "https://www.abc.net.au/cm/rimage/10736176-1x1-large.jpg?v=2"
+                    }
+                },
+                "tags": [],
+                "text": {
+                    "markdown": "Image:\n\nSupplied\n\n#  Music Teacher - James Reyne\n\nOn Evenings with Chris Bath\n\n[Download James Reyne gets musically reckless with Chris Bath for the Evenings\nMusic Teacher (18.92\nMB)](https://abcmedia.akamaized.net/radio/local_sydney/audio/201901/aaw-2019-01-22\n-james-reyne-music-teacher.mp3)\n\nDownload 18.92 MB\n\nYou'll know James Reyne as the lead singer of Australian Crawl. You might even\nremember his debut on Countdown with two broken arms.\n\nWhat you might not know that he was born in Nigeria, loves Gilbert & Sullivan,\nand hates most 80s music!\n\nListen to him here as he takes you through the influential songs of his life.\nThe ones he loves, hates, and everything in between.\n\nDuration: 41min 19sec\n\nBroadcast:  Tue 22 Jan 2019, 7:00pm\n\n",
+                    "text": "Image:\nSupplied\nMusic Teacher - James Reyne\nOn Evenings with Chris Bath\nDownload James Reyne gets musically reckless with Chris Bath for the Evenings\nMusic Teacher (18.92\nMB)\nDownload 18.92 MB\nYou'll know James Reyne as the lead singer of Australian Crawl. You might even\nremember his debut on Countdown with two broken arms.\nWhat you might not know that he was born in Nigeria, loves Gilbert & Sullivan,\nand hates most 80s music!\nListen to him here as he takes you through the influential songs of his life.\nThe ones he loves, hates, and everything in between.\nDuration: 41min 19sec\nBroadcast:  Tue 22 Jan 2019, 7:00pm"
+                },
+                "time": {
+                    "modified_time": 1548121461.0,
+                    "published_time": 1548150606.0
+                },
+                "videos": {}
+            },
+            "url": "https://www.abc.net.au/radio/sydney/programs/evenings/james-reyne-music-teacher/10735986"
+        }
+    ],
+    "requests": [
+        "https://www.abc.net.au/radio/sydney/programs/evenings/james-reyne-music-teacher/10735986#main-content",
+        "https://www.abc.net.au/",
+        "https://www.abc.net.au/news/",
+        "https://iview.abc.net.au",
+        "https://www.abc.net.au/tv/",
+        "https://radio.abc.net.au/",
+        "https://www.abc.net.au/children/",
+        "https://shop.abc.net.au/",
+        "https://www.abc.net.au/more/",
+        "https://search.abc.net.au/",
+        "https://www.abc.net.au/radio/sydney/programs/evenings/",
+        "https://www.abc.net.au/radio/sydney/",
+        "https://www.abc.net.au/radio/sydney/programs/evenings/episodes/",
+        "https://www.abc.net.au/radio/sydney/programs/evenings/james-reyne-music-teacher/10735986",
+        "https://www.abc.net.au/radio/sydney/live/",
+        "https://www.abc.net.au/radio/sydney/programs/",
+        "https://www.abc.net.au/radio/sydney/categories/",
+        "https://www.abc.net.au/radio/sydney/programs/evenings/evenings/10718260",
+        "https://www.abc.net.au/radio/sydney/station-epg/",
+        "https://www.abc.net.au/radio/sydney/contact-us/",
+        "https://radio.abc.net.au/help/online",
+        "https://www.abc.net.au/radio/sydney/weather/",
+        "https://radio.abc.net.au/help/apps",
+        "https://www.abc.net.au/digitalradio"
+    ]
+}

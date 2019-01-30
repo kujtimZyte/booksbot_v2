@@ -200,6 +200,15 @@ class TestNewsSpider(unittest.TestCase):
             'https://www.bloomberg.com/news/articles/2018-11-13/apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-don-t?srnd=premium',
             'bloomberg-apple-has-a-plan-b-as-iphone-demand-peaks-many-suppliers-dont.json')
 
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_abc_james_reyne_music_teacher(self, mock_head):
+        self.check_fake_html_scrape(
+            'abc-james-reyne-music-teacher.html',
+            'https://www.abc.net.au/radio/sydney/programs/evenings/james-reyne-music-teacher/10735986',
+            'abc-james-reyne-music-teacher.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

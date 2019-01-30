@@ -59,7 +59,8 @@ def remove_tags(soup):
         {'tag': 'a', 'meta': {'class': 'ico'}},
         {'tag': 'div', 'meta': {'class': 'view-brand-logo'}},
         {'tag': 'div', 'meta': {'class': 'print-hide'}},
-        {'tag': 'span', 'meta': {'class': 'accordion-icon'}}
+        {'tag': 'span', 'meta': {'class': 'accordion-icon'}},
+        {'tag': 'div', 'meta': {'class': 'emergency-ticker-container'}}
     ], soup)
 
 
