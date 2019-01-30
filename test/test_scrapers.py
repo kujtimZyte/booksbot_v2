@@ -209,6 +209,14 @@ class TestNewsSpider(unittest.TestCase):
             'abc-james-reyne-music-teacher.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_bbc_46502681(self, mock_head):
+        self.check_fake_html_scrape(
+            'bbc-46502681.html',
+            'https://www.bbc.com/news/world-europe-46502681',
+            'bbc-46502681.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
