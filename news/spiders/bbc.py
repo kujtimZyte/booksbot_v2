@@ -61,6 +61,8 @@ def bbc_parse(response):
     return article.json(), link_id
 
 
-def bbc_url_filter(_url):
+def bbc_url_filter(url):
     """Filters URLs in the BBC domain"""
+    if '/vietnamese/' in url:
+        return False
     return True
