@@ -42,6 +42,8 @@ def fix_pixel_property(pixel_property):
     """Converts the pixel property to an int"""
     if isinstance(pixel_property, int):
         return pixel_property
+    if isinstance(pixel_property, float):
+        return int(pixel_property)
     return int(float(pixel_property.replace('px', '')))
 
 
