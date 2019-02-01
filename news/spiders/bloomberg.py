@@ -63,6 +63,14 @@ def bloomberg_parse(response):
     return article.json(), link_id
 
 
-def bloomberg_url_filter(_url):
+def bloomberg_url_filter(url):
     """Filters URLs in the Bloomberg domain"""
+    if 'tosv2.html' in url:
+        return False
+    if '.pdf' in url:
+        return False
+    if '/notices/' in url:
+        return False
+    if '/feedback' in url:
+        return False
     return True

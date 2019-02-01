@@ -79,7 +79,7 @@ def check_valid_item(response_url, item):
             raise ValueError('Found a non string object when parsing: {}'.format(response_url))
 
 
-def get_user_agent():
+def get_user_agent(googlebot):
     """Gets the user agent to spoof (some news require a valid one)"""
     user_agent_parts = [
         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0)',
@@ -87,6 +87,10 @@ def get_user_agent():
         'Chrome/69.0.3497.100',
         'Safari/537.36'
     ]
+    if googlebot:
+        user_agent_parts = [
+            'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+        ]
     return ' '.join(user_agent_parts)
 
 
@@ -121,7 +125,6 @@ class NewsSpider(scrapy.Spider):
     http_pass = ''
     storage = None
     bucket = None
-    # pylint: disable=line-too-long
     parsers = {
         "abc.net.au": {
             "parser": abc_parse,
@@ -150,12 +153,10 @@ class NewsSpider(scrapy.Spider):
         "bloomberg.com": {
             "parser": bloomberg_parse,
             "splash": False,
-            "cookie": "__pat=-18000000; _px2=eyJ1IjoiZmM5ZDA1NzAtZTZkZC0xMWU4LTkxMDgtYzVkZDRlYTMwZDFkIiwidiI6IjEwMWFhZjYwLWQ1N2UtMTFlOC05ZGRkLTE1MTBiYWUyY2ViYSIsInQiOjE1NDIwNzA0Nzg5OTQsImgiOiI1ZGY3NmUwOWFjZWFhYzM2M2U2OGZhNWQ2MGE4ZmI0NWVhYTM0MTZjNTRjZjc2MzMxZjRmNTU3NzgxMTY0ZTNlIn0=; _litra_ses.2a03=*;",
             "url_parse": bloomberg_url_parse,
             "url_filter": bloomberg_url_filter
         }
     }
-    # pylint: enable=line-too-long
 
 
     def start_requests(self):
@@ -227,7 +228,7 @@ class NewsSpider(scrapy.Spider):
         splash_args = {
             'wait': 0.5,
             'headers': {
-                'User-Agent': get_user_agent()
+                'User-Agent': get_user_agent(False)
             }
         }
         requests = []
@@ -243,8 +244,9 @@ class NewsSpider(scrapy.Spider):
                         break
                     if self.parsers[domain]["splash"]:
                         new_splash_args = splash_args
-                        if "cookie" in self.parsers[domain]:
-                            new_splash_args["headers"]["cookie"] = self.parsers[domain]["cookie"]
+                        if "user_agent" in self.parsers[domain]:
+                            if self.parsers[domain]["user_agent"] == "googlebot":
+                                new_splash_args["headers"]["User-Agent"] = get_user_agent(True)
                         requests.append(
                             SplashRequest(
                                 url,
