@@ -244,9 +244,6 @@ class NewsSpider(scrapy.Spider):
                         break
                     if self.parsers[domain]["splash"]:
                         new_splash_args = splash_args
-                        if "user_agent" in self.parsers[domain]:
-                            if self.parsers[domain]["user_agent"] == "googlebot":
-                                new_splash_args["headers"]["User-Agent"] = get_user_agent(True)
                         requests.append(
                             SplashRequest(
                                 url,
