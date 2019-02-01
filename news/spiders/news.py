@@ -243,7 +243,6 @@ class NewsSpider(scrapy.Spider):
                     if not self.parsers[domain]["url_filter"](url):
                         break
                     if self.parsers[domain]["splash"]:
-                        new_splash_args = splash_args
                         requests.append(
                             SplashRequest(
                                 url,
