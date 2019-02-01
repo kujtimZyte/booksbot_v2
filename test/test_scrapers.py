@@ -217,6 +217,14 @@ class TestNewsSpider(unittest.TestCase):
             'bbc-46502681.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_arstechnica_hayao_miyazaki_doc_an_analog_animation_master_finds_new_technical_challenges(self, mock_head):
+        self.check_fake_html_scrape(
+            'arstechnica-hayao-miyazaki-doc-an-analog-animation-master-finds-new-technical-challenges.html',
+            'https://arstechnica.com/gaming/2019/01/hayao-miyazaki-doc-an-analog-animation-master-finds-new-technical-challenges/',
+            'arstechnica-hayao-miyazaki-doc-an-analog-animation-master-finds-new-technical-challenges.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
