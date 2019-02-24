@@ -250,7 +250,10 @@ class NewsSpider(scrapy.Spider):
                                 endpoint='render.html',
                                 args=splash_args))
                     else:
-                        headers = {}
+                        headers = {
+                            'User-Agent': get_user_agent(False),
+                            'upgrade-insecure-requests': '1'
+                        }
                         if 'cookie' in self.parsers[domain]:
                             headers['cookie'] = self.parsers[domain]['cookie']
                         requests.append(scrapy.Request(url, callback=self.parse, headers=headers))
