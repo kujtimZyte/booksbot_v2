@@ -85,6 +85,8 @@ def arstechnica_parse(response):
     return article.json(), link_id
 
 
-def arstechnica_url_filter(_url):
+def arstechnica_url_filter(url):
     """Filters URLs in the Ars Technica domain"""
+    if '/author/' in url:
+        return False
     return True
