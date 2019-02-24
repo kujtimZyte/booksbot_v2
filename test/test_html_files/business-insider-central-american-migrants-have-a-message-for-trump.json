@@ -1,126 +1,55 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "apple-itunes-app": "app-id=554260576",
-                    "article:publisher": "businessinsider",
-                    "articleBody": [
-                        {
-                            "text": "DONAJI, Mexico (AP) \u2014 As President Donald Trump ramped up his anti-migrant rhetoric ahead of Tuesday's midterm elections, exhausted Central Americans walking across Mexico in hopes of reaching the United States said they were mostly perplexed and turned off by his threats, which they perceive as exaggerated."
-                        },
-                        {
-                            "text": "The U.S. president has spent the final days of the campaign hammering the issue as he tries to energize Republican voters, and his favorite target has been the"
-                        },
-                        {
-                            "link": "https://apnews.com/f14bb66b505d4e979c63ba9099bafed5",
-                            "text": "migrant caravan"
-                        },
-                        {
-                            "text": "of almost 4,000 people that is still more than 800 miles away from the nearest U.S. border. Three smaller ones are following behind it."
-                        },
-                        {
-                            "text": "Trump's recent statements include that he plans to sign an order that could lead to the detention of migrants crossing the southern border, and barring anyone caught crossing illegally from claiming asylum. Both propositions are legally dubious. Trump also said he had told the"
-                        },
-                        {
-                            "link": "https://apnews.com/d5889a081f2a4c548d7bc789a4487b20",
-                            "text": "U.S. military mobilizing"
-                        },
-                        {
-                            "text": "at the southwest border that if U.S. troops face rock-throwing migrants, they should react as though the rocks were \"rifles.\""
-                        },
-                        {
-                            "text": "\"It is pure ignorance for him to think like that,\" said Marta Cuellos, a 40-year-old from Tegucigalpa, the Honduran capital. \"A rock is not the same as a rifle.\""
-                        },
-                        {
-                            "text": "While some migrants have clashed with Mexican police at a bridge on the Guatemala border, most of those traveling with the caravans have been peaceful and say they are fleeing violence and poverty at home. Those traveling through the southern state of Oaxaca on Friday said they are not looking for trouble."
-                        },
-                        {
-                            "text": "Cuellos said she owned a cantina back home in Honduras but left because she could no longer make rent and was being harassed by police. She persuaded her 35-year-old sister to join her on the trip, and said the only thing they want is work and a better life in the United States. It's her second attempt. She first crossed into the U.S. seven years ago but was deported last year."
-                        },
-                        {
-                            "text": "Read more:"
-                        },
-                        {
-                            "link": "https://www.businessinsider.com/jeff-flake-against-trump-migrant-caravan-violence-press-2018-11",
-                            "text": "Trump 'calls real things fake and fake things real': Republican Jeff Flake grabs Trump by the collar over his claim that 'fake news' is behind political violence"
-                        },
-                        {
-                            "text": "Selvin Maldonado, a 25-year-old from Copan, Honduras, said he left his wife and baby daughter at home in search of a better living to support his children. He took his 5-year-old son, Dennys, with him."
-                        },
-                        {
-                            "text": "\"What Trump said is stupid,\" Maldonado said while walking to the town of Donaji. \"I don't want to attack police, because my concern is my son.\""
-                        },
-                        {
-                            "text": "The"
-                        },
-                        {
-                            "link": "https://apnews.com/14b55fb12cc843b58a82b28cb30f8eb8",
-                            "text": "migrants"
-                        },
-                        {
-                            "text": "also were also turned off by the U.S. president's characterization of the slow-moving caravan and the three smaller ones following as \"invasion.\" Trump has proposed detaining migrants in massive tent cities at the border."
-                        },
-                        {
-                            "text": "\"We are not killers,\" said Stephany Lopez, a 21-year-old Salvadoran with the first caravan. \"We just want to work for a few years, and after that he can deport us if he wants.\""
-                        },
-                        {
-                            "text": "Lopez noted that the president's mother, who was born in Scotland, was an immigrant."
-                        },
-                        {
-                            "text": "\"He should think of us as equals. Immigrants have built that country,\" she said."
-                        },
-                        {
-                            "text": "In June, U.S. Attorney General Jeff Sessions said that domestic and gang violence would generally no longer be accepted as reasons for migrants to be granted asylum. Trump has said this week that those in the caravan would not get asylum \u2014 though U.S. law allows them the right to apply \u2014 and warned them to turn around."
-                        },
-                        {
-                            "text": "The Trump administration's vehement opposition and tough rhetoric has at least some in the caravan weighing alternatives."
-                        },
-                        {
-                            "text": "Tifany Morandis, 19, was traveling with her husband, 28-year-old Javier Sanchez, and their two sons, 7-year-old Angel and 9-month-old Cesar. Her nose and face sun-scorched after many days on the road, she said she was very tired and is considering stopping in Tijuana, the Mexican border city across from San Diego."
-                        },
-                        {
-                            "text": "\"Donald Trump has made things very complicated at the border, and better that we stay in Tijuana than fight with him,\" Morandis said."
-                        },
-                        {
-                            "text": "But many are hopeful. \"Even stones can soften,\" Cuellos said."
-                        }
-                    ],
-                    "author": "Associated Press",
-                    "date": "2018-11-03",
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "Sonia Perez D."
+                    }
+                ],
+                "images": {
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "url": "https://amp.businessinsider.com/images/5bdd4273d1e84402eb227ed4-2732-1366.jpg"
+                    }
+                },
+                "info": {
                     "description": "As Trump ramps up his anti-migrant rhetoric ahead of the November 6 midterm elections, exhausted Central Americans say they're perplexed by his words.",
-                    "fb:pages": "20446254070",
-                    "imgs": [],
-                    "linkedin:owner": "mid:1d5f7b",
-                    "msapplication-config": "//media.businessinsider.com/public/assets/BI/US/favicons/browserconfig.xml",
-                    "news_keywords": "Central American migrants, Migrant Crisis, Donald Trump, Immigration Reform, Associated Press",
-                    "og:description": "As Trump ramps up his anti-migrant rhetoric ahead of the November 6 midterm elections, exhausted Central Americans say they're perplexed by his words.",
-                    "og:image": "https://amp.businessinsider.com/images/5bdd4273d1e84402eb227ed4-2732-1366.jpg",
-                    "og:site_name": "Business Insider",
-                    "og:title": "Central American migrants walking across Mexico to reach the US have a message for Trump: 'We are not killers'",
-                    "og:type": "article",
-                    "og:url": "https://www.businessinsider.com/central-american-migrants-have-a-message-for-trump-2018-11",
-                    "sailthru.date": "2018-11-03",
-                    "sailthru.description": "As Trump ramps up his anti-migrant rhetoric ahead of the November 6 midterm elections, exhausted Central Americans say they're perplexed by his words.",
-                    "sailthru.image.full": "https://amp.businessinsider.com/images/5bdd4293110d4c7dfe188bf2-2560-1920.jpg",
-                    "sailthru.image.thumb": "https://amp.businessinsider.com/images/5bdd4293110d4c7dfe188bf2-160-120.jpg",
-                    "sailthru.tags": "Central American migrants, Migrant Crisis, Donald Trump, Immigration Reform, Associated Press",
-                    "sailthru.title": "Central American migrants walking across Mexico to reach the US have a message for Trump: 'We are not killers'",
-                    "sailthru.verticals": "politics-contributor, politics",
-                    "tbi-image": "https://amp.businessinsider.com/images/5bdd4273d1e84402eb227ed4-2732-1366.jpg",
-                    "tbi-vertical": "Politics Contributors",
-                    "theme-color": "#1d607c",
                     "title": "Central American migrants walking across Mexico to reach the US have a message for Trump: 'We are not killers'",
-                    "twitter:card": "summary_large_image",
-                    "twitter:description": "As Trump ramps up his anti-migrant rhetoric ahead of the November 6 midterm elections, exhausted Central Americans say they're perplexed by his words.",
-                    "twitter:image": "https://amp.businessinsider.com/images/5bdd4273d1e84402eb227ed4-2732-1366.jpg",
-                    "twitter:site": "@bi_contributors",
-                    "twitter:title": "Central American migrants walking across Mexico to reach the US have a message for Trump: 'We are not killers'",
-                    "twitter:url": "https://www.businessinsider.com/central-american-migrants-have-a-message-for-trump-2018-11",
-                    "viewport": "width=device-width, initial-scale=1, maximum-scale=1"
-                }
-            ],
-            "url": "https://www.businessinsider.com/central-american-migrants-have-a-message-for-trump-2018-11"
+                    "url": "https://www.businessinsider.com/central-american-migrants-have-a-message-for-trump-2018-11"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "page_id": [
+                            "20446254070"
+                        ]
+                    },
+                    "organisation": "BI",
+                    "twitter": {
+                        "card": "summary_large_image",
+                        "description": "As Trump ramps up his anti-migrant rhetoric ahead of the November 6 midterm elections, exhausted Central Americans say they're perplexed by his words.",
+                        "handle": "@bi_contributors",
+                        "image": "https://amp.businessinsider.com/images/5bdd4273d1e84402eb227ed4-2732-1366.jpg",
+                        "title": "Central American migrants walking across Mexico to reach the US have a message for Trump: 'We are not killers'"
+                    }
+                },
+                "tags": [
+                    "Central American migrants",
+                    "Migrant Crisis",
+                    "Donald Trump",
+                    "Immigration Reform",
+                    "Associated Press"
+                ],
+                "text": {
+                    "markdown": "  * **Central Americans walking across Mexico in hopes of reaching the United States said they were mostly perplexed and turned off by President Donald Trump's increasingly volatile language toward the group.**\n  *  **The US president has spent the final days of the campaign hammering the issue as he tries to energize Republican voters.**\n  *  **Trump's recent statements include that he plans to sign an order that could lead to the detention of migrants crossing the southern border, and barring anyone caught crossing illegally from claiming asylum.**\n\nDONAJI, Mexico (AP) \u2014 As President Donald Trump ramped up his anti-migrant\nrhetoric ahead of Tuesday's midterm elections, exhausted Central Americans\nwalking across Mexico in hopes of reaching the United States said they were\nmostly perplexed and turned off by his threats, which they perceive as\nexaggerated.\n\nThe U.S. president has spent the final days of the campaign hammering the\nissue as he tries to energize Republican voters, and his favorite target has\nbeen the [migrant\ncaravan](https://apnews.com/f14bb66b505d4e979c63ba9099bafed5) of almost 4,000\npeople that is still more than 800 miles away from the nearest U.S. border.\nThree smaller ones are following behind it.\n\nTrump's recent statements include that he plans to sign an order that could\nlead to the detention of migrants crossing the southern border, and barring\nanyone caught crossing illegally from claiming asylum. Both propositions are\nlegally dubious. Trump also said he had told the [U.S. military\nmobilizing](https://apnews.com/d5889a081f2a4c548d7bc789a4487b20) at the\nsouthwest border that if U.S. troops face rock-throwing migrants, they should\nreact as though the rocks were \"rifles.\"\n\n\"It is pure ignorance for him to think like that,\" said Marta Cuellos, a 40\n-year-old from Tegucigalpa, the Honduran capital. \"A rock is not the same as a\nrifle.\"\n\nWhile some migrants have clashed with Mexican police at a bridge on the\nGuatemala border, most of those traveling with the caravans have been peaceful\nand say they are fleeing violence and poverty at home. Those traveling through\nthe southern state of Oaxaca on Friday said they are not looking for trouble.\n\nCuellos said she owned a cantina back home in Honduras but left because she\ncould no longer make rent and was being harassed by police. She persuaded her\n35-year-old sister to join her on the trip, and said the only thing they want\nis work and a better life in the United States. It's her second attempt. She\nfirst crossed into the U.S. seven years ago but was deported last year.\n\nRepublican Jeff Flake grabs Trump by the collar over his claim that 'fake\nnews' is behind political violence](https://www.businessinsider.com/jeff-\nflake-against-trump-migrant-caravan-violence-press-2018-11)_\n\nSelvin Maldonado, a 25-year-old from Copan, Honduras, said he left his wife\nand baby daughter at home in search of a better living to support his\nchildren. He took his 5-year-old son, Dennys, with him.\n\n\"What Trump said is stupid,\" Maldonado said while walking to the town of\nDonaji. \"I don't want to attack police, because my concern is my son.\"\n\nThe [migrants](https://apnews.com/14b55fb12cc843b58a82b28cb30f8eb8) also were\nalso turned off by the U.S. president's characterization of the slow-moving\ncaravan and the three smaller ones following as \"invasion.\" Trump has proposed\ndetaining migrants in massive tent cities at the border.\n\n\"We are not killers,\" said Stephany Lopez, a 21-year-old Salvadoran with the\nfirst caravan. \"We just want to work for a few years, and after that he can\ndeport us if he wants.\"\n\nLopez noted that the president's mother, who was born in Scotland, was an\nimmigrant.\n\n\"He should think of us as equals. Immigrants have built that country,\" she\nsaid.\n\nIn June, U.S. Attorney General Jeff Sessions said that domestic and gang\nviolence would generally no longer be accepted as reasons for migrants to be\ngranted asylum. Trump has said this week that those in the caravan would not\nget asylum \u2014 though U.S. law allows them the right to apply \u2014 and warned them\nto turn around.\n\nThe Trump administration's vehement opposition and tough rhetoric has at least\nsome in the caravan weighing alternatives.\n\nTifany Morandis, 19, was traveling with her husband, 28-year-old Javier\nSanchez, and their two sons, 7-year-old Angel and 9-month-old Cesar. Her nose\nand face sun-scorched after many days on the road, she said she was very tired\nand is considering stopping in Tijuana, the Mexican border city across from\nSan Diego.\n\n\"Donald Trump has made things very complicated at the border, and better that\nwe stay in Tijuana than fight with him,\" Morandis said.\n\nBut many are hopeful. \"Even stones can soften,\" Cuellos said.\n\n",
+                    "text": "\nCentral Americans walking across Mexico in hopes of reaching the United States said they were mostly perplexed and turned off by President Donald Trump's increasingly volatile language toward the group.\nThe US president has spent the final days of the campaign hammering the issue as he tries to energize Republican voters.\nTrump's recent statements include that he plans to sign an order that could lead to the detention of migrants crossing the southern border, and barring anyone caught crossing illegally from claiming asylum.\n\nDONAJI, Mexico (AP) \u2014 As President Donald Trump ramped up his anti-migrant\nrhetoric ahead of Tuesday's midterm elections, exhausted Central Americans\nwalking across Mexico in hopes of reaching the United States said they were\nmostly perplexed and turned off by his threats, which they perceive as\nexaggerated.\nThe U.S. president has spent the final days of the campaign hammering the\nissue as he tries to energize Republican voters, and his favorite target has\nbeen the migrant\ncaravan of almost 4,000\npeople that is still more than 800 miles away from the nearest U.S. border.\nThree smaller ones are following behind it.\nTrump's recent statements include that he plans to sign an order that could\nlead to the detention of migrants crossing the southern border, and barring\nanyone caught crossing illegally from claiming asylum. Both propositions are\nlegally dubious. Trump also said he had told the U.S. military\nmobilizing at the\nsouthwest border that if U.S. troops face rock-throwing migrants, they should\nreact as though the rocks were \"rifles.\"\n\"It is pure ignorance for him to think like that,\" said Marta Cuellos, a 40\n-year-old from Tegucigalpa, the Honduran capital. \"A rock is not the same as a\nrifle.\"\nWhile some migrants have clashed with Mexican police at a bridge on the\nGuatemala border, most of those traveling with the caravans have been peaceful\nand say they are fleeing violence and poverty at home. Those traveling through\nthe southern state of Oaxaca on Friday said they are not looking for trouble.\nCuellos said she owned a cantina back home in Honduras but left because she\ncould no longer make rent and was being harassed by police. She persuaded her\n35-year-old sister to join her on the trip, and said the only thing they want\nis work and a better life in the United States. It's her second attempt. She\nfirst crossed into the U.S. seven years ago but was deported last year.\nRepublican Jeff Flake grabs Trump by the collar over his claim that 'fake\nnews' is behind political violence](https://www.businessinsider.com/jeff-\nflake-against-trump-migrant-caravan-violence-press-2018-11)_\nSelvin Maldonado, a 25-year-old from Copan, Honduras, said he left his wife\nand baby daughter at home in search of a better living to support his\nchildren. He took his 5-year-old son, Dennys, with him.\n\"What Trump said is stupid,\" Maldonado said while walking to the town of\nDonaji. \"I don't want to attack police, because my concern is my son.\"\nThe migrants also were\nalso turned off by the U.S. president's characterization of the slow-moving\ncaravan and the three smaller ones following as \"invasion.\" Trump has proposed\ndetaining migrants in massive tent cities at the border.\n\"We are not killers,\" said Stephany Lopez, a 21-year-old Salvadoran with the\nfirst caravan. \"We just want to work for a few years, and after that he can\ndeport us if he wants.\"\nLopez noted that the president's mother, who was born in Scotland, was an\nimmigrant.\n\"He should think of us as equals. Immigrants have built that country,\" she\nsaid.\nIn June, U.S. Attorney General Jeff Sessions said that domestic and gang\nviolence would generally no longer be accepted as reasons for migrants to be\ngranted asylum. Trump has said this week that those in the caravan would not\nget asylum \u2014 though U.S. law allows them the right to apply \u2014 and warned them\nto turn around.\nThe Trump administration's vehement opposition and tough rhetoric has at least\nsome in the caravan weighing alternatives.\nTifany Morandis, 19, was traveling with her husband, 28-year-old Javier\nSanchez, and their two sons, 7-year-old Angel and 9-month-old Cesar. Her nose\nand face sun-scorched after many days on the road, she said she was very tired\nand is considering stopping in Tijuana, the Mexican border city across from\nSan Diego.\n\"Donald Trump has made things very complicated at the border, and better that\nwe stay in Tijuana than fight with him,\" Morandis said.\nBut many are hopeful. \"Even stones can soften,\" Cuellos said."
+                },
+                "time": {},
+                "videos": {}
+            },
+            "url": "https://www.businessinsider.com/central-american-migrants-have-a-message-for-trump"
         }
     ],
     "requests": [
@@ -133,7 +62,7 @@
         "https://www.businessinsider.com/all",
         "https://www.businessinsider.com/login",
         "https://www.businessinsider.com/subscription/prime",
-        "https://www.businessinsider.com/central-american-migrants-have-a-message-for-trump-2018-11",
+        "https://www.businessinsider.com/central-american-migrants-have-a-message-for-trump",
         "http://intelligence.businessinsider.com/?utm_source=businessinsider&utm_medium=site_dropdown&utm_term=bi_site_dropdown&utm_content=bi_site_dropdown&utm_campaign=bi_site_dropdown",
         "https://www.businessinsider.com/prime",
         "https://www.businessinsider.com/research",

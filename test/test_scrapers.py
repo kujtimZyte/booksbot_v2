@@ -233,6 +233,22 @@ class TestNewsSpider(unittest.TestCase):
             'apnews-69400c6164ec4813b1158fc5b6914c24.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_businessinsider_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'businessinsider.com.html',
+            'https://www.businessinsider.com',
+            'businessinsider.com.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_businessinsider_central_american_migrants_have_a_message_for_trump(self, mock_head):
+        self.check_fake_html_scrape(
+            'business-insider-central-american-migrants-have-a-message-for-trump.html',
+            'https://www.businessinsider.com/central-american-migrants-have-a-message-for-trump',
+            'business-insider-central-american-migrants-have-a-message-for-trump.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

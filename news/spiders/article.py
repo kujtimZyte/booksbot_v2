@@ -47,6 +47,15 @@ def fix_pixel_property(pixel_property):
     return int(float(pixel_property.replace('px', '')))
 
 
+def parse_date(datestring):
+    date = None
+    try:
+        date = parser.parse(datestring)
+    except ValueError:
+        return None
+    return date
+
+
 class ArticleTime(object):
     """Holds the information about the article time"""
     def __init__(self):
@@ -56,12 +65,12 @@ class ArticleTime(object):
 
     def set_published_time(self, published_time):
         """Sets the published time and parses the date"""
-        self.published_time = parser.parse(published_time)
+        self.published_time = parse_date(published_time)
 
 
     def set_modified_time(self, modified_time):
         """Sets the modified time and parses the date"""
-        self.modified_time = parser.parse(modified_time)
+        self.modified_time = parse_date(modified_time)
 
 
     def json(self):
