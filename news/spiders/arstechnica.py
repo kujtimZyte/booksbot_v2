@@ -35,7 +35,8 @@ def parse_metadata(meta_tags, article, soup):
     article.info.description = meta_tags['og:description']
     author = Author()
     author.name = parsley_page['author']
-    author.twitter_url = meta_tags['twitter:creator']
+    if 'twitter:creator' in meta_tags:
+        author.twitter_url = meta_tags['twitter:creator']
     for author_social_div in soup.findAll('div', {'class': 'author-bio'}):
         for a_tag in author_social_div.findAll('a'):
             if a_tag['href'].startswith('mailto:'):
