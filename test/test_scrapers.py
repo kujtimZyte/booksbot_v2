@@ -249,6 +249,14 @@ class TestNewsSpider(unittest.TestCase):
             'business-insider-central-american-migrants-have-a-message-for-trump.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_arstechnica_tales_of_an_aging_gamer_why_dont_i_pick_up_a_controller_as_often_as_i_used_to(self, mock_head):
+        self.check_fake_html_scrape(
+            'arstechnica-tales-of-an-aging-gamer-why-dont-i-pick-up-a-controller-as-often-as-i-used-to.html',
+            'https://arstechnica.com/gaming/2019/01/tales-of-an-aging-gamer-why-dont-i-pick-up-a-controller-as-often-as-i-used-to/',
+            'arstechnica-tales-of-an-aging-gamer-why-dont-i-pick-up-a-controller-as-often-as-i-used-to.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
