@@ -26,7 +26,8 @@ from .apnews import apnews_parse, apnews_url_parse, apnews_url_filter
 from .arstechnica import arstechnica_parse, arstechnica_url_parse, arstechnica_url_filter
 from .bbc import bbc_parse, bbc_url_parse, bbc_url_filter
 from .bloomberg import bloomberg_parse, bloomberg_url_parse, bloomberg_url_filter
-from .businessinsider import businessinsider_parse, businessinsider_url_parse, businessinsider_url_filter
+from .businessinsider import businessinsider_parse, \
+businessinsider_url_parse, businessinsider_url_filter
 
 
 DetectorFactory.seed = 0

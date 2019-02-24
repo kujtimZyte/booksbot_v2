@@ -190,7 +190,8 @@ def find_main_content(main_content_divs, article, response, soup):
         raise ValueError('Could not find the main content div: {}'.format(response.url))
     find_images(main_content_div, article, response)
     markdown_text = html2text.html2text(unicode(main_content_div))
-    markdown_text = '\n'.join([line for line in markdown_text.split('\n') if 'Read more:' not in line])
+    markdown_text = '\n'.join(
+        [line for line in markdown_text.split('\n') if 'Read more:' not in line])
     article.text.set_markdown_text(markdown_text)
 
 

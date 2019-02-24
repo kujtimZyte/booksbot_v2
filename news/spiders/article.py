@@ -48,6 +48,7 @@ def fix_pixel_property(pixel_property):
 
 
 def parse_date(datestring):
+    """Parses a date safely"""
     date = None
     try:
         date = parser.parse(datestring)
@@ -65,12 +66,16 @@ class ArticleTime(object):
 
     def set_published_time(self, published_time):
         """Sets the published time and parses the date"""
-        self.published_time = parse_date(published_time)
+        date = parse_date(published_time)
+        if date:
+            self.published_time = date
 
 
     def set_modified_time(self, modified_time):
         """Sets the modified time and parses the date"""
-        self.modified_time = parse_date(modified_time)
+        date = parse_date(modified_time)
+        if date:
+            self.modified_time = date
 
 
     def json(self):

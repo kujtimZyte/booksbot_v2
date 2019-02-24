@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup
 from .article import Article, Author
 from .common import strip_query_from_url, extract_metadata, remove_common_tags, find_main_content, \
-find_script_json, execute_script
+find_script_json
 
 
 def businessinsider_url_parse(url):
@@ -31,9 +31,9 @@ def businessinsider_parse(response):
     link_id = businessinsider_url_parse(response.url)
     if link_id is None:
         return None, link_id
-    article = Article()
     soup = BeautifulSoup(response.text, 'html.parser')
     meta_tags = extract_metadata(response)
+    article = Article()
     article.time.set_published_time(meta_tags['date'])
     for tag in meta_tags['news_keywords'].split(','):
         article.tags.append(tag.strip())
@@ -56,6 +56,6 @@ def businessinsider_parse(response):
     return article.json(), link_id
 
 
-def businessinsider_url_filter(url):
+def businessinsider_url_filter(_url):
     """Filters URLs in the Business Insider domain"""
     return True
