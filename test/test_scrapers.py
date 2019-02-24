@@ -225,6 +225,14 @@ class TestNewsSpider(unittest.TestCase):
             'arstechnica-hayao-miyazaki-doc-an-analog-animation-master-finds-new-technical-challenges.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_apnews_69400c6164ec4813b1158fc5b6914c24(self, mock_head):
+        self.check_fake_html_scrape(
+            'apnews-69400c6164ec4813b1158fc5b6914c24.html',
+            'https://www.apnews.com/69400c6164ec4813b1158fc5b6914c24',
+            'apnews-69400c6164ec4813b1158fc5b6914c24.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

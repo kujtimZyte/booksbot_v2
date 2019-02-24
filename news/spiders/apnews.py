@@ -24,8 +24,12 @@ def article_from_contents_value(contents_value, meta_tags):
     article = Article()
     for tag_obj in contents_value['tagObjs']:
         article.tags.append(tag_obj['name'])
-    article.time.set_published_time(contents_value['published'])
-    article.time.set_modified_time(contents_value['updated'])
+    modified_time = contents_value['updated']
+    article.time.set_modified_time(modified_time)
+    published_time = contents_value['published']
+    if not published_time:
+        published_time = modified_time
+    article.time.set_published_time(published_time)
     article.info.url = contents_value['localLinkUrl']
     article.info.title = contents_value['title']
     article.info.description = contents_value['headline']
@@ -45,10 +49,11 @@ def article_from_contents_value(contents_value, meta_tags):
                 video.url = 'https://www.youtube.com/watch?v=' + media['externalId']
                 video.mime_type = media['videoMimeType']
                 article.videos.videos.append(video)
-    for name in contents_value['bylines'].replace('By ', '').split(' and '):
-        author = Author()
-        author.name = name
-        article.authors.append(author)
+    if contents_value['bylines']:
+        for name in contents_value['bylines'].replace('By ', '').split(' and '):
+            author = Author()
+            author.name = name
+            article.authors.append(author)
     article.publisher.twitter.card = meta_tags['twitter:card']
     article.publisher.twitter.handle = meta_tags['twitter:site']
     article.publisher.twitter.image = meta_tags['twitter:image']
