@@ -49,10 +49,6 @@ def fix_pixel_property(pixel_property):
 
 class ArticleTime(object):
     """Holds the information about the article time"""
-    published_time = None
-    modified_time = None
-
-
     def __init__(self):
         self.published_time = None
         self.modified_time = None
