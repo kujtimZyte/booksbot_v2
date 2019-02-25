@@ -341,15 +341,6 @@ class Facebook(object):
 
 class Twitter(object):
     """An object for holding the twitter information"""
-    card = None
-    image = None
-    handle = None
-    image_alt = None
-    title = None
-    description = None
-    domain = None
-
-
     def __init__(self):
         self.card = None
         self.image = None
@@ -517,18 +508,6 @@ class Audio(RichMedia):
 # pylint: disable=too-many-instance-attributes
 class Article(object):
     """An object for holding an article"""
-    tags = []
-    time = ArticleTime()
-    info = Info()
-    images = Images()
-    location = Location()
-    authors = []
-    publisher = Publisher()
-    text = Text()
-    videos = Videos()
-    audio = []
-
-
     def __init__(self):
         self.tags = []
         self.time = ArticleTime()

@@ -1,24 +1,18 @@
 # -*- coding: utf-8 -*-
 """Parser for the Ars Technica website"""
-import hashlib
 import json
 from urlparse import urlparse
 from bs4 import BeautifulSoup
 from .article import Article, Author
-from .common import strip_query_from_url, \
-extract_metadata, \
+from .common import extract_metadata, \
 remove_common_tags, \
-find_main_content
+find_main_content, \
+extract_link_id
 
 
 def arstechnica_url_parse(url):
     """Parses the URL from an Ars Technica website"""
-    url = strip_query_from_url(url)
-    url_split = url.split('/')
-    if len(url_split) != 8:
-        return None
-    last_path = url_split[-2]
-    return hashlib.sha224(last_path).hexdigest()
+    return extract_link_id(url)
 
 
 def retrieve_encoded_json(encoded_json):
