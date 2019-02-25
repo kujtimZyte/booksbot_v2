@@ -1,24 +1,18 @@
 # -*- coding: utf-8 -*-
 """Parser for the Bloomberg website"""
-import hashlib
 from bs4 import BeautifulSoup
 from .article import Article
-from .common import strip_query_from_url, \
-extract_metadata, \
+from .common import extract_metadata, \
 remove_common_tags, \
 find_audio, \
 find_main_content, \
-find_script_json
+find_script_json, \
+extract_link_id
 
 
 def bloomberg_url_parse(url):
     """Parses the URL from a Bloomberg website"""
-    url = strip_query_from_url(url)
-    url_split = url.split('/')
-    if len(url_split) != 7:
-        return None
-    last_path = url_split[-1]
-    return hashlib.sha224(last_path).hexdigest()
+    return extract_link_id(url)
 
 
 def remove_tags(soup):

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Common utilities for scraping"""
+import hashlib
 import json
 import re
 from urllib import urlencode
@@ -126,7 +127,10 @@ def strip_query_from_url(url):
     query = parse_qs(parsed_url.query)
     query.pop('q2', None)
     parsed_url = parsed_url._replace(query=urlencode(query, True))
-    return urlunparse(parsed_url)
+    final_url = urlunparse(parsed_url)
+    if final_url[-1] == '/':
+        final_url = final_url[:-1]
+    return final_url
 
 
 def remove_common_tags(remove_items, soup):
@@ -200,21 +204,42 @@ def find_main_content(main_content_divs, article, response, soup):
     article.text.set_markdown_text(markdown_text)
 
 
+def author_from_json_author(json_author):
+    """Finds the author from the JSON author"""
+    if json_author['@type'] == 'Organization' or json_author['@type'] == 'NewsMediaOrganization':
+        return None
+    article_author = Author()
+    article_author.name = json_author['name']
+    return article_author
+
+
+def handle_script_json_authors(script_json, article):
+    """Handles the author parsing from the script JSON"""
+    if 'author' in script_json:
+        authors = script_json['author']
+        if isinstance(authors, list):
+            for author in authors:
+                article_author = author_from_json_author(author)
+                if article_author:
+                    article.authors.append(article_author)
+        elif isinstance(authors, dict):
+            author = authors
+            article_author = author_from_json_author(author)
+            if article_author:
+                article.authors.append(article_author)
+
+
 def find_script_json(soup, article):
     """Finds the script JSON"""
     for script_tag in soup.findAll('script', {'type': 'application/ld+json'}):
         script_json = json.loads(script_tag.text.replace('\\/', '/'))
-        if 'author' in script_json:
-            for author in script_json['author']:
-                if isinstance(author, unicode):
-                    continue
-                article_author = Author()
-                article_author.name = author['name']
-                article.authors.append(article_author)
+        handle_script_json_authors(script_json, article)
         if 'dateModified' in script_json:
             article.time.set_modified_time(script_json['dateModified'])
         if 'publisher' in script_json:
-            article.publisher.organisation = script_json['publisher']['name']
+            publisher = script_json['publisher']
+            if 'name' in publisher:
+                article.publisher.organisation = publisher['name']
         if 'url' in script_json:
             article.info.url = script_json['url']
         elif 'mainEntityOfPage' in script_json:
@@ -235,3 +260,15 @@ def common_response_data(response):
     meta_tags = extract_metadata(response)
     article = Article()
     return soup, meta_tags, article
+
+
+def extract_link_id(url, length=7, article_index=-1, use_hash=True):
+    """Extracts the link ID from a URL"""
+    url = strip_query_from_url(url)
+    url_split = url.split('/')
+    if len(url_split) != length:
+        return None
+    last_path = url_split[article_index]
+    if use_hash:
+        return hashlib.sha224(last_path).hexdigest()
+    return last_path
