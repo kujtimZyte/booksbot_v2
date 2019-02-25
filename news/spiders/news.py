@@ -195,7 +195,7 @@ class NewsSpider(scrapy.Spider):
             for domain in self.parsers:
                 if host_name.endswith(domain):
                     article, link_id = self.parsers[domain]["parser"](response)
-                    if link_id:
+                    if link_id and article:
                         check_valid_item(response.url, article)
                         if self.write_items_to_gcs(article, link_id, domain):
                             yield {
