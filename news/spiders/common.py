@@ -4,9 +4,10 @@ import json
 import re
 from urllib import urlencode
 from urlparse import urlparse, urlunparse, parse_qs
+from bs4 import BeautifulSoup
 import html2text
 import js2py
-from .article import Image, Audio, Author
+from .article import Image, Audio, Author, Article
 
 
 def extract_string_from_javascript(response_text, start_index):
@@ -190,8 +191,12 @@ def find_main_content(main_content_divs, article, response, soup):
         raise ValueError('Could not find the main content div: {}'.format(response.url))
     find_images(main_content_div, article, response)
     markdown_text = html2text.html2text(unicode(main_content_div))
-    markdown_text = '\n'.join(
-        [line for line in markdown_text.split('\n') if 'Read more:' not in line])
+    bad_line_flags = [
+        'Read more:'
+    ]
+    for bad_line_flag in bad_line_flags:
+        markdown_text = '\n'.join(
+            [line for line in markdown_text.split('\n') if bad_line_flag not in line])
     article.text.set_markdown_text(markdown_text)
 
 
@@ -199,22 +204,34 @@ def find_script_json(soup, article):
     """Finds the script JSON"""
     for script_tag in soup.findAll('script', {'type': 'application/ld+json'}):
         script_json = json.loads(script_tag.text.replace('\\/', '/'))
-        for author in script_json['author']:
-            if isinstance(author, unicode):
-                continue
-            article_author = Author()
-            article_author.name = author['name']
-            article.authors.append(article_author)
-        article.time.set_modified_time(script_json['dateModified'])
-        article.publisher.organisation = script_json['publisher']['name']
+        if 'author' in script_json:
+            for author in script_json['author']:
+                if isinstance(author, unicode):
+                    continue
+                article_author = Author()
+                article_author.name = author['name']
+                article.authors.append(article_author)
+        if 'dateModified' in script_json:
+            article.time.set_modified_time(script_json['dateModified'])
+        if 'publisher' in script_json:
+            article.publisher.organisation = script_json['publisher']['name']
         if 'url' in script_json:
             article.info.url = script_json['url']
-        else:
+        elif 'mainEntityOfPage' in script_json:
             article.info.url = script_json['mainEntityOfPage']
-        article.images.thumbnail.url = script_json['image']['url']
-        article.images.thumbnail.width = script_json['image']['width']
-        article.images.thumbnail.height = script_json['image']['height']
-        article.time.set_published_time(script_json['datePublished'])
-        article.info.title = script_json['headline']
+        if 'image' in script_json:
+            article.images.thumbnail.url = script_json['image']['url']
+            article.images.thumbnail.width = script_json['image']['width']
+            article.images.thumbnail.height = script_json['image']['height']
+            article.time.set_published_time(script_json['datePublished'])
+            article.info.title = script_json['headline']
         if 'description' in script_json:
             article.info.description = script_json['description']
+
+
+def common_response_data(response):
+    """Finds the common response data"""
+    soup = BeautifulSoup(response.text, 'html.parser')
+    meta_tags = extract_metadata(response)
+    article = Article()
+    return soup, meta_tags, article

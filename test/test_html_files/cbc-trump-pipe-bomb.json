@@ -1,186 +1,66 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "article:modified_time": "2018-10-26T08:00:00.770Z",
-                    "article:published_time": "2018-10-26T08:00:00.770Z",
-                    "articleBody": [
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "Robyn Urback"
+                    }
+                ],
+                "images": {
+                    "images": [
                         {
-                            "text": "It's a fallacy that the office holder of the president of the United States serves as a credible moral steward for the American people. The Oval Office has, after all, hosted slave owners and adulterers, accused sexual predators and liars, thugs and warmongers \u2014 men who would preach goodness and morality, yet live\u00a0(and often govern)\u00a0by a separate code."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://i.cbc.ca/1.3850814.1484834768!/fileImage/httpImage/image.jpg_gen/derivatives/square_140/robyn-urback.jpg"
                         },
                         {
-                            "text": "Many were the types of men who would never use the Lord's name in vain during intercourse with their mistresses."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://i.cbc.ca/1.4871262.1539989454!/cpImage/httpImage/image.jpg_gen/derivatives/16x9_780/trump.jpg"
                         },
                         {
-                            "text": "Most of these men, however, maintained an outward air of humility. Abraham Lincoln, shortly before he was nominated as the Republican candidate for president, wrote in a letter to a newspaper editor: \"I do not think myself fit for the presidency.\""
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://i.cbc.ca/1.4879154.1540516950!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/police-outside-time-warner-after-mail-bomb.jpg"
                         },
                         {
-                            "text": "Ronald Reagan famously held such esteem for the post that he wouldn't enter the Oval Office without wearing a jacket and tie. And even Richard Nixon, in a 1974 television campaign ad in support of\u00a0Barry Goldwater, said:\u00a0\"With all the power that a president has, the most important thing to bear in mind is this: You must not give power to a man unless, above everything else, he has character.\""
-                        },
-                        {
-                            "text": "Hypocrisy aside, throughout all the years of the U.S. presidency, there was generally a recognition that the office and its\u00a0message was\u00a0more important than the individual. Until now."
-                        },
-                        {
-                            "text": "There's no\u00a0humility \u2014 contrived or otherwise \u2014\u00a0with U.S. President Donald Trump. No deference to the esteem of the office or wider appeal for charity or goodness. In a perverse way, Trump actually embodies what he champions."
-                        },
-                        {
-                            "text": "Previous presidents preached morality while their administrations tortured prisoners; Trump preaches hate while mocking"
-                        },
-                        {
-                            "link": "https://www.cbc.ca/news/world/trump-reporter-with-disability-1.3338267",
-                            "text": "a disabled reporter"
-                        },
-                        {
-                            "text": "and a"
-                        },
-                        {
-                            "link": "https://www.cbc.ca/news/world/trump-christine-blasey-ford-brett-kavanaugh-mocking-testimony-1.4848230",
-                            "text": "sexual assault survivor"
-                        },
-                        {
-                            "text": ". It's ugly, sure, but it's consistent."
-                        },
-                        {
-                            "text": "That's why Trump's latest ignominy, in which he appeared to blame the mainstream media for the series of pipe bombs landing\u00a0in prominent mailboxes throughout the U.S., is perfectly in line with his version of the presidency."
-                        },
-                        {
-                            "text": "If anything, it's likely a galvanizing gesture for those who have grown to appreciate his authenticity."
-                        },
-                        {
-                            "text": "Trump's response to"
-                        },
-                        {
-                            "link": "http://www.cbc.ca/news/world/democrats-cnn-pipe-bombs-1.4877458",
-                            "text": "the spate of mail-bomb packages"
-                        },
-                        {
-                            "text": "was to suggest on Twitter Thursday that the media had provoked the madman who sent explosives to the Clintons, the Obamas, the CNN newsroom and others. There was certainly no culpability, as far as Trump was\u00a0concerned, on the part of the person who has explicitly and repeatedly made them targets by using the most powerful pulpit in America."
-                        },
-                        {
-                            "text": "Trump had made a call for unity in a prepared address the evening prior\u00a0\u2014\u00a0but he retreated to his favourite grievances online just a few hours later, which he is known to do."
-                        },
-                        {
-                            "text": "Indeed,\u00a0to have expected any other response from Trump would have been to confuse today's presidency with an incarnation that no longer exists: One in which the president would set a moral standard,\u00a0even if it wasn't actually reached."
-                        },
-                        {
-                            "text": "But morality appears to factor little into Trump's positions on fraught issues. He"
-                        },
-                        {
-                            "link": "https://www.cbc.ca/news/world/trump-charlottesville-al-left-blame-violence-1.4248466",
-                            "text": "struggled to condemn"
-                        },
-                        {
-                            "text": "neo-Nazis following a deadly rally in Charlottesville last year. He"
-                        },
-                        {
-                            "link": "https://www.cbc.ca/news/world/trump-border-entry-separation-1.4710448",
-                            "text": "defended the horrific practice"
-                        },
-                        {
-                            "text": "of separating and caging migrant children away from their families. He has saluted \u2014"
-                        },
-                        {
-                            "link": "https://www.youtube.com/watch?v=ZkhhWGiqDFc",
-                            "text": "literally, in one case"
-                        },
-                        {
-                            "text": "\u2014\u00a0ruthless regimes run by vile dictators."
-                        },
-                        {
-                            "text": "The off-the-cuff statements Trump made in each of the above cases \u2014 that there are \"good people\" on both sides, that migrant parents are to blame, that Kim Jong-Un knows how to make his people sit up and pay attention \u2014 reflected a fundamental lack of compassion, which is something that even the most hardline\u00a0presidents\u00a0maintained (or at least feigned to maintain), even while defending controversial policy."
-                        },
-                        {
-                            "text": "In the past we'd get political spin, of course.\u00a0But it was typically coupled with an authentic acknowledgement of pain or hardship\u00a0\u2014 a reminder that we are talking about"
-                        },
-                        {
-                            "text": "people"
-                        },
-                        {
-                            "text": ", not just issues."
-                        },
-                        {
-                            "text": "We're not used to a president who practically comes right out and says:\u00a0\"I don't care.\""
-                        },
-                        {
-                            "text": "Former CIA director John Brennan, who was one of the targets of this week's\u00a0mail bombs, slammed Trump for his callous response to the incident on Twitter, calling his response un-American and imploring him to \"act presidential.\" It's the same sort of plea Trump has heard since before he became president, and it remains as inconsequential now as it was then."
-                        },
-                        {
-                            "text": "This is a president who\u00a0is unconcerned with acting presidential,\u00a0who is apparently unburdened by the enormous moral authority conferred by his title. This is less a criticism than an observation:\u00a0Trump doesn't appear to"
-                        },
-                        {
-                            "text": "want"
-                        },
-                        {
-                            "text": "to steer the ethical\u00a0course of the nation. Indeed, he's less a moral steward of the American conscience\u00a0than an uncritical\u00a0reflection."
-                        },
-                        {
-                            "text": "Trump's supporters might argue that it's preferable to have an authentically depraved president than who preaches compassion and decency, then fails his own standard."
-                        },
-                        {
-                            "text": "But to completely abandon the notion \u2014 OK, the ideal \u2014 of the president as the nation's moral custodian is to suggest that words alone can't have influence.\u00a0(They can.) And it's to suggest that appealing to a higher standard is futile unless it is going to be met. (It's not.)"
-                        },
-                        {
-                            "text": "Many Americans still take their cues from the edicts of the person occupying the Oval Office. Ideally, he'd strive for better, not simply reflect the worst."
-                        },
-                        {
-                            "text": "This column is part of\u00a0CBC's"
-                        },
-                        {
-                            "link": "http://www.cbc.ca/news/opinion",
-                            "text": "Opinion section."
-                        },
-                        {
-                            "text": "For more information about this section, please read this"
-                        },
-                        {
-                            "link": "http://www.cbc.ca/newsblogs/community/editorsblog/2016/11/a-new-destination-for-debate-at-cbcnewsca.html",
-                            "text": "editor's\u00a0blog"
-                        },
-                        {
-                            "text": "and"
-                        },
-                        {
-                            "link": "http://www.cbc.ca/1.3834532",
-                            "text": "our\u00a0FAQ"
-                        },
-                        {
-                            "text": "."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://i.cbc.ca/1.4791100.1534708154!/cpImage/httpImage/image.jpg_gen/derivatives/original_780/trump-security-clearance.jpg"
                         }
                     ],
-                    "cXenseParse:cbc-authors": "Robyn Urback,CBC News",
-                    "cXenseParse:cbc-contentarea": "news",
-                    "cXenseParse:cbc-contentid": "1.4878980",
-                    "cXenseParse:cbc-contenttype": "story",
-                    "cXenseParse:cbc-originaltitle": "Trump is not America's moral steward. He's simply its reflection: Robyn Urback",
-                    "cXenseParse:cbc-pillar": "feed",
-                    "cXenseParse:cbc-publishedTime": "1540540800770",
-                    "cXenseParse:cbc-subsection1": "opinion",
-                    "cXenseParse:cbc-title": "Trump is not America's moral steward. He's simply its reflection: Robyn Urback",
-                    "cXenseParse:cbc-updatedTime": "1540540800770",
-                    "cXenseParse:cbc-url": "https://www.cbc.ca/news/opinion/trump-pipe-bomb-1.4878980",
-                    "cXenseParse:pageclass": "article",
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "url": "https://i.cbc.ca/1.4871262.1539989454!/cpImage/httpImage/image.jpg_gen/derivatives/16x9_620/trump.jpg"
+                    }
+                },
+                "info": {
                     "description": "In a perverse way, Donald Trump actually embodies what he champions. Previous presidents have preached morality while their administrations tortured prisoners; Trump preaches hate while mocking a disabled reporter and sexual assault survivor. It's ugly, sure, but it's consistent.",
-                    "fb:pages": "5823419603",
-                    "google-site-verification": "pJy_QmRvDz2tr7X8eQ6Y1L3Se-8RWM_PpJX42Pr_fYo",
-                    "imgs": [
-                        "https://i.cbc.ca/1.4879154.1540516950!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/police-outside-time-warner-after-mail-bomb.jpg",
-                        "https://i.cbc.ca/1.4791100.1534708154!/cpImage/httpImage/image.jpg_gen/derivatives/original_780/trump-security-clearance.jpg"
-                    ],
-                    "og:description": "In a perverse way, Donald Trump actually embodies what he champions. Previous presidents have preached morality while their administrations tortured prisoners; Trump preaches hate while mocking a disabled reporter and sexual assault survivor. It's ugly, sure, but it's consistent.",
-                    "og:image": "https://i.cbc.ca/1.4871262.1539989454!/cpImage/httpImage/image.jpg_gen/derivatives/16x9_620/trump.jpg",
-                    "og:locale": "en_US",
-                    "og:site_name": "CBC",
-                    "og:title": "Trump is not America's moral steward. He's simply its reflection: Opinion | CBC News",
-                    "og:type": "article",
-                    "og:url": "https://www.cbc.ca/news/opinion/trump-pipe-bomb-1.4878980",
-                    "twitter:card": "summary_large_image",
-                    "twitter:site": "@cbc",
-                    "vf:section": "2.7622",
-                    "vf:unique_id": "1.4878980",
-                    "viewport": "width=device-width, initial-scale=1"
-                }
-            ],
+                    "genre": "opinion",
+                    "title": "Trump is not America's moral steward. He's simply its reflection: Opinion | CBC News"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "page_id": [
+                            "5823419603"
+                        ]
+                    },
+                    "organisation": "CBC",
+                    "twitter": {
+                        "card": "summary_large_image",
+                        "handle": "@cbc"
+                    }
+                },
+                "tags": [],
+                "text": {
+                    "markdown": "Opinion\n\n# Trump is not America's moral steward. He's simply its reflection: Robyn\nUrback\n\nIn a perverse way, Donald Trump actually embodies what he champions. Previous\npresidents have preached morality while their administrations tortured\nprisoners; Trump preaches hate while mocking a disabled reporter and sexual\nassault survivor. It's ugly, sure, but it's consistent.\n\n## The U.S. president appeared to blame the media for the pipe bombs landing\nin Democrats' mailboxes this week\n\n![](https://i.cbc.ca/1.3850814.1484834768!/fileImage/httpImage/image.jpg_gen/derivatives/square_140\n/robyn-urback.jpg)\n\nRobyn Urback \u00b7 CBC News \u00b7 Posted: Oct 26, 2018 4:00 AM ET | Last Updated: 5\nhours ago\n\n![](https://i.cbc.ca/1.4871262.1539989454!/cpImage/httpImage/image.jpg_gen/derivatives/16x9_780/trump.jpg)\n\nU.S. President Donald Trump appeared to blame the mainstream media for the\nseries of pipe bombs landing in prominent mailboxes throughout America this\nweek. (Carolyn Kaster/Associated Press)\n\nIt's a fallacy that the office holder of the president of the United States\nserves as a credible moral steward for the American people. The Oval Office\nhas, after all, hosted slave owners and adulterers, accused sexual predators\nand liars, thugs and warmongers \u2014 men who would preach goodness and morality,\nyet live\u00a0(and often govern)\u00a0by a separate code.\n\nMany were the types of men who would never use the Lord's name in vain during\nintercourse with their mistresses.\n\nMost of these men, however, maintained an outward air of humility. Abraham\nLincoln, shortly before he was nominated as the Republican candidate for\npresident, wrote in a letter to a newspaper editor: \"I do not think myself fit\nfor the presidency.\"\n\nRonald Reagan famously held such esteem for the post that he wouldn't enter\nthe Oval Office without wearing a jacket and tie. And even Richard Nixon, in a\n1974 television campaign ad in support of\u00a0Barry Goldwater, said:\u00a0\"With all the\npower that a president has, the most important thing to bear in mind is this:\nYou must not give power to a man unless, above everything else, he has\ncharacter.\"\n\nHypocrisy aside, throughout all the years of the U.S. presidency, there was\ngenerally a recognition that the office and its\u00a0message was\u00a0more important\nthan the individual. Until now.\n\nThere's no\u00a0humility \u2014 contrived or otherwise \u2014\u00a0with U.S. President Donald\nTrump. No deference to the esteem of the office or wider appeal for charity or\ngoodness. In a perverse way, Trump actually embodies what he champions.\n\nPrevious presidents preached morality while their administrations tortured\nprisoners; Trump preaches hate while mocking [a disabled\nreporter](https://www.cbc.ca/news/world/trump-reporter-with-\ndisability-1.3338267) and a\u00a0[sexual assault\nsurvivor](https://www.cbc.ca/news/world/trump-christine-blasey-ford-brett-\nkavanaugh-mocking-testimony-1.4848230). It's ugly, sure, but it's consistent.\n\nThat's why Trump's latest ignominy, in which he appeared to blame the\nmainstream media for the series of pipe bombs landing\u00a0in prominent mailboxes\nthroughout the U.S., is perfectly in line with his version of the presidency.\n\nIf anything, it's likely a galvanizing gesture for those who have grown to\nappreciate his authenticity.\n\nTrump's response to [the spate of mail-bomb\npackages](http://www.cbc.ca/news/world/democrats-cnn-pipe-bombs-1.4877458)\u00a0was\nto suggest on Twitter Thursday that the media had provoked the madman who sent\nexplosives to the Clintons, the Obamas, the CNN newsroom and others. There was\ncertainly no culpability, as far as Trump was\u00a0concerned, on the part of the\nperson who has explicitly and repeatedly made them targets by using the most\npowerful pulpit in America.\n\nTrump had made a call for unity in a prepared address the evening prior\u00a0\u2014\u00a0but\nhe retreated to his favourite grievances online just a few hours later, which\nhe is known to do.\n\n![](https://i.cbc.ca/1.4879154.1540516950!/fileImage/httpImage/image.jpg_gen/derivatives/original_780\n/police-outside-time-warner-after-mail-bomb.jpg)\n\nPolice stand guard outside of the Time Warner Center in New York after an\nexplosive device was found there on Wednesday morning. (Spencer Platt/Getty\nImages)\n\nIndeed,\u00a0to have expected any other response from Trump would have been to\nconfuse today's presidency with an incarnation that no longer exists: One in\nwhich the president would set a moral standard,\u00a0even if it wasn't actually\nreached.\n\nBut morality appears to factor little into Trump's positions on fraught\nissues. He [struggled to condemn](https://www.cbc.ca/news/world/trump-\ncharlottesville-al-left-blame-violence-1.4248466) neo-Nazis following a deadly\nrally in Charlottesville last year. He [defended the horrific\npractice](https://www.cbc.ca/news/world/trump-border-entry-\nseparation-1.4710448) of separating and caging migrant children away from\ntheir families. He has saluted \u2014 [literally, in one\ncase](https://www.youtube.com/watch?v=ZkhhWGiqDFc)\u00a0\u2014\u00a0ruthless regimes run by\nvile dictators.\n\nThe off-the-cuff statements Trump made in each of the above cases \u2014 that there\nare \"good people\" on both sides, that migrant parents are to blame, that Kim\nJong-Un knows how to make his people sit up and pay attention \u2014 reflected a\nfundamental lack of compassion, which is something that even the most hardline\npresidents\u00a0maintained (or at least feigned to maintain), even while defending\ncontroversial policy.\n\nIn the past we'd get political spin, of course.\u00a0But it was typically coupled\nwith an authentic acknowledgement of pain or hardship\u00a0\u2014 a reminder that we are\ntalking about\u00a0 _people_ , not just issues.\n\nWe're not used to a president who practically comes right out and says:\u00a0\"I\ndon't care.\"\n\n![](https://i.cbc.ca/1.4791100.1534708154!/cpImage/httpImage/image.jpg_gen/derivatives/original_780\n/trump-security-clearance.jpg)\n\nFormer CIA director John Brennan took to Twitter to implore Trump to 'act\npresidential.' (Pablo Martinez Monsivai/Associated Press)\n\nFormer CIA director John Brennan, who was one of the targets of this week's\nmail bombs, slammed Trump for his callous response to the incident on Twitter,\ncalling his response un-American and imploring him to \"act presidential.\" It's\nthe same sort of plea Trump has heard since before he became president, and it\nremains as inconsequential now as it was then.\n\nThis is a president who\u00a0is unconcerned with acting presidential,\u00a0who is\napparently unburdened by the enormous moral authority conferred by his title.\nThis is less a criticism than an observation:\u00a0Trump doesn't appear to _want_\nto steer the ethical\u00a0course of the nation. Indeed, he's less a moral steward\nof the American conscience\u00a0than an uncritical\u00a0reflection.\n\nTrump's supporters might argue that it's preferable to have an authentically\ndepraved president than who preaches compassion and decency, then fails his\nown standard.\n\nBut to completely abandon the notion \u2014 OK, the ideal \u2014 of the president as the\nnation's moral custodian is to suggest that words alone can't have influence.\n(They can.) And it's to suggest that appealing to a higher standard is futile\nunless it is going to be met. (It's not.)\n\nMany Americans still take their cues from the edicts of the person occupying\nthe Oval Office. Ideally, he'd strive for better, not simply reflect the\nworst.\n\n* * *\n\n",
+                    "text": "Opinion\nTrump is not America's moral steward. He's simply its reflection: Robyn\nUrback\nIn a perverse way, Donald Trump actually embodies what he champions. Previous\npresidents have preached morality while their administrations tortured\nprisoners; Trump preaches hate while mocking a disabled reporter and sexual\nassault survivor. It's ugly, sure, but it's consistent.\nThe U.S. president appeared to blame the media for the pipe bombs landing\nin Democrats' mailboxes this week\n\nRobyn Urback \u00b7 CBC News \u00b7 Posted: Oct 26, 2018 4:00 AM ET | Last Updated: 5\nhours ago\n\nU.S. President Donald Trump appeared to blame the mainstream media for the\nseries of pipe bombs landing in prominent mailboxes throughout America this\nweek. (Carolyn Kaster/Associated Press)\nIt's a fallacy that the office holder of the president of the United States\nserves as a credible moral steward for the American people. The Oval Office\nhas, after all, hosted slave owners and adulterers, accused sexual predators\nand liars, thugs and warmongers \u2014 men who would preach goodness and morality,\nyet live\u00a0(and often govern)\u00a0by a separate code.\nMany were the types of men who would never use the Lord's name in vain during\nintercourse with their mistresses.\nMost of these men, however, maintained an outward air of humility. Abraham\nLincoln, shortly before he was nominated as the Republican candidate for\npresident, wrote in a letter to a newspaper editor: \"I do not think myself fit\nfor the presidency.\"\nRonald Reagan famously held such esteem for the post that he wouldn't enter\nthe Oval Office without wearing a jacket and tie. And even Richard Nixon, in a\n1974 television campaign ad in support of\u00a0Barry Goldwater, said:\u00a0\"With all the\npower that a president has, the most important thing to bear in mind is this:\nYou must not give power to a man unless, above everything else, he has\ncharacter.\"\nHypocrisy aside, throughout all the years of the U.S. presidency, there was\ngenerally a recognition that the office and its\u00a0message was\u00a0more important\nthan the individual. Until now.\nThere's no\u00a0humility \u2014 contrived or otherwise \u2014\u00a0with U.S. President Donald\nTrump. No deference to the esteem of the office or wider appeal for charity or\ngoodness. In a perverse way, Trump actually embodies what he champions.\nPrevious presidents preached morality while their administrations tortured\nprisoners; Trump preaches hate while mocking a disabled\nreporter and a\u00a0sexual assault\nsurvivor. It's ugly, sure, but it's consistent.\nThat's why Trump's latest ignominy, in which he appeared to blame the\nmainstream media for the series of pipe bombs landing\u00a0in prominent mailboxes\nthroughout the U.S., is perfectly in line with his version of the presidency.\nIf anything, it's likely a galvanizing gesture for those who have grown to\nappreciate his authenticity.\nTrump's response to the spate of mail-bomb\npackages\u00a0was\nto suggest on Twitter Thursday that the media had provoked the madman who sent\nexplosives to the Clintons, the Obamas, the CNN newsroom and others. There was\ncertainly no culpability, as far as Trump was\u00a0concerned, on the part of the\nperson who has explicitly and repeatedly made them targets by using the most\npowerful pulpit in America.\nTrump had made a call for unity in a prepared address the evening prior\u00a0\u2014\u00a0but\nhe retreated to his favourite grievances online just a few hours later, which\nhe is known to do.\n\nPolice stand guard outside of the Time Warner Center in New York after an\nexplosive device was found there on Wednesday morning. (Spencer Platt/Getty\nImages)\nIndeed,\u00a0to have expected any other response from Trump would have been to\nconfuse today's presidency with an incarnation that no longer exists: One in\nwhich the president would set a moral standard,\u00a0even if it wasn't actually\nreached.\nBut morality appears to factor little into Trump's positions on fraught\nissues. He struggled to condemn neo-Nazis following a deadly\nrally in Charlottesville last year. He defended the horrific\npractice of separating and caging migrant children away from\ntheir families. He has saluted \u2014 literally, in one\ncase\u00a0\u2014\u00a0ruthless regimes run by\nvile dictators.\nThe off-the-cuff statements Trump made in each of the above cases \u2014 that there\nare \"good people\" on both sides, that migrant parents are to blame, that Kim\nJong-Un knows how to make his people sit up and pay attention \u2014 reflected a\nfundamental lack of compassion, which is something that even the most hardline\npresidents\u00a0maintained (or at least feigned to maintain), even while defending\ncontroversial policy.\nIn the past we'd get political spin, of course.\u00a0But it was typically coupled\nwith an authentic acknowledgement of pain or hardship\u00a0\u2014 a reminder that we are\ntalking about\u00a0 people , not just issues.\nWe're not used to a president who practically comes right out and says:\u00a0\"I\ndon't care.\"\n\nFormer CIA director John Brennan took to Twitter to implore Trump to 'act\npresidential.' (Pablo Martinez Monsivai/Associated Press)\nFormer CIA director John Brennan, who was one of the targets of this week's\nmail bombs, slammed Trump for his callous response to the incident on Twitter,\ncalling his response un-American and imploring him to \"act presidential.\" It's\nthe same sort of plea Trump has heard since before he became president, and it\nremains as inconsequential now as it was then.\nThis is a president who\u00a0is unconcerned with acting presidential,\u00a0who is\napparently unburdened by the enormous moral authority conferred by his title.\nThis is less a criticism than an observation:\u00a0Trump doesn't appear to want\nto steer the ethical\u00a0course of the nation. Indeed, he's less a moral steward\nof the American conscience\u00a0than an uncritical\u00a0reflection.\nTrump's supporters might argue that it's preferable to have an authentically\ndepraved president than who preaches compassion and decency, then fails his\nown standard.\nBut to completely abandon the notion \u2014 OK, the ideal \u2014 of the president as the\nnation's moral custodian is to suggest that words alone can't have influence.\n(They can.) And it's to suggest that appealing to a higher standard is futile\nunless it is going to be met. (It's not.)\nMany Americans still take their cues from the edicts of the person occupying\nthe Oval Office. Ideally, he'd strive for better, not simply reflect the\nworst.\n"
+                },
+                "time": {
+                    "modified_time": 1540540800.77,
+                    "published_time": 1540540800.77
+                },
+                "videos": {}
+            },
             "url": "https://www.cbc.ca/news/opinion/trump-pipe-bomb-1.4878980"
         }
     ],

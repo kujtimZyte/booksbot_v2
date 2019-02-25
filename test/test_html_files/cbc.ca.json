@@ -1,7 +1,7 @@
 {
     "items": [],
     "requests": [
-        "https://www.cbc.ca/#content",
+        "https://www.cbc.ca#content",
         "https://www.cbc.ca/",
         "https://www.cbc.ca/sitemap",
         "https://www.cbc.ca/search",
