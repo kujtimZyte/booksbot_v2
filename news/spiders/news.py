@@ -28,6 +28,7 @@ from .bbc import bbc_parse, bbc_url_parse, bbc_url_filter
 from .bloomberg import bloomberg_parse, bloomberg_url_parse, bloomberg_url_filter
 from .businessinsider import businessinsider_parse, \
 businessinsider_url_parse, businessinsider_url_filter
+from .cbc import cbc_parse, cbc_url_parse, cbc_url_filter
 
 
 DetectorFactory.seed = 0
@@ -115,7 +116,8 @@ class NewsSpider(scrapy.Spider):
         "arstechnica.com",
         "bbc.com",
         "bloomberg.com",
-        "businessinsider.com"
+        "businessinsider.com",
+        "cbc.ca"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
@@ -123,7 +125,8 @@ class NewsSpider(scrapy.Spider):
         'https://arstechnica.com/',
         'http://www.bbc.com',
         'https://www.bloomberg.com/',
-        'https://www.businessinsider.com/'
+        'https://www.businessinsider.com/',
+        'https://www.cbc.ca/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -165,6 +168,12 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": businessinsider_url_parse,
             "url_filter": businessinsider_url_filter
+        },
+        "cbc.ca": {
+            "parser": cbc_parse,
+            "splash": False,
+            "url_parse": cbc_url_parse,
+            "url_filter": cbc_url_filter
         }
     }
 

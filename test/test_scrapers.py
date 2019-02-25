@@ -257,6 +257,22 @@ class TestNewsSpider(unittest.TestCase):
             'arstechnica-tales-of-an-aging-gamer-why-dont-i-pick-up-a-controller-as-often-as-i-used-to.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cbc_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'cbc.ca.html',
+            'https://www.cbc.ca',
+            'cbc.ca.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cbc_trump_pipe_bomb(self, mock_head):
+        self.check_fake_html_scrape(
+            'cbc-trump-pipe-bomb.html',
+            'https://www.cbc.ca/news/opinion/trump-pipe-bomb-1.4878980',
+            'cbc-trump-pipe-bomb.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

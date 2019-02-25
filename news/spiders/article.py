@@ -280,17 +280,12 @@ class Location(object):
 
 class Author(object):
     """An object for holding the author"""
-    url = None
-    name = None
-    twitter_url = None
-    email = None
-
-
     def __init__(self):
         self.url = None
         self.name = None
         self.twitter_url = None
         self.email = None
+        self.image = Image()
 
 
     def set_url(self, url):
@@ -309,6 +304,10 @@ class Author(object):
             author_info['twitter_url'] = self.twitter_url
         if self.email:
             author_info['email'] = self.email
+        if self.image:
+            image_dict = self.image.json()
+            if image_dict:
+                author_info['image'] = image_dict
         return author_info
 
 
