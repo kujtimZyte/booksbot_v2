@@ -33,6 +33,8 @@ def businessinsider_parse(response):
         return None, link_id
     soup = BeautifulSoup(response.text, 'html.parser')
     meta_tags = extract_metadata(response)
+    if meta_tags['og:type'] != 'article':
+        return None, link_id
     article = Article()
     article.time.set_published_time(meta_tags['date'])
     for tag in meta_tags['news_keywords'].split(','):
