@@ -305,6 +305,14 @@ class TestNewsSpider(unittest.TestCase):
             'cbsnews-u-s-military-might-struggle-to-win-or-perhaps-lose-war-with-china-or-russia-report-says.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_bbc_15561348(self, mock_head):
+        self.check_fake_html_scrape(
+            'bbc-15561348.html',
+            'https://www.bbc.com/sport/15561348',
+            'bbc-15561348.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

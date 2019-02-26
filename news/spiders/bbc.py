@@ -44,6 +44,8 @@ def bbc_parse(response):
         article.tags.append(str(li_tag.text))
     find_script_json(soup, article)
     meta_tags = extract_metadata(response)
+    if 'twitter:title' not in meta_tags:
+        return None, link_id
     article.info.description = meta_tags['og:description']
     article.info.genre = meta_tags['article:section']
     article.images.thumbnail.alt = meta_tags['og:image:alt']
