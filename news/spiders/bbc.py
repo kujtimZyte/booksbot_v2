@@ -67,4 +67,6 @@ def bbc_url_filter(url):
     """Filters URLs in the BBC domain"""
     if '/vietnamese/' in url:
         return False
+    if '/uzbek/' in url:
+        return False
     return True
