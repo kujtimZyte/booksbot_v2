@@ -41,6 +41,8 @@ def cbc_parse(response):
     if link_id is None:
         return None, link_id
     soup, meta_tags, article = common_response_data(response)
+    if meta_tags['og:type'] != 'article':
+        return None, link_id
     article.publisher.organisation = meta_tags['og:site_name']
     article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
     article.publisher.twitter.card = meta_tags['twitter:card']

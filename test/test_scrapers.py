@@ -313,6 +313,14 @@ class TestNewsSpider(unittest.TestCase):
             'bbc-15561348.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cbc_ottawa(self, mock_head):
+        self.check_fake_html_scrape(
+            'cbc-ottawa.html',
+            'https://www.cbc.ca/news/canada/ottawa',
+            'cbc-ottawa.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
