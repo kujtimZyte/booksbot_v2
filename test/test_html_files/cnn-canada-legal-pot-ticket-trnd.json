@@ -1,66 +1,62 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "alternativeHeadline": "Weed was legal in Canada for a whole hour before someone got a ticket for driving and toking",
-                    "articleBody": [
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "AJ Willingham"
+                    }
+                ],
+                "images": {
+                    "images": [
                         {
-                            "text": "The Winnipeg Police posted a photo later that day of a (redacted) traffic ticket one of its officers had to write for \"consuming cannabis in a motor vehicle.\""
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://cdn.cnn.com/cnnnext/dam/assets/170525153722-willingham-profile-small-11.jpg"
                         },
                         {
-                            "text": "\"So... this happened early this morning,\" the police department wrote. \"Just like alcohol, consuming cannabis is legal - and like alcohol, consuming it in your vehicle is **not**.\""
-                        },
-                        {
-                            "text": "Winnipeg Police Service traffic division Insp. Gord Spado"
-                        },
-                        {
-                            "link": "https://www.cbc.ca/news/canada/manitoba/cannabis-consumption-car-ticket-1.4867328",
-                            "text": "told CBC news"
-                        },
-                        {
-                            "text": "the ticket was issued by an officer at approximately 1 a.m., a whole hour after pot buying became legal. He told CBC the weed involved in this particular traffic stop was probably illegally purchased. (CNN has reached out to the department for details.)"
-                        },
-                        {
-                            "text": "While many Canadians are stoked to toke in a legal fashion now, the Winnipeg Police reminded people in a subsequent tweet that"
-                        },
-                        {
-                            "link": "https://lgcamb.ca/cannabis/",
-                            "text": "there are still laws and regulations that go along with the new provisions"
-                        },
-                        {
-                            "text": "."
-                        },
-                        {
-                            "text": "\"Bottom line is that you cannot consume cannabis in your vehicle,\""
-                        },
-                        {
-                            "link": "https://twitter.com/wpgpolice/status/1052665350486192128",
-                            "text": "it tweeted"
-                        },
-                        {
-                            "text": "."
-                        },
-                        {
-                            "link": "https://www.cnn.com/2018/10/17/health/canada-legalizes-recreational-marijuana/index.html",
-                            "text": "Here's what you need to know about recreational pot in Canada"
+                            "alt": "Marijuana is now legal across Canada",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://cdn.cnn.com/cnnnext/dam/assets/181017100947-02-canada-weed-1017-exlarge-169.jpg"
                         }
                     ],
-                    "articleSection": "health",
-                    "author": "AJ Willingham, CNN",
-                    "dateCreated": "2018-10-18T13:41:12Z",
-                    "dateModified": "2018-10-18T16:17:50Z",
-                    "datePublished": "2018-10-18T13:41:12Z",
-                    "description": "This is why we can't have nice things, random traffic offender. ",
-                    "headline": "Weed was legal in Canada for a whole hour before someone messed it up  - CNN",
-                    "image": "https://cdn.cnn.com/cnnnext/dam/assets/181018092408-canada-pot-ticket-super-tease.jpg",
-                    "imgs": [],
-                    "isPartOf": "health",
-                    "keywords": "health, Weed was legal in Canada for a whole hour before someone messed it up  - CNN",
-                    "thumbnailUrl": "https://cdn.cnn.com/cnnnext/dam/assets/181018092408-canada-pot-ticket-super-tease.jpg",
-                    "url": "https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd/index.html"
-                }
-            ],
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 619,
+                        "url": "https://cdn.cnn.com/cnnnext/dam/assets/181017100947-02-canada-weed-1017-exlarge-169.jpg",
+                        "width": 1100
+                    }
+                },
+                "info": {
+                    "description": "Canadians can purchase recreational marijuana legally, with the country becoming the second in the world to legalize its use after Uruguay. ",
+                    "title": "Weed was legal in Canada for a whole hour before someone got a ticket for driving and toking",
+                    "url": "https://www.cnn.com/videos/health/2018/10/17/canada-legalizes-weed-marijuana-sje-lon-orig.cnn"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "app_id": "80401312489",
+                        "page_id": [
+                            "5550296508,18793419640"
+                        ]
+                    },
+                    "twitter": {
+                        "description": "This is why we can't have nice things, random traffic offender. ",
+                        "image": "https://cdn.cnn.com/cnnnext/dam/assets/181018092408-canada-pot-ticket-super-tease.jpg",
+                        "title": "Weed was legal in Canada for a whole hour before someone got a ticket for driving and toking"
+                    }
+                },
+                "tags": [
+                    "health",
+                    "Weed was legal in Canada for a whole hour before someone messed it up  - CNN"
+                ],
+                "text": {
+                    "markdown": "# Weed was legal in Canada for a whole hour before someone got a ticket for\ndriving and toking\n\n[![](//cdn.cnn.com/cnnnext/dam/assets/170525153722-willingham-profile-\nsmall-11.jpg)](/profiles/aj-willingham-profile)\n\nBy [AJ Willingham](/profiles/aj-willingham-profile), CNN\n\nUpdated 12:17 PM ET, Thu October 18, 2018\n\n![Marijuana is now legal across\nCanada](//cdn.cnn.com/cnnnext/dam/assets/181017100947-02-canada-\nweed-1017-exlarge-169.jpg)\n\n(CNN)Pot was legalized in Canada on Wednesday, and things went great ... for\nexactly one hour.\n\nThe Winnipeg Police posted a photo later that day of a (redacted) traffic\nticket one of its officers had to write for \"consuming cannabis in a motor\nvehicle.\"\n\n\"So... this happened early this morning,\" the police department wrote. \"Just\nlike alcohol, consuming cannabis is legal - and like alcohol, consuming it in\nyour vehicle is **not**.\"\n\nWinnipeg Police Service traffic division Insp. Gord Spado[ told CBC\nnews](https://www.cbc.ca/news/canada/manitoba/cannabis-consumption-car-\nticket-1.4867328) the ticket was issued by an officer at approximately 1 a.m.,\na whole hour after pot buying became legal. He told CBC the weed involved in\nthis particular traffic stop was probably illegally purchased. (CNN has\nreached out to the department for details.)\n\nWhile many Canadians are stoked to toke in a legal fashion now, the Winnipeg\nPolice reminded people in a subsequent tweet that[ there are still laws and\nregulations that go along with the new\nprovisions](https://lgcamb.ca/cannabis/).\n\n\"Bottom line is that you cannot consume cannabis in your vehicle,\" [it\ntweeted](https://twitter.com/wpgpolice/status/1052665350486192128).\n\n**READ MORE:[ ****Here's what you need to know about recreational pot in\nCanada](https://www.cnn.com/2018/10/17/health/canada-legalizes-recreational-\nmarijuana/index.html)**\n\n  * \n\n",
+                    "text": "Weed was legal in Canada for a whole hour before someone got a ticket for\ndriving and toking\n\nBy AJ Willingham, CNN\nUpdated 12:17 PM ET, Thu October 18, 2018\n\n(CNN)Pot was legalized in Canada on Wednesday, and things went great ... for\nexactly one hour.\nThe Winnipeg Police posted a photo later that day of a (redacted) traffic\nticket one of its officers had to write for \"consuming cannabis in a motor\nvehicle.\"\n\"So... this happened early this morning,\" the police department wrote. \"Just\nlike alcohol, consuming cannabis is legal - and like alcohol, consuming it in\nyour vehicle is not.\"\nWinnipeg Police Service traffic division Insp. Gord Spado told CBC\nnews the ticket was issued by an officer at approximately 1 a.m.,\na whole hour after pot buying became legal. He told CBC the weed involved in\nthis particular traffic stop was probably illegally purchased. (CNN has\nreached out to the department for details.)\nWhile many Canadians are stoked to toke in a legal fashion now, the Winnipeg\nPolice reminded people in a subsequent tweet that there are still laws and\nregulations that go along with the new\nprovisions.\n\"Bottom line is that you cannot consume cannabis in your vehicle,\" it\ntweeted.\nREAD MORE: ****Here's what you need to know about recreational pot in\nCanada\n\n\n"
+                },
+                "time": {},
+                "videos": {}
+            },
             "url": "https://www.cnn.com/2018/10/18/health/canada-legal-pot-ticket-trnd"
         }
     ],

@@ -229,6 +229,19 @@ def handle_script_json_authors(script_json, article):
                 article.authors.append(article_author)
 
 
+def handle_script_image(script_json, article):
+    """Handles the script image field in the JSON context"""
+    if 'image' in script_json:
+        image = script_json['image']
+        if isinstance(image, basestring):
+            article.images.thumbnail.url = image
+        else:
+            if 'url' in image:
+                article.images.thumbnail.url = image['url']
+            article.images.thumbnail.width = image['width']
+            article.images.thumbnail.height = image['height']
+
+
 def find_script_json(soup, article):
     """Finds the script JSON"""
     for script_tag in soup.findAll('script', {'type': 'application/ld+json'}):
@@ -244,11 +257,10 @@ def find_script_json(soup, article):
             article.info.url = script_json['url']
         elif 'mainEntityOfPage' in script_json:
             article.info.url = script_json['mainEntityOfPage']
-        if 'image' in script_json:
-            article.images.thumbnail.url = script_json['image']['url']
-            article.images.thumbnail.width = script_json['image']['width']
-            article.images.thumbnail.height = script_json['image']['height']
+        handle_script_image(script_json, article)
+        if 'datePublished' in script_json:
             article.time.set_published_time(script_json['datePublished'])
+        if 'headline' in script_json:
             article.info.title = script_json['headline']
         if 'description' in script_json:
             article.info.description = script_json['description']
@@ -266,6 +278,8 @@ def extract_link_id(url, length=7, article_index=-1, use_hash=True):
     """Extracts the link ID from a URL"""
     url = strip_query_from_url(url)
     url_split = url.split('/')
+    if url_split[-1] == 'index.html':
+        url_split = url_split[:-1]
     if len(url_split) != length:
         return None
     last_path = url_split[article_index]
@@ -287,8 +301,10 @@ def parse_meta_tags(meta_tags, article):
         article.images.thumbnail.height = meta_tags['og:image:height']
     if 'fb:pages' in meta_tags:
         article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
-    article.publisher.facebook.url = meta_tags['article:publisher']
-    article.publisher.twitter.handle = meta_tags['twitter:site']
+    if 'article:publisher' in meta_tags:
+        article.publisher.facebook.url = meta_tags['article:publisher']
+    if 'twitter:site' in meta_tags:
+        article.publisher.twitter.handle = meta_tags['twitter:site']
     article.publisher.twitter.title = meta_tags['twitter:title']
     article.publisher.twitter.description = meta_tags['twitter:description']
     article.publisher.twitter.image = meta_tags['twitter:image']
