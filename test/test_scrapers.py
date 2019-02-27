@@ -321,6 +321,22 @@ class TestNewsSpider(unittest.TestCase):
             'cbc-ottawa.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cnbc_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'cnbc.com.html',
+            'https://www.cnbc.com/',
+            'cnbc.com.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cnbc_heres_what_every_major_wall_street_firm_expects_from_the_election_and_how_to_play_it(self, mock_head):
+        self.check_fake_html_scrape(
+            'cnbc-heres-what-every-major-wall-street-firm-expects-from-the-election-and-how-to-play-it.html',
+            'https://www.cnbc.com/2018/11/06/heres-what-every-major-wall-street-firm-expects-from-the-election-and-how-to-play-it.html',
+            'cnbc-heres-what-every-major-wall-street-firm-expects-from-the-election-and-how-to-play-it.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

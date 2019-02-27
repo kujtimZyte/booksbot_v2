@@ -272,3 +272,31 @@ def extract_link_id(url, length=7, article_index=-1, use_hash=True):
     if use_hash:
         return hashlib.sha224(last_path).hexdigest()
     return last_path
+
+
+def parse_meta_tags(meta_tags, article):
+    """Extracts the necessary meta tags into the article"""
+    for keyword in meta_tags['keywords'].split(','):
+        article.tags.append(keyword.strip())
+    article.info.title = meta_tags['og:title']
+    article.info.description = meta_tags['og:description']
+    article.images.thumbnail.url = meta_tags['og:image']
+    if 'og:image:width' in meta_tags:
+        article.images.thumbnail.width = meta_tags['og:image:width']
+    if 'og:image:height' in meta_tags:
+        article.images.thumbnail.height = meta_tags['og:image:height']
+    if 'fb:pages' in meta_tags:
+        article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
+    article.publisher.facebook.url = meta_tags['article:publisher']
+    article.publisher.twitter.handle = meta_tags['twitter:site']
+    article.publisher.twitter.title = meta_tags['twitter:title']
+    article.publisher.twitter.description = meta_tags['twitter:description']
+    article.publisher.twitter.image = meta_tags['twitter:image']
+    if 'fb:app_id' in meta_tags:
+        article.publisher.facebook.app_id = meta_tags['fb:app_id']
+
+
+def find_common(soup, meta_tags, article):
+    """Extracts common elements from the page"""
+    parse_meta_tags(meta_tags, article)
+    find_script_json(soup, article)
