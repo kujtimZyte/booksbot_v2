@@ -2,7 +2,7 @@
 """Parser for the CNN website"""
 from .article import Author
 from .common import find_main_content, remove_common_tags, execute_script,\
-find_script_json, common_response_data, extract_link_id, parse_meta_tags
+common_response_data, extract_link_id, find_common
 
 
 def cnn_url_parse(url):
@@ -32,15 +32,14 @@ def cnn_parse(response):
     if link_id is None:
         return None, link_id
     soup, meta_tags, article = common_response_data(response)
-    parse_meta_tags(meta_tags, article)
-    find_script_json(soup, article)
+    find_common(soup, meta_tags, article)
     for script_tag in soup.findAll('script'):
         context = execute_script(script_tag)
         if not hasattr(context, 'CNN'):
             continue
         if hasattr(context.CNN, 'contentModel'):
-            contentModel = context.CNN['contentModel']
-            analytics = contentModel['analytics']
+            content_model = context.CNN['contentModel']
+            analytics = content_model['analytics']
             author = Author()
             author.name = analytics['author'].replace('By ', '').replace(', CNN', '')
             if author.name == "CNN Library":

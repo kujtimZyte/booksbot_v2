@@ -229,6 +229,19 @@ def handle_script_json_authors(script_json, article):
                 article.authors.append(article_author)
 
 
+def handle_script_image(script_json, article):
+    """Handles the script image field in the JSON context"""
+    if 'image' in script_json:
+        image = script_json['image']
+        if isinstance(image, basestring):
+            article.images.thumbnail.url = image
+        else:
+            if 'url' in image:
+                article.images.thumbnail.url = image['url']
+            article.images.thumbnail.width = image['width']
+            article.images.thumbnail.height = image['height']
+
+
 def find_script_json(soup, article):
     """Finds the script JSON"""
     for script_tag in soup.findAll('script', {'type': 'application/ld+json'}):
@@ -244,15 +257,7 @@ def find_script_json(soup, article):
             article.info.url = script_json['url']
         elif 'mainEntityOfPage' in script_json:
             article.info.url = script_json['mainEntityOfPage']
-        if 'image' in script_json:
-            image = script_json['image']
-            if isinstance(image, basestring):
-                article.images.thumbnail.url = image
-            else:
-                if 'url' in image:
-                    article.images.thumbnail.url = image['url']
-                article.images.thumbnail.width = image['width']
-                article.images.thumbnail.height = image['height']
+        handle_script_image(script_json, article)
         if 'datePublished' in script_json:
             article.time.set_published_time(script_json['datePublished'])
         if 'headline' in script_json:
