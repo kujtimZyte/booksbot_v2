@@ -1,66 +1,57 @@
 # -*- coding: utf-8 -*-
 """Parser for the CNN website"""
-from .common import extract_text_with_links
+from .article import Author
+from .common import find_main_content, remove_common_tags, execute_script,\
+find_script_json, common_response_data, extract_link_id, parse_meta_tags
 
 
-def is_bad_img(img):
-    """
-    Checks whether an image is worthy of inclusion
-    """
-    bad_imgs = [
-        'outbrain',
-        'data:image',
-        'cnnnext'
-    ]
-    for bad_img in bad_imgs:
-        if bad_img in img:
-            return True
-    return False
+def cnn_url_parse(url):
+    """Parses the URL from a CNN website"""
+    return extract_link_id(url, length=8)
 
 
-def extract_paragraphs(itemprop_element):
-    """
-    Extract the paragraphs from an article element
-    """
-    removeable_paragraphs = [
-        u'Paid Content',
-        u'More from CNN',
-        u'Read More',
-        u'Recommended by',
-        u'READ MORE:'
-    ]
-    paragraphs = []
-    for paragraph_div in itemprop_element.css(
-            'div.zn-body__paragraph'):
-        paragraph_list = extract_text_with_links(paragraph_div, removeable_paragraphs)
-        if paragraph_list:
-            paragraphs.extend(paragraph_list)
-    return paragraphs
+def remove_tags(soup):
+    """Removes the useless tags from the HTML"""
+    remove_common_tags([
+        {'tag': 'article', 'meta': {'class': 'cd'}},
+        {'tag': 'div', 'meta': {'class': 'column'}},
+        {'tag': 'div', 'meta': {'class': 'zn-body__read-more'}},
+        {'tag': 'div', 'meta': {'class': 'video__end-slate__top-wrapper'}},
+        {'tag': 'h4', 'meta': {'class': 'video__end-slate__tertiary-title'}},
+        {'tag': 'div', 'meta': {'class': 'cn-carousel-medium-strip'}},
+        {'tag': 'div', 'meta': {'class': 'gigya-sharebar-element'}},
+        {'tag': 'div', 'meta': {'class': 'el__gallery-showhide'}},
+        {'tag': 'span', 'meta': {'class': 'el__storyelement__gray'}},
+        {'tag': 'span', 'meta': {'class': 'el__storyelement__header'}}
+    ], soup)
 
 
 def cnn_parse(response):
-    """
-    Parses the CNN website from a scrapy response
-    """
-    items = []
-    for article in response.css("article"):
-        item = {}
-        for itemprop in article.xpath('.//*[@itemprop]'):
-            property_content = itemprop.xpath("@content").extract_first()
-            property_name = itemprop.xpath("@itemprop").extract_first()
-            if property_content is not None:
-                item[property_name] = property_content
-            else:
-                if property_name == u'articleBody':
-                    if property_name not in item:
-                        item[property_name] = []
-                    item[property_name].extend(extract_paragraphs(itemprop))
-        imgs = []
-        for img in article.css('img::attr(src)').extract():
-            full_img = response.urljoin(img)
-            if not is_bad_img(full_img) and full_img not in imgs:
-                imgs.append(full_img)
-        if item:
-            item['imgs'] = imgs
-            items.append(item)
-    return items
+    """Parses the response from a CNN Website"""
+    link_id = cnn_url_parse(response.url)
+    if link_id is None:
+        return None, link_id
+    soup, meta_tags, article = common_response_data(response)
+    parse_meta_tags(meta_tags, article)
+    find_script_json(soup, article)
+    for script_tag in soup.findAll('script'):
+        context = execute_script(script_tag)
+        if not hasattr(context, 'CNN'):
+            continue
+        if hasattr(context.CNN, 'contentModel'):
+            contentModel = context.CNN['contentModel']
+            analytics = contentModel['analytics']
+            author = Author()
+            author.name = analytics['author'].replace('By ', '').replace(', CNN', '')
+            if author.name == "CNN Library":
+                continue
+            article.authors.append(author)
+    remove_tags(soup)
+    find_main_content(
+        [{'tag': 'article', 'meta': {}}], article, response, soup)
+    return article.json(), link_id
+
+
+def cnn_url_filter(_url):
+    """Filters URLs in the CNN domain"""
+    return True
