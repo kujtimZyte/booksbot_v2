@@ -2,7 +2,7 @@
 """Parser for the CBS website"""
 import hashlib
 from .common import strip_query_from_url, remove_common_tags, find_main_content, \
-find_script_json, common_response_data
+common_response_data, find_common
 
 
 def cbs_url_parse(url):
@@ -28,19 +28,7 @@ def cbs_parse(response):
     if link_id is None:
         return None, link_id
     soup, meta_tags, article = common_response_data(response)
-    for keyword in meta_tags['keywords'].split(','):
-        article.tags.append(keyword.strip())
-    article.info.title = meta_tags['og:title']
-    article.images.thumbnail.url = meta_tags['og:image']
-    article.images.thumbnail.width = meta_tags['og:image:width']
-    article.images.thumbnail.height = meta_tags['og:image:height']
-    article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
-    article.publisher.facebook.url = meta_tags['article:publisher']
-    article.publisher.twitter.handle = meta_tags['twitter:site']
-    article.publisher.twitter.title = meta_tags['twitter:title']
-    article.publisher.twitter.description = meta_tags['twitter:description']
-    article.publisher.twitter.image = meta_tags['twitter:image']
-    find_script_json(soup, article)
+    find_common(soup, meta_tags, article)
     remove_tags(soup)
     find_main_content(
         [{'tag': 'article', 'meta': {}}], article, response, soup)
