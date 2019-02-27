@@ -30,6 +30,7 @@ from .businessinsider import businessinsider_parse, \
 businessinsider_url_parse, businessinsider_url_filter
 from .cbc import cbc_parse, cbc_url_parse, cbc_url_filter
 from .cbsnews import cbs_parse, cbs_url_parse, cbs_url_filter
+from .cnbc import cnbc_parse, cnbc_url_parse, cnbc_url_filter
 
 
 DetectorFactory.seed = 0
@@ -119,7 +120,8 @@ class NewsSpider(scrapy.Spider):
         "bloomberg.com",
         "businessinsider.com",
         "cbc.ca",
-        "cbsnews.com"
+        "cbsnews.com",
+        "cnbc.com"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
@@ -129,7 +131,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.bloomberg.com/',
         'https://www.businessinsider.com/',
         'https://www.cbc.ca/',
-        'https://www.cbsnews.com/'
+        'https://www.cbsnews.com/',
+        'https://www.cnbc.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -183,6 +186,12 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": cbs_url_parse,
             "url_filter": cbs_url_filter
+        },
+        "cnbc.com": {
+            "parser": cnbc_parse,
+            "splash": False,
+            "url_parse": cnbc_url_parse,
+            "url_filter": cnbc_url_filter
         }
     }
 
