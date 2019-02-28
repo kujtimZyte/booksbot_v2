@@ -361,6 +361,14 @@ class TestNewsSpider(unittest.TestCase):
             'cnn-aretha-franklin-fast-facts.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cnbc_total_connects_with_microgrid_start_up_to_improve_energy_access_in_east_africa(self, mock_head):
+        self.check_fake_html_scrape(
+            'cnbc-total-connects-with-microgrid-start-up-to-improve-energy-access-in-east-africa.html',
+            'https://www.cnbc.com/advertorial/2016/10/27/total-connects-with-microgrid-start-up-to-improve-energy-access-in-east-africa.html',
+            'cnbc-total-connects-with-microgrid-start-up-to-improve-energy-access-in-east-africa.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
