@@ -294,6 +294,47 @@ def extract_link_id(url, lengths=None, article_index=-1, use_hash=True):
     return last_path
 
 
+def parse_meta_tags_keywords(meta_tags, article):
+    """Extracts the necessary meta tags keywords into the article"""
+    keyword_keys = ['keywords', 'news_keywords']
+    for keyword_key in keyword_keys:
+        if keyword_key not in meta_tags:
+            continue
+        for keyword in meta_tags[keyword_key].split(','):
+            article.tags.append(keyword.strip())
+
+
+def parse_meta_tags_info(meta_tags, article):
+    """Extracts the necessary meta tags into the article info"""
+    if 'description' in meta_tags:
+        article.info.description = meta_tags['description']
+    if 'article:section' in meta_tags:
+        article.info.genre = meta_tags['article:section']
+    article.info.title = meta_tags['og:title']
+    article.info.description = meta_tags['og:description']
+
+
+def parse_meta_tags_time(meta_tags, article):
+    """Extracts the necessary meta tags into the article time"""
+    if 'dc.date.modified' in meta_tags:
+        article.time.set_modified_time(meta_tags['dc.date.modified'])
+    if 'article:published_time' in meta_tags:
+        article.time.set_published_time(meta_tags['article:published_time'])
+    if 'article:modified_time' in meta_tags:
+        article.time.set_modified_time(meta_tags['article:modified_time'])
+
+
+def parse_meta_tags_images(meta_tags, article):
+    """Extracts the necessary meta tags into the article images"""
+    if 'image' in meta_tags:
+        article.images.thumbnail.url = meta_tags['image']
+    article.images.thumbnail.url = meta_tags['og:image']
+    if 'og:image:width' in meta_tags:
+        article.images.thumbnail.width = meta_tags['og:image:width']
+    if 'og:image:height' in meta_tags:
+        article.images.thumbnail.height = meta_tags['og:image:height']
+
+
 def parse_meta_tags(meta_tags, article):
     """Extracts the necessary meta tags into the article"""
     bad_authors = [
@@ -301,18 +342,10 @@ def parse_meta_tags(meta_tags, article):
         'CNN Library',
         'Ars Staff'
     ]
-    keyword_keys = ['keywords', 'news_keywords']
-    for keyword_key in keyword_keys:
-        if keyword_key not in meta_tags:
-            continue
-        for keyword in meta_tags[keyword_key].split(','):
-            article.tags.append(keyword.strip())
-    if 'description' in meta_tags:
-        article.info.description = meta_tags['description']
-    if 'dc.date.modified' in meta_tags:
-        article.time.set_modified_time(meta_tags['dc.date.modified'])
-    if 'image' in meta_tags:
-        article.images.thumbnail.url = meta_tags['image']
+    parse_meta_tags_keywords(meta_tags, article)
+    parse_meta_tags_info(meta_tags, article)
+    parse_meta_tags_time(meta_tags, article)
+    parse_meta_tags_images(meta_tags, article)
     if 'og:site_name' in meta_tags:
         article.publisher.organisation = meta_tags['og:site_name']
     author_keys = ['author', 'article:author']
@@ -330,19 +363,6 @@ def parse_meta_tags(meta_tags, article):
                 if author.name.startswith('http'):
                     continue
                 article.authors.append(author)
-    if 'article:published_time' in meta_tags:
-        article.time.set_published_time(meta_tags['article:published_time'])
-    if 'article:modified_time' in meta_tags:
-        article.time.set_modified_time(meta_tags['article:modified_time'])
-    if 'article:section' in meta_tags:
-        article.info.genre = meta_tags['article:section']
-    article.info.title = meta_tags['og:title']
-    article.info.description = meta_tags['og:description']
-    article.images.thumbnail.url = meta_tags['og:image']
-    if 'og:image:width' in meta_tags:
-        article.images.thumbnail.width = meta_tags['og:image:width']
-    if 'og:image:height' in meta_tags:
-        article.images.thumbnail.height = meta_tags['og:image:height']
     if 'fb:pages' in meta_tags:
         article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
     if 'article:publisher' in meta_tags:
@@ -361,3 +381,10 @@ def find_common(soup, meta_tags, article):
     """Extracts common elements from the page"""
     parse_meta_tags(meta_tags, article)
     find_script_json(soup, article)
+
+
+def find_common_response_data(response):
+    """Finds the common response data and parses it"""
+    soup, meta_tags, article = common_response_data(response)
+    find_common(soup, meta_tags, article)
+    return soup, meta_tags, article

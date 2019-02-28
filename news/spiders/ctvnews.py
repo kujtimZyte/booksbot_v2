@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """Parser for the CTVNews website"""
-from .article import Author
-from .common import find_main_content, remove_common_tags, execute_script,\
-common_response_data, extract_link_id, find_common
+from .common import find_main_content, remove_common_tags, \
+extract_link_id, find_common_response_data
 
 
 def ctvnews_url_parse(url):
@@ -32,8 +31,7 @@ def ctvnews_parse(response):
     link_id = ctvnews_url_parse(response.url)
     if link_id is None:
         return None, link_id
-    soup, meta_tags, article = common_response_data(response)
-    find_common(soup, meta_tags, article)
+    soup, _, article = find_common_response_data(response)
     remove_tags(soup)
     find_main_content(
         [{'tag': 'div', 'meta': {'class': 'article'}}], article, response, soup)
