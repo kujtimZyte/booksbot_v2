@@ -377,6 +377,22 @@ class TestNewsSpider(unittest.TestCase):
             'cbc-kitchener-waterloo.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_ctvnews_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'ctvnews.ca.html',
+            'https://www.ctvnews.ca/',
+            'ctvnews.ca.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_ctvnews_brexit_deal_in_peril_after_u_k_cabinet_ministers_quit(self, mock_head):
+        self.check_fake_html_scrape(
+            'ctvnews-brexit-deal-in-peril-after-u-k-cabinet-ministers-quit.html',
+            'https://www.ctvnews.ca/world/brexit-deal-in-peril-after-u-k-cabinet-ministers-quit-1.4178066',
+            'ctvnews-brexit-deal-in-peril-after-u-k-cabinet-ministers-quit.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

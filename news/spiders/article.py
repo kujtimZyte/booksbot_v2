@@ -528,13 +528,18 @@ class Article(object):
 
     def json(self):
         """Returns the object as a dictionary for JSON consumption"""
+        author_dict = {}
+        for author in self.authors:
+            if author.name in author_dict:
+                continue
+            author_dict[author.name] = author
         article_json = {
             'time': self.time.json(),
-            'tags': self.tags,
+            'tags': list(set(self.tags)),
             'info': self.info.json(),
             'images': self.images.json(),
             'location': self.location.json(),
-            'authors': [x.json() for x in self.authors],
+            'authors': [x.json() for x in author_dict.values()],
             'publisher': self.publisher.json(),
             'text': self.text.json(),
             'videos': self.videos.json(),
