@@ -7,7 +7,7 @@ common_response_data, extract_link_id, find_common
 
 def cnn_url_parse(url):
     """Parses the URL from a CNN website"""
-    return extract_link_id(url, length=8)
+    return extract_link_id(url, lengths=[8])
 
 
 def remove_tags(soup):

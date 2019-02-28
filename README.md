@@ -40,6 +40,7 @@ The support table looks like so:
 * [requests](http://docs.python-requests.org/en/master/)
 * [js2py](https://github.com/PiotrDabkowski/Js2Py)
 * [mock](https://docs.python.org/3/library/unittest.mock.html)
+* [html5lib](https://pypi.org/project/html5lib/)
 
 ## Installation :inbox_tray:
 The chief requirements of any installation are based off scrapy and splash, see below for local and cloud based options.

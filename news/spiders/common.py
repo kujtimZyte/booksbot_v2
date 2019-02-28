@@ -46,7 +46,9 @@ def extract_urls(response):
     for javascript_identifier in javascript_identifiers:
         text_strings = extract_javascript_strings(response.text, javascript_identifier)
         for text_string in text_strings:
-            urls.append(response.urljoin(text_string))
+            final_url = response.urljoin(text_string)
+            if final_url not in urls:
+                urls.append(final_url)
     return urls
 
 
@@ -270,19 +272,19 @@ def find_script_json(soup, article):
 
 def common_response_data(response):
     """Finds the common response data"""
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(response.text, 'html5lib')
     meta_tags = extract_metadata(response)
     article = Article()
     return soup, meta_tags, article
 
 
-def extract_link_id(url, length=7, article_index=-1, use_hash=True):
+def extract_link_id(url, lengths=[7], article_index=-1, use_hash=True):
     """Extracts the link ID from a URL"""
     url = strip_query_from_url(url)
     url_split = url.split('/')
     if url_split[-1] == 'index.html':
         url_split = url_split[:-1]
-    if len(url_split) != length:
+    if len(url_split) not in lengths:
         return None
     last_path = url_split[article_index]
     if use_hash:
