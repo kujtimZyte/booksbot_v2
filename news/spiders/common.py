@@ -278,8 +278,10 @@ def common_response_data(response):
     return soup, meta_tags, article
 
 
-def extract_link_id(url, lengths=[7], article_index=-1, use_hash=True):
+def extract_link_id(url, lengths=None, article_index=-1, use_hash=True):
     """Extracts the link ID from a URL"""
+    if lengths is None:
+        lengths = [7]
     url = strip_query_from_url(url)
     url_split = url.split('/')
     if url_split[-1] == 'index.html':

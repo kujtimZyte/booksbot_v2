@@ -6,7 +6,7 @@ find_script_json, common_response_data, extract_link_id, parse_meta_tags
 
 def cnbc_url_parse(url):
     """Parses the URL from a CNBC website"""
-    return extract_link_id(url, lengths=[7,8])
+    return extract_link_id(url, lengths=[7, 8])
 
 
 def remove_tags(soup):
