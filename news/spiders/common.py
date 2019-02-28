@@ -296,8 +296,46 @@ def extract_link_id(url, lengths=None, article_index=-1, use_hash=True):
 
 def parse_meta_tags(meta_tags, article):
     """Extracts the necessary meta tags into the article"""
-    for keyword in meta_tags['keywords'].split(','):
-        article.tags.append(keyword.strip())
+    bad_authors = [
+        'CNN',
+        'CNN Library',
+        'Ars Staff'
+    ]
+    keyword_keys = ['keywords', 'news_keywords']
+    for keyword_key in keyword_keys:
+        if keyword_key not in meta_tags:
+            continue
+        for keyword in meta_tags[keyword_key].split(','):
+            article.tags.append(keyword.strip())
+    if 'description' in meta_tags:
+        article.info.description = meta_tags['description']
+    if 'dc.date.modified' in meta_tags:
+        article.time.set_modified_time(meta_tags['dc.date.modified'])
+    if 'image' in meta_tags:
+        article.images.thumbnail.url = meta_tags['image']
+    if 'og:site_name' in meta_tags:
+        article.publisher.organisation = meta_tags['og:site_name']
+    author_keys = ['author', 'article:author']
+    for author_key in author_keys:
+        if author_key not in meta_tags:
+            continue
+        for author in meta_tags[author_key].split(','):
+            author_split = author.split(' and ')
+            for author_split_instance in author_split:
+                author = Author()
+                author.name = author_split_instance.strip()
+                author.name = author.name.replace('Presented by: ', '')
+                if author.name in bad_authors:
+                    continue
+                if author.name.startswith('http'):
+                    continue
+                article.authors.append(author)
+    if 'article:published_time' in meta_tags:
+        article.time.set_published_time(meta_tags['article:published_time'])
+    if 'article:modified_time' in meta_tags:
+        article.time.set_modified_time(meta_tags['article:modified_time'])
+    if 'article:section' in meta_tags:
+        article.info.genre = meta_tags['article:section']
     article.info.title = meta_tags['og:title']
     article.info.description = meta_tags['og:description']
     article.images.thumbnail.url = meta_tags['og:image']
@@ -313,7 +351,8 @@ def parse_meta_tags(meta_tags, article):
         article.publisher.twitter.handle = meta_tags['twitter:site']
     article.publisher.twitter.title = meta_tags['twitter:title']
     article.publisher.twitter.description = meta_tags['twitter:description']
-    article.publisher.twitter.image = meta_tags['twitter:image']
+    if 'twitter:image' in meta_tags:
+        article.publisher.twitter.image = meta_tags['twitter:image']
     if 'fb:app_id' in meta_tags:
         article.publisher.facebook.app_id = meta_tags['fb:app_id']
 

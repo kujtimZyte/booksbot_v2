@@ -42,7 +42,7 @@ def cnn_parse(response):
             analytics = content_model['analytics']
             author = Author()
             author.name = analytics['author'].replace('By ', '').replace(', CNN', '')
-            if author.name == "CNN Library":
+            if author.name == "CNN Library" or author.name == "CNN":
                 continue
             article.authors.append(author)
     remove_tags(soup)
