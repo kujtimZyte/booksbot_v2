@@ -159,6 +159,8 @@ def execute_script(script_tag):
 def find_images(soup, article, response):
     """Finds the images with an article"""
     for img_tag in soup.findAll('img'):
+        if not img_tag.has_attr('src'):
+            continue
         if img_tag['src'].startswith('data:'):
             continue
         image = Image()
