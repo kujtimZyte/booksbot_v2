@@ -369,6 +369,14 @@ class TestNewsSpider(unittest.TestCase):
             'cnbc-total-connects-with-microgrid-start-up-to-improve-energy-access-in-east-africa.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cbc_kitchener_waterloo(self, mock_head):
+        self.check_fake_html_scrape(
+            'cbc-kitchener-waterloo.html',
+            'https://www.cbc.ca/news/canada/kitchener-waterloo',
+            'cbc-kitchener-waterloo.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
