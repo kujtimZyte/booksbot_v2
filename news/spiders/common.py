@@ -375,6 +375,30 @@ def parse_meta_tags_images(meta_tags, article):
         article.images.thumbnail.height = meta_tags['og:image:height']
 
 
+def parse_meta_tags_publisher(meta_tags, article):
+    """Extracts the necessary meta tags into the article publisher"""
+    organisation_keys = [
+        'og:site_name',
+        'dc.publisher'
+    ]
+    for organisation_key in organisation_keys:
+        if organisation_key not in meta_tags:
+            continue
+        article.publisher.organisation = meta_tags[organisation_key]
+    if 'fb:pages' in meta_tags:
+        article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
+    if 'article:publisher' in meta_tags:
+        article.publisher.facebook.url = meta_tags['article:publisher']
+    if 'twitter:site' in meta_tags:
+        article.publisher.twitter.handle = meta_tags['twitter:site']
+    article.publisher.twitter.title = meta_tags['twitter:title']
+    article.publisher.twitter.description = meta_tags['twitter:description']
+    if 'twitter:image' in meta_tags:
+        article.publisher.twitter.image = meta_tags['twitter:image']
+    if 'fb:app_id' in meta_tags:
+        article.publisher.facebook.app_id = meta_tags['fb:app_id']
+
+
 def parse_meta_tags(meta_tags, article):
     """Extracts the necessary meta tags into the article"""
     bad_authors = [
@@ -386,8 +410,7 @@ def parse_meta_tags(meta_tags, article):
     parse_meta_tags_info(meta_tags, article)
     parse_meta_tags_time(meta_tags, article)
     parse_meta_tags_images(meta_tags, article)
-    if 'og:site_name' in meta_tags:
-        article.publisher.organisation = meta_tags['og:site_name']
+    parse_meta_tags_publisher(meta_tags, article)
     author_keys = ['author', 'article:author', 'dc.creator']
     for author_key in author_keys:
         if author_key not in meta_tags:
@@ -403,20 +426,6 @@ def parse_meta_tags(meta_tags, article):
                 if author.name.startswith('http'):
                     continue
                 article.authors.append(author)
-    if 'fb:pages' in meta_tags:
-        article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
-    if 'article:publisher' in meta_tags:
-        article.publisher.facebook.url = meta_tags['article:publisher']
-    if 'twitter:site' in meta_tags:
-        article.publisher.twitter.handle = meta_tags['twitter:site']
-    article.publisher.twitter.title = meta_tags['twitter:title']
-    article.publisher.twitter.description = meta_tags['twitter:description']
-    if 'twitter:image' in meta_tags:
-        article.publisher.twitter.image = meta_tags['twitter:image']
-    if 'fb:app_id' in meta_tags:
-        article.publisher.facebook.app_id = meta_tags['fb:app_id']
-    if 'dc.publisher' in meta_tags:
-        article.publisher.organisation = meta_tags['dc.publisher']
 
 
 def find_common(soup, meta_tags, article):
@@ -427,6 +436,6 @@ def find_common(soup, meta_tags, article):
 
 def find_common_response_data(response, parser='html5lib'):
     """Finds the common response data and parses it"""
-    soup, meta_tags, article = common_response_data(response)
+    soup, meta_tags, article = common_response_data(response, parser=parser)
     find_common(soup, meta_tags, article)
     return soup, meta_tags, article

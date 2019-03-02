@@ -2,8 +2,7 @@
 """Parser for the Fox website"""
 import json
 from .article import Image
-from .common import find_main_content, remove_common_tags, \
-extract_link_id, find_common_response_data, execute_script
+from .common import extract_link_id, find_common_response_data
 
 
 def fox_url_parse(url):
