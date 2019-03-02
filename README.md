@@ -30,6 +30,7 @@ The support table looks like so:
 | [CNN](https://www.cnn.com/)                                         | 27th February 2019 | Stable |
 | [CTVNews](https://www.ctvnews.ca/)                                  | 28th February 2019 | Stable |
 | [Fox News](https://www.foxnews.com/)                                | 2nd March 2019     | Stable |
+| [Global News](https://globalnews.ca/)                               | 2nd March 2019     | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
