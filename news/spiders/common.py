@@ -153,7 +153,7 @@ def execute_script(script_tag):
         context = js2py.EvalJs()
         context.execute(script_tag.text)
         return context
-    except (js2py.PyJsException, KeyError), e:
+    except (js2py.PyJsException, KeyError), _exception:
         pass
     return None
 
