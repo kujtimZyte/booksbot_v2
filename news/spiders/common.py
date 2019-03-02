@@ -140,6 +140,7 @@ def remove_common_tags(remove_items, soup):
     remove_items.append({'tag': 'noscript', 'meta': {}})
     remove_items.append({'tag': 'button', 'meta': {}})
     remove_items.append({'tag': 'div', 'meta': {'class': 'ob-widget-section'}})
+    remove_items.append({'tag': 'div', 'meta': {'class': 'ob-widget-header'}})
     for remove_item in remove_items:
         for tag in soup.findAll(remove_item['tag'], remove_item['meta']):
             tag.decompose()
@@ -160,22 +161,25 @@ def execute_script(script_tag):
 
 def find_images(soup, article, response):
     """Finds the images with an article"""
-    for img_tag in soup.findAll('img'):
-        if not img_tag.has_attr('src'):
-            continue
-        if img_tag['src'].startswith('data:'):
-            continue
-        image = Image()
-        image.url = response.urljoin(img_tag['src'])
-        if img_tag.has_attr('width'):
-            image.width = img_tag['width']
-        if img_tag.has_attr('height'):
-            image.height = img_tag['height']
-        if img_tag.has_attr('alt'):
-            image.alt = img_tag['alt']
-        if img_tag.has_attr('title'):
-            image.title = img_tag['title']
-        article.images.append_image(image)
+    try:
+        for img_tag in soup.findAll('img'):
+            if not img_tag.has_attr('src'):
+                continue
+            if img_tag['src'].startswith('data:'):
+                continue
+            image = Image()
+            image.url = response.urljoin(img_tag['src'])
+            if img_tag.has_attr('width'):
+                image.width = img_tag['width']
+            if img_tag.has_attr('height'):
+                image.height = img_tag['height']
+            if img_tag.has_attr('alt'):
+                image.alt = img_tag['alt']
+            if img_tag.has_attr('title'):
+                image.title = img_tag['title']
+            article.images.append_image(image)
+    except AttributeError:
+        pass
 
 
 def find_audio(soup, article):
@@ -270,9 +274,9 @@ def find_script_json(soup, article):
             article.info.description = script_json['description']
 
 
-def common_response_data(response):
+def common_response_data(response, parser='html5lib'):
     """Finds the common response data"""
-    soup = BeautifulSoup(response.text, 'html5lib')
+    soup = BeautifulSoup(response.text, parser)
     meta_tags = extract_metadata(response)
     article = Article()
     return soup, meta_tags, article
@@ -306,63 +310,81 @@ def parse_meta_tags_keywords(meta_tags, article):
 
 def parse_meta_tags_info(meta_tags, article):
     """Extracts the necessary meta tags into the article info"""
-    if 'description' in meta_tags:
-        article.info.description = meta_tags['description']
+    description_keys = [
+        'description',
+        'og:description',
+        'dcterms.abstract',
+        'dc.description'
+    ]
+    for description_key in description_keys:
+        if description_key not in meta_tags:
+            continue
+        article.info.description = meta_tags[description_key]
+        break
+    title_keys = [
+        'og:title',
+        'dc.title'
+    ]
+    for title_key in title_keys:
+        if title_key not in meta_tags:
+            continue
+        article.info.title = meta_tags[title_key]
+        break
     if 'article:section' in meta_tags:
         article.info.genre = meta_tags['article:section']
-    article.info.title = meta_tags['og:title']
-    article.info.description = meta_tags['og:description']
 
 
 def parse_meta_tags_time(meta_tags, article):
     """Extracts the necessary meta tags into the article time"""
-    if 'dc.date.modified' in meta_tags:
-        article.time.set_modified_time(meta_tags['dc.date.modified'])
-    if 'article:published_time' in meta_tags:
-        article.time.set_published_time(meta_tags['article:published_time'])
-    if 'article:modified_time' in meta_tags:
-        article.time.set_modified_time(meta_tags['article:modified_time'])
+    published_keys = [
+        'article:published_time',
+        'dc.date',
+        'dcterms.created'
+    ]
+    for published_key in published_keys:
+        if published_key not in meta_tags:
+            continue
+        article.time.set_published_time(meta_tags[published_key])
+        break
+    modified_keys = [
+        'dc.date.modified',
+        'article:modified_time',
+        'dcterms.modified'
+    ]
+    for modified_key in modified_keys:
+        if modified_key not in meta_tags:
+            continue
+        article.time.set_modified_time(meta_tags[modified_key])
+        break
 
 
 def parse_meta_tags_images(meta_tags, article):
     """Extracts the necessary meta tags into the article images"""
-    if 'image' in meta_tags:
-        article.images.thumbnail.url = meta_tags['image']
-    article.images.thumbnail.url = meta_tags['og:image']
+    image_keys = [
+        'image',
+        'og:image'
+    ]
+    for image_key in image_keys:
+        if image_key not in meta_tags:
+            continue
+        article.images.thumbnail.url = meta_tags[image_key]
+        break
     if 'og:image:width' in meta_tags:
         article.images.thumbnail.width = meta_tags['og:image:width']
     if 'og:image:height' in meta_tags:
         article.images.thumbnail.height = meta_tags['og:image:height']
 
 
-def parse_meta_tags(meta_tags, article):
-    """Extracts the necessary meta tags into the article"""
-    bad_authors = [
-        'CNN',
-        'CNN Library',
-        'Ars Staff'
+def parse_meta_tags_publisher(meta_tags, article):
+    """Extracts the necessary meta tags into the article publisher"""
+    organisation_keys = [
+        'og:site_name',
+        'dc.publisher'
     ]
-    parse_meta_tags_keywords(meta_tags, article)
-    parse_meta_tags_info(meta_tags, article)
-    parse_meta_tags_time(meta_tags, article)
-    parse_meta_tags_images(meta_tags, article)
-    if 'og:site_name' in meta_tags:
-        article.publisher.organisation = meta_tags['og:site_name']
-    author_keys = ['author', 'article:author']
-    for author_key in author_keys:
-        if author_key not in meta_tags:
+    for organisation_key in organisation_keys:
+        if organisation_key not in meta_tags:
             continue
-        for author in meta_tags[author_key].split(','):
-            author_split = author.split(' and ')
-            for author_split_instance in author_split:
-                author = Author()
-                author.name = author_split_instance.strip()
-                author.name = author.name.replace('Presented by: ', '')
-                if author.name in bad_authors:
-                    continue
-                if author.name.startswith('http'):
-                    continue
-                article.authors.append(author)
+        article.publisher.organisation = meta_tags[organisation_key]
     if 'fb:pages' in meta_tags:
         article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
     if 'article:publisher' in meta_tags:
@@ -377,14 +399,43 @@ def parse_meta_tags(meta_tags, article):
         article.publisher.facebook.app_id = meta_tags['fb:app_id']
 
 
+def parse_meta_tags(meta_tags, article):
+    """Extracts the necessary meta tags into the article"""
+    bad_authors = [
+        'CNN',
+        'CNN Library',
+        'Ars Staff'
+    ]
+    parse_meta_tags_keywords(meta_tags, article)
+    parse_meta_tags_info(meta_tags, article)
+    parse_meta_tags_time(meta_tags, article)
+    parse_meta_tags_images(meta_tags, article)
+    parse_meta_tags_publisher(meta_tags, article)
+    author_keys = ['author', 'article:author', 'dc.creator']
+    for author_key in author_keys:
+        if author_key not in meta_tags:
+            continue
+        for author in meta_tags[author_key].split(','):
+            author_split = author.split(' and ')
+            for author_split_instance in author_split:
+                author = Author()
+                author.name = author_split_instance.strip()
+                author.name = author.name.replace('Presented by: ', '')
+                if author.name in bad_authors:
+                    continue
+                if author.name.startswith('http'):
+                    continue
+                article.authors.append(author)
+
+
 def find_common(soup, meta_tags, article):
     """Extracts common elements from the page"""
     parse_meta_tags(meta_tags, article)
     find_script_json(soup, article)
 
 
-def find_common_response_data(response):
+def find_common_response_data(response, parser='html5lib'):
     """Finds the common response data and parses it"""
-    soup, meta_tags, article = common_response_data(response)
+    soup, meta_tags, article = common_response_data(response, parser=parser)
     find_common(soup, meta_tags, article)
     return soup, meta_tags, article
