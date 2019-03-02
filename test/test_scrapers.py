@@ -401,6 +401,14 @@ class TestNewsSpider(unittest.TestCase):
             'cnbc-amazon-alexa-on-huawei-mate-9-a-review.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cnn_buffett_charity_lunch_auction(self, mock_head):
+        self.check_fake_html_scrape(
+            'cnn-buffett-charity-lunch-auction.html',
+            'https://money.cnn.com/2016/06/10/news/buffett-charity-lunch-auction/',
+            'cnn-buffett-charity-lunch-auction.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
