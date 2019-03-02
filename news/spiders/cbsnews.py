@@ -35,6 +35,8 @@ def cbs_parse(response):
     return article.json(), link_id
 
 
-def cbs_url_filter(_url):
+def cbs_url_filter(url):
     """Filters URLs in the CBS domain"""
+    if '/video/' in url:
+        return False
     return True
