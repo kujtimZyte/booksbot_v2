@@ -1,0 +1,127 @@
+{
+    "items": [
+        {
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "Chris Isidore"
+                    }
+                ],
+                "images": {
+                    "images": [
+                        {
+                            "alt": "Buffett, Blankfein, Bloomberg and Dorsey on one stage",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "height": 439,
+                            "url": "https://i2.cdn.turner.com/money/dam/assets/160607190906-buffett-blankfein-bloomberg-dorsey-1024x576.png",
+                            "width": 780
+                        }
+                    ],
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 439,
+                        "url": "https://i2.cdn.turner.com/money/dam/assets/160429095943-warren-buffett-5-780x439.jpg",
+                        "width": 780
+                    }
+                },
+                "info": {
+                    "description": "An anonymous bidder wins a private lunch with Warren Buffett for $3,456,789, the same record set in 2012.",
+                    "title": "Anonymous bidder wins $3,456,789 lunch with Warren Buffett"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "app_id": "521848191196480"
+                    },
+                    "organisation": "CNNMoney",
+                    "twitter": {
+                        "description": "An anonymous bidder wins a private lunch with Warren Buffett for $3,456,789, the same record set in 2012.",
+                        "handle": "@CNNMoney",
+                        "image": "https://i2.cdn.turner.com/money/dam/assets/160429095943-warren-buffett-5-540x304.jpg",
+                        "title": "Anonymous bidder wins $3,456,789 lunch with Warren Buffett"
+                    }
+                },
+                "tags": [
+                    "789 lunch",
+                    "GLIDE",
+                    "power lunch",
+                    "$3.5 million Warren Buffett lunch",
+                    "456",
+                    "eBay",
+                    "charity auction",
+                    "CNNMoney",
+                    "Warren Buffett",
+                    "$3"
+                ],
+                "text": {
+                    "markdown": "![Buffett, Blankfein, Bloomberg and Dorsey on one\nstage](https://i2.cdn.turner.com/money/dam/assets/160607190906-buffett-\nblankfein-bloomberg-dorsey-1024x576.png)\n\nBuffett, Blankfein, Bloomberg and Dorsey on one stage\n\n## Chowing down with Warren Buffett is going to cost a record amount again\nthis year.\n\nThe winning bid for an annual charity lunch with the Oracle of Omaha came in\nfrom an anonymous bidder at $3,456,789 -- the same record set in 2012. That\nwinner was also anonymous.\n\nBids for the annual charity lunch auction with the Oracle of Omaha reached\n$2.6 million early Friday. That was already above last year's [winning bid of\n$2.3 million](http://money.cnn.com/2015/06/06/investing/warren-buffett-\ncharity-lunch-auction/). Bidding on eBay closed at 10:30 p.m. ET Friday.\n\nBids started at $25,000 on June 5, and were only as high as $500,000 late\nThursday. Then a bidding war started between two bidders. Bidders have to be\npre-approved.\n\n[Related: Warren Buffett buys stake in\nApple](http://money.cnn.com/2016/05/16/investing/warren-buffett-berkshire-\nhathaway-apple/index.html)\n\nMoney raised by the auction goes to GLIDE, a charity that runs a number of\nanti-poverty programs in San Francisco.\n\n\"We are astonished by the results of this year's auction and send heartfelt\ngratitude to Mr. Buffett for his deep investment in unconditional love and\ncommunity,\" Reverend Cecil Williams, GLIDE cofounder, said in a statement.\n\nBuffett's late wife Susie came up with the idea for the charity power lunch,\nwhich started in 2000. Since then it's raised more than $20 million.\n\nIt's not uncommon for winners to remain anonymous, even after a few years have\npassed. Since the start of the charity auction, eight of the winners have not\nrevealed their identifies.\n\nThe winning bidder will get a chance to invite up to seven friends to the\nlunch at Smith & Wollensky steakhouse in New York City.\n\n_\\-- Hope King contributed to this report_\n\nCNNMoney (New York)  First published June 10, 2016: 12:41 PM ET\n\n",
+                    "text": "\nBuffett, Blankfein, Bloomberg and Dorsey on one stage\nChowing down with Warren Buffett is going to cost a record amount again\nthis year.\nThe winning bid for an annual charity lunch with the Oracle of Omaha came in\nfrom an anonymous bidder at $3,456,789 -- the same record set in 2012. That\nwinner was also anonymous.\nBids for the annual charity lunch auction with the Oracle of Omaha reached\n$2.6 million early Friday. That was already above last year's winning bid of\n$2.3 million. Bidding on eBay closed at 10:30 p.m. ET Friday.\nBids started at $25,000 on June 5, and were only as high as $500,000 late\nThursday. Then a bidding war started between two bidders. Bidders have to be\npre-approved.\nRelated: Warren Buffett buys stake in\nApple\nMoney raised by the auction goes to GLIDE, a charity that runs a number of\nanti-poverty programs in San Francisco.\n\"We are astonished by the results of this year's auction and send heartfelt\ngratitude to Mr. Buffett for his deep investment in unconditional love and\ncommunity,\" Reverend Cecil Williams, GLIDE cofounder, said in a statement.\nBuffett's late wife Susie came up with the idea for the charity power lunch,\nwhich started in 2000. Since then it's raised more than $20 million.\nIt's not uncommon for winners to remain anonymous, even after a few years have\npassed. Since the start of the charity auction, eight of the winners have not\nrevealed their identifies.\nThe winning bidder will get a chance to invite up to seven friends to the\nlunch at Smith & Wollensky steakhouse in New York City.\n-- Hope King contributed to this report\nCNNMoney (New York)  First published June 10, 2016: 12:41 PM ET"
+                },
+                "time": {},
+                "videos": {}
+            },
+            "url": "https://money.cnn.com/2016/06/10/news/buffett-charity-lunch-auction/"
+        }
+    ],
+    "requests": [
+        "https://money.cnn.com/",
+        "https://money.cnn.com/news/companies/",
+        "https://money.cnn.com/markets/?iid=Mark_Nav",
+        "https://money.cnn.com/technology/?iid=Tech_Nav",
+        "https://money.cnn.com/media/?iid=Media_Nav",
+        "https://money.cnn.com/news/",
+        "https://money.cnn.com/news/economy/",
+        "https://money.cnn.com/news/economy/your-money-your-america/",
+        "https://money.cnn.com/news/economy/davos/",
+        "https://money.cnn.com/data/markets/",
+        "https://money.cnn.com/data/premarket/",
+        "https://money.cnn.com/data/dow30/",
+        "https://money.cnn.com/data/afterhours/",
+        "https://money.cnn.com/data/hotstocks/",
+        "https://money.cnn.com/data/fear-and-greed/",
+        "https://money.cnn.com/data/world_markets/americas/",
+        "https://money.cnn.com/investing/",
+        "https://money.cnn.com/investing/markets-now/",
+        "https://money.cnn.com/investing/before-the-bell/",
+        "https://money.cnn.com/investing/romans-numeral/",
+        "https://markets.money.cnn.com/Marketsdata/Sectors/",
+        "https://money.cnn.com/investing/quest-profitable-moment/",
+        "https://money.cnn.com/technology/",
+        "https://money.cnn.com/technology/pacific/",
+        "https://money.cnn.com/technology/work-transformed/",
+        "https://money.cnn.com/technology/living-in-the-future/",
+        "https://money.cnn.com/technology/innovate/",
+        "https://money.cnn.com/technology/our-driverless-future/",
+        "https://money.cnn.com/technology/business/",
+        "https://money.cnn.com/technology/culture/",
+        "https://money.cnn.com/technology/future/",
+        "https://money.cnn.com/technology/startups/",
+        "https://money.cnn.com/pf/",
+        "https://money.cnn.com/pf/money-essentials/",
+        "https://money.cnn.com/retirement/new-rules-for-retirement/",
+        "https://money.cnn.com/pf/money-moves/",
+        "https://money.cnn.com/tools/",
+        "https://money.cnn.com/pf/loan_center/",
+        "https://money.cnn.com/media/",
+        "https://money.cnn.com/news/boss-files/",
+        "https://money.cnn.com/news/fresh-money/",
+        "https://money.cnn.com/smallbusiness/",
+        "https://money.cnn.com/news/my-american-success-story/",
+        "https://money.cnn.com/surge/index.html",
+        "https://www.cnn.com/email/subscription",
+        "https://money.cnn.com/profile/",
+        "https://money.cnn.com/interactive/",
+        "https://money.cnn.com/services/speakup/speakup.html",
+        "https://money.cnn.com/services/closed-captioning.html",
+        "https://money.cnn.com/?iid=dmstedition",
+        "https://money.cnn.com/?iid=intnledition",
+        "https://www.cnn.com/business/",
+        "http://money.cnn.com/2015/06/06/investing/warren-buffett-charity-lunch-auction/",
+        "http://money.cnn.com/2016/05/16/investing/warren-buffett-berkshire-hathaway-apple/index.html",
+        "https://money.cnn.com/services/sitemap/",
+        "https://money.cnn.com/services/rss/",
+        "https://www.cnn.com/terms/",
+        "https://www.cnn.com/privacy/"
+    ]
+}
