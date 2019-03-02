@@ -25,8 +25,10 @@ def cnbc_parse(response):
     parse_meta_tags(meta_tags, article)
     find_script_json(soup, article)
     remove_tags(soup)
-    find_main_content(
-        [{'tag': 'article', 'meta': {}}], article, response, soup)
+    find_main_content([
+        {'tag': 'article', 'meta': {}},
+        {'tag': 'div', 'meta': {'class': 'ArticleBody-articleBody'}}
+    ], article, response, soup)
     return article.json(), link_id
 
 
