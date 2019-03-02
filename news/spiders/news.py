@@ -33,6 +33,7 @@ from .cbsnews import cbs_parse, cbs_url_parse, cbs_url_filter
 from .cnbc import cnbc_parse, cnbc_url_parse, cnbc_url_filter
 from .cnn import cnn_parse, cnn_url_parse, cnn_url_filter
 from .ctvnews import ctvnews_parse, ctvnews_url_parse, ctvnews_url_filter
+from .fox import fox_parse, fox_url_parse, fox_url_filter
 
 
 DetectorFactory.seed = 0
@@ -125,7 +126,8 @@ class NewsSpider(scrapy.Spider):
         "cbsnews.com",
         "cnbc.com",
         "cnn.com",
-        "ctvnews.ca"
+        "ctvnews.ca",
+        "foxnews.com"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
@@ -138,7 +140,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.cbsnews.com/',
         'https://www.cnbc.com/',
         'https://www.cnn.com/',
-        'https://www.ctvnews.ca/'
+        'https://www.ctvnews.ca/',
+        'https://www.foxnews.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -210,6 +213,12 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": ctvnews_url_parse,
             "url_filter": ctvnews_url_filter
+        },
+        "foxnews.com": {
+            "parser": fox_parse,
+            "splash": False,
+            "url_parse": fox_url_parse,
+            "url_filter": fox_url_filter
         }
     }
 
