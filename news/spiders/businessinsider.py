@@ -22,8 +22,18 @@ def remove_tags(soup):
         {'tag': 'div', 'meta': {'class': 'byline-publication-source'}},
         {'tag': 'section', 'meta': {'class': 'post-content-bottom '}},
         {'tag': 'section', 'meta': {'class': 'popular-video'}},
-        {'tag': 'section', 'meta': {'class': 'post-content-more '}}
+        {'tag': 'section', 'meta': {'class': 'post-content-more '}},
+        {'tag': 'p', 'meta': {'class': 'piano-freemium'}},
+        {'tag': 'ul', 'meta': {'class': 'read-more-links'}}
     ], soup)
+
+
+def find_byline(soup):
+    """Finds the author byline"""
+    html_tag = soup.find('span', {'class': 'byline-author-name'})
+    if html_tag is None:
+        html_tag = soup.find('a', {'class': 'byline-author-name'})
+    return html_tag.text
 
 
 def businessinsider_parse(response):
@@ -55,7 +65,7 @@ def businessinsider_parse(response):
     article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
     find_script_json(soup, article)
     author = Author()
-    author.name = soup.find('span', {'class': 'byline-author-name'}).text
+    author.name = find_byline(soup)
     article.authors.append(author)
     remove_tags(soup)
     find_main_content([{'tag': 'article', 'meta': {}}], article, response, soup)

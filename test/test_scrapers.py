@@ -409,6 +409,14 @@ class TestNewsSpider(unittest.TestCase):
             'cnn-buffett-charity-lunch-auction.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_businessinsider_millenials_are_ditching_beer_for_pot_so_expect_to_see_deals(self, mock_head):
+        self.check_fake_html_scrape(
+            'business-insider-millennials-are-ditching-beer-for-pot-so-expect-to-see-deals.html',
+            'https://www.businessinsider.com/millennials-are-ditching-beer-for-pot-so-expect-to-see-deals-2019-1?IR=T',
+            'business-insider-millennials-are-ditching-beer-for-pot-so-expect-to-see-deals.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
