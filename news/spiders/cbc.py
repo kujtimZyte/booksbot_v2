@@ -3,7 +3,7 @@
 from bs4 import NavigableString
 from .article import Author
 from .common import strip_query_from_url, remove_common_tags, find_main_content, \
-find_script_json, common_response_data
+common_response_data, find_common
 
 
 def cbc_url_parse(url):
@@ -43,27 +43,19 @@ def cbc_parse(response):
     soup, meta_tags, article = common_response_data(response)
     if meta_tags['og:type'] != 'article':
         return None, link_id
-    article.publisher.organisation = meta_tags['og:site_name']
-    article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
-    article.publisher.twitter.card = meta_tags['twitter:card']
-    article.publisher.twitter.handle = meta_tags['twitter:site']
-    article.info.title = meta_tags['og:title']
-    article.info.description = meta_tags['og:description']
-    article.info.genre = meta_tags['cXenseParse:cbc-subsection1']
-    article.images.thumbnail.url = meta_tags['og:image']
-    article.time.set_published_time(meta_tags['article:published_time'])
-    article.time.set_modified_time(meta_tags['article:modified_time'])
+    find_common(soup, meta_tags, article)
     author = Author()
     author.name = soup.find('p', {'class': 'authorprofile-name'}).text
-    for a_tag in soup.find('a', {'class': 'authorprofile-item'}):
-        if isinstance(a_tag, NavigableString):
-            continue
-        a_text = a_tag.text
-        if a_text:
-            if a_text.startswith('@'):
-                author.twitter_url = a_tag['href']
+    author_links = soup.find('a', {'class': 'authorprofile-item'})
+    if author_links is not None:
+        for a_tag in author_links:
+            if isinstance(a_tag, NavigableString):
+                continue
+            a_text = a_tag.text
+            if a_text:
+                if a_text.startswith('@'):
+                    author.twitter_url = a_tag['href']
     article.authors.append(author)
-    find_script_json(soup, article)
     remove_tags(soup)
     find_main_content(
         [{'tag': 'div', 'meta': {'class': 'sclt-storycontent'}}], article, response, soup)

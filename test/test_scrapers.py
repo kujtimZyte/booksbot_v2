@@ -433,6 +433,14 @@ class TestNewsSpider(unittest.TestCase):
             'foxnews-trump-in-exclusive-interview-reveals-obamas-private-guidance-on-greatest-threat-to-the-u-s.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cbc_spacex_crew_dragon_launch(self, mock_head):
+        self.check_fake_html_scrape(
+            'cbc-spacex-crew-dragon-launch.html',
+            'https://www.cbc.ca/news/technology/spacex-crew-dragon-launch-1.5038931',
+            'cbc-spacex-crew-dragon-launch.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

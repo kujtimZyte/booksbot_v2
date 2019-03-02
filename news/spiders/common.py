@@ -237,17 +237,27 @@ def handle_script_json_authors(script_json, article):
                 article.authors.append(article_author)
 
 
+def handle_script_image_instance(image, article):
+    """Handles the script image instance"""
+    if 'url' in image:
+        article.images.thumbnail.url = image['url']
+    if 'width' in image:
+        article.images.thumbnail.width = image['width']
+    if 'height' in image:
+        article.images.thumbnail.height = image['height']
+
+
 def handle_script_image(script_json, article):
     """Handles the script image field in the JSON context"""
     if 'image' in script_json:
         image = script_json['image']
         if isinstance(image, basestring):
             article.images.thumbnail.url = image
+        elif isinstance(image, list):
+            for image_inst in image:
+                handle_script_image_instance(image_inst, article)
         else:
-            if 'url' in image:
-                article.images.thumbnail.url = image['url']
-            article.images.thumbnail.width = image['width']
-            article.images.thumbnail.height = image['height']
+            handle_script_image_instance(image, article)
 
 
 def find_script_json(soup, article):
@@ -330,8 +340,14 @@ def parse_meta_tags_info(meta_tags, article):
             continue
         article.info.title = meta_tags[title_key]
         break
-    if 'article:section' in meta_tags:
-        article.info.genre = meta_tags['article:section']
+    genre_keys = [
+        'article:section',
+        'cXenseParse:cbc-subsection1'
+    ]
+    for genre_key in genre_keys:
+        if genre_key not in meta_tags:
+            continue
+        article.info.genre = meta_tags[genre_key]
 
 
 def parse_meta_tags_time(meta_tags, article):
@@ -391,8 +407,10 @@ def parse_meta_tags_publisher(meta_tags, article):
         article.publisher.facebook.url = meta_tags['article:publisher']
     if 'twitter:site' in meta_tags:
         article.publisher.twitter.handle = meta_tags['twitter:site']
-    article.publisher.twitter.title = meta_tags['twitter:title']
-    article.publisher.twitter.description = meta_tags['twitter:description']
+    if 'twitter:title' in meta_tags:
+        article.publisher.twitter.title = meta_tags['twitter:title']
+    if 'twitter:description' in meta_tags:
+        article.publisher.twitter.description = meta_tags['twitter:description']
     if 'twitter:image' in meta_tags:
         article.publisher.twitter.image = meta_tags['twitter:image']
     if 'fb:app_id' in meta_tags:
