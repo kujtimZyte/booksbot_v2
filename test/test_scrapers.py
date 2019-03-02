@@ -393,6 +393,14 @@ class TestNewsSpider(unittest.TestCase):
             'ctvnews-brexit-deal-in-peril-after-u-k-cabinet-ministers-quit.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cnbc_amazon_alexa_on_huawei_mate_9_a_review(self, mock_head):
+        self.check_fake_html_scrape(
+            'cnbc-amazon-alexa-on-huawei-mate-9-a-review.html',
+            'https://www.cnbc.com/2017/03/23/amazon-alexa-on-huawei-mate-9-a-review.html',
+            'cnbc-amazon-alexa-on-huawei-mate-9-a-review.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

@@ -1,0 +1,161 @@
+{
+    "items": [
+        {
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "Todd Haselton"
+                    }
+                ],
+                "images": {
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 1280,
+                        "url": "https://image.cnbcfm.com/api/v1/image/104360286-huawei-alexa-featured.JPG?v=1490703660",
+                        "width": 1920
+                    }
+                },
+                "info": {
+                    "description": "Alexa just made its debut on an Android smartphone. Here's how it works.",
+                    "genre": "Tech Guide",
+                    "title": "This is Amazon Alexa on a phone, and it isn\u2019t threatening Siri anytime soon",
+                    "url": "https://www.cnbc.com/2017/03/23/amazon-alexa-on-huawei-mate-9-a-review.html"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "url": "https://www.facebook.com/cnbc"
+                    },
+                    "organisation": "CNBC",
+                    "twitter": {
+                        "description": "Alexa just made its debut on an Android smartphone. Here's how it works.",
+                        "handle": "@CNBC",
+                        "title": "This is Amazon Alexa on a phone, and it isn\u2019t threatening Siri anytime soon"
+                    }
+                },
+                "tags": [
+                    "Mobile",
+                    "Amazon.com Inc",
+                    "Technology",
+                    "business news"
+                ],
+                "text": {
+                    "markdown": "CNBC: Huawei Alexa featured\n\nTodd Haselton | CNBC\n\n[Amazon](/quotes/?symbol=AMZN)'s Alexa is now available as a [voice assistant\non the Huawei Mate 9](https://www.cnbc.com/2017/03/21/amazon-alexa-comes-to-\nhuawei-mate-9.html). It's the first smartphone in the United States to offer\nAlexa, an assistant that's otherwise only found on the Amazon Echo and Fire\nTV. It represents Amazon's intentions to make its AI available everywhere. But\nis it really that big of a deal? Will it give [Apple](/quotes/?symbol=AAPL)'s\nSiri and [Google](/quotes/?symbol=GOOGL)'s Assistant a run for their money?\nHere's what you can do with Alexa on a smartphone.  \n\nAlexa is only available on the U.S. version of Huawei Mate 9 right now, an\nAndroid smartphone that sells for about $600 from retailers like Amazon. In\nthis case, it exists as a separate application called \u201cHuawei Alexa.\u201d\n\nTodd Haselton | CNBC\n\nWhen you open the app you\u2019re presented with a single button. Just tap it to\nask whatever you want from Alexa. You can also get started by saying \u201cAlexa,\u201d\nbut only if the app is open. You can perform the same tasks you would with an\nAmazon Echo at home.\n\nCNBC: Huawei Alexa Main screen\n\nHere are some ideas to get you started: Ask about the weather, turn on\nconnected lights (if they\u2019re already set up), check your calendar, ask random\nquestions, listen to your Amazon Flash Briefing and more.\n\nTodd Haselton | CNBC\n\nAlexa on smartphones works with American English, British English and German.\nYou can bet support for other languages is coming.\n\nCNBC: Huawei Alexa Languages\n\nHere\u2019s a trick: You can also launch Alexa by knocking and drawing on the\nscreen. You need to configure this in the settings. It\u2019s a clunky way to get\nAlexa up and running.\n\nCNBC: Huawei Alexa Knock Draw\n\nCNBC: Huawei Alexa Final\n\nTodd Haselton | CNBC\n\nAlexa works well on a smartphone. It was able to quickly answer a question\nabout the weather and read me my daily news briefing. I even turned off my\nliving room lights from work.\n\nStill, it's not as good as Siri or Google Now for several reasons.\n\nFirst, you can't just call up Alexa from across the room as you might with\nGoogle Now or Siri on newer iPhones. You have to manually launch the app.\nAlso, while Siri and Google provide visual cues, like graphics that show the\nlatest sports scores or the forecast, Amazon only provides answers through\nyour phone's speakers. It would be better served by adding some eye candy.\n\nAmazon is going to want to get this in as many places as possible, especially\nfor folks who are used to having an Echo in the living room or Amazon Fire TV\non their televisions. For folks who already use Siri or Google Assistant,\nhowever, Amazon's going to need to spice this up a lot more.\n\nMaybe that's why it's making its debut on a phone that's probably only known\namong enthusiast circles.\n\n",
+                    "text": "CNBC: Huawei Alexa featured\nTodd Haselton | CNBC\nAmazon's Alexa is now available as a voice assistant\non the Huawei Mate 9. It's the first smartphone in the United States to offer\nAlexa, an assistant that's otherwise only found on the Amazon Echo and Fire\nTV. It represents Amazon's intentions to make its AI available everywhere. But\nis it really that big of a deal? Will it give Apple's\nSiri and Google's Assistant a run for their money?\nHere's what you can do with Alexa on a smartphone.  \nAlexa is only available on the U.S. version of Huawei Mate 9 right now, an\nAndroid smartphone that sells for about $600 from retailers like Amazon. In\nthis case, it exists as a separate application called \u201cHuawei Alexa.\u201d\nTodd Haselton | CNBC\nWhen you open the app you\u2019re presented with a single button. Just tap it to\nask whatever you want from Alexa. You can also get started by saying \u201cAlexa,\u201d\nbut only if the app is open. You can perform the same tasks you would with an\nAmazon Echo at home.\nCNBC: Huawei Alexa Main screen\nHere are some ideas to get you started: Ask about the weather, turn on\nconnected lights (if they\u2019re already set up), check your calendar, ask random\nquestions, listen to your Amazon Flash Briefing and more.\nTodd Haselton | CNBC\nAlexa on smartphones works with American English, British English and German.\nYou can bet support for other languages is coming.\nCNBC: Huawei Alexa Languages\nHere\u2019s a trick: You can also launch Alexa by knocking and drawing on the\nscreen. You need to configure this in the settings. It\u2019s a clunky way to get\nAlexa up and running.\nCNBC: Huawei Alexa Knock Draw\nCNBC: Huawei Alexa Final\nTodd Haselton | CNBC\nAlexa works well on a smartphone. It was able to quickly answer a question\nabout the weather and read me my daily news briefing. I even turned off my\nliving room lights from work.\nStill, it's not as good as Siri or Google Now for several reasons.\nFirst, you can't just call up Alexa from across the room as you might with\nGoogle Now or Siri on newer iPhones. You have to manually launch the app.\nAlso, while Siri and Google provide visual cues, like graphics that show the\nlatest sports scores or the forecast, Amazon only provides answers through\nyour phone's speakers. It would be better served by adding some eye candy.\nAmazon is going to want to get this in as many places as possible, especially\nfor folks who are used to having an Echo in the living room or Amazon Fire TV\non their televisions. For folks who already use Siri or Google Assistant,\nhowever, Amazon's going to need to spice this up a lot more.\nMaybe that's why it's making its debut on a phone that's probably only known\namong enthusiast circles."
+                },
+                "time": {
+                    "modified_time": 1490721319.0,
+                    "published_time": 1490287373.0
+                },
+                "videos": {}
+            },
+            "url": "https://www.cnbc.com/2017/03/23/amazon-alexa-on-huawei-mate-9-a-review.html"
+        }
+    ],
+    "requests": [
+        "https://www.cnbc.com/2017/03/23/amazon-alexa-on-huawei-mate-9-a-review.html#MainContent",
+        "https://www.cnbc.com/",
+        "https://www.cnbc.com/2017/03/23/amazon-alexa-on-huawei-mate-9-a-review.html",
+        "https://www.cnbc.com/pro/",
+        "https://watchlist.cnbc.com/watchlist/",
+        "https://www.cnbc.com/makeit/",
+        "https://www.cnbc.com/?region=usa",
+        "https://www.cnbc.com/world/",
+        "https://www.cnbc.com/markets/",
+        "https://www.cnbc.com/pre-markets/",
+        "https://www.cnbc.com/us-markets/",
+        "https://www.cnbc.com/currencies/",
+        "https://www.cnbc.com/cryptocurrency/",
+        "https://www.cnbc.com/commodities/",
+        "https://www.cnbc.com/bonds/",
+        "https://www.cnbc.com/exchange-traded-funds/",
+        "https://www.cnbc.com/business/",
+        "https://www.cnbc.com/economy/",
+        "https://www.cnbc.com/finance/",
+        "https://www.cnbc.com/health-care/",
+        "https://www.cnbc.com/media/",
+        "https://www.cnbc.com/real-estate/",
+        "https://www.cnbc.com/energy/",
+        "https://www.cnbc.com/transportation/",
+        "https://www.cnbc.com/industrials/",
+        "https://www.cnbc.com/retail/",
+        "https://www.cnbc.com/wealth/",
+        "https://www.cnbc.com/SMALL-BUSINESS/",
+        "https://www.cnbc.com/investing/",
+        "https://www.cnbc.com/invest-in-you/",
+        "https://www.cnbc.com/personal-finance/",
+        "https://www.cnbc.com/financial-advisors/",
+        "https://www.cnbc.com/trading-nation/",
+        "https://www.cnbc.com/futures-now/",
+        "https://www.cnbc.com/options-action/",
+        "https://www.cnbc.com/etf-street/",
+        "https://www.cnbc.com/earnings/",
+        "https://www.cnbc.com/trader-talk/",
+        "https://www.cnbc.com/technology/",
+        "https://www.cnbc.com/cybersecurity/",
+        "https://www.cnbc.com/enterprise/",
+        "https://www.cnbc.com/internet/",
+        "https://www.cnbc.com/mobile/",
+        "https://www.cnbc.com/social-media/",
+        "https://www.cnbc.com/venture-capital/",
+        "https://www.cnbc.com/tech-guide/",
+        "https://www.cnbc.com/politics/",
+        "https://www.cnbc.com/white-house/",
+        "https://www.cnbc.com/policy/",
+        "https://www.cnbc.com/defense/",
+        "https://www.cnbc.com/congress/",
+        "https://www.cnbc.com/elections/",
+        "https://www.cnbc.com/tv/",
+        "https://www.cnbc.com/live-audio/",
+        "https://www.cnbc.com/video/",
+        "https://www.cnbc.com/top-video/",
+        "https://www.cnbc.com/primetime-shows/",
+        "https://www.cnbc.com/digital-original/",
+        "https://www.cnbc.com/2019/03/02/amazon-hq2-publicity-grab-backfiring.html",
+        "https://www.cnbc.com/2019/03/02/spacex-launches-crew-dragon-capsule-to-space-station-in-milestone-test-for-nasa.html",
+        "https://www.cnbc.com/2019/03/01/the-timeline-of-trump-china-tariffs-and-trade-war.html",
+        "https://www.cnbc.com/2019/03/01/trump-says-hes-asked-china-to-remove-tariffs-on-agricultural-products.html",
+        "https://www.cnbc.com/2019/03/01/if-you-win-either-mega-millions-or-powerball-heres-your-tax-bill.html",
+        "https://www.cnbc.com/2019/03/02/gop-senators-struggle-to-escape-no-win-border-vote.html",
+        "https://www.cnbc.com/2019/02/28/blockchain-sets-its-sights-on-electronic-gaming.html",
+        "https://www.cnbc.com/2019/03/02/us-safety-agencies-to-investigate-fatal-tesla-crash-in-florida.html",
+        "https://www.cnbc.com/2019/03/01/trump-says-north-korea-can-be-economic-power-but-experts-disagree.html",
+        "https://www.cnbc.com/2019/03/01/msci-benchmarks-increased-a-share-weighting-may-drive-money-to-china.html",
+        "https://www.cnbc.com/2019/03/02/china-publishes-rules-for-new-nasdaq-style-tech-board-in-shanghai.html",
+        "https://www.cnbc.com/2019/03/01/tesla-pays-off-920-million-for-convertible-bond-obligation-in-cash.html",
+        "https://www.cnbc.com/todd-haselton/",
+        "https://www.cnbc.com/quotes/?symbol=AMZN",
+        "https://www.cnbc.com/2017/03/21/amazon-alexa-comes-to-huawei-mate-9.html",
+        "https://www.cnbc.com/quotes/?symbol=AAPL",
+        "https://www.cnbc.com/quotes/?symbol=GOOGL",
+        "https://www.cnbc.com/search/?query=Mobile",
+        "https://www.cnbc.com/quotes?symbol=AMZN",
+        "https://www.cnbc.com/2019/02/28/63-percent-of-millennial-homebuyers-have-regrets-heres-why.html",
+        "https://www.cnbc.com/2019/03/01/best-deals-at-costco-beyond-food.html",
+        "https://www.cnbc.com/2019/03/01/easy-ways-to-get-rich-without-working-hard.html",
+        "https://www.cnbc.com/2019/02/28/siri-tips-and-tricks-for-iphone.html",
+        "https://www.cnbc.com/2019/02/27/samsung-galaxy-s10-plus-review.html",
+        "https://www.cnbc.com/video/2019/02/27/samsung-galaxy-s10-review.html",
+        "https://www.cnbc.com",
+        "https://www.cnbc.com/application/pro/?__source=pro|display|cnbc|house|PRO_Footer_MktgPg/",
+        "https://www.cnbc.com/cnbc-reprints/",
+        "https://www.cnbc.com/advertising-and-partnerships/",
+        "https://www.cnbc.com/closed-captioning/",
+        "https://www.cnbc.com/digital-products/",
+        "https://www.cnbc.com/nbcuniversal-terms-of-service/",
+        "https://www.cnbc.com/cnbc-news-releases/",
+        "https://www.cnbc.com/cnbc-internship-program/",
+        "https://www.cnbc.com/corrections/",
+        "https://www.cnbc.com/about/",
+        "https://www.cnbc.com/site-map/",
+        "https://www.cnbc.com/podcasts/",
+        "https://help.cnbc.com/contact/",
+        "https://www.cnbc.com/cnbc-careers-and-employment/",
+        "https://help.cnbc.com/",
+        "https://www.cnbc.com/id/28295763/",
+        "https://www.cnbc.com/news-tips/",
+        "https://www.cnbc.com/sign-up-for-cnbc-newsletters/",
+        "https://www.cnbc.com/id/16061983/"
+    ]
+}
