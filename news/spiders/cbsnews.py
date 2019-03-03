@@ -39,4 +39,6 @@ def cbs_url_filter(url):
     """Filters URLs in the CBS domain"""
     if '/video/' in url:
         return False
+    if '/live/' in url:
+        return False
     return True
