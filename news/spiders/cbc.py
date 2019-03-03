@@ -62,6 +62,8 @@ def cbc_parse(response):
     return article.json(), link_id
 
 
-def cbc_url_filter(_url):
+def cbc_url_filter(url):
     """Filters URLs in the CBC domain"""
+    if '/touch/' in url:
+        return False
     return True
