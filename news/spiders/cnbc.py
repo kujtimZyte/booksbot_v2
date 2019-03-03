@@ -32,6 +32,8 @@ def cnbc_parse(response):
     return article.json(), link_id
 
 
-def cnbc_url_filter(_url):
+def cnbc_url_filter(url):
     """Filters URLs in the CNBC domain"""
+    if '/video/' in url:
+        return False
     return True
