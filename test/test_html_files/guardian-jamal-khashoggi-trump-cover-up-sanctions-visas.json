@@ -1,230 +1,64 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "HandheldFriendly": "True",
-                    "al:ios:app_name": "The Guardian",
-                    "al:ios:app_store_id": "409128287",
-                    "al:ios:url": "gnmguardian://world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas?contenttype=Article&source=applinks",
-                    "apple-itunes-app": "app-id=409128287, app-argument=https://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas, affiliate-data=ct=newsmartappbanner&pt=304191",
-                    "apple-mobile-web-app-title": "Guardian",
-                    "application-name": "The Guardian",
-                    "article:author": "https://www.theguardian.com/profile/bethan-mckernan",
-                    "article:modified_time": "2018-10-23T22:43:42.000Z",
-                    "article:published_time": "2018-10-23T22:04:24.000Z",
-                    "article:publisher": "https://www.facebook.com/theguardian",
-                    "article:section": "World news",
-                    "article:tag": "Jamal Khashoggi,US foreign policy,Saudi Arabia,World news,US news,Middle East and North Africa,Mike Pompeo,Donald Trump,Turkey,Recep Tayyip Erdo\u011fan",
-                    "articleBody": [
-                        {
-                            "text": "Donald Trump has said that the Saudi operation to kill"
-                        },
-                        {
-                            "link": "https://www.theguardian.com/world/jamal-khashoggi",
-                            "text": "Jamal Khashoggi"
-                        },
-                        {
-                            "text": "in Riyadh\u2019s consulate in Istanbul led to \u201cone of the worst cover-ups\u201d in history, as the US said it would sanction officials who were implicated in the writer\u2019s death."
-                        },
-                        {
-                            "text": "Twenty-one Saudis will have their US visas revoked or be made ineligible for US visas over the journalist\u2019s killing, a state department spokeswoman, Heather Nauert, said on Tuesday."
-                        },
-                        {
-                            "link": "https://www.theguardian.com/us-news/mike-pompeo",
-                            "text": "Mike Pompeo"
-                        },
-                        {
-                            "text": ", the US secretary of state, said that other measures were being considered, including sanctions: \u201cThese penalties will not be the last word on the matter from the United States."
-                        },
-                        {
-                            "text": "\u201cWe\u2019re making very clear that the United States does not tolerate this kind of ruthless action to silence Mr Khashoggi, a journalist, through violence.\u201d"
-                        },
-                        {
-                            "text": "The visa revocations would be the first punitive measures taken by the administration against the Saudis since Khashoggi disappeared after entering the consulate on 2 October."
-                        },
-                        {
-                            "text": "Speaking to reporters in the Oval Office, Trump said: \u201cThey had a very bad original concept. It was carried out poorly and the cover-up was one of the worst in the history of cover-ups.\u201d"
-                        },
-                        {
-                            "text": "He added: \u201cBecause whoever thought of that idea, I think is in big trouble. And they should be in big trouble. OK?\u201d"
-                        },
-                        {
-                            "text": "Khashoggi\u2019s death in the Saudi consulate in Istanbul has caused global outrage and strained relations between Riyadh and Washington. Khashoggi, a critic of the Saudi crown prince, Mohammed bin Salman, was a US resident and columnist for the Washington Post."
-                        },
-                        {
-                            "text": "But Trump has given mixed messages over recent days, vowing \u201cvery severe\u201d consequences and mentioning possible economic sanctions, but also ruling out a block on arms sales to"
-                        },
-                        {
-                            "link": "https://www.theguardian.com/world/saudiarabia",
-                            "text": "Saudi Arabia"
-                        },
-                        {
-                            "text": ", and highlighting the country\u2019s role as a US ally against Iran and Islamist militants"
-                        },
-                        {
-                            "text": "At the weekend, the US president said he thought that"
-                        },
-                        {
-                            "link": "https://www.theguardian.com/world/2018/oct/19/jamal-khashoggi-dead-saudi-arabian-state-television-confirms",
-                            "text": "Saudi claims that Khashoggi had died in a \u201cfistfight\u201d"
-                        },
-                        {
-                            "text": "were credible, and termed it an \u201cimportant first step\u201d."
-                        },
-                        {
-                            "text": "His comments on Tuesday came after the Turkish president,"
-                        },
-                        {
-                            "link": "https://www.theguardian.com/world/recep-tayyip-erdogan",
-                            "text": "Recep Tayyip Erdo\u011fan"
-                        },
-                        {
-                            "text": ","
-                        },
-                        {
-                            "link": "https://www.theguardian.com/world/2018/oct/23/turkish-president-erdogan-rejects-saudi-account-of-khashoggi-killing",
-                            "text": "publicly tore down the Saudi version"
-                        },
-                        {
-                            "text": ", making fresh allegations that Khashoggi\u2019s \u201csavage\u201d murder was premeditated, and calling for an independent investigation."
-                        },
-                        {
-                            "text": "Erdo\u011fan had billed his keenly awaited address at the Turkish parliament in Ankara as the moment he would"
-                        },
-                        {
-                            "link": "https://viewer.gutools.co.uk/world/2018/oct/22/erdogan-to-reveal-naked-truth-about-khashoggis-death",
-                            "text": "reveal the \u201cnaked truth\u201d"
-                        },
-                        {
-                            "text": "about what happened to Khashoggi. He said he was not satisfied with Riyadh\u2019s suggestion that the killing was a rogue extradition operation gone wrong, and called for the \u201chighest ranked\u201d of those responsible to be brought to justice."
-                        },
-                        {
-                            "text": "\u201cIntelligence and security institutions have evidence showing the murder was planned \u2026 Pinning such a case on some security and intelligence members will not satisfy us or the international community,\u201d he said. \u201cFrom the person who gave the order, to the person who carried it out, they must all be brought to account.\u201d"
-                        },
-                        {
-                            "text": "Contrary to expectations Erdo\u011fan\u2019s first update on the three-week-old case did not officially reveal the existence of audio and video evidence understood to be in Turkey\u2019s possession."
-                        },
-                        {
-                            "text": "Erdo\u011fan did reveal that on the day before Khashoggi was killed, Saudi agents arrived in Istanbul and began to scout locations, including the Belgrad forest near Istanbul and the city of Yalova to its south. Police have subsequently searched both areas for Khashoggi\u2019s remains."
-                        },
-                        {
-                            "text": "The president did not name the powerful"
-                        },
-                        {
-                            "link": "https://viewer.gutools.co.uk/world/mohammed-bin-salman",
-                            "text": "Mohammed bin Salman"
-                        },
-                        {
-                            "text": ", the kingdom\u2019s de facto ruler who, it is alleged, was probably aware of, and possibly even ordered, the silencing of his prominent critic, but observers were in little doubt to whom his repeated mentions of \u201chighest ranked\u201d referred."
-                        },
-                        {
-                            "text": "He otherwise spoke of the \u201csincerity\u201d of Saudi Arabia\u2019s King Salman in the investigation. The gaps in the speech suggested Erdo\u011fan has more cards to play in the evolving diplomatic crisis."
-                        },
-                        {
-                            "text": "Erdo\u011fan\u2019s speech came as the Saudi foreign ministry released extraordinary photos of Khashoggi\u2019s son, Salah bin"
-                        },
-                        {
-                            "link": "https://viewer.gutools.co.uk/world/jamal-khashoggi",
-                            "text": "Jamal Khashoggi"
-                        },
-                        {
-                            "text": ", meeting the crown prince and king in Riyadh on Tuesday."
-                        },
-                        {
-                            "text": "Saudi Arabia\u2019s widely derided version of events has created a scandal for the kingdom. The G7 industrialised nations issued a fresh call for \u201ca thorough, credible, transparent and prompt investigation\u201d, adding"
-                        },
-                        {
-                            "link": "https://viewer.gutools.co.uk/world/saudiarabia",
-                            "text": "Saudi Arabia"
-                        },
-                        {
-                            "text": "needed to put in place \u201cmeasures to ensure that something like this cannot happen again\u201d."
-                        },
-                        {
-                            "text": "Many western firms have pulled out of a large foreign investment conference in Riyadh that began on Tuesday."
-                        },
-                        {
-                            "text": "On the ground in Istanbul on Tuesday, police told Turkish television that they had been allowed to search a diplomatic car belonging to the Saudi consulate in the presence of Saudi investigators. Two suitcases containing documents and a laptop had been retrieved from the vehicle, although it was not immediately clear who they belonged to."
-                        },
-                        {
-                            "text": "Khashoggi did not appear to be carrying any belongings when he entered the consulate the day he died, and electronics are not allowed inside the building."
-                        },
-                        {
-                            "text": "Surveillance footage shows that the car, found in an underground car park in Sultangazi district on Monday, was approached by a man who retrieved a package from the boot several days ago."
-                        },
-                        {
-                            "text": "Tabling the new allegations that Saudi officials scoped out rural areas outside Istanbul the day before Khashoggi\u2019s murder, Erdo\u011fan said in his address that Turkey\u2019s investigation was ongoing."
-                        },
-                        {
-                            "text": "\u201cSaudi Arabia has taken an important step by admitting the murder,\u201d Erdo\u011fan said. \u201cAs of now, we expect of them to openly bring to light those responsible \u2013 from the highest ranked to the lowest \u2013 and to bring them to justice.\u201d"
-                        },
-                        {
-                            "text": "He said Saudi Arabia must relinquish control of the investigation into the \u201cpolitical\u201d murder to an independent and unbiased Turkish operation in Istanbul."
-                        },
-                        {
-                            "text": "Turkish investigators have steadily leaked evidence to the media that allegedly proves the journalist was tortured, murdered and his body dismembered within the consulate building. CCTV footage shows a"
-                        },
-                        {
-                            "link": "https://viewer.gutools.co.uk/world/2018/oct/22/cctv-footage-appears-to-show-jamal-khashoggi-body-double-in-istanbul",
-                            "text": "body double"
-                        },
-                        {
-                            "text": "dressed in Khashoggi\u2019s clothes leaving the consulate and touring Istanbul\u2019s landmarks, undermining the idea that the team interrogating Khashoggi meant to bring him back alive."
-                        },
-                        {
-                            "text": "As"
-                        },
-                        {
-                            "link": "https://viewer.gutools.co.uk/world/2018/oct/21/death-of-dissident-jamal-khashoggi-mohammed-bin-salman",
-                            "text": "reported by the Observer on Sunday"
-                        },
-                        {
-                            "text": ", Turkish investigators may have intercepted the hit squad\u2019s communications. Reuters said on Monday that Saud al-Qahtani, an influential adviser to Bin Salman, participated in a Skype call to the room in the consulate where Khashoggi was held, telling the team to \u201cbring me the head of the dog\u201d."
-                        }
-                    ],
-                    "author": "Bethan McKernan",
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "Bethan McKernan"
+                    }
+                ],
+                "images": {
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 720,
+                        "url": "https://i.guim.co.uk/img/media/6e532981cf34af9609e41032d5c5d9102c6ff0d6/0_233_3500_2101/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=990d00212b56936bfe2a680740695c6e",
+                        "width": 1200
+                    }
+                },
+                "info": {
                     "description": "US curbs 21 Saudi officials\u2019 visas and mulls more sanctions, with Pompeo adding: \u2018These penalties will not be the last word\u2019",
-                    "fb:app_id": "180444840287",
-                    "fb:pages": "516977308337360",
-                    "format-detection": "telephone=no",
-                    "imgs": [
-                        "https://i.guim.co.uk/img/media/efd4b0da768248d47fc1c3da23dfc922bc61db26/100_66_1135_681/master/1135.png?width=300&quality=85&auto=format&fit=max&s=d6dc6e97579cb5e178c28c02012a9c31",
-                        "https://i.guim.co.uk/img/media/1cb1179ad6b0ff0d187a4c94e7f7484a91b81839/22_176_4072_2443/master/4072.jpg?width=300&quality=85&auto=format&fit=max&s=53cb811e25f6635912958aeec4923f58",
-                        "https://i.guim.co.uk/img/media/e2b11656ecff4c00eb6e6b8eb721da06ac1ed354/0_0_2560_1536/master/2560.jpg?width=300&quality=85&auto=format&fit=max&s=64e0071aa9c0c8897c23effa543a4e72",
-                        "https://i.guim.co.uk/img/media/a86d3937cd2e0913b9199b09450b92ec32621340/0_10_2882_1729/master/2882.jpg?width=300&quality=85&auto=format&fit=max&s=9594bf16e8872b714a2669ff16a9af03",
-                        "https://i.guim.co.uk/img/media/2d8488d9a0c7398327cc5d4593fc89cc307a0590/0_54_3504_2104/master/3504.jpg?width=300&quality=85&auto=format&fit=max&s=8f40ac821ce0093dfa65d18d587fd916"
-                    ],
-                    "keywords": "Jamal Khashoggi,US foreign policy,Saudi Arabia,World news,US news,Middle East and North Africa,Mike Pompeo,Donald Trump,Turkey,Recep Tayyip Erdo\u011fan",
-                    "msapplication-TileColor": "#e7edef",
-                    "msapplication-TileImage": "https://assets.guim.co.uk/images/favicons/77beb32f01ee0157ec193e09e4e18c4e/windows_tile_144_b.png",
-                    "news_keywords": "Jamal Khashoggi,US foreign policy,Saudi Arabia,World news,US news,Middle East and North Africa,Mike Pompeo,Donald Trump,Turkey,Recep Tayyip Erdo\u011fan",
-                    "og:description": "US curbs 21 Saudi officials\u2019 visas and mulls more sanctions, with Pompeo adding: \u2018These penalties will not be the last word\u2019",
-                    "og:image": "https://i.guim.co.uk/img/media/6e532981cf34af9609e41032d5c5d9102c6ff0d6/0_233_3500_2101/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=990d00212b56936bfe2a680740695c6e",
-                    "og:image:height": "720",
-                    "og:image:width": "1200",
-                    "og:site_name": "the Guardian",
-                    "og:title": "Jamal Khashoggi: Trump says Saudi cover-up was 'one of worst' in history",
-                    "og:type": "article",
-                    "og:url": "http://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas",
-                    "theme-color": "#e7edef",
-                    "thumbnail": "https://i.guim.co.uk/img/media/6e532981cf34af9609e41032d5c5d9102c6ff0d6/0_233_3500_2101/master/3500.jpg?width=620&quality=85&auto=format&fit=max&s=904b3aef5c9263fc950eb0ee29c7743f",
-                    "twitter:app:id:googleplay": "com.guardian",
-                    "twitter:app:id:ipad": "409128287",
-                    "twitter:app:id:iphone": "409128287",
-                    "twitter:app:name:googleplay": "The Guardian",
-                    "twitter:app:name:ipad": "The Guardian",
-                    "twitter:app:name:iphone": "The Guardian",
-                    "twitter:app:url:googleplay": "guardian://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas",
-                    "twitter:app:url:ipad": "gnmguardian://world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas?contenttype=Article&source=twitter",
-                    "twitter:app:url:iphone": "gnmguardian://world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas?contenttype=Article&source=twitter",
-                    "twitter:card": "summary_large_image",
-                    "twitter:dnt": "on",
-                    "twitter:image": "https://i.guim.co.uk/img/media/6e532981cf34af9609e41032d5c5d9102c6ff0d6/0_233_3500_2101/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=990d00212b56936bfe2a680740695c6e",
-                    "twitter:site": "@guardian",
-                    "viewport": "width=device-width,minimum-scale=1,initial-scale=1"
-                }
-            ],
+                    "genre": "World news",
+                    "title": "Jamal Khashoggi: Trump says Saudi cover-up was 'one of worst' in history",
+                    "url": "http://www.theguardian.com/"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "app_id": "180444840287",
+                        "page_id": [
+                            "516977308337360"
+                        ],
+                        "url": "https://www.facebook.com/theguardian"
+                    },
+                    "organisation": "the Guardian",
+                    "twitter": {
+                        "handle": "@guardian",
+                        "image": "https://i.guim.co.uk/img/media/6e532981cf34af9609e41032d5c5d9102c6ff0d6/0_233_3500_2101/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=990d00212b56936bfe2a680740695c6e"
+                    }
+                },
+                "tags": [
+                    "Turkey",
+                    "Saudi Arabia",
+                    "US foreign policy",
+                    "Recep Tayyip Erdo\u011fan",
+                    "US news",
+                    "Donald Trump",
+                    "World news",
+                    "Mike Pompeo",
+                    "Jamal Khashoggi",
+                    "Middle East and North Africa"
+                ],
+                "text": {
+                    "markdown": "Donald Trump has said that the Saudi operation to kill [Jamal\nKhashoggi](https://www.theguardian.com/world/jamal-khashoggi) in Riyadh\u2019s\nconsulate in Istanbul led to \u201cone of the worst cover-ups\u201d in history, as the\nUS said it would sanction officials who were implicated in the writer\u2019s death.\n\nTwenty-one Saudis will have their US visas revoked or be made ineligible for\nUS visas over the journalist\u2019s killing, a state department spokeswoman,\nHeather Nauert, said on Tuesday.\n\n[Mike Pompeo](https://www.theguardian.com/us-news/mike-pompeo), the US\nsecretary of state, said that other measures were being considered, including\nsanctions: \u201cThese penalties will not be the last word on the matter from the\nUnited States.\n\n\u201cWe\u2019re making very clear that the United States does not tolerate this kind of\nruthless action to silence Mr Khashoggi, a journalist, through violence.\u201d\n\nThe visa revocations would be the first punitive measures taken by the\nadministration against the Saudis since Khashoggi disappeared after entering\nthe consulate on 2 October.\n\nSpeaking to reporters in the Oval Office, Trump said: \u201cThey had a very bad\noriginal concept. It was carried out poorly and the cover-up was one of the\nworst in the history of cover-ups.\u201d\n\nHe added: \u201cBecause whoever thought of that idea, I think is in big trouble.\nAnd they should be in big trouble. OK?\u201d\n\nKhashoggi\u2019s death in the Saudi consulate in Istanbul has caused global outrage\nand strained relations between Riyadh and Washington. Khashoggi, a critic of\nthe Saudi crown prince, Mohammed bin Salman, was a US resident and columnist\nfor the Washington Post.\n\n#  Khashoggi murder exposes Trump administration's dependency on Saudis\n\n[](https://www.theguardian.com/us-news/2018/oct/21/khashoggi-exposes-trump-\nadministrations-de)\n\nBut Trump has given mixed messages over recent days, vowing \u201cvery severe\u201d\nconsequences and mentioning possible economic sanctions, but also ruling out a\nblock on arms sales to [Saudi\nArabia](https://www.theguardian.com/world/saudiarabia), and highlighting the\ncountry\u2019s role as a US ally against Iran and Islamist militants\n\nAt the weekend, the US president said he thought that [Saudi claims that\nKhashoggi had died in a\n\u201cfistfight\u201d](https://www.theguardian.com/world/2018/oct/19/jamal-khashoggi-\ndead-saudi-arabian-state-television-confirms) were credible, and termed it an\n\u201cimportant first step\u201d.\n\nHis comments on Tuesday came after the Turkish president, [Recep Tayyip\nErdo\u011fan](https://www.theguardian.com/world/recep-tayyip-erdogan), [publicly\ntore down the Saudi version](https://www.theguardian.com/world/2018/oct/23\n/turkish-president-erdogan-rejects-saudi-account-of-khashoggi-killing), making\nfresh allegations that Khashoggi\u2019s \u201csavage\u201d murder was premeditated, and\ncalling for an independent investigation.\n\nErdo\u011fan had billed his keenly awaited address at the Turkish parliament in\nAnkara as the moment he would [reveal the \u201cnaked\ntruth\u201d](https://viewer.gutools.co.uk/world/2018/oct/22/erdogan-to-reveal-\nnaked-truth-about-khashoggis-death) about what happened to Khashoggi. He said\nhe was not satisfied with Riyadh\u2019s suggestion that the killing was a rogue\nextradition operation gone wrong, and called for the \u201chighest ranked\u201d of those\nresponsible to be brought to justice.\n\n\u201cIntelligence and security institutions have evidence showing the murder was\nplanned \u2026 Pinning such a case on some security and intelligence members will\nnot satisfy us or the international community,\u201d he said. \u201cFrom the person who\ngave the order, to the person who carried it out, they must all be brought to\naccount.\u201d\n\nContrary to expectations Erdo\u011fan\u2019s first update on the three-week-old case did\nnot officially reveal the existence of audio and video evidence understood to\nbe in Turkey\u2019s possession.\n\nErdo\u011fan did reveal that on the day before Khashoggi was killed, Saudi agents\narrived in Istanbul and began to scout locations, including the Belgrad forest\nnear Istanbul and the city of Yalova to its south. Police have subsequently\nsearched both areas for Khashoggi\u2019s remains.\n\nThe president did not name the powerful [Mohammed bin\nSalman](https://viewer.gutools.co.uk/world/mohammed-bin-salman), the kingdom\u2019s\nde facto ruler who, it is alleged, was probably aware of, and possibly even\nordered, the silencing of his prominent critic, but observers were in little\ndoubt to whom his repeated mentions of \u201chighest ranked\u201d referred.\n\nHe otherwise spoke of the \u201csincerity\u201d of Saudi Arabia\u2019s King Salman in the\ninvestigation. The gaps in the speech suggested Erdo\u011fan has more cards to play\nin the evolving diplomatic crisis.\n\nErdo\u011fan\u2019s speech came as the Saudi foreign ministry released extraordinary\nphotos of Khashoggi\u2019s son, Salah bin [Jamal\nKhashoggi](https://viewer.gutools.co.uk/world/jamal-khashoggi), meeting the\ncrown prince and king in Riyadh on Tuesday.\n\n#  Erdo\u011fan's Khashoggi speech poses tough questions for Bin Salman\n\n[](https://www.theguardian.com/world/2018/oct/23/erdogan-keeps-naked-truth-\nabout-khashoggi-under-wraps-for-now)\n\nSaudi Arabia\u2019s widely derided version of events has created a scandal for the\nkingdom. The G7 industrialised nations issued a fresh call for \u201ca thorough,\ncredible, transparent and prompt investigation\u201d, adding [Saudi\nArabia](https://viewer.gutools.co.uk/world/saudiarabia) needed to put in place\n\u201cmeasures to ensure that something like this cannot happen again\u201d.\n\nMany western firms have pulled out of a large foreign investment conference in\nRiyadh that began on Tuesday.\n\nOn the ground in Istanbul on Tuesday, police told Turkish television that they\nhad been allowed to search a diplomatic car belonging to the Saudi consulate\nin the presence of Saudi investigators. Two suitcases containing documents and\na laptop had been retrieved from the vehicle, although it was not immediately\nclear who they belonged to.\n\nKhashoggi did not appear to be carrying any belongings when he entered the\nconsulate the day he died, and electronics are not allowed inside the\nbuilding.\n\nSurveillance footage shows that the car, found in an underground car park in\nSultangazi district on Monday, was approached by a man who retrieved a package\nfrom the boot several days ago.\n\nTabling the new allegations that Saudi officials scoped out rural areas\noutside Istanbul the day before Khashoggi\u2019s murder, Erdo\u011fan said in his\naddress that Turkey\u2019s investigation was ongoing.\n\n\u201cSaudi Arabia has taken an important step by admitting the murder,\u201d Erdo\u011fan\nsaid. \u201cAs of now, we expect of them to openly bring to light those responsible\n\u2013 from the highest ranked to the lowest \u2013 and to bring them to justice.\u201d\n\nHe said Saudi Arabia must relinquish control of the investigation into the\n\u201cpolitical\u201d murder to an independent and unbiased Turkish operation in\nIstanbul.\n\nTurkish investigators have steadily leaked evidence to the media that\nallegedly proves the journalist was tortured, murdered and his body\ndismembered within the consulate building. CCTV footage shows a [body\ndouble](https://viewer.gutools.co.uk/world/2018/oct/22/cctv-footage-appears-\nto-show-jamal-khashoggi-body-double-in-istanbul) dressed in Khashoggi\u2019s\nclothes leaving the consulate and touring Istanbul\u2019s landmarks, undermining\nthe idea that the team interrogating Khashoggi meant to bring him back alive.\n\nAs [reported by the Observer on\nSunday](https://viewer.gutools.co.uk/world/2018/oct/21/death-of-dissident-\njamal-khashoggi-mohammed-bin-salman), Turkish investigators may have\nintercepted the hit squad\u2019s communications. Reuters said on Monday that Saud\nal-Qahtani, an influential adviser to Bin Salman, participated in a Skype call\nto the room in the consulate where Khashoggi was held, telling the team to\n\u201cbring me the head of the dog\u201d.\n\n",
+                    "text": "Donald Trump has said that the Saudi operation to kill Jamal\nKhashoggi in Riyadh\u2019s\nconsulate in Istanbul led to \u201cone of the worst cover-ups\u201d in history, as the\nUS said it would sanction officials who were implicated in the writer\u2019s death.\nTwenty-one Saudis will have their US visas revoked or be made ineligible for\nUS visas over the journalist\u2019s killing, a state department spokeswoman,\nHeather Nauert, said on Tuesday.\nMike Pompeo, the US\nsecretary of state, said that other measures were being considered, including\nsanctions: \u201cThese penalties will not be the last word on the matter from the\nUnited States.\n\u201cWe\u2019re making very clear that the United States does not tolerate this kind of\nruthless action to silence Mr Khashoggi, a journalist, through violence.\u201d\nThe visa revocations would be the first punitive measures taken by the\nadministration against the Saudis since Khashoggi disappeared after entering\nthe consulate on 2 October.\nSpeaking to reporters in the Oval Office, Trump said: \u201cThey had a very bad\noriginal concept. It was carried out poorly and the cover-up was one of the\nworst in the history of cover-ups.\u201d\nHe added: \u201cBecause whoever thought of that idea, I think is in big trouble.\nAnd they should be in big trouble. OK?\u201d\nKhashoggi\u2019s death in the Saudi consulate in Istanbul has caused global outrage\nand strained relations between Riyadh and Washington. Khashoggi, a critic of\nthe Saudi crown prince, Mohammed bin Salman, was a US resident and columnist\nfor the Washington Post.\nKhashoggi murder exposes Trump administration's dependency on Saudis\n\nBut Trump has given mixed messages over recent days, vowing \u201cvery severe\u201d\nconsequences and mentioning possible economic sanctions, but also ruling out a\nblock on arms sales to Saudi\nArabia, and highlighting the\ncountry\u2019s role as a US ally against Iran and Islamist militants\nAt the weekend, the US president said he thought that Saudi claims that\nKhashoggi had died in a\n\u201cfistfight\u201d were credible, and termed it an\n\u201cimportant first step\u201d.\nHis comments on Tuesday came after the Turkish president, Recep Tayyip\nErdo\u011fan, publicly\ntore down the Saudi version, making\nfresh allegations that Khashoggi\u2019s \u201csavage\u201d murder was premeditated, and\ncalling for an independent investigation.\nErdo\u011fan had billed his keenly awaited address at the Turkish parliament in\nAnkara as the moment he would reveal the \u201cnaked\ntruth\u201d about what happened to Khashoggi. He said\nhe was not satisfied with Riyadh\u2019s suggestion that the killing was a rogue\nextradition operation gone wrong, and called for the \u201chighest ranked\u201d of those\nresponsible to be brought to justice.\n\u201cIntelligence and security institutions have evidence showing the murder was\nplanned \u2026 Pinning such a case on some security and intelligence members will\nnot satisfy us or the international community,\u201d he said. \u201cFrom the person who\ngave the order, to the person who carried it out, they must all be brought to\naccount.\u201d\nContrary to expectations Erdo\u011fan\u2019s first update on the three-week-old case did\nnot officially reveal the existence of audio and video evidence understood to\nbe in Turkey\u2019s possession.\nErdo\u011fan did reveal that on the day before Khashoggi was killed, Saudi agents\narrived in Istanbul and began to scout locations, including the Belgrad forest\nnear Istanbul and the city of Yalova to its south. Police have subsequently\nsearched both areas for Khashoggi\u2019s remains.\nThe president did not name the powerful Mohammed bin\nSalman, the kingdom\u2019s\nde facto ruler who, it is alleged, was probably aware of, and possibly even\nordered, the silencing of his prominent critic, but observers were in little\ndoubt to whom his repeated mentions of \u201chighest ranked\u201d referred.\nHe otherwise spoke of the \u201csincerity\u201d of Saudi Arabia\u2019s King Salman in the\ninvestigation. The gaps in the speech suggested Erdo\u011fan has more cards to play\nin the evolving diplomatic crisis.\nErdo\u011fan\u2019s speech came as the Saudi foreign ministry released extraordinary\nphotos of Khashoggi\u2019s son, Salah bin Jamal\nKhashoggi, meeting the\ncrown prince and king in Riyadh on Tuesday.\nErdo\u011fan's Khashoggi speech poses tough questions for Bin Salman\n\nSaudi Arabia\u2019s widely derided version of events has created a scandal for the\nkingdom. The G7 industrialised nations issued a fresh call for \u201ca thorough,\ncredible, transparent and prompt investigation\u201d, adding Saudi\nArabia needed to put in place\n\u201cmeasures to ensure that something like this cannot happen again\u201d.\nMany western firms have pulled out of a large foreign investment conference in\nRiyadh that began on Tuesday.\nOn the ground in Istanbul on Tuesday, police told Turkish television that they\nhad been allowed to search a diplomatic car belonging to the Saudi consulate\nin the presence of Saudi investigators. Two suitcases containing documents and\na laptop had been retrieved from the vehicle, although it was not immediately\nclear who they belonged to.\nKhashoggi did not appear to be carrying any belongings when he entered the\nconsulate the day he died, and electronics are not allowed inside the\nbuilding.\nSurveillance footage shows that the car, found in an underground car park in\nSultangazi district on Monday, was approached by a man who retrieved a package\nfrom the boot several days ago.\nTabling the new allegations that Saudi officials scoped out rural areas\noutside Istanbul the day before Khashoggi\u2019s murder, Erdo\u011fan said in his\naddress that Turkey\u2019s investigation was ongoing.\n\u201cSaudi Arabia has taken an important step by admitting the murder,\u201d Erdo\u011fan\nsaid. \u201cAs of now, we expect of them to openly bring to light those responsible\n\u2013 from the highest ranked to the lowest \u2013 and to bring them to justice.\u201d\nHe said Saudi Arabia must relinquish control of the investigation into the\n\u201cpolitical\u201d murder to an independent and unbiased Turkish operation in\nIstanbul.\nTurkish investigators have steadily leaked evidence to the media that\nallegedly proves the journalist was tortured, murdered and his body\ndismembered within the consulate building. CCTV footage shows a body\ndouble dressed in Khashoggi\u2019s\nclothes leaving the consulate and touring Istanbul\u2019s landmarks, undermining\nthe idea that the team interrogating Khashoggi meant to bring him back alive.\nAs reported by the Observer on\nSunday, Turkish investigators may have\nintercepted the hit squad\u2019s communications. Reuters said on Monday that Saud\nal-Qahtani, an influential adviser to Bin Salman, participated in a Skype call\nto the room in the consulate where Khashoggi was held, telling the team to\n\u201cbring me the head of the dog\u201d."
+                },
+                "time": {
+                    "modified_time": 1540334622.0,
+                    "published_time": 1540332264.0
+                },
+                "videos": {}
+            },
             "url": "https://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas"
         }
     ],
