@@ -530,6 +530,8 @@ class Article(object):
         """Returns the object as a dictionary for JSON consumption"""
         author_dict = {}
         for author in self.authors:
+            if not author.name and not author.url:
+                continue
             if author.name in author_dict:
                 continue
             author_dict[author.name] = author

@@ -61,6 +61,8 @@ def extract_metadata(response):
         content = meta_element.xpath("@content").extract_first()
         meta_key = name
         if not meta_key:
+            meta_key = meta_element.xpath("@itemprop").extract_first()
+        if not meta_key:
             meta_key = meta_property
         if isinstance(meta_key, basestring) and isinstance(content, basestring):
             metadata[meta_key] = content
@@ -355,7 +357,9 @@ def parse_meta_tags_time(meta_tags, article):
     published_keys = [
         'article:published_time',
         'dc.date',
-        'dcterms.created'
+        'dcterms.created',
+        'datePublished',
+        'dateCreated'
     ]
     for published_key in published_keys:
         if published_key not in meta_tags:
@@ -365,7 +369,8 @@ def parse_meta_tags_time(meta_tags, article):
     modified_keys = [
         'dc.date.modified',
         'article:modified_time',
-        'dcterms.modified'
+        'dcterms.modified',
+        'dateModified'
     ]
     for modified_key in modified_keys:
         if modified_key not in meta_tags:
@@ -457,3 +462,11 @@ def find_common_response_data(response, parser='html5lib'):
     soup, meta_tags, article = common_response_data(response, parser=parser)
     find_common(soup, meta_tags, article)
     return soup, meta_tags, article
+
+
+def common_parse(response, remove_tags, main_tags):
+    """Perform common parsing on the response"""
+    soup, _, article = find_common_response_data(response)
+    remove_common_tags(remove_tags, soup)
+    find_main_content(main_tags, article, response, soup)
+    return article
