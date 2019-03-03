@@ -312,7 +312,11 @@ def extract_link_id(url, lengths=None, article_index=-1, use_hash=True):
 
 def parse_meta_tags_keywords(meta_tags, article):
     """Extracts the necessary meta tags keywords into the article"""
-    keyword_keys = ['keywords', 'news_keywords']
+    keyword_keys = [
+        'keywords',
+        'news_keywords',
+        'article:tag'
+    ]
     for keyword_key in keyword_keys:
         if keyword_key not in meta_tags:
             continue
@@ -464,9 +468,12 @@ def find_common_response_data(response, parser='html5lib'):
     return soup, meta_tags, article
 
 
-def common_parse(response, remove_tags, main_tags):
+def common_parse(response, remove_tags, main_tags, require_article=True):
     """Perform common parsing on the response"""
-    soup, _, article = find_common_response_data(response)
+    soup, meta_tags, article = find_common_response_data(response)
+    if require_article:
+        if meta_tags['og:type'] != 'article':
+            return None
     remove_common_tags(remove_tags, soup)
     find_main_content(main_tags, article, response, soup)
     return article

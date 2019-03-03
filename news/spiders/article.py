@@ -537,7 +537,7 @@ class Article(object):
             author_dict[author.name] = author
         article_json = {
             'time': self.time.json(),
-            'tags': list(set(self.tags)),
+            'tags': filter(len, list(set(self.tags))),
             'info': self.info.json(),
             'images': self.images.json(),
             'location': self.location.json(),

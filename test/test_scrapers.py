@@ -465,6 +465,30 @@ class TestNewsSpider(unittest.TestCase):
             'bbc-40556732.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_guardian_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'guardian.com.html',
+            'https://www.theguardian.com/international?INTCMP=CE_INT',
+            'guardian.com.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_guardian_jamal_khashoggi_trump_cover_up_sanctions_visas(self, mock_head):
+        self.check_fake_html_scrape(
+            'guardian-jamal-khashoggi-trump-cover-up-sanctions-visas.html',
+            'https://www.theguardian.com/world/2018/oct/23/jamal-khashoggi-trump-cover-up-sanctions-visas',
+            'guardian-jamal-khashoggi-trump-cover-up-sanctions-visas.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_guardian_next_generation_2018_20_of_the_best_talents_at_premier_league_clubs(self, mock_head):
+        self.check_fake_html_scrape(
+            'guardian-next-generation-2018-20-of-the-best-talents-at-premier-league-clubs.html',
+            'https://www.theguardian.com/football/ng-interactive/2018/oct/10/next-generation-2018-20-of-the-best-talents-at-premier-league-clubs',
+            'guardian-next-generation-2018-20-of-the-best-talents-at-premier-league-clubs.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
