@@ -41,7 +41,7 @@ def bbc_parse(response):
     article = Article()
     soup = BeautifulSoup(response.text, 'html.parser')
     for li_tag in soup.findAll('li', {'class': 'tags-list__tags'}):
-        article.tags.append(str(li_tag.text))
+        article.tags.append(unicode(li_tag.text))
     find_script_json(soup, article)
     meta_tags = extract_metadata(response)
     if 'twitter:title' not in meta_tags:

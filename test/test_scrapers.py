@@ -457,6 +457,14 @@ class TestNewsSpider(unittest.TestCase):
             'globalnews-cleaning-up-albertas-oilpatch-could-cost-260-billion-regulatory-documents-warn.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_bbc_40556732(self, mock_head):
+        self.check_fake_html_scrape(
+            'bbc-40556732.html',
+            'https://www.bbc.com/news/uk-northern-ireland-40556732',
+            'bbc-40556732.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
