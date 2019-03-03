@@ -24,6 +24,8 @@ def globalnews_parse(response):
     return article.json(), link_id
 
 
-def globalnews_url_filter(_url):
+def globalnews_url_filter(url):
     """Filters URLs in the Global News domain"""
+    if '/video/' in url:
+        return False
     return True
