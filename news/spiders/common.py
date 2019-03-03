@@ -462,3 +462,11 @@ def find_common_response_data(response, parser='html5lib'):
     soup, meta_tags, article = common_response_data(response, parser=parser)
     find_common(soup, meta_tags, article)
     return soup, meta_tags, article
+
+
+def common_parse(response, remove_tags, main_tags):
+    """Perform common parsing on the response"""
+    soup, _, article = find_common_response_data(response)
+    remove_common_tags(remove_tags, soup)
+    find_main_content(main_tags, article, response, soup)
+    return article
