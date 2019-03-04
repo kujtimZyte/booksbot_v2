@@ -1,164 +1,60 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "al:ios:app_name": "HuffPost",
-                    "al:ios:app_store_id": "306621789",
-                    "al:ios:url": "huffpostnews:///?editionID=us&entryID=us_5bde4f84e4b09d43e31f83e3",
-                    "article:author": "https://www.facebook.com/263906484047755",
-                    "article:modified_time": "2018-11-04 09:56:30 -0500",
-                    "article:published_time": "2018-11-04 00:04:05 -0400",
-                    "article:section": "Black Voices",
-                    "article:tag": "Politics and Government,elections,2018 elections,Ron DeSantis,Sonny Perdue",
-                    "articleBody": [
-                        {
-                            "text": "A Trump administration official on Saturday called the Florida gubernatorial race, in which the Democratic candidate is seeking to become"
-                        },
-                        {
-                            "link": "https://www.huffingtonpost.com/entry/andrew-gillum-florida-governor-race_us_5bdc8bc1e4b09d43e31ec713",
-                            "text": "the state\u2019s first black governor"
-                        },
-                        {
-                            "text": ", \u201ccotton-pickin\u2019 important.\u201d"
-                        },
-                        {
-                            "text": "Agriculture Secretary"
-                        },
-                        {
-                            "link": "https://www.huffingtonpost.com/topic/sonny-perdue",
-                            "text": "Sonny Perdue"
-                        },
-                        {
-                            "text": "used the racially charged phrase while campaigning for"
-                        },
-                        {
-                            "link": "https://www.huffingtonpost.com/topic/ron-desantis",
-                            "text": "Ron DeSantis,"
-                        },
-                        {
-                            "text": "the Republican candidiate, in Lakeland, Florida. American Bridge, a Democratic super political action committee, obtained an audio recording of Perdue\u2019s speech."
-                        },
-                        {
-                            "text": "\u201cPublic policy matters. Leadership matters,\u201d Perdue can be heard saying. \u201cAnd that is why this election is so cotton-pickin\u2019 important to the state of Florida. I hope you all don\u2019t mess it up.\u201d"
-                        },
-                        {
-                            "text": "The Agriculture Department did not immediately respond to HuffPost\u2019s request for comment. A DeSantis spokesman"
-                        },
-                        {
-                            "link": "https://www.politico.com/states/florida/story/2018/11/03/at-desantis-rally-perdue-says-florida-governors-race-so-cotton-picking-important-681194",
-                            "text": "told Politico"
-                        },
-                        {
-                            "text": "that the candidate was \u201chappy\u201d to have Perdue, the former GOP governor of Georgia, campaign for him. The spokesman and told the news site to contact Perdue directly to comment on his remarks."
-                        },
-                        {
-                            "text": "Merrian-Webster\u2019s defines \u201ccotton-picking\u201d as another way of saying \u201cdamned,\u201d but the phrase evokes race and the cotton plantations in Southern states that used slave labor."
-                        },
-                        {
-                            "text": "David Bossie, a former campaign manager for President"
-                        },
-                        {
-                            "link": "https://www.huffingtonpost.com/topic/donald-trump",
-                            "text": "Donald Trump"
-                        },
-                        {
-                            "text": ", was"
-                        },
-                        {
-                            "link": "https://www.huffingtonpost.com/entry/david-bossie-fox-news-reported-suspension_us_5b31675ee4b0cb56051b74f2",
-                            "text": "temporarily suspended"
-                        },
-                        {
-                            "text": "from his role as a Fox News contributor after using the phrase in June. On air, Bossie told Joel Payne, a black Democratic strategist, that he was \u201cout of his cotton-picking mind.\u201d"
-                        },
-                        {
-                            "text": "Payne rebuked Bossie\u2019s racist remark, telling him, \u201cI have some relatives who picked cotton, and I\u2019m not going to sit back and let you attack me on TV like that.\u201d"
-                        },
-                        {
-                            "text": "Fox News later issued a statement calling Bossie\u2019s comments \u201cdeeply offensive and wholly inappropriate.\u201d"
-                        },
-                        {
-                            "text": "Racial overtones have marked the closely contested race between DeSantis, who is white, and Tallahassee Mayor"
-                        },
-                        {
-                            "link": "https://www.huffingtonpost.com/topic/andrew-gillum",
-                            "text": "Andrew Gillum"
-                        },
-                        {
-                            "text": ", who is black,"
-                        },
-                        {
-                            "text": "In late August, DeSantis faced a backlash after he said during an interview on Fox News that Florida"
-                        },
-                        {
-                            "link": "https://www.huffingtonpost.com/entry/ron-desantis-andrew-gillum-monkey-this-up_us_5b86ad7ae4b0162f471e75da",
-                            "text": "shouldn\u2019t \u201cmonkey this up\u201d"
-                        },
-                        {
-                            "text": "by electing Gillum."
-                        },
-                        {
-                            "text": "\u201cThe last thing we need to do is to monkey this up by"
-                        },
-                        {
-                            "text": "trying to embrace a socialist agenda with huge tax increases and bankrupting the state,\u201d DeSantis told the conservative news network."
-                        },
-                        {
-                            "text": "Florida Democratic Party Chairwoman Terrie Rizzo equated DeSantis\u2019 choice of words to \u201cracist dog whistles.\u201d"
-                        },
-                        {
-                            "text": "In DeSantis\u2019 defense, campaign spokesman Stephen Lawson said the GOP candidate was talking about voters embracing Gillum\u2019s \u201csocialist policies.\u201d"
-                        },
-                        {
-                            "text": "\u201cTo characterize it as anything else is absurd,\u201d Lawson told HuffPost."
-                        },
-                        {
-                            "text": "Later in the campaign, voters"
-                        },
-                        {
-                            "text": "started getting robocalls"
-                        },
-                        {
-                            "text": "from a person pretending to be Gillum who spoke in an exaggerated dialect. Drums and jungle noises played in the background during the call."
-                        },
-                        {
-                            "text": "Black people \u201cdone made mud huts while white folk waste a bunch of time making their home out of wood an\u2019 stone,\u201d the speaker said. The robocalls were funded by a neo-Nazi website based in Idaho."
-                        }
-                    ],
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "Carla Herreria"
+                    }
+                ],
+                "images": {
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 1000,
+                        "url": "https://img.huffingtonpost.com/asset/5bde54022000007f0501fbc0.jpeg?cache=hnerxzacye&ops=1910_1000",
+                        "width": 2000
+                    }
+                },
+                "info": {
                     "description": "Agriculture Secretary Sonny Perdue used the racially tinged phrase while campaigning for Ron DeSantis, whose opponent is black.",
-                    "fb:app_id": "46744042133",
-                    "fb:pages": "70242384902",
-                    "google-site-verification": "97Mj-wW7u8U1NOnkW1rfH-I1kgO0-a9YsgoesOk41R8",
-                    "imgs": [],
-                    "keywords": "Politics and Government,elections,2018 elections,Ron DeSantis,Sonny Perdue",
-                    "oath:guce:consent-host": "guce.huffingtonpost.com",
-                    "oath:guce:inline-consent": "true",
-                    "oath:guce:locale": "en-US",
-                    "oath:guce:product-eu": "false",
-                    "og:description": "Agriculture Secretary Sonny Perdue used the racially tinged phrase while campaigning for Ron DeSantis, whose opponent is black.",
-                    "og:image": "https://img.huffingtonpost.com/asset/5bde54022000007f0501fbc0.jpeg?cache=hnerxzacye&ops=1910_1000",
-                    "og:image:height": "1000",
-                    "og:image:type": "image/jpeg",
-                    "og:image:url": "https://img.huffingtonpost.com/asset/5bde54022000007f0501fbc0.jpeg?cache=hnerxzacye&ops=1910_1000",
-                    "og:image:width": "1910",
-                    "og:locale": "en_US",
-                    "og:site_name": "HuffPost",
-                    "og:title": "Trump Official Says Florida Governor Race Is 'Cotton-Pickin' Important'",
-                    "og:type": "article",
-                    "og:url": "https://www.huffingtonpost.com/entry/sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum_us_5bde4f84e4b09d43e31f83e3",
-                    "taboola.category": "black-voices",
-                    "twitter:card": "summary_large_image",
-                    "twitter:creator": "carlalove",
-                    "twitter:description": "Agriculture Secretary Sonny Perdue used the racially tinged phrase while campaigning for Ron DeSantis, whose opponent is black.",
-                    "twitter:image": "https://img.huffingtonpost.com/asset/5bde54022000007f0501fbc0.jpeg?cache=hnerxzacye&ops=1910_1000",
-                    "twitter:image:height": "1000",
-                    "twitter:image:width": "1910",
-                    "twitter:site": "@blackvoices",
-                    "twitter:title": "Trump Official Says Florida Governor Race Is 'Cotton-Pickin' Important'",
-                    "viewport": "width=1000"
-                }
-            ],
+                    "genre": "Black Voices",
+                    "title": "Trump Official Says Florida Governor Race Is 'Cotton-Pickin' Important'",
+                    "url": "https://www.huffingtonpost.com/entry/sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum_us_5bde4f84e4b09d43e31f83e3"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "app_id": "46744042133",
+                        "page_id": [
+                            "70242384902"
+                        ]
+                    },
+                    "organisation": "HuffPost",
+                    "twitter": {
+                        "description": "Agriculture Secretary Sonny Perdue used the racially tinged phrase while campaigning for Ron DeSantis, whose opponent is black.",
+                        "handle": "@blackvoices",
+                        "image": "https://img.huffingtonpost.com/asset/5bde54022000007f0501fbc0.jpeg?cache=hnerxzacye&ops=1910_1000",
+                        "title": "Trump Official Says Florida Governor Race Is 'Cotton-Pickin' Important'"
+                    }
+                },
+                "tags": [
+                    "Politics and Government",
+                    "Ron DeSantis",
+                    "2018 elections",
+                    "elections",
+                    "Sonny Perdue"
+                ],
+                "text": {
+                    "markdown": "A Trump administration official on Saturday called the Florida gubernatorial\nrace, in which the Democratic candidate is seeking to become\u00a0[the state\u2019s\nfirst black governor](https://www.huffingtonpost.com/entry/andrew-gillum-\nflorida-governor-race_us_5bdc8bc1e4b09d43e31ec713), \u201ccotton-pickin\u2019\nimportant.\u201d\n\nAgriculture Secretary [Sonny Perdue](https://www.huffingtonpost.com/topic\n/sonny-perdue) used the racially charged phrase while campaigning for [Ron\nDeSantis,](https://www.huffingtonpost.com/topic/ron-desantis)\u00a0the Republican\ncandidiate, in Lakeland, Florida. American Bridge, a Democratic super\npolitical action committee, obtained an audio recording of Perdue\u2019s speech.\n\n\u201cPublic policy matters. Leadership matters,\u201d Perdue can be heard saying. \u201cAnd\nthat is why this election is so cotton-pickin\u2019 important to the state of\nFlorida. I hope you all don\u2019t mess it up.\u201d\n\nThe Agriculture Department did not immediately respond to HuffPost\u2019s request\nfor comment. A DeSantis spokesman [told\nPolitico](https://www.politico.com/states/florida/story/2018/11/03/at-\ndesantis-rally-perdue-says-florida-governors-race-so-cotton-picking-\nimportant-681194) that the candidate was \u201chappy\u201d to have Perdue, the former\nGOP governor of Georgia, campaign for him. The spokesman and told the news\nsite to contact Perdue directly to comment on his remarks.\n\nMerrian-Webster\u2019s defines \u201ccotton-picking\u201d as another way of saying \u201cdamned,\u201d\nbut the phrase evokes race and the cotton plantations in Southern states that\nused slave labor.\n\nDavid Bossie, a former campaign manager for President [Donald\nTrump](https://www.huffingtonpost.com/topic/donald-trump), was [temporarily\nsuspended](https://www.huffingtonpost.com/entry/david-bossie-fox-news-\nreported-suspension_us_5b31675ee4b0cb56051b74f2) from his role as a Fox News\ncontributor after using the phrase in June. On air, Bossie told Joel Payne, a\nblack Democratic strategist, that he was \u201cout of his cotton-picking mind.\u201d\n\nPayne rebuked Bossie\u2019s racist remark, telling him, \u201cI have some relatives who\npicked cotton, and I\u2019m not going to sit back and let you attack me on TV like\nthat.\u201d\n\nFox News later issued a statement calling Bossie\u2019s comments \u201cdeeply offensive\nand wholly inappropriate.\u201d\n\nRacial overtones have marked the closely contested race between DeSantis, who\nis white, and Tallahassee Mayor [Andrew\nGillum](https://www.huffingtonpost.com/topic/andrew-gillum), who is black,\n\nIn late August, DeSantis faced a backlash after he said during an interview on\nFox News that Florida [shouldn\u2019t \u201cmonkey this\nup\u201d](https://www.huffingtonpost.com/entry/ron-desantis-andrew-gillum-monkey-\nthis-up_us_5b86ad7ae4b0162f471e75da)\u00a0by electing Gillum.\n\nSubscribe to the Black Voices email.\n\nAmplifying black voices through news that matters.\n\n\u201cThe last thing we need to do is to monkey this up by trying to embrace a\nsocialist agenda with huge tax increases and bankrupting the state,\u201d DeSantis\ntold the conservative news network.\n\nFlorida Democratic Party Chairwoman Terrie Rizzo equated DeSantis\u2019 choice of\nwords to \u201cracist dog whistles.\u201d\n\nIn DeSantis\u2019 defense, campaign spokesman Stephen Lawson said the GOP candidate\nwas talking about voters embracing Gillum\u2019s \u201csocialist policies.\u201d\n\n\u201cTo characterize it as anything else is absurd,\u201d Lawson told HuffPost.\n\nLater in the campaign, voters [started getting\nrobocalls](https://www.huffingtonpost.com/entry/neo-nazi-robocalls-target-\nandrew-gillum-in-florida-governors-race_us_5b89bc9fe4b0162f47236bd0) from a\nperson pretending to be Gillum who spoke in an exaggerated dialect. Drums and\njungle noises played in the background during the call.\n\nBlack people \u201cdone made mud huts while white folk waste a bunch of time making\ntheir home out of wood an\u2019 stone,\u201d the speaker said. The robocalls were funded\nby a neo-Nazi website based in Idaho.\n\n",
+                    "text": "A Trump administration official on Saturday called the Florida gubernatorial\nrace, in which the Democratic candidate is seeking to become\u00a0the state\u2019s\nfirst black governor, \u201ccotton-pickin\u2019\nimportant.\u201d\nAgriculture Secretary Sonny Perdue used the racially charged phrase while campaigning for Ron\nDeSantis,\u00a0the Republican\ncandidiate, in Lakeland, Florida. American Bridge, a Democratic super\npolitical action committee, obtained an audio recording of Perdue\u2019s speech.\n\u201cPublic policy matters. Leadership matters,\u201d Perdue can be heard saying. \u201cAnd\nthat is why this election is so cotton-pickin\u2019 important to the state of\nFlorida. I hope you all don\u2019t mess it up.\u201d\nThe Agriculture Department did not immediately respond to HuffPost\u2019s request\nfor comment. A DeSantis spokesman told\nPolitico that the candidate was \u201chappy\u201d to have Perdue, the former\nGOP governor of Georgia, campaign for him. The spokesman and told the news\nsite to contact Perdue directly to comment on his remarks.\nMerrian-Webster\u2019s defines \u201ccotton-picking\u201d as another way of saying \u201cdamned,\u201d\nbut the phrase evokes race and the cotton plantations in Southern states that\nused slave labor.\nDavid Bossie, a former campaign manager for President Donald\nTrump, was temporarily\nsuspended from his role as a Fox News\ncontributor after using the phrase in June. On air, Bossie told Joel Payne, a\nblack Democratic strategist, that he was \u201cout of his cotton-picking mind.\u201d\nPayne rebuked Bossie\u2019s racist remark, telling him, \u201cI have some relatives who\npicked cotton, and I\u2019m not going to sit back and let you attack me on TV like\nthat.\u201d\nFox News later issued a statement calling Bossie\u2019s comments \u201cdeeply offensive\nand wholly inappropriate.\u201d\nRacial overtones have marked the closely contested race between DeSantis, who\nis white, and Tallahassee Mayor Andrew\nGillum, who is black,\nIn late August, DeSantis faced a backlash after he said during an interview on\nFox News that Florida shouldn\u2019t \u201cmonkey this\nup\u201d\u00a0by electing Gillum.\nSubscribe to the Black Voices email.\nAmplifying black voices through news that matters.\n\u201cThe last thing we need to do is to monkey this up by trying to embrace a\nsocialist agenda with huge tax increases and bankrupting the state,\u201d DeSantis\ntold the conservative news network.\nFlorida Democratic Party Chairwoman Terrie Rizzo equated DeSantis\u2019 choice of\nwords to \u201cracist dog whistles.\u201d\nIn DeSantis\u2019 defense, campaign spokesman Stephen Lawson said the GOP candidate\nwas talking about voters embracing Gillum\u2019s \u201csocialist policies.\u201d\n\u201cTo characterize it as anything else is absurd,\u201d Lawson told HuffPost.\nLater in the campaign, voters started getting\nrobocalls from a\nperson pretending to be Gillum who spoke in an exaggerated dialect. Drums and\njungle noises played in the background during the call.\nBlack people \u201cdone made mud huts while white folk waste a bunch of time making\ntheir home out of wood an\u2019 stone,\u201d the speaker said. The robocalls were funded\nby a neo-Nazi website based in Idaho."
+                },
+                "time": {
+                    "modified_time": 1541343390.0,
+                    "published_time": 1541304245.0
+                },
+                "videos": {}
+            },
             "url": "https://www.huffingtonpost.com/entry/sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum_us_5bde4f84e4b09d43e31f83e3"
         }
     ],
