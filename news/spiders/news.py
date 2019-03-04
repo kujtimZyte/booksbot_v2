@@ -134,7 +134,7 @@ class NewsSpider(scrapy.Spider):
         "foxnews.com",
         "globalnews.ca",
         "theguardian.com",
-        "huffingtonpost.com"
+        "huffpost.com"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
