@@ -36,7 +36,8 @@ from .ctvnews import ctvnews_parse, ctvnews_url_parse, ctvnews_url_filter
 from .fox import fox_parse, fox_url_parse, fox_url_filter
 from .globalnews import globalnews_parse, globalnews_url_parse, globalnews_url_filter
 from .guardian import guardian_parse, guardian_url_parse, guardian_url_filter
-from .huffingtonpost import huffingtonpost_parse, huffingtonpost_url_parse, huffingtonpost_url_filter
+from .huffingtonpost import huffingtonpost_parse, huffingtonpost_url_parse, \
+huffingtonpost_url_filter
 
 
 DetectorFactory.seed = 0
