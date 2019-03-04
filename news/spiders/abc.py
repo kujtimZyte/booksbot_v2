@@ -284,7 +284,8 @@ def abc_url_filter(url):
         'rural/rss',
         'alerts/email',
         '/tok-pisin',
-        '/download-this-service/'
+        '/download-this-service/',
+        '/kidslisten/'
     ]
     url_endings = [
         '.pdf',
