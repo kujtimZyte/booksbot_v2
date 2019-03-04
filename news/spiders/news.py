@@ -134,7 +134,7 @@ class NewsSpider(scrapy.Spider):
         "foxnews.com",
         "globalnews.ca",
         "theguardian.com",
-        "huffingtonpost.com"
+        "huffpost.com"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
@@ -151,7 +151,7 @@ class NewsSpider(scrapy.Spider):
         'https://www.foxnews.com/',
         'https://globalnews.ca/',
         'https://www.theguardian.com/international',
-        'https://www.huffingtonpost.com/'
+        'https://www.huffpost.com/?country=US'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -242,7 +242,7 @@ class NewsSpider(scrapy.Spider):
             "url_parse": guardian_url_parse,
             "url_filter": guardian_url_filter
         },
-        "huffingtonpost.com": {
+        "huffpost.com": {
             "parser": huffingtonpost_parse,
             "splash": False,
             "url_parse": huffingtonpost_url_parse,

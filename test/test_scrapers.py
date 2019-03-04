@@ -493,7 +493,7 @@ class TestNewsSpider(unittest.TestCase):
     def test_huffingtonpost_homepage(self, mock_head):
         self.check_fake_html_scrape(
             'huffingtonpost.com.html',
-            'https://www.huffingtonpost.com/',
+            'https://www.huffpost.com/?country=US',
             'huffingtonpost.com.json')
 
 
@@ -501,7 +501,7 @@ class TestNewsSpider(unittest.TestCase):
     def test_huffingtonpost_sonny_perdue_cotton_pickin_important_ron_desantis_andrew_gillum(self, mock_head):
         self.check_fake_html_scrape(
             'huffingtonpost-sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum.html',
-            'https://www.huffingtonpost.com/entry/sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum_us_5bde4f84e4b09d43e31f83e3',
+            'https://www.huffpost.com/entry/sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum_us_5bde4f84e4b09d43e31f83e3',
             'huffingtonpost-sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum.json')
 
 
