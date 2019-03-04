@@ -36,6 +36,7 @@ from .ctvnews import ctvnews_parse, ctvnews_url_parse, ctvnews_url_filter
 from .fox import fox_parse, fox_url_parse, fox_url_filter
 from .globalnews import globalnews_parse, globalnews_url_parse, globalnews_url_filter
 from .guardian import guardian_parse, guardian_url_parse, guardian_url_filter
+from .huffingtonpost import huffingtonpost_parse, huffingtonpost_url_parse, huffingtonpost_url_filter
 
 
 DetectorFactory.seed = 0
@@ -131,7 +132,8 @@ class NewsSpider(scrapy.Spider):
         "ctvnews.ca",
         "foxnews.com",
         "globalnews.ca",
-        "theguardian.com"
+        "theguardian.com",
+        "huffingtonpost.com"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
@@ -147,7 +149,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.ctvnews.ca/',
         'https://www.foxnews.com/',
         'https://globalnews.ca/',
-        'https://www.theguardian.com/international'
+        'https://www.theguardian.com/international',
+        'https://www.huffingtonpost.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -237,6 +240,12 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": guardian_url_parse,
             "url_filter": guardian_url_filter
+        },
+        "huffingtonpost.com": {
+            "parser": huffingtonpost_parse,
+            "splash": False,
+            "url_parse": huffingtonpost_url_parse,
+            "url_filter": huffingtonpost_url_filter
         }
     }
 
