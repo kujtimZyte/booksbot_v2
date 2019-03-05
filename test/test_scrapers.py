@@ -513,6 +513,22 @@ class TestNewsSpider(unittest.TestCase):
             'business-insider-improve-your-cash-flow-by-leasing-business-equipment-2010-5.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_independent_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'independent.co.uk.html',
+            'https://www.independent.co.uk/us',
+            'independent.co.uk.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_independent_bomb_arrest_live_cesar_sayoc_florida_update_nyc_bomber_cnn_trump_latest(self, mock_head):
+        self.check_fake_html_scrape(
+            'independent-bomb-arrest-live-cesar-sayoc-florida-update-nyc-bomber-cnn-trump-latest.html',
+            'https://www.independent.co.uk/news/world/americas/bomb-arrest-live-cesar-sayoc-florida-update-nyc-bomber-cnn-trump-latest-a8603651.html',
+            'independent-bomb-arrest-live-cesar-sayoc-florida-update-nyc-bomber-cnn-trump-latest.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

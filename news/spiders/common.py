@@ -265,7 +265,9 @@ def handle_script_image(script_json, article):
 def find_script_json(soup, article):
     """Finds the script JSON"""
     for script_tag in soup.findAll('script', {'type': 'application/ld+json'}):
-        script_json = json.loads(script_tag.text.replace('\\/', '/'))
+        script_text = script_tag.text
+        script_text = script_text.replace('\n', '')
+        script_json = json.loads(script_text)
         handle_script_json_authors(script_json, article)
         if 'dateModified' in script_json:
             article.time.set_modified_time(script_json['dateModified'])

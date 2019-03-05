@@ -38,6 +38,7 @@ from .globalnews import globalnews_parse, globalnews_url_parse, globalnews_url_f
 from .guardian import guardian_parse, guardian_url_parse, guardian_url_filter
 from .huffingtonpost import huffingtonpost_parse, huffingtonpost_url_parse, \
 huffingtonpost_url_filter
+from .independent import independent_parse, independent_url_parse, independent_url_filter
 
 
 DetectorFactory.seed = 0
@@ -134,7 +135,8 @@ class NewsSpider(scrapy.Spider):
         "foxnews.com",
         "globalnews.ca",
         "theguardian.com",
-        "huffpost.com"
+        "huffpost.com",
+        "independent.co.uk"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
@@ -151,7 +153,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.foxnews.com/',
         'https://globalnews.ca/',
         'https://www.theguardian.com/international',
-        'https://www.huffpost.com/?country=US'
+        'https://www.huffpost.com/?country=US',
+        'https://www.independent.co.uk/us'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -247,6 +250,12 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": huffingtonpost_url_parse,
             "url_filter": huffingtonpost_url_filter
+        },
+        "independent.co.uk": {
+            "parser": independent_parse,
+            "splash": False,
+            "url_parse": independent_url_parse,
+            "url_filter": independent_url_filter
         }
     }
 
