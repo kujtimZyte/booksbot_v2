@@ -266,8 +266,6 @@ def find_script_json(soup, article):
     """Finds the script JSON"""
     for script_tag in soup.findAll('script', {'type': 'application/ld+json'}):
         script_text = script_tag.text
-        script_soup = BeautifulSoup(script_text, features="html.parser")
-        #script_text = unicode(script_soup.encode(formatter=None), "utf-8")
         script_text = script_text.replace('\n', '')
         script_json = json.loads(script_text)
         handle_script_json_authors(script_json, article)
