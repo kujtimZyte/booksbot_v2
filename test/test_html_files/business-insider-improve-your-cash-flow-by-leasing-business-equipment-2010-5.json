@@ -3,7 +3,11 @@
         {
             "article": {
                 "audio": [],
-                "authors": [],
+                "authors": [
+                    {
+                        "name": "Nancy Mann Jackson"
+                    }
+                ],
                 "images": {
                     "images": [
                         {
