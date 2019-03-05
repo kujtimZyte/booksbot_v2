@@ -32,6 +32,7 @@
                     },
                     "organisation": "HuffPost",
                     "twitter": {
+                        "card": "summary_large_image",
                         "description": "Agriculture Secretary Sonny Perdue used the racially tinged phrase while campaigning for Ron DeSantis, whose opponent is black.",
                         "handle": "@blackvoices",
                         "image": "https://img.huffingtonpost.com/asset/5bde54022000007f0501fbc0.jpeg?cache=hnerxzacye&ops=1910_1000",

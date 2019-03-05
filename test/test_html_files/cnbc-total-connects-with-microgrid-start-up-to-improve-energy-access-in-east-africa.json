@@ -27,6 +27,7 @@
                     },
                     "organisation": "CNBC",
                     "twitter": {
+                        "card": "summary_large_image",
                         "description": "Powerhive is a start-up from California that designs and deploys electrical micro-networks in East Africa, based on an innovative pay-as-you-go cost structure.",
                         "handle": "@CNBC",
                         "image": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/10/27/104054328-Powerhive-Pilot-II-10.1910x1000.jpg",

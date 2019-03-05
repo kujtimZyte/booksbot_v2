@@ -234,6 +234,7 @@
                     },
                     "organisation": "CNN",
                     "twitter": {
+                        "card": "summary_large_image",
                         "description": "View the Aretha Franklin Fast Facts on CNN and learn more about the life of the \"Queen of Soul.\"",
                         "image": "https://cdn.cnn.com/cnnnext/dam/assets/150318231920-ctn-intv-aretha-franklin-music-00004313-super-tease.jpg",
                         "title": "Aretha Franklin Fast Facts"

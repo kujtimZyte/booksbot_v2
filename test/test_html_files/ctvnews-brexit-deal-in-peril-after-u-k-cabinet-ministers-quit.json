@@ -34,6 +34,7 @@
                     },
                     "organisation": "CTVNews",
                     "twitter": {
+                        "card": "summary_large_image",
                         "description": "Two British Cabinet ministers, including Brexit Secretary Dominic Raab, resigned Thursday in opposition to the divorce deal struck by Prime Minister Theresa May with the EU -- a major blow to her authority and her ability to get the deal through Parliament.",
                         "handle": "@CTVNews",
                         "title": "Brexit deal in peril after U.K. Cabinet ministers quit"

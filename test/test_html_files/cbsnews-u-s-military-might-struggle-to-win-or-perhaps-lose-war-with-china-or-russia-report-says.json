@@ -31,6 +31,7 @@
                         "url": "https://www.facebook.com/CBSPolitics"
                     },
                     "twitter": {
+                        "card": "summary_large_image",
                         "description": "\"America's ability to defend its allies, its partners and its own vital interests is increasingly in doubt,\" report's authors write. On the \"Intelligence Matters\" podcast this week, National Defense Strategy Commission co-chair talks with Michael Morell",
                         "handle": "@CBSPolitics",
                         "image": "https://cbsnews2.cbsistatic.com/hub/i/r/2018/02/07/7abb41c7-c1f3-4e21-8b4e-d57576722532/thumbnail/1200x630/324e3c1ac52e34af31ed3720db1a3e83/cbsn-fusion-what-would-a-military-parade-look-like-in-u-s-thumbnail-1497248-640x360.jpg",

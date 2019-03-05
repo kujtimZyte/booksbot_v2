@@ -505,6 +505,14 @@ class TestNewsSpider(unittest.TestCase):
             'huffingtonpost-sonny-perdue-cotton-pickin-important-ron-desantis-andrew-gillum.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_businessinsider_improve_your_cash_flow_by_leasing_business_equipment_2010_5(self, mock_head):
+        self.check_fake_html_scrape(
+            'business-insider-improve-your-cash-flow-by-leasing-business-equipment-2010-5.html',
+            'https://www.businessinsider.com/improve-your-cash-flow-by-leasing-business-equipment-2010-5?IR=T',
+            'business-insider-improve-your-cash-flow-by-leasing-business-equipment-2010-5.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

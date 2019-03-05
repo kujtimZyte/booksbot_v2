@@ -29,6 +29,7 @@
                     },
                     "organisation": "CNBC",
                     "twitter": {
+                        "card": "summary_large_image",
                         "description": "Alexa just made its debut on an Android smartphone. Here's how it works.",
                         "handle": "@CNBC",
                         "title": "This is Amazon Alexa on a phone, and it isn\u2019t threatening Siri anytime soon"

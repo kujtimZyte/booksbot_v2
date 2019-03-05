@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup
 from .article import Article, Author
 from .common import strip_query_from_url, extract_metadata, remove_common_tags, find_main_content, \
-find_script_json
+find_script_json, common_parse
 
 
 def businessinsider_url_parse(url):
@@ -41,34 +41,21 @@ def businessinsider_parse(response):
     link_id = businessinsider_url_parse(response.url)
     if link_id is None:
         return None, link_id
-    soup = BeautifulSoup(response.text, 'html.parser')
-    meta_tags = extract_metadata(response)
-    if 'og:type' in meta_tags:
-        if meta_tags['og:type'] != 'article':
-            return None, link_id
-    article = Article()
-    if 'date' in meta_tags:
-        article.time.set_published_time(meta_tags['date'])
-    else:
+    article = common_parse(response, [
+        {'tag': 'div', 'meta': {'class': 'byline-publication-source'}},
+        {'tag': 'section', 'meta': {'class': 'post-content-bottom '}},
+        {'tag': 'section', 'meta': {'class': 'popular-video'}},
+        {'tag': 'section', 'meta': {'class': 'post-content-more '}},
+        {'tag': 'p', 'meta': {'class': 'piano-freemium'}},
+        {'tag': 'ul', 'meta': {'class': 'read-more-links'}}
+    ], [
+        {'tag': 'article', 'meta': {}}
+    ], author_tag=[
+        {'tag': 'span', 'meta': {'class': 'byline-author-name'}},
+        {'tag': 'a', 'meta': {'class': 'byline-author-name'}}
+    ])
+    if not article:
         return None, link_id
-    for tag in meta_tags['news_keywords'].split(','):
-        article.tags.append(tag.strip())
-    article.info.description = meta_tags['sailthru.description']
-    article.info.title = meta_tags['title']
-    article.images.thumbnail.url = meta_tags['sailthru.image.thumb']
-    article.publisher.organisation = meta_tags['article:publisher']
-    article.publisher.twitter.title = meta_tags['twitter:title']
-    article.publisher.twitter.description = meta_tags['twitter:description']
-    article.publisher.twitter.card = meta_tags['twitter:card']
-    article.publisher.twitter.image = meta_tags['twitter:image']
-    article.publisher.twitter.handle = meta_tags['twitter:site']
-    article.publisher.facebook.page_ids.append(meta_tags['fb:pages'])
-    find_script_json(soup, article)
-    author = Author()
-    author.name = find_byline(soup)
-    article.authors.append(author)
-    remove_tags(soup)
-    find_main_content([{'tag': 'article', 'meta': {}}], article, response, soup)
     return article.json(), link_id
 
 

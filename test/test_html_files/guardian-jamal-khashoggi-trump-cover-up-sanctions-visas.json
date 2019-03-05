@@ -33,6 +33,7 @@
                     },
                     "organisation": "the Guardian",
                     "twitter": {
+                        "card": "summary_large_image",
                         "handle": "@guardian",
                         "image": "https://i.guim.co.uk/img/media/6e532981cf34af9609e41032d5c5d9102c6ff0d6/0_233_3500_2101/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=990d00212b56936bfe2a680740695c6e"
                     }

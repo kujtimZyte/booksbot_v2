@@ -315,7 +315,8 @@ def parse_meta_tags_keywords(meta_tags, article):
     keyword_keys = [
         'keywords',
         'news_keywords',
-        'article:tag'
+        'article:tag',
+        'sailthru.tags'
     ]
     for keyword_key in keyword_keys:
         if keyword_key not in meta_tags:
@@ -330,7 +331,8 @@ def parse_meta_tags_info(meta_tags, article):
         'description',
         'og:description',
         'dcterms.abstract',
-        'dc.description'
+        'dc.description',
+        'sailthru.description'
     ]
     for description_key in description_keys:
         if description_key not in meta_tags:
@@ -339,7 +341,8 @@ def parse_meta_tags_info(meta_tags, article):
         break
     title_keys = [
         'og:title',
-        'dc.title'
+        'dc.title',
+        'sailthru.title'
     ]
     for title_key in title_keys:
         if title_key not in meta_tags:
@@ -363,7 +366,8 @@ def parse_meta_tags_time(meta_tags, article):
         'dc.date',
         'dcterms.created',
         'datePublished',
-        'dateCreated'
+        'dateCreated',
+        'date'
     ]
     for published_key in published_keys:
         if published_key not in meta_tags:
@@ -387,7 +391,8 @@ def parse_meta_tags_images(meta_tags, article):
     """Extracts the necessary meta tags into the article images"""
     image_keys = [
         'image',
-        'og:image'
+        'og:image',
+        'sailthru.image.thumb'
     ]
     for image_key in image_keys:
         if image_key not in meta_tags:
@@ -422,6 +427,8 @@ def parse_meta_tags_publisher(meta_tags, article):
         article.publisher.twitter.description = meta_tags['twitter:description']
     if 'twitter:image' in meta_tags:
         article.publisher.twitter.image = meta_tags['twitter:image']
+    if 'twitter:card' in meta_tags:
+        article.publisher.twitter.card = meta_tags['twitter:card']
     if 'fb:app_id' in meta_tags:
         article.publisher.facebook.app_id = meta_tags['fb:app_id']
 
@@ -468,10 +475,25 @@ def find_common_response_data(response, parser='html5lib'):
     return soup, meta_tags, article
 
 
-def common_parse(response, remove_tags, main_tags, require_article=True):
+def find_author_content(author_content_divs, article, response, soup):
+    """Finds the author content and fills in the article"""
+    author_content_div = None
+    for div in author_content_divs:
+        author_content_div = soup.find(div['tag'], div['meta'])
+        if author_content_div:
+            break
+    if author_content_div:
+        author = Author()
+        author.name = author_content_div.text
+        article.authors.append(author)
+
+
+def common_parse(response, remove_tags, main_tags, require_article=True, author_tag=[]):
     """Perform common parsing on the response"""
     soup, meta_tags, article = find_common_response_data(response)
     if require_article:
+        if 'og:type' not in meta_tags:
+            return None
         if meta_tags['og:type'] != 'article':
             return None
     remove_common_tags(remove_tags, soup)

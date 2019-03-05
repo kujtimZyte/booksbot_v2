@@ -46,6 +46,7 @@
                     },
                     "organisation": "CBC/Radio-Canada",
                     "twitter": {
+                        "card": "summary_large_image",
                         "handle": "@cbc"
                     }
                 },
