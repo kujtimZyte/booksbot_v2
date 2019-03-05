@@ -60,6 +60,7 @@
                     },
                     "organisation": "Fox News",
                     "twitter": {
+                        "card": "summary_large_image",
                         "description": "Speaking exclusively to Fox News' Chris Wallace in a wide-ranging interview, President Trump revealed what President Obama told him was the biggest challenge facing the U.S., discussed potential high-level departures from his administration, and admitted that he enjoys calling on contentious CNN reporter Jim Acosta.",
                         "handle": "@foxnews",
                         "image": "https://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/11/16/0/0/694940094001_5968077280001_5968071989001-vs.jpg?ve=1&tl=1",

@@ -39,6 +39,7 @@
                     },
                     "organisation": "CNBC",
                     "twitter": {
+                        "card": "summary_large_image",
                         "description": "Wall Street's major research firms are advising clients on what they expect from the 2018 midterm elections and how to play the market based on those outcomes.",
                         "handle": "@CNBC",
                         "image": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/11/05/105553523-1541451321360gettyimages-1057716302.1910x1000.jpeg",

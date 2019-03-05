@@ -6,6 +6,9 @@
                 "authors": [
                     {
                         "name": "Sonia Perez D."
+                    },
+                    {
+                        "name": "Associated Press"
                     }
                 ],
                 "images": {
@@ -24,7 +27,8 @@
                     "facebook": {
                         "page_id": [
                             "20446254070"
-                        ]
+                        ],
+                        "url": "businessinsider"
                     },
                     "organisation": "BI",
                     "twitter": {
