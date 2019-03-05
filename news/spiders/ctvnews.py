@@ -38,6 +38,8 @@ def ctvnews_parse(response):
     return article.json(), link_id
 
 
-def ctvnews_url_filter(_url):
+def ctvnews_url_filter(url):
     """Filters URLs in the CTVNews domain"""
+    if '/newsletters/' in url:
+        return False
     return True
