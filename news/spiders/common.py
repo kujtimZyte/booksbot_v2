@@ -482,13 +482,14 @@ def find_author_content(author_content_divs, article, response, soup):
         author_content_div = soup.find(div['tag'], div['meta'])
         if author_content_div:
             break
-    if author_content_div:
-        author = Author()
-        author.name = author_content_div.text
-        article.authors.append(author)
+    if not author_content_div:
+        raise ValueError('Could not find the author content div: {}'.format(response.url))
+    author = Author()
+    author.name = author_content_div.text
+    article.authors.append(author)
 
 
-def common_parse(response, remove_tags, main_tags, require_article=True, author_tag=[]):
+def common_parse(response, remove_tags, main_tags, require_article=True, author_tag=None):
     """Perform common parsing on the response"""
     soup, meta_tags, article = find_common_response_data(response)
     if require_article:
@@ -496,6 +497,8 @@ def common_parse(response, remove_tags, main_tags, require_article=True, author_
             return None
         if meta_tags['og:type'] != 'article':
             return None
+    if author_tag is not None:
+        find_author_content(author_tag, article, response, soup)
     remove_common_tags(remove_tags, soup)
     find_main_content(main_tags, article, response, soup)
     return article

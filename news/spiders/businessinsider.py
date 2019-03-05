@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 """Parser for the Business Insider website"""
-from bs4 import BeautifulSoup
-from .article import Article, Author
-from .common import strip_query_from_url, extract_metadata, remove_common_tags, find_main_content, \
-find_script_json, common_parse
+from .common import strip_query_from_url, common_parse
 
 
 def businessinsider_url_parse(url):
@@ -14,26 +11,6 @@ def businessinsider_url_parse(url):
         return None
     last_path = url_split[-1]
     return last_path
-
-
-def remove_tags(soup):
-    """Removes the useless tags from the HTML"""
-    remove_common_tags([
-        {'tag': 'div', 'meta': {'class': 'byline-publication-source'}},
-        {'tag': 'section', 'meta': {'class': 'post-content-bottom '}},
-        {'tag': 'section', 'meta': {'class': 'popular-video'}},
-        {'tag': 'section', 'meta': {'class': 'post-content-more '}},
-        {'tag': 'p', 'meta': {'class': 'piano-freemium'}},
-        {'tag': 'ul', 'meta': {'class': 'read-more-links'}}
-    ], soup)
-
-
-def find_byline(soup):
-    """Finds the author byline"""
-    html_tag = soup.find('span', {'class': 'byline-author-name'})
-    if html_tag is None:
-        html_tag = soup.find('a', {'class': 'byline-author-name'})
-    return html_tag.text
 
 
 def businessinsider_parse(response):
