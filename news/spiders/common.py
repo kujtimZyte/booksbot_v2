@@ -206,7 +206,10 @@ def find_main_content(main_content_divs, article, response, soup):
     find_images(main_content_div, article, response)
     markdown_text = html2text.html2text(unicode(main_content_div))
     bad_line_flags = [
-        'Read more:'
+        'Read more:',
+        'Breaking News Emails',
+        'Get breaking news alerts and special reports',
+        'SIGN UP HERE'
     ]
     for bad_line_flag in bad_line_flags:
         markdown_text = '\n'.join(
