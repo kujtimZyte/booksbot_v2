@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """Parser for the Associated Press News website"""
 import os
-from bs4 import BeautifulSoup
 import html2text
+from bs4 import BeautifulSoup
 from .article import Article, Image, Video, Author
 from .common import strip_query_from_url, extract_metadata, execute_script
 

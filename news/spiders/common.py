@@ -5,9 +5,9 @@ import json
 import re
 from urllib import urlencode
 from urlparse import urlparse, urlunparse, parse_qs
-from bs4 import BeautifulSoup
 import html2text
 import js2py
+from bs4 import BeautifulSoup
 from .article import Image, Audio, Author, Article
 
 

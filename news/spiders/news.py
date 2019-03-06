@@ -8,9 +8,9 @@ import time
 import urlparse
 import scrapy
 from scrapy_splash import SplashRequest
-from google.cloud import storage
 from langdetect import detect
 from langdetect import DetectorFactory
+from google.cloud import storage
 from .common import extract_urls
 from .custom_settings import \
 NEWS_HTTP_AUTH_USER, \

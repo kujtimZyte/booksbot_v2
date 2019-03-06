@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Parser for the ABC website"""
-from bs4 import BeautifulSoup
 import html2text
+from bs4 import BeautifulSoup
 from .common import \
 extract_metadata, \
 strip_query_from_url, \
