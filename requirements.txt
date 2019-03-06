@@ -1,6 +1,6 @@
 scrapy
 scrapy-splash
-pylint==1.9.3
+pylint==1.9.4
 shub==2.8.1
 google-cloud-storage==1.13.0
 pyasn1-modules==0.2.1
