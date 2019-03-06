@@ -2,10 +2,10 @@
 """Structure for creating an article representation"""
 import datetime
 import re
-from bs4 import BeautifulSoup
-from dateutil import parser
 from markdown import markdown
 import requests
+from bs4 import BeautifulSoup
+from dateutil import parser
 
 
 def timecode_from_datetime(datetime_obj):
