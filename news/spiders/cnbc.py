@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Parser for the CNBC website"""
-from .common import find_main_content, remove_common_tags,\
-find_script_json, common_response_data, extract_link_id, parse_meta_tags
+from .common import extract_link_id, common_parse
 
 
 def cnbc_url_parse(url):
@@ -9,26 +8,19 @@ def cnbc_url_parse(url):
     return extract_link_id(url, lengths=[7, 8])
 
 
-def remove_tags(soup):
-    """Removes the useless tags from the HTML"""
-    remove_common_tags([
-        {'tag': 'div', 'meta': {'class': 'embed-container'}}
-    ], soup)
-
-
 def cnbc_parse(response):
     """Parses the response from a CNBC Website"""
     link_id = cnbc_url_parse(response.url)
     if link_id is None:
         return None, link_id
-    soup, meta_tags, article = common_response_data(response)
-    parse_meta_tags(meta_tags, article)
-    find_script_json(soup, article)
-    remove_tags(soup)
-    find_main_content([
+    article = common_parse(response, [
+        {'tag': 'div', 'meta': {'class': 'embed-container'}}
+    ], [
         {'tag': 'article', 'meta': {}},
         {'tag': 'div', 'meta': {'class': 'ArticleBody-articleBody'}}
-    ], article, response, soup)
+    ])
+    if article is None:
+        return None, link_id
     return article.json(), link_id
 
 
