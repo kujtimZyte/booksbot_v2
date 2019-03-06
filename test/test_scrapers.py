@@ -529,6 +529,14 @@ class TestNewsSpider(unittest.TestCase):
             'independent-bomb-arrest-live-cesar-sayoc-florida-update-nyc-bomber-cnn-trump-latest.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cbsnews_latest_pictures(self, mock_head):
+        self.check_fake_html_scrape(
+            'cbsnews-latest-pictures.html',
+            'https://www.cbsnews.com/latest/pictures/',
+            'cbsnews-latest-pictures.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

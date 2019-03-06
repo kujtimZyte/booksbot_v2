@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """Parser for the CBS website"""
 import hashlib
-from .common import strip_query_from_url, remove_common_tags, find_main_content, \
-common_response_data, find_common
+from .common import strip_query_from_url, common_parse
 
 
 def cbs_url_parse(url):
@@ -14,24 +13,19 @@ def cbs_url_parse(url):
     return hashlib.sha224(url_split[-1]).hexdigest()
 
 
-def remove_tags(soup):
-    """Removes the useless tags from the HTML"""
-    remove_common_tags([
-        {'tag': 'div', 'meta': {'class': 'social'}},
-        {'tag': 'div', 'meta': {'class': 'copyright'}}
-    ], soup)
-
-
 def cbs_parse(response):
     """Parses the response from a CBS Website"""
     link_id = cbs_url_parse(response.url)
     if link_id is None:
         return None, link_id
-    soup, meta_tags, article = common_response_data(response)
-    find_common(soup, meta_tags, article)
-    remove_tags(soup)
-    find_main_content(
-        [{'tag': 'article', 'meta': {}}], article, response, soup)
+    article = common_parse(response, [
+        {'tag': 'div', 'meta': {'class': 'social'}},
+        {'tag': 'div', 'meta': {'class': 'copyright'}}
+    ], [
+        {'tag': 'article', 'meta': {}}
+    ])
+    if article is None:
+        return None, link_id
     return article.json(), link_id
 
 
