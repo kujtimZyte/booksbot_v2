@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Parser for the CTVNews website"""
-from .common import find_main_content, remove_common_tags, \
-extract_link_id, find_common_response_data, common_parse
+from .common import extract_link_id, common_parse
 
 
 def ctvnews_url_parse(url):
