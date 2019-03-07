@@ -267,7 +267,7 @@ def abc_parse(response):
                 video.height = inline_video_instance['height']
                 video.size = inline_video_instance['filesize']
                 article.videos.append_video(video)
-    article.text.set_markdown_text(html2text.html2text(unicode(main_content_div)))
+    article.text.set_markdown_text(html2text.html2text(unicode(main_content_div), bodywidth=0))
     if not article.text.text.strip():
         raise ValueError('Could not find a text: {}'.format(response.url))
     return article.json(), link_id

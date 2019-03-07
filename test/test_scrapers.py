@@ -31,6 +31,7 @@ class TestNewsSpider(unittest.TestCase):
     def setUp(self):
         self.scraper = NewsSpider()
         self.htmlDirectory = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_html_files')
+        self.overwrite = False
 
 
     @mock.patch('requests.head', side_effect=mocked_requests_head)
@@ -605,11 +606,15 @@ class TestNewsSpider(unittest.TestCase):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
         json_filepath = os.path.join(self.htmlDirectory, json_filename)
-        with open(json_filepath) as json_filehandle:
-            expected_output = json.load(json_filehandle)
-            produced_output = json.loads(output_json)
-            self.assertEqual(produced_output['requests'], expected_output['requests'])
-            self.assertEqual(produced_output['items'], expected_output['items'])
+        if self.overwrite:
+            with open(json_filepath, 'w') as json_filehandle:
+                json_filehandle.write(output_json)
+        else:
+            with open(json_filepath) as json_filehandle:
+                expected_output = json.load(json_filehandle)
+                produced_output = json.loads(output_json)
+                self.assertEqual(produced_output['requests'], expected_output['requests'])
+                self.assertEqual(produced_output['items'], expected_output['items'])
 
 
     def fake_html(self, htmlFilename , url):
