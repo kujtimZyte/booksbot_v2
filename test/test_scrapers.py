@@ -553,6 +553,14 @@ class TestNewsSpider(unittest.TestCase):
             'nbcnews-shooting-reported-borderline-bar-grill-thousand-oaks-california.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_ctvnews_don_martins_blog(self, mock_head):
+        self.check_fake_html_scrape(
+            'ctvnews-don-martins-blog.html',
+            'https://www.ctvnews.ca/politics/don-martin-s-blog',
+            'ctvnews-don-martins-blog.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
