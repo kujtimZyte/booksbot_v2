@@ -217,13 +217,31 @@ def find_main_content(main_content_divs, article, response, soup):
     article.text.set_markdown_text(markdown_text)
 
 
-def author_from_json_author(json_author):
+def parse_authors(author_string, article):
+    """Parses authors and appends them to an article"""
+    bad_authors = [
+        'CNN',
+        'CNN Library',
+        'Ars Staff'
+    ]
+    for author in author_string.split(','):
+        author_split = author.split(' and ')
+        for author_split_instance in author_split:
+            author = Author()
+            author.name = author_split_instance.strip()
+            author.name = author.name.replace('Presented by: ', '')
+            if author.name in bad_authors:
+                continue
+            if author.name.startswith('http'):
+                continue
+            article.authors.append(author)
+
+
+def author_from_json_author(json_author, article):
     """Finds the author from the JSON author"""
     if json_author['@type'] == 'Organization' or json_author['@type'] == 'NewsMediaOrganization':
         return None
-    article_author = Author()
-    article_author.name = json_author['name']
-    return article_author
+    parse_authors(json_author['name'], article)
 
 
 def handle_script_json_authors(script_json, article):
@@ -232,14 +250,10 @@ def handle_script_json_authors(script_json, article):
         authors = script_json['author']
         if isinstance(authors, list):
             for author in authors:
-                article_author = author_from_json_author(author)
-                if article_author:
-                    article.authors.append(article_author)
+                author_from_json_author(author, article)
         elif isinstance(authors, dict):
             author = authors
-            article_author = author_from_json_author(author)
-            if article_author:
-                article.authors.append(article_author)
+            author_from_json_author(author, article)
 
 
 def handle_script_image_instance(image, article):
@@ -440,31 +454,19 @@ def parse_meta_tags_publisher(meta_tags, article):
 
 def parse_meta_tags(meta_tags, article):
     """Extracts the necessary meta tags into the article"""
-    bad_authors = [
-        'CNN',
-        'CNN Library',
-        'Ars Staff'
-    ]
     parse_meta_tags_keywords(meta_tags, article)
     parse_meta_tags_info(meta_tags, article)
     parse_meta_tags_time(meta_tags, article)
     parse_meta_tags_images(meta_tags, article)
     parse_meta_tags_publisher(meta_tags, article)
-    author_keys = ['author', 'article:author', 'dc.creator']
+    author_keys = [
+        'author',
+        'article:author',
+        'dc.creator']
     for author_key in author_keys:
         if author_key not in meta_tags:
             continue
-        for author in meta_tags[author_key].split(','):
-            author_split = author.split(' and ')
-            for author_split_instance in author_split:
-                author = Author()
-                author.name = author_split_instance.strip()
-                author.name = author.name.replace('Presented by: ', '')
-                if author.name in bad_authors:
-                    continue
-                if author.name.startswith('http'):
-                    continue
-                article.authors.append(author)
+        parse_authors(meta_tags[author_key], article)
 
 
 def find_common(soup, meta_tags, article):
@@ -489,9 +491,7 @@ def find_author_content(author_content_divs, article, response, soup):
             break
     if not author_content_div:
         raise ValueError('Could not find the author content div: {}'.format(response.url))
-    author = Author()
-    author.name = author_content_div.text
-    article.authors.append(author)
+    parse_authors(author_content_div.text, article)
 
 
 def common_parse(response, remove_tags, main_tags, require_article=True, author_tag=None):
