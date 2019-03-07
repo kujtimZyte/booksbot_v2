@@ -1,190 +1,201 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "apple-itunes-app": "app-id=591496838",
-                    "apple-mobile-web-app-capable": "yes",
-                    "apple-mobile-web-app-status-bar-style": "black-translucent",
-                    "apple-mobile-web-app-title": "vice",
-                    "application-name": "vice",
-                    "article:author": " Bridjet Mendyuk,Danielle Scruggs",
-                    "article:published_time": "2018-11-06T21:18:14Z",
-                    "articleBody": [
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "Bridjet Mendyuk"
+                    },
+                    {
+                        "name": "Danielle Scruggs"
+                    }
+                ],
+                "images": {
+                    "images": [
                         {
-                            "text": "Erica de Marco, aka Ultimate Whorrior (left) and Gabby Perrea, aka Kunt Fury (right). \u00a9 Danielle Scruggs"
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://vice-web-statics-cdn.vice.com/images/blank.png"
                         },
                         {
-                            "text": "Going to a Chicago"
+                            "alt": "Kira Elliot, aka Brownie Bruiser",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541521784944-Scruggs_MudQueens-13.jpeg?resize=320:*"
                         },
                         {
-                            "link": "http://mudqueens.com/",
-                            "text": "Mud Queens"
+                            "alt": "Erica de Marco, aka Ultimate Whorrior",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541522512487-Scruggs_MudQueens-54.jpeg?resize=320:*"
                         },
                         {
-                            "text": "match is a little like watching the"
+                            "alt": "1541445026255-Scruggs_MudQueens-11",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541445026255-Scruggs_MudQueens-11.jpeg?resize=320:*"
                         },
                         {
-                            "link": "https://www.vice.com/en_us/article/mbjyyv/glow-is-netflixs-best-show-in-years",
-                            "text": "Netflix show"
+                            "alt": "Kim Kozak MCs the MudQueens wrestling match",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541525626656-Scruggs_MudQueens-170.jpeg?resize=320:*"
                         },
                         {
-                            "text": "G.L.O.W."
+                            "alt": "Ingrid Hansen, aka Calamity Pain",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541523560799-Scruggs_MudQueens-160.jpeg?resize=320:*"
                         },
                         {
-                            "text": ", but with beer, guitars, a much bigger mess, and"
+                            "alt": "Britt Murphy aka the Ovarian Barbarian and Carly Huizenga aka Babe Brute face off during the MudQueens wrestling match at Reggies Rock Club, October 30, 2018.",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541527651296-Scruggs_MudQueens-95.jpeg?resize=320:*"
                         },
                         {
-                            "link": "https://www.vice.com/en_us/article/pav58y/the-real-women-of-glow-told-us-the-sexist-bs-they-dealt-with-in-the-80s",
-                            "text": "less sexual harassment"
+                            "alt": "The full MudQueens troupe on stage at Reggies Rock Club, October 30, 2018",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541532147110-Scruggs_MudQueens-39.jpeg?resize=320:*"
                         },
                         {
-                            "text": ". The league, which has been around since 2003, aims to reclaim the raw power of women's mud wrestling, without the over-sexualized image. What started as a goofy fight among friends evolved into a legit organization that hosts indoor matches from April through October at music venues and bars throughout the city. Since 2004, the team has donated profits from their events to charity."
+                            "alt": "1541525749354-Scruggs_MudQueens-15",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541525749354-Scruggs_MudQueens-15.jpeg?resize=320:*"
                         },
                         {
-                            "text": "The provocative, witty, and aggressively"
+                            "alt": "Gabby Perrea aka Kunt Fury prepares for her round at the MudQueens wrestling match at Reggies Rock Club, October 30, 2018.",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541525848915-Scruggs_MudQueens-48.jpeg?resize=320:*"
                         },
                         {
-                            "link": "https://i-d.vice.com/en_us/article/qvmxjp/great-american-mud-wrestle-walter-pearce-lily-rose-depp-lotta-volkova",
-                            "text": "skilled women who sling mud"
+                            "alt": "1541444129753-Scruggs_MudQueens-62",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541444129753-Scruggs_MudQueens-62.jpeg?resize=320:*"
                         },
                         {
-                            "text": "(and occasionally slime, lube, or spaghetti) at each other have earned the Mud Queens a cult following in Chicago. The biggest match of the year takes place every Halloween at Reggie\u2019s Rock Club in Chicago's South Loop. The mud is swapped out for fake blood (though the recipe for the slick stuff stays secret). It's a combination of punk rock, feminism, contact sports, and activism that embodies the Windy City's gritty, DIY ethos."
+                            "alt": "The crowd cheers and watches the MudQueens wrestling match at Reggies Rock Club, October 30, 2018.",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526179365-Scruggs_MudQueens-58.jpeg?resize=320:*"
                         },
                         {
-                            "text": "VICE checked out this year's Halloween event with photographer"
+                            "alt": "The crowd cheers and watches the MudQueens wrestling match at Reggies Rock Club, October 30, 2018.",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526226310-Scruggs_MudQueens-67.jpeg?resize=320:*"
                         },
                         {
-                            "link": "https://www.instagram.com/dascruggs_/?hl=en",
-                            "text": "Danielle Scruggs"
+                            "alt": "Annie Hartlepape (left) aka Red Witch and Emily McGlawn aka Betty Brickhouse face off at Reggies Rock Club, October 30, 2018.",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526290543-Scruggs_MudQueens-70.jpeg?resize=320:*"
                         },
                         {
-                            "text": "to meet the Mud Queens and get a behind-the-scenes look at what it takes to throw a bloody good wrestling match."
+                            "alt": "1541526367112-Scruggs_MudQueens-72",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526367112-Scruggs_MudQueens-72.jpeg?resize=320:*"
                         },
                         {
-                            "text": "\"I\u2019ve been in Mud Queens for eight or nine years. There are a lot of reasons I do it. My favorite part is the women involved in the organization. They\u2019re hilarious, and there is an amazing sisterhood in the group. Everybody just really enjoys each other. We all live these buttoned-up lives, and it\u2019s cool to let loose and do something that\u2019s off-the-charts wild and crazy. Every year, after our final show, we give a lump sum of our earnings to the Chicago Women\u2019s Health Center. I think it\u2019s really important to take care of people, especially women with reproductive needs. Chicago is competing against New York and Los Angeles, and there is something gritty about Mud Queens being here. It gives Chicago a bit more of an edge and reputation of being badass and hardcore.\""
+                            "alt": "1541526450900-Scruggs_MudQueens-85",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526450900-Scruggs_MudQueens-85.jpeg?resize=320:*"
                         },
                         {
-                            "text": "\u201cI came to Chicago alone, when I was 21 and didn\u2019t know anybody. I came across a flyer for a Mud Queens show and texted the founder and said, 'I want to do this. How do I get trained?' She texted back and said, 'We had a girl drop out. You're on tomorrow at 7 PM.' She put me up against one of the largest fighters, and I lost very hard. I lost every fight for the next four years straight, and it wasn\u2019t until my fifth year that I won my first fight. It\u2019s a really good feeling when you look out into the audience and people are cheering. It\u2019s a feeling I\u2019ve grown addicted to. We\u2019re breaking stereotypes. When you think of mud wrestling, you think of girls rolling around seductively, but we bring strength to it.\""
+                            "alt": "1541526591557-Scruggs_MudQueens-163",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526591557-Scruggs_MudQueens-163.jpeg?resize=320:*"
                         },
                         {
-                            "text": "\u201cMy buddy Megan wanted to do jello wrestling, but we didn\u2019t know where to store that much jello, so we made mud. I\u2019ve been doing this since 2003. I\u2019ve been doing it so long that I don\u2019t know why I would stop ["
+                            "alt": "1541526585302-Scruggs_MudQueens-151",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526585302-Scruggs_MudQueens-151.jpeg?resize=320:*"
                         },
                         {
-                            "text": "laughs"
+                            "alt": "1541526568111-Scruggs_MudQueens-138",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526568111-Scruggs_MudQueens-138.jpeg?resize=320:*"
                         },
                         {
-                            "text": "]. Mud Queens is unique to Chicago. We're underground, but we've been around for 15 years. It has to be one of the city's longest running shows at this point. I love the community aspect\u2014people showing up and putting on a show together\u2014a band of brothers and sisters, that sort of shit.\""
+                            "alt": "1541526533825-Scruggs_MudQueens-88",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526533825-Scruggs_MudQueens-88.jpeg?resize=320:*"
                         },
                         {
-                            "text": "\u201cThere is nothing else like Mud Queens. It\u2019s badass women who are taking back mud wrestling. It's a piece of Chicago culture other cities really don't have. It's a grassroots effort that's badass, crude, and brash\u2014like the city itself. Our first show was at a birthday party in someone's apartment, put together as a joke, but everyone had a great time. All of our friends' bands played, and we started doing more shows from there. The first four or five were stopped by police. There were a couple times they were called for noise complaints, and the cops would stay and watch ["
+                            "alt": "1541443576548-Scruggs_MudQueens-108",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541443576548-Scruggs_MudQueens-108.jpeg?resize=320:*"
                         },
                         {
-                            "text": "laughs"
+                            "alt": "1541526636528-Scruggs_MudQueens-174",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526636528-Scruggs_MudQueens-174.jpeg?resize=320:*"
                         },
                         {
-                            "text": "]."
+                            "alt": "1541526647494-Scruggs_MudQueens-176",
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://video-images.vice.com/_uncategorized/1541526647494-Scruggs_MudQueens-176.jpeg?resize=320:*"
                         },
                         {
-                            "text": "\"I didn\u2019t think we'd ever be allowed in a legit venue. When we were on loading docks, we had to move dumpsters and someone was scratched by a rat. It was pretty ramshackle. We never thought we would ever do a \u2018real\u2019 show. We started charging at the door to make up the money for supplies, and we ended up with more money than we knew what to do with, so we thought the best thing to do was give it to charity. The Chicago Women\u2019s Health Center has been our charity from the start.\u201d"
-                        },
-                        {
-                            "text": "\u201cBefore, there was no venue. We wrestled in warehouses or on the street. There were no real rules. We had rules for safety, but if someone's top fell off, we weren\u2019t in a public establishment. The costumes have gotten more intricate, and the organization itself is more organized. We\u2019ve adapted. It was only mud in the beginning, but the founder created a recipe for blood, and we decided to use slime. The creative members of Mud Queens are always adding elements to the show.\""
-                        },
-                        {
-                            "text": "\u201cThere\u2019s a stereotype that women aren\u2019t as strong\u2014that women have inner strength, but not physical strength. All of us are strong women trying to help other women. We\u2019re all different sizes and shapes. You are welcome with us. I\u2019m not a loud person. I\u2019m not very confident in my normal, regular life. That is completely different when I\u2019m wrestling. I get to push my body and express all my energy, more than when I'm just working out. After I've let out all that aggression, I feel calm.\""
-                        },
-                        {
-                            "text": "The Mud Queens are always looking for \u201cnew blood,\u201d fresh faces, and big characters. The 2018 season is over, but wrestling will pick back up in the spring. Follow them on"
-                        },
-                        {
-                            "link": "https://www.facebook.com/mudqueenschicago/",
-                            "text": "Facebook"
-                        },
-                        {
-                            "text": "for more information."
-                        },
-                        {
-                            "link": "https://confirmsubscription.com/h/i/48178908AA2FD075",
-                            "text": "Sign up for our newsletter"
-                        },
-                        {
-                            "text": "to get the best of VICE delivered to your inbox daily."
-                        },
-                        {
-                            "text": "Follow Bridjet Mendyuk on"
-                        },
-                        {
-                            "link": "http://www.twitter.com/bjmendy",
-                            "text": "Twitter"
-                        },
-                        {
-                            "text": "."
+                            "etag": "\"6209cb-5788a25f37d1b\"",
+                            "url": "https://vice-web-statics-cdn.vice.com/images/blank.png"
                         }
                     ],
-                    "datePublished": "2018-11-06T21:18:14Z",
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "height": 675,
+                        "url": "https://video-images.vice.com/articles/5be0894c595ea800061377b0/lede/1541531909736-Scruggs_MudQueens-56.jpeg?crop=1xw:0.8425xh;0xw,0.1575xh&resize=1200:*",
+                        "width": 1200
+                    }
+                },
+                "info": {
                     "description": "\"A couple times when police were called for noise complaints, the cops would stay and watch.\"",
-                    "fb:app_id": "213518685373476",
-                    "fb:pages": " 283321618725390",
-                    "imgs": [
-                        "https://vice-web-statics-cdn.vice.com/images/blank.png",
-                        "https://vice-web-statics-cdn.vice.com/icons/facebook-square.svg",
-                        "https://vice-web-statics-cdn.vice.com/icons/twitter.svg",
-                        "https://video-images.vice.com/_uncategorized/1541521784944-Scruggs_MudQueens-13.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541522512487-Scruggs_MudQueens-54.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541445026255-Scruggs_MudQueens-11.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541525626656-Scruggs_MudQueens-170.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541523560799-Scruggs_MudQueens-160.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541527651296-Scruggs_MudQueens-95.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541532147110-Scruggs_MudQueens-39.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541525749354-Scruggs_MudQueens-15.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541525848915-Scruggs_MudQueens-48.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541444129753-Scruggs_MudQueens-62.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526179365-Scruggs_MudQueens-58.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526226310-Scruggs_MudQueens-67.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526290543-Scruggs_MudQueens-70.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526367112-Scruggs_MudQueens-72.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526450900-Scruggs_MudQueens-85.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526591557-Scruggs_MudQueens-163.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526585302-Scruggs_MudQueens-151.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526568111-Scruggs_MudQueens-138.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526533825-Scruggs_MudQueens-88.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541443576548-Scruggs_MudQueens-108.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526636528-Scruggs_MudQueens-174.jpeg?resize=320:*",
-                        "https://video-images.vice.com/_uncategorized/1541526647494-Scruggs_MudQueens-176.jpeg?resize=320:*",
-                        "https://vice-web-statics-cdn.vice.com/images/blank.png",
-                        "https://vice-web-statics-cdn.vice.com/icons/facebook-square.svg",
-                        "https://vice-web-statics-cdn.vice.com/icons/twitter.svg"
-                    ],
-                    "keywords": "culture, news, lgbtq, politics, journalism, video, documentary, sex, drugs, film, tv, entertainment, travel, crime,travel,sports,women,Chicago,Halloween,activism,entertainment,WRESTLING,Photography,charity,Photo,mud wrestling,Women's Healthcare",
-                    "mobile-web-app-capable": "yes",
-                    "msapplication-TileColor": "#FFFFFF",
-                    "msapplication-TileImage": "",
-                    "msapplication-config": "https://vice-web-statics-cdn.vice.com/favicons/vice/browserconfig.xml",
-                    "msapplication-square150x150logo": "",
-                    "msapplication-square310x310logo": "",
-                    "msapplication-square70x70logo": "",
-                    "msapplication-wide310x150logo": "",
-                    "news_keywords": "travel,sports,women,Chicago,Halloween,activism,entertainment,WRESTLING,Photography,charity,Photo,mud wrestling,Women's Healthcare",
-                    "og:description": "\"A couple times when police were called for noise complaints, the cops would stay and watch.\"",
-                    "og:image": "https://video-images.vice.com/articles/5be0894c595ea800061377b0/lede/1541531909736-Scruggs_MudQueens-56.jpeg?crop=1xw:0.8425xh;0xw,0.1575xh&resize=1200:*",
-                    "og:image:height": "675",
-                    "og:image:type": "image/jpeg",
-                    "og:image:width": "1200",
-                    "og:locale": "en_us",
-                    "og:site_name": "Vice",
-                    "og:title": "Inside an Underground Women's Mud Wrestling Ring in Chicago",
-                    "og:type": "article",
-                    "og:url": "https://www.vice.com/en_us/article/9k49vz/inside-an-underground-womens-mud-wrestling-ring-in-chicago",
-                    "theme-color": "#fff",
-                    "thumbnail": "https://video-images.vice.com/articles/5be0894c595ea800061377b0/lede/1541531909736-Scruggs_MudQueens-56.jpeg",
-                    "twitter:card": "summary_large_image",
-                    "twitter:description": "\"A couple times when police were called for noise complaints, the cops would stay and watch.\"",
-                    "twitter:site": "vice",
-                    "twitter:title": "Inside an Underground Women's Mud Wrestling Ring in Chicago",
-                    "viewport": "width=device-width, initial-scale=1, user-scalable=no"
-                }
-            ],
+                    "title": "Inside an Underground Women's Mud Wrestling Ring in Chicago - VICE",
+                    "url": "www.vice.com"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "app_id": "213518685373476",
+                        "page_id": [
+                            " 283321618725390"
+                        ]
+                    },
+                    "organisation": "VICE",
+                    "twitter": {
+                        "card": "summary_large_image",
+                        "description": "\"A couple times when police were called for noise complaints, the cops would stay and watch.\"",
+                        "handle": "vice",
+                        "title": "Inside an Underground Women's Mud Wrestling Ring in Chicago"
+                    }
+                },
+                "tags": [
+                    "Chicago",
+                    "Halloween",
+                    "sex",
+                    "culture",
+                    "video",
+                    "politics",
+                    "crime",
+                    "film",
+                    "journalism",
+                    "entertainment",
+                    "tv",
+                    "travel",
+                    "sports",
+                    "Women's Healthcare",
+                    "women",
+                    "mud wrestling",
+                    "activism",
+                    "drugs",
+                    "lgbtq",
+                    "news",
+                    "charity",
+                    "Photo",
+                    "WRESTLING",
+                    "documentary",
+                    "Photography"
+                ],
+                "text": {
+                    "markdown": "![](https://vice-web-statics-cdn.vice.com/images/blank.png)\n\nErica de Marco, aka Ultimate Whorrior (left) and Gabby Perrea, aka Kunt Fury\n(right). \u00a9 Danielle Scruggs\n\n[Culture](/en_us/topic/culture)\n\n|\n\nby [ Bridjet Mendyuk](/en_us/contributor/bridjet-mendyuk \" Bridjet Mendyuk\");\nphotos by [Danielle Scruggs](/en_us/contributor/danielle-scruggs \"Danielle\nScruggs\")\n\n|\n\nNov 6 2018, 9:18pm\n\n# Inside an Underground Women's Mud Wrestling Ring in Chicago\n\n## \"A couple times when police were called for noise complaints, the cops\nwould stay and watch.\"\n\nby [ Bridjet Mendyuk](/en_us/contributor/bridjet-mendyuk \" Bridjet Mendyuk\");\nphotos by [Danielle Scruggs](/en_us/contributor/danielle-scruggs \"Danielle\nScruggs\")\n\n|\n\nNov 6 2018, 9:18pm\n\nErica de Marco, aka Ultimate Whorrior (left) and Gabby Perrea, aka Kunt Fury\n(right). \u00a9 Danielle Scruggs\n\nGoing to a Chicago [Mud Queens](http://mudqueens.com/) match is a little like\nwatching the [Netflix show\n_G.L.O.W._](https://www.vice.com/en_us/article/mbjyyv/glow-is-netflixs-best-\nshow-in-years), but with beer, guitars, a much bigger mess, and [less sexual\nharassment](https://www.vice.com/en_us/article/pav58y/the-real-women-of-glow-\ntold-us-the-sexist-bs-they-dealt-with-in-the-80s). The league, which has been\naround since 2003, aims to reclaim the raw power of women's mud wrestling,\nwithout the over-sexualized image. What started as a goofy fight among friends\nevolved into a legit organization that hosts indoor matches from April through\nOctober at music venues and bars throughout the city. Since 2004, the team has\ndonated profits from their events to charity.\n\nThe provocative, witty, and aggressively [skilled women who sling\nmud](https://i-d.vice.com/en_us/article/qvmxjp/great-american-mud-wrestle-\nwalter-pearce-lily-rose-depp-lotta-volkova) (and occasionally slime, lube, or\nspaghetti) at each other have earned the Mud Queens a cult following in\nChicago. The biggest match of the year takes place every Halloween at Reggie\u2019s\nRock Club in Chicago's South Loop. The mud is swapped out for fake blood\n(though the recipe for the slick stuff stays secret). It's a combination of\npunk rock, feminism, contact sports, and activism that embodies the Windy\nCity's gritty, DIY ethos.\n\nVICE checked out this year's Halloween event with photographer [Danielle\nScruggs](https://www.instagram.com/dascruggs_/?hl=en) to meet the Mud Queens\nand get a behind-the-scenes look at what it takes to throw a bloody good\nwrestling match.\n\n## Kira Elliot, a.k.a. Brownie Bruiser\n\n![Kira Elliot, aka Brownie Bruiser](https://video-\nimages.vice.com/_uncategorized/1541521784944-Scruggs_MudQueens-13.jpeg?resize=320:*)\n\nKira Elliot, aka Brownie Bruiser, is a personal trainer. \u00a9 Danielle Scruggs\n\n\"I\u2019ve been in Mud Queens for eight or nine years. There are a lot of reasons I\ndo it. My favorite part is the women involved in the organization. They\u2019re\nhilarious, and there is an amazing sisterhood in the group. Everybody just\nreally enjoys each other. We all live these buttoned-up lives, and it\u2019s cool\nto let loose and do something that\u2019s off-the-charts wild and crazy. Every\nyear, after our final show, we give a lump sum of our earnings to the Chicago\nWomen\u2019s Health Center. I think it\u2019s really important to take care of people,\nespecially women with reproductive needs. Chicago is competing against New\nYork and Los Angeles, and there is something gritty about Mud Queens being\nhere. It gives Chicago a bit more of an edge and reputation of being badass\nand hardcore.\"\n\n## Erica de Marco, a.k.a. Ultimate Whorrior\n\n![Erica de Marco, aka Ultimate Whorrior](https://video-\nimages.vice.com/_uncategorized/1541522512487-Scruggs_MudQueens-54.jpeg?resize=320:*)\n\nErica de Marco, aka Ultimate Whorrior, is in school for aerospace engineering.\n\u00a9 Danielle Scruggs\n\n\u201cI came to Chicago alone, when I was 21 and didn\u2019t know anybody. I came across\na flyer for a Mud Queens show and texted the founder and said, 'I want to do\nthis. How do I get trained?' She texted back and said, 'We had a girl drop\nout. You're on tomorrow at 7 PM.' She put me up against one of the largest\nfighters, and I lost very hard. I lost every fight for the next four years\nstraight, and it wasn\u2019t until my fifth year that I won my first fight. It\u2019s a\nreally good feeling when you look out into the audience and people are\ncheering. It\u2019s a feeling I\u2019ve grown addicted to. We\u2019re breaking stereotypes.\nWhen you think of mud wrestling, you think of girls rolling around\nseductively, but we bring strength to it.\"\n\n##  Mark Macoun, a.k.a. the Ref\n\n![1541445026255-Scruggs_MudQueens-11](https://video-\nimages.vice.com/_uncategorized/1541445026255-Scruggs_MudQueens-11.jpeg?resize=320:*)\n\nMark Macoun, aka the referee, is a public servant and one of the original\nmembers of Mud Queens. \u00a9 Danielle Scruggs\n\n\u201cMy buddy Megan wanted to do jello wrestling, but we didn\u2019t know where to\nstore that much jello, so we made mud. I\u2019ve been doing this since 2003. I\u2019ve\nbeen doing it so long that I don\u2019t know why I would stop [ _laughs_ ]. Mud\nQueens is unique to Chicago. We're underground, but we've been around for 15\nyears. It has to be one of the city's longest running shows at this point. I\nlove the community aspect\u2014people showing up and putting on a show together\u2014a\nband of brothers and sisters, that sort of shit.\"\n\n## Kim Kozak, a.k.a. El Ba\u00f1o\n\n![Kim Kozak MCs the MudQueens wrestling match](https://video-\nimages.vice.com/_uncategorized/1541525626656-Scruggs_MudQueens-170.jpeg?resize=320:*)\n\nKim Kozak, aka El Ba\u00f1o, is an audio engineer at Concord Music Hall. \u00a9 Danielle\nScruggs\n\n\u201cThere is nothing else like Mud Queens. It\u2019s badass women who are taking back\nmud wrestling. It's a piece of Chicago culture other cities really don't have.\nIt's a grassroots effort that's badass, crude, and brash\u2014like the city itself.\nOur first show was at a birthday party in someone's apartment, put together as\na joke, but everyone had a great time. All of our friends' bands played, and\nwe started doing more shows from there. The first four or five were stopped by\npolice. There were a couple times they were called for noise complaints, and\nthe cops would stay and watch [ _laughs_ ].\n\n\"I didn\u2019t think we'd ever be allowed in a legit venue. When we were on loading\ndocks, we had to move dumpsters and someone was scratched by a rat. It was\npretty ramshackle. We never thought we would ever do a \u2018real\u2019 show. We started\ncharging at the door to make up the money for supplies, and we ended up with\nmore money than we knew what to do with, so we thought the best thing to do\nwas give it to charity. The Chicago Women\u2019s Health Center has been our charity\nfrom the start.\u201d\n\n## Ingrid Hansen, a.k.a. Calamity Pain\n\n![Ingrid Hansen, aka Calamity Pain](https://video-\nimages.vice.com/_uncategorized/1541523560799-Scruggs_MudQueens-160.jpeg?resize=320:*)\n\nIngrid Hansen, aka Calamity Pain, is an account manager for a human resources\ncompany. \u00a9 Danielle Scruggs\n\n\u201cBefore, there was no venue. We wrestled in warehouses or on the street. There\nwere no real rules. We had rules for safety, but if someone's top fell off, we\nweren\u2019t in a public establishment. The costumes have gotten more intricate,\nand the organization itself is more organized. We\u2019ve adapted. It was only mud\nin the beginning, but the founder created a recipe for blood, and we decided\nto use slime. The creative members of Mud Queens are always adding elements to\nthe show.\"\n\n## Carly Huizenga, a.k.a. Babe Brute\n\n![Britt Murphy aka the Ovarian Barbarian and Carly Huizenga aka Babe Brute\nface off during the MudQueens wrestling match at Reggies Rock Club, October\n30, 2018.](https://video-\nimages.vice.com/_uncategorized/1541527651296-Scruggs_MudQueens-95.jpeg?resize=320:*)\n\nCarly Huizenga (right) aka Babe Brute is a senior enterprise account manager\nat a startup. She faces off with Britt Murphy (left) aka the Ovarian\nBarbarian. \u00a9 Danielle Scruggs\n\n\u201cThere\u2019s a stereotype that women aren\u2019t as strong\u2014that women have inner\nstrength, but not physical strength. All of us are strong women trying to help\nother women. We\u2019re all different sizes and shapes. You are welcome with us.\nI\u2019m not a loud person. I\u2019m not very confident in my normal, regular life. That\nis completely different when I\u2019m wrestling. I get to push my body and express\nall my energy, more than when I'm just working out. After I've let out all\nthat aggression, I feel calm.\"\n\nThe Mud Queens are always looking for \u201cnew blood,\u201d fresh faces, and big\ncharacters. The 2018 season is over, but wrestling will pick back up in the\nspring. Follow them on [Facebook](https://www.facebook.com/mudqueenschicago/)\nfor more information.\n\n![The full MudQueens troupe on stage at Reggies Rock Club, October 30,\n2018](https://video-\nimages.vice.com/_uncategorized/1541532147110-Scruggs_MudQueens-39.jpeg?resize=320:*)\n\nThe full Mud Queens troupe on stage at Reggies Rock Club, October 30, 2018. \u00a9\nDanielle Scruggs\n\n![1541525749354-Scruggs_MudQueens-15](https://video-\nimages.vice.com/_uncategorized/1541525749354-Scruggs_MudQueens-15.jpeg?resize=320:*)\n\nPam Turnmire (left) aka Mudusa and Erica de Marco (right) aka Ultimate\nWhorrior. \u00a9 Danielle Scruggs\n\n![Gabby Perrea aka Kunt Fury prepares for her round at the MudQueens wrestling\nmatch at Reggies Rock Club, October 30, 2018.](https://video-\nimages.vice.com/_uncategorized/1541525848915-Scruggs_MudQueens-48.jpeg?resize=320:*)\n\nGabby Perrea, aka Kunt Fury, prepares for her round. \u00a9 Danielle Scruggs\n\n![1541444129753-Scruggs_MudQueens-62](https://video-\nimages.vice.com/_uncategorized/1541444129753-Scruggs_MudQueens-62.jpeg?resize=320:*)\n\nErica de Marco, aka Ultimate Whorrior (left) and Gabby Perrea, aka Kunt Fury\n(right) face off. \u00a9 Danielle Scruggs\n\n![The crowd cheers and watches the MudQueens wrestling match at Reggies Rock\nClub, October 30, 2018.](https://video-\nimages.vice.com/_uncategorized/1541526179365-Scruggs_MudQueens-58.jpeg?resize=320:*)\n\nThe crowd cheers and watches the Mud Queens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\n![The crowd cheers and watches the MudQueens wrestling match at Reggies Rock\nClub, October 30, 2018.](https://video-\nimages.vice.com/_uncategorized/1541526226310-Scruggs_MudQueens-67.jpeg?resize=320:*)\n\nThe crowd cheers and watches the Mud Queens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\n![Annie Hartlepape \\(left\\) aka Red Witch and Emily McGlawn aka Betty\nBrickhouse face off at Reggies Rock Club, October 30, 2018.](https://video-\nimages.vice.com/_uncategorized/1541526290543-Scruggs_MudQueens-70.jpeg?resize=320:*)\n\nAnnie Hartlepape (left), aka Red Witch, and Emily McGlawn (right), aka Betty\nBrickhouse, face off at Reggies Rock Club, October 30, 2018. \u00a9 Danielle\nScruggs\n\n![1541526367112-Scruggs_MudQueens-72](https://video-\nimages.vice.com/_uncategorized/1541526367112-Scruggs_MudQueens-72.jpeg?resize=320:*)\n\nThe crowd cheers and watches the Mud Queens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\n![1541526450900-Scruggs_MudQueens-85](https://video-\nimages.vice.com/_uncategorized/1541526450900-Scruggs_MudQueens-85.jpeg?resize=320:*)\n\nLaura Leigh Smith aka Maiden Hell and Frida Killahoe face off during the Mud\nQueens wrestling match at Reggies Rock Club, October 30, 2018. \u00a9 Danielle\nScruggs\n\n![1541526591557-Scruggs_MudQueens-163](https://video-\nimages.vice.com/_uncategorized/1541526591557-Scruggs_MudQueens-163.jpeg?resize=320:*)\n\nThe crowd cheers and watches the MudQueens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\n![1541526585302-Scruggs_MudQueens-151](https://video-\nimages.vice.com/_uncategorized/1541526585302-Scruggs_MudQueens-151.jpeg?resize=320:*)\n\nIngrid Hansen (right) aka Calamity Pain, wins a round. \u00a9 Danielle Scruggs\n\n![1541526568111-Scruggs_MudQueens-138](https://video-\nimages.vice.com/_uncategorized/1541526568111-Scruggs_MudQueens-138.jpeg?resize=320:*)\n\nLisa Weeber aka Queen Cock Block acts as a ring girl during the Mud Queens\nwrestling match at Reggies Rock Club, October 30, 2018. \u00a9 Danielle Scruggs\n\n![1541526533825-Scruggs_MudQueens-88](https://video-\nimages.vice.com/_uncategorized/1541526533825-Scruggs_MudQueens-88.jpeg?resize=320:*)\n\nThe crowd cheers and watches the Mud Queens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\n![1541443576548-Scruggs_MudQueens-108](https://video-\nimages.vice.com/_uncategorized/1541443576548-Scruggs_MudQueens-108.jpeg?resize=320:*)\n\nKira Elliot, aka Brownie Bruiser, hoses off after the match. \u00a9 Danielle\nScruggs\n\n![1541526636528-Scruggs_MudQueens-174](https://video-\nimages.vice.com/_uncategorized/1541526636528-Scruggs_MudQueens-174.jpeg?resize=320:*)\n\n\u00a9 Danielle Scruggs\n\n![1541526647494-Scruggs_MudQueens-176](https://video-\nimages.vice.com/_uncategorized/1541526647494-Scruggs_MudQueens-176.jpeg?resize=320:*)\n\n\u00a9 Danielle Scruggs\n\n_[Sign up for our\nnewsletter](https://confirmsubscription.com/h/i/48178908AA2FD075) to get the\nbest of VICE delivered to your inbox daily._\n\n_Follow Bridjet Mendyuk on[Twitter](http://www.twitter.com/bjmendy)._\n\n![](https://vice-web-statics-cdn.vice.com/images/blank.png)\n\n",
+                    "text": "\nErica de Marco, aka Ultimate Whorrior (left) and Gabby Perrea, aka Kunt Fury\n(right). \u00a9 Danielle Scruggs\nCulture\n|\nby  Bridjet Mendyuk;\nphotos by Danielle Scruggs\n|\nNov 6 2018, 9:18pm\nInside an Underground Women's Mud Wrestling Ring in Chicago\n\"A couple times when police were called for noise complaints, the cops\nwould stay and watch.\"\nby  Bridjet Mendyuk;\nphotos by Danielle Scruggs\n|\nNov 6 2018, 9:18pm\nErica de Marco, aka Ultimate Whorrior (left) and Gabby Perrea, aka Kunt Fury\n(right). \u00a9 Danielle Scruggs\nGoing to a Chicago Mud Queens match is a little like\nwatching the Netflix show\nG.L.O.W., but with beer, guitars, a much bigger mess, and less sexual\nharassment. The league, which has been\naround since 2003, aims to reclaim the raw power of women's mud wrestling,\nwithout the over-sexualized image. What started as a goofy fight among friends\nevolved into a legit organization that hosts indoor matches from April through\nOctober at music venues and bars throughout the city. Since 2004, the team has\ndonated profits from their events to charity.\nThe provocative, witty, and aggressively skilled women who sling\nmud (and occasionally slime, lube, or\nspaghetti) at each other have earned the Mud Queens a cult following in\nChicago. The biggest match of the year takes place every Halloween at Reggie\u2019s\nRock Club in Chicago's South Loop. The mud is swapped out for fake blood\n(though the recipe for the slick stuff stays secret). It's a combination of\npunk rock, feminism, contact sports, and activism that embodies the Windy\nCity's gritty, DIY ethos.\nVICE checked out this year's Halloween event with photographer Danielle\nScruggs to meet the Mud Queens\nand get a behind-the-scenes look at what it takes to throw a bloody good\nwrestling match.\nKira Elliot, a.k.a. Brownie Bruiser\n\nKira Elliot, aka Brownie Bruiser, is a personal trainer. \u00a9 Danielle Scruggs\n\"I\u2019ve been in Mud Queens for eight or nine years. There are a lot of reasons I\ndo it. My favorite part is the women involved in the organization. They\u2019re\nhilarious, and there is an amazing sisterhood in the group. Everybody just\nreally enjoys each other. We all live these buttoned-up lives, and it\u2019s cool\nto let loose and do something that\u2019s off-the-charts wild and crazy. Every\nyear, after our final show, we give a lump sum of our earnings to the Chicago\nWomen\u2019s Health Center. I think it\u2019s really important to take care of people,\nespecially women with reproductive needs. Chicago is competing against New\nYork and Los Angeles, and there is something gritty about Mud Queens being\nhere. It gives Chicago a bit more of an edge and reputation of being badass\nand hardcore.\"\nErica de Marco, a.k.a. Ultimate Whorrior\n\nErica de Marco, aka Ultimate Whorrior, is in school for aerospace engineering.\n\u00a9 Danielle Scruggs\n\u201cI came to Chicago alone, when I was 21 and didn\u2019t know anybody. I came across\na flyer for a Mud Queens show and texted the founder and said, 'I want to do\nthis. How do I get trained?' She texted back and said, 'We had a girl drop\nout. You're on tomorrow at 7 PM.' She put me up against one of the largest\nfighters, and I lost very hard. I lost every fight for the next four years\nstraight, and it wasn\u2019t until my fifth year that I won my first fight. It\u2019s a\nreally good feeling when you look out into the audience and people are\ncheering. It\u2019s a feeling I\u2019ve grown addicted to. We\u2019re breaking stereotypes.\nWhen you think of mud wrestling, you think of girls rolling around\nseductively, but we bring strength to it.\"\nMark Macoun, a.k.a. the Ref\n\nMark Macoun, aka the referee, is a public servant and one of the original\nmembers of Mud Queens. \u00a9 Danielle Scruggs\n\u201cMy buddy Megan wanted to do jello wrestling, but we didn\u2019t know where to\nstore that much jello, so we made mud. I\u2019ve been doing this since 2003. I\u2019ve\nbeen doing it so long that I don\u2019t know why I would stop [ laughs ]. Mud\nQueens is unique to Chicago. We're underground, but we've been around for 15\nyears. It has to be one of the city's longest running shows at this point. I\nlove the community aspect\u2014people showing up and putting on a show together\u2014a\nband of brothers and sisters, that sort of shit.\"\nKim Kozak, a.k.a. El Ba\u00f1o\n\nKim Kozak, aka El Ba\u00f1o, is an audio engineer at Concord Music Hall. \u00a9 Danielle\nScruggs\n\u201cThere is nothing else like Mud Queens. It\u2019s badass women who are taking back\nmud wrestling. It's a piece of Chicago culture other cities really don't have.\nIt's a grassroots effort that's badass, crude, and brash\u2014like the city itself.\nOur first show was at a birthday party in someone's apartment, put together as\na joke, but everyone had a great time. All of our friends' bands played, and\nwe started doing more shows from there. The first four or five were stopped by\npolice. There were a couple times they were called for noise complaints, and\nthe cops would stay and watch [ laughs ].\n\"I didn\u2019t think we'd ever be allowed in a legit venue. When we were on loading\ndocks, we had to move dumpsters and someone was scratched by a rat. It was\npretty ramshackle. We never thought we would ever do a \u2018real\u2019 show. We started\ncharging at the door to make up the money for supplies, and we ended up with\nmore money than we knew what to do with, so we thought the best thing to do\nwas give it to charity. The Chicago Women\u2019s Health Center has been our charity\nfrom the start.\u201d\nIngrid Hansen, a.k.a. Calamity Pain\n\nIngrid Hansen, aka Calamity Pain, is an account manager for a human resources\ncompany. \u00a9 Danielle Scruggs\n\u201cBefore, there was no venue. We wrestled in warehouses or on the street. There\nwere no real rules. We had rules for safety, but if someone's top fell off, we\nweren\u2019t in a public establishment. The costumes have gotten more intricate,\nand the organization itself is more organized. We\u2019ve adapted. It was only mud\nin the beginning, but the founder created a recipe for blood, and we decided\nto use slime. The creative members of Mud Queens are always adding elements to\nthe show.\"\nCarly Huizenga, a.k.a. Babe Brute\n\nCarly Huizenga (right) aka Babe Brute is a senior enterprise account manager\nat a startup. She faces off with Britt Murphy (left) aka the Ovarian\nBarbarian. \u00a9 Danielle Scruggs\n\u201cThere\u2019s a stereotype that women aren\u2019t as strong\u2014that women have inner\nstrength, but not physical strength. All of us are strong women trying to help\nother women. We\u2019re all different sizes and shapes. You are welcome with us.\nI\u2019m not a loud person. I\u2019m not very confident in my normal, regular life. That\nis completely different when I\u2019m wrestling. I get to push my body and express\nall my energy, more than when I'm just working out. After I've let out all\nthat aggression, I feel calm.\"\nThe Mud Queens are always looking for \u201cnew blood,\u201d fresh faces, and big\ncharacters. The 2018 season is over, but wrestling will pick back up in the\nspring. Follow them on Facebook\nfor more information.\n\nThe full Mud Queens troupe on stage at Reggies Rock Club, October 30, 2018. \u00a9\nDanielle Scruggs\n\nPam Turnmire (left) aka Mudusa and Erica de Marco (right) aka Ultimate\nWhorrior. \u00a9 Danielle Scruggs\n\nGabby Perrea, aka Kunt Fury, prepares for her round. \u00a9 Danielle Scruggs\n\nErica de Marco, aka Ultimate Whorrior (left) and Gabby Perrea, aka Kunt Fury\n(right) face off. \u00a9 Danielle Scruggs\n\nThe crowd cheers and watches the Mud Queens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\nThe crowd cheers and watches the Mud Queens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\nAnnie Hartlepape (left), aka Red Witch, and Emily McGlawn (right), aka Betty\nBrickhouse, face off at Reggies Rock Club, October 30, 2018. \u00a9 Danielle\nScruggs\n\nThe crowd cheers and watches the Mud Queens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\nLaura Leigh Smith aka Maiden Hell and Frida Killahoe face off during the Mud\nQueens wrestling match at Reggies Rock Club, October 30, 2018. \u00a9 Danielle\nScruggs\n\nThe crowd cheers and watches the MudQueens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\nIngrid Hansen (right) aka Calamity Pain, wins a round. \u00a9 Danielle Scruggs\n\nLisa Weeber aka Queen Cock Block acts as a ring girl during the Mud Queens\nwrestling match at Reggies Rock Club, October 30, 2018. \u00a9 Danielle Scruggs\n\nThe crowd cheers and watches the Mud Queens wrestling match at Reggies Rock\nClub, October 30, 2018. \u00a9 Danielle Scruggs\n\nKira Elliot, aka Brownie Bruiser, hoses off after the match. \u00a9 Danielle\nScruggs\n\n\u00a9 Danielle Scruggs\n\n\u00a9 Danielle Scruggs\nSign up for our\nnewsletter to get the\nbest of VICE delivered to your inbox daily.\nFollow Bridjet Mendyuk onTwitter.\n"
+                },
+                "time": {
+                    "published_time": 1541539094.552
+                },
+                "videos": {}
+            },
             "url": "https://www.vice.com/en_us/article/9k49vz/inside-an-underground-womens-mud-wrestling-ring-in-chicago"
         }
     ],
