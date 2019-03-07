@@ -103,7 +103,9 @@ def extract_imgs(response, element):
 
 
 def extract_item(response, paragraph_list, main_element):
-    """Extracts items from a paragraph list, the main element and the response"""
+    """
+    Extracts items from a paragraph list, the main element and the response
+    """
     if not paragraph_list:
         return None
     item = extract_metadata(response)
@@ -240,7 +242,7 @@ def parse_authors(author_string, article):
 def author_from_json_author(json_author, article):
     """Finds the author from the JSON author"""
     if json_author['@type'] == 'Organization' or json_author['@type'] == 'NewsMediaOrganization':
-        return None
+        return
     parse_authors(json_author['name'], article)
 
 
@@ -507,3 +509,16 @@ def common_parse(response, remove_tags, main_tags, require_article=True, author_
     remove_common_tags(remove_tags, soup)
     find_main_content(main_tags, article, response, soup)
     return article
+
+
+def common_parse_return(\
+    response,\
+    remove_tags,\
+    main_tags,\
+    link_id,\
+    author_tag=None):
+    """Perform common parsing and return the correct tuple"""
+    article = common_parse(response, remove_tags, main_tags, author_tag=author_tag)
+    if article is None:
+        return None, link_id
+    return article.json(), link_id

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Parser for the Vice website"""
-from .common import extract_link_id, common_parse
+from .common import extract_link_id, common_parse_return
 
 
 def vice_url_parse(url):
@@ -13,16 +13,13 @@ def vice_parse(response):
     link_id = vice_url_parse(response.url)
     if link_id is None:
         return None, link_id
-    article = common_parse(response, [
+    return common_parse_return(response, [
         {'tag': 'ul', 'meta': {'class': 'topics'}},
         {'tag': 'ul', 'meta': {'class': 'main-list'}},
         {'tag': 'div', 'meta': {'class': 'navbar-scrollable'}}
     ], [
         {'tag': 'article', 'meta': {}}
-    ])
-    if article is None:
-        return None, link_id
-    return article.json(), link_id
+    ], link_id)
 
 
 def vice_url_filter(_url):
