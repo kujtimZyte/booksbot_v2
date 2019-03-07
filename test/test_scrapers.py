@@ -593,6 +593,14 @@ class TestNewsSpider(unittest.TestCase):
             'motherboard-my-gamer-brain-is-addicted-to-the-peloton-exercise-bike.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cnn_liverpool_bayern_munich_champions_league_spt_intl(self, mock_head):
+        self.check_fake_html_scrape(
+            'cnn-liverpool-bayern-munich-champions-league-spt-intl.html',
+            'https://edition.cnn.com/2019/02/19/football/liverpool-bayern-munich-champions-league-spt-intl/index.html',
+            'cnn-liverpool-bayern-munich-champions-league-spt-intl.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
