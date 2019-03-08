@@ -38,7 +38,10 @@ def extract_urls(response):
     """Extracts URLs from a tags"""
     urls = []
     for url in response.xpath("//a/@href").extract():
-        urls.append(response.urljoin(url))
+        try:
+            urls.append(response.urljoin(url))
+        except ValueError:
+            pass
     javascript_identifiers = [
         '{"__typename":"LinkFormat","url":"', # New York Times
         '"type":"Story","url":"' # The Star
