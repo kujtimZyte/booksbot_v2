@@ -35,4 +35,6 @@ def cbs_url_filter(url):
         return False
     if '/live/' in url:
         return False
+    if '/pictures/' in url:
+        return False
     return True
