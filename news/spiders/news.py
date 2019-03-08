@@ -41,6 +41,7 @@ huffingtonpost_url_filter
 from .independent import independent_parse, independent_url_parse, independent_url_filter
 from .nbc import nbc_parse, nbc_url_parse, nbc_url_filter
 from .vice import vice_parse, vice_url_parse, vice_url_filter
+from .newsweek import newsweek_parse, newsweek_url_parse, newsweek_url_filter
 
 
 DetectorFactory.seed = 0
@@ -140,7 +141,8 @@ class NewsSpider(scrapy.Spider):
         "huffpost.com",
         "independent.co.uk",
         "nbcnews.com",
-        "vice.com"
+        "vice.com",
+        "newsweek.com"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
@@ -161,7 +163,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.independent.co.uk/us',
         'https://www.nbcnews.com/',
         'https://www.vice.com/en_us',
-        'https://motherboard.vice.com/en_us'
+        'https://motherboard.vice.com/en_us',
+        'https://www.newsweek.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -275,6 +278,12 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": vice_url_parse,
             "url_filter": vice_url_filter
+        },
+        "newsweek.com": {
+            "parser": newsweek_parse,
+            "splash": False,
+            "url_parse": newsweek_url_parse,
+            "url_filter": newsweek_url_filter
         }
     }
 
