@@ -602,6 +602,14 @@ class TestNewsSpider(unittest.TestCase):
             'cnn-liverpool-bayern-munich-champions-league-spt-intl.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_vice_new_motion_photography_contest_invites_artists_to_show_off_their_best_gifs(self, mock_head):
+        self.check_fake_html_scrape(
+            'vice-new-motion-photography-contest-invites-artists-to-show-off-their-best-gifs.html',
+            'https://www.vice.com/en_us/article/qkwpam/new-motion-photography-contest-invites-artists-to-show-off-their-best-gifs',
+            'vice-new-motion-photography-contest-invites-artists-to-show-off-their-best-gifs.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
