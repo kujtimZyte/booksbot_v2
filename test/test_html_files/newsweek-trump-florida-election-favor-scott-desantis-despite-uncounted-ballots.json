@@ -1,68 +1,62 @@
 {
     "items": [
         {
-            "items": [
-                {
-                    "article:author": "https://www.facebook.com/manhattanjan/",
-                    "article:modified_time": "2018-11-12T11:08:17-05:00",
-                    "article:published_time": "2018-11-12T10:22:51-05:00",
-                    "article:publisher": "https://www.facebook.com/Newsweek",
-                    "article:section": "U.S.",
-                    "articleBody": [
-                        {
-                            "text": "President Donald Trump said on Monday that former Florida Governor Rick Scott and Republican Representative Ron DeSantis should be named winners of the state\u2019s midterm election, despite the fact that some votes still haven't been counted. Trump took to Twitter, claiming there was fraudulent voter activity in Florida\u2019s election."
-                        },
-                        {
-                            "text": "\u201cThe\u00a0Florida Election should be called in favor of Rick Scott and Ron DeSantis in that large numbers of new ballots showed up out of nowhere, and many ballots are missing or forged. An honest vote count is no longer possible\u2014ballots massively infected. Must go with Election Night!\u201d Trump wrote."
-                        },
-                        {
-                            "text": "Trump didn\u2019t offer any evidence to back up claims of ballots being infected."
-                        },
-                        {
-                            "text": "DeSantis narrowly beat Democrat candidate Andrew Gillum in Florida\u2019s gubernatorial race with fewer than 34,000 votes on election night. Meanwhile, Scott pulled ahead of Democrat Bill Nelson in the race for Senate with just 50.1 percent of the vote compared to Nelson\u2019s 49.9 percent, according to"
-                        },
-                        {
-                            "text": "The New York Times."
-                        },
-                        {
-                            "text": "Initially, Gillum conceded to DeSantis, but he withdrew his concession after a recount was ordered on Saturday."
-                        },
-                        {
-                            "text": "A set of uncounted ballots was collected by the elections board of Miami-Dade County over the weekend. A spokesperson for the county\u2019s supervisor of elections confirmed to CNN 266 uncounted ballots\u00a0were discovered in the Opa-locka mail facility. The shipment was supposed to arrive by mail to the election facility by 7 p.m. on the day of the election, but they were never received."
-                        },
-                        {
-                            "text": "Under Florida law, ballots that don\u2019t arrive at the proper department facility at the designated time are not considered in the vote."
-                        },
-                        {
-                            "text": "Votes for three of Florida\u2019s elections are expected to be recounted, including the race for governor, senator and commissioner of agriculture."
-                        },
-                        {
-                            "text": "Gillium appeared at New Mount Olive Baptist Church in Fort Lauderdale and requested for all the votes to be counted. \u201cI am not here to ask for votes,\u201d he said on Sunday night. \u201cI am simply here to say that for the votes that have been cast the ought to be counted.\u201d"
-                        }
-                    ],
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "Janice Williams"
+                    }
+                ],
+                "images": {
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "url": "https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2018/11/12/trump-says-florida-election-should-be-called-favor-rick-scott-and-ron-desantis.png"
+                    }
+                },
+                "info": {
                     "description": "\"An honest vote count is no longer possible,\" said the president, pushing for the Republican candidates to be declared the winners before the recounts are complete.",
-                    "fb:app_id": "245537789135954",
-                    "fb:pages": "18343191100",
-                    "imgs": [],
-                    "msapplication-TileColor": "#ff0000",
-                    "msapplication-TileImage": "https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/favicons/mstile-144x144.png",
-                    "msapplication-config": "https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/favicons/browserconfig.xml",
-                    "news_keywords": "trump, florida, election, favor, scott, desantis, despite, uncounted, ballots",
-                    "og:description": "\"An honest vote count is no longer possible,\" said the president, pushing for the Republican candidates to be declared the winners before the recounts are complete.",
-                    "og:image": "https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2018/11/12/trump-says-florida-election-should-be-called-favor-rick-scott-and-ron-desantis.png",
-                    "og:site_name": "Newsweek",
-                    "og:title": "Trump says Florida election \"should be called in favor of Rick Scott and Ron DeSantis\" despite uncounted ballots",
-                    "og:type": "article",
-                    "og:url": "https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931",
-                    "twitter:card": "summary_large_image",
-                    "twitter:description": "\"An honest vote count is no longer possible,\" said the president, pushing for the Republican candidates to be declared the winners before the recounts are complete. ",
-                    "twitter:image": "https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2018/11/12/trump-says-florida-election-should-be-called-favor-rick-scott-and-ron-desantis.png",
-                    "twitter:site": "@newsweek",
-                    "twitter:title": "Trump says Florida election \"should be called in favor of Rick Scott and Ron DeSantis\" despite uncounted ballots",
-                    "twitter:url": "https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931",
-                    "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
-                }
-            ],
+                    "title": "Trump says Florida election \"should be called in favor of Rick Scott and Ron DeSantis\" despite uncounted ballots"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "app_id": "245537789135954",
+                        "page_id": [
+                            "18343191100"
+                        ],
+                        "url": "https://www.facebook.com/Newsweek"
+                    },
+                    "organisation": "Newsweek",
+                    "twitter": {
+                        "card": "summary_large_image",
+                        "description": "\"An honest vote count is no longer possible,\" said the president, pushing for the Republican candidates to be declared the winners before the recounts are complete. ",
+                        "handle": "@newsweek",
+                        "image": "https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2018/11/12/trump-says-florida-election-should-be-called-favor-rick-scott-and-ron-desantis.png",
+                        "title": "Trump says Florida election \"should be called in favor of Rick Scott and Ron DeSantis\" despite uncounted ballots"
+                    }
+                },
+                "tags": [
+                    "trump",
+                    "florida",
+                    "favor",
+                    "desantis",
+                    "scott",
+                    "election",
+                    "despite",
+                    "uncounted",
+                    "ballots"
+                ],
+                "text": {
+                    "markdown": "President Donald Trump said on Monday that former Florida Governor Rick Scott and Republican Representative Ron DeSantis should be named winners of the state\u2019s midterm election, despite the fact that some votes still haven't been counted. Trump took to Twitter, claiming there was fraudulent voter activity in Florida\u2019s election.\n\n\u201cThe\u00a0Florida Election should be called in favor of Rick Scott and Ron DeSantis in that large numbers of new ballots showed up out of nowhere, and many ballots are missing or forged. An honest vote count is no longer possible\u2014ballots massively infected. Must go with Election Night!\u201d Trump wrote.\n\nTrump didn\u2019t offer any evidence to back up claims of ballots being infected.\n\nDeSantis narrowly beat Democrat candidate Andrew Gillum in Florida\u2019s gubernatorial race with fewer than 34,000 votes on election night. Meanwhile, Scott pulled ahead of Democrat Bill Nelson in the race for Senate with just 50.1 percent of the vote compared to Nelson\u2019s 49.9 percent, according to _The New York Times._\n\nInitially, Gillum conceded to DeSantis, but he withdrew his concession after a recount was ordered on Saturday.\n\nA set of uncounted ballots was collected by the elections board of Miami-Dade County over the weekend. A spokesperson for the county\u2019s supervisor of elections confirmed to CNN 266 uncounted ballots\u00a0were discovered in the Opa-locka mail facility. The shipment was supposed to arrive by mail to the election facility by 7 p.m. on the day of the election, but they were never received.\n\nUnder Florida law, ballots that don\u2019t arrive at the proper department facility at the designated time are not considered in the vote.\n\nVotes for three of Florida\u2019s elections are expected to be recounted, including the race for governor, senator and commissioner of agriculture.\n\nGillium appeared at New Mount Olive Baptist Church in Fort Lauderdale and requested for all the votes to be counted. \u201cI am not here to ask for votes,\u201d he said on Sunday night. \u201cI am simply here to say that for the votes that have been cast the ought to be counted.\u201d\n",
+                    "text": "President Donald Trump said on Monday that former Florida Governor Rick Scott and Republican Representative Ron DeSantis should be named winners of the state\u2019s midterm election, despite the fact that some votes still haven't been counted. Trump took to Twitter, claiming there was fraudulent voter activity in Florida\u2019s election.\n\u201cThe\u00a0Florida Election should be called in favor of Rick Scott and Ron DeSantis in that large numbers of new ballots showed up out of nowhere, and many ballots are missing or forged. An honest vote count is no longer possible\u2014ballots massively infected. Must go with Election Night!\u201d Trump wrote.\nTrump didn\u2019t offer any evidence to back up claims of ballots being infected.\nDeSantis narrowly beat Democrat candidate Andrew Gillum in Florida\u2019s gubernatorial race with fewer than 34,000 votes on election night. Meanwhile, Scott pulled ahead of Democrat Bill Nelson in the race for Senate with just 50.1 percent of the vote compared to Nelson\u2019s 49.9 percent, according to The New York Times.\nInitially, Gillum conceded to DeSantis, but he withdrew his concession after a recount was ordered on Saturday.\nA set of uncounted ballots was collected by the elections board of Miami-Dade County over the weekend. A spokesperson for the county\u2019s supervisor of elections confirmed to CNN 266 uncounted ballots\u00a0were discovered in the Opa-locka mail facility. The shipment was supposed to arrive by mail to the election facility by 7 p.m. on the day of the election, but they were never received.\nUnder Florida law, ballots that don\u2019t arrive at the proper department facility at the designated time are not considered in the vote.\nVotes for three of Florida\u2019s elections are expected to be recounted, including the race for governor, senator and commissioner of agriculture.\nGillium appeared at New Mount Olive Baptist Church in Fort Lauderdale and requested for all the votes to be counted. \u201cI am not here to ask for votes,\u201d he said on Sunday night. \u201cI am simply here to say that for the votes that have been cast the ought to be counted.\u201d"
+                },
+                "time": {
+                    "modified_time": 1542038897.0,
+                    "published_time": 1542036171.0
+                },
+                "videos": {}
+            },
             "url": "https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931"
         }
     ],

@@ -610,6 +610,22 @@ class TestNewsSpider(unittest.TestCase):
             'vice-new-motion-photography-contest-invites-artists-to-show-off-their-best-gifs.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_newsweek_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'newsweek.com.html',
+            'https://www.newsweek.com/',
+            'newsweek.com.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_newsweek_trump_florida_election_favor_scott_desantis_despite_uncounted_ballots(self, mock_head):
+        self.check_fake_html_scrape(
+            'newsweek-trump-florida-election-favor-scott-desantis-despite-uncounted-ballots.html',
+            'https://www.newsweek.com/trump-florida-election-favor-scott-desantis-despite-uncounted-ballots-1211931',
+            'newsweek-trump-florida-election-favor-scott-desantis-despite-uncounted-ballots.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
