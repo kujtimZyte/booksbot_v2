@@ -626,6 +626,14 @@ class TestNewsSpider(unittest.TestCase):
             'newsweek-trump-florida-election-favor-scott-desantis-despite-uncounted-ballots.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_huffingtonpost_pediatricians_social_networks_anti_vaccine_lies(self, mock_head):
+        self.check_fake_html_scrape(
+            'huffingtonpost-pediatricians-social-networks-anti-vaccine-lies.html',
+            'https://www.huffpost.com/entry/pediatricians-social-networks-anti-vaccine-lies_l_5c82ce88e4b0ed0a00135946',
+            'huffingtonpost-pediatricians-social-networks-anti-vaccine-lies.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
