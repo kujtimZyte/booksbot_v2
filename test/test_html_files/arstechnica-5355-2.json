@@ -1,0 +1,98 @@
+{
+    "items": [
+        {
+            "article": {
+                "audio": [],
+                "authors": [
+                    {
+                        "name": "Ken Fisher"
+                    }
+                ],
+                "images": {
+                    "thumbnail": {
+                        "etag": "\"6209cb-5788a25f37d1b\"",
+                        "url": "http://cdn.arstechnica.net/wp-content/themes/arstechnica/assets/images/ars-logo-open-grey.png"
+                    }
+                },
+                "info": {
+                    "description": "The battle lines are still being drawn in the fight over the next-generation  \u2026",
+                    "title": "Microsoft, Intel support HD DVD, citing managed copy and better backwards compatibility",
+                    "url": "https://arstechnica.com/uncategorized/2005/09/5355-2/"
+                },
+                "location": {},
+                "publisher": {
+                    "facebook": {
+                        "page_id": [
+                            "19374573752"
+                        ]
+                    },
+                    "organisation": "Ars Technica",
+                    "twitter": {
+                        "card": "summary",
+                        "description": "The battle lines are still being drawn in the fight over the next-generation  \u2026",
+                        "handle": "@arstechnica",
+                        "image": "http://cdn.arstechnica.net/wp-content/themes/arstechnica/assets/images/ars-logo-open-grey.png",
+                        "title": "Microsoft, Intel support HD DVD, citing managed copy and better backwards compatibility"
+                    }
+                },
+                "tags": [
+                    "type: brief"
+                ],
+                "text": {
+                    "markdown": "####  Uncategorized \u2014 \n\n# Microsoft, Intel support HD DVD, citing managed copy and better backwards compatibility\n\n## The battle lines are still being drawn in the fight over the next-generation \u2026\n\n[Ken Fisher](https://arstechnica.com/author/caesar/) \\- Sep 27, 2005 5:59 pm UTC\n\nIndustry giants Intel and Microsoft announced today that they would [endorse Toshiba's HD DVD standard](http://www.microsoft.com/presspass/press/2005/sep05/09-26HDDVDPromotionGroupPR.mspx) over rival Sony's Blu-ray format.\u00a0This marks the end of a long dry spell for HD DVD, which as of late has had to sit quietly while [Blu-ray gained more and more backers](http://arstechnica.com/news.ars/post/20050817-5218.html). In fact, early last month is looked like [HD DVD was on the ropes](http://arstechnica.com/news.ars/post/20050810-5194.html), with Blu-ray as an obvious victor. Adding insult to injury, Toshiba [scrapped plans for a holiday 2005 launch](http://arstechnica.com/news.ars/post/20050901-5267.html), after it became clear it would be more sizzle than steak. \n\nMicrosoft's decision to back HD DVD isn't entirely surprising. The company has talked about buddying up with Toshiba for some time, although they have been [careful](http://arstechnica.com/news.ars/post/20050731-5152.html) not to pledge full allegiance. That is, until now. \n\n> \u201cThere are both challenges and opportunities in the transition to high-definition experiences throughout the home,\u201d said Blair Westlake, corporate vice president of the Media/Entertainment & Technology Convergence Group at Microsoft. \u201cAnd after looking at the core advantages to the PC ecosystem and how it would benefit the consumer, it is clear that HD DVD offers the highest quality, and is the most affordable and highly flexible solution available.\u201d\n\nMicrosoft and Intel noted several \"requirements\" that they feel HD DVD meets. \"Managed Copy,\" for instance, will allow users to make copies of HD DVD discs for personal use. We expect that HD DVD users with Media Centers (for example) will be able to pop in a disc, copy it to a hard drive (with DRM translation in effect), and build a digital library that way. Currently there is no competing feature in the Blu-ray camp.\n\nThe two companies also cited the argument that HD DVD will be cheaper to produce, and will be easier to migrate to. See [today's op-ed](http://arstechnica.com/articles/paedia/hardware/next-gen-dvd.ars) written by an HD DVD backer, for a quick look at the arguments relating to manufacturing concerns.\u00a0 Before you dismiss them, please also read the following closely.\n\nConverting existing DVD manufacturing plants to HD DVD is far cheaper than setting up for Blu-ray. That's only one part of the equation, however. The \"hybrid\" support in HD DVD means that a single HD DVD disc can contain both standard definition content playable on existing DVD players, and high definition content for next-gen players. The upshot of this is that almost the _entire DVD market_ would move to HD DVD, because the format would allow users to buy discs without worrying about whether or not they'll play on their players. \n\nHD DVD backers say that if Blu-ray were to win, companies would have to manufacture two products. If we fast forward to 2007, they argue, we'd see two sets of manufacturing facilities: those making Blu-ray discs, and those still making today's DVDs. If the market goes with HD DVD, today's DVD manufacturing facilities would all upgrade to HD DVD, and all DVDs on shelves would be replaced with HD DVDs that play standard definition content on today's DVD players. Thus, in an ideal HD DVD world, there's only _one_ format. And Intel certainly thinks it should be that way. \n\n> \"We have a high expectation of having a single format, and that format is HD DVD,\" [said Intel spokesman Bill Kircos.](http://news.com.com/Intel,+Microsoft+endorse+HD+DVD+-+page+2/2100-1041_3-5883337-2.html?tag=st.next)\n\nAt the very least, backing from Intel and Microsoft means that Windows Vista-powered Media Centers and/or Intel's VIIV entertainment scheme will support HD DVD drives.\u00a0 With HD DVD movies slated to hit store shelves later this year, members of the HD DVD promotion group are confident that the addition of Intel and Microsoft to the consortium will contribute to the popularity of the format.\u00a0 But just because two of the industry's 800-lb. gorillas have picked sides doesn't mean the fight is over.\u00a0 Despite [the breakdown in talks](http://arstechnica.com/news.ars/post/20050621-5018.html) between Toshiba and Sony, many companies are still hoping for a resolution, but it may be a long time (or even never) in coming.\n\nHere at Ars, we've been saying that Blu-ray has the upper hand. The endorsement by Intel and Microsoft won't be enough to help HD DVD win the format war, but I will go so far as to argue that HD DVD has a new lease on life. \n\n[](/author/caesar)\n",
+                    "text": "Uncategorized \u2014\nMicrosoft, Intel support HD DVD, citing managed copy and better backwards compatibility\nThe battle lines are still being drawn in the fight over the next-generation \u2026\nKen Fisher - Sep 27, 2005 5:59 pm UTC\nIndustry giants Intel and Microsoft announced today that they would endorse Toshiba's HD DVD standard over rival Sony's Blu-ray format.\u00a0This marks the end of a long dry spell for HD DVD, which as of late has had to sit quietly while Blu-ray gained more and more backers. In fact, early last month is looked like HD DVD was on the ropes, with Blu-ray as an obvious victor. Adding insult to injury, Toshiba scrapped plans for a holiday 2005 launch, after it became clear it would be more sizzle than steak. \nMicrosoft's decision to back HD DVD isn't entirely surprising. The company has talked about buddying up with Toshiba for some time, although they have been careful not to pledge full allegiance. That is, until now. \n\n\u201cThere are both challenges and opportunities in the transition to high-definition experiences throughout the home,\u201d said Blair Westlake, corporate vice president of the Media/Entertainment & Technology Convergence Group at Microsoft. \u201cAnd after looking at the core advantages to the PC ecosystem and how it would benefit the consumer, it is clear that HD DVD offers the highest quality, and is the most affordable and highly flexible solution available.\u201d\n\nMicrosoft and Intel noted several \"requirements\" that they feel HD DVD meets. \"Managed Copy,\" for instance, will allow users to make copies of HD DVD discs for personal use. We expect that HD DVD users with Media Centers (for example) will be able to pop in a disc, copy it to a hard drive (with DRM translation in effect), and build a digital library that way. Currently there is no competing feature in the Blu-ray camp.\nThe two companies also cited the argument that HD DVD will be cheaper to produce, and will be easier to migrate to. See today's op-ed written by an HD DVD backer, for a quick look at the arguments relating to manufacturing concerns.\u00a0 Before you dismiss them, please also read the following closely.\nConverting existing DVD manufacturing plants to HD DVD is far cheaper than setting up for Blu-ray. That's only one part of the equation, however. The \"hybrid\" support in HD DVD means that a single HD DVD disc can contain both standard definition content playable on existing DVD players, and high definition content for next-gen players. The upshot of this is that almost the entire DVD market would move to HD DVD, because the format would allow users to buy discs without worrying about whether or not they'll play on their players. \nHD DVD backers say that if Blu-ray were to win, companies would have to manufacture two products. If we fast forward to 2007, they argue, we'd see two sets of manufacturing facilities: those making Blu-ray discs, and those still making today's DVDs. If the market goes with HD DVD, today's DVD manufacturing facilities would all upgrade to HD DVD, and all DVDs on shelves would be replaced with HD DVDs that play standard definition content on today's DVD players. Thus, in an ideal HD DVD world, there's only one format. And Intel certainly thinks it should be that way. \n\n\"We have a high expectation of having a single format, and that format is HD DVD,\" said Intel spokesman Bill Kircos.\n\nAt the very least, backing from Intel and Microsoft means that Windows Vista-powered Media Centers and/or Intel's VIIV entertainment scheme will support HD DVD drives.\u00a0 With HD DVD movies slated to hit store shelves later this year, members of the HD DVD promotion group are confident that the addition of Intel and Microsoft to the consortium will contribute to the popularity of the format.\u00a0 But just because two of the industry's 800-lb. gorillas have picked sides doesn't mean the fight is over.\u00a0 Despite the breakdown in talks between Toshiba and Sony, many companies are still hoping for a resolution, but it may be a long time (or even never) in coming.\nHere at Ars, we've been saying that Blu-ray has the upper hand. The endorsement by Intel and Microsoft won't be enough to help HD DVD win the format war, but I will go so far as to argue that HD DVD has a new lease on life. \n"
+                },
+                "time": {
+                    "published_time": 1127843987.0
+                },
+                "videos": {}
+            },
+            "url": "https://arstechnica.com/uncategorized/2005/09/5355-2/"
+        }
+    ],
+    "requests": [
+        "https://arstechnica.com/uncategorized/2005/09/5355-2/#main",
+        "https://arstechnica.com",
+        "https://arstechnica.com/information-technology/",
+        "https://arstechnica.com/gadgets/",
+        "https://arstechnica.com/science/",
+        "https://arstechnica.com/tech-policy/",
+        "https://arstechnica.com/cars/",
+        "https://arstechnica.com/gaming/",
+        "https://arstechnica.com/store/",
+        "https://arstechnica.com/civis/",
+        "https://arstechnica.com/store/product/subscriptions/",
+        "https://arstechnica.com/search/",
+        "https://arstechnica.com/uncategorized/2005/09/5355-2/#site-menu",
+        "http://video.arstechnica.com/",
+        "https://arstechnica.com/features/",
+        "https://arstechnica.com/reviews/",
+        "https://arstechnica.com/rss-feeds/",
+        "https://arstechnica.com/?view=mobile",
+        "https://arstechnica.com/about-us/",
+        "https://arstechnica.com/staff-directory/",
+        "https://arstechnica.com/contact-us/",
+        "https://arstechnica.com/advertise-with-us/",
+        "https://arstechnica.com/reprints/",
+        "http://arstechnica.com/uncategorized/2005/09/5355-2/?view=grid",
+        "http://arstechnica.com/uncategorized/2005/09/5355-2/?view=archive",
+        "http://arstechnica.com/uncategorized/2005/09/5355-2/?theme=light",
+        "http://arstechnica.com/uncategorized/2005/09/5355-2/?theme=dark",
+        "https://arstechnica.com/civis/ucp.php?mode=login&return_to=%2Funcategorized%2F2005%2F09%2F5355-2%2F",
+        "https://arstechnica.com/civis/ucp.php?mode=sendpassword",
+        "https://arstechnica.com/civis/ucp.php?mode=register",
+        "https://arstechnica.com/uncategorized/2005/09/5355-2/?comments=1",
+        "http://arstechnica.com/news.ars/post/20050817-5218.html",
+        "http://arstechnica.com/news.ars/post/20050810-5194.html",
+        "http://arstechnica.com/news.ars/post/20050901-5267.html",
+        "http://arstechnica.com/news.ars/post/20050731-5152.html",
+        "http://arstechnica.com/articles/paedia/hardware/next-gen-dvd.ars",
+        "http://arstechnica.com/news.ars/post/20050621-5018.html",
+        "https://arstechnica.com/civis/ucp.php?mode=login&return_to/uncategorized/2005/09/5355-2/",
+        "https://arstechnica.com/uncategorized/2005/09/5354-2/",
+        "https://arstechnica.com/gadgets/2005/09/1369/",
+        "http://arstechnica.com/uncategorized/2005/09/5355-2/?view=mobile",
+        "https://arstechnica.com/amendment-to-conde-nast-user-agreement-privacy-policy/",
+        "https://arstechnica.com/affiliate-link-policy/"
+    ]
+}
