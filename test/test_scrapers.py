@@ -31,7 +31,7 @@ class TestNewsSpider(unittest.TestCase):
     def setUp(self):
         self.scraper = NewsSpider()
         self.htmlDirectory = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_html_files')
-        self.overwrite = False
+        self.overwrite = True
 
 
     @mock.patch('requests.head', side_effect=mocked_requests_head)
@@ -632,6 +632,14 @@ class TestNewsSpider(unittest.TestCase):
             'huffingtonpost-pediatricians-social-networks-anti-vaccine-lies.html',
             'https://www.huffpost.com/entry/pediatricians-social-networks-anti-vaccine-lies_l_5c82ce88e4b0ed0a00135946',
             'huffingtonpost-pediatricians-social-networks-anti-vaccine-lies.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_arstechnica_5355_2(self, mock_head):
+        self.check_fake_html_scrape(
+            'arstechnica-5355-2.html',
+            'https://arstechnica.com/uncategorized/2005/09/5355-2/',
+            'arstechnica-5355-2.json')
 
 
     def check_fake_html_scrape(self, html_filename, url, json_filename):

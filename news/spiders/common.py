@@ -455,8 +455,33 @@ def parse_meta_tags_publisher(meta_tags, article):
         article.publisher.twitter.image = meta_tags['twitter:image']
     if 'twitter:card' in meta_tags:
         article.publisher.twitter.card = meta_tags['twitter:card']
+    if 'twitter:image:src' in meta_tags:
+        article.publisher.twitter.image = meta_tags['twitter:image:src']
     if 'fb:app_id' in meta_tags:
         article.publisher.facebook.app_id = meta_tags['fb:app_id']
+
+
+def retrieve_encoded_json(encoded_json):
+    """Retrieves encoded JSON from a meta tag"""
+    soup = BeautifulSoup(encoded_json, features="html.parser")
+    return unicode(soup.encode(formatter=None), "utf-8")
+
+
+def parse_parsley_page(meta_tags, article):
+    """Extracts the parsley page into the article"""
+    if 'parsely-page' in meta_tags:
+        parsley_page = json.loads(retrieve_encoded_json(meta_tags['parsely-page']))
+        article.info.title = parsley_page['title']
+        article.info.url = parsley_page['link']
+        author = Author()
+        author.name = parsley_page['author']
+        article.authors.append(author)
+        article.time.set_published_time(parsley_page['pub_date'])
+        article.info.genre = parsley_page['section']
+        for tag in parsley_page['tags']:
+            article.tags.append(tag)
+        if 'image_url' in parsley_page:
+            article.images.thumbnail.url = parsley_page['image_url']
 
 
 def parse_meta_tags(meta_tags, article):
@@ -466,6 +491,7 @@ def parse_meta_tags(meta_tags, article):
     parse_meta_tags_time(meta_tags, article)
     parse_meta_tags_images(meta_tags, article)
     parse_meta_tags_publisher(meta_tags, article)
+    parse_parsley_page(meta_tags, article)
     author_keys = [
         'author',
         'article:author',
