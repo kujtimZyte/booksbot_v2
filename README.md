@@ -39,6 +39,7 @@ The support table looks like so:
 | [Motherboard](https://motherboard.vice.com/en_us)                   | 7th March 2019     | Stable |
 | [Newsweek](https://www.newsweek.com/)                               | 8th March 2019     | Stable |
 | [The New York Times](https://www.nytimes.com/)                      | 10th March 2019    | Stable |
+| [The New Zealand Herald](https://www.nzherald.co.nz/)               | 10th March 2019    | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
