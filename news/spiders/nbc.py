@@ -21,6 +21,8 @@ def nbc_parse(response):
     return article.json(), link_id
 
 
-def nbc_url_filter(_url):
+def nbc_url_filter(url):
     """Filters URLs in the NBC domain"""
+    if '/video/' in url:
+        return False
     return True
