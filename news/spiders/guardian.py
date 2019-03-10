@@ -29,6 +29,8 @@ def guardian_parse(response):
     return article.json(), link_id
 
 
-def guardian_url_filter(_url):
+def guardian_url_filter(url):
     """Filters URLs in the Guardian domain"""
+    if 'securedrop.' in url:
+        return False
     return True
