@@ -166,6 +166,17 @@ def find_organisation(meta_tags, article, response):
         raise ValueError('Could not find an organisation: {}'.format(response.url))
 
 
+def find_thumbnail(meta_tags, article):
+    """Finds the thumbnail for an article"""
+    article.images.thumbnail.url = meta_tags['og:image']
+    if 'og:image:width' in meta_tags:
+        article.images.thumbnail.width = meta_tags['og:image:width']
+    if 'og:image:height' in meta_tags:
+        article.images.thumbnail.height = meta_tags['og:image:height']
+    if 'og:image:type' in meta_tags:
+        article.images.thumbnail.mime_type = meta_tags['og:image:type']
+
+
 def fill_article_from_meta_tags(article, response, soup):
     """Fills an article object with information from meta tags"""
     meta_tags = extract_metadata(response)
@@ -179,13 +190,7 @@ def fill_article_from_meta_tags(article, response, soup):
     article.info.set_url(response.url)
     article.info.set_title(find_title(meta_tags, response))
     article.info.set_description(find_description(meta_tags))
-    article.images.thumbnail.url = meta_tags['og:image']
-    if 'og:image:width' in meta_tags:
-        article.images.thumbnail.width = meta_tags['og:image:width']
-    if 'og:image:height' in meta_tags:
-        article.images.thumbnail.height = meta_tags['og:image:height']
-    if 'og:image:type' in meta_tags:
-        article.images.thumbnail.mime_type = meta_tags['og:image:type']
+    find_thumbnail(meta_tags, article)
     find_location(meta_tags, article)
     page_id = find_facebook_page(meta_tags)
     if page_id:
