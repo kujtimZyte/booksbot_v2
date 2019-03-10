@@ -31,7 +31,7 @@ class TestNewsSpider(unittest.TestCase):
     def setUp(self):
         self.scraper = NewsSpider()
         self.htmlDirectory = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_html_files')
-        self.overwrite = True
+        self.overwrite = False
 
 
     @mock.patch('requests.head', side_effect=mocked_requests_head)
@@ -640,6 +640,22 @@ class TestNewsSpider(unittest.TestCase):
             'arstechnica-5355-2.html',
             'https://arstechnica.com/uncategorized/2005/09/5355-2/',
             'arstechnica-5355-2.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_nytimes_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'nytimes.com.html',
+            'https://www.nytimes.com/',
+            'nytimes.com.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_nytimes_cnn_cory_booker_pipe_bombs_sent(self, mock_head):
+        self.check_fake_html_scrape(
+            'nytimes-cnn-cory-booker-pipe-bombs-sent.html',
+            'https://www.nytimes.com/2018/10/26/nyregion/cnn-cory-booker-pipe-bombs-sent.html?action=click&module=Top%20Stories&pgtype=Homepage',
+            'nytimes-cnn-cory-booker-pipe-bombs-sent.json')
 
 
     def check_fake_html_scrape(self, html_filename, url, json_filename):

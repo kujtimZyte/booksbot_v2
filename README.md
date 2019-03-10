@@ -38,6 +38,7 @@ The support table looks like so:
 | [Vice](https://www.vice.com/en_us)                                  | 7th March 2019     | Stable |
 | [Motherboard](https://motherboard.vice.com/en_us)                   | 7th March 2019     | Stable |
 | [Newsweek](https://www.newsweek.com/)                               | 8th March 2019     | Stable |
+| [The New York Times](https://www.nytimes.com/)                      | 10th March 2019    | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
