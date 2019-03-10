@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Parser for the NZ Herald website"""
 import urlparse
-from .common import extract_link_id, common_parse_return
+from .common import common_parse_return
 
 
 def nzherald_url_parse(url):
