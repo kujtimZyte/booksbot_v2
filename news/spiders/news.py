@@ -43,6 +43,7 @@ from .nbc import nbc_parse, nbc_url_parse, nbc_url_filter
 from .vice import vice_parse, vice_url_parse, vice_url_filter
 from .newsweek import newsweek_parse, newsweek_url_parse, newsweek_url_filter
 from .nytimes import nytimes_parse, nytimes_url_parse, nytimes_url_filter
+from .nzherald import nzherald_parse, nzherald_url_parse, nzherald_url_filter
 
 
 DetectorFactory.seed = 0
@@ -144,7 +145,8 @@ class NewsSpider(scrapy.Spider):
         "nbcnews.com",
         "vice.com",
         "newsweek.com",
-        "nytimes.com"
+        "nytimes.com",
+        "nzherald.co.nz"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
@@ -167,7 +169,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.vice.com/en_us',
         'https://motherboard.vice.com/en_us',
         'https://www.newsweek.com/',
-        'https://www.nytimes.com/'
+        'https://www.nytimes.com/',
+        'https://www.nzherald.co.nz/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -293,6 +296,12 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": nytimes_url_parse,
             "url_filter": nytimes_url_filter
+        },
+        "nzherald.co.nz": {
+            "parser": nzherald_parse,
+            "splash": False,
+            "url_parse": nzherald_url_parse,
+            "url_filter": nzherald_url_filter
         }
     }
 

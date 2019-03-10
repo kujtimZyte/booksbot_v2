@@ -666,6 +666,22 @@ class TestNewsSpider(unittest.TestCase):
             'abc-david-claughton.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_nzherald_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'nzherald.co.nz.html',
+            'https://www.nzherald.co.nz/',
+            'nzherald.co.nz.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_nzherald_12154083(self, mock_head):
+        self.check_fake_html_scrape(
+            'nzherald-12154083.html',
+            'https://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=12154083',
+            'nzherald-12154083.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
