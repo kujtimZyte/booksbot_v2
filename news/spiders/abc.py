@@ -60,7 +60,11 @@ def remove_tags(soup):
         {'tag': 'div', 'meta': {'class': 'view-brand-logo'}},
         {'tag': 'div', 'meta': {'class': 'print-hide'}},
         {'tag': 'span', 'meta': {'class': 'accordion-icon'}},
-        {'tag': 'div', 'meta': {'class': 'emergency-ticker-container'}}
+        {'tag': 'div', 'meta': {'class': 'emergency-ticker-container'}},
+        {'tag': 'div', 'meta': {'class': 'view-contact-form'}},
+        {'tag': 'div', 'meta': {'class': 'comp-paginate'}},
+        {'tag': 'div', 'meta': {'class': 'doctype-abcperson'}},
+        {'tag': 'div', 'meta': {'class': 'subbanner-container'}}
     ], soup)
 
 
@@ -176,9 +180,12 @@ def fill_article_from_meta_tags(article, response, soup):
     article.info.set_title(find_title(meta_tags, response))
     article.info.set_description(find_description(meta_tags))
     article.images.thumbnail.url = meta_tags['og:image']
-    article.images.thumbnail.width = meta_tags['og:image:width']
-    article.images.thumbnail.height = meta_tags['og:image:height']
-    article.images.thumbnail.mime_type = meta_tags['og:image:type']
+    if 'og:image:width' in meta_tags:
+        article.images.thumbnail.width = meta_tags['og:image:width']
+    if 'og:image:height' in meta_tags:
+        article.images.thumbnail.height = meta_tags['og:image:height']
+    if 'og:image:type' in meta_tags:
+        article.images.thumbnail.mime_type = meta_tags['og:image:type']
     find_location(meta_tags, article)
     page_id = find_facebook_page(meta_tags)
     if page_id:
@@ -222,6 +229,8 @@ def find_main_content_tag(soup, response):
         main_content_div = soup.find('div', {'class': 'article-text'})
     if not main_content_div:
         main_content_div = soup.find('div', {'class': 'container'})
+    if not main_content_div:
+        main_content_div = soup.find('div', {'id': 'main-content'})
     if not main_content_div:
         raise ValueError('Could not find the main content div: {}'.format(response.url))
     return main_content_div
