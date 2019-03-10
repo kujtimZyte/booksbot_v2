@@ -223,10 +223,6 @@ class Image(RichMedia):
 
 class Images(object):
     """An object for holding images"""
-    thumbnail = Image()
-    images = []
-
-
     def __init__(self):
         self.thumbnail = Image()
         self.images = []
