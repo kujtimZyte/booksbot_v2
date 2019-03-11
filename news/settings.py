@@ -26,3 +26,7 @@ SPIDER_MIDDLEWARES = {
 
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+
+DEFAULT_REQUEST_HEADERS = {
+    'Referer': 'http://www.google.com'
+}
