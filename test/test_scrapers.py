@@ -682,6 +682,22 @@ class TestNewsSpider(unittest.TestCase):
             'nzherald-12154083.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_radionz_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'radionz.co.nz.html',
+            'https://www.radionz.co.nz/',
+            'radionz.co.nz.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_radionz_royal_commission_inquiry_a_lost_opportunity_for_some(self, mock_head):
+        self.check_fake_html_scrape(
+            'radionz-royal-commission-inquiry-a-lost-opportunity-for-some.html',
+            'https://www.radionz.co.nz/national/programmes/checkpoint/audio/2018671592/royal-commission-inquiry-a-lost-opportunity-for-some',
+            'radionz-royal-commission-inquiry-a-lost-opportunity-for-some.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
