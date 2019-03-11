@@ -506,6 +506,7 @@ def find_common(soup, meta_tags, article):
     """Extracts common elements from the page"""
     parse_meta_tags(meta_tags, article)
     find_script_json(soup, article)
+    find_audio(soup, article)
 
 
 def find_common_response_data(response, parser='html5lib'):
