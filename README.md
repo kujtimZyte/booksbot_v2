@@ -40,7 +40,7 @@ The support table looks like so:
 | [Newsweek](https://www.newsweek.com/)                               | 8th March 2019     | Stable |
 | [The New York Times](https://www.nytimes.com/)                      | 10th March 2019    | Stable |
 | [The New Zealand Herald](https://www.nzherald.co.nz/)               | 10th March 2019    | Stable |
-| [Radio NZ](https://www.radionz.co.nz/)                              | 16th November 2018 | Stable |
+| [Radio NZ](https://www.radionz.co.nz/)                              | 11th March 2019    | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
