@@ -33,11 +33,15 @@ def nzherald_parse(response):
         {'tag': 'div', 'meta': {'class': 'pb-f-article-slimline-byline'}},
         {'tag': 'article', 'meta': {'class': 'story-preview-wrapper'}},
         {'tag': 'div', 'meta': {'class': 'story-category'}},
-        {'tag': 'div', 'meta': {'class': 'header-label'}}
+        {'tag': 'div', 'meta': {'class': 'header-label'}},
+        {'tag': 'div', 'meta': {'class': 'pb-f-global-recommend'}},
+        {'tag': 'div', 'meta': {'class': 'social-shares'}},
+        {'tag': 'div', 'meta': {'class': 'pb-f-video-video-player'}}
     ], [
         {'tag': 'article', 'meta': {'class': 'article-main'}}
     ], link_id, author_tag=[
-        {'tag': 'span', 'meta': {'class': 'author-title'}}
+        {'tag': 'span', 'meta': {'class': 'author-title'}},
+        {}
     ])
 
 

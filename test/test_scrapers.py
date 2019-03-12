@@ -698,6 +698,14 @@ class TestNewsSpider(unittest.TestCase):
             'radionz-royal-commission-inquiry-a-lost-opportunity-for-some.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_nzherald_12211580(self, mock_head):
+        self.check_fake_html_scrape(
+            'nzherald-12211580.html',
+            'https://www.nzherald.co.nz/anz-sports-scene/news/article.cfm?c_id=1504448&objectid=12211580',
+            'nzherald-12211580.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)
