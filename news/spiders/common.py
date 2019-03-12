@@ -519,16 +519,28 @@ def find_common_response_data(response, parser='html5lib'):
 def find_author_content(author_content_divs, article, response, soup):
     """Finds the author content and fills in the article"""
     author_content_div = None
+    require_author_tag = True
     for div in author_content_divs:
+        if 'tag' not in div:
+            require_author_tag = False
+            continue
         author_content_div = soup.find(div['tag'], div['meta'])
         if author_content_div:
             break
     if not author_content_div:
-        raise ValueError('Could not find the author content div: {}'.format(response.url))
+        if require_author_tag:
+            raise ValueError('Could not find the author content div: {}'.format(response.url))
+        else:
+            return
     parse_authors(author_content_div.text, article)
 
 
-def common_parse(response, remove_tags, main_tags, require_article=True, author_tag=None):
+def common_parse(
+        response,
+        remove_tags,
+        main_tags,
+        require_article=True,
+        author_tag=None):
     """Perform common parsing on the response"""
     soup, meta_tags, article = find_common_response_data(response)
     if require_article:
@@ -537,20 +549,28 @@ def common_parse(response, remove_tags, main_tags, require_article=True, author_
         if meta_tags['og:type'] != 'article':
             return None
     if author_tag is not None:
-        find_author_content(author_tag, article, response, soup)
+        find_author_content(
+            author_tag,
+            article,
+            response,
+            soup)
     remove_common_tags(remove_tags, soup)
     find_main_content(main_tags, article, response, soup)
     return article
 
 
-def common_parse_return(\
-    response,\
-    remove_tags,\
-    main_tags,\
-    link_id,\
-    author_tag=None):
+def common_parse_return(
+        response,
+        remove_tags,
+        main_tags,
+        link_id,
+        author_tag=None):
     """Perform common parsing and return the correct tuple"""
-    article = common_parse(response, remove_tags, main_tags, author_tag=author_tag)
+    article = common_parse(
+        response,
+        remove_tags,
+        main_tags,
+        author_tag=author_tag)
     if article is None:
         return None, link_id
     return article.json(), link_id
