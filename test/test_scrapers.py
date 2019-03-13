@@ -706,6 +706,14 @@ class TestNewsSpider(unittest.TestCase):
             'nzherald-12211580.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_cnbc_the_young_millionaires_club(self, mock_head):
+        self.check_fake_html_scrape(
+            'cnbc-the-young-millionaires-club.html',
+            'https://www.cnbc.com/2010/10/21/The-Young-Millionaires-Club.html',
+            'cnbc-the-young-millionaires-club.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

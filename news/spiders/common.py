@@ -543,6 +543,8 @@ def common_parse(
         author_tag=None):
     """Perform common parsing on the response"""
     soup, meta_tags, article = find_common_response_data(response)
+    if soup.find('title').text == '503 Service temporarily not available':
+        return None
     if require_article:
         if 'og:type' not in meta_tags:
             return None
