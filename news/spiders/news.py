@@ -45,6 +45,7 @@ from .newsweek import newsweek_parse, newsweek_url_parse, newsweek_url_filter
 from .nytimes import nytimes_parse, nytimes_url_parse, nytimes_url_filter
 from .nzherald import nzherald_parse, nzherald_url_parse, nzherald_url_filter
 from .radionz import radionz_parse, radionz_url_parse, radionz_url_filter
+from .reuters import reuters_parse, reuters_url_parse, reuters_url_filter
 
 
 DetectorFactory.seed = 0
@@ -148,7 +149,8 @@ class NewsSpider(scrapy.Spider):
         "newsweek.com",
         "nytimes.com",
         "nzherald.co.nz",
-        "radionz.co.nz"
+        "radionz.co.nz",
+        "reuters.com"
     ]
     start_urls = [
         'https://www.abc.net.au/news/',
@@ -173,7 +175,8 @@ class NewsSpider(scrapy.Spider):
         'https://www.newsweek.com/',
         'https://www.nytimes.com/',
         'https://www.nzherald.co.nz/',
-        'https://www.radionz.co.nz/'
+        'https://www.radionz.co.nz/',
+        'https://www.reuters.com/'
     ]
     http_user = NEWS_HTTP_AUTH_USER
     http_pass = ''
@@ -311,6 +314,12 @@ class NewsSpider(scrapy.Spider):
             "splash": False,
             "url_parse": radionz_url_parse,
             "url_filter": radionz_url_filter
+        },
+        "reuters.com": {
+            "parser": reuters_parse,
+            "splash": False,
+            "url_parse": reuters_url_parse,
+            "url_filter": reuters_url_filter
         }
     }
 

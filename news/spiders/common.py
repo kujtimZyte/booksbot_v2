@@ -291,6 +291,8 @@ def find_script_json(soup, article):
         script_text = script_text.replace('\n', '')
         if script_text.endswith(',}'):
             script_text = script_text[:-2] + script_text[-1:]
+        script_text = re.sub('":\s\'', '":"', script_text)
+        script_text = re.sub('\',', '",', script_text)
         script_json = json.loads(script_text)
         handle_script_json_authors(script_json, article)
         if 'dateModified' in script_json:

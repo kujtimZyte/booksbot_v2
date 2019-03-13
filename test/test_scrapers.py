@@ -714,6 +714,22 @@ class TestNewsSpider(unittest.TestCase):
             'cnbc-the-young-millionaires-club.json')
 
 
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_reuters_homepage(self, mock_head):
+        self.check_fake_html_scrape(
+            'reuters.com.html',
+            'https://www.reuters.com/',
+            'reuters.com.json')
+
+
+    @mock.patch('requests.head', side_effect=mocked_requests_head)
+    def test_reuters_how_the_man_behind_khashoggi_murder_ran_the_killing_via_skype(self, mock_head):
+        self.check_fake_html_scrape(
+            'reuters-how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype.html',
+            'https://www.reuters.com/article/us-saudi-khashoggi-adviser-insight/how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype-idUSKCN1MW2HA',
+            'reuters-how-the-man-behind-khashoggi-murder-ran-the-killing-via-skype.json')
+
+
     def check_fake_html_scrape(self, html_filename, url, json_filename):
         output_json = self.fake_html(html_filename, url)
         open('output.json', 'w').write(output_json)

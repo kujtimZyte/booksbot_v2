@@ -41,6 +41,7 @@ The support table looks like so:
 | [The New York Times](https://www.nytimes.com/)                      | 10th March 2019    | Stable |
 | [The New Zealand Herald](https://www.nzherald.co.nz/)               | 10th March 2019    | Stable |
 | [Radio NZ](https://www.radionz.co.nz/)                              | 11th March 2019    | Stable |
+| [Reuters](https://www.reuters.com/)                                 | 22nd October 2018  | Stable |
 
 ## Dependencies :globe_with_meridians:
 * [scrapy](https://scrapy.org/)
