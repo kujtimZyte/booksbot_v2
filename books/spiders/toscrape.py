@@ -2,8 +2,8 @@
 import scrapy
 
 
-class BooksSpider(scrapy.Spider):
-    name = "books"
+class ToscrapeSpider(scrapy.Spider):
+    name = "toscrape"
     allowed_domains = ["books.toscrape.com"]
     start_urls = [
         'http://books.toscrape.com/',
@@ -26,5 +26,4 @@ class BooksSpider(scrapy.Spider):
         item['description'] = response.xpath(
             "//div[@id='product_description']/following-sibling::p/text()"
         ).extract_first()
-        item['price'] = response.css('p.price_color ::text').extract_first()
         yield item
