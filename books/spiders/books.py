@@ -20,6 +20,7 @@ class BooksSpider(scrapy.Spider):
         item = {}
         product = response.css("div.product_main")
         item["title"] = product.css("h1 ::text").extract_first()
+        item["price"] = product.css("h2 ::text").extract_first()
         item['category'] = response.xpath(
             "//ul[@class='breadcrumb']/li[@class='active']/preceding-sibling::li[1]/a/text()"
         ).extract_first()
